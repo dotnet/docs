@@ -1,0 +1,297 @@
+<Type Name="MissingSatelliteAssemblyException" FullName="System.Resources.MissingSatelliteAssemblyException">
+  <TypeSignature Language="C#" Value="public class MissingSatelliteAssemblyException : SystemException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit MissingSatelliteAssemblyException extends System.SystemException" />
+  <TypeSignature Language="DocId" Value="T:System.Resources.MissingSatelliteAssemblyException" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.SystemException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The exception that is thrown when the satellite assembly for the resources of the default culture is missing.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default culture is the culture whose resources are loaded if the appropriate culture-specific resources cannot be found. By default, resources for the default culture are located in the main assembly, and a <xref:System.Resources.MissingManifestResourceException> is thrown if the resource manager tries to retrieve but cannot find a resource for the default culture. However, the .NET Framework will load the resources for an app's default culture from a satellite assembly if the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute specifies a value of <xref:System.Resources.UltimateResourceFallbackLocation?displayProperty=fullName> for the location parameter. When this is the case, the <xref:System.Resources.MissingSatelliteAssemblyException> exception is thrown when the resource manager tries to retrieve a resource of the default culture and the satellite assembly for the culture specified in the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute is missing. Note that the exception is thrown by a resource retrieval method such as <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName> or <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>, and not when the <xref:System.Resources.ResourceManager> object is instantiated.  
+  
+ <xref:System.Resources.MissingSatelliteAssemblyException> uses the HRESULT COR_E_MISSINGSATELLITEASSEMBLY, which has the value 0x80131536.  
+  
+ <xref:System.Resources.MissingSatelliteAssemblyException> uses the default <xref:System.Object.Equals%2A> implementation, which supports reference equality.  
+  
+ For a list of initial property values for an instance of the <xref:System.Resources.MissingSatelliteAssemblyException> class, see the <xref:System.Resources.MissingSatelliteAssemblyException.%23ctor%2A> constructors.  
+  
+> [!NOTE]
+>  You should always use the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute to define your app's default culture so that if a resource for a specific culture is unavailable, your application will display acceptable behavior.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute to indicate that English is the app's default culture and that its resources are stored in a satellite assembly. The example itself includes resources in .txt files for the English and French cultures, as described in the following table:  
+  
+|Culture|Resource name/value|File name|  
+|-------------|--------------------------|---------------|  
+|English|Greet=Hello|Greet.en.txt|  
+|French|Greet=Bonjour|Greet.fr.txt|  
+  
+ The following source code builds an app that changes the current UI culture first to French (France) and then to Russian (Russia) and displays an appropriate culture-specific resource in both cases.  
+  
+ [!code-csharp[System.Resources.MissingSatelliteAssemblyException#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.resources.missingsatelliteassemblyexception/cs/helloworld.cs#1)]
+ [!code-vb[System.Resources.MissingSatelliteAssemblyException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.resources.missingsatelliteassemblyexception/vb/helloworld.vb#1)]  
+  
+ You can use the following batch file to build and execute the C# version of the example. If you're using Visual Basic, replace `csc` with `vbc`, and replace the `.cs` extension with `.vb`. When the example is executed, it displays a French language string but throws a <xref:System.Resources.MissingSatelliteAssemblyException> exception when the current culture is Russian (Russia). This is because the satellite assembly en\HelloWorld.dll that contains the resources of the default culture does not exist.  
+  
+```  
+  
+vbc HelloWorld.vb  
+  
+md fr  
+resgen Greet.fr.txt  
+al /out:fr\HelloWorld.resources.dll /culture:fr /embed:GreetResources.fr.resources  
+  
+HelloWorld  
+  
+```  
+  
+ You can use the following batch file to build and execute the Visual Basic version of the example. If you're using C#, replace `vbc` with `csc`, and replace the `.vb` extension with `.cs`. When the example is executed, it displays a French language string when the current UI culture is French (France). When the current UI culture is Russia (Russian), it displays an English language string because Russian language resources do not exist, but the resource manager is able to load the resources of the default culture from the satellite assembly en\HelloWorld2.dll.  
+  
+```  
+  
+vbc HelloWorld.vb /out:HelloWorld2.exe  
+  
+md fr  
+resgen GreetResources.fr.txt  
+al /out:fr\HelloWorld2.resources.dll /culture:fr /embed:GreetResources.fr.resources  
+  
+md en  
+resgen GreetResources.en.txt  
+al /out:en\HelloWorld2.resources.dll /culture:en /embed:GreetResources.en.resources  
+  
+HelloWorld2  
+  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MissingSatelliteAssemblyException ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Resources.MissingSatelliteAssemblyException.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Resources.MissingSatelliteAssemblyException" /> class with default properties.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the initial property values for an instance of the <xref:System.Resources.MissingSatelliteAssemblyException> class.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|`null`.|  
+|<xref:System.Exception.Message%2A>|The localized error message for <xref:System.Resources.MissingSatelliteAssemblyException>.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MissingSatelliteAssemblyException (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Resources.MissingSatelliteAssemblyException.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">The error message that explains the reason for the exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Resources.MissingSatelliteAssemblyException" /> class with the specified error message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the initial property values for an instance of the <xref:System.Resources.MissingSatelliteAssemblyException> class.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|`null`.|  
+|<xref:System.Exception.Message%2A>|The `message` string.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected MissingSatelliteAssemblyException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Resources.MissingSatelliteAssemblyException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">The object that holds the serialized object data.</param>
+        <param name="context">The contextual information about the source or destination of the exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Resources.MissingSatelliteAssemblyException" /> class from serialized data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is called during deserialization to reconstitute the exception object transmitted over a stream.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MissingSatelliteAssemblyException (string message, Exception inner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Resources.MissingSatelliteAssemblyException.#ctor(System.String,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="inner" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="message">The error message that explains the reason for the exception.</param>
+        <param name="inner">The exception that is the cause of the current exception. If the <c>inner</c> parameter is not <see langword="null" />, the current exception is raised in a <see langword="catch" /> block that handles the inner exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Resources.MissingSatelliteAssemblyException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+  
+ The following table shows the initial property values for an instance of the <xref:System.Resources.MissingSatelliteAssemblyException> class.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|The inner exception reference.|  
+|<xref:System.Exception.Message%2A>|The error message string.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MissingSatelliteAssemblyException (string message, string cultureName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, string cultureName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Resources.MissingSatelliteAssemblyException.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="cultureName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">The error message that explains the reason for the exception.</param>
+        <param name="cultureName">The name of the neutral culture.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Resources.MissingSatelliteAssemblyException" /> class with a specified error message and the name of a neutral culture.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the initial property values for an instance of the <xref:System.Resources.MissingSatelliteAssemblyException> class.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|The inner exception reference.|  
+|<xref:System.Exception.Message%2A>|The error message string.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CultureName">
+      <MemberSignature Language="C#" Value="public string CultureName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CultureName" />
+      <MemberSignature Language="DocId" Value="P:System.Resources.MissingSatelliteAssemblyException.CultureName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the default culture.</summary>
+        <value>The name of the default culture.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The app's default culture is defined by the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute. For a list of culture names, see the [National Language Support (NLS) API Reference](http://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,314 @@
+<Type Name="WebRequestHandler" FullName="System.Net.Http.WebRequestHandler">
+  <TypeSignature Language="C#" Value="public class WebRequestHandler : System.Net.Http.HttpClientHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebRequestHandler extends System.Net.Http.HttpClientHandler" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Http.WebRequestHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net.Http.WebRequest</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Net.Http.HttpClientHandler</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides desktop-specific features not available to Windows Store apps or other environments.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class implements a transport handler using <xref:System.Net.HttpWebRequest> instances to send HTTP requests to servers.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebRequestHandler ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Http.WebRequestHandler.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http.WebRequest</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Http.WebRequestHandler" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowPipelining">
+      <MemberSignature Language="C#" Value="public bool AllowPipelining { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowPipelining" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.WebRequestHandler.AllowPipelining" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http.WebRequest</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether to pipeline the request to the Internet resource.</summary>
+        <value>Returns <see cref="T:System.Boolean" />.  
+  
+ <see langword="true" /> if the request should be pipelined; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An application uses the <xref:System.Net.Http.WebRequestHandler.AllowPipelining%2A> property to indicate a preference for pipelined connections. When <xref:System.Net.Http.WebRequestHandler.AllowPipelining%2A> is `true`, an application makes pipelined connections to the servers that support them.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthenticationLevel">
+      <MemberSignature Language="C#" Value="public System.Net.Security.AuthenticationLevel AuthenticationLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Security.AuthenticationLevel AuthenticationLevel" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.WebRequestHandler.AuthenticationLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http.WebRequest</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Security.AuthenticationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating the level of authentication and impersonation used for this request.</summary>
+        <value>Returns <see cref="T:System.Net.Security.AuthenticationLevel" />.  
+  
+ A bitwise combination of the <see cref="T:System.Net.Security.AuthenticationLevel" /> values.  The default value is <see cref="F:System.Net.Security.AuthenticationLevel.MutualAuthRequested" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In mutual authentication, both the client and server present credentials to establish their identity. The <xref:System.Net.Security.AuthenticationLevel> and <xref:System.Net.Security.AuthenticationLevel> values are relevant for Kerberos authentication. Kerberos authentication can be supported directly, or can be used if the Negotiate security protocol is used to select the actual security protocol. For more information about authentication protocols, see [Internet Authentication](~/docs/framework/network-programming/internet-authentication.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CachePolicy">
+      <MemberSignature Language="C#" Value="public System.Net.Cache.RequestCachePolicy CachePolicy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Cache.RequestCachePolicy CachePolicy" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.WebRequestHandler.CachePolicy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http.WebRequest</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Cache.RequestCachePolicy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the cache policy for this request.</summary>
+        <value>Returns <see cref="T:System.Net.Cache.RequestCachePolicy" />.  
+  
+ A <see cref="T:System.Net.Cache.RequestCachePolicy" /> object that defines a cache policy. The default is <see cref="P:System.Net.WebRequest.DefaultCachePolicy" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The current cache policy and the presence of the requested resource in the cache determine whether a response can be retrieved from the cache. Using cached responses usually improves application performance, but there is a risk that the response in the cache does not match the response on the server.  
+  
+ The default cache policy can be specified in the Machine.config configuration file or by setting the <xref:System.Net.HttpWebRequest.DefaultCachePolicy%2A> property.  
+  
+ A copy of a resource is only added to the cache if the response stream for the resource is retrieved and read to the end of the stream. So another request for the same resource could use a cached copy, depending on the cache policy level for this request.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientCertificates">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509CertificateCollection ClientCertificates { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.X509Certificates.X509CertificateCollection ClientCertificates" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.WebRequestHandler.ClientCertificates" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http.WebRequest</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.X509Certificates.X509CertificateCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the collection of security certificates that are associated with this request.</summary>
+        <value>Returns <see cref="T:System.Security.Cryptography.X509Certificates.X509CertificateCollection" />.  
+  
+ The collection of security certificates associated with this request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContinueTimeout">
+      <MemberSignature Language="C#" Value="public TimeSpan ContinueTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan ContinueTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.WebRequestHandler.ContinueTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http.WebRequest</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the amount of time, in milliseconds, the application will wait for 100-continue from the server before uploading data.</summary>
+        <value>Returns <see cref="T:System.TimeSpan" />.  
+  
+ The amount of time, in milliseconds, the application will wait for 100-continue from the server before uploading data. The default value is 350 milliseconds.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImpersonationLevel">
+      <MemberSignature Language="C#" Value="public System.Security.Principal.TokenImpersonationLevel ImpersonationLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Principal.TokenImpersonationLevel ImpersonationLevel" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.WebRequestHandler.ImpersonationLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http.WebRequest</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Principal.TokenImpersonationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the impersonation level for the current request.</summary>
+        <value>Returns <see cref="T:System.Security.Principal.TokenImpersonationLevel" />.  
+  
+ The impersonation level for the request. The default is <see cref="F:System.Security.Principal.TokenImpersonationLevel.Delegation" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The impersonation level determines how the server can use the client's credentials.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxResponseHeadersLength">
+      <MemberSignature Language="C#" Value="public int MaxResponseHeadersLength { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxResponseHeadersLength" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.WebRequestHandler.MaxResponseHeadersLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http.WebRequest</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum allowed length of the response headers.</summary>
+        <value>Returns <see cref="T:System.Int32" />.  
+  
+ The length, in kilobytes (1024 bytes), of the response headers.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The length of the response header includes the response status line and any extra control characters that are received as part of HTTP protocol. A value of -1 means no limit is imposed on the response headers; a value of 0 means that all requests fail.  
+  
+ If the <xref:System.Net.Http.WebRequestHandler.MaxResponseHeadersLength%2A> property is not explicitly set, it defaults to the value of the <xref:System.Net.HttpWebRequest.DefaultMaximumResponseHeadersLength%2A> property.  
+  
+ If the length of the response header received exceeds the value of the <xref:System.Net.Http.WebRequestHandler.MaxResponseHeadersLength%2A> property, an exception is thrown when the response is accessed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadWriteTimeout">
+      <MemberSignature Language="C#" Value="public int ReadWriteTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ReadWriteTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.WebRequestHandler.ReadWriteTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http.WebRequest</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a time-out in milliseconds when writing a request to or reading a response from a server.</summary>
+        <value>Returns <see cref="T:System.Int32" />.  
+  
+ The number of milliseconds before the writing or reading times out. The default value is 300,000 milliseconds (5 minutes).</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerCertificateValidationCallback">
+      <MemberSignature Language="C#" Value="public System.Net.Security.RemoteCertificateValidationCallback ServerCertificateValidationCallback { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Security.RemoteCertificateValidationCallback ServerCertificateValidationCallback" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.WebRequestHandler.ServerCertificateValidationCallback" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http.WebRequest</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Security.RemoteCertificateValidationCallback</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a callback method to validate the server certificate.</summary>
+        <value>Returns <see cref="T:System.Net.Security.RemoteCertificateValidationCallback" />.  
+  
+ A callback method to validate the server certificate.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Net.Http.WebRequestHandler.ServerCertificateValidationCallback%2A> is `null`, the server certificate will be validated using standard well-known  certificate authorities.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsafeAuthenticatedConnectionSharing">
+      <MemberSignature Language="C#" Value="public bool UnsafeAuthenticatedConnectionSharing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UnsafeAuthenticatedConnectionSharing" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.WebRequestHandler.UnsafeAuthenticatedConnectionSharing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http.WebRequest</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>set: System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether to allow high-speed NTLM-authenticated connection sharing.</summary>
+        <value>Returns <see cref="T:System.Boolean" />.  
+  
+ <see langword="true" /> to keep the authenticated connection open; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value for this property is `false`, which causes the current connection to be closed after a request is completed. Your application must go through the authentication sequence every time it issues a new request.If this property is set to `true`, the connection used to retrieve the response remains open after the authentication has been performed. In this case, other requests that have this property set to `true` may use the connection without re-authenticating. In other words, if a connection has been authenticated for user A, user B may reuse A's connection; user B's request is fulfilled based on the credentials of user A.  
+  
+> [!CAUTION]
+>  Because it is possible for an application to use the connection without being authenticated, you need to be sure that there is no administrative vulnerability in your system when setting this property to `true`. If your application sends requests for multiple users (impersonates multiple user accounts) and relies on authentication to protect resources, do not set this property to `true` unless you use connection groups as described below.  
+  
+ You may want to consider enabling this mechanism if your are having performance problems and your application is running on a Web server with integrated Windows authentication.  
+  
+ Enabling this setting opens the system to security risks. If you set the <xref:System.Net.HttpWebRequest.UnsafeAuthenticatedConnectionSharing%2A> property to `true` be sure to take the following precautions:  
+  
+-   Run your application in a protected environment to help avoid possible connection exploits.  
+  
+ If you control the back-end server, as an alternative you might consider turning off authentication persistence. This increases performance to a lesser degree, but it is safer. For more details, search for AuthPersistence in the MSDN library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,37 @@
+<Type Name="VisualStyleElement+ToolTip" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+ToolTip">
+  <TypeSignature Language="C#" Value="public static class VisualStyleElement.ToolTip" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit VisualStyleElement/ToolTip extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains classes that provide <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> objects for the parts of a ToolTip. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip> class provides a foundation in which the following classes are defined:  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip.Balloon>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip.BalloonTitle>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip.Close>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip.Standard>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip.StandardTitle>  
+  
+ Each of these classes provides one or more properties that return a <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> for the part of the ToolTip specified by the class name.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

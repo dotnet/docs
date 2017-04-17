@@ -1,0 +1,222 @@
+<Type Name="SupportsPreviewControlAttribute" FullName="System.Web.UI.Design.SupportsPreviewControlAttribute">
+  <TypeSignature Language="C#" Value="public sealed class SupportsPreviewControlAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SupportsPreviewControlAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.SupportsPreviewControlAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates whether a control designer requires a preview instance of the control at design time. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Apply the <xref:System.Web.UI.Design.SupportsPreviewControlAttribute> attribute to a control designer class to indicate the type of preview control that is supported by the control designer. Use this attribute to change a preview control for design-time rendering without affecting the actual persisted instance of the associated control.  
+  
+ Typically, you specify the <xref:System.Web.UI.Design.SupportsPreviewControlAttribute> when declaring a custom designer class that is derived from the <xref:System.Web.UI.Design.ControlDesigner> class. The value of the <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.SupportsPreviewControl%2A> property for the <xref:System.Web.UI.Design.SupportsPreviewControlAttribute> attribute determines the behavior for the <xref:System.Web.UI.Design.ControlDesigner.UsePreviewControl%2A> and <xref:System.Web.UI.Design.ControlDesigner.ViewControl%2A> members in the base <xref:System.Web.UI.Design.ControlDesigner> class.  
+  
+ Set the <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.SupportsPreviewControl%2A> property to `true` to indicate that the designer uses a temporary copy of the associated control to generate the design-time HTML. Changes to the temporary control are not persisted.  
+  
+ Set the <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.SupportsPreviewControl%2A> property to `false` to indicate that the designer returns the control instance, specifically the <xref:System.ComponentModel.Design.ComponentDesigner.Component%2A> property, from the <xref:System.Web.UI.Design.ControlDesigner.ViewControl%2A> method. Changes to the control object are persisted.  
+  
+ For example, the <xref:System.Web.UI.Design.WebControls.CalendarDesigner> class is marked with the <xref:System.Web.UI.Design.SupportsPreviewControlAttribute> set to `true`. The designer uses the preview control with the automatic style formatting task, which allows the user to preview various autoformat stylesthat can be applied to the calendar. As the user selects different autoformat styles in the user interface, the selected style scheme is applied to the preview control. Applying a new style to the preview control does not change the scheme that is applied to the instance of the <xref:System.Web.UI.WebControls.Calendar> control in the designer.  
+  
+ If the <xref:System.Web.UI.Design.SupportsPreviewControlAttribute> is not specified in the control designer declaration, the <xref:System.Web.UI.Design.ControlDesigner> behavior is equivalent to specifying the <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.SupportsPreviewControl%2A> as `false`.  
+  
+> [!NOTE]
+>  Designer classes derived from the <xref:System.Web.UI.Design.ControlDesigner> class can override the <xref:System.Web.UI.Design.ControlDesigner.UsePreviewControl%2A> and <xref:System.Web.UI.Design.ControlDesigner.ViewControl%2A> members, and ignore the <xref:System.Web.UI.Design.SupportsPreviewControlAttribute> attribute. To determine the expected behavior for <xref:System.Web.UI.Design.ControlDesigner.ViewControl%2A> and <xref:System.Web.UI.Design.ControlDesigner.UsePreviewControl%2A>, see the reference documentation for the derived control designer class.  
+  
+ For general information about using attributes, see [Attributes Overview](http://msdn.microsoft.com/en-us/a4daf212-2410-423d-a800-7a08864e9bff) and [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87). For more information about design-time attributes, see [Attributes and Design-Time Support](http://msdn.microsoft.com/library/7aed9eb4-124b-4a15-a0a3-458f37ac9ef7).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to mark a control designer with the <xref:System.Web.UI.Design.SupportsPreviewControlAttribute> attribute. The code example derives an ASP.NET server control from the <xref:System.Web.UI.WebControls.Label> class and associates the ASP.NET server control with a custom control designer implementation. The control designer class declaration is marked with the `SupportsPreviewControl` attribute set to `true`. The control designer overrides the <xref:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml%2A> method and encloses the design-time HTML for the control in italic tags.  
+  
+ [!code-csharp[System.Web.UI.Design.SupportsPreviewControlAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Design.SupportsPreviewControlAttribute/CS/supportspreviewdesigner.cs#1)]
+ [!code-vb[System.Web.UI.Design.SupportsPreviewControlAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Design.SupportsPreviewControlAttribute/VB/supportspreviewdesigner.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SupportsPreviewControlAttribute (bool supportsPreviewControl);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool supportsPreviewControl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.SupportsPreviewControlAttribute.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="supportsPreviewControl" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="supportsPreviewControl">The initial value to assign for <see cref="P:System.Web.UI.Design.SupportsPreviewControlAttribute.SupportsPreviewControl" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" /> class and sets the initial value of the <see cref="P:System.Web.UI.Design.SupportsPreviewControlAttribute.SupportsPreviewControl" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, you do not need to create an instance of the <xref:System.Web.UI.Design.SupportsPreviewControlAttribute> class directly. Apply the <xref:System.Web.UI.Design.SupportsPreviewControlAttribute> to the class declaration of the custom control designer in the source code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static readonly System.Web.UI.Design.SupportsPreviewControlAttribute Default;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.Design.SupportsPreviewControlAttribute Default" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.Design.SupportsPreviewControlAttribute.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.SupportsPreviewControlAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an instance of the <see cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" /> class that is set to the default preview value. This field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.SupportsPreviewControl%2A> property of the <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.Default> field is set to `false`.  
+  
+ Use the <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.IsDefaultAttribute%2A> method to determine whether the value for the <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.SupportsPreviewControl%2A> property is set to the default preview value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.SupportsPreviewControlAttribute.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare with the current instance of <see cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" />.</param>
+        <summary>Determines whether the specified object represents the same preview attribute setting as the current instance of the <see cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" /> class.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> is a <see cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" /> attribute and its value is the same as this instance of <see cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.Equals%2A> method overrides the <xref:System.Object.Equals%2A?displayProperty=fullName> method.  
+  
+ The <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.Equals%2A> method compares two instances based on the value of their <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.SupportsPreviewControl%2A> properties.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.SupportsPreviewControlAttribute.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this instance of the <see cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" /> class.</summary>
+        <returns>A 32-bit signed integer hash code for the current instance of <see cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.GetHashCode%2A> method overrides the <xref:System.Object.GetHashCode%2A?displayProperty=fullName> method.  
+  
+ The <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.GetHashCode%2A> method generates the same hash code for two objects that are equal according to the <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.Equals%2A> method. The hash code is suitable for use in hashing algorithms and data structures, such as hash tables.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDefaultAttribute">
+      <MemberSignature Language="C#" Value="public override bool IsDefaultAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDefaultAttribute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.SupportsPreviewControlAttribute.IsDefaultAttribute" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Indicates whether the current instance of the <see cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" /> class is set to the default preview attribute value.</summary>
+        <returns>
+          <see langword="true" /> if the current instance of <see cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" /> is equal to the default preview attribute value; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.IsDefaultAttribute%2A> method compares the value for the <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.SupportsPreviewControl%2A> property of the current <xref:System.Web.UI.Design.SupportsPreviewControlAttribute> object with the value for the <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.SupportsPreviewControl%2A> property of the static <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.Default> field.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsPreviewControl">
+      <MemberSignature Language="C#" Value="public bool SupportsPreviewControl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsPreviewControl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.SupportsPreviewControlAttribute.SupportsPreviewControl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the control designer requires a temporary preview control at design time.</summary>
+        <value>
+          <see langword="true" /> if the designer uses a temporary copy of the associated control for design-time preview; <see langword="false" /> if the designer uses an instance of the <see cref="P:System.ComponentModel.Design.ComponentDesigner.Component" /> control that is contained in the designer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, you specify a value for the <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.SupportsPreviewControl%2A> property by applying the <xref:System.Web.UI.Design.SupportsPreviewControlAttribute> attribute to a custom designer class declaration. The value of the <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.SupportsPreviewControl%2A> property for the <xref:System.Web.UI.Design.SupportsPreviewControlAttribute> attribute determines the behavior for the <xref:System.Web.UI.Design.ControlDesigner.UsePreviewControl%2A> and <xref:System.Web.UI.Design.ControlDesigner.ViewControl%2A> members in the base <xref:System.Web.UI.Design.ControlDesigner> class.  
+  
+ Set the <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.SupportsPreviewControl%2A> property to `true` to indicate that the designer uses a temporary copy of the associated control to generate the design-time HTML. Changes to the temporary control are not persisted.  
+  
+ Set the <xref:System.Web.UI.Design.SupportsPreviewControlAttribute.SupportsPreviewControl%2A> property to `false` to indicate that the designer returns the control instance, specifically the <xref:System.ComponentModel.Design.ComponentDesigner.Component%2A> property, from the <xref:System.Web.UI.Design.ControlDesigner.ViewControl%2A> method. Changes to the control object are persisted.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

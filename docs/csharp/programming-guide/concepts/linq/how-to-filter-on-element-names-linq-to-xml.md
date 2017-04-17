@@ -25,7 +25,7 @@ When you call one of the methods that return <xref:System.Collections.Generic.IE
   
  This example uses the following XML document: [Sample XML File: Typical Purchase Order (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml-1.md).  
   
-```cs  
+```csharp  
 XElement po = XElement.Load("PurchaseOrder.xml");  
 IEnumerable<XElement> items =  
     from el in po.Descendants("ProductName")  
@@ -62,7 +62,7 @@ ProductName:Baby Monitor
   
  This example uses the following XML document: [Sample XML File: Typical Purchase Order in a Namespace](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-in-a-namespace.md).  
   
-```cs  
+```csharp  
 XNamespace aw = "http://www.adventure-works.com";  
 XElement po = XElement.Load("PurchaseOrderInNamespace.xml");  
 IEnumerable<XElement> items =  

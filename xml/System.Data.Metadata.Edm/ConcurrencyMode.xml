@@ -1,0 +1,57 @@
+<Type Name="ConcurrencyMode" FullName="System.Data.Metadata.Edm.ConcurrencyMode">
+  <TypeSignature Language="C#" Value="public enum ConcurrencyMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ConcurrencyMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.ConcurrencyMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the concurrency options for the properties in a conceptual model.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about how to use this enumeration in a schema, see [Conceptual Design (EDM)](http://msdn.microsoft.com/en-us/c033ef58-d790-49c6-a849-85c7d01bf15c).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Fixed">
+      <MemberSignature Language="C#" Value="Fixed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.ConcurrencyMode Fixed = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.ConcurrencyMode.Fixed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.ConcurrencyMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The property is always validated at write time.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.ConcurrencyMode None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.ConcurrencyMode.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.ConcurrencyMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The property is never validated at write time. This is the default concurrency mode.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

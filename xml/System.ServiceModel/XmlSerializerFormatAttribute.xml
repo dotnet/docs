@@ -1,0 +1,151 @@
+<Type Name="XmlSerializerFormatAttribute" FullName="System.ServiceModel.XmlSerializerFormatAttribute">
+  <TypeSignature Language="C#" Value="public sealed class XmlSerializerFormatAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlSerializerFormatAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.XmlSerializerFormatAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Method | System.AttributeTargets.Interface, Inherited=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Instructs the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] infrastructure to use the <see cref="T:System.Xml.Serialization.XmlSerializer" /> instead of the <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attribute is similar to the <xref:System.ServiceModel.DataContractFormatAttribute> attribute. Both attributes can be applied to a method, class, or interface.  
+  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] the <xref:System.Xml.Serialization.XmlSerializer>, see [Using the XmlSerializer Class](~/docs/framework/wcf/feature-details/using-the-xmlserializer-class.md).  
+  
+ A method can have either of the two attributes applied, but not both. Any operation that has neither applied uses the attribute applied to the containing class. If the containing class does not have either attribute applied, the <xref:System.Runtime.Serialization.DataContractSerializer> is used.  
+  
+ Applying the attribute also causes a <xref:System.ServiceModel.Description.XmlSerializerOperationBehavior> to be created at runtime. The behavior allows customization at runtime of the serializer behavior.  
+  
+   
+  
+## Examples  
+ The following example applies the <xref:System.ServiceModel.XmlSerializerFormatAttribute> to an interface.  
+  
+ [!code-csharp[XmlSerializerFormatAttribute#1](~/samples/snippets/csharp/VS_Snippets_CFX/xmlserializerformatattribute/cs/xmlserializerformat_example.cs#1)]
+ [!code-vb[XmlSerializerFormatAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/xmlserializerformatattribute/vb/xmlserializerformat_example.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlSerializerFormatAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.XmlSerializerFormatAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.XmlSerializerFormatAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Style">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.OperationFormatStyle Style { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.OperationFormatStyle Style" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.XmlSerializerFormatAttribute.Style" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.OperationFormatStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the SOAP style of the <see cref="T:System.Xml.Serialization.XmlSerializer" />.</summary>
+        <value>One of the <see cref="T:System.ServiceModel.OperationFormatStyle" /> values. The default is <see cref="F:System.ServiceModel.OperationFormatStyle.Document" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.XmlSerializerFormatAttribute.Style%2A> and <xref:System.ServiceModel.XmlSerializerFormatAttribute.Use%2A> properties affect how messages are formatted.  
+  
+   
+  
+## Examples  
+ For a complete example, see [Setting the Use and Style Properties](~/docs/framework/wcf/samples/setting-the-use-and-style-properties.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportFaults">
+      <MemberSignature Language="C#" Value="public bool SupportFaults { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportFaults" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.XmlSerializerFormatAttribute.SupportFaults" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates that the <see cref="T:System.Xml.Serialization.XmlSerializer" /> should be used for reading and writing faults.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Xml.Serialization.XmlSerializer" /> should be used for reading and writing faults; <see langword="false" /> if the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> should be used. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default formatter for fault serialization is the <xref:System.Runtime.Serialization.DataContractSerializer>. To use the <xref:System.Xml.Serialization.XmlSerializer>, set this property to `true`. Starting in .NET 4 the serializer set by the <xref:System.ServiceModel.XmlSerializerFormatAttribute.SupportFaults%2A> property will be used even if a custom behavior is set on the contract to which the <xref:System.ServiceModel.XmlSerializerFormatAttribute> is applied.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Use">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.OperationFormatUse Use { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.OperationFormatUse Use" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.XmlSerializerFormatAttribute.Use" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.OperationFormatUse</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies the format to use.</summary>
+        <value>One of the <see cref="T:System.ServiceModel.OperationFormatUse" /> values. The default is <see cref="F:System.ServiceModel.OperationFormatUse.Literal" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.XmlSerializerFormatAttribute.Style%2A> and <xref:System.ServiceModel.XmlSerializerFormatAttribute.Use%2A> properties affect how messages are formatted.  
+  
+   
+  
+## Examples  
+ For a complete example, see [Setting the Use and Style Properties](~/docs/framework/wcf/samples/setting-the-use-and-style-properties.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,38 @@
+<Type Name="WebPartConnectionsCancelEventHandler" FullName="System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void WebPartConnectionsCancelEventHandler(object sender, WebPartConnectionsCancelEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebPartConnectionsCancelEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnecting" /> event or <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnecting" /> event of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnecting> event is raised by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsConnecting%2A> method, and it signals that the connection process has begun (for example, a user has selected a control and clicked a connect verb), but is not yet completed. The event provides an opportunity to cancel a connection before it is complete. If the connection is successfully completed, this event is followed by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnected> event.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnecting> event is raised by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsDisconnecting%2A> method, and it signals the fact that a user has clicked a disconnect verb, or the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DisconnectWebParts%2A> method has otherwise been called. The event provides an opportunity to cancel the process of ending a connection before it is complete. If the connection is ended successfully, this event is followed by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnected> event.  
+  
+ The method specified in the <xref:System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventHandler> delegate is called when a <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnecting> or <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnecting> event is raised.  
+  
+ Page developers can add custom handlers for the events by adding the `OnWebPartsDisconnecting` and `OnWebPartsConnecting` attributes to the `<asp:webpartmanager>` element, and assigning custom method names to the attributes. A custom handler can also be assigned programmatically. For more information on programmatically assigning an event handler, see [NIB: How to: Connect Event Handler Methods to Events](http://msdn.microsoft.com/en-us/348e9600-22e3-49a2-8864-11c5bb3e98fc).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

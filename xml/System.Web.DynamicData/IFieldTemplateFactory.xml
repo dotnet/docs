@@ -1,0 +1,84 @@
+<Type Name="IFieldTemplateFactory" FullName="System.Web.DynamicData.IFieldTemplateFactory">
+  <TypeSignature Language="C#" Value="public interface IFieldTemplateFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFieldTemplateFactory" />
+  <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.IFieldTemplateFactory" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DynamicData</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines an interface implemented by objects that create field templates.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class must be implemented by the <xref:System.Web.DynamicData.FieldTemplateFactory> class in order to create a field template. This interface provides methods that initialize the <xref:System.Web.DynamicData.FieldTemplateFactory> and creates field templates.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateFieldTemplate">
+      <MemberSignature Language="C#" Value="public System.Web.DynamicData.IFieldTemplate CreateFieldTemplate (System.Web.DynamicData.MetaColumn column, System.Web.UI.WebControls.DataBoundControlMode mode, string uiHint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.DynamicData.IFieldTemplate CreateFieldTemplate(class System.Web.DynamicData.MetaColumn column, valuetype System.Web.UI.WebControls.DataBoundControlMode mode, string uiHint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.IFieldTemplateFactory.CreateFieldTemplate(System.Web.DynamicData.MetaColumn,System.Web.UI.WebControls.DataBoundControlMode,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.IFieldTemplate</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="column" Type="System.Web.DynamicData.MetaColumn" />
+        <Parameter Name="mode" Type="System.Web.UI.WebControls.DataBoundControlMode" />
+        <Parameter Name="uiHint" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="column">Specifies the data column to use to display the field template.</param>
+        <param name="mode">Specifies the display mode of the field template.</param>
+        <param name="uiHint">Specifies the field template to use.</param>
+        <summary>Creates an instance of a field template using the <see cref="T:System.Web.DynamicData.MetaColumn" /> class, the <see cref="T:System.Web.UI.WebControls.DataBoundControlMode" /> class and <see cref="P:System.Web.DynamicData.MetaColumn.UIHint" /> property.</summary>
+        <returns>An instance of a <see cref="T:System.Web.DynamicData.FieldTemplateFactory" /> object when implemented in a class.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET Dynamic Data field templates are ASP.NET user controls that map data controls to data types in a data model. Field templates generally derive from <xref:System.Web.DynamicData.FieldTemplateUserControl>, the class that enables access to data fields, data columns, and metadata in data models. Dynamic Data projects provide default field templates, but you can modify them or create custom field templates. When imlemented, this method creates a field template based on the data column, the mode of the data column, and the <xref:System.Web.DynamicData.MetaColumn.UIHint%2A> property. You specify the `uiHint` parameter if you want to render data using a custom field template.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public void Initialize (System.Web.DynamicData.MetaModel model);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(class System.Web.DynamicData.MetaModel model) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.IFieldTemplateFactory.Initialize(System.Web.DynamicData.MetaModel)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="model" Type="System.Web.DynamicData.MetaModel" />
+      </Parameters>
+      <Docs>
+        <param name="model">Specifies the data model that the field template uses.</param>
+        <summary>Initializes a <see cref="T:System.Web.DynamicData.FieldTemplateFactory" /> using the specified data model.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET Dynamic Data uses field templates to display individual data fields. Field templates are typically implemented as user controls that map data types in a data model to individual fields in the data control. This method initializes the <xref:System.Web.DynamicData.FieldTemplateFactory> class, which is used to create field templates using the data model the field template will use.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

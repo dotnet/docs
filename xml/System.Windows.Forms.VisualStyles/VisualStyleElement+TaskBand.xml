@@ -1,0 +1,33 @@
+<Type Name="VisualStyleElement+TaskBand" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+TaskBand">
+  <TypeSignature Language="C#" Value="public static class VisualStyleElement.TaskBand" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit VisualStyleElement/TaskBand extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.VisualStyleElement.TaskBand" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains classes that provide <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> objects for parts of the taskbar. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TaskBand> class provides a foundation in which the following classes are defined:  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TaskBand.FlashButton>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TaskBand.FlashButtonGroupMenu>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TaskBand.GroupCount>  
+  
+ Each of these classes provides a property that returns a <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> for the part of the taskbar specified by the class name.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

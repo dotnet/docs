@@ -1,0 +1,215 @@
+<Type Name="Point4DConverter" FullName="System.Windows.Media.Media3D.Point4DConverter">
+  <TypeSignature Language="C#" Value="public sealed class Point4DConverter : System.ComponentModel.TypeConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Point4DConverter extends System.ComponentModel.TypeConverter" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.Point4DConverter" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.TypeConverter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Converts instances of other types to and from a <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [C#]  
+  
+ The following sample uses a <xref:System.Windows.Media.Media3D.Point4DConverter> structure to convert a string into a <xref:System.Windows.Media.Media3D.Point4D> structure.  
+  
+```csharp  
+...  
+  
+// Converts a String to a Point4D using a Point4DConverter  
+// Returns a Point4D.  
+  
+Point4DConverter p4DConverter = new Point4DConverter();  
+Point4D point4DResult = new Point4D();  
+string string4 = "10,20,30,40";  
+  
+point4DResult = (Point4D)p4DConverter.ConvertFromString(string4);  
+// point4DResult is equal to (10, 20, 30)  
+  
+...  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Point4DConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point4DConverter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of <see cref="T:System.Windows.Media.Media3D.Point4DConverter" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConvertFrom">
+      <MemberSignature Language="C#" Value="public override bool CanConvertFrom (System.ComponentModel.ITypeDescriptorContext context, Type sourceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Type sourceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point4DConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="sourceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">Describes the context information of a type.</param>
+        <param name="sourceType">The type of the source that is being evaluated for conversion.</param>
+        <summary>Determines whether a class can be converted from a given type to an instance of a <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure.</summary>
+        <returns>Indicates whether the type can be converted to a <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure.  
+  
+ <list type="table">  
+<listheader>  
+<term> Value  
+  
+ </term>  
+<description> Meaning  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> false  
+  
+ </term>  
+<description> The converter cannot convert from the provided type.  
+  
+ </description>  
+</item>  
+<item>  
+<term> true  
+  
+ </term>  
+<description> The converter can convert the provided type to a <see cref="T:System.Windows.Media.Media3D.Point4D" />.  
+  
+ </description>  
+</item>  
+</list></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConvertTo">
+      <MemberSignature Language="C#" Value="public override bool CanConvertTo (System.ComponentModel.ITypeDescriptorContext context, Type destinationType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertTo(class System.ComponentModel.ITypeDescriptorContext context, class System.Type destinationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point4DConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="destinationType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">Describes the context information of a type.</param>
+        <param name="destinationType">The desired type that this <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure is being evaluated for conversion.</param>
+        <summary>Determines whether an instance of a <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure can be converted to a different type.</summary>
+        <returns>Indicates whether this <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure can be converted to <paramref name="destinationType" />.  
+  
+ <list type="table">  
+<listheader>  
+<term> Value  
+  
+ </term>  
+<description> Meaning  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> false  
+  
+ </term>  
+<description> The converter cannot convert this <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure to the specified type.  
+  
+ </description>  
+</item>  
+<item>  
+<term> true  
+  
+ </term>  
+<description> The converter can convert this <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure to the specified type.  
+  
+ </description>  
+</item>  
+</list></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertFrom">
+      <MemberSignature Language="C#" Value="public override object ConvertFrom (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point4DConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context">Describes the context information of a type.</param>
+        <param name="culture">Describes the <see cref="T:System.Globalization.CultureInfo" /> of the type being converted.</param>
+        <param name="value">The object being converted.</param>
+        <summary>Attempts to convert a specified object to a <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure.</summary>
+        <returns>The <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure created from the converted <paramref name="value" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTo">
+      <MemberSignature Language="C#" Value="public override object ConvertTo (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value, Type destinationType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertTo(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object value, class System.Type destinationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point4DConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="destinationType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">Describes the context information of a type.</param>
+        <param name="culture">The CultureInfo which is respected when converting.</param>
+        <param name="value">The <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure to convert.</param>
+        <param name="destinationType">The type this <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure is converted to.</param>
+        <summary>Attempts to convert a <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure to a specified type.</summary>
+        <returns>The object created from converting this <see cref="T:System.Windows.Media.Media3D.Point4D" /> structure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

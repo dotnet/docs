@@ -1,0 +1,288 @@
+<Type Name="CorrelationToken" FullName="System.Workflow.Runtime.CorrelationToken">
+  <TypeSignature Language="C#" Value="public sealed class CorrelationToken : System.Workflow.ComponentModel.DependencyObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CorrelationToken extends System.Workflow.ComponentModel.DependencyObject" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.CorrelationToken" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Workflow.ComponentModel.DependencyObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Design.Serialization.DesignerSerializer(typeof(System.Workflow.ComponentModel.Serialization.DependencyObjectCodeDomSerializer), typeof(System.ComponentModel.Design.Serialization.CodeDomSerializer))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Manages the subscriptions of the <see cref="T:System.Workflow.Runtime.CorrelationProperty" /> to the owner activities. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CorrelationToken ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.CorrelationToken.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.CorrelationToken" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CorrelationToken (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.CorrelationToken.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see cref="T:System.Workflow.Runtime.CorrelationToken" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.CorrelationToken" /> class using the name of the <see cref="T:System.Workflow.Runtime.CorrelationToken" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public void Initialize (System.Workflow.ComponentModel.Activity activity, System.Collections.Generic.ICollection&lt;System.Workflow.Runtime.CorrelationProperty&gt; propertyValues);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Initialize(class System.Workflow.ComponentModel.Activity activity, class System.Collections.Generic.ICollection`1&lt;class System.Workflow.Runtime.CorrelationProperty&gt; propertyValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.CorrelationToken.Initialize(System.Workflow.ComponentModel.Activity,System.Collections.Generic.ICollection{System.Workflow.Runtime.CorrelationProperty})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="System.Workflow.ComponentModel.Activity" />
+        <Parameter Name="propertyValues" Type="System.Collections.Generic.ICollection&lt;System.Workflow.Runtime.CorrelationProperty&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="activity">The name of the <see cref="T:System.Workflow.ComponentModel.Activity" /> that owns the correlation token.</param>
+        <param name="propertyValues">A collection of property values in the <see cref="T:System.Workflow.Runtime.CorrelationToken" />.</param>
+        <summary>Fires correlation initialized events.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="T:System.Workflow.Runtime.CorrelationToken" /> was already initialized.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialized">
+      <MemberSignature Language="C#" Value="public bool Initialized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Initialized" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.CorrelationToken.Initialized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Workflow.Runtime.CorrelationToken" /> is initialized.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Workflow.Runtime.CorrelationToken" /> is initialized; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To initialize the correlation token, use <xref:System.Workflow.Runtime.CorrelationToken.Initialize%2A>.  
+  
+   
+  
+## Examples  
+ The following example demonstrates accessing the Initialized property of a correlation token object.  
+  
+ [!code-csharp[WF_Samples#4](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#4)]
+ [!code-vb[WF_Samples#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.CorrelationToken.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the <see cref="T:System.Workflow.Runtime.CorrelationToken" />.</summary>
+        <value>The name of the <see cref="T:System.Workflow.Runtime.CorrelationToken" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates accessing the Name property of a correlation token object.  This example is from the Correlated Local Service SDK sample, from the CorrelatedLocalServiceWorkflow.designer.cs file.  For more information, see [Correlated Local Service Sample](http://msdn.microsoft.com/en-us/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
+  
+ [!code-csharp[WF_Samples#196](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#196)]
+ [!code-vb[WF_Samples#196](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#196)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OwnerActivityName">
+      <MemberSignature Language="C#" Value="public string OwnerActivityName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OwnerActivityName" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.CorrelationToken.OwnerActivityName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Workflow.ComponentModel.Design.PropertyValueProviderTypeConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the <see cref="T:System.Workflow.ComponentModel.Activity" /> that owns the correlation token.</summary>
+        <value>The name of the <see cref="T:System.Workflow.ComponentModel.Activity" /> that owns the correlation token.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates accessing the OwnerActivityName property of a correlation token object.  This example is from the Correlated Local Service SDK sample, from the CorrelatedLocalServiceWorkflow.designer.cs file.  For more information, see [Correlated Local Service Sample](http://msdn.microsoft.com/en-us/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
+  
+ [!code-csharp[WF_Samples#197](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#197)]
+ [!code-vb[WF_Samples#197](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#197)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.Workflow.Runtime.CorrelationProperty&gt; Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.Workflow.Runtime.CorrelationProperty&gt; Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.CorrelationToken.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.Workflow.Runtime.CorrelationProperty&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of <see cref="T:System.Workflow.Runtime.CorrelationProperty" /> objects in the <see cref="T:System.Workflow.Runtime.CorrelationToken" />.</summary>
+        <value>A collection of <see cref="T:System.Workflow.Runtime.CorrelationProperty" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates accessing the Properties property of a correlation token object.  
+  
+ [!code-csharp[WF_Samples#5](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#5)]
+ [!code-vb[WF_Samples#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubscribeForCorrelationTokenInitializedEvent">
+      <MemberSignature Language="C#" Value="public void SubscribeForCorrelationTokenInitializedEvent (System.Workflow.ComponentModel.Activity activity, System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.Runtime.CorrelationTokenEventArgs&gt; dataChangeListener);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SubscribeForCorrelationTokenInitializedEvent(class System.Workflow.ComponentModel.Activity activity, class System.Workflow.ComponentModel.IActivityEventListener`1&lt;class System.Workflow.Runtime.CorrelationTokenEventArgs&gt; dataChangeListener) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.CorrelationToken.SubscribeForCorrelationTokenInitializedEvent(System.Workflow.ComponentModel.Activity,System.Workflow.ComponentModel.IActivityEventListener{System.Workflow.Runtime.CorrelationTokenEventArgs})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="System.Workflow.ComponentModel.Activity" />
+        <Parameter Name="dataChangeListener" Type="System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.Runtime.CorrelationTokenEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="activity">The name of the <see cref="T:System.Workflow.ComponentModel.Activity" /> that owns the correlation token.</param>
+        <param name="dataChangeListener">The <see cref="T:System.Workflow.Runtime.CorrelationTokenEventArgs" /> that is listening for a change in event data.</param>
+        <summary>Subscribes the <see cref="T:System.Workflow.Runtime.CorrelationToken" /> to the initialized event.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="activity" /> or <paramref name="dataChangeListener" /> are null references (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsubscribeFromCorrelationTokenInitializedEvent">
+      <MemberSignature Language="C#" Value="public void UnsubscribeFromCorrelationTokenInitializedEvent (System.Workflow.ComponentModel.Activity activity, System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.Runtime.CorrelationTokenEventArgs&gt; dataChangeListener);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UnsubscribeFromCorrelationTokenInitializedEvent(class System.Workflow.ComponentModel.Activity activity, class System.Workflow.ComponentModel.IActivityEventListener`1&lt;class System.Workflow.Runtime.CorrelationTokenEventArgs&gt; dataChangeListener) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.CorrelationToken.UnsubscribeFromCorrelationTokenInitializedEvent(System.Workflow.ComponentModel.Activity,System.Workflow.ComponentModel.IActivityEventListener{System.Workflow.Runtime.CorrelationTokenEventArgs})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="System.Workflow.ComponentModel.Activity" />
+        <Parameter Name="dataChangeListener" Type="System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.Runtime.CorrelationTokenEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="activity">The name of the <see cref="T:System.Workflow.ComponentModel.Activity" /> that owns the correlation token.</param>
+        <param name="dataChangeListener">The <see cref="T:System.Workflow.Runtime.CorrelationTokenEventArgs" /> that is listening for a change in event data.</param>
+        <summary>Unsubscribes the <see cref="T:System.Workflow.Runtime.CorrelationToken" /> from the initialized event.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="activity" /> or <paramref name="dataChangeListener" /> are null references (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

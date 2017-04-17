@@ -1,0 +1,68 @@
+<Type Name="ParameterImportConventionBuilder" FullName="System.Composition.Convention.ParameterImportConventionBuilder">
+  <TypeSignature Language="C#" Value="public abstract class ParameterImportConventionBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ParameterImportConventionBuilder extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Composition.Convention.ParameterImportConventionBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Composition.Convention</AssemblyName>
+    <AssemblyVersion>1.0.31.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Import&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T Import&lt;T&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Import&lt;T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Convention.ParameterImportConventionBuilder.Import``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Convention</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Import&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T Import&lt;T&gt; (Action&lt;System.Composition.Convention.ImportConventionBuilder&gt; configure);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Import&lt;T&gt;(class System.Action`1&lt;class System.Composition.Convention.ImportConventionBuilder&gt; configure) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Convention.ParameterImportConventionBuilder.Import``1(System.Action{System.Composition.Convention.ImportConventionBuilder})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Convention</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="configure" Type="System.Action&lt;System.Composition.Convention.ImportConventionBuilder&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="configure">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

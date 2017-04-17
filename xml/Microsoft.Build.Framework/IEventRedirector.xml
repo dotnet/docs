@@ -1,0 +1,51 @@
+<Type Name="IEventRedirector" FullName="Microsoft.Build.Framework.IEventRedirector">
+  <TypeSignature Language="C#" Value="public interface IEventRedirector" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEventRedirector" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.IEventRedirector" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Forwards build events to other loggers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See [Writing Multi-Processor-Aware Loggers](http://msdn.microsoft.com/library/ff987d1b-1798-4803-9ef6-cc8fcc263516) for more information.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ForwardEvent">
+      <MemberSignature Language="C#" Value="public void ForwardEvent (Microsoft.Build.Framework.BuildEventArgs buildEvent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ForwardEvent(class Microsoft.Build.Framework.BuildEventArgs buildEvent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IEventRedirector.ForwardEvent(Microsoft.Build.Framework.BuildEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buildEvent" Type="Microsoft.Build.Framework.BuildEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="buildEvent">The <see cref="T:Microsoft.Build.Framework.BuildEventArgs" /> to forward.</param>
+        <summary>Called by the node loggers to forward build events to the central logger.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See [Writing Multi-Processor-Aware Loggers](http://msdn.microsoft.com/library/ff987d1b-1798-4803-9ef6-cc8fcc263516) for more information.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,254 @@
+<Type Name="MessageSecurityOverHttp" FullName="System.ServiceModel.MessageSecurityOverHttp">
+  <TypeSignature Language="C#" Value="public class MessageSecurityOverHttp" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessageSecurityOverHttp extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.MessageSecurityOverHttp" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Enables setting message-level security properties on the wsDualHttpBinding binding.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This object is accessed from the binding by means of the <xref:System.ServiceModel.WSDualHttpBinding.Security%2A> property, which returns a <xref:System.ServiceModel.WSDualHttpSecurity> object. The <xref:System.ServiceModel.WSDualHttpSecurity.Message%2A> property provides a reference to the <xref:System.ServiceModel.MessageSecurityOverHttp> object.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessageSecurityOverHttp ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.MessageSecurityOverHttp.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MessageSecurityOverHttp" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlgorithmSuite">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Security.SecurityAlgorithmSuite AlgorithmSuite { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Security.SecurityAlgorithmSuite AlgorithmSuite" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageSecurityOverHttp.AlgorithmSuite" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.SecurityAlgorithmSuite</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the algorithm suite used for security messages at the SOAP level.</summary>
+        <value>A <see cref="T:System.ServiceModel.Security.SecurityAlgorithmSuite" />. The default is <see cref="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is most relevant when working with a non-[!INCLUDE[indigo1](~/includes/indigo1-md.md)] platform that uses a set of algorithms that are different than the default. You should be aware of the strengths and weaknesses of the relevant algorithms when making modifications to this setting.  
+  
+   
+  
+## Examples  
+ The following code shows how to access and set this property.  
+  
+ [!code-csharp[c_ProgrammingSecurity#8](~/samples/snippets/csharp/VS_Snippets_CFX/c_programmingsecurity/cs/source.cs#8)]
+ [!code-vb[c_ProgrammingSecurity#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_programmingsecurity/vb/source.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The value of <see cref="P:System.ServiceModel.MessageSecurityOverHttp.AlgorithmSuite" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientCredentialType">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.MessageCredentialType ClientCredentialType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.MessageCredentialType ClientCredentialType" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageSecurityOverHttp.ClientCredentialType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.MessageCredentialType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the type of client credential used for client authentication in the wsHttpBinding or wsDualHttpBinding bindings.</summary>
+        <value>A <see cref="T:System.ServiceModel.MessageCredentialType" />. The default is <see cref="F:System.ServiceModel.MessageCredentialType.Windows" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used to set the `MessageCredentialType` that is used to authenticate the caller at the service. Valid types are:  
+  
+-   <xref:System.ServiceModel.MessageCredentialType>  
+  
+-   <xref:System.ServiceModel.MessageCredentialType>  
+  
+-   <xref:System.ServiceModel.MessageCredentialType>  
+  
+-   <xref:System.ServiceModel.MessageCredentialType>  
+  
+-   <xref:System.ServiceModel.MessageCredentialType>  
+  
+   
+  
+## Examples  
+ The following code sets this property.  
+  
+ [!code-csharp[c_CreateSecureSession#4](~/samples/snippets/csharp/VS_Snippets_CFX/c_createsecuresession/cs/secureservice.cs#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value of <see cref="P:System.ServiceModel.MessageSecurityOverHttp.ClientCredentialType" /> is not a valid <see cref="T:System.ServiceModel.MessageCredentialType" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSecureConversationEnabled">
+      <MemberSignature Language="C#" Value="protected virtual bool IsSecureConversationEnabled ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool IsSecureConversationEnabled() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.MessageSecurityOverHttp.IsSecureConversationEnabled" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Only used in extensibility scenarios to indicate whether an instance of a class derived from <see cref="T:System.ServiceModel.MessageSecurityOverHttp" /> is configured to perform secure conversation as described in WS-SecurityConversation.</summary>
+        <returns>Always returns <see langword="true" />, unless overridden in a derived class.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NegotiateServiceCredential">
+      <MemberSignature Language="C#" Value="public bool NegotiateServiceCredential { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool NegotiateServiceCredential" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the service credential is provisioned at the client out of band or is obtained from the service through a process of negotiation.</summary>
+        <value>
+          <see langword="true" /> if service credential is obtained through a process of negotiation; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property to `true`, requires WS-Trust and WS-SecureConversation to be supported by the client and the service. Setting this property to `false` does not require WS-Trust or WS-SecureConversation to be supported.  
+  
+ For Anonymous, Username or Certificate client credential types, setting this property to `false` implies that the service certificate must be available at the client out of band and that the client must specify the service's certificate to use.  
+  
+ In the case of Windows credentials, setting this property to `false` causes an authentication based on `KerberosToken`. This requires that the client and service be part of a Kerberos domain. This mode is interoperable with SOAP stacks that implement the Kerberos token profile from OASIS. Setting this property to `true` causes a SOAP negotiation that tunnels SPNego exchange over SOAP messages. This mode is not interoperable.  
+  
+ This property indicates whether the service credential is negotiated automatically between the client and the service. If this property is `true`, then such negotiation occurs. If this property is `false`, then the service credentials must be specified at the client before communication with the service can occur.  
+  
+ If this property is set to `false`, and the binding is configured to use Windows as a client credential type, the service account must be associated with a Service Principal Name (SPN). To do this, run the service under the NETWORK SERVICE account, or LOCAL SYSTEM account. Alternatively, use the SetSpn.exe tool to create an SPN for the service account. In either case, the client must use the correct SPN in the [\&lt;servicePrincipalName\&gt;](~/docs/framework/configure-apps/file-schema/wcf/serviceprincipalname.md) element, or by using the <xref:System.ServiceModel.EndpointAddress> constructor. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Service Identity and Authentication](~/docs/framework/wcf/feature-details/service-identity-and-authentication.md).  
+  
+   
+  
+## Examples  
+ The following code shows how to access and set this property.  
+  
+ [!code-csharp[c_ProgrammingSecurity#7](~/samples/snippets/csharp/VS_Snippets_CFX/c_programmingsecurity/cs/source.cs#7)]
+ [!code-vb[c_ProgrammingSecurity#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_programmingsecurity/vb/source.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeAlgorithmSuite">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeAlgorithmSuite ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeAlgorithmSuite() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.MessageSecurityOverHttp.ShouldSerializeAlgorithmSuite" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.MessageSecurityOverHttp.AlgorithmSuite" /> property has changed from its default value and should be serialized.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.ServiceModel.MessageSecurityOverHttp.AlgorithmSuite" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeClientCredentialType">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeClientCredentialType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeClientCredentialType() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.MessageSecurityOverHttp.ShouldSerializeClientCredentialType" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.MessageSecurityOverHttp.ClientCredentialType" /> property has changed from its default value and should be serialized.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.ServiceModel.MessageSecurityOverHttp.ClientCredentialType" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeNegotiateServiceCredential">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeNegotiateServiceCredential ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeNegotiateServiceCredential() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.MessageSecurityOverHttp.ShouldSerializeNegotiateServiceCredential" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential" /> property has changed from its default value and should be serialized.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

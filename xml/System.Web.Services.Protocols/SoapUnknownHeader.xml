@@ -1,0 +1,88 @@
+<Type Name="SoapUnknownHeader" FullName="System.Web.Services.Protocols.SoapUnknownHeader">
+  <TypeSignature Language="C#" Value="public sealed class SoapUnknownHeader : System.Web.Services.Protocols.SoapHeader" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SoapUnknownHeader extends System.Web.Services.Protocols.SoapHeader" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapUnknownHeader" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Services.Protocols.SoapHeader</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the data received from a SOAP header that was not understood by the recipient XML Web service or XML Web service client. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A SOAP client might invoke an XML Web service with additional data beyond the required parameters in the form of a SOAP header. An XML Web service created using ASP.NET or an XML Web service client can view any SOAP headers it did not know about at the time the XML Web service was written by applying a <xref:System.Web.Services.Protocols.SoapHeaderAttribute> with a <xref:System.Web.Services.Protocols.SoapHeaderAttribute.MemberName%2A> property of either an array of <xref:System.Web.Services.Protocols.SoapHeader>, <xref:System.Web.Services.Protocols.SoapHeader>, <xref:System.Web.Services.Protocols.SoapUnknownHeader> or an array of <xref:System.Web.Services.Protocols.SoapUnknownHeader> to the XML Web service method. Specifying a <xref:System.Type> of <xref:System.Web.Services.Protocols.SoapUnknownHeader>, allows the XML Web service to view the contents of the SOAP header in the form of an <xref:System.Xml.XmlElement>.  
+  
+   
+  
+## Examples  
+ The `MyWebService` XML Web service accepts and processes the `MyHeader` SOAP header sent with any calls to the `MyWebMethod` XML Web service method. Additionally, `MyWebMethod` receives any SOAP headers other than the `MyHeader` SOAP header.  
+  
+  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SoapUnknownHeader ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapUnknownHeader.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapUnknownHeader" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Element">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlElement Element { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlElement Element" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapUnknownHeader.Element" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the XML Header element for a SOAP request or response.</summary>
+        <value>An <see cref="T:System.Xml.XmlElement" /> representing the raw XML of the SOAP header.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If an XML Web service method wants to process SOAP headers it does not know about at the time the XML Web service is written, it can process an <xref:System.Xml.XmlElement> class representing the raw XML of the SOAP header.  
+  
+   
+  
+## Examples  
+ The following `MyWebService` XML Web service receives all SOAP headers, including ones other than the `MyHeader` SOAP header it knows about. The `MyWebMethod` XML Web service method returns to the client the XML attributes of the last unknown SOAP header passed to it as a string.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

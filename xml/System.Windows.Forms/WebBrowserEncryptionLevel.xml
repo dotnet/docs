@@ -1,0 +1,137 @@
+<Type Name="WebBrowserEncryptionLevel" FullName="System.Windows.Forms.WebBrowserEncryptionLevel">
+  <TypeSignature Language="C#" Value="public enum WebBrowserEncryptionLevel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebBrowserEncryptionLevel extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WebBrowserEncryptionLevel" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies constants that define the encryption methods used by documents displayed in the <see cref="T:System.Windows.Forms.WebBrowser" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.Forms.WebBrowser.EncryptionLevel%2A?displayProperty=fullName> property to indicate the encryption used by a document displayed in the <xref:System.Windows.Forms.WebBrowser> control.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bit128">
+      <MemberSignature Language="C#" Value="Bit128" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.WebBrowserEncryptionLevel Bit128 = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.WebBrowserEncryptionLevel.Bit128" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.WebBrowserEncryptionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>128-bit security encryption.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Bit40">
+      <MemberSignature Language="C#" Value="Bit40" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.WebBrowserEncryptionLevel Bit40 = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.WebBrowserEncryptionLevel.Bit40" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.WebBrowserEncryptionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>40-bit security encryption.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Bit56">
+      <MemberSignature Language="C#" Value="Bit56" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.WebBrowserEncryptionLevel Bit56 = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.WebBrowserEncryptionLevel.Bit56" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.WebBrowserEncryptionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>56-bit security encryption.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Fortezza">
+      <MemberSignature Language="C#" Value="Fortezza" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.WebBrowserEncryptionLevel Fortezza = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.WebBrowserEncryptionLevel.Fortezza" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.WebBrowserEncryptionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Fortezza security encryption.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Insecure">
+      <MemberSignature Language="C#" Value="Insecure" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.WebBrowserEncryptionLevel Insecure = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.WebBrowserEncryptionLevel.Insecure" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.WebBrowserEncryptionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No security encryption.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Mixed">
+      <MemberSignature Language="C#" Value="Mixed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.WebBrowserEncryptionLevel Mixed = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.WebBrowserEncryptionLevel.Mixed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.WebBrowserEncryptionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Multiple security encryption methods in different Web page frames.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.WebBrowserEncryptionLevel Unknown = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.WebBrowserEncryptionLevel.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.WebBrowserEncryptionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Unknown security encryption.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

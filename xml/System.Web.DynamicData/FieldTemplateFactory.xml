@@ -1,0 +1,241 @@
+<Type Name="FieldTemplateFactory" FullName="System.Web.DynamicData.FieldTemplateFactory">
+  <TypeSignature Language="C#" Value="public class FieldTemplateFactory : System.Web.DynamicData.IFieldTemplateFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FieldTemplateFactory extends System.Object implements class System.Web.DynamicData.IFieldTemplateFactory" />
+  <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.FieldTemplateFactory" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DynamicData</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.DynamicData.IFieldTemplateFactory</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Creates a field template.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this class implements the <xref:System.Web.DynamicData.IFieldTemplateFactory> interface, and uses the <xref:System.Web.UI.UserControl> class to create field templates.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FieldTemplateFactory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FieldTemplateFactory.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes an instance of the <see cref="T:System.Web.DynamicData.FieldTemplateFactory" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildVirtualPath">
+      <MemberSignature Language="C#" Value="public virtual string BuildVirtualPath (string templateName, System.Web.DynamicData.MetaColumn column, System.Web.UI.WebControls.DataBoundControlMode mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string BuildVirtualPath(string templateName, class System.Web.DynamicData.MetaColumn column, valuetype System.Web.UI.WebControls.DataBoundControlMode mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FieldTemplateFactory.BuildVirtualPath(System.String,System.Web.DynamicData.MetaColumn,System.Web.UI.WebControls.DataBoundControlMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="templateName" Type="System.String" />
+        <Parameter Name="column" Type="System.Web.DynamicData.MetaColumn" />
+        <Parameter Name="mode" Type="System.Web.UI.WebControls.DataBoundControlMode" />
+      </Parameters>
+      <Docs>
+        <param name="templateName">The name of the template to use.</param>
+        <param name="column">Specifies the data column which the field template applies to.</param>
+        <param name="mode">Specifies the display mode of the field template.</param>
+        <summary>Builds the virtual path to a field template based on the field template name and the mode.</summary>
+        <returns>The virtual path to the field template.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this method builds the virtual path to a field template by using the template name, appending the mode and then adding a .ascx extension. For example, if `templateName` is MyFieldTemplate and `mode` is Edit, then the virtual path will be MyFieldTemplate_Edit.ascx, in the folder specified by the Template folder virtual path.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="templateName" /> is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFieldTemplate">
+      <MemberSignature Language="C#" Value="public virtual System.Web.DynamicData.IFieldTemplate CreateFieldTemplate (System.Web.DynamicData.MetaColumn column, System.Web.UI.WebControls.DataBoundControlMode mode, string uiHint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.DynamicData.IFieldTemplate CreateFieldTemplate(class System.Web.DynamicData.MetaColumn column, valuetype System.Web.UI.WebControls.DataBoundControlMode mode, string uiHint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FieldTemplateFactory.CreateFieldTemplate(System.Web.DynamicData.MetaColumn,System.Web.UI.WebControls.DataBoundControlMode,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.IFieldTemplate</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="column" Type="System.Web.DynamicData.MetaColumn" />
+        <Parameter Name="mode" Type="System.Web.UI.WebControls.DataBoundControlMode" />
+        <Parameter Name="uiHint" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="column">Specifies the data column which the field template applies to.</param>
+        <param name="mode">Specifies the display mode of the field template.</param>
+        <param name="uiHint">Specifies the field template to use.</param>
+        <summary>Creates an instance of a field template using the <see cref="T:System.Web.DynamicData.MetaColumn" /> class, the <see cref="T:System.Web.UI.WebControls.DataBoundControlMode" /> class and <see cref="P:System.Web.DynamicData.MetaColumn.UIHint" /> property.</summary>
+        <returns>An instance of the interface that the <see cref="T:System.Web.DynamicData.FieldTemplateFactory" /> class implements.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFieldTemplateVirtualPath">
+      <MemberSignature Language="C#" Value="public virtual string GetFieldTemplateVirtualPath (System.Web.DynamicData.MetaColumn column, System.Web.UI.WebControls.DataBoundControlMode mode, string uiHint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetFieldTemplateVirtualPath(class System.Web.DynamicData.MetaColumn column, valuetype System.Web.UI.WebControls.DataBoundControlMode mode, string uiHint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FieldTemplateFactory.GetFieldTemplateVirtualPath(System.Web.DynamicData.MetaColumn,System.Web.UI.WebControls.DataBoundControlMode,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="column" Type="System.Web.DynamicData.MetaColumn" />
+        <Parameter Name="mode" Type="System.Web.UI.WebControls.DataBoundControlMode" />
+        <Parameter Name="uiHint" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="column">Specifies the data column which the field template applies to.</param>
+        <param name="mode">Specifies the display mode of the field template-Read Only, Edit, or Insert.</param>
+        <param name="uiHint">Specifies the field template to use. This parameter affects the field template look up.</param>
+        <summary>Determines the virtual path of a field template.</summary>
+        <returns>The virtual path of the field template.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Dynamic Data field templates are created in the DynamicData/FieldTemplates/ folder but you can create a new folder for your field templates. This method determines the virtual path for the folder that contains the field template using the specified parameters.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public virtual void Initialize (System.Web.DynamicData.MetaModel model);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(class System.Web.DynamicData.MetaModel model) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FieldTemplateFactory.Initialize(System.Web.DynamicData.MetaModel)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="model" Type="System.Web.DynamicData.MetaModel" />
+      </Parameters>
+      <Docs>
+        <param name="model">Specifies the data model to associate with the <see cref="T:System.Web.DynamicData.FieldTemplateFactory" />.</param>
+        <summary>Associates a <see cref="T:System.Web.DynamicData.MetaModel" /> with a <see cref="T:System.Web.DynamicData.FieldTemplateFactory" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Model">
+      <MemberSignature Language="C#" Value="public System.Web.DynamicData.MetaModel Model { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.MetaModel Model" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FieldTemplateFactory.Model" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.MetaModel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Web.DynamicData.MetaModel" /> that is associated with the <see cref="T:System.Web.DynamicData.FieldTemplateFactory" /> class</summary>
+        <value>The model that is associated with the <see cref="T:System.Web.DynamicData.FieldTemplateFactory" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.MetaModel> class is an abstract class that represents the mapping between a database and domain objects. Dynamic Data provides a set of classes (the data model) that represent the model. The classes are generated through the Object Relational Designer (O/R Designer). You can use the LINQ to SQL Classes template to generate these classes. This property is used to get and set the data model associated with the <xref:System.Web.DynamicData.FieldTemplateFactory> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreprocessMode">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.DataBoundControlMode PreprocessMode (System.Web.DynamicData.MetaColumn column, System.Web.UI.WebControls.DataBoundControlMode mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Web.UI.WebControls.DataBoundControlMode PreprocessMode(class System.Web.DynamicData.MetaColumn column, valuetype System.Web.UI.WebControls.DataBoundControlMode mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FieldTemplateFactory.PreprocessMode(System.Web.DynamicData.MetaColumn,System.Web.UI.WebControls.DataBoundControlMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataBoundControlMode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="column" Type="System.Web.DynamicData.MetaColumn" />
+        <Parameter Name="mode" Type="System.Web.UI.WebControls.DataBoundControlMode" />
+      </Parameters>
+      <Docs>
+        <param name="column">The column for which the field template is needed.</param>
+        <param name="mode">The mode (Read Only, Edit, or Insert) to change to.</param>
+        <summary>Changes the mode of the data column.</summary>
+        <returns>The mode that a column renders.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Dynamic Data renders data in Read Only, Insert, or Edits modes. This method controls which mode is rendered in the column. For example, an Edit mode request changes to Read Only if the column is a primary key column. Columns that are automatically generated and foreign keys that are part of the primary key cannot be edited.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateFolderVirtualPath">
+      <MemberSignature Language="C#" Value="public string TemplateFolderVirtualPath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TemplateFolderVirtualPath" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FieldTemplateFactory.TemplateFolderVirtualPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the folder in which to create a field template.</summary>
+        <value>The path to the folder that contains the field templates.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default folder where field templates are created is the /DynamicData/FieldTemplates/. This folder contains the default field templates and custom field templates that you create. If you create and specify a different folder for the field templates, Dynamic Data will create the field templates in the folder you specify. For more information about field templates, see [ASP.NET Dynamic Data Scaffolding](http://msdn.microsoft.com/library/e0166a58-9178-4660-81a6-175994b11b12).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

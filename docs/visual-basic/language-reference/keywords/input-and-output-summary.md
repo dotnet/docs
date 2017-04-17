@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "I/O [Visual Basic], functions"
 ms.assetid: 6b0cbb88-6593-43b8-8a40-a61563bc0ce9
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

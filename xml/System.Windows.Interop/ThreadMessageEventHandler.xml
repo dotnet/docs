@@ -1,0 +1,26 @@
+<Type Name="ThreadMessageEventHandler" FullName="System.Windows.Interop.ThreadMessageEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void ThreadMessageEventHandler(ref MSG msg, ref bool handled);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ThreadMessageEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Interop.ThreadMessageEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="msg" Type="System.Windows.Interop.MSG&amp;" RefType="ref" />
+    <Parameter Name="handled" Type="System.Boolean&amp;" RefType="ref" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="msg">A structure with the message data.</param>
+    <param name="handled">
+      <see langword="true" /> if the message was handled; otherwise, <see langword="false" />.</param>
+    <summary>Represents the method that handles the <see cref="E:System.Windows.Interop.ComponentDispatcher.ThreadFilterMessage" /> and <see cref="E:System.Windows.Interop.ComponentDispatcher.ThreadPreprocessMessage" /> events.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

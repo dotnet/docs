@@ -1,0 +1,302 @@
+<Type Name="GenericPair&lt;TValue1,TValue2&gt;" FullName="Microsoft.VisualC.StlClr.GenericPair&lt;TValue1,TValue2&gt;">
+  <TypeSignature Language="C#" Value="public class GenericPair&lt;TValue1,TValue2&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GenericPair`2&lt;TValue1, TValue2&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.GenericPair`2" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TValue1" />
+    <TypeParameter Name="TValue2" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TValue1">Type of the first value in the pair.</typeparam>
+    <typeparam name="TValue2">Type of the second value in the pair.</typeparam>
+    <summary>Describes an object that wraps a pair of values.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [pair (STL/CLR)](http://msdn.microsoft.com/library/3326b4d9-a52a-49e5-8103-9aa5e8b352de).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GenericPair ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.GenericPair`2.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>Constructs a new <see cref="T:Microsoft.VisualC.StlClr.GenericPair`2" /> object with default values for <see cref="F:Microsoft.VisualC.StlClr.GenericPair`2.first" /> and <see cref="F:Microsoft.VisualC.StlClr.GenericPair`2.second" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [pair::pair (STL/CLR)](http://msdn.microsoft.com/library/188035f3-bd37-4b46-96dd-5ceb9a16df79).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GenericPair (Microsoft.VisualC.StlClr.GenericPair _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.VisualC.StlClr.GenericPair`2 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.GenericPair`2.#ctor(Microsoft.VisualC.StlClr.GenericPair{`0,`1}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.GenericPair" />
+      </Parameters>
+      <Docs>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GenericPair (ref System.Collections.Generic.KeyValuePair&lt;TValue1,TValue2&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Collections.Generic.KeyValuePair`2&lt;!TValue1, !TValue2&gt; _Right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.GenericPair`2.#ctor(System.Collections.Generic.KeyValuePair{`0,`1}@)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="_Right" Type="System.Collections.Generic.KeyValuePair&lt;TValue1,TValue2&gt;&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="_Right">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> object to be copied into the new <see cref="T:Microsoft.VisualC.StlClr.GenericPair`2" /> object.</param>
+        <summary>Constructs a new <see cref="T:Microsoft.VisualC.StlClr.GenericPair`2" /> object from an existing <see cref="T:System.Collections.Generic.KeyValuePair`2" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [pair::pair (STL/CLR)](http://msdn.microsoft.com/library/188035f3-bd37-4b46-96dd-5ceb9a16df79).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GenericPair (TValue1 _Val1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!TValue1 _Val1) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.GenericPair`2.#ctor(`0)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="_Val1" Type="TValue1" />
+      </Parameters>
+      <Docs>
+        <param name="_Val1">The value to store in <see cref="F:Microsoft.VisualC.StlClr.GenericPair`2.first" />. The <see cref="F:Microsoft.VisualC.StlClr.GenericPair`2.second" /> value is assigned the default value for its type.</param>
+        <summary>Constructs a new <see cref="T:Microsoft.VisualC.StlClr.GenericPair`2" /> object and assigns its first value to the specified value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [pair::pair (STL/CLR)](http://msdn.microsoft.com/library/188035f3-bd37-4b46-96dd-5ceb9a16df79).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GenericPair (TValue1 _Val1, TValue2 _Val2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!TValue1 _Val1, !TValue2 _Val2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.GenericPair`2.#ctor(`0,`1)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="_Val1" Type="TValue1" />
+        <Parameter Name="_Val2" Type="TValue2" />
+      </Parameters>
+      <Docs>
+        <param name="_Val1">The value to store in <see cref="F:Microsoft.VisualC.StlClr.GenericPair`2.first" />.</param>
+        <param name="_Val2">The value to store in <see cref="F:Microsoft.VisualC.StlClr.GenericPair`2.second" />.</param>
+        <summary>Constructs a new <see cref="T:Microsoft.VisualC.StlClr.GenericPair`2" /> object with the two values specified.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [pair::pair (STL/CLR)](http://msdn.microsoft.com/library/188035f3-bd37-4b46-96dd-5ceb9a16df79).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object _Right_arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object _Right_arg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.GenericPair`2.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Right_arg" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="_Right_arg">The <see cref="T:Microsoft.VisualC.StlClr.GenericPair`2" /> object to compare with the current <see cref="T:Microsoft.VisualC.StlClr.GenericPair`2" /> object.</param>
+        <summary>Determines if two <see cref="T:Microsoft.VisualC.StlClr.GenericPair`2" /> objects are equal.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:Microsoft.VisualC.StlClr.GenericPair`2" /> objects are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [operator== (pair) (STL/CLR)](http://msdn.microsoft.com/library/2b4879a1-f326-4fb3-b113-bd8d457f9802).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="first">
+      <MemberSignature Language="C#" Value="public TValue1 first;" />
+      <MemberSignature Language="ILAsm" Value=".field public !TValue1 first" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualC.StlClr.GenericPair`2.first" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1051")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>TValue1</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The first wrapped value of the <see cref="T:Microsoft.VisualC.StlClr.GenericPair`2" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [pair::first (STL/CLR)](http://msdn.microsoft.com/library/0dd2278f-adf9-46df-8ac8-7e8e1a2ef52e).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Assign">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualC.StlClr.GenericPair op_Assign (Microsoft.VisualC.StlClr.GenericPair _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class Microsoft.VisualC.StlClr.GenericPair`2 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) op_Assign(class Microsoft.VisualC.StlClr.GenericPair`2 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.GenericPair`2.op_Assign(Microsoft.VisualC.StlClr.GenericPair{`0,`1}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualC.StlClr.GenericPair</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.GenericPair" />
+      </Parameters>
+      <Docs>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="second">
+      <MemberSignature Language="C#" Value="public TValue2 second;" />
+      <MemberSignature Language="ILAsm" Value=".field public !TValue2 second" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualC.StlClr.GenericPair`2.second" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1051")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>TValue2</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The second wrapped value of the <see cref="T:Microsoft.VisualC.StlClr.GenericPair`2" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [pair::second (STL/CLR)](http://msdn.microsoft.com/library/f30d3d1f-c7be-45d2-92ff-6861b96a92ff).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="swap">
+      <MemberSignature Language="C#" Value="public void swap (Microsoft.VisualC.StlClr.GenericPair _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void swap(class Microsoft.VisualC.StlClr.GenericPair`2 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.GenericPair`2.swap(Microsoft.VisualC.StlClr.GenericPair{`0,`1}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.GenericPair" />
+      </Parameters>
+      <Docs>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Constructs a new <see cref="T:Microsoft.VisualC.StlClr.GenericPair`2" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [pair::pair (STL/CLR)](http://msdn.microsoft.com/library/188035f3-bd37-4b46-96dd-5ceb9a16df79).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

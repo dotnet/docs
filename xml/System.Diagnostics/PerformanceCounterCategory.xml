@@ -1,0 +1,1376 @@
+<Type Name="PerformanceCounterCategory" FullName="System.Diagnostics.PerformanceCounterCategory">
+  <TypeSignature Language="C#" Value="public sealed class PerformanceCounterCategory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PerformanceCounterCategory extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.PerformanceCounterCategory" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a performance object, which defines a category of performance counters.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  Creating or deleting a performance counter requires synchronization of the underlying code by using a named mutex. If a highly privileged application locks the named mutex, attempts to create or delete a performance counter causes the application to stop responding until the lock is released. To help avoid this problem, never grant <xref:System.Security.Permissions.SecurityPermissionFlag> permission to untrusted code. In addition, <xref:System.Security.Permissions.SecurityPermissionFlag> permission potentially allows other permissions to be bypassed and should only be granted to highly trusted code.  
+  
+ The <xref:System.Diagnostics.PerformanceCounterCategory> instance's <xref:System.Diagnostics.PerformanceCounterCategory.CategoryName%2A> property is displayed in the Performance Object field of the Performance Viewer application's Add Counter dialog box.  
+  
+ The <xref:System.Diagnostics.PerformanceCounterCategory> class provides several methods for interacting with counters and categories on the computer. The <xref:System.Diagnostics.PerformanceCounterCategory.Create%2A> methods enable you to define custom categories. The <xref:System.Diagnostics.PerformanceCounterCategory.Delete%2A> method provides a way to remove categories from the computer. The <xref:System.Diagnostics.PerformanceCounterCategory.GetCategories%2A> method enables you to view the list of categories, while <xref:System.Diagnostics.PerformanceCounterCategory.ReadCategory%2A> retrieves all the counter and instance data associated with a single category.  
+  
+ A performance counter publishes performance data about an application. Categories include physical components (such as processors, disks, and memory) and system objects (such as processes and threads). System counters that are related to the same performance object are grouped into a category that indicates their common focus. When you create an instance of the <xref:System.Diagnostics.PerformanceCounter> class, you first indicate the category with which the component will interact, and then you choose a counter from that category.  
+  
+ For example, one Windows counter category is the Memory category. System counters within this category track memory data such as the number of bytes available and the number of bytes cached. If you wanted to work with the bytes cached in your application, you would create an instance of the <xref:System.Diagnostics.PerformanceCounter> component, connect it to the Memory category, and then pick the appropriate counter (in this case, Cached Bytes) from that category.  
+  
+ Although your system makes many more counter categories available, the categories that you will probably interact with most frequently are the Cache, Memory, Objects, PhysicalDisk, Process, Processor, Server, System, and Thread categories.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Diagnostics.PerformanceCounter.RemoveInstance%2A> method in the <xref:System.Diagnostics.PerformanceCounter> class will release the counter and, if the reuse option is selected for that category, the instance of the counter will be reused. This could cause a race condition if another process or even another part of the code is trying to write to the counter instance.  
+  
+> [!NOTE]
+>  It is strongly recommended that new performance counter categories be created during the installation of the application, not during the execution of the application. This allows time for the operating system to refresh its list of registered performance counter categories. If the list has not been refreshed, the attempt to use the category will fail.  
+  
+> [!NOTE]
+>  Performance counter categories installed with the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] use separate shared memory, with each performance counter category having its own memory. You can specify the size of separate shared memory by creating a DWORD named FileMappingSize in the registry key HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\\*\<category name>*\Performance. The FileMappingSize value is set to the shared memory size of the category. The default size is 131072 decimal. If the FileMappingSize value is not present, the `fileMappingSize` attribute value for the `performanceCounters` element specified in the Machine.config file is used, causing additional overhead for configuration file processing. You can realize a performance improvement for application startup by setting the file mapping size in the registry. For more information about the file mapping size, see [\&lt;performanceCounters\&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/performancecounters-element.md).  
+  
+   
+  
+## Examples  
+ The following code example determines whether a <xref:System.Diagnostics.PerformanceCounter> and its <xref:System.Diagnostics.PerformanceCounterCategory> exist on the local computer or on another computer. If these objects do not exist on the local computer, the example optionally creates them. It uses the <xref:System.Diagnostics.PerformanceCounterCategory.Exists%2A> method to determine whether the <xref:System.Diagnostics.PerformanceCounterCategory> exists.  If the <xref:System.Diagnostics.PerformanceCounterCategory> does not exist and no counter name is specified, or if the computer is a remote machine, the example exits.  
+  
+ If a <xref:System.Diagnostics.PerformanceCounter> name is provided, the example uses the <xref:System.Diagnostics.PerformanceCounterCategory.CounterExists%2A> method and displays the result to the user. If the <xref:System.Diagnostics.PerformanceCounter> does not exist, the user can delete and re-create the <xref:System.Diagnostics.PerformanceCounterCategory> with the new <xref:System.Diagnostics.PerformanceCounter>. If the user does so, the category is deleted using the <xref:System.Diagnostics.PerformanceCounterCategory.Delete%2A> method.  
+  
+ If requested, the example now creates the new <xref:System.Diagnostics.PerformanceCounterCategory> and <xref:System.Diagnostics.PerformanceCounter> using the <xref:System.Diagnostics.PerformanceCounterCategory.Create%2A> method. If an instance name is specified, the example uses the <xref:System.Diagnostics.PerformanceCounterCategory.InstanceExists%2A> method and displays the result.  
+  
+ [!code-csharp[System.Diagnostics.PerformanceCounterCategory.Class#27](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.Class/CS/perfcountercatcreateexist.cs#27)]
+ [!code-vb[System.Diagnostics.PerformanceCounterCategory.Class#27](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.Class/VB/perfcountercatcreateexist.vb#27)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PerformanceCounterCategory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.PerformanceCounterCategory" /> class, leaves the <see cref="P:System.Diagnostics.PerformanceCounterCategory.CategoryName" /> property empty, and sets the <see cref="P:System.Diagnostics.PerformanceCounterCategory.MachineName" /> property to the local computer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Diagnostics.PerformanceCounterCategory.CategoryName%2A> property must be set before associating this <xref:System.Diagnostics.PerformanceCounterCategory> instance with a performance object on the server. Otherwise, an exception is thrown.  
+  
+   
+  
+## Examples  
+ The following code example accepts a <xref:System.Diagnostics.PerformanceCounterCategory> name and a computer name from the command line.  It creates a <xref:System.Diagnostics.PerformanceCounterCategory> using the constructor overload appropriate for the number of parameters provided, then displays its properties.  
+  
+ [!code-csharp[System.Diagnostics.PerformanceCounterCategory.OtherMembers#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.OtherMembers/CS/perfcountercatctor.cs#4)]
+ [!code-vb[System.Diagnostics.PerformanceCounterCategory.OtherMembers#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.OtherMembers/VB/perfcountercatctor.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PerformanceCounterCategory (string categoryName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string categoryName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="categoryName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="categoryName">The name of the performance counter category, or performance object, with which to associate this <see cref="T:System.Diagnostics.PerformanceCounterCategory" /> instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.PerformanceCounterCategory" /> class, sets the <see cref="P:System.Diagnostics.PerformanceCounterCategory.CategoryName" /> property to the specified value, and sets the <see cref="P:System.Diagnostics.PerformanceCounterCategory.MachineName" /> property to the local computer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example accepts a <xref:System.Diagnostics.PerformanceCounterCategory> name and a computer name from the command line. It creates a <xref:System.Diagnostics.PerformanceCounterCategory> using the constructor overload that is appropriate for the number of parameters provided, then displays its properties.  
+  
+ [!code-csharp[System.Diagnostics.PerformanceCounterCategory.OtherMembers#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.OtherMembers/CS/perfcountercatctor.cs#4)]
+ [!code-vb[System.Diagnostics.PerformanceCounterCategory.OtherMembers#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.OtherMembers/VB/perfcountercatctor.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="categoryName" /> is an empty string ("").</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="categoryName" /> is <see langword="null" />.</exception>
+        <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading category information, such as the category name. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PerformanceCounterCategory (string categoryName, string machineName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string categoryName, string machineName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="categoryName" Type="System.String" />
+        <Parameter Name="machineName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="categoryName">The name of the performance counter category, or performance object, with which to associate this <see cref="T:System.Diagnostics.PerformanceCounterCategory" /> instance.</param>
+        <param name="machineName">The computer on which the performance counter category and its associated counters exist.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.PerformanceCounterCategory" /> class and sets the <see cref="P:System.Diagnostics.PerformanceCounterCategory.CategoryName" /> and <see cref="P:System.Diagnostics.PerformanceCounterCategory.MachineName" /> properties to the specified values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example accepts a <xref:System.Diagnostics.PerformanceCounterCategory> name and a computer name from the command line. It creates a <xref:System.Diagnostics.PerformanceCounterCategory> using the constructor overload that is appropriate for the number of parameters provided, then displays its properties.  
+  
+ [!code-csharp[System.Diagnostics.PerformanceCounterCategory.OtherMembers#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.OtherMembers/CS/perfcountercatctor.cs#4)]
+ [!code-vb[System.Diagnostics.PerformanceCounterCategory.OtherMembers#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.OtherMembers/VB/perfcountercatctor.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="categoryName" /> is an empty string ("").  
+  
+ -or-  
+  
+ The <paramref name="machineName" /> syntax is invalid.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="categoryName" /> is <see langword="null" />.</exception>
+        <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading category information, such as the computer and category name. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CategoryHelp">
+      <MemberSignature Language="C#" Value="public string CategoryHelp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CategoryHelp" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounterCategory.CategoryHelp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the category's help text.</summary>
+        <value>A description of the performance object that this category measures.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a <xref:System.Diagnostics.PerformanceCounterCategory> with the <xref:System.Diagnostics.PerformanceCounterCategory.%23ctor>. It prompts the user for the <xref:System.Diagnostics.PerformanceCounterCategory> and computer names, then sets the <xref:System.Diagnostics.PerformanceCounterCategory.CategoryName%2A> and <xref:System.Diagnostics.PerformanceCounterCategory.MachineName%2A> properties from the entered values. It then displays the values of the <xref:System.Diagnostics.PerformanceCounterCategory.CategoryName%2A>, <xref:System.Diagnostics.PerformanceCounterCategory.MachineName%2A>, and <xref:System.Diagnostics.PerformanceCounterCategory.CategoryHelp%2A> properties, or it displays an error message if the <xref:System.Diagnostics.PerformanceCounterCategory> cannot be accessed.  
+  
+ [!code-csharp[System.Diagnostics.PerformanceCounterCategory.OtherMembers#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.OtherMembers/CS/perfCounterCatProps.cs#8)]
+ [!code-vb[System.Diagnostics.PerformanceCounterCategory.OtherMembers#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.OtherMembers/VB/perfcountercatprops.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Diagnostics.PerformanceCounterCategory.CategoryName" /> property is <see langword="null" />. The category name must be set before getting the category help.</exception>
+        <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CategoryName">
+      <MemberSignature Language="C#" Value="public string CategoryName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CategoryName" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounterCategory.CategoryName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the performance object that defines this category.</summary>
+        <value>The name of the performance counter category, or performance object, with which to associate this <see cref="T:System.Diagnostics.PerformanceCounterCategory" /> instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a <xref:System.Diagnostics.PerformanceCounterCategory> with the <xref:System.Diagnostics.PerformanceCounterCategory.%23ctor>. It prompts the user for the <xref:System.Diagnostics.PerformanceCounterCategory> and computer names, then sets the <xref:System.Diagnostics.PerformanceCounterCategory.CategoryName%2A> and <xref:System.Diagnostics.PerformanceCounterCategory.MachineName%2A> properties from the entered values. It then displays the values of the <xref:System.Diagnostics.PerformanceCounterCategory.CategoryName%2A>, <xref:System.Diagnostics.PerformanceCounterCategory.MachineName%2A>, and <xref:System.Diagnostics.PerformanceCounterCategory.CategoryHelp%2A> properties, or it displays an error message if the <xref:System.Diagnostics.PerformanceCounterCategory> cannot be accessed.  
+  
+ [!code-csharp[System.Diagnostics.PerformanceCounterCategory.OtherMembers#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.OtherMembers/CS/perfCounterCatProps.cs#8)]
+ [!code-vb[System.Diagnostics.PerformanceCounterCategory.OtherMembers#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.OtherMembers/VB/perfcountercatprops.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Diagnostics.PerformanceCounterCategory.CategoryName" /> is an empty string ("").</exception>
+        <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Diagnostics.PerformanceCounterCategory.CategoryName" /> is <see langword="null" />.</exception>
+        <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CategoryType">
+      <MemberSignature Language="C#" Value="public System.Diagnostics.PerformanceCounterCategoryType CategoryType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.PerformanceCounterCategoryType CategoryType" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounterCategory.CategoryType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterCategoryType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the performance counter category type.</summary>
+        <value>One of the <see cref="T:System.Diagnostics.PerformanceCounterCategoryType" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Diagnostics.PerformanceCounterCategory.CategoryType%2A> property indicates whether the <xref:System.Diagnostics.PerformanceCounterCategory> object can have multiple instances. The possible values are <xref:System.Diagnostics.PerformanceCounterCategoryType>, <xref:System.Diagnostics.PerformanceCounterCategoryType>, or <xref:System.Diagnostics.PerformanceCounterCategoryType>.  
+  
+ There are two types of performance counter categories: single-instance and multi-instance. By default, a category is single-instance when it is created and becomes multi-instance when another instance is added. Categories are created when an application is set up, and instances are added at run time. In the .NET Framework versions 1.0 and 1.1, it is not necessary to know if a performance counter category is multi-instance or single-instance. In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the <xref:System.Diagnostics.PerformanceCounterCategoryType> enumeration is used to indicate whether a performance counter can have multiple instances.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CounterExists">
+      <MemberSignature Language="C#" Value="public bool CounterExists (string counterName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CounterExists(string counterName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.CounterExists(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="counterName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="counterName">The name of the performance counter to look for.</param>
+        <summary>Determines whether the specified counter is registered to this category, which is indicated by the <see cref="P:System.Diagnostics.PerformanceCounterCategory.CategoryName" /> and <see cref="P:System.Diagnostics.PerformanceCounterCategory.MachineName" /> properties.</summary>
+        <returns>
+          <see langword="true" /> if the counter is registered to the category that is specified by the <see cref="P:System.Diagnostics.PerformanceCounterCategory.CategoryName" /> and <see cref="P:System.Diagnostics.PerformanceCounterCategory.MachineName" /> properties; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You must set the <xref:System.Diagnostics.PerformanceCounterCategory.CategoryName%2A> property before calling this method. Otherwise, an exception is thrown.  
+  
+ If you have not set the <xref:System.Diagnostics.PerformanceCounterCategory.MachineName%2A> property, this method uses the local computer (".").  
+  
+> [!NOTE]
+>  To read performance counters in Windows Vista and later, Windows XP Professional x64 Edition, or Windows Server 2003, you must either be a member of the Performance Monitor Users group or have administrative privileges.  
+>   
+>  To avoid having to elevate your privileges to access performance counters in Windows Vista and later, add yourself to the Performance Monitor Users group.  
+>   
+>  In Windows Vista and later, User Account Control (UAC) determines the privileges of a user. If you are a member of the Built-in Administrators group, you are assigned two run-time access tokens: a standard user access token and an administrator access token. By default, you are in the standard user role. To execute the code that accesses performance counters, you must first elevate your privileges from standard user to administrator. You can do this when you start an application by right-clicking the application icon and indicating that you want to run as an administrator.  
+  
+   
+  
+## Examples  
+ The following code example determines whether a <xref:System.Diagnostics.PerformanceCounter> exists. It gets a category name, counter name, and computer name from the command line, if they are given. It creates a <xref:System.Diagnostics.PerformanceCounterCategory> object using the appropriate <xref:System.Diagnostics.PerformanceCounterCategory.%23ctor%2A>. It then uses the <xref:System.Diagnostics.PerformanceCounterCategory.CounterExists%28System.String%29> method to determine whether the specified <xref:System.Diagnostics.PerformanceCounter> exists, and informs the user.  
+  
+ [!code-csharp[System.Diagnostics.PerformanceCounterCategory.ExistMembers#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.ExistMembers/CS/perfcountercatobjexists.cs#4)]
+ [!code-vb[System.Diagnostics.PerformanceCounterCategory.ExistMembers#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.ExistMembers/VB/perfcountercatobjcountexists.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="counterName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Diagnostics.PerformanceCounterCategory.CategoryName" /> property has not been set.</exception>
+        <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CounterExists">
+      <MemberSignature Language="C#" Value="public static bool CounterExists (string counterName, string categoryName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CounterExists(string counterName, string categoryName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.CounterExists(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="counterName" Type="System.String" />
+        <Parameter Name="categoryName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="counterName">The name of the performance counter to look for.</param>
+        <param name="categoryName">The name of the performance counter category, or performance object, with which the specified performance counter is associated.</param>
+        <summary>Determines whether the specified counter is registered to the specified category on the local computer.</summary>
+        <returns>
+          <see langword="true" />, if the counter is registered to the specified category on the local computer; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  To read performance counters in Windows Vista and later, Windows XP Professional x64 Edition, or Windows Server 2003, you must either be a member of the Performance Monitor Users group or have administrative privileges.  
+>   
+>  To avoid having to elevate your privileges to access performance counters in Windows Vista and later, add yourself to the Performance Monitor Users group.  
+>   
+>  In Windows Vista and later, User Account Control (UAC) determines the privileges of a user. If you are a member of the Built-in Administrators group, you are assigned two run-time access tokens: a standard user access token and an administrator access token. By default, you are in the standard user role. To execute the code that accesses performance counters, you must first elevate your privileges from standard user to administrator. You can do this when you start an application by right-clicking the application icon and indicating that you want to run as an administrator.  
+  
+   
+  
+## Examples  
+ The following code example determines whether a <xref:System.Diagnostics.PerformanceCounter> exists. It gets a category name, counter name, and computer name from the command line, if they are given. It uses the static overloads of the <xref:System.Diagnostics.PerformanceCounterCategory.CounterExists%2A> method to determine whether the specified <xref:System.Diagnostics.PerformanceCounter> name exists in the <xref:System.Diagnostics.PerformanceCounterCategory>. The overload is selected based on whether a computer name is provided.  
+  
+ [!code-csharp[System.Diagnostics.PerformanceCounterCategory.ExistMembers#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.ExistMembers/CS/perfcountercatstatcounterexists.cs#8)]
+ [!code-vb[System.Diagnostics.PerformanceCounterCategory.ExistMembers#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.ExistMembers/VB/perfcountercatstatcountexists.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="categoryName" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="counterName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="categoryName" /> is an empty string ("").</exception>
+        <exception cref="T:System.InvalidOperationException">The category name does not exist.</exception>
+        <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
+        <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CounterExists">
+      <MemberSignature Language="C#" Value="public static bool CounterExists (string counterName, string categoryName, string machineName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CounterExists(string counterName, string categoryName, string machineName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.CounterExists(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="counterName" Type="System.String" />
+        <Parameter Name="categoryName" Type="System.String" />
+        <Parameter Name="machineName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="counterName">The name of the performance counter to look for.</param>
+        <param name="categoryName">The name of the performance counter category, or performance object, with which the specified performance counter is associated.</param>
+        <param name="machineName">The name of the computer on which the performance counter category and its associated counters exist.</param>
+        <summary>Determines whether the specified counter is registered to the specified category on a remote computer.</summary>
+        <returns>
+          <see langword="true" />, if the counter is registered to the specified category on the specified computer; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  To read performance counters in Windows Vista and later, Windows XP Professional x64 Edition, or Windows Server 2003, you must either be a member of the Performance Monitor Users group or have administrative privileges.  
+>   
+>  To avoid having to elevate your privileges to access performance counters in Windows Vista and later, add yourself to the Performance Monitor Users group.  
+>   
+>  In Windows Vista and later, User Account Control (UAC) determines the privileges of a user. If you are a member of the Built-in Administrators group, you are assigned two run-time access tokens: a standard user access token and an administrator access token. By default, you are in the standard user role. To execute the code that accesses performance counters, you must first elevate your privileges from standard user to administrator. You can do this when you start an application by right-clicking the application icon and indicating that you want to run as an administrator.  
+  
+   
+  
+## Examples  
+ The following code example determines whether a <xref:System.Diagnostics.PerformanceCounter> exists. It gets a category name, counter name, and computer name from the command line, if they are given. It uses the static overloads of the <xref:System.Diagnostics.PerformanceCounterCategory.CounterExists%2A> method to determine whether the specified <xref:System.Diagnostics.PerformanceCounter> name exists in the <xref:System.Diagnostics.PerformanceCounterCategory>. The overload is selected based on whether a computer name is provided.  
+  
+ [!code-csharp[System.Diagnostics.PerformanceCounterCategory.ExistMembers#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.ExistMembers/CS/perfcountercatstatcounterexists.cs#8)]
+ [!code-vb[System.Diagnostics.PerformanceCounterCategory.ExistMembers#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.ExistMembers/VB/perfcountercatstatcountexists.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="categoryName" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="counterName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="categoryName" /> is an empty string ("").  
+  
+ -or-  
+  
+ The <paramref name="machineName" /> is invalid.</exception>
+        <exception cref="T:System.InvalidOperationException">The category name does not exist.</exception>
+        <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
+        <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Diagnostics.PerformanceCounterCategory Create (string categoryName, string categoryHelp, System.Diagnostics.CounterCreationDataCollection counterData);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.PerformanceCounterCategory Create(string categoryName, string categoryHelp, class System.Diagnostics.CounterCreationDataCollection counterData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.Create(System.String,System.String,System.Diagnostics.CounterCreationDataCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use another overload that uses PerformanceCounterCategoryType instead")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterCategory</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="categoryName" Type="System.String" />
+        <Parameter Name="categoryHelp" Type="System.String" />
+        <Parameter Name="counterData" Type="System.Diagnostics.CounterCreationDataCollection" />
+      </Parameters>
+      <Docs>
+        <param name="categoryName">The name of the custom performance counter category to create and register with the system.</param>
+        <param name="categoryHelp">A description of the custom category.</param>
+        <param name="counterData">A <see cref="T:System.Diagnostics.CounterCreationDataCollection" /> that specifies the counters to create as part of the new category.</param>
+        <summary>Registers the custom performance counter category containing the specified counters on the local computer.</summary>
+        <returns>A <see cref="T:System.Diagnostics.PerformanceCounterCategory" /> that is associated with the new custom category, or performance object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  To read performance counters in Windows Vista and later, Windows XP Professional x64 Edition, or Windows Server 2003, you must either be a member of the Performance Monitor Users group or have administrative privileges.  
+>   
+>  To avoid having to elevate your privileges to access performance counters in Windows Vista and later, add yourself to the Performance Monitor Users group.  
+>   
+>  In Windows Vista and later, User Account Control (UAC) determines the privileges of a user. If you are a member of the Built-in Administrators group, you are assigned two run-time access tokens: a standard user access token and an administrator access token. By default, you are in the standard user role. To execute the code that accesses performance counters, you must first elevate your privileges from standard user to administrator. You can do this when you start an application by right-clicking the application icon and indicating that you want to run as an administrator.  
+  
+   
+  
+## Examples  
+ The following code example determines whether a <xref:System.Diagnostics.PerformanceCounterCategory> object named "orders" exists. If not, it creates the <xref:System.Diagnostics.PerformanceCounterCategory> object by using a <xref:System.Diagnostics.CounterCreationDataCollection> object that contains two performance counters.  
+  
+ [!code-cpp[PerfCounter_ccd#1](~/samples/snippets/cpp/VS_Snippets_CLR/PerfCounter_ccd/CPP/ccd.cpp#1)]
+ [!code-csharp[PerfCounter_ccd#1](~/samples/snippets/csharp/VS_Snippets_CLR/PerfCounter_ccd/CS/ccd.cs#1)]
+ [!code-vb[PerfCounter_ccd#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/PerfCounter_ccd/VB/ccd.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">A counter name that is specified within the <paramref name="counterData" /> collection is <see langword="null" /> or an empty string ("").  
+  
+ -or-  
+  
+ A counter that is specified within the <paramref name="counterData" /> collection already exists.  
+  
+ -or-  
+  
+ The <paramref name="counterName" /> parameter has invalid syntax. It might contain backslash characters ("\\") or have length greater than 80 characters.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="categoryName" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The category already exists on the local computer.  
+  
+ -or-  
+  
+ The layout of the <paramref name="counterData" /> collection is incorrect for base counters. A counter of type <see langword="AverageCount64" />, <see langword="AverageTimer32" />, <see langword="CounterMultiTimer" />, <see langword="CounterMultiTimerInverse" />, <see langword="CounterMultiTimer100Ns" />, <see langword="CounterMultiTimer100NsInverse" />, <see langword="RawFraction" />, <see langword="SampleFraction" /> or <see langword="SampleCounter" /> has to be immediately followed by one of the base counter types (<see langword="AverageBase" />, <see langword="MultiBase" />, <see langword="RawBase" />, or <see langword="SampleBase" />).</exception>
+        <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
+        <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for performing administrative tasks on performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Administer" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Diagnostics.PerformanceCounterCategory Create (string categoryName, string categoryHelp, System.Diagnostics.PerformanceCounterCategoryType categoryType, System.Diagnostics.CounterCreationDataCollection counterData);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.PerformanceCounterCategory Create(string categoryName, string categoryHelp, valuetype System.Diagnostics.PerformanceCounterCategoryType categoryType, class System.Diagnostics.CounterCreationDataCollection counterData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.Create(System.String,System.String,System.Diagnostics.PerformanceCounterCategoryType,System.Diagnostics.CounterCreationDataCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterCategory</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="categoryName" Type="System.String" />
+        <Parameter Name="categoryHelp" Type="System.String" />
+        <Parameter Name="categoryType" Type="System.Diagnostics.PerformanceCounterCategoryType" />
+        <Parameter Name="counterData" Type="System.Diagnostics.CounterCreationDataCollection" />
+      </Parameters>
+      <Docs>
+        <param name="categoryName">The name of the custom performance counter category to create and register with the system.</param>
+        <param name="categoryHelp">A description of the custom category.</param>
+        <param name="categoryType">One of the <see cref="T:System.Diagnostics.PerformanceCounterCategoryType" /> values.</param>
+        <param name="counterData">A <see cref="T:System.Diagnostics.CounterCreationDataCollection" /> that specifies the counters to create as part of the new category.</param>
+        <summary>Registers the custom performance counter category containing the specified counters on the local computer.</summary>
+        <returns>A <see cref="T:System.Diagnostics.PerformanceCounterCategory" /> that is associated with the new custom category, or performance object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `categoryType` parameter specifies whether the performance counter category is single-instance or multi-instance. By default, a category is single-instance when it is created and becomes multi-instance when another instance is added. Categories are created when an application is set up, and instances are added at run time. In the  .NET Framework versions 1.0 and 1.1, it is not necessary to know if a performance counter category is multi-instance or single-instance. In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the <xref:System.Diagnostics.PerformanceCounterCategoryType> enumeration is used to indicate whether a performance counter can have multiple instances.  
+  
+ Performance counter categories installed with the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] use separate shared memory, with each performance counter category having its own memory.  You can specify the size of separate shared memory by creating a DWORD named FileMappingSize in the registry key HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\\*\<category name>*\Performance. The FileMappingSize value is set to the shared memory size of the category. The default size is 131072 decimal. If the FileMappingSize value is not present, the `fileMappingSize` attribute value for the `performanceCounters` element specified in the Machine.config file is used, causing additional overhead for configuration file processing. You can realize a performance improvement for application startup by setting the file mapping size in the registry.  
+  
+> [!NOTE]
+>  It is strongly recommended that new performance counter categories be created during the installation of the application, not during the execution of the application. This allows time for the operating system to refresh its list of registered performance counter categories. If the list has not been refreshed, the attempt to use the category will fail.  
+  
+> [!NOTE]
+>  To read performance counters in Windows Vista and later, Windows XP Professional x64 Edition, or Windows Server 2003, you must either be a member of the Performance Monitor Users group or have administrative privileges.  
+>   
+>  To avoid having to elevate your privileges to access performance counters in Windows Vista and later, add yourself to the Performance Monitor Users group.  
+>   
+>  In Windows Vista and later, User Account Control (UAC) determines the privileges of a user. If you are a member of the Built-in Administrators group, you are assigned two run-time access tokens: a standard user access token and an administrator access token. By default, you are in the standard user role. To execute the code that accesses performance counters, you must first elevate your privileges from standard user to administrator. You can do this when you start an application by right-clicking the application icon and indicating that you want to run as an administrator.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Diagnostics.PerformanceCounterCategory.Create%2A> method. The example shows how to create a custom, multi-instance performance counter category for the number of orders per second.  
+  
+ [!code-csharp[System.Diagnostics.PerformanceCounterCategoryType#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategoryType/CS/program.cs#2)]
+ [!code-vb[System.Diagnostics.PerformanceCounterCategoryType#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategoryType/VB/program.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">A counter name that is specified within the <paramref name="counterData" /> collection is <see langword="null" /> or an empty string ("").  
+  
+ -or-  
+  
+ A counter that is specified within the <paramref name="counterData" /> collection already exists.  
+  
+ -or-  
+  
+ <paramref name="counterName" /> has invalid syntax. It might contain backslash characters ("\\") or have length greater than 80 characters.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="categoryName" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="counterData" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="categoryType" /> value is outside of the range of the following values: <see langword="MultiInstance" />, <see langword="SingleInstance" />, or <see langword="Unknown" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The category already exists on the local computer.  
+  
+ -or-  
+  
+ The layout of the <paramref name="counterData" /> collection is incorrect for base counters. A counter of type <see langword="AverageCount64" />, <see langword="AverageTimer32" />, <see langword="CounterMultiTimer" />, <see langword="CounterMultiTimerInverse" />, <see langword="CounterMultiTimer100Ns" />, <see langword="CounterMultiTimer100NsInverse" />, <see langword="RawFraction" />, <see langword="SampleFraction" />, or <see langword="SampleCounter" /> must be immediately followed by one of the base counter types (<see langword="AverageBase" />, <see langword="MultiBase" />, <see langword="RawBase" />, or <see langword="SampleBase" />).</exception>
+        <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
+        <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for performing administrative tasks on performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Administer" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Diagnostics.PerformanceCounterCategory Create (string categoryName, string categoryHelp, string counterName, string counterHelp);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.PerformanceCounterCategory Create(string categoryName, string categoryHelp, string counterName, string counterHelp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.Create(System.String,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use another overload that uses PerformanceCounterCategoryType instead")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterCategory</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="categoryName" Type="System.String" />
+        <Parameter Name="categoryHelp" Type="System.String" />
+        <Parameter Name="counterName" Type="System.String" />
+        <Parameter Name="counterHelp" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="categoryName">The name of the custom performance counter category to create and register with the system.</param>
+        <param name="categoryHelp">A description of the custom category.</param>
+        <param name="counterName">The name of a new counter, of type <see langword="NumberOfItems32" />, to create as part of the new category.</param>
+        <param name="counterHelp">A description of the counter that is associated with the new custom category.</param>
+        <summary>Registers a custom performance counter category containing a single counter of type <see langword="NumberOfItems32" /> on the local computer.</summary>
+        <returns>A <see cref="T:System.Diagnostics.PerformanceCounterCategory" /> that is associated with the new system category, or performance object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  To read performance counters in Windows Vista and later, Windows XP Professional x64 Edition, or Windows Server 2003, you must either be a member of the Performance Monitor Users group or have administrative privileges.  
+>   
+>  To avoid having to elevate your privileges to access performance counters in Windows Vista and later, add yourself to the Performance Monitor Users group.  
+>   
+>  In Windows Vista and later, User Account Control (UAC) determines the privileges of a user. If you are a member of the Built-in Administrators group, you are assigned two run-time access tokens: a standard user access token and an administrator access token. By default, you are in the standard user role. To execute the code that accesses performance counters, you must first elevate your privileges from standard user to administrator. You can do this when you start an application by right-clicking the application icon and indicating that you want to run as an administrator.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Diagnostics.PerformanceCounterCategory> and single <xref:System.Diagnostics.PerformanceCounter> with help text for each, using the <xref:System.Diagnostics.PerformanceCounterCategory.Create%28System.String%2CSystem.String%2CSystem.String%2CSystem.String%29> method.  
+  
+ [!code-csharp[System.Diagnostics.PerformanceCounterCategory.OtherMembers#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.OtherMembers/CS/perfcountercatcreate.cs#2)]
+ [!code-vb[System.Diagnostics.PerformanceCounterCategory.OtherMembers#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.OtherMembers/VB/perfcountercatcreate.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="counterName" /> is <see langword="null" /> or is an empty string ("").  
+  
+ -or-  
+  
+ The counter that is specified by <paramref name="counterName" /> already exists.  
+  
+ -or-  
+  
+ <paramref name="counterName" /> has invalid syntax. It might contain backslash characters ("\\") or have length greater than 80 characters.</exception>
+        <exception cref="T:System.InvalidOperationException">The category already exists on the local computer.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="categoryName" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="counterHelp" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
+        <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for performing administrative tasks on performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Administer" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Diagnostics.PerformanceCounterCategory Create (string categoryName, string categoryHelp, System.Diagnostics.PerformanceCounterCategoryType categoryType, string counterName, string counterHelp);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.PerformanceCounterCategory Create(string categoryName, string categoryHelp, valuetype System.Diagnostics.PerformanceCounterCategoryType categoryType, string counterName, string counterHelp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.Create(System.String,System.String,System.Diagnostics.PerformanceCounterCategoryType,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterCategory</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="categoryName" Type="System.String" />
+        <Parameter Name="categoryHelp" Type="System.String" />
+        <Parameter Name="categoryType" Type="System.Diagnostics.PerformanceCounterCategoryType" />
+        <Parameter Name="counterName" Type="System.String" />
+        <Parameter Name="counterHelp" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="categoryName">The name of the custom performance counter category to create and register with the system.</param>
+        <param name="categoryHelp">A description of the custom category.</param>
+        <param name="categoryType">One of the <see cref="T:System.Diagnostics.PerformanceCounterCategoryType" /> values specifying whether the category is <see cref="F:System.Diagnostics.PerformanceCounterCategoryType.MultiInstance" />, <see cref="F:System.Diagnostics.PerformanceCounterCategoryType.SingleInstance" />, or <see cref="F:System.Diagnostics.PerformanceCounterCategoryType.Unknown" />.</param>
+        <param name="counterName">The name of a new counter to create as part of the new category.</param>
+        <param name="counterHelp">A description of the counter that is associated with the new custom category.</param>
+        <summary>Registers the custom performance counter category containing a single counter of type <see cref="F:System.Diagnostics.PerformanceCounterType.NumberOfItems32" /> on the local computer.</summary>
+        <returns>A <see cref="T:System.Diagnostics.PerformanceCounterCategory" /> that is associated with the new system category, or performance object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `categoryType` parameter specifies whether the performance counter category is single-instance or multi-instance. By default, a category is single-instance when it is created and becomes multi-instance when another instance is added. Categories are created when an application is set up, and instances are added at run time. In the .NET Framework versions 1.0 and 1.1, it is not necessary to know if a performance counter category is multi-instance or single-instance. In the [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the <xref:System.Diagnostics.PerformanceCounterCategoryType> enumeration is used to indicate whether a performance counter can have multiple instances.  
+  
+ Performance counter categories installed with the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] use separate shared memory, with each performance counter category having its own memory. You can specify the size of separate shared memory by creating a DWORD named FileMappingSize in the registry key HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\\*\<category name>*\Performance. The FileMappingSize value is set to the shared memory size of the category. The default size is 131072 decimal. If the FileMappingSize value is not present, the `fileMappingSize` attribute value for the `performanceCounters` element specified in the Machine.config file is used, causing additional overhead for configuration file processing. You can realize a performance improvement for application startup by setting the file mapping size in the registry.  
+  
+> [!NOTE]
+>  It is strongly recommended that new performance counter categories be created during the installation of the application, not during the execution of the application. This allows time for the operating system to refresh its list of registered performance counter categories. If the list has not been refreshed, the attempt to use the category will fail.  
+  
+> [!NOTE]
+>  To read performance counters in Windows Vista and later, Windows XP Professional x64 Edition, or Windows Server 2003, you must either be a member of the Performance Monitor Users group or have administrative privileges.  
+>   
+>  To avoid having to elevate your privileges to access performance counters in Windows Vista and later, add yourself to the Performance Monitor Users group.  
+>   
+>  In Windows Vista and later, User Account Control (UAC) determines the privileges of a user. If you are a member of the Built-in Administrators group, you are assigned two run-time access tokens: a standard user access token and an administrator access token. By default, you are in the standard user role. To execute the code that accesses performance counters, you must first elevate your privileges from standard user to administrator. You can do this when you start an application by right-clicking the application icon and indicating that you want to run as an administrator.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Diagnostics.PerformanceCounterCategory.Create%2A> method. The example shows how to create a custom, single instance performance counter category.  
+  
+ [!code-csharp[System.Diagnostics.PerformanceCounterCategoryType#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategoryType/CS/program.cs#3)]
+ [!code-vb[System.Diagnostics.PerformanceCounterCategoryType#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategoryType/VB/program.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="counterName" /> is <see langword="null" /> or is an empty string ("").  
+  
+ -or-  
+  
+ The counter that is specified by <paramref name="counterName" /> already exists.  
+  
+ -or-  
+  
+ <paramref name="counterName" /> has invalid syntax. It might contain backslash characters ("\\") or have length greater than 80 characters.</exception>
+        <exception cref="T:System.InvalidOperationException">The category already exists on the local computer.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="categoryName" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="counterHelp" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
+        <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for performing administrative tasks on performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Administer" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public static void Delete (string categoryName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Delete(string categoryName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.Delete(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="categoryName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="categoryName">The name of the custom performance counter category to delete.</param>
+        <summary>Removes the category and its associated counters from the local computer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can delete only custom performance counter categories from the system. You cannot delete a counter from a category. To do so, delete the category and recreate the category with the counters you want to retain. To avoid an exception, confirm that the category exists before you attempt to delete it.  
+  
+> [!NOTE]
+>  To read performance counters in Windows Vista and later, Windows XP Professional x64 Edition, or Windows Server 2003, you must either be a member of the Performance Monitor Users group or have administrative privileges.  
+>   
+>  To avoid having to elevate your privileges to access performance counters in Windows Vista and later, add yourself to the Performance Monitor Users group.  
+>   
+>  In Windows Vista and later, User Account Control (UAC) determines the privileges of a user. If you are a member of the Built-in Administrators group, you are assigned two run-time access tokens: a standard user access token and an administrator access token. By default, you are in the standard user role. To execute the code that accesses performance counters, you must first elevate your privileges from standard user to administrator. You can do this when you start an application by right-clicking the application icon and indicating that you want to run as an administrator.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Diagnostics.PerformanceCounterCategory.Delete%2A> method to delete a <xref:System.Diagnostics.PerformanceCounterCategory> and the <xref:System.Diagnostics.PerformanceCounter> objects that it contains.  
+  
+ [!code-csharp[System.Diagnostics.PerformanceCounterCategory.OtherMembers#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.OtherMembers/CS/perfCounterCatDelete.cs#6)]
+ [!code-vb[System.Diagnostics.PerformanceCounterCategory.OtherMembers#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.OtherMembers/VB/perfcountercatdelete.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="categoryName" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="categoryName" /> parameter has invalid syntax. It might contain backslash characters ("\\") or have length greater than 80 characters.</exception>
+        <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
+        <exception cref="T:System.InvalidOperationException">The category cannot be deleted because it is not a custom category.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
+        <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Administer" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Exists">
+      <MemberSignature Language="C#" Value="public static bool Exists (string categoryName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Exists(string categoryName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.Exists(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="categoryName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="categoryName">The name of the performance counter category to look for.</param>
+        <summary>Determines whether the category is registered on the local computer.</summary>
+        <returns>
+          <see langword="true" /> if the category is registered; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use of the <xref:System.Diagnostics.PerformanceCounterCategory.Exists%2A> method can result in a noticeable performance penalty while all performance counters on the machine are checked for availability. If you are only writing to a performance counter, you can avoid the global search for performance counters by creating the performance counter when the application is installed and assuming the category exists when accessing the counter. There is no way to avoid the performance counter search when reading from performance counters.  
+  
+> [!NOTE]
+>  To read performance counters in Windows Vista and later, Windows XP Professional x64 Edition, or Windows Server 2003, you must either be a member of the Performance Monitor Users group or have administrative privileges.  
+>   
+>  To avoid having to elevate your privileges to access performance counters in Windows Vista and later, add yourself to the Performance Monitor Users group.  
+>   
+>  In Windows Vista and later, User Account Control (UAC) determines the privileges of a user. If you are a member of the Built-in Administrators group, you are assigned two run-time access tokens: a standard user access token and an administrator access token. By default, you are in the standard user role. To execute the code that accesses performance counters, you must first elevate your privileges from standard user to administrator. You can do this when you start an application by right-clicking the application icon and indicating that you want to run as an administrator.  
+  
+   
+  
+## Examples  
+ The following code example determines whether a <xref:System.Diagnostics.PerformanceCounterCategory> object named "orders" exists. If not, it creates the <xref:System.Diagnostics.PerformanceCounterCategory> object by using a <xref:System.Diagnostics.CounterCreationDataCollection> object that contains two performance counters.  
+  
+ [!code-cpp[PerfCounter_ccd#1](~/samples/snippets/cpp/VS_Snippets_CLR/PerfCounter_ccd/CPP/ccd.cpp#1)]
+ [!code-csharp[PerfCounter_ccd#1](~/samples/snippets/csharp/VS_Snippets_CLR/PerfCounter_ccd/CS/ccd.cs#1)]
+ [!code-vb[PerfCounter_ccd#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/PerfCounter_ccd/VB/ccd.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="categoryName" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="categoryName" /> parameter is an empty string ("").</exception>
+        <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
+        <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Exists">
+      <MemberSignature Language="C#" Value="public static bool Exists (string categoryName, string machineName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Exists(string categoryName, string machineName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.Exists(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="categoryName" Type="System.String" />
+        <Parameter Name="machineName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="categoryName">The name of the performance counter category to look for.</param>
+        <param name="machineName">The name of the computer to examine for the category.</param>
+        <summary>Determines whether the category is registered on the specified computer.</summary>
+        <returns>
+          <see langword="true" /> if the category is registered; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use of the <xref:System.Diagnostics.PerformanceCounterCategory.Exists%2A> method can result in a noticeable performance penalty while all performance counters on the machine are checked for availability. If you are only writing to a performance counter, you can avoid the global search for performance counters by creating the performance counter when the application is installed and assuming the category exists when accessing the counter. There is no way to avoid the performance counter search when reading from performance counters.  
+  
+> [!NOTE]
+>  To read performance counters in Windows Vista and later, Windows XP Professional x64 Edition, or Windows Server 2003, you must either be a member of the Performance Monitor Users group or have administrative privileges.  
+>   
+>  To avoid having to elevate your privileges to access performance counters in Windows Vista and later, add yourself to the Performance Monitor Users group.  
+>   
+>  In Windows Vista and later, User Account Control (UAC) determines the privileges of a user. If you are a member of the Built-in Administrators group, you are assigned two run-time access tokens: a standard user access token and an administrator access token. By default, you are in the standard user role. To execute the code that accesses performance counters, you must first elevate your privileges from standard user to administrator. You can do this when you start an application by right-clicking the application icon and indicating that you want to run as an administrator.  
+  
+   
+  
+## Examples  
+ The following example determines whether a <xref:System.Diagnostics.PerformanceCounterCategory> object named `Orders` exists. If it does not exist, the example creates the <xref:System.Diagnostics.PerformanceCounterCategory> object by using a <xref:System.Diagnostics.CounterCreationDataCollection> object that contains two performance counters.  
+  
+ [!code-cpp[PerfCounter_ccd#1](~/samples/snippets/cpp/VS_Snippets_CLR/PerfCounter_ccd/CPP/ccd.cpp#1)]
+ [!code-csharp[PerfCounter_ccd#1](~/samples/snippets/csharp/VS_Snippets_CLR/PerfCounter_ccd/CS/ccd.cs#1)]
+ [!code-vb[PerfCounter_ccd#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/PerfCounter_ccd/VB/ccd.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="categoryName" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="categoryName" /> parameter is an empty string ("").  
+  
+ -or-  
+  
+ The <paramref name="machineName" /> parameter is invalid.</exception>
+        <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
+        <exception cref="T:System.IO.IOException">The network path cannot be found.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.  
+  
+ -or-  
+  
+ Code that is executing without administrative privileges attempted to read a performance counter.</exception>
+        <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCategories">
+      <MemberSignature Language="C#" Value="public static System.Diagnostics.PerformanceCounterCategory[] GetCategories ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.PerformanceCounterCategory[] GetCategories() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.GetCategories" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterCategory[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves a list of the performance counter categories that are registered on the local computer.</summary>
+        <returns>An array of <see cref="T:System.Diagnostics.PerformanceCounterCategory" /> objects indicating the categories that are registered on the local computer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  To read performance counters in Windows Vista and later, Windows XP Professional x64 Edition, or Windows Server 2003, you must either be a member of the Performance Monitor Users group or have administrative privileges.  
+>   
+>  To avoid having to elevate your privileges to access performance counters in Windows Vista and later, add yourself to the Performance Monitor Users group.  
+>   
+>  In Windows Vista and later, User Account Control (UAC) determines the privileges of a user. If you are a member of the Built-in Administrators group, you are assigned two run-time access tokens: a standard user access token and an administrator access token. By default, you are in the standard user role. To execute the code that accesses performance counters, you must first elevate your privileges from standard user to administrator. You can do this when you start an application by right-clicking the application icon and indicating that you want to run as an administrator.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Diagnostics.PerformanceCounterCategory.GetCategories%2A> method to return an array of <xref:System.Diagnostics.PerformanceCounterCategory> objects from the local computer or a specified computer. It converts the <xref:System.Diagnostics.PerformanceCounterCategory> array into an array of category names, which it sorts and displays for the user. The <xref:System.Diagnostics.PerformanceCounterCategory.GetCategories%2A> overload is selected based on whether a computer name was specified.  
+  
+ [!code-cpp[System.Diagnostics.PerformanceCounterCategory.GetMembers#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.GetMembers/cpp/perfcountergetcat.cpp#2)]
+ [!code-csharp[System.Diagnostics.PerformanceCounterCategory.GetMembers#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.GetMembers/CS/perfcountergetcat.cs#2)]
+ [!code-vb[System.Diagnostics.PerformanceCounterCategory.GetMembers#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.GetMembers/VB/perfcountercatgetcat.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
+        <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCategories">
+      <MemberSignature Language="C#" Value="public static System.Diagnostics.PerformanceCounterCategory[] GetCategories (string machineName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.PerformanceCounterCategory[] GetCategories(string machineName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.GetCategories(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterCategory[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="machineName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="machineName">The computer to look on.</param>
+        <summary>Retrieves a list of the performance counter categories that are registered on the specified computer.</summary>
+        <returns>An array of <see cref="T:System.Diagnostics.PerformanceCounterCategory" /> objects indicating the categories that are registered on the specified computer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To retrieve the categories on the local computer, use another overload or pass "." as the `machineName` parameter.  
+  
+> [!NOTE]
+>  To read performance counters in Windows Vista and later, Windows XP Professional x64 Edition, or Windows Server 2003, you must either be a member of the Performance Monitor Users group or have administrative privileges.  
+>   
+>  To avoid having to elevate your privileges to access performance counters in Windows Vista and later, add yourself to the Performance Monitor Users group.  
+>   
+>  In Windows Vista and later, User Account Control (UAC) determines the privileges of a user. If you are a member of the Built-in Administrators group, you are assigned two run-time access tokens: a standard user access token and an administrator access token. By default, you are in the standard user role. To execute the code that accesses performance counters, you must first elevate your privileges from standard user to administrator. You can do this when you start an application by right-clicking the application icon and indicating that you want to run as an administrator.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Diagnostics.PerformanceCounterCategory.GetCategories%2A> method to return an array of <xref:System.Diagnostics.PerformanceCounterCategory> objects from the local computer or a specified computer. It converts the <xref:System.Diagnostics.PerformanceCounterCategory> array into an array of category names, which it sorts and displays for the user. The <xref:System.Diagnostics.PerformanceCounterCategory.GetCategories%2A> overload is selected based on whether a computer name was specified.  
+  
+ [!code-cpp[System.Diagnostics.PerformanceCounterCategory.GetMembers#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.GetMembers/cpp/perfcountergetcat.cpp#2)]
+ [!code-csharp[System.Diagnostics.PerformanceCounterCategory.GetMembers#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.GetMembers/CS/perfcountergetcat.cs#2)]
+ [!code-vb[System.Diagnostics.PerformanceCounterCategory.GetMembers#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.GetMembers/VB/perfcountercatgetcat.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="machineName" /> parameter is invalid.</exception>
+        <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
+        <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCounters">
+      <MemberSignature Language="C#" Value="public System.Diagnostics.PerformanceCounter[] GetCounters ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Diagnostics.PerformanceCounter[] GetCounters() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.GetCounters" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounter[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves a list of the counters in a performance counter category that contains exactly one instance.</summary>
+        <returns>An array of <see cref="T:System.Diagnostics.PerformanceCounter" /> objects indicating the counters that are associated with this single-instance performance counter category.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about performance object instances, see the <xref:System.Diagnostics.PerformanceCounter> class overview.  
+  
+> [!NOTE]
+>  To read performance counters in Windows Vista and later, Windows XP Professional x64 Edition, or Windows Server 2003, you must either be a member of the Performance Monitor Users group or have administrative privileges.  
+>   
+>  To avoid having to elevate your privileges to access performance counters in Windows Vista and later, add yourself to the Performance Monitor Users group.  
+>   
+>  In Windows Vista and later, User Account Control (UAC) determines the privileges of a user. If you are a member of the Built-in Administrators group, you are assigned two run-time access tokens: a standard user access token and an administrator access token. By default, you are in the standard user role. To execute the code that accesses performance counters, you must first elevate your privileges from standard user to administrator. You can do this when you start an application by right-clicking the application icon and indicating that you want to run as an administrator.  
+  
+   
+  
+## Examples  
+ The following code example gets a list of the <xref:System.Diagnostics.PerformanceCounter> objects in a <xref:System.Diagnostics.PerformanceCounterCategory>. It first creates a <xref:System.Diagnostics.PerformanceCounterCategory> with the appropriate constructor, based on whether a computer name was specified. It then uses the <xref:System.Diagnostics.PerformanceCounterCategory.GetCounters%2A> method to return an array of <xref:System.Diagnostics.PerformanceCounter> objects, selecting the <xref:System.Diagnostics.PerformanceCounterCategory.GetCounters%2A> overload based on whether an instance name was specified.  
+  
+ This <xref:System.Diagnostics.PerformanceCounterCategory.GetCounters> overload fails unless it is used with a single-instance category.  
+  
+ [!code-cpp[System.Diagnostics.PerformanceCounterCategory.GetMembers#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.GetMembers/cpp/perfcountercatgetcount.cpp#4)]
+ [!code-csharp[System.Diagnostics.PerformanceCounterCategory.GetMembers#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.GetMembers/CS/perfcountercatgetcount.cs#4)]
+ [!code-vb[System.Diagnostics.PerformanceCounterCategory.GetMembers#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.GetMembers/VB/perfcountercatgetcount.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The category is not a single instance.</exception>
+        <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
+        <exception cref="T:System.InvalidOperationException">The category does not have an associated instance.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCounters">
+      <MemberSignature Language="C#" Value="public System.Diagnostics.PerformanceCounter[] GetCounters (string instanceName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Diagnostics.PerformanceCounter[] GetCounters(string instanceName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.GetCounters(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounter[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="instanceName">The performance object instance for which to retrieve the list of associated counters.</param>
+        <summary>Retrieves a list of the counters in a performance counter category that contains one or more instances.</summary>
+        <returns>An array of <see cref="T:System.Diagnostics.PerformanceCounter" /> objects indicating the counters that are associated with the specified object instance of this performance counter category.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To represent a single-instance category, pass an empty string ("") for the `instanceName` parameter.  
+  
+ For more information about performance object instances, see the <xref:System.Diagnostics.PerformanceCounter> class overview.  
+  
+> [!NOTE]
+>  To read performance counters in Windows Vista and later, Windows XP Professional x64 Edition, or Windows Server 2003, you must either be a member of the Performance Monitor Users group or have administrative privileges.  
+>   
+>  To avoid having to elevate your privileges to access performance counters in Windows Vista and later, add yourself to the Performance Monitor Users group.  
+>   
+>  In Windows Vista and later, User Account Control (UAC) determines the privileges of a user. If you are a member of the Built-in Administrators group, you are assigned two run-time access tokens: a standard user access token and an administrator access token. By default, you are in the standard user role. To execute the code that accesses performance counters, you must first elevate your privileges from standard user to administrator. You can do this when you start an application by right-clicking the application icon and indicating that you want to run as an administrator.  
+  
+   
+  
+## Examples  
+ The following code example gets a list of the <xref:System.Diagnostics.PerformanceCounter> objects in a <xref:System.Diagnostics.PerformanceCounterCategory>. It first creates a <xref:System.Diagnostics.PerformanceCounterCategory> with the appropriate constructor, based on whether a computer name was specified. It then uses the <xref:System.Diagnostics.PerformanceCounterCategory.GetCounters%2A> method to return an array of <xref:System.Diagnostics.PerformanceCounter> objects, selecting the <xref:System.Diagnostics.PerformanceCounterCategory.GetCounters%2A> overload based on whether an instance name was specified.  
+  
+ This <xref:System.Diagnostics.PerformanceCounterCategory.GetCounters%28System.String%29> overload fails unless it is used with a category that contains instances.  
+  
+ [!code-cpp[System.Diagnostics.PerformanceCounterCategory.GetMembers#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.GetMembers/cpp/perfcountercatgetcount.cpp#4)]
+ [!code-csharp[System.Diagnostics.PerformanceCounterCategory.GetMembers#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.GetMembers/CS/perfcountercatgetcount.cs#4)]
+ [!code-vb[System.Diagnostics.PerformanceCounterCategory.GetMembers#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.GetMembers/VB/perfcountercatgetcount.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="instanceName" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Diagnostics.PerformanceCounterCategory.CategoryName" /> property for this <see cref="T:System.Diagnostics.PerformanceCounterCategory" /> instance has not been set.  
+  
+ -or-  
+  
+ The category does not contain the instance that is specified by the <paramref name="instanceName" /> parameter.</exception>
+        <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInstanceNames">
+      <MemberSignature Language="C#" Value="public string[] GetInstanceNames ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] GetInstanceNames() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.GetInstanceNames" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves the list of performance object instances that are associated with this category.</summary>
+        <returns>An array of strings representing the performance object instance names that are associated with this category or, if the category contains only one performance object instance, a single-entry array that contains an empty string ("").</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  To read performance counters in Windows Vista and later, Windows XP Professional x64 Edition, or Windows Server 2003, you must either be a member of the Performance Monitor Users group or have administrative privileges.  
+>   
+>  To avoid having to elevate your privileges to access performance counters in Windows Vista and later, add yourself to the Performance Monitor Users group.  
+>   
+>  In Windows Vista and later, User Account Control (UAC) determines the privileges of a user. If you are a member of the Built-in Administrators group, you are assigned two run-time access tokens: a standard user access token and an administrator access token. By default, you are in the standard user role. To execute the code that accesses performance counters, you must first elevate your privileges from standard user to administrator. You can do this when you start an application by right-clicking the application icon and indicating that you want to run as an administrator.  
+  
+   
+  
+## Examples  
+ The following code example gets a list of the <xref:System.Diagnostics.PerformanceCounter> objects in a <xref:System.Diagnostics.PerformanceCounterCategory>. It first creates a <xref:System.Diagnostics.PerformanceCounterCategory> object, using the appropriate constructor based on whether a computer name was specified. It then uses <xref:System.Diagnostics.PerformanceCounterCategory.GetInstanceNames%2A> to return the instance names as an array of <xref:System.String>, which it sorts and displays.  
+  
+ [!code-cpp[System.Diagnostics.PerformanceCounterCategory.GetMembers#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.GetMembers/cpp/perfcountercatgetinst.cpp#6)]
+ [!code-csharp[System.Diagnostics.PerformanceCounterCategory.GetMembers#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.GetMembers/CS/perfcountercatgetinst.cs#6)]
+ [!code-vb[System.Diagnostics.PerformanceCounterCategory.GetMembers#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.GetMembers/VB/perfcountercatgetinst.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Diagnostics.PerformanceCounterCategory.CategoryName" /> property is <see langword="null" />. The property might not have been set.  
+  
+ -or-  
+  
+ The category does not have an associated instance.</exception>
+        <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InstanceExists">
+      <MemberSignature Language="C#" Value="public bool InstanceExists (string instanceName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool InstanceExists(string instanceName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.InstanceExists(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="instanceName">The performance object instance in this performance counter category to search for.</param>
+        <summary>Determines whether the specified performance object instance exists in the category that is identified by this <see cref="T:System.Diagnostics.PerformanceCounterCategory" /> object's <see cref="P:System.Diagnostics.PerformanceCounterCategory.CategoryName" /> property.</summary>
+        <returns>
+          <see langword="true" /> if the category contains the specified performance object instance; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This overload of <xref:System.Diagnostics.PerformanceCounterCategory.InstanceExists%2A> is not `static`. It requires you to create a <xref:System.Diagnostics.PerformanceCounterCategory> object and to set the <xref:System.Diagnostics.PerformanceCounterCategory.CategoryName%2A> property.  
+  
+> [!NOTE]
+>  To read performance counters in Windows Vista and later, Windows XP Professional x64 Edition, or Windows Server 2003, you must either be a member of the Performance Monitor Users group or have administrative privileges.  
+>   
+>  To avoid having to elevate your privileges to access performance counters in Windows Vista and later, add yourself to the Performance Monitor Users group.  
+>   
+>  In Windows Vista and later, User Account Control (UAC) determines the privileges of a user. If you are a member of the Built-in Administrators group, you are assigned two run-time access tokens: a standard user access token and an administrator access token. By default, you are in the standard user role. To execute the code that accesses performance counters, you must first elevate your privileges from standard user to administrator. You can do this when you start an application by right-clicking the application icon and indicating that you want to run as an administrator.  
+  
+   
+  
+## Examples  
+ The following code example determines whether a <xref:System.Diagnostics.PerformanceCounter> instance exists within a <xref:System.Diagnostics.PerformanceCounterCategory>. It first creates a <xref:System.Diagnostics.PerformanceCounterCategory> object, using the appropriate constructor based on whether a computer name was specified. It then uses <xref:System.Diagnostics.PerformanceCounterCategory.InstanceExists%28System.String%29> to determine whether the specified instance exists, then informs the user. If no instance name is specified, the example uses the default single-instance name.  
+  
+ [!code-csharp[System.Diagnostics.PerformanceCounterCategory.ExistMembers#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.ExistMembers/CS/perfcounterobjinstexists.cs#2)]
+ [!code-vb[System.Diagnostics.PerformanceCounterCategory.ExistMembers#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.ExistMembers/VB/perfcountercatobjinstexists.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Diagnostics.PerformanceCounterCategory.CategoryName" /> property is <see langword="null" />. The property might not have been set.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="instanceName" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
+        <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="InstanceExists">
+      <MemberSignature Language="C#" Value="public static bool InstanceExists (string instanceName, string categoryName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool InstanceExists(string instanceName, string categoryName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.InstanceExists(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceName" Type="System.String" />
+        <Parameter Name="categoryName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="instanceName">The performance object instance to search for.</param>
+        <param name="categoryName">The performance counter category to search.</param>
+        <summary>Determines whether a specified category on the local computer contains the specified performance object instance.</summary>
+        <returns>
+          <see langword="true" /> if the category contains the specified performance object instance; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ It is not possible to determine whether a performance object instance exists on a computer without specifying a specific category to look in.  
+  
+> [!NOTE]
+>  To read performance counters in Windows Vista and later, Windows XP Professional x64 Edition, or Windows Server 2003, you must either be a member of the Performance Monitor Users group or have administrative privileges.  
+>   
+>  To avoid having to elevate your privileges to access performance counters in Windows Vista and later, add yourself to the Performance Monitor Users group.  
+>   
+>  In Windows Vista and later, User Account Control (UAC) determines the privileges of a user. If you are a member of the Built-in Administrators group, you are assigned two run-time access tokens: a standard user access token and an administrator access token. By default, you are in the standard user role. To execute the code that accesses performance counters, you must first elevate your privileges from standard user to administrator. You can do this when you start an application by right-clicking the application icon and indicating that you want to run as an administrator.  
+  
+   
+  
+## Examples  
+ The following code example uses the static overloads of <xref:System.Diagnostics.PerformanceCounterCategory.InstanceExists%2A> to determine whether the given <xref:System.Diagnostics.PerformanceCounter> instance exists in the <xref:System.Diagnostics.PerformanceCounterCategory>. The overload is selected based on whether a computer name is specified. If no instance name is specified, the example uses the default single-instance name.  
+  
+ [!code-csharp[System.Diagnostics.PerformanceCounterCategory.ExistMembers#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.ExistMembers/CS/perfcountercatstatinstexists.cs#10)]
+ [!code-vb[System.Diagnostics.PerformanceCounterCategory.ExistMembers#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.ExistMembers/VB/perfcountercatstatinstexists.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="instanceName" /> parameter is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="categoryName" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="categoryName" /> parameter is an empty string ("").</exception>
+        <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
+        <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="InstanceExists">
+      <MemberSignature Language="C#" Value="public static bool InstanceExists (string instanceName, string categoryName, string machineName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool InstanceExists(string instanceName, string categoryName, string machineName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.InstanceExists(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceName" Type="System.String" />
+        <Parameter Name="categoryName" Type="System.String" />
+        <Parameter Name="machineName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="instanceName">The performance object instance to search for.</param>
+        <param name="categoryName">The performance counter category to search.</param>
+        <param name="machineName">The name of the computer on which to look for the category instance pair.</param>
+        <summary>Determines whether a specified category on a specified computer contains the specified performance object instance.</summary>
+        <returns>
+          <see langword="true" /> if the category contains the specified performance object instance; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ It is not possible to determine whether a performance object instance exists on a computer without specifying a specific category to look in.  
+  
+ You can use "." to specify the local computer.  
+  
+> [!NOTE]
+>  To read performance counters in Windows Vista and later, Windows XP Professional x64 Edition, or Windows Server 2003, you must either be a member of the Performance Monitor Users group or have administrative privileges.  
+>   
+>  To avoid having to elevate your privileges to access performance counters in Windows Vista and later, add yourself to the Performance Monitor Users group.  
+>   
+>  In Windows Vista and later, User Account Control (UAC) determines the privileges of a user. If you are a member of the Built-in Administrators group, you are assigned two run-time access tokens: a standard user access token and an administrator access token. By default, you are in the standard user role. To execute the code that accesses performance counters, you must first elevate your privileges from standard user to administrator. You can do this when you start an application by right-clicking the application icon and indicating that you want to run as an administrator.  
+  
+   
+  
+## Examples  
+ The following code example uses the static overloads of <xref:System.Diagnostics.PerformanceCounterCategory.InstanceExists%2A> to determine whether the given <xref:System.Diagnostics.PerformanceCounter> instance exists in the <xref:System.Diagnostics.PerformanceCounterCategory>. The overload is selected based on whether a computer name is specified. If no instance name is specified, the example uses the default single-instance name.  
+  
+ [!code-csharp[System.Diagnostics.PerformanceCounterCategory.ExistMembers#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.ExistMembers/CS/perfcountercatstatinstexists.cs#10)]
+ [!code-vb[System.Diagnostics.PerformanceCounterCategory.ExistMembers#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.ExistMembers/VB/perfcountercatstatinstexists.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="instanceName" /> parameter is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="categoryName" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="categoryName" /> parameter is an empty string ("").  
+  
+ -or-  
+  
+ The <paramref name="machineName" /> parameter is invalid.</exception>
+        <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
+        <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="MachineName">
+      <MemberSignature Language="C#" Value="public string MachineName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MachineName" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounterCategory.MachineName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the computer on which this category exists.</summary>
+        <value>The name of the computer on which the performance counter category and its associated counters exist.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a <xref:System.Diagnostics.PerformanceCounterCategory> with the <xref:System.Diagnostics.PerformanceCounterCategory.%23ctor> constructor. It prompts the user for the <xref:System.Diagnostics.PerformanceCounterCategory> and the computer names, then sets the <xref:System.Diagnostics.PerformanceCounterCategory.CategoryName%2A> and <xref:System.Diagnostics.PerformanceCounterCategory.MachineName%2A> properties from the entered values. It then displays the values of the <xref:System.Diagnostics.PerformanceCounterCategory.CategoryName%2A>, <xref:System.Diagnostics.PerformanceCounterCategory.MachineName%2A>, and <xref:System.Diagnostics.PerformanceCounterCategory.CategoryHelp%2A> properties, or it displays an error message if the <xref:System.Diagnostics.PerformanceCounterCategory> cannot be accessed.  
+  
+ [!code-csharp[System.Diagnostics.PerformanceCounterCategory.OtherMembers#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.OtherMembers/CS/perfCounterCatProps.cs#8)]
+ [!code-vb[System.Diagnostics.PerformanceCounterCategory.OtherMembers#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.PerformanceCounterCategory.OtherMembers/VB/perfcountercatprops.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Diagnostics.PerformanceCounterCategory.MachineName" /> syntax is invalid.</exception>
+        <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for reading performance counter categories. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadCategory">
+      <MemberSignature Language="C#" Value="public System.Diagnostics.InstanceDataCollectionCollection ReadCategory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Diagnostics.InstanceDataCollectionCollection ReadCategory() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterCategory.ReadCategory" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.MonoTODO</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.InstanceDataCollectionCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Reads all the counter and performance object instance data that is associated with this performance counter category.</summary>
+        <returns>An <see cref="T:System.Diagnostics.InstanceDataCollectionCollection" /> that contains the counter and performance object instance data for the category.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You must set the <xref:System.Diagnostics.PerformanceCounterCategory.CategoryName%2A> property before you call <xref:System.Diagnostics.PerformanceCounterCategory.ReadCategory%2A>.  
+  
+ Reading the entire category at once can be as efficient as reading a single counter because of the way that the system provides the data.  
+  
+> [!NOTE]
+>  To read performance counters in Windows Vista and later, Windows XP Professional x64 Edition, or Windows Server 2003, you must either be a member of the Performance Monitor Users group or have administrative privileges.  
+>   
+>  To avoid having to elevate your privileges to access performance counters in Windows Vista and later, add yourself to the Performance Monitor Users group.  
+>   
+>  In Windows Vista and later, User Account Control (UAC) determines the privileges of a user. If you are a member of the Built-in Administrators group, you are assigned two run-time access tokens: a standard user access token and an administrator access token. By default, you are in the standard user role. To execute the code that accesses performance counters, you must first elevate your privileges from standard user to administrator. You can do this when you start an application by right-clicking the application icon and indicating that you want to run as an administrator.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Diagnostics.PerformanceCounterCategory> for a specified <xref:System.Diagnostics.PerformanceCounterCategory> name. It then uses <xref:System.Diagnostics.PerformanceCounterCategory.ReadCategory%2A> to return an <xref:System.Diagnostics.InstanceDataCollectionCollection> that contains instance data for all the instances of the <xref:System.Diagnostics.PerformanceCounter> objects within the <xref:System.Diagnostics.PerformanceCounterCategory>.  
+  
+ [!code-csharp[System.Diagnostics.InstanceData.CopyTo#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.CopyTo/CS/instdatacopyto.cs#6)]
+ [!code-vb[System.Diagnostics.InstanceData.CopyTo#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.CopyTo/VB/instdatacopyto.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Diagnostics.PerformanceCounterCategory.CategoryName" /> property is <see langword="null" />. The property might not have been set.</exception>
+        <exception cref="T:System.ComponentModel.Win32Exception">A call to an underlying system API failed.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Code that is executing without administrative privileges attempted to read a performance counter.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

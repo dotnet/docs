@@ -1,0 +1,324 @@
+<Type Name="LateBinding" FullName="Microsoft.VisualBasic.CompilerServices.LateBinding">
+  <TypeSignature Language="C#" Value="public sealed class LateBinding" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LateBinding extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.LateBinding" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>This class has been deprecated since Visual Basic 2005.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="LateCall">
+      <MemberSignature Language="C#" Value="public static void LateCall (object o, Type objType, string name, object[] args, string[] paramnames, bool[] CopyBack);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void LateCall(object o, class System.Type objType, string name, object[] args, string[] paramnames, bool[] CopyBack) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.LateBinding.LateCall(System.Object,System.Type,System.String,System.Object[],System.String[],System.Boolean[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+        <Parameter Name="objType" Type="System.Type" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="args" Type="System.Object[]" />
+        <Parameter Name="paramnames" Type="System.String[]" />
+        <Parameter Name="CopyBack" Type="System.Boolean[]" />
+      </Parameters>
+      <Docs>
+        <param name="o">The object to call a method on.</param>
+        <param name="objType">The type of the object.</param>
+        <param name="name">The method name of <c>o</c> to call.</param>
+        <param name="args">An array of parameter values to pass to the method.</param>
+        <param name="paramnames">An array that contains the names of the parameters to which the values in the <c>args</c> array are passed.</param>
+        <param name="CopyBack">An array of <see langword="Boolean" /> values, where <see langword="True" /> indicates that the associated parameter is passed <see langword="ByRef" />.</param>
+        <summary>Performs a late-bound call to an object method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LateGet">
+      <MemberSignature Language="C#" Value="public static object LateGet (object o, Type objType, string name, object[] args, string[] paramnames, bool[] CopyBack);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object LateGet(object o, class System.Type objType, string name, object[] args, string[] paramnames, bool[] CopyBack) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.LateBinding.LateGet(System.Object,System.Type,System.String,System.Object[],System.String[],System.Boolean[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+        <Parameter Name="objType" Type="System.Type" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="args" Type="System.Object[]" />
+        <Parameter Name="paramnames" Type="System.String[]" />
+        <Parameter Name="CopyBack" Type="System.Boolean[]" />
+      </Parameters>
+      <Docs>
+        <param name="o">The object to return the value from.</param>
+        <param name="objType">The type of the object.</param>
+        <param name="name">The member name of <c>o</c> to retrieve a value from.</param>
+        <param name="args">An array of one or more index values that specify the location in <c>o</c> if <c>o</c> is a one-dimensional or multi-dimensional array, or argument values to pass to the object <c>o</c>.</param>
+        <param name="paramnames">An array that contains the names of the parameters to which the values in the <c>args</c> array are passed.</param>
+        <param name="CopyBack">An array of <see langword="Boolean" /> values, where <see langword="True" /> indicates that the associated parameter is passed <see langword="ByRef" />.</param>
+        <summary>Returns a late-bound value from an object.</summary>
+        <returns>If <paramref name="o" /> is an array, the value from <paramref name="o" /> at the location specified by <paramref name="args" />. If <paramref name="o" /> is an object, the return value of <paramref name="o" /> invoked by using the named parameters in <paramref name="paramnames" /> and their associated values in <paramref name="args" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LateIndexGet">
+      <MemberSignature Language="C#" Value="public static object LateIndexGet (object o, object[] args, string[] paramnames);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object LateIndexGet(object o, object[] args, string[] paramnames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.LateBinding.LateIndexGet(System.Object,System.Object[],System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+        <Parameter Name="args" Type="System.Object[]" />
+        <Parameter Name="paramnames" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="o">The object to return the value from.</param>
+        <param name="args">An array of one or more index values that specify the location in <c>o</c> if <c>o</c> is a one-dimensional or multi-dimensional array, or argument values to pass to the object <c>o</c>.</param>
+        <param name="paramnames">An array that contains the names of the parameters to which the values in the <c>args</c> array are passed.</param>
+        <summary>Returns a late-bound value from an object, using the specified index or parameters.</summary>
+        <returns>If <paramref name="o" /> is an array, the value from <paramref name="o" /> at the location specified by <paramref name="args" />. If <paramref name="o" /> is an object, the return value of <paramref name="o" /> invoked by using the named parameters in <paramref name="paramnames" /> and their associated values in <paramref name="args" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LateIndexSet">
+      <MemberSignature Language="C#" Value="public static void LateIndexSet (object o, object[] args, string[] paramnames);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void LateIndexSet(object o, object[] args, string[] paramnames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.LateBinding.LateIndexSet(System.Object,System.Object[],System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+        <Parameter Name="args" Type="System.Object[]" />
+        <Parameter Name="paramnames" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="o">The object to set the value for.</param>
+        <param name="args">An array of one or more index values that specify the location in <c>o</c> if <c>o</c> is a one-dimensional or multi-dimensional array, or argument values to pass to the object <c>o</c>.</param>
+        <param name="paramnames">An array that contains the names of the parameters to which the values in the <c>args</c> array are passed.</param>
+        <summary>Sets a late-bound value of an object, using the specified parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LateIndexSetComplex">
+      <MemberSignature Language="C#" Value="public static void LateIndexSetComplex (object o, object[] args, string[] paramnames, bool OptimisticSet, bool RValueBase);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void LateIndexSetComplex(object o, object[] args, string[] paramnames, bool OptimisticSet, bool RValueBase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.LateBinding.LateIndexSetComplex(System.Object,System.Object[],System.String[],System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+        <Parameter Name="args" Type="System.Object[]" />
+        <Parameter Name="paramnames" Type="System.String[]" />
+        <Parameter Name="OptimisticSet" Type="System.Boolean" />
+        <Parameter Name="RValueBase" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="o">The object to set the value for.</param>
+        <param name="args">An array of one or more parameter values to pass to the object <c>o</c>.</param>
+        <param name="paramnames">An array that contains the names of the parameters to which the values in the <c>args</c> array are passed.</param>
+        <param name="OptimisticSet">
+          <see langword="True" /> to suppress the exception thrown when the set member is not found.</param>
+        <param name="RValueBase">
+          <see langword="True" /> to identify <c>o</c> as the result of a late-bound expression.</param>
+        <summary>Sets a late-bound value of an object, using the specified parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LateSet">
+      <MemberSignature Language="C#" Value="public static void LateSet (object o, Type objType, string name, object[] args, string[] paramnames);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void LateSet(object o, class System.Type objType, string name, object[] args, string[] paramnames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.LateBinding.LateSet(System.Object,System.Type,System.String,System.Object[],System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+        <Parameter Name="objType" Type="System.Type" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="args" Type="System.Object[]" />
+        <Parameter Name="paramnames" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="o">The object to set the member value for.</param>
+        <param name="objType">The type of the object.</param>
+        <param name="name">The member name to set.</param>
+        <param name="args">An array of one or parameter values to pass to the member of <c>o</c>.</param>
+        <param name="paramnames">An array that contains the names of the parameters to which the values in the <c>args</c> array are passed.</param>
+        <summary>Sets a late-bound value of a member of an object, using the specified parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LateSetComplex">
+      <MemberSignature Language="C#" Value="public static void LateSetComplex (object o, Type objType, string name, object[] args, string[] paramnames, bool OptimisticSet, bool RValueBase);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void LateSetComplex(object o, class System.Type objType, string name, object[] args, string[] paramnames, bool OptimisticSet, bool RValueBase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.LateBinding.LateSetComplex(System.Object,System.Type,System.String,System.Object[],System.String[],System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+        <Parameter Name="objType" Type="System.Type" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="args" Type="System.Object[]" />
+        <Parameter Name="paramnames" Type="System.String[]" />
+        <Parameter Name="OptimisticSet" Type="System.Boolean" />
+        <Parameter Name="RValueBase" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="o">The object to set the member value for.</param>
+        <param name="objType">The type of the object.</param>
+        <param name="name">The member name to set.</param>
+        <param name="args">An array of one or more parameter values to pass to the member of <c>o</c>.</param>
+        <param name="paramnames">An array that contains the names of the parameters to which the values in the <c>args</c> array are passed.</param>
+        <param name="OptimisticSet">
+          <see langword="True" /> to suppress the exception thrown when the set member is not found.</param>
+        <param name="RValueBase">
+          <see langword="True" /> to identify <c>o</c> as the result of a late-bound expression.</param>
+        <summary>Sets a late-bound value of a member of an object, using the specified parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

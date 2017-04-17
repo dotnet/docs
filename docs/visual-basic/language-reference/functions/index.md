@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "functions [Visual Basic]"
 ms.assetid: d86fc51f-f46e-4941-8ae2-6262da3d2688
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

@@ -1,0 +1,316 @@
+<Type Name="BuildRequestData" FullName="Microsoft.Build.Execution.BuildRequestData">
+  <TypeSignature Language="C#" Value="public class BuildRequestData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BuildRequestData extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Execution.BuildRequestData" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Encapsulates all of the data needed to submit a build request.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BuildRequestData (Microsoft.Build.Execution.ProjectInstance projectInstance, string[] targetsToBuild);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Build.Execution.ProjectInstance projectInstance, string[] targetsToBuild) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.BuildRequestData.#ctor(Microsoft.Build.Execution.ProjectInstance,System.String[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="projectInstance" Type="Microsoft.Build.Execution.ProjectInstance" />
+        <Parameter Name="targetsToBuild" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="projectInstance">The instance to build.</param>
+        <param name="targetsToBuild">The targets to build.</param>
+        <summary>Constructs build request data for build requests based on project instances.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BuildRequestData (Microsoft.Build.Execution.ProjectInstance projectInstance, string[] targetsToBuild, Microsoft.Build.Execution.HostServices hostServices);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Build.Execution.ProjectInstance projectInstance, string[] targetsToBuild, class Microsoft.Build.Execution.HostServices hostServices) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.BuildRequestData.#ctor(Microsoft.Build.Execution.ProjectInstance,System.String[],Microsoft.Build.Execution.HostServices)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="projectInstance" Type="Microsoft.Build.Execution.ProjectInstance" />
+        <Parameter Name="targetsToBuild" Type="System.String[]" />
+        <Parameter Name="hostServices" Type="Microsoft.Build.Execution.HostServices" />
+      </Parameters>
+      <Docs>
+        <param name="projectInstance">The instance to build.</param>
+        <param name="targetsToBuild">The targets to build.</param>
+        <param name="hostServices">The host services to use, if any.  May be null.</param>
+        <summary>Constructs build request data for build requests based on project instances.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BuildRequestData (Microsoft.Build.Execution.ProjectInstance projectInstance, string[] targetsToBuild, Microsoft.Build.Execution.HostServices hostServices, Microsoft.Build.Execution.BuildRequestDataFlags flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Build.Execution.ProjectInstance projectInstance, string[] targetsToBuild, class Microsoft.Build.Execution.HostServices hostServices, valuetype Microsoft.Build.Execution.BuildRequestDataFlags flags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.BuildRequestData.#ctor(Microsoft.Build.Execution.ProjectInstance,System.String[],Microsoft.Build.Execution.HostServices,Microsoft.Build.Execution.BuildRequestDataFlags)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="projectInstance" Type="Microsoft.Build.Execution.ProjectInstance" />
+        <Parameter Name="targetsToBuild" Type="System.String[]" />
+        <Parameter Name="hostServices" Type="Microsoft.Build.Execution.HostServices" />
+        <Parameter Name="flags" Type="Microsoft.Build.Execution.BuildRequestDataFlags" />
+      </Parameters>
+      <Docs>
+        <param name="projectInstance">The instance to build.</param>
+        <param name="targetsToBuild">The targets to build.</param>
+        <param name="hostServices">The host services to use, if any.  May be null.</param>
+        <param name="flags">The flags to use for the build.</param>
+        <summary>Constructs a BuildRequestData for build requests based on project instances.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BuildRequestData (Microsoft.Build.Execution.ProjectInstance projectInstance, string[] targetsToBuild, Microsoft.Build.Execution.HostServices hostServices, Microsoft.Build.Execution.BuildRequestDataFlags flags, System.Collections.Generic.IEnumerable&lt;string&gt; propertiesToTransfer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Build.Execution.ProjectInstance projectInstance, string[] targetsToBuild, class Microsoft.Build.Execution.HostServices hostServices, valuetype Microsoft.Build.Execution.BuildRequestDataFlags flags, class System.Collections.Generic.IEnumerable`1&lt;string&gt; propertiesToTransfer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.BuildRequestData.#ctor(Microsoft.Build.Execution.ProjectInstance,System.String[],Microsoft.Build.Execution.HostServices,Microsoft.Build.Execution.BuildRequestDataFlags,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="projectInstance" Type="Microsoft.Build.Execution.ProjectInstance" />
+        <Parameter Name="targetsToBuild" Type="System.String[]" />
+        <Parameter Name="hostServices" Type="Microsoft.Build.Execution.HostServices" />
+        <Parameter Name="flags" Type="Microsoft.Build.Execution.BuildRequestDataFlags" />
+        <Parameter Name="propertiesToTransfer" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="projectInstance">The instance to build.</param>
+        <param name="targetsToBuild">The targets to build.</param>
+        <param name="hostServices">The host services to use, if any.  May be null.</param>
+        <param name="flags">The flags to use for the build.</param>
+        <param name="propertiesToTransfer">The list of properties to transfer from the project to any out of process node.</param>
+        <summary>Constructs a BuildRequestData for build requests based on project instances.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BuildRequestData (string projectFullPath, System.Collections.Generic.IDictionary&lt;string,string&gt; globalProperties, string toolsVersion, string[] targetsToBuild, Microsoft.Build.Execution.HostServices hostServices);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string projectFullPath, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; globalProperties, string toolsVersion, string[] targetsToBuild, class Microsoft.Build.Execution.HostServices hostServices) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.BuildRequestData.#ctor(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String[],Microsoft.Build.Execution.HostServices)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="projectFullPath" Type="System.String" />
+        <Parameter Name="globalProperties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="toolsVersion" Type="System.String" />
+        <Parameter Name="targetsToBuild" Type="System.String[]" />
+        <Parameter Name="hostServices" Type="Microsoft.Build.Execution.HostServices" />
+      </Parameters>
+      <Docs>
+        <param name="projectFullPath">The full path to the project file.</param>
+        <param name="globalProperties">The global properties to use during evaluation of the project.</param>
+        <param name="toolsVersion">The tools version to use for the build.  May be null.</param>
+        <param name="targetsToBuild">The targets to build.</param>
+        <param name="hostServices">The host services to use, if any.  May be null.</param>
+        <summary>Constructs a BuildRequestData for build requests with a given project path.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BuildRequestData (string projectFullPath, System.Collections.Generic.IDictionary&lt;string,string&gt; globalProperties, string toolsVersion, string[] targetsToBuild, Microsoft.Build.Execution.HostServices hostServices, Microsoft.Build.Execution.BuildRequestDataFlags flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string projectFullPath, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; globalProperties, string toolsVersion, string[] targetsToBuild, class Microsoft.Build.Execution.HostServices hostServices, valuetype Microsoft.Build.Execution.BuildRequestDataFlags flags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.BuildRequestData.#ctor(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String[],Microsoft.Build.Execution.HostServices,Microsoft.Build.Execution.BuildRequestDataFlags)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="projectFullPath" Type="System.String" />
+        <Parameter Name="globalProperties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="toolsVersion" Type="System.String" />
+        <Parameter Name="targetsToBuild" Type="System.String[]" />
+        <Parameter Name="hostServices" Type="Microsoft.Build.Execution.HostServices" />
+        <Parameter Name="flags" Type="Microsoft.Build.Execution.BuildRequestDataFlags" />
+      </Parameters>
+      <Docs>
+        <param name="projectFullPath">The full path to the project file.</param>
+        <param name="globalProperties">The global properties to use during evaluation of the project.</param>
+        <param name="toolsVersion">The tools version to use for the build.  May be null.</param>
+        <param name="targetsToBuild">The targets to build.</param>
+        <param name="hostServices">The host services to use, if any.  May be null.</param>
+        <param name="flags">The flags to use for the build.</param>
+        <summary>Constructs a BuildRequestData for build requests with a given project path.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExplicitlySpecifiedToolsVersion">
+      <MemberSignature Language="C#" Value="public string ExplicitlySpecifiedToolsVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ExplicitlySpecifiedToolsVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildRequestData.ExplicitlySpecifiedToolsVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the tools version to use for the build.</summary>
+        <value>Returns the tools version to use for the build.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Flags">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Execution.BuildRequestDataFlags Flags { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Build.Execution.BuildRequestDataFlags Flags" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildRequestData.Flags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Execution.BuildRequestDataFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets additional flags for this build request.</summary>
+        <value>Returns the build request flags.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GlobalProperties">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;Microsoft.Build.Execution.ProjectPropertyInstance&gt; GlobalProperties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class Microsoft.Build.Execution.ProjectPropertyInstance&gt; GlobalProperties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildRequestData.GlobalProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;Microsoft.Build.Execution.ProjectPropertyInstance&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the global properties to use for this build request.</summary>
+        <value>Returns the global properties to use for this build request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HostServices">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Execution.HostServices HostServices { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Execution.HostServices HostServices" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildRequestData.HostServices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Execution.HostServices</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the host service for this build.</summary>
+        <value>Returns the host service for this build.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectFullPath">
+      <MemberSignature Language="C#" Value="public string ProjectFullPath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ProjectFullPath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildRequestData.ProjectFullPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets of sets the path to the project file for this build.</summary>
+        <value>Returns the path to the project file for this build.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectInstance">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Execution.ProjectInstance ProjectInstance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Execution.ProjectInstance ProjectInstance" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildRequestData.ProjectInstance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Execution.ProjectInstance</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets project instance for this build.</summary>
+        <value>The project instance, which may be null.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Used in the case where the project is not located in disk storage.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertiesToTransfer">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;string&gt; PropertiesToTransfer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; PropertiesToTransfer" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildRequestData.PropertiesToTransfer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the list of properties to transfer to an out of process node for the build.</summary>
+        <value>Returns the list of properties.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetNames">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;string&gt; TargetNames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;string&gt; TargetNames" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Execution.BuildRequestData.TargetNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the names of the targets to build.</summary>
+        <value>Returns the names of the targets to build.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

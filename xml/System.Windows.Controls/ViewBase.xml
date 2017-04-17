@@ -1,0 +1,166 @@
+<Type Name="ViewBase" FullName="System.Windows.Controls.ViewBase">
+  <TypeSignature Language="C#" Value="public abstract class ViewBase : System.Windows.DependencyObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ViewBase extends System.Windows.DependencyObject" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ViewBase" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.DependencyObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the base class for views that define the appearance of data in a <see cref="T:System.Windows.Controls.ListView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.GridView> view mode is derived from the <xref:System.Windows.Controls.ViewBase> class. You typically use a <xref:System.Windows.Controls.GridView> with the <xref:System.Windows.Controls.ListView> control to lay out data in columns. You can also use the <xref:System.Windows.Controls.ViewBase> class to create custom view modes for a <xref:System.Windows.Controls.ListView>.  
+  
+ The <xref:System.Windows.Controls.ListView.View%2A> property defines the view mode that the <xref:System.Windows.Controls.ListView> control uses.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ViewBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ViewBase.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.ViewBase" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearItem">
+      <MemberSignature Language="C#" Value="protected virtual void ClearItem (System.Windows.Controls.ListViewItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void ClearItem(class System.Windows.Controls.ListViewItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ViewBase.ClearItem(System.Windows.Controls.ListViewItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Windows.Controls.ListViewItem" />
+      </Parameters>
+      <Docs>
+        <param name="item">The <see cref="T:System.Windows.Controls.ListViewItem" /> to remove settings from.</param>
+        <summary>Removes all bindings and styling that are set for an item.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultStyleKey">
+      <MemberSignature Language="C#" Value="protected virtual object DefaultStyleKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object DefaultStyleKey" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ViewBase.DefaultStyleKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object that is associated with the style for the view mode.</summary>
+        <value>The style to use for the view mode. The default value is the style for the <see cref="T:System.Windows.Controls.ListBox" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is not overridden by a derived class, the style for the <xref:System.Windows.Controls.ListBox> control is used as the default style.  
+  
+ Use this property to set the style for the <xref:System.Windows.Controls.ListView>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAutomationPeer">
+      <MemberSignature Language="C#" Value="protected virtual System.Windows.Automation.Peers.IViewAutomationPeer GetAutomationPeer (System.Windows.Controls.ListView parent);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Windows.Automation.Peers.IViewAutomationPeer GetAutomationPeer(class System.Windows.Controls.ListView parent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ViewBase.GetAutomationPeer(System.Windows.Controls.ListView)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.IViewAutomationPeer</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="System.Windows.Controls.ListView" />
+      </Parameters>
+      <Docs>
+        <param name="parent">The <see cref="T:System.Windows.Controls.ListView" /> control to use to create the <see cref="T:System.Windows.Automation.Peers.ListViewAutomationPeer" />.</param>
+        <summary>Is called when a <see cref="T:System.Windows.Controls.ListView" /> control creates a <see cref="T:System.Windows.Automation.Peers.ListViewAutomationPeer" /> for its <see cref="P:System.Windows.Controls.ListView.View" />.</summary>
+        <returns>The <see cref="T:System.Windows.Automation.Peers.IViewAutomationPeer" /> interface that implements the <see cref="T:System.Windows.Automation.Peers.ListViewAutomationPeer" /> for a custom <see cref="P:System.Windows.Controls.ListView.View" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Automation.Peers.ListViewAutomationPeer> first uses the properties and <xref:System.Windows.Automation.AutomationPattern> objects that are implemented by the specified view, before using the default properties and patterns that are defined for a <xref:System.Windows.Controls.ListView> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemContainerDefaultStyleKey">
+      <MemberSignature Language="C#" Value="protected virtual object ItemContainerDefaultStyleKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ItemContainerDefaultStyleKey" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ViewBase.ItemContainerDefaultStyleKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the style to use for the items in the view mode.</summary>
+        <value>The style of a <see cref="T:System.Windows.Controls.ListViewItem" />. The default value is the style for the <see cref="T:System.Windows.Controls.ListBoxItem" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to set the style for a <xref:System.Windows.Controls.ListViewItem>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrepareItem">
+      <MemberSignature Language="C#" Value="protected virtual void PrepareItem (System.Windows.Controls.ListViewItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void PrepareItem(class System.Windows.Controls.ListViewItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ViewBase.PrepareItem(System.Windows.Controls.ListViewItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Windows.Controls.ListViewItem" />
+      </Parameters>
+      <Docs>
+        <param name="item">The item to prepare for display.</param>
+        <summary>Prepares an item in the view for display, by setting bindings and styles.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

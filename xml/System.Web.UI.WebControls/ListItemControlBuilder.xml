@@ -1,0 +1,98 @@
+<Type Name="ListItemControlBuilder" FullName="System.Web.UI.WebControls.ListItemControlBuilder">
+  <TypeSignature Language="C#" Value="public class ListItemControlBuilder : System.Web.UI.ControlBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListItemControlBuilder extends System.Web.UI.ControlBuilder" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListItemControlBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.ControlBuilder</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Interacts with the parser to build a <see cref="T:System.Web.UI.WebControls.ListItem" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used primarily for control developers. To create a custom control builder for a <xref:System.Web.UI.WebControls.ListItem> derived control, you need to inherit from this class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListItemControlBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListItemControlBuilder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ListItemControlBuilder" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowWhitespaceLiterals">
+      <MemberSignature Language="C#" Value="public override bool AllowWhitespaceLiterals ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool AllowWhitespaceLiterals() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListItemControlBuilder.AllowWhitespaceLiterals" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Determines whether white spaces in the text associated with the <see cref="T:System.Web.UI.WebControls.ListItem" /> are represented by <see cref="T:System.Web.UI.LiteralControl" /> objects.</summary>
+        <returns>
+          <see langword="false" /> for all cases.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides the inherited implementation of the <xref:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals%2A?displayProperty=fullName> method to always indicate that white spaces in the text associated with the <xref:System.Web.UI.WebControls.ListItem> control are not represented by <xref:System.Web.UI.LiteralControl?displayProperty=fullName> objects.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HtmlDecodeLiterals">
+      <MemberSignature Language="C#" Value="public override bool HtmlDecodeLiterals ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool HtmlDecodeLiterals() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListItemControlBuilder.HtmlDecodeLiterals" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Determines whether HTML entities in the text associated with the <see cref="T:System.Web.UI.WebControls.ListItem" /> are converted to their equivalent characters when the text is parsed.</summary>
+        <returns>
+          <see langword="true" /> for all cases.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ListItemControlBuilder.HtmlDecodeLiterals%2A> method is used to determine whether HTML entities in the text associated with the <xref:System.Web.UI.WebControls.ListItem> are converted to their equivalent characters when the text is parsed. This method overrides the inherited implementation of the <xref:System.Web.UI.ControlBuilder.HtmlDecodeLiterals%2A?displayProperty=fullName> method to always return `true`. This indicates that HTML entities in the text associated with the <xref:System.Web.UI.WebControls.ListItem> control are always automatically converted to their equivalent, plain text characters.  
+  
+> [!NOTE]
+>  The text associated with the <xref:System.Web.UI.WebControls.ListItem> is rendered as an attribute of the `<option>` HTML element. When the attribute is rendered on the client, special characters are automatically converted to their equivalent HTML entity. For example, the less than character (<) is converted to `&lt;`. When the attribute is parsed, HTML entities are automatically converted back to their equivalent, plain text characters.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

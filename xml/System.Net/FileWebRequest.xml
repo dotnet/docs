@@ -1,0 +1,827 @@
+<Type Name="FileWebRequest" FullName="System.Net.FileWebRequest">
+  <TypeSignature Language="C#" Value="public class FileWebRequest : System.Net.WebRequest, System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit FileWebRequest extends System.Net.WebRequest implements class System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="DocId" Value="T:System.Net.FileWebRequest" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Net.WebRequest</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Runtime.Serialization.ISerializable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides a file system implementation of the <see cref="T:System.Net.WebRequest" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.FileWebRequest> class implements the <xref:System.Net.WebRequest>`abstract` base class for Uniform Resource Identifiers (URIs) that use the `file://` scheme to request local files.  
+  
+ Do not use the <xref:System.Net.FileWebRequest.%23ctor%2A> constructor. Use the <xref:System.Net.WebRequest.Create%2A?displayProperty=fullName> method to initialize new instances of the <xref:System.Net.FileWebRequest> class. If the URI scheme is `file://`, the <xref:System.Net.WebRequest.Create%2A> method returns a <xref:System.Net.FileWebRequest> object.  
+  
+ The <xref:System.Net.FileWebRequest.GetResponse%2A> method makes a synchronous request for the file specified in the <xref:System.Net.FileWebRequest.RequestUri%2A> property and returns a <xref:System.Net.FileWebResponse> object that contains the response. You can make an asynchronous request for the file using the <xref:System.Net.FileWebRequest.BeginGetResponse%2A> and <xref:System.Net.FileWebRequest.EndGetResponse%2A> methods.  
+  
+ When you want to write data to a file, the <xref:System.Net.FileWebRequest.GetRequestStream%2A> method returns a <xref:System.IO.Stream> instance to write to. The <xref:System.Net.FileWebRequest.BeginGetRequestStream%2A> and <xref:System.Net.FileWebRequest.EndGetRequestStream%2A> methods provide asynchronous access to the write data stream.  
+  
+ The <xref:System.Net.FileWebRequest> class relies on the <xref:System.IO.File> class for error handling and code access security.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Net.FileWebRequest> class to access a file system resource.  
+  
+ [!code-cpp[System.Net.FileWebRequest#1](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.FileWebRequest/CPP/getrequeststream.cpp#1)]
+ [!code-csharp[System.Net.FileWebRequest#1](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.FileWebRequest/CS/getrequeststream.cs#1)]
+ [!code-vb[System.Net.FileWebRequest#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.FileWebRequest/VB/getrequeststream.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected FileWebRequest (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.FileWebRequest.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Serialization is obsoleted for this type. http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="serializationInfo" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="serializationInfo">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object that contains the information that is required to serialize the new <see cref="T:System.Net.FileWebRequest" /> object.</param>
+        <param name="streamingContext">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> object that contains the source of the serialized stream that is associated with the new <see cref="T:System.Net.FileWebRequest" /> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.FileWebRequest" /> class from the specified instances of the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" /> classes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor implements the <xref:System.Runtime.Serialization.ISerializable> interface for the <xref:System.Net.FileWebRequest> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Abort">
+      <MemberSignature Language="C#" Value="public override void Abort ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Abort() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.FileWebRequest.Abort" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Cancels a request to an Internet resource.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.FileWebRequest.Abort%2A> method cancels a request to a resource. After a request is canceled, calling the <xref:System.Net.FileWebRequest.GetResponse%2A>, <xref:System.Net.FileWebRequest.BeginGetResponse%2A>, <xref:System.Net.FileWebRequest.EndGetResponse%2A>, <xref:System.Net.FileWebRequest.GetRequestStream%2A>, <xref:System.Net.FileWebRequest.BeginGetRequestStream%2A>, or <xref:System.Net.FileWebRequest.EndGetRequestStream%2A> method causes a <xref:System.Net.WebException> with the <xref:System.Net.WebException.Status%2A> property set to <xref:System.Net.WebExceptionStatus>.  
+  
+ **Note** This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginGetRequestStream">
+      <MemberSignature Language="C#" Value="public override IAsyncResult BeginGetRequestStream (AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginGetRequestStream(class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.FileWebRequest.BeginGetRequestStream(System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate.</param>
+        <param name="state">An object that contains state information for this request.</param>
+        <summary>Begins an asynchronous request for a <see cref="T:System.IO.Stream" /> object to use to write data.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that references the asynchronous request.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.FileWebRequest.BeginGetRequestStream%2A> method starts an asynchronous request for a stream used to send data to a file system resource. The callback method that implements the <xref:System.AsyncCallback> delegate uses the <xref:System.Net.FileWebRequest.EndGetRequestStream%2A> method to return the request stream.  
+  
+   
+  
+## Examples  
+ The following code example uses <xref:System.Net.FileWebRequest.BeginGetRequestStream%2A> to make an asynchronous request for a <xref:System.IO.Stream> object.  
+  
+ [!code-cpp[FileWebRequest_ReqBeginEnd#2](~/samples/snippets/cpp/VS_Snippets_Remoting/FileWebRequest_ReqBeginEnd/CPP/filewebrequest_reqbeginend.cpp#2)]
+ [!code-csharp[FileWebRequest_ReqBeginEnd#2](~/samples/snippets/csharp/VS_Snippets_Remoting/FileWebRequest_ReqBeginEnd/CS/filewebrequest_reqbeginend.cs#2)]
+ [!code-vb[FileWebRequest_ReqBeginEnd#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/FileWebRequest_ReqBeginEnd/VB/filewebrequest_reqbeginend.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Net.ProtocolViolationException">The <see cref="P:System.Net.FileWebRequest.Method" /> property is <c>GET</c> and the application writes to the stream.</exception>
+        <exception cref="T:System.InvalidOperationException">The stream is being used by a previous call to <see cref="M:System.Net.FileWebRequest.BeginGetRequestStream(System.AsyncCallback,System.Object)" />.</exception>
+        <exception cref="T:System.ApplicationException">No write stream is available.</exception>
+        <exception cref="T:System.Net.WebException">The <see cref="T:System.Net.FileWebRequest" /> was aborted.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginGetResponse">
+      <MemberSignature Language="C#" Value="public override IAsyncResult BeginGetResponse (AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginGetResponse(class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.FileWebRequest.BeginGetResponse(System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate.</param>
+        <param name="state">An object that contains state information for this request.</param>
+        <summary>Begins an asynchronous request for a file system resource.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that references the asynchronous request.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The asynchronous callback method that implements the <xref:System.AsyncCallback> delegate uses the <xref:System.Net.FileWebRequest.EndGetResponse%2A> method to return the actual <xref:System.Net.FileWebResponse>.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Net.FileWebRequest.BeginGetResponse%2A> method to asynchronously access a file system resource.  
+  
+ [!code-cpp[FileWebRequest_ResBeginEnd#2](~/samples/snippets/cpp/VS_Snippets_Remoting/FileWebRequest_ResBeginEnd/CPP/filewebrequest_resbeginend.cpp#2)]
+ [!code-csharp[FileWebRequest_ResBeginEnd#2](~/samples/snippets/csharp/VS_Snippets_Remoting/FileWebRequest_ResBeginEnd/CS/filewebrequest_resbeginend.cs#2)]
+ [!code-vb[FileWebRequest_ResBeginEnd#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/FileWebRequest_ResBeginEnd/VB/filewebrequest_resbeginend.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The stream is already in use by a previous call to <see cref="M:System.Net.FileWebRequest.BeginGetResponse(System.AsyncCallback,System.Object)" />.</exception>
+        <exception cref="T:System.Net.WebException">The <see cref="T:System.Net.FileWebRequest" /> was aborted.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionGroupName">
+      <MemberSignature Language="C#" Value="public override string ConnectionGroupName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectionGroupName" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FileWebRequest.ConnectionGroupName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the connection group for the request. This property is reserved for future use.</summary>
+        <value>The name of the connection group for the request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.FileWebRequest.ConnectionGroupName%2A> property is currently not used by the <xref:System.Net.FileWebRequest> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentLength">
+      <MemberSignature Language="C#" Value="public override long ContentLength { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 ContentLength" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FileWebRequest.ContentLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the content length of the data being sent.</summary>
+        <value>The number of bytes of request data being sent.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example sets the content length of the data being sent. Refer to the complete example in the <xref:System.Net.FileWebRequest> class.  
+  
+ [!code-cpp[System.Net.FileWebRequest#4](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.FileWebRequest/CPP/getrequeststream.cpp#4)]
+ [!code-csharp[System.Net.FileWebRequest#4](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.FileWebRequest/CS/getrequeststream.cs#4)]
+ [!code-vb[System.Net.FileWebRequest#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.FileWebRequest/VB/getrequeststream.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <see cref="P:System.Net.FileWebRequest.ContentLength" /> is less than 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentType">
+      <MemberSignature Language="C#" Value="public override string ContentType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FileWebRequest.ContentType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the content type of the data being sent. This property is reserved for future use.</summary>
+        <value>The content type of the data being sent.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.FileWebRequest.ContentType%2A> property contains the media type of the data being sent. This is typically the MIME encoding of the content. The <xref:System.Net.FileWebRequest.ContentType%2A> property is currently not used by the <xref:System.Net.FileWebRequest> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Credentials">
+      <MemberSignature Language="C#" Value="public override System.Net.ICredentials Credentials { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.ICredentials Credentials" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FileWebRequest.Credentials" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.ICredentials</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the credentials that are associated with this request. This property is reserved for future use.</summary>
+        <value>An <see cref="T:System.Net.ICredentials" /> that contains the authentication credentials that are associated with this request. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because the <xref:System.Net.FileWebRequest> class does not authenticate requests for files from the local file system, it ignores the contents, if any, of the <xref:System.Net.FileWebRequest.Credentials%2A> property. Authentication for <xref:System.Net.FileWebRequest> is handled by the access control lists for the file resource in the underlying file system.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndGetRequestStream">
+      <MemberSignature Language="C#" Value="public override System.IO.Stream EndGetRequestStream (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IO.Stream EndGetRequestStream(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.FileWebRequest.EndGetRequestStream(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">An <see cref="T:System.IAsyncResult" /> that references the pending request for a stream.</param>
+        <summary>Ends an asynchronous request for a <see cref="T:System.IO.Stream" /> instance that the application uses to write data.</summary>
+        <returns>A <see cref="T:System.IO.Stream" /> object that the application uses to write data.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.FileWebRequest.EndGetRequestStream%2A> method completes an asynchronous stream request that was started by the <xref:System.Net.FileWebRequest.BeginGetRequestStream%2A> method.  
+  
+> [!NOTE]
+>  To avoid timing issues with garbage collection, be sure to close the response stream by calling the <xref:System.IO.Stream.Close%2A> method on the stream returned by the <xref:System.Net.FileWebResponse.GetResponseStream%2A> method after calling the <xref:System.Net.FileWebRequest.EndGetResponse%2A> method.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Net.FileWebRequest.EndGetRequestStream%2A> method to end the asynchronous request for a <xref:System.IO.Stream> object.  
+  
+ [!code-cpp[FileWebRequest_ReqBeginEnd#2](~/samples/snippets/cpp/VS_Snippets_Remoting/FileWebRequest_ReqBeginEnd/CPP/filewebrequest_reqbeginend.cpp#2)]
+ [!code-csharp[FileWebRequest_ReqBeginEnd#2](~/samples/snippets/csharp/VS_Snippets_Remoting/FileWebRequest_ReqBeginEnd/CS/filewebrequest_reqbeginend.cs#2)]
+ [!code-vb[FileWebRequest_ReqBeginEnd#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/FileWebRequest_ReqBeginEnd/VB/filewebrequest_reqbeginend.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="asyncResult" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndGetResponse">
+      <MemberSignature Language="C#" Value="public override System.Net.WebResponse EndGetResponse (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Net.WebResponse EndGetResponse(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.FileWebRequest.EndGetResponse(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">An <see cref="T:System.IAsyncResult" /> that references the pending request for a response.</param>
+        <summary>Ends an asynchronous request for a file system resource.</summary>
+        <returns>A <see cref="T:System.Net.WebResponse" /> that contains the response from the file system resource.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.FileWebRequest.EndGetResponse%2A> method completes an asynchronous request for a file system resource that was started with the <xref:System.Net.FileWebRequest.BeginGetResponse%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Net.FileWebRequest.EndGetResponse%2A> method to end an asynchronous request for a file system resource.  
+  
+ [!code-cpp[FileWebRequest_ResBeginEnd#2](~/samples/snippets/cpp/VS_Snippets_Remoting/FileWebRequest_ResBeginEnd/CPP/filewebrequest_resbeginend.cpp#2)]
+ [!code-csharp[FileWebRequest_ResBeginEnd#2](~/samples/snippets/csharp/VS_Snippets_Remoting/FileWebRequest_ResBeginEnd/CS/filewebrequest_resbeginend.cs#2)]
+ [!code-vb[FileWebRequest_ResBeginEnd#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/FileWebRequest_ResBeginEnd/VB/filewebrequest_resbeginend.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="asyncResult" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjectData">
+      <MemberSignature Language="C#" Value="protected override void GetObjectData (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.FileWebRequest.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serializationInfo" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="serializationInfo">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> to populate with data.</param>
+        <param name="streamingContext">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> that specifies the destination for this serialization.</param>
+        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data needed to serialize the target object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any objects that are included in the <xref:System.Runtime.Serialization.SerializationInfo> are automatically tracked and serialized by the formatter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRequestStream">
+      <MemberSignature Language="C#" Value="public override System.IO.Stream GetRequestStream ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IO.Stream GetRequestStream() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.FileWebRequest.GetRequestStream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a <see cref="T:System.IO.Stream" /> object for writing data to the file system resource.</summary>
+        <returns>A <see cref="T:System.IO.Stream" /> for writing data to the file system resource.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.FileWebRequest.GetRequestStream%2A> method provides synchronous access to the <xref:System.IO.Stream>. For asynchronous access, use the <xref:System.Net.FileWebRequest.BeginGetRequestStream%2A> and <xref:System.Net.FileWebRequest.EndGetRequestStream%2A> methods.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Net.FileWebRequest.GetRequestStream%2A> method to obtain a stream instance used to write to the file. Refer to the complete example in the <xref:System.Net.FileWebRequest> class.  
+  
+ [!code-cpp[System.Net.FileWebRequest#5](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.FileWebRequest/CPP/getrequeststream.cpp#5)]
+ [!code-csharp[System.Net.FileWebRequest#5](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.FileWebRequest/CS/getrequeststream.cs#5)]
+ [!code-vb[System.Net.FileWebRequest#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.FileWebRequest/VB/getrequeststream.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Net.WebException">The request times out.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResponse">
+      <MemberSignature Language="C#" Value="public override System.Net.WebResponse GetResponse ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Net.WebResponse GetResponse() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.FileWebRequest.GetResponse" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebResponse</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a response to a file system request.</summary>
+        <returns>A <see cref="T:System.Net.WebResponse" /> that contains the response from the file system resource.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.FileWebRequest.GetResponse%2A> method returns a <xref:System.Net.WebResponse> object that contains the response from the file system resource.  
+  
+ The <xref:System.Net.FileWebRequest.GetResponse%2A> method provides synchronous access to the <xref:System.Net.WebResponse>. For asynchronous access, use the <xref:System.Net.FileWebRequest.BeginGetResponse%2A> and <xref:System.Net.FileWebRequest.EndGetResponse%2A> methods.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Net.FileWebRequest.GetResponse%2A> method to return a file system request response.  
+  
+ [!code-cpp[System.Net.FilewebRequest.GetResponse#1](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.FileWebRequest.GetResponse/CPP/getresponse.cpp#1)]
+ [!code-csharp[System.Net.FilewebRequest.GetResponse#1](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.FileWebRequest.GetResponse/CS/getresponse.cs#1)]
+ [!code-vb[System.Net.FilewebRequest.GetResponse#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.FileWebRequest.GetResponse/VB/getresponse.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Net.WebException">The request timed out.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Headers">
+      <MemberSignature Language="C#" Value="public override System.Net.WebHeaderCollection Headers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.WebHeaderCollection Headers" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FileWebRequest.Headers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebHeaderCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of the name/value pairs that are associated with the request. This property is reserved for future use.</summary>
+        <value>A <see cref="T:System.Net.WebHeaderCollection" /> that contains header name/value pairs associated with this request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.FileWebRequest.Headers%2A> property is currently not used by the <xref:System.Net.FileWebRequest> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Method">
+      <MemberSignature Language="C#" Value="public override string Method { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Method" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FileWebRequest.Method" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the protocol method used for the request. This property is reserved for future use.</summary>
+        <value>The protocol method to use in this request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.FileWebRequest.Method%2A> property is currently not used by the <xref:System.Net.FileWebRequest> class.  
+  
+   
+  
+## Examples  
+ The following code example sets the protocol method used for the request. Refer to the complete example in the <xref:System.Net.FileWebRequest> class.  
+  
+ [!code-cpp[System.Net.FileWebRequest#2](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.FileWebRequest/CPP/getrequeststream.cpp#2)]
+ [!code-csharp[System.Net.FileWebRequest#2](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.FileWebRequest/CS/getrequeststream.cs#2)]
+ [!code-vb[System.Net.FileWebRequest#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.FileWebRequest/VB/getrequeststream.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The method is invalid.  
+  
+ \- or -  
+  
+ The method is not supported.  
+  
+ \- or -  
+  
+ Multiple methods were specified.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PreAuthenticate">
+      <MemberSignature Language="C#" Value="public override bool PreAuthenticate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PreAuthenticate" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FileWebRequest.PreAuthenticate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether to preauthenticate a request. This property is reserved for future use.</summary>
+        <value>
+          <see langword="true" /> to preauthenticate; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.FileWebRequest.PreAuthenticate%2A> property is currently not used by the <xref:System.Net.FileWebRequest> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Proxy">
+      <MemberSignature Language="C#" Value="public override System.Net.IWebProxy Proxy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.IWebProxy Proxy" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FileWebRequest.Proxy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.IWebProxy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the network proxy to use for this request. This property is reserved for future use.</summary>
+        <value>An <see cref="T:System.Net.IWebProxy" /> that indicates the network proxy to use for this request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.FileWebRequest.Proxy%2A> property is currently not used by the <xref:System.Net.FileWebRequest> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestUri">
+      <MemberSignature Language="C#" Value="public override Uri RequestUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri RequestUri" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FileWebRequest.RequestUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Uniform Resource Identifier (URI) of the request.</summary>
+        <value>A <see cref="T:System.Uri" /> that contains the URI of the request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example uses the <xref:System.Net.FileWebRequest.RequestUri%2A> property to get the URI of the request.  
+  
+ [!code-cpp[FileWebRequest_ContentLength#2](~/samples/snippets/cpp/VS_Snippets_Remoting/FileWebRequest_ContentLength/CPP/filewebrequest_contentlength.cpp#2)]
+ [!code-csharp[FileWebRequest_ContentLength#2](~/samples/snippets/csharp/VS_Snippets_Remoting/FileWebRequest_ContentLength/CS/filewebrequest_contentlength.cs#2)]
+ [!code-vb[FileWebRequest_ContentLength#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/FileWebRequest_ContentLength/VB/filewebrequest_contentlength.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
+      <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.FileWebRequest.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serializationInfo" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="serializationInfo">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized data for the <see cref="T:System.Net.FileWebRequest" />.</param>
+        <param name="streamingContext">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains the destination of the serialized stream that is associated with the new <see cref="T:System.Net.FileWebRequest" />.</param>
+        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with the required data to serialize the <see cref="T:System.Net.FileWebRequest" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Timeout">
+      <MemberSignature Language="C#" Value="public override int Timeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Timeout" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FileWebRequest.Timeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the length of time until the request times out.</summary>
+        <value>The time, in milliseconds, until the request times out, or the value <see cref="F:System.Threading.Timeout.Infinite" /> to indicate that the request does not time out.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A Domain Name System (DNS) query may take up to 15 seconds to return or time out. If your request contains a host name that requires resolution and you set <xref:System.Net.FileWebRequest.Timeout%2A> to a value less than 15 seconds, it may take 15 seconds or more before a <xref:System.Net.WebException> is thrown to indicate a time-out on your request.  
+  
+   
+  
+## Examples  
+ The following code example sets the <xref:System.Net.FileWebRequest.Timeout%2A> property. Refer to the complete example in the <xref:System.Net.FileWebRequest> class.  
+  
+ [!code-cpp[System.Net.FileWebRequest#3](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.FileWebRequest/CPP/getrequeststream.cpp#3)]
+ [!code-csharp[System.Net.FileWebRequest#3](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.FileWebRequest/CS/getrequeststream.cs#3)]
+ [!code-vb[System.Net.FileWebRequest#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.FileWebRequest/VB/getrequeststream.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value specified is less than or equal to zero and is not <see cref="F:System.Threading.Timeout.Infinite" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UseDefaultCredentials">
+      <MemberSignature Language="C#" Value="public override bool UseDefaultCredentials { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseDefaultCredentials" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FileWebRequest.UseDefaultCredentials" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Always throws a <see cref="T:System.NotSupportedException" />.</summary>
+        <value>Always throws a <see cref="T:System.NotSupportedException" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.FileWebRequest.UseDefaultCredentials%2A> property is provided only for compatibility with other implementations of the <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> classes. There is no reason to use <xref:System.Net.FileWebRequest.UseDefaultCredentials%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">Default credentials are not supported for file Uniform Resource Identifiers (URIs).</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

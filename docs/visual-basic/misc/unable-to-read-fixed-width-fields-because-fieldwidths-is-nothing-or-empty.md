@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrTextFieldParser_FieldWidthsNothing"
 ms.assetid: 623e0825-5640-4e47-8341-7eeec80fc145
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

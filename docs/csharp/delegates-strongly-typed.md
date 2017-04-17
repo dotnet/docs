@@ -36,7 +36,7 @@ when you need new method declarations.
 
 The first of these types is the @System.Action type, and several variations:
 
-```cs
+```csharp
 public delegate void Action();
 public delegate void Action<in T>(T arg);
 public delegate void Action<in T1, in T2>(T1 arg1, T2 arg2);
@@ -56,7 +56,7 @@ Use one of the `Action` types for any delegate type that has a void return type.
 The framework also includes several generic delegate types that you can use for
 delegate types that return values:
 
-```cs
+```csharp
 public delegate TResult Func<out TResult>();
 public delegate TResult Func<in T1, out TResult>(T1 arg);
 public delegate TResult Func<in T1, in T2, out TResult>(T1 arg1, T2 arg2);
@@ -77,14 +77,14 @@ There's also a specialized
 @System.Predicate%601 
 type for a delegate that returns a test on a single value:
 
-```cs
+```csharp
 public delegate bool Predicate<in T>(T obj);
 ```
 
 You may notice that for any `Predicate` type, a structurally equivalent `Func`
 type exists For example:
 
-```cs
+```csharp
 Func<string, bool> TestForString;
 Predicate<string> AnotherTestForString;
 ```

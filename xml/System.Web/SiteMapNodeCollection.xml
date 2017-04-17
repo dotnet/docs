@@ -1,0 +1,1252 @@
+<Type Name="SiteMapNodeCollection" FullName="System.Web.SiteMapNodeCollection">
+  <TypeSignature Language="C#" Value="public class SiteMapNodeCollection : System.Collections.IList, System.Web.UI.IHierarchicalEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SiteMapNodeCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList, class System.Web.UI.IHierarchicalEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.Web.SiteMapNodeCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IList</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Web.UI.IHierarchicalEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides a strongly typed collection for <see cref="T:System.Web.SiteMapNode" /> objects and implements the <see cref="T:System.Web.UI.IHierarchicalEnumerable" /> interface to support navigating through the collection.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.SiteMapNodeCollection> class provides a strongly typed collection for <xref:System.Web.SiteMapNode> objects. It stores <xref:System.Web.SiteMapNode> objects internally in a zero-based array.  
+  
+ You can modify a <xref:System.Web.SiteMapNodeCollection> collection when it is first created, and then use the following methods to add, copy, and remove <xref:System.Web.SiteMapNode> objects:  
+  
+-   To add <xref:System.Web.SiteMapNode> objects, use the <xref:System.Web.SiteMapNodeCollection.Add%2A>,  <xref:System.Web.SiteMapNodeCollection.AddRange%2A>, and <xref:System.Web.SiteMapNodeCollection.Insert%2A> methods.  
+  
+-   To copy <xref:System.Web.SiteMapNode> objects, use the <xref:System.Web.SiteMapNodeCollection.CopyTo%2A> method.  
+  
+-   To remove <xref:System.Web.SiteMapNode> objects, use the <xref:System.Web.SiteMapNodeCollection.Remove%2A> method.  
+  
+ You can create a read-only <xref:System.Web.SiteMapNodeCollection>, which does not permit adding, copying, nor removing <xref:System.Web.SiteMapNode> objects, by using the static <xref:System.Web.SiteMapNodeCollection.ReadOnly%2A> method. The <xref:System.Web.SiteMapNodeCollection> collections that are returned by the <xref:System.Web.SiteMapNode.GetAllNodes%2A?displayProperty=fullName> and <xref:System.Web.UI.IHierarchyData.GetChildren%2A> methods are read-only, as is the <xref:System.Web.SiteMapNodeCollection> that is returned when the <xref:System.Web.SiteMapNode.ChildNodes%2A> property is accessed on a <xref:System.Web.SiteMapNode> object that is returned from a provider. A <xref:System.NotSupportedException> exception is thrown, if you attempt to modify a read-only <xref:System.Web.SiteMapNodeCollection> by setting the default indexer property or by using any of the following methods:  
+  
+-   <xref:System.Web.SiteMapNodeCollection.Add%2A>  
+  
+-   <xref:System.Web.SiteMapNodeCollection.AddRange%2A>  
+  
+-   <xref:System.Web.SiteMapNodeCollection.Clear%2A>  
+  
+-   <xref:System.Web.SiteMapNodeCollection.Insert%2A>  
+  
+-   <xref:System.Web.SiteMapNodeCollection.Remove%2A>  
+  
+-   <xref:System.Web.SiteMapNodeCollection.RemoveAt%2A>  
+  
+ Use the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property to check the collection before calling any of the methods in the preceding list.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.Web.SiteMapNodeCollection> collection, and then add <xref:System.Web.SiteMapNode> objects to it using the <xref:System.Web.SiteMapNodeCollection.AddRange%2A> method. The <xref:System.Web.SiteMapNodeCollection> is a subset of the current site map, showing only the first two hierarchical levels.  
+  
+ [!code-csharp[System.Web.SiteMapNodeCollection_2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_2/CS/webform2smccs.aspx#2)]
+ [!code-vb[System.Web.SiteMapNodeCollection_2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_2/VB/webform2smcvb.aspx#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SiteMapNodeCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.SiteMapNodeCollection" /> class, which is the default instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor to create an empty <xref:System.Web.SiteMapNodeCollection> collection. You can add elements to the <xref:System.Web.SiteMapNodeCollection> using the <xref:System.Web.SiteMapNodeCollection.Add%2A>, <xref:System.Web.SiteMapNodeCollection.AddRange%2A>, or <xref:System.Web.SiteMapNodeCollection.Insert%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor to create a new <xref:System.Web.SiteMapNodeCollection> collection, and then add elements to the <xref:System.Web.SiteMapNodeCollection> with the <xref:System.Web.SiteMapNodeCollection.Add%2A> method.  
+  
+ [!code-csharp[System.Web.SiteMapNode_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNode_2/CS/sitemapnode2acs.aspx.cs#1)]
+ [!code-vb[System.Web.SiteMapNode_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNode_2/VB/sitemapnode2avb.aspx.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SiteMapNodeCollection (int capacity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 capacity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="capacity" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="capacity">The initial capacity of the <see cref="T:System.Web.SiteMapNodeCollection" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.SiteMapNodeCollection" /> class with the specified initial capacity.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor to create a <xref:System.Web.SiteMapNodeCollection> collection with the specified initial capacity.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SiteMapNodeCollection (System.Web.SiteMapNode value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.SiteMapNode value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.#ctor(System.Web.SiteMapNode)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.Web.SiteMapNode" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.Web.SiteMapNode" /> to add to the <see cref="T:System.Web.SiteMapNodeCollection" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.SiteMapNodeCollection" /> class and adds the <see cref="T:System.Web.SiteMapNode" /> object to the <see cref="P:System.Collections.CollectionBase.InnerList" /> property for the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor to create a <xref:System.Web.SiteMapNodeCollection> collection with a single initial <xref:System.Web.SiteMapNode> object. You can add elements to the <xref:System.Web.SiteMapNodeCollection> using the <xref:System.Web.SiteMapNodeCollection.Add%2A>, <xref:System.Web.SiteMapNodeCollection.AddRange%2A>, or <xref:System.Web.SiteMapNodeCollection.Insert%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.Web.SiteMapNodeCollection> collection with a single initial <xref:System.Web.SiteMapNode> object, and then add a <xref:System.Web.SiteMapNodeCollection> of <xref:System.Web.SiteMapNode> objects to it using the <xref:System.Web.SiteMapNodeCollection.AddRange%2A> method. You can modify the <xref:System.Web.SiteMapNodeCollection>, even though the individual <xref:System.Web.SiteMapNode> objects might be read-only.  
+  
+ [!code-csharp[System.Web.SiteMapNodeCollection_2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_2/CS/webform2smccs.aspx#2)]
+ [!code-vb[System.Web.SiteMapNodeCollection_2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_2/VB/webform2smcvb.aspx#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SiteMapNodeCollection (System.Web.SiteMapNode[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.SiteMapNode[] value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.#ctor(System.Web.SiteMapNode[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.Web.SiteMapNode[]" />
+      </Parameters>
+      <Docs>
+        <param name="value">An array of type <see cref="T:System.Web.SiteMapNode" /> to add to the <see cref="T:System.Web.SiteMapNodeCollection" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.SiteMapNodeCollection" /> class and adds the array of type <see cref="T:System.Web.SiteMapNode" /> to the <see cref="P:System.Collections.CollectionBase.InnerList" /> property for the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Using the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor is equivalent to calling the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor and adding elements to the <xref:System.Web.SiteMapNodeCollection> collection with the <xref:System.Web.SiteMapNodeCollection.AddRange%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SiteMapNodeCollection (System.Web.SiteMapNodeCollection value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.SiteMapNodeCollection value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.#ctor(System.Web.SiteMapNodeCollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.Web.SiteMapNodeCollection" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.Web.SiteMapNodeCollection" /> that contains the <see cref="T:System.Web.SiteMapNode" /> to add to the current <see cref="T:System.Web.SiteMapNodeCollection" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.SiteMapNodeCollection" /> class and adds all the list items of the specified <see cref="T:System.Web.SiteMapNodeCollection" /> collection to the <see cref="P:System.Collections.CollectionBase.InnerList" /> property for the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Using the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor is equivalent to calling the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor and adding elements to the <xref:System.Web.SiteMapNodeCollection> collection with the <xref:System.Web.SiteMapNodeCollection.AddRange%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.Web.SiteMapNodeCollection> collection using another <xref:System.Web.SiteMapNodeCollection> of <xref:System.Web.SiteMapNode> objects as a base. The <xref:System.Web.SiteMapNode.GetAllNodes%2A?displayProperty=fullName> method returns a read-only <xref:System.Web.SiteMapNodeCollection>, which is detected when the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property returns `true`. A new <xref:System.Web.SiteMapNodeCollection> is created using the read-only <xref:System.Web.SiteMapNodeCollection> and the <xref:System.Web.SiteMapNodeCollection.Add%2A> and <xref:System.Web.SiteMapNodeCollection.Remove%2A> methods can be called successfully.  
+  
+ [!code-csharp[System.Web.SiteMapNodeCollection_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_1/CS/webform1smccs.aspx#1)]
+ [!code-vb[System.Web.SiteMapNodeCollection_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_1/VB/webform1smcvb.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public virtual int Add (System.Web.SiteMapNode value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Add(class System.Web.SiteMapNode value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.Add(System.Web.SiteMapNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Web.SiteMapNode" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Web.SiteMapNode" /> to add to the <see cref="T:System.Web.SiteMapNodeCollection" />.</param>
+        <summary>Adds a single <see cref="T:System.Web.SiteMapNode" /> object to the  collection.</summary>
+        <returns>The index of the <see cref="P:System.Collections.CollectionBase.InnerList" /> where the <see cref="T:System.Web.SiteMapNode" /> was inserted.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot add a <xref:System.Web.SiteMapNode> object to a read-only or fixed-size <xref:System.Web.SiteMapNodeCollection> collection. You can test whether a <xref:System.Web.SiteMapNodeCollection> is read-only by checking the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property.  
+  
+   
+  
+## Examples  
+ This section contains two code examples. The first code example demonstrates how to create a new <xref:System.Web.SiteMapNodeCollection> collection and add elements to it. The second code example demonstrates how to add elements to a custom site map provider.  
+  
+ The following code example demonstrates how to use the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor to create a new <xref:System.Web.SiteMapNodeCollection>, and then add elements to it with the <xref:System.Web.SiteMapNodeCollection.Add%2A> method.  
+  
+ [!code-csharp[System.Web.SiteMapNode_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNode_2/CS/sitemapnode2acs.aspx.cs#1)]
+ [!code-vb[System.Web.SiteMapNode_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNode_2/VB/sitemapnode2avb.aspx.vb#1)]  
+  
+ The following code example demonstrates a custom site map provider implementation and shows how to use the <xref:System.Web.SiteMapNodeCollection.%23ctor%2A> constructor to create a new <xref:System.Web.SiteMapNodeCollection> and add elements to the <xref:System.Web.SiteMapNodeCollection> with the <xref:System.Web.SiteMapNodeCollection.Add%2A> method.  
+  
+ This code example is part of a larger code example provided for the <xref:System.Web.SiteMapProvider> class.  
+  
+ [!code-csharp[Urtue.Samples.Alexkr.SimpleTextSiteMapProvider_1#6](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.SimpleTextSiteMapProvider_1/CS/simpletextsitemapprovider.cs#6)]
+ [!code-vb[Urtue.Samples.Alexkr.SimpleTextSiteMapProvider_1#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.SimpleTextSiteMapProvider_1/VB/simpletextsitemapprovider.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.SiteMapNodeCollection" /> is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRange">
+      <MemberSignature Language="C#" Value="public virtual void AddRange (System.Web.SiteMapNode[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddRange(class System.Web.SiteMapNode[] value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.AddRange(System.Web.SiteMapNode[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Web.SiteMapNode[]" />
+      </Parameters>
+      <Docs>
+        <param name="value">An array of type <see cref="T:System.Web.SiteMapNode" /> to add to the current <see cref="T:System.Web.SiteMapNodeCollection" />.</param>
+        <summary>Adds an array of type <see cref="T:System.Web.SiteMapNode" /> to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The array that is passed to the <xref:System.Web.SiteMapNodeCollection.AddRange%2A> method can contain `null` values; however, this leads to unexpected exceptions when the <xref:System.Web.SiteMapNodeCollection> collection is manipulated.  
+  
+ You cannot add a <xref:System.Web.SiteMapNode> object to a read-only or fixed-size <xref:System.Web.SiteMapNodeCollection>. You can test whether a <xref:System.Web.SiteMapNodeCollection> is read-only by checking the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.SiteMapNodeCollection" /> is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRange">
+      <MemberSignature Language="C#" Value="public virtual void AddRange (System.Web.SiteMapNodeCollection value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddRange(class System.Web.SiteMapNodeCollection value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.AddRange(System.Web.SiteMapNodeCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Web.SiteMapNodeCollection" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.Web.SiteMapNodeCollection" /> that contains the <see cref="T:System.Web.SiteMapNode" /> objects to add to the current <see cref="T:System.Web.SiteMapNodeCollection" />.</param>
+        <summary>Adds the nodes in the specified  <see cref="T:System.Web.SiteMapNodeCollection" /> to the current collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.SiteMapNodeCollection> collection that is passed to the <xref:System.Web.SiteMapNodeCollection.AddRange%2A> method can contain `null`<xref:System.Web.SiteMapNode> objects; however, this leads to unexpected exceptions when the <xref:System.Web.SiteMapNodeCollection> is manipulated.  
+  
+ You cannot add a <xref:System.Web.SiteMapNode> object to a read-only or fixed-size <xref:System.Web.SiteMapNodeCollection>. You can test whether a <xref:System.Web.SiteMapNodeCollection> is read-only by checking the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a modifiable <xref:System.Web.SiteMapNodeCollection> collection, and then add <xref:System.Web.SiteMapNode> objects to it using the <xref:System.Web.SiteMapNodeCollection.AddRange%2A> method.  
+  
+ [!code-csharp[System.Web.SiteMapNodeCollection_2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_2/CS/webform2smccs.aspx#2)]
+ [!code-vb[System.Web.SiteMapNodeCollection_2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_2/VB/webform2smcvb.aspx#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.SiteMapNodeCollection" /> is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public virtual void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all items from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can test whether a <xref:System.Web.SiteMapNodeCollection> collection is read-only by checking the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property.  
+  
+ To remove specific elements of the <xref:System.Web.SiteMapNodeCollection>, use the <xref:System.Web.SiteMapNodeCollection.Remove%2A> or <xref:System.Web.SiteMapNodeCollection.RemoveAt%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.SiteMapNodeCollection" /> is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public virtual bool Contains (System.Web.SiteMapNode value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(class System.Web.SiteMapNode value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.Contains(System.Web.SiteMapNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Web.SiteMapNode" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Web.SiteMapNode" /> to locate in the <see cref="T:System.Web.SiteMapNodeCollection" />.</param>
+        <summary>Determines whether the collection contains a specific <see cref="T:System.Web.SiteMapNode" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Web.SiteMapNodeCollection" /> contains the specified <see cref="T:System.Web.SiteMapNode" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.SiteMapNodeCollection.Contains%2A> method determines equality by calling the <xref:System.Object.Equals%2A?displayProperty=fullName> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.SiteMapNodeCollection.Contains%2A> and <xref:System.Web.SiteMapNodeCollection.IndexOf%2A> methods of the <xref:System.Web.SiteMapNodeCollection> class. The code checks two providers, `AspNetXmlSiteMapProvider` and `MyXmlSiteMapProvider`, for child nodes of the root node that are duplicates.  
+  
+ [!code-csharp[System.Web.SiteMapNodeCollection_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_4/cs/sourcecs.aspx#1)]
+ [!code-vb[System.Web.SiteMapNodeCollection_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_4/vb/sourcevb.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public virtual void CopyTo (System.Web.SiteMapNode[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Web.SiteMapNode[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.CopyTo(System.Web.SiteMapNode[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Web.SiteMapNode[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The one-dimensional array that must have zero-based indexing and is the destination of the elements copied from the <see cref="T:System.Web.SiteMapNodeCollection" />.</param>
+        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the entire collection to a compatible one-dimensional array, starting at the specified index of the target array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.SiteMapNodeCollection.CopyTo%2A> method delegates to the <xref:System.Collections.CollectionBase.List%2A?displayProperty=fullName> property, which accounts for the possible exceptions that are listed in "Exceptions."  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="array" /> is multidimensional.  
+  
+ -or-  
+  
+ The number of <see cref="T:System.Web.SiteMapNode" /> objects in the source <see cref="T:System.Web.SiteMapNodeCollection" /> is greater than the available space from <paramref name="index" /> to the end of <paramref name="array" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public virtual int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Web.SiteMapNodeCollection.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of elements contained in the collection.</summary>
+        <value>The number of elements in the <see cref="T:System.Web.SiteMapNodeCollection" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataSourceView">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.SiteMapDataSourceView GetDataSourceView (System.Web.UI.WebControls.SiteMapDataSource owner, string viewName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.WebControls.SiteMapDataSourceView GetDataSourceView(class System.Web.UI.WebControls.SiteMapDataSource owner, string viewName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.GetDataSourceView(System.Web.UI.WebControls.SiteMapDataSource,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.SiteMapDataSourceView</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Web.UI.WebControls.SiteMapDataSource" />
+        <Parameter Name="viewName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="owner">A <see cref="T:System.Web.UI.WebControls.SiteMapDataSource" /> control that the view is associated with.</param>
+        <param name="viewName">The name of the view.</param>
+        <summary>Retrieves the <see cref="T:System.Web.UI.WebControls.SiteMapDataSourceView" /> object that is associated with the nodes in the current collection.</summary>
+        <returns>A named <see cref="T:System.Web.UI.WebControls.SiteMapDataSourceView" /> for the <see cref="T:System.Web.SiteMapNode" /> objects in the current <see cref="T:System.Web.SiteMapNodeCollection" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves a reference to an enumerator object, which is used to iterate over the collection.</summary>
+        <returns>An object that implements the <see cref="T:System.Collections.IEnumerator" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHierarchicalDataSourceView">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.SiteMapHierarchicalDataSourceView GetHierarchicalDataSourceView ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.WebControls.SiteMapHierarchicalDataSourceView GetHierarchicalDataSourceView() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.GetHierarchicalDataSourceView" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.SiteMapHierarchicalDataSourceView</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves the <see cref="T:System.Web.UI.WebControls.SiteMapHierarchicalDataSourceView" /> object that is associated with the nodes in the current collection.</summary>
+        <returns>A <see cref="T:System.Web.UI.WebControls.SiteMapHierarchicalDataSourceView" /> for the <see cref="T:System.Web.SiteMapNode" /> objects in the current <see cref="T:System.Web.SiteMapNodeCollection" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHierarchyData">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.IHierarchyData GetHierarchyData (object enumeratedItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.IHierarchyData GetHierarchyData(object enumeratedItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.GetHierarchyData(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.IHierarchyData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="enumeratedItem" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="enumeratedItem">The object for which to return an <see cref="T:System.Web.UI.IHierarchyData" />.</param>
+        <summary>Returns a hierarchical data item for the specified enumerated item.</summary>
+        <returns>An <see cref="T:System.Web.UI.IHierarchyData" /> that represents the object passed to the <see cref="M:System.Web.SiteMapNodeCollection.GetHierarchyData(System.Object)" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public virtual int IndexOf (System.Web.SiteMapNode value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(class System.Web.SiteMapNode value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.IndexOf(System.Web.SiteMapNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Web.SiteMapNode" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Web.SiteMapNode" /> to locate in the <see cref="T:System.Web.SiteMapNodeCollection" />.</param>
+        <summary>Searches for the specified <see cref="T:System.Web.SiteMapNode" /> object, and then returns the zero-based index of the first occurrence within the entire collection.</summary>
+        <returns>The zero-based index of the first occurrence of <paramref name="value" /> within the entire <see cref="T:System.Web.SiteMapNodeCollection" />, if found; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.SiteMapNodeCollection.IndexOf%2A> method determines equality by calling the <xref:System.Object.Equals%2A?displayProperty=fullName> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.SiteMapNodeCollection.Contains%2A> and <xref:System.Web.SiteMapNodeCollection.IndexOf%2A> methods of the <xref:System.Web.SiteMapNodeCollection> class. The code checks two providers, `AspNetXmlSiteMapProvider` and `MyXmlSiteMapProvider`, for child nodes of the root node that are duplicates.  
+  
+ [!code-csharp[System.Web.SiteMapNodeCollection_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_4/cs/sourcecs.aspx#1)]
+ [!code-vb[System.Web.SiteMapNodeCollection_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_4/vb/sourcevb.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public virtual void Insert (int index, System.Web.SiteMapNode value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert(int32 index, class System.Web.SiteMapNode value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.Insert(System.Int32,System.Web.SiteMapNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Web.SiteMapNode" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index at which the <see cref="T:System.Web.SiteMapNode" /> is inserted.</param>
+        <param name="value">The <see cref="T:System.Web.SiteMapNode" /> to insert.</param>
+        <summary>Inserts the specified <see cref="T:System.Web.SiteMapNode" /> object into the collection at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can test whether a <xref:System.Web.SiteMapNodeCollection> collection is read-only by checking the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero.  
+  
+ -or-  
+  
+ <paramref name="index" /> is greater than the <see cref="P:System.Collections.CollectionBase.Count" />.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.SiteMapNodeCollection" /> is read-only.  
+  
+ -or-  
+  
+ The <see cref="T:System.Web.SiteMapNodeCollection" /> has a fixed size.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFixedSize">
+      <MemberSignature Language="C#" Value="public virtual bool IsFixedSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsFixedSize" />
+      <MemberSignature Language="DocId" Value="P:System.Web.SiteMapNodeCollection.IsFixedSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a Boolean value indicating whether nodes can be added to or subtracted from the collection.</summary>
+        <value>
+          <see langword="true" /> if you can add <see cref="T:System.Web.SiteMapNode" /> objects to or remove <see cref="T:System.Web.SiteMapNode" /> objects from the <see cref="T:System.Web.SiteMapNodeCollection" />; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public virtual bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Web.SiteMapNodeCollection.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a Boolean value indicating whether the collection is read-only.</summary>
+        <value>
+          <see langword="true" /> if you can modify the <see cref="T:System.Web.SiteMapNodeCollection" />; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSynchronized">
+      <MemberSignature Language="C#" Value="public virtual bool IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Web.SiteMapNodeCollection.IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a Boolean value indicating whether access to the collection is synchronized (thread safe).</summary>
+        <value>
+          <see langword="true" /> if access is synchronized; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public virtual System.Web.SiteMapNode this[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.SiteMapNode Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.SiteMapNodeCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.SiteMapNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the <see cref="T:System.Web.SiteMapNode" /> to find.</param>
+        <summary>Gets or sets the <see cref="T:System.Web.SiteMapNode" /> object at the specified index in the collection.</summary>
+        <value>A <see cref="T:System.Web.SiteMapNode" /> that represents an element in the <see cref="T:System.Web.SiteMapNodeCollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Web.SiteMapNodeCollection.Item%2A> indexer to iterate over the contents of a <xref:System.Web.SiteMapNodeCollection> collection or to replace the <xref:System.Web.SiteMapNode> object at a specified index.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.SiteMapNodeCollection.Item%2A> indexer to retrieve a <xref:System.Web.SiteMapNode> object from the <xref:System.Web.SiteMapNodeCollection> collection. In this example, a <xref:System.Web.SiteMapNode> object is removed from its position at the second element of the internal array using the <xref:System.Web.SiteMapNodeCollection.Remove%2A> method and is appended to the array with the <xref:System.Web.SiteMapNodeCollection.Add%2A> method. To insert a <xref:System.Web.SiteMapNode> object at a specific index, instead of appending it to the end of the array, use the <xref:System.Web.SiteMapNodeCollection.Insert%2A> method.  
+  
+ [!code-csharp[System.Web.SiteMapNodeCollection_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_1/CS/webform1smccs.aspx#2)]
+ [!code-vb[System.Web.SiteMapNodeCollection_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_1/VB/webform1smcvb.aspx#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.SiteMapNodeCollection" /> is read-only.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero.  
+  
+ \- or -  
+  
+ <paramref name="index" /> is great than the <see cref="P:System.Collections.CollectionBase.Count" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The value supplied to the setter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="OnValidate">
+      <MemberSignature Language="C#" Value="protected virtual void OnValidate (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnValidate(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.OnValidate(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Web.SiteMapNode" /> to validate.</param>
+        <summary>Performs additional custom processes when validating a value.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is not a <see cref="T:System.Web.SiteMapNode" />.</exception>
+        <block subset="none" type="overrides">
+          <para>The <see cref="M:System.Web.SiteMapNodeCollection.OnValidate(System.Object)" /> method allows implementers to define processes that must be performed when executing the standard behavior of the underlying <see cref="T:System.Collections.ArrayList" /> object. By defining the <see cref="M:System.Web.SiteMapNodeCollection.OnValidate(System.Object)" /> method, implementers can add functionality to inherited methods without having to override all other methods. Specifically, the <see cref="M:System.Web.SiteMapNodeCollection.OnValidate(System.Object)" /> method is called anytime the <see cref="T:System.Web.SiteMapNodeCollection" /> collection is used via a reference to an <see cref="T:System.Collections.IList" /> interface.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadOnly">
+      <MemberSignature Language="C#" Value="public static System.Web.SiteMapNodeCollection ReadOnly (System.Web.SiteMapNodeCollection collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.SiteMapNodeCollection ReadOnly(class System.Web.SiteMapNodeCollection collection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.ReadOnly(System.Web.SiteMapNodeCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.SiteMapNodeCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Web.SiteMapNodeCollection" />
+      </Parameters>
+      <Docs>
+        <param name="collection">The <see cref="T:System.Web.SiteMapNodeCollection" /> that contains the <see cref="T:System.Web.SiteMapNode" /> objects to add to the read-only <see cref="T:System.Web.SiteMapNodeCollection" />.</param>
+        <summary>Returns a read-only collection that contains the nodes in the specified <see cref="T:System.Web.SiteMapNodeCollection" /> collection.</summary>
+        <returns>A read-only <see cref="T:System.Web.SiteMapNodeCollection" /> with the same <see cref="T:System.Web.SiteMapNode" /> elements and structure as the original <see cref="T:System.Web.SiteMapNodeCollection" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can test whether a <xref:System.Web.SiteMapNodeCollection> collection is read-only by checking the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property. The <xref:System.Web.SiteMapNodeCollection.IsFixedSize%2A> property also returns `true` when a <xref:System.Web.SiteMapNodeCollection> is read-only.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property to test whether a <xref:System.Web.SiteMapNodeCollection> collection is read-only or modifiable. If `siteNodes` is modifiable, `MoveNode` is called on it; otherwise, a clone <xref:System.Web.SiteMapNodeCollection> is created, using `siteNodes` as a base.  
+  
+ [!code-csharp[System.Web.SiteMapNodeCollection_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_1/CS/webform1smccs.aspx#1)]
+ [!code-vb[System.Web.SiteMapNodeCollection_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_1/VB/webform1smcvb.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="collection" /> is <see langword="null" />.</exception>
+        <block subset="none" type="overrides">
+          <para>A read-only <see cref="T:System.Web.SiteMapNodeCollection" /> collection supports read and search operations, but does not support the <see cref="M:System.Web.SiteMapNodeCollection.Add(System.Web.SiteMapNode)" />, <see cref="Overload:System.Web.SiteMapNodeCollection.AddRange" />, <see cref="M:System.Web.SiteMapNodeCollection.Clear" />, <see cref="M:System.Web.SiteMapNodeCollection.Insert(System.Int32,System.Web.SiteMapNode)" />, <see cref="M:System.Web.SiteMapNodeCollection.Remove(System.Web.SiteMapNode)" />, and <see cref="M:System.Web.SiteMapNodeCollection.RemoveAt(System.Int32)" /> methods, nor the setter on the default indexer property, <see cref="P:System.Web.SiteMapNodeCollection.Item(System.Int32)" />.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public virtual void Remove (System.Web.SiteMapNode value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(class System.Web.SiteMapNode value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.Remove(System.Web.SiteMapNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Web.SiteMapNode" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Web.SiteMapNode" /> to remove from the <see cref="T:System.Web.SiteMapNodeCollection" />.</param>
+        <summary>Removes the specified <see cref="T:System.Web.SiteMapNode" /> object from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can test whether a <xref:System.Web.SiteMapNodeCollection> collection is read-only by checking the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property.  
+  
+ The <xref:System.Web.SiteMapNodeCollection.Remove%2A> method determines equality by calling the <xref:System.Object.Equals%2A?displayProperty=fullName> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.SiteMapNodeCollection.Remove%2A> method to remove a <xref:System.Web.SiteMapNode> object from a <xref:System.Web.SiteMapNodeCollection> collection, and then append the <xref:System.Web.SiteMapNode> object to the end of the <xref:System.Web.SiteMapNodeCollection> using the <xref:System.Web.SiteMapNodeCollection.Add%2A> method. If the <xref:System.Web.SiteMapNodeCollection> is read-only, a <xref:System.NotSupportedException> exception is caught.  
+  
+ [!code-csharp[System.Web.SiteMapNodeCollection_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_1/CS/webform1smccs.aspx#2)]
+ [!code-vb[System.Web.SiteMapNodeCollection_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SiteMapNodeCollection_1/VB/webform1smcvb.aspx#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> does not exist in the collection.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.SiteMapNodeCollection" /> is read-only.  
+  
+ -or-  
+  
+ The <see cref="T:System.Web.SiteMapNodeCollection" /> has a fixed size.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public virtual void RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the element to remove.</param>
+        <summary>Removes the <see cref="T:System.Web.SiteMapNode" /> object at the specified index of the  collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can test whether a <xref:System.Web.SiteMapNodeCollection> collection is read-only by checking the <xref:System.Web.SiteMapNodeCollection.IsReadOnly%2A> property.  
+  
+ To remove an element from the <xref:System.Web.SiteMapNodeCollection> by specifying a <xref:System.Web.SiteMapNode> object to remove, use the <xref:System.Web.SiteMapNodeCollection.Remove%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero.  
+  
+ \- or -  
+  
+ <paramref name="index" /> is greater than the <see cref="P:System.Collections.CollectionBase.Count" />.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Web.SiteMapNodeCollection" /> is read-only.  
+  
+ \- or -  
+  
+ The <see cref="T:System.Web.SiteMapNodeCollection" /> has a fixed sized.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncRoot">
+      <MemberSignature Language="C#" Value="public virtual object SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Web.SiteMapNodeCollection.SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that can be used to synchronize access to the  collection.</summary>
+        <value>An object that can be used to synchronize access to the <see cref="T:System.Web.SiteMapNodeCollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Enumerating through a <xref:System.Web.SiteMapNodeCollection> collection is intrinsically not a thread safe procedure. Even when a <xref:System.Web.SiteMapNodeCollection> is synchronized, other threads can still modify the <xref:System.Web.SiteMapNodeCollection>, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the <xref:System.Web.SiteMapNodeCollection> during the entire enumeration or catch the exceptions resulting from changes that are made by other threads.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.CopyTo">
+      <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">A one-dimensional array that must have zero-based indexing and is the destination of the elements copied from the <see cref="T:System.Collections.CollectionBase" />.</param>
+        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the elements of the <see cref="T:System.Collections.ICollection" /> interface to an array, starting at a particular array index. This class cannot be inherited.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="array" /> is multidimensional.  
+  
+ -or-  
+  
+ The number of <see cref="T:System.Web.SiteMapNode" /> objects in the source <see cref="T:System.Web.SiteMapNodeCollection" /> is greater than the available space from <paramref name="index" /> to the end of <paramref name="array" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.Count">
+      <MemberSignature Language="C#" Value="int System.Collections.ICollection.Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 System.Collections.ICollection.Count" />
+      <MemberSignature Language="DocId" Value="P:System.Web.SiteMapNodeCollection.System#Collections#ICollection#Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of elements that are contained in the <see cref="T:System.Collections.ICollection" /> interface. This class cannot be inherited.</summary>
+        <value>The number of elements contained in the <see cref="T:System.Collections.ICollection" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.IsSynchronized">
+      <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Web.SiteMapNodeCollection.System#Collections#ICollection#IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see langword="Boolean" /> value indicating whether access to the <see cref="T:System.Collections.ICollection" /> interface is synchronized (thread safe). This class cannot be inherited.</summary>
+        <value>
+          <see langword="true" /> if access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.SyncRoot">
+      <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Web.SiteMapNodeCollection.System#Collections#ICollection#SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" /> interface. This class cannot be inherited.</summary>
+        <value>An object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerator that iterates through a collection. For a description of this member, see <see cref="M:System.Collections.IEnumerable.GetEnumerator" />.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the <see cref="T:System.Web.SiteMapNodeCollection" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Add">
+      <MemberSignature Language="C#" Value="int IList.Add (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.Add(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.System#Collections#IList#Add(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The object to add to the <see cref="T:System.Collections.IList" />.</param>
+        <summary>Adds an item to the collection in the <see cref="T:System.Collections.IList" /> interface. For a description of this member, see <see cref="M:System.Collections.IList.Add(System.Object)" />.</summary>
+        <returns>The position into which the new element was inserted.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Clear">
+      <MemberSignature Language="C#" Value="void IList.Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.System#Collections#IList#Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all items from the collection in the <see cref="T:System.Collections.IList" /> interface. For a description of this member, see <see cref="M:System.Collections.IList.Clear" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Contains">
+      <MemberSignature Language="C#" Value="bool IList.Contains (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IList.Contains(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.System#Collections#IList#Contains(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The object to locate in the <see cref="T:System.Collections.IList" />.</param>
+        <summary>Determines whether the collection in the <see cref="T:System.Collections.IList" /> interface contains the specified Boolean value.</summary>
+        <returns>
+          <see langword="true" /> if the object is found in the <see cref="T:System.Collections.IList" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.IndexOf">
+      <MemberSignature Language="C#" Value="int IList.IndexOf (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.IndexOf(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.System#Collections#IList#IndexOf(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The object to locate in the <see cref="T:System.Collections.IList" />.</param>
+        <summary>Determines the index of the specific item in the collection that is returned by the <see cref="T:System.Collections.IList" /> interface. For a description of this member, see <see cref="M:System.Collections.IList.IndexOf(System.Object)" />.</summary>
+        <returns>The index of the value, in the list, if found; otherwise, -1.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Insert">
+      <MemberSignature Language="C#" Value="void IList.Insert (int index, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Insert(int32 index, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.System#Collections#IList#Insert(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based <c>index</c> at which to insert <c>value</c>.</param>
+        <param name="value">The object to insert into the <see cref="T:System.Collections.IList" />.</param>
+        <summary>Inserts an item into the collection in the <see cref="T:System.Collections.IList" /> interface at the specified index. For a description of this member, see <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.IsFixedSize">
+      <MemberSignature Language="C#" Value="bool System.Collections.IList.IsFixedSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsFixedSize" />
+      <MemberSignature Language="DocId" Value="P:System.Web.SiteMapNodeCollection.System#Collections#IList#IsFixedSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see langword="Boolean" /> value indicating whether the collection has a fixed size. For a description of this member, see <see cref="P:System.Collections.IList.IsFixedSize" />.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Web.SiteMapNodeCollection" /> is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.IsReadOnly">
+      <MemberSignature Language="C#" Value="bool System.Collections.IList.IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Web.SiteMapNodeCollection.System#Collections#IList#IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see langword="Boolean" /> value indicating whether the collection is read-only. For a description of this member, see <see cref="P:System.Collections.IList.IsReadOnly" />.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Web.SiteMapNodeCollection" /> is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Item">
+      <MemberSignature Language="C#" Value="object System.Collections.IList.Item[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.SiteMapNodeCollection.System#Collections#IList#Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the element to get.</param>
+        <summary>Gets the <see cref="T:System.Collections.IList" /> element at the specified index.</summary>
+        <value>The element at the specified index.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Remove">
+      <MemberSignature Language="C#" Value="void IList.Remove (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Remove(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.System#Collections#IList#Remove(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The object to remove from the <see cref="T:System.Collections.IList" />.</param>
+        <summary>Removes the first occurrence of a specified object from the collection in the <see cref="T:System.Collections.IList" /> interface. For a description of this member, see <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.RemoveAt">
+      <MemberSignature Language="C#" Value="void IList.RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.System#Collections#IList#RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the item to remove.</param>
+        <summary>Removes the <see cref="T:System.Collections.IList" /> item at the specified index. For a description of this member, see <see cref="M:System.Collections.IList.RemoveAt(System.Int32)" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IHierarchicalEnumerable.GetHierarchyData">
+      <MemberSignature Language="C#" Value="System.Web.UI.IHierarchyData IHierarchicalEnumerable.GetHierarchyData (object enumeratedItem);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Web.UI.IHierarchyData System.Web.UI.IHierarchicalEnumerable.GetHierarchyData(object enumeratedItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SiteMapNodeCollection.System#Web#UI#IHierarchicalEnumerable#GetHierarchyData(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.IHierarchyData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="enumeratedItem" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="enumeratedItem">The object for which to return an <see cref="T:System.Web.UI.IHierarchyData" />.</param>
+        <summary>Returns a hierarchical data item for the specified enumerated item. For a description of this member, see <see cref="M:System.Web.UI.IHierarchicalEnumerable.GetHierarchyData(System.Object)" />.</summary>
+        <returns>An <see cref="T:System.Web.UI.IHierarchyData" /> that represents the object passed to the <see cref="M:System.Web.SiteMapNodeCollection.System#Web#UI#IHierarchicalEnumerable#GetHierarchyData(System.Object)" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

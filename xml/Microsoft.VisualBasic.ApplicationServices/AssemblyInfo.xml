@@ -1,0 +1,637 @@
+<Type Name="AssemblyInfo" FullName="Microsoft.VisualBasic.ApplicationServices.AssemblyInfo">
+  <TypeSignature Language="C#" Value="public class AssemblyInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi AssemblyInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides properties for getting the information about the application, such as the version number, description, loaded assemblies, and so on.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some of the properties exposed by the `My.Application.Info` object return the application's assembly information. To set the information in the application's assembly, you must use the **Assembly Information** dialog box, accessible from the **Application** pane of the **Project Designer**.  
+  
+ The `My.Application.Info` object provides functionality similar to the <xref:System.Diagnostics.FileVersionInfo> class but is scoped to give quick access to the most common properties.  
+  
+ Other properties, such as `LoadedAssemblies`, provide access to the current state of the application.  
+  
+   
+  
+## Examples  
+ This example uses the `My.Application.Info.Version` property to display the version of the application.  
+  
+ [!code-vb[VbVbalrMyApplication#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/Form1.vb#30)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AssemblyInfo (System.Reflection.Assembly currentAssembly);" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(class System.Reflection.Assembly currentAssembly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.#ctor(System.Reflection.Assembly)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="currentAssembly" Type="System.Reflection.Assembly" />
+      </Parameters>
+      <Docs>
+        <param name="currentAssembly">
+          <see cref="T:System.Reflection.Assembly" />. The assembly for which to obtain the information.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo" /> class with the specified assembly information.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AssemblyName">
+      <MemberSignature Language="C#" Value="public string AssemblyName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AssemblyName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.AssemblyName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name, without the extension, of the assembly file for the application.</summary>
+        <value>A <see langword="String" /> containing the file name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `My.Application.Info.AssemblyName` property gets the name of the file containing the manifest.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Forms Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Forms Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example uses the `My.Application.Info.AssemblyName` property to display the name of the application.  
+  
+ [!code-vb[VbVbalrMyApplication#20](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/Form1.vb#20)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CompanyName">
+      <MemberSignature Language="C#" Value="public string CompanyName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CompanyName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.CompanyName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the company name associated with the application.</summary>
+        <value>A <see langword="String" /> that contains the company name associated with the application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `My.Application.Info.CompanyName` property gets the company name associated with the application.  
+  
+ You can change the company name by changing the value for **Company** in the **Assembly Information** dialog box, accessible from the **Application** pane of the **Project Designer**.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Forms Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Forms Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example uses the `My.Application.Info.CompanyName` property to display the company name associated with the application.  
+  
+ [!code-vb[VbVbalrMyApplication#21](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/Form1.vb#21)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The assembly does not have an <see cref="T:System.Reflection.AssemblyCompanyAttribute" /> attribute.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Copyright">
+      <MemberSignature Language="C#" Value="public string Copyright { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Copyright" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.Copyright" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the copyright notice associated with the application.</summary>
+        <value>A <see langword="String" /> containing the copyright notice associated with the application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `My.Application.Info.Copyright` property gets the copyright notice associated with the application.  
+  
+ You can change the copyright notice by changing the value for **Copyright** in the **Assembly Information** dialog box, accessible from the **Application** pane of the **Project Designer**.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Forms Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Forms Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example uses the `My.Application.Info.Copyright` property to display the company name associated with the application.  
+  
+ [!code-vb[VbVbalrMyApplication#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/Form1.vb#22)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The assembly does not have an <see cref="T:System.Reflection.AssemblyCopyrightAttribute" /> attribute.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the description associated with the application.</summary>
+        <value>A <see langword="String" /> containing the description associated with the application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `My.Application.Info.Description` property gets the description associated with the application.  
+  
+ You can change the description by changing the value for **Description** in the **Assembly Information** dialog box, accessible from the **Application** pane of the **Project Designer**.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Forms Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Forms Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example uses the `My.Application.Info.Description` property to display the description associated with the application.  
+  
+ [!code-vb[VbVbalrMyApplication#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/Form1.vb#23)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The assembly does not have an <see cref="T:System.Reflection.AssemblyDescriptionAttribute" /> attribute.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DirectoryPath">
+      <MemberSignature Language="C#" Value="public string DirectoryPath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DirectoryPath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.DirectoryPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the directory where the application is stored.</summary>
+        <value>A <see langword="String" /> that contains the directory where the application is stored.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `My.Application.Info.DirectoryPath` property gets the directory where the application is stored.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Forms Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Forms Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example uses the `My.Application.Info.DirectoryPath` property to display the directory path where the application is stored.  
+  
+ [!code-vb[VbVbalrMyApplication#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/Form1.vb#24)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadedAssemblies">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Reflection.Assembly&gt; LoadedAssemblies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Reflection.Assembly&gt; LoadedAssemblies" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.LoadedAssemblies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Reflection.Assembly&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of all assemblies loaded by the application.</summary>
+        <value>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of <see cref="T:System.Reflection.Assembly" /> containing all the assemblies loaded by the application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `My.Application.Info.LoadedAssemblies` property is similar to the <xref:System.AppDomain.GetAssemblies%2A> method.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Forms Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Forms Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example uses the `My.Application.Info.LoadedAssemblies` property to display the assemblies loaded by the application.  
+  
+ [!code-vb[VbVbalrMyApplication#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/Form1.vb#25)]  
+  
+ This example requires that your Windows Forms application has a <xref:System.Windows.Forms.ListBox> control named `ListBox1`.  
+  
+ ]]></format>
+        </remarks>
+        <altCompliant cref="None." />
+        <exception cref="T:System.AppDomainUnloadedException">The application domain is not loaded.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ProductName">
+      <MemberSignature Language="C#" Value="public string ProductName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ProductName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.ProductName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the product name associated with the application.</summary>
+        <value>A <see langword="String" /> containing the product name associated with the application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `My.Application.Info.ProductName` property gets the product name associated with the application.  
+  
+ You can change the product name by changing the value for **Product** in the **Assembly Information** dialog box, accessible from the **Application** pane of the **Project Designer**.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Forms Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Forms Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example uses the `My.Application.Info.ProductName` property to display the product name associated with the application.  
+  
+ [!code-vb[VbVbalrMyApplication#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/Form1.vb#26)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The assembly does not have an <see cref="T:System.Reflection.AssemblyProductAttribute" /> attribute.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StackTrace">
+      <MemberSignature Language="C#" Value="public string StackTrace { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StackTrace" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.StackTrace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current stack-trace information.</summary>
+        <value>A <see langword="String" /> containing the current stack-trace information. The return value can be <see cref="F:System.String.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `My.Application.Info.StackTrace` property lists method calls in reverse chronological order—that is, it describes the most recent method call first, and it lists each method call on the stack on a separate line. However, the `My.Application.Info.StackTrace` property might not report as many method calls as expected, due to code transformations that occur during optimization.  
+  
+ Typically, the stack-trace information is used for debugging applications.  
+  
+ The stack-trace information for each method call is formatted as follows:  
+  
+ "at *FullClassName*.*MethodName*(*MethodParams*) in *FileName*:line *LineNumber* "  
+  
+ The literal "at" is preceded by three spaces, and the literals "in" and ":line" are omitted if debug symbols are not available. The placeholders `FullClassName`, `MethodName`, `MethodParams`, `FileName`, and `LineNumber` are replaced by actual values, defined as follows:  
+  
+|Part|Description|  
+|----------|-----------------|  
+|*FullClassName*|The full name of the class, including the namespace.|  
+|*MethodName*|The name of the method.|  
+|*MethodParams*|The list of parameter type/name pairs. Each pair is separated by a comma (,). This information is omitted if *MethodName* takes zero parameters.|  
+|*FileName*|The name of the source file where the *MethodName* method is declared. This information is omitted if debug symbols are not available.|  
+|*LineNumber*|The number of the line in *FileName* that contains the source code from *MethodName* for the instruction that is on the call stack. This information is omitted if debug symbols are not available.|  
+  
+ The `My.Applicaiton.Info.StackTrace` property provides functionality similar to the <xref:System.Environment.StackTrace%2A> property.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Forms Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Forms Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example uses the `My.Application.Info.StackTrace` property to display the stack trace of the application from the point at which the code executes.  
+  
+ [!code-vb[VbVbalrMyApplication#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/Form1.vb#27)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The requested stack-trace information is out of range.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access information in the file paths. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public string Title { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.Title" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the title associated with the application.</summary>
+        <value>A <see langword="String" /> containing the <see cref="T:System.Reflection.AssemblyTitleAttribute" /> associated with the application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `My.Application.Info.Title` property gets the title associated with the application.  
+  
+ You can change the title by changing the value for **Title** in the **Assembly Information** dialog box, accessible from the **Application** pane of the **Project Designer**.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Forms Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Forms Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example uses the `My.Application.Info.Title` property to display the title associated with the application.  
+  
+ [!code-vb[VbVbalrMyApplication#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/Form1.vb#28)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The assembly does not have an <see cref="T:System.Reflection.AssemblyTitleAttribute" /> attribute.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Trademark">
+      <MemberSignature Language="C#" Value="public string Trademark { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Trademark" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.Trademark" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the trademark notice associated with the application.</summary>
+        <value>A <see langword="String" /> containing the trademark notice associated with the application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `My.Application.Info.Trademark` property gets the trademark notice associated with the application.  
+  
+ You can change the trademark notice by changing the value for **Trademark** in the **Assembly Information** dialog box, accessible from the **Application** pane of the **Project Designer**.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Forms Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Forms Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example uses the `My.Application.Info.Trademark` property to display the trademark information associated with the application.  
+  
+ [!code-vb[VbVbalrMyApplication#29](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/Form1.vb#29)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The assembly does not have an <see cref="T:System.Reflection.AssemblyTrademarkAttribute" /> attribute.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public Version Version { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Version Version" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.Version" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the version number of the application.</summary>
+        <value>A <see cref="T:System.Version" /> object containing the version number of the application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `My.Application.Info.Version` property gets a <xref:System.Version> object containing the version number of the application. You can use the <xref:System.Version.Major%2A>, <xref:System.Version.Minor%2A>, <xref:System.Version.Build%2A>, and <xref:System.Version.Revision%2A> properties of the <xref:System.Version> object to access specific version information about the application.  
+  
+ ClickOnce-deployed applications should use the <xref:System.Deployment.Application.ApplicationDeployment.CurrentVersion%2A> property of the <xref:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.Deployment%2A> property.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Forms Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Forms Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example uses the `My.Application.Info.Version` property to display the version of the application.  
+  
+ [!code-vb[VbVbalrMyApplication#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/Form1.vb#30)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The application does not have sufficient permissions to access the assembly version.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkingSet">
+      <MemberSignature Language="C#" Value="public long WorkingSet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 WorkingSet" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.WorkingSet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the amount of physical memory mapped to the process context.</summary>
+        <value>A <see langword="Long" /> containing the number of bytes of physical memory mapped to the process context.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `My.Application.Info.WorkingSet` property has the same behavior as the <xref:System.Environment.WorkingSet%2A> property.  
+  
+> [!NOTE]
+>  This property always returns zero for Windows 98 and Windows Millennium Edition.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Forms Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Forms Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example uses the `My.Application.Info.WorkingSet` property to display the number of bytes of physical memory mapped to the application.  
+  
+ [!code-vb[VbVbalrMyApplication#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/Form1.vb#31)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">A situation in which partial trust exists and the user lacks necessary permissions.</exception>
+        <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls the ability to access all environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

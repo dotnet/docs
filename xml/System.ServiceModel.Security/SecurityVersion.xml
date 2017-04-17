@@ -1,0 +1,74 @@
+<Type Name="SecurityVersion" FullName="System.ServiceModel.Security.SecurityVersion">
+  <TypeSignature Language="C#" Value="public abstract class SecurityVersion" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract SecurityVersion extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.SecurityVersion" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains the set of supported WS-Security versions. This is an abstract class.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SecurityVersion ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityVersion.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WSSecurity10">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.SecurityVersion WSSecurity10 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityVersion WSSecurity10" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityVersion.WSSecurity10" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.SecurityVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the version 1.0 of WS-Security.</summary>
+        <value>The version 1.0 of WS-Security.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WSSecurity11">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.SecurityVersion WSSecurity11 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityVersion WSSecurity11" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityVersion.WSSecurity11" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.SecurityVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the version 1.1 of WS-Security.</summary>
+        <value>The version 1.1 of WS-Security.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

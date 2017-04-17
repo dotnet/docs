@@ -1,0 +1,156 @@
+<Type Name="BindingStatus" FullName="System.Windows.Data.BindingStatus">
+  <TypeSignature Language="C#" Value="public enum BindingStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BindingStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Data.BindingStatus" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes the status of a binding.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_BindingStatus"></a>   
+## XAML Text Usage  
+ You do not typically use this enumeration in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Active">
+      <MemberSignature Language="C#" Value="Active" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Data.BindingStatus Active = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Data.BindingStatus.Active" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Data.BindingStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The binding has been successfully activated. This means that the binding has been attached to its binding target (target) property and has located the binding source (source), resolved the <see langword="Path" /> and/or <see langword="XPath" />, and begun transferring values.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AsyncRequestPending">
+      <MemberSignature Language="C#" Value="AsyncRequestPending" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Data.BindingStatus AsyncRequestPending = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Data.BindingStatus.AsyncRequestPending" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Data.BindingStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The binding is waiting for an asynchronous operation to complete.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Detached">
+      <MemberSignature Language="C#" Value="Detached" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Data.BindingStatus Detached = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Data.BindingStatus.Detached" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Data.BindingStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The binding has been detached from its target property.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Inactive">
+      <MemberSignature Language="C#" Value="Inactive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Data.BindingStatus Inactive = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Data.BindingStatus.Inactive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Data.BindingStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The binding has not been activated.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PathError">
+      <MemberSignature Language="C#" Value="PathError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Data.BindingStatus PathError = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Data.BindingStatus.PathError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Data.BindingStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The binding was unable to resolve the source path.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unattached">
+      <MemberSignature Language="C#" Value="Unattached" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Data.BindingStatus Unattached = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Data.BindingStatus.Unattached" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Data.BindingStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The binding has not yet been attached to its target property.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateSourceError">
+      <MemberSignature Language="C#" Value="UpdateSourceError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Data.BindingStatus UpdateSourceError = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Data.BindingStatus.UpdateSourceError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Data.BindingStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The binding was unable to send the value to the source property.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateTargetError">
+      <MemberSignature Language="C#" Value="UpdateTargetError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Data.BindingStatus UpdateTargetError = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Data.BindingStatus.UpdateTargetError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Data.BindingStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The binding could not successfully return a source value to update the target value. For more information, see the remarks on <see cref="P:System.Windows.Data.BindingBase.FallbackValue" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

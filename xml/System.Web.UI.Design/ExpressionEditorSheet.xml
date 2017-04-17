@@ -1,0 +1,183 @@
+<Type Name="ExpressionEditorSheet" FullName="System.Web.UI.Design.ExpressionEditorSheet">
+  <TypeSignature Language="C#" Value="public abstract class ExpressionEditorSheet" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ExpressionEditorSheet extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ExpressionEditorSheet" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a design-time editor sheet for a custom expression. This class must be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A custom expression editor sheet lets a developer set properties on a custom expression at design-time. Control property values can be set using expression strings; the expression strings are evaluated at run time by an expression builder and at design time by an expression editor.  
+  
+ When you browse the <xref:System.Web.UI.Design.HtmlControlDesigner.Expressions%2A> property for a control in the design-time properties grid, the visual designer displays a dialog box to set expressions that provide the value for a control property. You can select the expression type based on a list of expression prefixes. When you select an expression prefix from the list, the visual designer uses the associated <xref:System.Web.UI.Design.ExpressionEditor> and <xref:System.Web.UI.Design.ExpressionEditorSheet> objects to evaluate and convert the expression string based on the syntax for that type of expression. The visual designer uses expression editor sheet properties to prompt for one or more strings that combine into the custom expression string.  
+  
+ Typically, to supply a new expression type at design time, you define a unique expression prefix and provide custom <xref:System.Web.Compilation.ExpressionBuilder> and <xref:System.Web.UI.Design.ExpressionEditor> implementations. Optionally, you can provide a custom <xref:System.Web.UI.Design.ExpressionEditorSheet> implementation that defines properties that are used to form the expression. To associate an expression prefix with an expression builder and an expression editor, apply the <xref:System.Web.Compilation.ExpressionEditorAttribute> attribute and an <xref:System.Web.Compilation.ExpressionPrefixAttribute> attribute to the custom <xref:System.Web.Configuration.ExpressionBuilder> class, and then configure the expression prefix for an expression builder in the `expressionBuilders` element in the Web configuration file.  
+  
+ The default implementation of the <xref:System.Web.UI.Design.ExpressionEditor.GetExpressionEditorSheet%2A> method returns a basic editor sheet, which uses a single input string to form the expression. Custom expression editors that are derived from the <xref:System.Web.UI.Design.ExpressionEditor> can override the <xref:System.Web.UI.Design.ExpressionEditor.GetExpressionEditorSheet%2A> method to return a custom editor sheet implementation. Typically, a custom editor sheet contains multiple properties that are used to build the expression string. The <xref:System.Web.UI.Design.ExpressionEditorSheet.GetExpression%2A> method returns the resulting expression string based on the current expression properties.  
+  
+ For example, the <xref:System.Web.UI.Design.ResourceExpressionEditor> class derives from the <xref:System.Web.UI.Design.ExpressionEditor> class and provides an implementation for evaluating and associating a resource string reference with a control property at design time. The <xref:System.Web.Compilation.ResourceExpressionBuilder> class is associated with the expression prefix `Resources` and the <xref:System.Web.UI.Design.ResourceExpressionEditor> implementation. The <xref:System.Web.UI.Design.ResourceExpressionEditor.GetExpressionEditorSheet%2A> method returns a <xref:System.Web.UI.Design.ResourceExpressionEditorSheet>, which defines the individual properties that form a resource reference expression.  
+  
+ When you inherit from the <xref:System.Web.UI.Design.ExpressionEditorSheet> class, you must override the following members:  
+  
+-   The <xref:System.Web.UI.Design.ExpressionEditor.GetExpressionEditorSheet%2A> method to return a custom editor sheet implementation.  
+  
+-   The <xref:System.Web.UI.Design.ExpressionEditorSheet.%23ctor%2A> constructor to implement custom initialization actions for your expression editor sheet implementation.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>Derive a custom expression editor sheet from the <see cref="T:System.Web.UI.Design.ExpressionEditorSheet" /> class, if you are defining a new expression type for control property values and you want to build the expression string based on multiple expression property values. A derived class implementation should contain the following:  
+  
+-   A public property for each distinct value in the expression string that can be set at design time.  
+  
+-   An implementation of the <see cref="M:System.Web.UI.Design.ExpressionEditorSheet.GetExpression" /> method that forms the custom expression string from the editor sheet property values.  
+  
+-   Optionally, a constructor implementation that sets the initial values of the editor sheet properties.  
+  
+ The associated custom expression editor class creates an instance of the derived editor sheet in the <see cref="M:System.Web.UI.Design.ExpressionEditor.GetExpressionEditorSheet(System.String,System.IServiceProvider)" /> method, initializes that instance with the current expression string set for the control property, and returns the instance to the visual designer. The visual designer allows you to set the expression sheet properties, and then calls the <see cref="M:System.Web.UI.Design.ExpressionEditorSheet.GetExpression" /> method to form the expression string from the input expression sheet property values.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ExpressionEditorSheet (IServiceProvider serviceProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.IServiceProvider serviceProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ExpressionEditorSheet.#ctor(System.IServiceProvider)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="serviceProvider">A service provider implementation supplied by the designer host, used to obtain additional design-time services.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.ExpressionEditorSheet" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because the <xref:System.Web.UI.Design.ExpressionEditorSheet> class is abstract, you cannot create an instance of an <xref:System.Web.UI.Design.ExpressionEditorSheet> directly using the <xref:System.Web.UI.Design.ExpressionEditorSheet.%23ctor%2A> constructor.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When deriving from the <see cref="T:System.Web.UI.Design.ExpressionEditorSheet" /> class, override the <see cref="M:System.Web.UI.Design.ExpressionEditorSheet.#ctor(System.IServiceProvider)" /> constructor to implement custom initialization actions for your expression editor sheet implementation.  
+  
+ For example, a custom expression editor sheet class that implements additional expression properties can define the default values for the expression properties in the <see cref="M:System.Web.UI.Design.ExpressionEditorSheet.#ctor(System.IServiceProvider)" /> constructor. A custom expression editor sheet class can define additional public constructor overloads that use input parameter values to set the initial values for the expression properties.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExpression">
+      <MemberSignature Language="C#" Value="public abstract string GetExpression ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetExpression() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ExpressionEditorSheet.GetExpression" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, returns the expression string that is formed by the expression editor sheet property values.</summary>
+        <returns>The custom expression string for the current property values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A custom expression editor sheet contains design-time settings for multiple expression properties, which are combined to form an expression string. Control property values can be set using expression strings; the expression strings are evaluated at run time by an expression builder.  
+  
+ The <xref:System.Web.UI.Design.ExpressionEditorSheet.GetExpression%2A> method returns an expression string that is built from the current expression properties. The visual designer allows you to set the expression sheet properties, and then calls the <xref:System.Web.UI.Design.ExpressionEditorSheet.GetExpression%2A> method to get the expression string and set the control property value.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Derive a custom expression editor sheet from the <see cref="T:System.Web.UI.Design.ExpressionEditorSheet" /> class, if you are defining a new expression type for control property values and you want to build the expression string based on multiple expression property values. A derived class implementation should contain the following:  
+  
+-   A public property for each distinct value in the expression string that can be set at design time.  
+  
+-   An implementation of the <see cref="M:System.Web.UI.Design.ExpressionEditorSheet.GetExpression" /> method that forms the custom expression string from the editor sheet property values.  
+  
+-   Optionally, a constructor implementation that sets the initial values of the editor sheet properties.  
+  
+ The associated custom expression editor class creates an instance of the derived editor sheet in the <see cref="M:System.Web.UI.Design.ExpressionEditor.GetExpressionEditorSheet(System.String,System.IServiceProvider)" /> method, initializes that instance with the current expression string set for the control property, and then returns the instance to the visual designer. The visual designer allows you to set the expression sheet properties, and then calls the <see cref="M:System.Web.UI.Design.ExpressionEditorSheet.GetExpression" /> method to form the expression string from the input expression sheet property values.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValid">
+      <MemberSignature Language="C#" Value="public virtual bool IsValid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsValid" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ExpressionEditorSheet.IsValid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the expression string is valid.</summary>
+        <value>
+          <see langword="true" />, if the expression string is valid; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This base implementation always returns `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceProvider">
+      <MemberSignature Language="C#" Value="public IServiceProvider ServiceProvider { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IServiceProvider ServiceProvider" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ExpressionEditorSheet.ServiceProvider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IServiceProvider</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the service provider implementation that is used by the expression editor sheet.</summary>
+        <value>An <see cref="T:System.IServiceProvider" />, typically provided by the design host, that can be used to obtain additional design-time services.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.Design.ExpressionEditorSheet.%23ctor%2A> constructor to set the <xref:System.Web.UI.Design.ExpressionEditorSheet.ServiceProvider%2A> implementation for a custom expression editor sheet.  
+  
+ The <xref:System.Web.UI.Design.ExpressionEditorSheet.ServiceProvider%2A> property can be used to access services that are provided by the designer host. For example, call the <xref:System.IServiceProvider.GetService%2A> method with the <xref:System.Web.UI.Design.IWebApplication> interface to access project items, documents, or configuration file details that are provided through the visual designer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

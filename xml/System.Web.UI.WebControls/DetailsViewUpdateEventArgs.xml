@@ -1,0 +1,222 @@
+<Type Name="DetailsViewUpdateEventArgs" FullName="System.Web.UI.WebControls.DetailsViewUpdateEventArgs">
+  <TypeSignature Language="C#" Value="public class DetailsViewUpdateEventArgs : System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DetailsViewUpdateEventArgs extends System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DetailsViewUpdateEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.CancelEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.DetailsView.ItemUpdating" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DetailsView> control raises the <xref:System.Web.UI.WebControls.DetailsView.ItemUpdating> event when an Update button (a button with its `CommandName` property set to "Update") within the control is clicked, but before the <xref:System.Web.UI.WebControls.DetailsView> control updates the record. This allows you to provide an event handler that performs a custom routine, such as HTML-encoding the values of a record before updating it in the data source, whenever this event occurs.  
+  
+ A <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs> object is passed to the event handler, which allows you to determine the value of an optional command argument sent to the <xref:System.Web.UI.WebControls.DetailsView> control and to indicate whether the update operation should be canceled. To determine the value of the command argument, use the <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.CommandArgument%2A> property. To cancel the update operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`. You can also read or modify the new values entered by the user by using the <xref:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.Keys%2A> and <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.NewValues%2A> properties. The <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.Keys%2A> property contains the key fields, while the <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.NewValues%2A> property contains the non-key fields. If you need to access the original non-key field values, use the <xref:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.OldValues%2A> property.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs> class, see the <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.%23ctor%2A> constructor.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs> object passed to the event handler for the <xref:System.Web.UI.WebControls.DetailsView.ItemUpdating> event to validate the values entered by the user.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DetailsViewUpdateEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewUpdateEventArgs/CS/detailsviewupdateeventargscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DetailsViewUpdateEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewUpdateEventArgs/VB/detailsviewupdateeventargsvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DetailsViewUpdateEventArgs (object commandArgument);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object commandArgument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.#ctor(System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="commandArgument" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="commandArgument">An optional command argument passed to the <see cref="T:System.Web.UI.WebControls.DetailsView" /> control.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.DetailsViewUpdateEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs> class.  
+  
+ The following table shows the initial property value for an instance of the <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs> class.  
+  
+|Property|Initial Value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.CommandArgument%2A>|The value of the `commandArgument` parameter.|  
+  
+> [!NOTE]
+>  This constructor is used primarily by control developers when raising events.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandArgument">
+      <MemberSignature Language="C#" Value="public object CommandArgument { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object CommandArgument" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.CommandArgument" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the command argument for the update operation passed to the <see cref="T:System.Web.UI.WebControls.DetailsView" /> control.</summary>
+        <value>The command argument for the update operation passed to the <see cref="T:System.Web.UI.WebControls.DetailsView" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.DetailsViewInsertEventArgs.CommandArgument%2A> property to determine the value of the command argument passed to the <xref:System.Web.UI.WebControls.DetailsView> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Keys">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary Keys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.IOrderedDictionary Keys" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.Keys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.IOrderedDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a dictionary that contains the key field name/value pairs for the record to update.</summary>
+        <value>An <see cref="T:System.Collections.Specialized.IOrderedDictionary" /> that contains a dictionary of key field name/value pairs for the record to update.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.Keys%2A> property to access the values of the key fields for the record to update. For example, you can use these values to keep a log of updated records.  
+  
+> [!NOTE]
+>  This property contains only the key fields. To access the updated and original non-key fields, use the <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.NewValues%2A> and <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.OldValues%2A> properties, respectively.  
+  
+ The <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.Keys%2A> property returns an object that implements the <xref:System.Collections.Specialized.IOrderedDictionary> interface. The object contains <xref:System.Collections.DictionaryEntry> objects that represent the fields of the record to update.  
+  
+> [!NOTE]
+>  As a shortcut, you can also use the indexer of the <xref:System.Collections.Specialized.IOrderedDictionary> object to access the field values directly.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.Keys%2A> property to access the value of the key field for the record being updated.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DetailsViewUpdateEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewUpdateEventArgs/CS/detailsviewupdateeventargscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DetailsViewUpdateEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewUpdateEventArgs/VB/detailsviewupdateeventargsvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewValues">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary NewValues { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.IOrderedDictionary NewValues" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.NewValues" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.IOrderedDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a dictionary that contains the new field name/value pairs for the record to update.</summary>
+        <value>An <see cref="T:System.Collections.Specialized.IOrderedDictionary" /> that contains a dictionary of the new field name/value pairs for the record to update.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.NewValues%2A> property to access the new field values for the record to update. For example, you can use these values to keep a log of updated records.  
+  
+> [!NOTE]
+>  This property does not contain the key fields. To access the key fields, use the <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.Keys%2A> property. You can also access the original field values by using the <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.OldValues%2A> property.  
+  
+ The <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.NewValues%2A> property returns an object that implements the <xref:System.Collections.Specialized.IOrderedDictionary> interface. The object contains <xref:System.Collections.DictionaryEntry> objects that represent the fields of the record to update.  
+  
+> [!NOTE]
+>  As a shortcut, you can also use the indexer of the <xref:System.Collections.Specialized.IOrderedDictionary> object to access the field values directly.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.NewValues%2A> property to access the new values entered by the user for the non-key fields of the record being updated.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DetailsViewUpdatedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/CS/detailsviewupdatedeventargscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DetailsViewUpdatedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewUpdatedEventArgs/VB/detailsviewupdatedeventargsvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OldValues">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary OldValues { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.IOrderedDictionary OldValues" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.OldValues" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.IOrderedDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a dictionary that contains the original field name/value pairs for the record to update.</summary>
+        <value>An <see cref="T:System.Collections.Specialized.IOrderedDictionary" /> that contains a dictionary of the original field name/value pairs for the record to update.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.OldValues%2A> property to access the original field values for the updated record. For example, you can use these values to keep a log of updated records.  
+  
+> [!NOTE]
+>  This property does not contain the key fields. To access the key fields, use the <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.Keys%2A> property. You can also access the new field values entered by the user by using the <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.NewValues%2A> property.  
+  
+ The <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.OldValues%2A> property returns an object that implements the <xref:System.Collections.Specialized.IOrderedDictionary> interface. The object contains <xref:System.Collections.DictionaryEntry> objects that represent the fields of the record to update.  
+  
+> [!NOTE]
+>  As a shortcut, you can also use the indexer of the object to access the field values directly.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.OldValues%2A> property to access the original values of the non-key fields for the record being updated.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DetailsViewUpdateEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewUpdateEventArgs/CS/detailsviewupdateeventargscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DetailsViewUpdateEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewUpdateEventArgs/VB/detailsviewupdateeventargsvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

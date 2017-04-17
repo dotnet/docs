@@ -1,0 +1,41 @@
+<Type Name="Throw" FullName="Microsoft.JScript.Throw">
+  <TypeSignature Language="C#" Value="public sealed class Throw : Microsoft.JScript.AST" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Throw extends Microsoft.JScript.AST" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Throw" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.AST</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Throws an exception. This class belongs to the abstract syntax tree category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="JScriptThrow">
+      <MemberSignature Language="C#" Value="public static Exception JScriptThrow (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Exception JScriptThrow(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Throw.JScriptThrow(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The exception to throw.</param>
+        <summary>Returns the specified object as an exception, converting if it has to.</summary>
+        <returns>An exception that represents <paramref name="value" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

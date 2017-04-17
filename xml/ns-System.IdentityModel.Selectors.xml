@@ -1,0 +1,8 @@
+<Namespace Name="System.IdentityModel.Selectors">
+  <Docs>
+    <summary>The <see cref="N:System.IdentityModel.Selectors" /> namespace contains classes that implement authentication in the Windows Communication Foundation (WCF) claims-based identity model.  
+  
+ Beginning with .NET Framework 4.5 and the integration of Windows Identity Foundation (WIF) into the .NET Framework, the WCF claims-based identity model has been superseded by WIF. WIF provides a claims-based identity object model that can be used to provide authentication and authorization across several Microsoft product stacks, including the CLR, WCF, and ASP.NET. The WIF classes that represent security tokens and that are used to process security tokens are contained in the <see cref="N:System.IdentityModel.Tokens" /> namespace; for example, <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> and <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandler" />. Beginning with .NET 4.5, the classes in the <see cref="N:System.IdentityModel.Tokens" /> namespace should be used instead of those in the <see cref="N:System.IdentityModel.Selectors" /> namespace.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Namespace>

@@ -1,0 +1,39 @@
+<Type Name="ObjectListDataBindEventHandler" FullName="System.Web.UI.MobileControls.ObjectListDataBindEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void ObjectListDataBindEventHandler(object sender, ObjectListDataBindEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ObjectListDataBindEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ObjectListDataBindEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Mobile</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see http://go.microsoft.com/fwlink/?LinkId=157231.")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.UI.MobileControls.ObjectListDataBindEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event, an <see cref="T:System.Web.UI.MobileControls.ObjectList" />.</param>
+    <param name="e">An <see cref="T:System.Web.UI.MobileControls.ObjectListDataBindEventArgs" /> object that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Web.UI.MobileControls.ObjectList.ItemDataBind" /> event of an <see cref="T:System.Web.UI.MobileControls.ObjectList" />. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create an <xref:System.Web.UI.MobileControls.ObjectListDataBindEventHandler> delegate for an <xref:System.Web.UI.MobileControls.ObjectList>, you identify the method that will handle the event. The <xref:System.Web.UI.MobileControls.ObjectList> notifies the handler when an item event is generated (after data binding). To associate the event with your event handler, add an instance of the delegate to the event. Unless you remove the delegate, the event handler is called whenever the event occurs.  
+  
+ You can use this handler to do complex data binding and to set values in the <xref:System.Web.UI.MobileControls.ObjectListItem> object.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

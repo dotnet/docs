@@ -1,0 +1,87 @@
+<Type Name="XmlDsigC14NWithCommentsTransform" FullName="System.Security.Cryptography.Xml.XmlDsigC14NWithCommentsTransform">
+  <TypeSignature Language="C#" Value="public class XmlDsigC14NWithCommentsTransform : System.Security.Cryptography.Xml.XmlDsigC14NTransform" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlDsigC14NWithCommentsTransform extends System.Security.Cryptography.Xml.XmlDsigC14NTransform" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.XmlDsigC14NWithCommentsTransform" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.Cryptography.Xml.XmlDsigC14NTransform</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the C14N XML canonicalization transform for a digital signature as defined by the World Wide Web Consortium (W3C), with comments.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.Xml.XmlDsigC14NWithCommentsTransform> class represents the C14N XML canonicalization transform that describes the canonical form of an XML document.  This transform allows a signer to create a digest using the canonical form of an XML document.  A recipient can then verify the digital signature using the same canonical form of the XML document with the same transform.  
+  
+ Use the <xref:System.Security.Cryptography.Xml.XmlDsigC14NWithCommentsTransform> class when you need to sign an XML document that contains comments.  
+  
+ Note that you cannot directly create a new instance of a canonicalization transform class.  To specify a canonicalization transform, pass the Uniform Resource Identifier (URI) that describes the transform to the <xref:System.Security.Cryptography.Xml.SignedInfo.CanonicalizationMethod%2A> property, which is accessible from the <xref:System.Security.Cryptography.Xml.SignedXml.SignedInfo%2A> property.  To acquire a reference to the canonicalization transform, use the <xref:System.Security.Cryptography.Xml.SignedInfo.CanonicalizationMethodObject%2A> property, which is accessible from the <xref:System.Security.Cryptography.Xml.SignedXml.SignedInfo%2A> property.  
+  
+ The URI that describes the <xref:System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform> class is defined by the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigExcC14NWithCommentsTransformUrl> field.  
+  
+ The URI that describes the <xref:System.Security.Cryptography.Xml.XmlDsigC14NWithCommentsTransform> class is defined by the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigC14NWithCommentsTransformUrl> field and the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigCanonicalizationWithCommentsUrl> field.  
+  
+ For more information about the C14N with comments transform, see Sections 6.5 and 6.6.1 of the XMLDSIG specification, which is available from the World Wide Web Consortium (W3C) at www.w3.org/TR/xmldsig-core/. The canonicalization algorithm is defined in the W3C Canonical XML specification, which is available at www.w3.org/TR/xml-c14n.  
+  
+   
+  
+## Examples  
+ This section contains two code examples. The first example demonstrates how to sign an XML file using a detached signature. This example creates a signature of www.microsoft.com in an XML file and then verifies the file. The second example demonstrates how to sign an XML file using an envelope signature.  This example creates a signature of an XML file and then saves the signature in new XML file.  
+  
+ **Example #1**  
+  
+ [!code-cpp[System.Security.Cryptography.XML.XmlDsigC14NWithCommentsTransform_Detached#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.XmlDsigC14NWithCommentsTransform_Detached/CPP/sampledetached.cpp#1)]
+ [!code-csharp[System.Security.Cryptography.XML.XmlDsigC14NWithCommentsTransform_Detached#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.XmlDsigC14NWithCommentsTransform_Detached/CS/sampledetached.cs#1)]
+ [!code-vb[System.Security.Cryptography.XML.XmlDsigC14NWithCommentsTransform_Detached#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.XML.XmlDsigC14NWithCommentsTransform_Detached/VB/sampledetached.vb#1)]  
+  
+ **Example #2**  
+  
+ [!code-cpp[System.Security.Cryptography.XML.XmlDsigC14NWithCommentsTransform_Envelope#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.XmlDsigC14NWithCommentsTransform_Envelope/CPP/sampleenvelope.cpp#1)]
+ [!code-csharp[System.Security.Cryptography.XML.XmlDsigC14NWithCommentsTransform_Envelope#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.XmlDsigC14NWithCommentsTransform_Envelope/CS/sampleenvelope.cs#1)]
+ [!code-vb[System.Security.Cryptography.XML.XmlDsigC14NWithCommentsTransform_Envelope#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.XML.XmlDsigC14NWithCommentsTransform_Envelope/VB/sampleenvelope.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlDsigC14NWithCommentsTransform ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.XmlDsigC14NWithCommentsTransform.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.XmlDsigC14NWithCommentsTransform" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This section contains two code examples. The first example demonstrates how to sign an XML file using a detached signature. This example creates a signature of www.microsoft.com in an XML file and then verifies the file. The second example demonstrates how to sign an XML file using an envelope signature.  This example creates a signature of an XML file and then saves the signature in new XML file.  
+  
+ **Example #1**  
+  
+ [!code-cpp[System.Security.Cryptography.XML.XmlDsigC14NWithCommentsTransform_Detached#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.XmlDsigC14NWithCommentsTransform_Detached/CPP/sampledetached.cpp#1)]
+ [!code-csharp[System.Security.Cryptography.XML.XmlDsigC14NWithCommentsTransform_Detached#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.XmlDsigC14NWithCommentsTransform_Detached/CS/sampledetached.cs#1)]
+ [!code-vb[System.Security.Cryptography.XML.XmlDsigC14NWithCommentsTransform_Detached#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.XML.XmlDsigC14NWithCommentsTransform_Detached/VB/sampledetached.vb#1)]  
+  
+ **Example #2**  
+  
+ [!code-cpp[System.Security.Cryptography.XML.XmlDsigC14NWithCommentsTransform_Envelope#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.XmlDsigC14NWithCommentsTransform_Envelope/CPP/sampleenvelope.cpp#1)]
+ [!code-csharp[System.Security.Cryptography.XML.XmlDsigC14NWithCommentsTransform_Envelope#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.XmlDsigC14NWithCommentsTransform_Envelope/CS/sampleenvelope.cs#1)]
+ [!code-vb[System.Security.Cryptography.XML.XmlDsigC14NWithCommentsTransform_Envelope#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.XML.XmlDsigC14NWithCommentsTransform_Envelope/VB/sampleenvelope.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

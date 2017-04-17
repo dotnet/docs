@@ -1,0 +1,108 @@
+<Type Name="Duplexing" FullName="System.Printing.Duplexing">
+  <TypeSignature Language="C#" Value="public enum Duplexing" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Duplexing extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.Duplexing" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether a printer uses one-sided printing or some type of two-sided (duplex) printing.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the values of this type primarily for these purposes:  
+  
+-   As members of the <xref:System.Printing.PrintCapabilities.DuplexingCapability%2A> collection, which is a property of <xref:System.Printing.PrintCapabilities>, these values indicate the kinds of one-sided and two-sided printing that the printer supports.  
+  
+-   As the value of the <xref:System.Printing.PrintTicket.Duplexing%2A> property of a <xref:System.Printing.PrintTicket>, they direct the printer to use one-sided printing or some kind of two-sided printing.  
+  
+ The **Unknown** value is never used in properties of <xref:System.Printing.PrintCapabilities> objects.  
+  
+ You should never set a <xref:System.Printing.PrintTicket> property to **Unknown**. If some other <xref:System.Printing.PrintTicket> producing application has created a *PrintTicket document* that sets the duplexing feature to an unrecognized duplexing option (that is, an option that is not defined in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)), then a <xref:System.Printing.PrintTicket> object in your application that is constructed with that document will have **Unknown** as the value of the <xref:System.Printing.PrintTicket.Duplexing%2A> property.  
+  
+ Although the <xref:System.Printing.PrintTicket> and <xref:System.Printing.PrintCapabilities> classes cannot be inherited, you can extend the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) to recognize print device features that are not accounted for in the <xref:System.Printing.PrintTicket> or <xref:System.Printing.PrintCapabilities> classes. For more information see [NOTINBUILD: How to: Extend the Print Schema and Create New Print System Classes](http://msdn.microsoft.com/en-us/a3600218-1ea5-478a-9853-6560464f2885).  
+  
+   
+  
+## Examples  
+ The following example shows how to test a printer's capabilities and configure the print job to take advantage of them. .  
+  
+ [!code-cpp[XpsCreate#PrinterCapabilities](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#printercapabilities)]
+ [!code-csharp[XpsCreate#PrinterCapabilities](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#printercapabilities)]
+ [!code-vb[XpsCreate#PrinterCapabilities](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#printercapabilities)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="OneSided">
+      <MemberSignature Language="C#" Value="OneSided" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Duplexing OneSided = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.Duplexing.OneSided" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.Duplexing</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Output prints on only one side of each sheet.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TwoSidedLongEdge">
+      <MemberSignature Language="C#" Value="TwoSidedLongEdge" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Duplexing TwoSidedLongEdge = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.Duplexing.TwoSidedLongEdge" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.Duplexing</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Output prints on both sides of each sheet, which flips along the edge parallel to the <see cref="P:System.Printing.PrintDocumentImageableArea.MediaSizeHeight" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TwoSidedShortEdge">
+      <MemberSignature Language="C#" Value="TwoSidedShortEdge" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Duplexing TwoSidedShortEdge = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.Duplexing.TwoSidedShortEdge" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.Duplexing</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Output prints on both sides of each sheet, which flips along the edge parallel to <see cref="P:System.Printing.PrintDocumentImageableArea.MediaSizeWidth" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Duplexing Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.Duplexing.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.Duplexing</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The feature (whose options are represented by this enumeration) is set to an option not defined in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

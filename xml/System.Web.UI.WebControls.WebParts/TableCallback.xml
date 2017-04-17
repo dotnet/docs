@@ -1,0 +1,50 @@
+<Type Name="TableCallback" FullName="System.Web.UI.WebControls.WebParts.TableCallback">
+  <TypeSignature Language="C#" Value="public delegate void TableCallback(ICollection tableData);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TableCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.TableCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="tableData" Type="System.Collections.ICollection" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="tableData">The data to retrieve from the provider.</param>
+    <summary>References the method to call when retrieving table data from a provider.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a Web Parts control implements the <xref:System.Web.UI.WebControls.WebParts.IWebPartTable> interface and serves as a provider in a Web Parts connection, the consumer or transformer must retrieve and process the table data from the provider. The <xref:System.Web.UI.WebControls.WebParts.TableCallback> delegate represents the method to call for processing the provider data.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.IWebPartTable.GetTableData%2A> method contains a <xref:System.Web.UI.WebControls.WebParts.TableCallback> delegate parameter.  
+  
+   
+  
+## Examples  
+ The following code example contains a Web Parts control named `TableProviderWebPart` that serves as a provider of data in the form of a table. The control includes an implementation of the <xref:System.Web.UI.WebControls.WebParts.IWebPartTable.GetTableData%2A> method, which receives a parameter of type <xref:System.Web.UI.WebControls.WebParts.TableCallback>. This method calls the method represented by the <xref:System.Web.UI.WebControls.WebParts.TableCallback> delegate passing the table data.  
+  
+ [!code-csharp[WebParts_TableCallback_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_TableCallback_Overview/CS/tableprovider.cs#1)]
+ [!code-vb[WebParts_TableCallback_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_TableCallback_Overview/VB/tableprovider.vb#1)]  
+  
+ In the `OnPreRender` method, the consumer calls `GetTableData` in `TableProviderWebPart` and passes its `GetTableData` method as the delegate to call with the table data, as shown in the following code example.  
+  
+ [!code-csharp[WebParts_TableCallback_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_TableCallback_Overview/CS/tableconsumerwebpart.cs#2)]
+ [!code-vb[WebParts_TableCallback_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_TableCallback_Overview/VB/tableconsumerwebpart.vb#2)]  
+  
+ The two controls and the connection are included in a Web page, as shown in the following example.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_TableCallback_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_TableCallback_Overview/CS/TableConnection.aspx#3)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_TableCallback_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_TableCallback_Overview/VB/TableConnection.aspx#3)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

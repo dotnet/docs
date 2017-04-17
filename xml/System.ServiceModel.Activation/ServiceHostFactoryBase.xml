@@ -1,0 +1,65 @@
+<Type Name="ServiceHostFactoryBase" FullName="System.ServiceModel.Activation.ServiceHostFactoryBase">
+  <TypeSignature Language="C#" Value="public abstract class ServiceHostFactoryBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ServiceHostFactoryBase extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activation.ServiceHostFactoryBase" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides the base implementation for the factory that allows application code to participate in the creation of service hosts in managed hosting environments where the host instance is created dynamically in response to incoming messages.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The managed hosting environments that support this interface are Internet Information Services (IIS) or Windows Process Activation Services (WAS). Implement a factory that derives from this class when you have implemented a custom derivative of <xref:System.ServiceModel.ServiceHostBase> in these hosting environments. If you have implemented a custom derivative of <xref:System.ServiceModel.ServiceHost>, consider deriving from <xref:System.ServiceModel.Activation.ServiceHostFactory> instead.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ServiceHostFactoryBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.ServiceHostFactoryBase.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activation.ServiceHostFactoryBase" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateServiceHost">
+      <MemberSignature Language="C#" Value="public abstract System.ServiceModel.ServiceHostBase CreateServiceHost (string constructorString, Uri[] baseAddresses);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.ServiceHostBase CreateServiceHost(string constructorString, class System.Uri[] baseAddresses) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.ServiceHostFactoryBase.CreateServiceHost(System.String,System.Uri[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.ServiceHostBase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="constructorString" Type="System.String" />
+        <Parameter Name="baseAddresses" Type="System.Uri[]" />
+      </Parameters>
+      <Docs>
+        <param name="constructorString">The initialization data that is passed to the <see cref="T:System.ServiceModel.ServiceHostBase" /> instance being constructed by the factory.</param>
+        <param name="baseAddresses">An <see cref="T:System.Array" /> of type <see cref="T:System.Uri" /> that contains the base addresses of the host.</param>
+        <summary>When overridden in a derived class, creates a <see cref="T:System.ServiceModel.ServiceHostBase" /> with a specific base address using custom initiation data.</summary>
+        <returns>The <see cref="T:System.ServiceModel.ServiceHostBase" /> object with the specified base addresses and initialized with the custom initiation data.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

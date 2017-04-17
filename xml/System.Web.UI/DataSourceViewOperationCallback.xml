@@ -1,0 +1,33 @@
+<Type Name="DataSourceViewOperationCallback" FullName="System.Web.UI.DataSourceViewOperationCallback">
+  <TypeSignature Language="C#" Value="public delegate bool DataSourceViewOperationCallback(int affectedRecords, Exception ex);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataSourceViewOperationCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataSourceViewOperationCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="affectedRecords" Type="System.Int32" />
+    <Parameter Name="ex" Type="System.Exception" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Boolean</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="affectedRecords">The number of records that the data operation affected.</param>
+    <param name="ex">An <see cref="T:System.Exception" />, if one is thrown by the data operation during processing.</param>
+    <summary>Represents the asynchronous callback method that a data-bound control supplies to a data source view for asynchronous insert, update, or delete data operations.</summary>
+    <returns>A value indicating whether any exceptions thrown during the data operation were handled.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, ASP.NET Web page and control execution is synchronous. However, data source controls can be extended to support asynchronous data retrieval and data operations. The <xref:System.Web.UI.DataSourceView> object supports the <xref:System.Web.UI.DataSourceView.Insert%2A>, <xref:System.Web.UI.DataSourceView.Update%2A>, and <xref:System.Web.UI.DataSourceView.Delete%2A> methods for asynchronous data processing. The <xref:System.Web.UI.DataSourceViewOperationCallback> delegate is passed to the data source view by a data-bound control, so that the view can call this delegate when asynchronous processing is complete and notify the data-bound control of the operation's outcome.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,733 @@
+<Type Name="XamlDebuggerXmlReader" FullName="System.Activities.Debugger.XamlDebuggerXmlReader">
+  <TypeSignature Language="C#" Value="public class XamlDebuggerXmlReader : System.Xaml.XamlReader, System.Xaml.IXamlLineInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlDebuggerXmlReader extends System.Xaml.XamlReader implements class System.Xaml.IXamlLineInfo" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Debugger.XamlDebuggerXmlReader" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Xaml.XamlReader</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Xaml.IXamlLineInfo</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides the functionality to parse XAML markup code into an object or tree of objects.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlDebuggerXmlReader (System.IO.TextReader underlyingTextReader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextReader underlyingTextReader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.#ctor(System.IO.TextReader)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="underlyingTextReader" Type="System.IO.TextReader" />
+      </Parameters>
+      <Docs>
+        <param name="underlyingTextReader">The text reader to the underlying text data.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Debugger.XamlDebuggerXmlReader" /> class with the specified text reader.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlDebuggerXmlReader (System.IO.TextReader underlyingTextReader, System.Xaml.XamlSchemaContext schemaContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextReader underlyingTextReader, class System.Xaml.XamlSchemaContext schemaContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.#ctor(System.IO.TextReader,System.Xaml.XamlSchemaContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="underlyingTextReader" Type="System.IO.TextReader" />
+        <Parameter Name="schemaContext" Type="System.Xaml.XamlSchemaContext" />
+      </Parameters>
+      <Docs>
+        <param name="underlyingTextReader">The text reader to the underlying text data.</param>
+        <param name="schemaContext">The schema context for interpreting or mapping XAML types.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Debugger.XamlDebuggerXmlReader" /> class with the specified text reader and schema context for interpreting or mapping XAML types.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlDebuggerXmlReader (System.Xaml.XamlReader underlyingReader, System.IO.TextReader textReader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xaml.XamlReader underlyingReader, class System.IO.TextReader textReader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.#ctor(System.Xaml.XamlReader,System.IO.TextReader)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Don't use this constructor. Use "public XamlDebuggerXmlReader(TextReader underlyingTextReader)" or "public XamlDebuggerXmlReader(TextReader underlyingTextReader, XamlSchemaContext schemaContext)" instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="underlyingReader" Type="System.Xaml.XamlReader" />
+        <Parameter Name="textReader" Type="System.IO.TextReader" />
+      </Parameters>
+      <Docs>
+        <param name="underlyingReader">The XAML reader to the underlying XAML data.</param>
+        <param name="textReader">The text reader to the underlying text data.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Debugger.XamlDebuggerXmlReader" /> class with the specified XAML reader and text reader.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlDebuggerXmlReader (System.Xaml.XamlReader underlyingReader, System.Xaml.IXamlLineInfo xamlLineInfo, System.IO.TextReader textReader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xaml.XamlReader underlyingReader, class System.Xaml.IXamlLineInfo xamlLineInfo, class System.IO.TextReader textReader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.#ctor(System.Xaml.XamlReader,System.Xaml.IXamlLineInfo,System.IO.TextReader)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Don't use this constructor. Use "public XamlDebuggerXmlReader(TextReader underlyingTextReader)" or "public XamlDebuggerXmlReader(TextReader underlyingTextReader, XamlSchemaContext schemaContext)" instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="underlyingReader" Type="System.Xaml.XamlReader" />
+        <Parameter Name="xamlLineInfo" Type="System.Xaml.IXamlLineInfo" />
+        <Parameter Name="textReader" Type="System.IO.TextReader" />
+      </Parameters>
+      <Docs>
+        <param name="underlyingReader">The XAML reader to the underlying XAML data.</param>
+        <param name="xamlLineInfo">The object that reports XAML line information.</param>
+        <param name="textReader">The text reader to the underlying text data.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Debugger.XamlDebuggerXmlReader" /> class with the specified XAML reader, XAML line information, and text reader.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectNonActivitySourceLocation">
+      <MemberSignature Language="C#" Value="public bool CollectNonActivitySourceLocation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CollectNonActivitySourceLocation" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.CollectNonActivitySourceLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether a non-activity source location is collected.</summary>
+        <value>
+          <see langword="true" /> if the non-activity source location is collected; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyAttachedSourceLocation">
+      <MemberSignature Language="C#" Value="public static void CopyAttachedSourceLocation (object source, object destination);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CopyAttachedSourceLocation(object source, object destination) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.CopyAttachedSourceLocation(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Object" />
+        <Parameter Name="destination" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="source">The XAML activity instance from which to read source location values.</param>
+        <param name="destination">An activity instance.</param>
+        <summary>Retrieves row and column values from the specified activity object and assigns them to the current instance of the XAML reader.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release the managed resources; otherwise, <see langword="false" />.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Activities.Debugger.XamlDebuggerXmlReader" />, and optionally, releases the managed resources.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndColumnName">
+      <MemberSignature Language="C#" Value="public static readonly System.Xaml.AttachableMemberIdentifier EndColumnName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Xaml.AttachableMemberIdentifier EndColumnName" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Debugger.XamlDebuggerXmlReader.EndColumnName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.AttachableMemberIdentifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The name of an attached property that represents the ending column of an activity element in its XAML form.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndLineName">
+      <MemberSignature Language="C#" Value="public static readonly System.Xaml.AttachableMemberIdentifier EndLineName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Xaml.AttachableMemberIdentifier EndLineName" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Debugger.XamlDebuggerXmlReader.EndLineName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.AttachableMemberIdentifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The name of an attached property that represents the ending line of an activity element in its XAML form.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileNameName">
+      <MemberSignature Language="C#" Value="public static readonly System.Xaml.AttachableMemberIdentifier FileNameName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Xaml.AttachableMemberIdentifier FileNameName" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Debugger.XamlDebuggerXmlReader.FileNameName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.AttachableMemberIdentifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The name of an attached property that represents the name of the file to be parsed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEndColumn">
+      <MemberSignature Language="C#" Value="public static object GetEndColumn (object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetEndColumn(object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.GetEndColumn(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">An activity instance.</param>
+        <summary>Gets the value of the attached property named in the **EndColumnName** dependency property field of the specified instance of a XAML reader.</summary>
+        <returns>An attached property object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEndLine">
+      <MemberSignature Language="C#" Value="public static object GetEndLine (object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetEndLine(object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.GetEndLine(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">An activity instance.</param>
+        <summary>Gets the value of the attached property named in the **EndLineName** dependency property field of the specified instance of a XAML reader.</summary>
+        <returns>An attached property object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFileName">
+      <MemberSignature Language="C#" Value="public static object GetFileName (object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetFileName(object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.GetFileName(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">An activity instance.</param>
+        <summary>Gets the value of the attached property named in the **FileNameName** dependency property field of the specified instance of a XAML reader.</summary>
+        <returns>An attached property object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStartColumn">
+      <MemberSignature Language="C#" Value="public static object GetStartColumn (object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetStartColumn(object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.GetStartColumn(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">An activity instance.</param>
+        <summary>Gets the value of the attached property named in the **StartColumnName** dependency property field of the specified instance of a XAML reader.</summary>
+        <returns>An attached property object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStartLine">
+      <MemberSignature Language="C#" Value="public static object GetStartLine (object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetStartLine(object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.GetStartLine(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">An activity instance.</param>
+        <summary>Gets the value of the attached property named in the **StartLineName** dependency property field of the specified instance of a XAML reader.</summary>
+        <returns>An attached property object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasLineInfo">
+      <MemberSignature Language="C#" Value="public bool HasLineInfo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasLineInfo" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.HasLineInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether line information is available.</summary>
+        <value>
+          <see langword="true" /> if line information is available; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEof">
+      <MemberSignature Language="C#" Value="public override bool IsEof { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEof" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.IsEof" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the underlying reader has reached the end of the XAML file that is being parsed.</summary>
+        <value>
+          <see langword="true" /> if the reader has reached the end of the file it is parsing; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineNumber">
+      <MemberSignature Language="C#" Value="public int LineNumber { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LineNumber" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.LineNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the line in a XAML file that is currently being examined by the reader.</summary>
+        <value>The line in a XAML file that is currently being examined by the reader.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LinePosition">
+      <MemberSignature Language="C#" Value="public int LinePosition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LinePosition" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.LinePosition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the position of the line in a XAML file that is currently being examined by the XML reader.</summary>
+        <value>The position of the line in a XAML file that is currently being examined by the XML reader.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Line position is also known as "Column" in some text editors or text editing metaphors.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Member">
+      <MemberSignature Language="C#" Value="public override System.Xaml.XamlMember Member { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlMember Member" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.Member" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlMember</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the starting member of the document being parsed to the XAML member base.</summary>
+        <value>The starting member of the document being parsed to the XAML member base.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Namespace">
+      <MemberSignature Language="C#" Value="public override System.Xaml.NamespaceDeclaration Namespace { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.NamespaceDeclaration Namespace" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.Namespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.NamespaceDeclaration</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the path that is used in the root element of the XAML document to establish a relationship between the XAML code and its schema.</summary>
+        <value>A namespace declaration for use in the root element of the XAML document.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NodeType">
+      <MemberSignature Language="C#" Value="public override System.Xaml.XamlNodeType NodeType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xaml.XamlNodeType NodeType" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.NodeType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlNodeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the node currently being read in a XAML file.</summary>
+        <value>One of the enumeration values of the <see cref="T:System.Xaml.XamlNodeType" /> enumeration.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Read">
+      <MemberSignature Language="C#" Value="public override bool Read ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Read() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.Read" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides the next XAML node from the loaded source, if a XAML node is available.</summary>
+        <returns>
+          <see langword="true" /> if a node is available; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SchemaContext">
+      <MemberSignature Language="C#" Value="public override System.Xaml.XamlSchemaContext SchemaContext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlSchemaContext SchemaContext" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.SchemaContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlSchemaContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the schema context for the underlying XAML reader.</summary>
+        <value>The schema context information.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetEndColumn">
+      <MemberSignature Language="C#" Value="public static void SetEndColumn (object instance, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetEndColumn(object instance, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.SetEndColumn(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The current instance of the XAML reader.</param>
+        <param name="value">The **EndColumnName** property identifier or name.</param>
+        <summary>Sets the value of the attached property named in the **EndColumnName** dependency property field of the specified instance of a XAML reader.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetEndLine">
+      <MemberSignature Language="C#" Value="public static void SetEndLine (object instance, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetEndLine(object instance, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.SetEndLine(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The current instance of the XAML reader.</param>
+        <param name="value">The **EndLineName** identifier or name.</param>
+        <summary>Sets the value of the attached property named in the **EndLineName** dependency property field of the specified instance of a XAML reader.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFileName">
+      <MemberSignature Language="C#" Value="public static void SetFileName (object instance, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetFileName(object instance, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.SetFileName(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The current instance of the XAML reader.</param>
+        <param name="value">The **FileNameName** property identifier or name.</param>
+        <summary>Sets the value of the attached property named in the **FileNameName** dependency property field of the specified instance of a XAML reader.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetStartColumn">
+      <MemberSignature Language="C#" Value="public static void SetStartColumn (object instance, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetStartColumn(object instance, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.SetStartColumn(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The current instance of the XAML reader.</param>
+        <param name="value">The **StartColumnName** property identifier or name.</param>
+        <summary>Sets the value of the attached property named in the **StartColumnName** dependency property field of the specified instance of a XAML reader.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetStartLine">
+      <MemberSignature Language="C#" Value="public static void SetStartLine (object instance, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetStartLine(object instance, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.XamlDebuggerXmlReader.SetStartLine(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The current instance of the XAML reader.</param>
+        <param name="value">The **StartLineName** property identifier or name.</param>
+        <summary>Sets the value of the attached property named in the **StartLineName** dependency property field of the specified instance of a XAML reader.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceLocationFound">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Activities.Debugger.SourceLocationFoundEventArgs&gt; SourceLocationFound;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Activities.Debugger.SourceLocationFoundEventArgs&gt; SourceLocationFound" />
+      <MemberSignature Language="DocId" Value="E:System.Activities.Debugger.XamlDebuggerXmlReader.SourceLocationFound" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Activities.Debugger.SourceLocationFoundEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the source location is found.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartColumnName">
+      <MemberSignature Language="C#" Value="public static readonly System.Xaml.AttachableMemberIdentifier StartColumnName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Xaml.AttachableMemberIdentifier StartColumnName" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Debugger.XamlDebuggerXmlReader.StartColumnName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.AttachableMemberIdentifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The name of an attached property that represents the starting column of the activity in its XAML form.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartLineName">
+      <MemberSignature Language="C#" Value="public static readonly System.Xaml.AttachableMemberIdentifier StartLineName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Xaml.AttachableMemberIdentifier StartLineName" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Debugger.XamlDebuggerXmlReader.StartLineName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.AttachableMemberIdentifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The name of an attached property that represents the starting line of the activity in its XAML form.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public override System.Xaml.XamlType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlType Type" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the record type at the XAML start node.</summary>
+        <value>A XAML record type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public override object Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.XamlDebuggerXmlReader.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the element at the node currently being read.</summary>
+        <value>An element in an XAML file.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

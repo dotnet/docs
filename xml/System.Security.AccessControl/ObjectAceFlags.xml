@@ -1,0 +1,91 @@
+<Type Name="ObjectAceFlags" FullName="System.Security.AccessControl.ObjectAceFlags">
+  <TypeSignature Language="C#" Value="public enum ObjectAceFlags" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ObjectAceFlags extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.ObjectAceFlags" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.AccessControl</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the presence of object types for Access Control Entries (ACEs).</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="InheritedObjectAceTypePresent">
+      <MemberSignature Language="C#" Value="InheritedObjectAceTypePresent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ObjectAceFlags InheritedObjectAceTypePresent = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ObjectAceFlags.InheritedObjectAceTypePresent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.ObjectAceFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The type of object that can inherit the ACE.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ObjectAceFlags None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ObjectAceFlags.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.ObjectAceFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No object types are present.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectAceTypePresent">
+      <MemberSignature Language="C#" Value="ObjectAceTypePresent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ObjectAceFlags ObjectAceTypePresent = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ObjectAceFlags.ObjectAceTypePresent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.ObjectAceFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The type of object that is associated with the ACE is present.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

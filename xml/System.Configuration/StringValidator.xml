@@ -1,0 +1,200 @@
+<Type Name="StringValidator" FullName="System.Configuration.StringValidator">
+  <TypeSignature Language="C#" Value="public class StringValidator : System.Configuration.ConfigurationValidatorBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StringValidator extends System.Configuration.ConfigurationValidatorBase" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.StringValidator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationValidatorBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides validation of a string.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.StringValidator> class is used to ensure that a string meets specific criteria. The criteria for validation is established when an instance of the <xref:System.Configuration.StringValidator> class is created. There are three constructor overloads for the <xref:System.Configuration.StringValidator> class. The <xref:System.Configuration.StringValidator.%23ctor%28System.Int32%29?displayProperty=fullName> constructor with one parameter verifies the minimum acceptable length of the string being validated. The <xref:System.Configuration.StringValidator.%23ctor%28System.Int32%2CSystem.Int32%29?displayProperty=fullName> constructor with two parameters ensures that the string being verified adheres to both a minimum and a maximum length. The <xref:System.Configuration.StringValidator.%23ctor%28System.Int32%2CSystem.Int32%2CSystem.String%29?displayProperty=fullName> constructor with three parameters checks both the minimum and the maximum length values of the string being verified, as well as whether specific characters are present in the string being validated.  
+  
+ The <xref:System.Configuration.StringValidator.CanValidate%2A> method determines whether the object type being validated matches the expected type. The object being validated is passed as a parameter of the <xref:System.Configuration.StringValidator.Validate%2A> method.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Configuration.StringValidator> type.  
+  
+ [!code-csharp[System.Configuration.StringValidator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.StringValidator/CS/StringValidator.cs#1)]
+ [!code-vb[System.Configuration.StringValidator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.StringValidator/VB/StringValidator.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StringValidator (int minLength);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 minLength) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.StringValidator.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="minLength" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="minLength">An integer that specifies the minimum length of the string value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.StringValidator" /> class, based on a supplied parameter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.StringValidator.%23ctor%2A> constructor verifies the minimum acceptable length of the string being validated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StringValidator (int minLength, int maxLength);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 minLength, int32 maxLength) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.StringValidator.#ctor(System.Int32,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="minLength" Type="System.Int32" />
+        <Parameter Name="maxLength" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="minLength">An integer that specifies the minimum length of the string value.</param>
+        <param name="maxLength">An integer that specifies the maximum length of the string value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.StringValidator" /> class, based on supplied parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This <xref:System.Configuration.StringValidator.%23ctor%2A> constructor ensures that the string being verified adheres to both a minimum and a maximum length.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StringValidator (int minLength, int maxLength, string invalidCharacters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 minLength, int32 maxLength, string invalidCharacters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.StringValidator.#ctor(System.Int32,System.Int32,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="minLength" Type="System.Int32" />
+        <Parameter Name="maxLength" Type="System.Int32" />
+        <Parameter Name="invalidCharacters" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="minLength">An integer that specifies the minimum length of the string value.</param>
+        <param name="maxLength">An integer that specifies the maximum length of the string value.</param>
+        <param name="invalidCharacters">A string that represents invalid characters.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.StringValidator" /> class, based on supplied parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This <xref:System.Configuration.StringValidator.%23ctor%2A> constructor ensures that the string being validated adheres to both a minimum and a maximum length, and also ensures that specific characters are excluded in the string.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use this <xref:System.Configuration.StringValidator.%23ctor%2A> constructor. This code example is part of a larger example provided for the <xref:System.Configuration.StringValidator> class.  
+  
+ [!code-csharp[System.Configuration.StringValidator#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.StringValidator/CS/StringValidator.cs#2)]
+ [!code-vb[System.Configuration.StringValidator#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.StringValidator/VB/StringValidator.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanValidate">
+      <MemberSignature Language="C#" Value="public override bool CanValidate (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanValidate(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.StringValidator.CanValidate(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">The object type.</param>
+        <summary>Determines whether an object can be validated based on type.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="type" /> parameter matches a string; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Configuration.StringValidator.CanValidate%2A> method. This code example is part of a larger example provided for the <xref:System.Configuration.StringValidator> class.  
+  
+ [!code-csharp[System.Configuration.StringValidator#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.StringValidator/CS/StringValidator.cs#3)]
+ [!code-vb[System.Configuration.StringValidator#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.StringValidator/VB/StringValidator.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public override void Validate (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Validate(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.StringValidator.Validate(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The object value.</param>
+        <summary>Determines whether the value of an object is valid.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.StringValidator> class contains the criteria necessary to validate a string object. The criteria are established when an instance of the <xref:System.Configuration.StringValidator> class is created. The object to validate is passed as a parameter of the <xref:System.Configuration.StringValidator.Validate%2A> method.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Configuration.StringValidator.Validate%2A> method. This code example is part of a larger example provided for the <xref:System.Configuration.StringValidator> class.  
+  
+ [!code-csharp[System.Configuration.StringValidator#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.StringValidator/CS/StringValidator.cs#4)]
+ [!code-vb[System.Configuration.StringValidator#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.StringValidator/VB/StringValidator.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is less than <paramref name="minValue" /> or greater than <paramref name="maxValue" /> as defined in the constructor.  
+  
+ \- or -  
+  
+ <paramref name="value" /> contains invalid characters.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

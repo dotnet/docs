@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "object variables, determining relation"
 ms.assetid: da002e3f-6616-4bad-a229-f842d06652bb
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

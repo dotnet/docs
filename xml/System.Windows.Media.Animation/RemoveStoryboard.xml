@@ -1,0 +1,55 @@
+<Type Name="RemoveStoryboard" FullName="System.Windows.Media.Animation.RemoveStoryboard">
+  <TypeSignature Language="C#" Value="public sealed class RemoveStoryboard : System.Windows.Media.Animation.ControllableStoryboardAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RemoveStoryboard extends System.Windows.Media.Animation.ControllableStoryboardAction" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.RemoveStoryboard" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Animation.ControllableStoryboardAction</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A trigger action that removes a <see cref="T:System.Windows.Media.Animation.Storyboard" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Windows.Media.Animation.RemoveStoryboard> with a <xref:System.Windows.EventTrigger> or <xref:System.Windows.Trigger> to remove a <xref:System.Windows.Media.Animation.Storyboard>.  
+  
+## Pause, Resume, Stop, Remove, or Otherwise Control a Storyboard Interactively  
+ To be able to pause, resume, remove, or otherwise control a <xref:System.Windows.Media.Animation.BeginStoryboard.Storyboard%2A> interactively, set the <xref:System.Windows.Media.Animation.BeginStoryboard.Name%2A> property of its <xref:System.Windows.Media.Animation.BeginStoryboard> and use a <xref:System.Windows.Media.Animation.ControllableStoryboardAction> object (such as <xref:System.Windows.Media.Animation.PauseStoryboard>, <xref:System.Windows.Media.Animation.ResumeStoryboard>, or <xref:System.Windows.Media.Animation.StopStoryboard>) to control it by referencing its <xref:System.Windows.Media.Animation.BeginStoryboard.Name%2A>. If the <xref:System.Windows.Media.Animation.BeginStoryboard.Name%2A> of <xref:System.Windows.Media.Animation.BeginStoryboard> is unspecified, the <xref:System.Windows.Media.Animation.BeginStoryboard.Storyboard%2A> cannot be interactively controlled after it is begun. See [How to: Use Event Triggers to Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-use-event-triggers-to-control-a-storyboard-after-it-starts.md) for more information.  
+  
+## When to Remove Storyboards  
+ You should use the <xref:System.Windows.Media.Animation.RemoveStoryboard> action to remove any storyboards begun with a <xref:System.Windows.Media.Animation.BeginStoryboard.HandoffBehavior%2A> of <xref:System.Windows.Media.Animation.HandoffBehavior>. It's also a good idea to remove background animations when the object they animate is no longer being used. For example, if you apply an indefinitely repeating storyboard using an element's <xref:System.Windows.FrameworkElement.Loaded> event, you should also create an <xref:System.Windows.EventTrigger> that uses a <xref:System.Windows.Media.Animation.RemoveStoryboard> action to remove the storyboard on the element's <xref:System.Windows.FrameworkElement.Unloaded> event.  
+  
+   
+  
+## Examples  
+ The following example shows how to remove a <xref:System.Windows.Media.Animation.Storyboard> to stop it from continuing when the user navigates away from the page containing the <xref:System.Windows.Media.Animation.Storyboard>.  
+  
+ [!code-xml[Storyboard_snip#RemoveStoryboardExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/Storyboard_snip/CS/removestoryboardexample.xaml#removestoryboardexamplewholepage)]
+ <!-- TODO: review snippet reference [!code-xml[Storyboard_snip#RemoveStoryboardExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/Storyboard_snip/xaml/removestoryboardexample.xaml#removestoryboardexamplewholepage)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RemoveStoryboard ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.RemoveStoryboard.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.RemoveStoryboard" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

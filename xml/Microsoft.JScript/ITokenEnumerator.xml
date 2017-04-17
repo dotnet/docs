@@ -1,0 +1,61 @@
+<Type Name="ITokenEnumerator" FullName="Microsoft.JScript.ITokenEnumerator">
+  <TypeSignature Language="C#" Value="public interface ITokenEnumerator" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITokenEnumerator" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ITokenEnumerator" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("556BA9E0-BD6A-4837-89F0-C79B14759181")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines methods for iterating over a collection of <see cref="T:Microsoft.JScript.ITokenColorInfo" /> objects.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetNext">
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.ITokenColorInfo GetNext ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.JScript.ITokenColorInfo GetNext() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ITokenEnumerator.GetNext" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.ITokenColorInfo</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a class, returns the next item in a collection of <see cref="T:Microsoft.JScript.ITokenColorInfo" /> objects.</summary>
+        <returns>The next item in the collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="public void Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ITokenEnumerator.Reset" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a class, sets the enumerator to its initial position before the first item in a collection of <see cref="T:Microsoft.JScript.ITokenColorInfo" /> objects.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

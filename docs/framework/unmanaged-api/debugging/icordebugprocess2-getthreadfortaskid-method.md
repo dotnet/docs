@@ -1,0 +1,59 @@
+---
+title: "ICorDebugProcess2::GetThreadForTaskID Method | Microsoft Docs"
+ms.custom: ""
+ms.date: "03/30/2017"
+ms.prod: ".net-framework-4.6"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "dotnet-clr"
+ms.tgt_pltfrm: ""
+ms.topic: "reference"
+apiname: 
+  - "ICorDebugProcess2.GetThreadForTaskID"
+apilocation: 
+  - "mscordbi.dll"
+apitype: "COM"
+f1_keywords: 
+  - "ICorDebugProcess2::GetThreadForTaskID"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "ICorDebugProcess2::GetThreadForTaskId method [.NET Framework debugging]"
+  - "GetThreadForTaskID method [.NET Framework debugging]"
+ms.assetid: 32d54a5b-8ad3-405b-a1b9-0936a3b49d1e
+caps.latest.revision: 12
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+# ICorDebugProcess2::GetThreadForTaskID Method
+Gets the thread on which the task with the specified identifier is executing.  
+  
+## Syntax  
+  
+```  
+HRESULT GetThreadForTaskID (  
+    [in]  TASKID            taskid,  
+    [out] ICorDebugThread2  **ppThread  
+);  
+```  
+  
+#### Parameters  
+ `taskid`  
+ [in] The identifier of the task.  
+  
+ `ppThread`  
+ [out] A pointer to the address of an ICorDebugThread2 object that represents the thread to be retrieved.  
+  
+## Remarks  
+ The host can set the task identifier by using the [ICLRTask::SetTaskIdentifier](../../../../docs/framework/unmanaged-api/hosting/iclrtask-settaskidentifier-method.md) method.  
+  
+## Requirements  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+  
+ **Header:** CorDebug.idl, CorDebug.h  
+  
+ **Library:** CorGuids.lib  
+  
+ **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]

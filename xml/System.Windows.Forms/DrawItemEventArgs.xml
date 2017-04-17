@@ -1,0 +1,389 @@
+<Type Name="DrawItemEventArgs" FullName="System.Windows.Forms.DrawItemEventArgs">
+  <TypeSignature Language="C#" Value="public class DrawItemEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DrawItemEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DrawItemEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see langword="DrawItem" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `DrawItem` event is raised by owner draw controls, such as the <xref:System.Windows.Forms.ListBox> and <xref:System.Windows.Forms.ComboBox> controls. It contains all the information that is needed for the user to paint the specified item, including the item index, the <xref:System.Drawing.Rectangle>, and the <xref:System.Drawing.Graphics> on which the drawing should be done.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to create owner-drawn <xref:System.Windows.Forms.ListBox> items. The code uses the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property to specify that the items drawn are fixed sized and the <xref:System.Windows.Forms.ListBox.DrawItem> event to perform the drawing of each item into the <xref:System.Windows.Forms.ListBox>. The example code uses the properties and methods of the <xref:System.Windows.Forms.DrawItemEventArgs> class passed as a parameter to the event handler to draw the items. This example assumes that a <xref:System.Windows.Forms.ListBox> control that is named `listBox1` has been added to a form and that the <xref:System.Windows.Forms.ListBox.DrawItem> event is handled by the event handler defined in the example code. The example also assumes that items have been added to the <xref:System.Windows.Forms.ListBox> with the text of "Apple", "Orange", and "Plum" in that order.  
+  
+ [!code-csharp[ListBox.DrawMode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.DrawMode/CS/form1.cs#1)]
+ [!code-vb[ListBox.DrawMode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.DrawMode/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DrawItemEventArgs (System.Drawing.Graphics graphics, System.Drawing.Font font, System.Drawing.Rectangle rect, int index, System.Windows.Forms.DrawItemState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics graphics, class System.Drawing.Font font, valuetype System.Drawing.Rectangle rect, int32 index, valuetype System.Windows.Forms.DrawItemState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DrawItemEventArgs.#ctor(System.Drawing.Graphics,System.Drawing.Font,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.DrawItemState)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="font" Type="System.Drawing.Font" />
+        <Parameter Name="rect" Type="System.Drawing.Rectangle" />
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="state" Type="System.Windows.Forms.DrawItemState" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> surface on which to draw.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to use, usually the parent control's <see cref="T:System.Drawing.Font" /> property.</param>
+        <param name="rect">The <see cref="T:System.Drawing.Rectangle" /> bounds to draw within.</param>
+        <param name="index">The <see cref="T:System.Windows.Forms.Control.ControlCollection" /> index value of the item that is being drawn.</param>
+        <param name="state">The control's <see cref="T:System.Windows.Forms.DrawItemState" /> information.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DrawItemEventArgs" /> class for the specified control with the specified font, state, surface to draw on, and the bounds to draw within.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DrawItemEventArgs (System.Drawing.Graphics graphics, System.Drawing.Font font, System.Drawing.Rectangle rect, int index, System.Windows.Forms.DrawItemState state, System.Drawing.Color foreColor, System.Drawing.Color backColor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics graphics, class System.Drawing.Font font, valuetype System.Drawing.Rectangle rect, int32 index, valuetype System.Windows.Forms.DrawItemState state, valuetype System.Drawing.Color foreColor, valuetype System.Drawing.Color backColor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DrawItemEventArgs.#ctor(System.Drawing.Graphics,System.Drawing.Font,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.DrawItemState,System.Drawing.Color,System.Drawing.Color)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="font" Type="System.Drawing.Font" />
+        <Parameter Name="rect" Type="System.Drawing.Rectangle" />
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="state" Type="System.Windows.Forms.DrawItemState" />
+        <Parameter Name="foreColor" Type="System.Drawing.Color" />
+        <Parameter Name="backColor" Type="System.Drawing.Color" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> surface on which to draw.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> to use, usually the parent control's <see cref="T:System.Drawing.Font" /> property.</param>
+        <param name="rect">The <see cref="T:System.Drawing.Rectangle" /> bounds to draw within.</param>
+        <param name="index">The <see cref="T:System.Windows.Forms.Control.ControlCollection" /> index value of the item that is being drawn.</param>
+        <param name="state">The control's <see cref="T:System.Windows.Forms.DrawItemState" /> information.</param>
+        <param name="foreColor">The foreground <see cref="T:System.Drawing.Color" /> to draw the control with.</param>
+        <param name="backColor">The background <see cref="T:System.Drawing.Color" /> to draw the control with.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DrawItemEventArgs" /> class for the specified control with the specified font, state, foreground color, background color, surface to draw on, and the bounds to draw within.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color BackColor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawItemEventArgs.BackColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the background color of the item that is being drawn.</summary>
+        <value>The background <see cref="T:System.Drawing.Color" /> of the item that is being drawn.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the item's state is <xref:System.Windows.Forms.DrawItemState?displayProperty=fullName>, the <xref:System.Windows.Forms.DrawItemEventArgs.BackColor%2A> is set to <xref:System.Drawing.SystemColors.HighlightText%2A?displayProperty=fullName>. If the item's state is not <xref:System.Windows.Forms.DrawItemState>, the <xref:System.Windows.Forms.DrawItemEventArgs.BackColor%2A> property is set to <xref:System.Drawing.SystemColors.Window%2A?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName> event. This report helps you learn when the event occurs and can assist you in debugging.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListBox> that is named `ListBox1`. Then make sure that the event handler is associated with the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#153](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#153)]
+ [!code-vb[System.Windows.Forms.EventExamples#153](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#153)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bounds">
+      <MemberSignature Language="C#" Value="public System.Drawing.Rectangle Bounds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle Bounds" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawItemEventArgs.Bounds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the rectangle that represents the bounds of the item that is being drawn.</summary>
+        <value>The <see cref="T:System.Drawing.Rectangle" /> that represents the bounds of the item that is being drawn.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to create owner-drawn <xref:System.Windows.Forms.ListBox> items. The code uses the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property to specify that the items drawn are fixed sized and the <xref:System.Windows.Forms.ListBox.DrawItem> event to perform the drawing of each item into the <xref:System.Windows.Forms.ListBox>. The example code uses the properties and methods of the <xref:System.Windows.Forms.DrawItemEventArgs> class passed as a parameter to the event handler to draw the items. This example assumes that a <xref:System.Windows.Forms.ListBox> control that is named `listBox1` has been added to a form and that the <xref:System.Windows.Forms.ListBox.DrawItem> event is handled by the event handler defined in the example code. The example also assumes that items have been added to the <xref:System.Windows.Forms.ListBox> with the text of "Apple", "Orange", and "Plum" in that order.  
+  
+ [!code-csharp[ListBox.DrawMode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.DrawMode/CS/form1.cs#1)]
+ [!code-vb[ListBox.DrawMode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.DrawMode/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawBackground">
+      <MemberSignature Language="C#" Value="public virtual void DrawBackground ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DrawBackground() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DrawItemEventArgs.DrawBackground" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Draws the background within the bounds specified in the <see cref="Overload:System.Windows.Forms.DrawItemEventArgs.#ctor" /> constructor and with the appropriate color.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the item being drawn is <xref:System.Windows.Forms.DrawItemState>, the background is drawn with the text highlighted.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to create owner-drawn <xref:System.Windows.Forms.ListBox> items. The code uses the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property to specify that the items drawn are a fixed size and the <xref:System.Windows.Forms.ListBox.DrawItem> event to perform the drawing of each item into the <xref:System.Windows.Forms.ListBox>. The example code uses the properties and methods of the <xref:System.Windows.Forms.DrawItemEventArgs> class passed as a parameter to the event handler to draw the items. This example assumes that a <xref:System.Windows.Forms.ListBox> control named `listBox1` was added to a form and that the <xref:System.Windows.Forms.ListBox.DrawItem> event is handled by the event handler that is defined in the example code. The example also assumes that items were added to the <xref:System.Windows.Forms.ListBox> with the text of "Apple", "Orange", and "Plum", in that order.  
+  
+ [!code-csharp[ListBox.DrawMode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.DrawMode/CS/form1.cs#1)]
+ [!code-vb[ListBox.DrawMode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.DrawMode/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.DrawItemEventArgs.DrawBackground" /> in a derived class, make sure to call the <see cref="M:System.Windows.Forms.DrawItemEventArgs.DrawBackground" /> method of the base class.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawFocusRectangle">
+      <MemberSignature Language="C#" Value="public virtual void DrawFocusRectangle ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DrawFocusRectangle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DrawItemEventArgs.DrawFocusRectangle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Draws a focus rectangle within the bounds specified in the <see cref="Overload:System.Windows.Forms.DrawItemEventArgs.#ctor" /> constructor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the item being drawn has <xref:System.Windows.Forms.DrawItemState>, the focus rectangle is drawn.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to create owner-drawn <xref:System.Windows.Forms.ListBox> items. The code uses the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property to specify that the items drawn are a fixed size and the <xref:System.Windows.Forms.ListBox.DrawItem> event to perform the drawing of each item into the <xref:System.Windows.Forms.ListBox>. The example code uses the properties and methods of the <xref:System.Windows.Forms.DrawItemEventArgs> class passed as a parameter to the event handler to draw the items. This example assumes that a <xref:System.Windows.Forms.ListBox> control named `listBox1` was added to a form and that the <xref:System.Windows.Forms.ListBox.DrawItem> event is handled by the event handler that is defined in the example code. The example also assumes that items were added to the <xref:System.Windows.Forms.ListBox> with the text of "Apple", "Orange", and "Plum", in that order.  
+  
+ [!code-csharp[ListBox.DrawMode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.DrawMode/CS/form1.cs#1)]
+ [!code-vb[ListBox.DrawMode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.DrawMode/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.DrawItemEventArgs.DrawFocusRectangle" /> in a derived class, make sure to call the <see cref="M:System.Windows.Forms.DrawItemEventArgs.DrawFocusRectangle" /> method of the base class.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Font">
+      <MemberSignature Language="C#" Value="public System.Drawing.Font Font { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawItemEventArgs.Font" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Font</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the font that is assigned to the item being drawn.</summary>
+        <value>The <see cref="T:System.Drawing.Font" /> that is assigned to the item being drawn.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A suggested <xref:System.Drawing.Font>, usually the <xref:System.Windows.Forms.Control.Font%2A> property of the parent control.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to create owner-drawn <xref:System.Windows.Forms.ListBox> items. The code uses the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property to specify that the items drawn are a fixed size and the <xref:System.Windows.Forms.ListBox.DrawItem> event to perform the drawing of each item into the <xref:System.Windows.Forms.ListBox>. The example code uses the properties and methods of the <xref:System.Windows.Forms.DrawItemEventArgs> class passed as a parameter to the event handler to draw the items. This example assumes that a <xref:System.Windows.Forms.ListBox> control named `listBox1` was added to a form and that the <xref:System.Windows.Forms.ListBox.DrawItem> event is handled by the event handler that is defined in the example code. The example also assumes that items were added to the <xref:System.Windows.Forms.ListBox> with the text of "Apple", "Orange", and "Plum", in that order.  
+  
+ [!code-csharp[ListBox.DrawMode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.DrawMode/CS/form1.cs#1)]
+ [!code-vb[ListBox.DrawMode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.DrawMode/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForeColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color ForeColor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawItemEventArgs.ForeColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the foreground color of the of the item being drawn.</summary>
+        <value>The foreground <see cref="T:System.Drawing.Color" /> of the item being drawn.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the item's state is <xref:System.Windows.Forms.DrawItemState?displayProperty=fullName>, the <xref:System.Windows.Forms.DrawItemEventArgs.ForeColor%2A> is set to <xref:System.Drawing.SystemColors.HighlightText%2A?displayProperty=fullName>. If the item's state is not <xref:System.Windows.Forms.DrawItemState>, the <xref:System.Windows.Forms.DrawItemEventArgs.ForeColor%2A> property is set to <xref:System.Drawing.SystemColors.WindowText%2A?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName> event. This report helps you learn when the event occurs and can assist you in debugging.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListBox> that is named `ListBox1`. Then make sure that the event handler is associated with the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#153](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#153)]
+ [!code-vb[System.Windows.Forms.EventExamples#153](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#153)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Graphics">
+      <MemberSignature Language="C#" Value="public System.Drawing.Graphics Graphics { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Graphics Graphics" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawItemEventArgs.Graphics" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Graphics</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the graphics surface to draw the item on.</summary>
+        <value>The <see cref="T:System.Drawing.Graphics" /> surface to draw the item on.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to create owner-drawn <xref:System.Windows.Forms.ListBox> items. The code uses the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property to specify that the items drawn are a fixed size and the <xref:System.Windows.Forms.ListBox.DrawItem> event to perform the drawing of each item into the <xref:System.Windows.Forms.ListBox>. The example code uses the properties and methods of the <xref:System.Windows.Forms.DrawItemEventArgs> class passed as a parameter to the event handler to draw the items. This example assumes that a <xref:System.Windows.Forms.ListBox> control named `listBox1` was added to a form and that the <xref:System.Windows.Forms.ListBox.DrawItem> event is handled by the event handler that is defined in the example code. The example also assumes that items were added to the <xref:System.Windows.Forms.ListBox> with the text of "Apple", "Orange", and "Plum", in that order.  
+  
+ [!code-csharp[ListBox.DrawMode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.DrawMode/CS/form1.cs#1)]
+ [!code-vb[ListBox.DrawMode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.DrawMode/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="public int Index { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawItemEventArgs.Index" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the index value of the item that is being drawn.</summary>
+        <value>The numeric value that represents the <see cref="P:System.Windows.Forms.Control.ControlCollection.Item(System.Int32)" /> value of the item being drawn.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property returns the <xref:System.Windows.Forms.Control.ControlCollection.Item%2A> value of the item being drawn in the <xref:System.Windows.Forms.Control.ControlCollection?displayProperty=fullName>. This property can return -1 if itemswere removed from the list.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to create owner-drawn <xref:System.Windows.Forms.ListBox> items. The code uses the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property to specify that the items drawn are a fixed size and the <xref:System.Windows.Forms.ListBox.DrawItem> event to perform the drawing of each item into the <xref:System.Windows.Forms.ListBox>. The example code uses the properties and methods of the <xref:System.Windows.Forms.DrawItemEventArgs> class passed as a parameter to the event handler to draw the items. This example assumes that a <xref:System.Windows.Forms.ListBox> control named `listBox1` was added to a form and that the <xref:System.Windows.Forms.ListBox.DrawItem> event is handled by the event handler that is defined in the example code. The example also assumes that items were added to the <xref:System.Windows.Forms.ListBox> with the text of "Apple", "Orange", and "Plum", in that order.  
+  
+ [!code-csharp[ListBox.DrawMode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.DrawMode/CS/form1.cs#1)]
+ [!code-vb[ListBox.DrawMode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.DrawMode/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DrawItemState State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DrawItemState State" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawItemEventArgs.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the state of the item being drawn.</summary>
+        <value>The <see cref="T:System.Windows.Forms.DrawItemState" /> that represents the state of the item being drawn.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property value can be a combination of the <xref:System.Windows.Forms.DrawItemState> enumeration members. The members can be combined by using bitwise operators.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName> event. This report helps you learn when the event occurs and can assist you in debugging.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListBox> that is named `ListBox1`. Then make sure that the event handler is associated with the <xref:System.Windows.Forms.ListBox.DrawItem?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#153](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#153)]
+ [!code-vb[System.Windows.Forms.EventExamples#153](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#153)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

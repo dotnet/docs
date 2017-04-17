@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "My.Computer.Registry object"
 ms.assetid: afd9edf9-ef9b-438b-a390-d71a02dc8203
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

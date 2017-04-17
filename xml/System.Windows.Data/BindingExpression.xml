@@ -1,0 +1,204 @@
+<Type Name="BindingExpression" FullName="System.Windows.Data.BindingExpression">
+  <TypeSignature Language="C#" Value="public sealed class BindingExpression : System.Windows.Data.BindingExpressionBase, System.Windows.IWeakEventListener" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BindingExpression extends System.Windows.Data.BindingExpressionBase implements class System.Windows.IWeakEventListener" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Data.BindingExpression" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Data.BindingExpressionBase</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.IWeakEventListener</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Contains information about a single instance of a <see cref="T:System.Windows.Data.Binding" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Data.Binding> class is the high-level class for the declaration of a binding. The <xref:System.Windows.Data.BindingExpression> class is the underlying object that maintains the connection between the binding source and the binding target. A <xref:System.Windows.Data.Binding> contains all the information that can be shared across several <xref:System.Windows.Data.BindingExpression> objects. A <xref:System.Windows.Data.BindingExpression> is an instance expression that cannot be shared and that contains all the instance information about the <xref:System.Windows.Data.Binding>.  
+  
+ For example, consider the following, where `myDataObject` is an instance of the `MyData` class, `myBinding` is the source <xref:System.Windows.Data.Binding> object, and `MyData` class is a defined class that contains a string property named `MyDataProperty`. This example binds the text content of `mytext`, which is an instance of <xref:System.Windows.Controls.TextBlock>, to `MyDataProperty`.  
+  
+ [!code-csharp[CodeOnlyBinding#1](~/samples/snippets/csharp/VS_Snippets_Wpf/CodeOnlyBinding/CSharp/binding.cs#1)]
+ [!code-vb[CodeOnlyBinding#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CodeOnlyBinding/VisualBasic/App.vb#1)]  
+  
+ You can use the same `myBinding` object to create other bindings. For example, you might use the `myBinding` object to bind the text content of a check box to `MyDataProperty`. In that scenario, there will be two instances of <xref:System.Windows.Data.BindingExpression> that share the `myBinding` object.  
+  
+ You can obtain a <xref:System.Windows.Data.BindingExpression> object by using the <xref:System.Windows.Data.BindingOperations.GetBindingExpression%2A> method or the <xref:System.Windows.FrameworkElement.GetBindingExpression%2A> method on a data-bound object.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DataItem">
+      <MemberSignature Language="C#" Value="public object DataItem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object DataItem" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingExpression.DataItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the binding source object that this <see cref="T:System.Windows.Data.BindingExpression" /> uses.</summary>
+        <value>The binding source object that this <see cref="T:System.Windows.Data.BindingExpression" /> uses.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows the implementation of a <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event handler that uses the <xref:System.Windows.Data.BindingOperations.GetBindingExpression%2A> method to obtain the <xref:System.Windows.Data.BindingExpression> and then calls the <xref:System.Windows.Data.BindingExpression.DataItem%2A> property to access the binding source object.  
+  
+ The <xref:System.Windows.Controls.TextBlock> `SavingsText` is the binding target object, and its <xref:System.Windows.Controls.TextBlock.Text%2A> property is the binding target property.  
+  
+ [!code-csharp[DirectionalBinding#OnRentRaise](~/samples/snippets/csharp/VS_Snippets_Wpf/DirectionalBinding/CSharp/Page1.xaml.cs#onrentraise)]
+ [!code-vb[DirectionalBinding#OnRentRaise](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DirectionalBinding/VisualBasic/DirectionalBinding.vb#onrentraise)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentBinding">
+      <MemberSignature Language="C#" Value="public System.Windows.Data.Binding ParentBinding { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Data.Binding ParentBinding" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingExpression.ParentBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Data.Binding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the <see cref="T:System.Windows.Data.Binding" /> object of the current <see cref="T:System.Windows.Data.BindingExpression" />.</summary>
+        <value>The <see cref="T:System.Windows.Data.Binding" /> object of the current binding expression.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolvedSource">
+      <MemberSignature Language="C#" Value="public object ResolvedSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ResolvedSource" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingExpression.ResolvedSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the binding source object for this <see cref="T:System.Windows.Data.BindingExpression" />.</summary>
+        <value>The binding source object for this <see cref="T:System.Windows.Data.BindingExpression" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolvedSourcePropertyName">
+      <MemberSignature Language="C#" Value="public string ResolvedSourcePropertyName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ResolvedSourcePropertyName" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.BindingExpression.ResolvedSourcePropertyName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the binding source property for this <see cref="T:System.Windows.Data.BindingExpression" />.</summary>
+        <value>The name of the binding source property for this <see cref="T:System.Windows.Data.BindingExpression" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.IWeakEventListener.ReceiveWeakEvent">
+      <MemberSignature Language="C#" Value="bool IWeakEventListener.ReceiveWeakEvent (Type managerType, object sender, EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.IWeakEventListener.ReceiveWeakEvent(class System.Type managerType, object sender, class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingExpression.System#Windows#IWeakEventListener#ReceiveWeakEvent(System.Type,System.Object,System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="managerType" Type="System.Type" />
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="managerType">The type of the <see cref="T:System.Windows.WeakEventManager" /> calling this method. This only recognizes manager objects of type <see cref="T:System.Collections.Specialized.CollectionChangedEventManager" />.</param>
+        <param name="sender">Object that originated the event.</param>
+        <param name="e">Event data.</param>
+        <summary>This member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+        <returns>
+          <see langword="true" /> if the listener handled the event; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateSource">
+      <MemberSignature Language="C#" Value="public override void UpdateSource ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void UpdateSource() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingExpression.UpdateSource" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sends the current binding target value to the binding source property in <see cref="F:System.Windows.Data.BindingMode.TwoWay" /> or <see cref="F:System.Windows.Data.BindingMode.OneWayToSource" /> bindings.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does nothing when the <xref:System.Windows.Data.Binding.Mode%2A> of the binding is not <xref:System.Windows.Data.BindingMode> or <xref:System.Windows.Data.BindingMode>.  
+  
+ If the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> value of your binding is set to <xref:System.Windows.Data.UpdateSourceTrigger>, you must call the <xref:System.Windows.Data.BindingExpression.UpdateSource%2A> method or the changes will not propagate back to the source.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The binding has been detached from its target.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateTarget">
+      <MemberSignature Language="C#" Value="public override void UpdateTarget ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void UpdateTarget() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingExpression.UpdateTarget" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Forces a data transfer from the binding source property to the binding target property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method enables you to force a data transfer from the source property to the target property. If your source object implements a proper property-changed notification mechanism such as <xref:System.ComponentModel.INotifyPropertyChanged>, target updates happen automatically. However, you have the option to use this method to update the target property explicitly in cases where your source object does not provide the proper property-changed notifications. You can also use this method if your application needs to update the target properties periodically.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The binding has been detached from its target.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

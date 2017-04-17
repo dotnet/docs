@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "DataRepeater, troubleshooting"
 ms.assetid: c0ab9469-eced-4f52-aa18-4bd8dd4f1a9a
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -52,7 +52,7 @@ This topic lists common issues that may occur when you are working with the <xre
 DataRepeater1.Top = ProductsBindingNavigator.Height  
 ```  
   
-```cs  
+```csharp  
 dataRepeater1.Top = productsBindingNavigator.Height;  
 ```  
   

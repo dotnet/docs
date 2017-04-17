@@ -1,0 +1,103 @@
+<Type Name="IncrementalStrokeHitTester" FullName="System.Windows.Ink.IncrementalStrokeHitTester">
+  <TypeSignature Language="C#" Value="public class IncrementalStrokeHitTester : System.Windows.Ink.IncrementalHitTester" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IncrementalStrokeHitTester extends System.Windows.Ink.IncrementalHitTester" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Ink.IncrementalStrokeHitTester" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Ink.IncrementalHitTester</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Dynamically hit tests a stroke with an eraser path.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Ink.IncrementalStrokeHitTester> hit tests strokes by determining when a eraser path intersects that stroke. Use the <xref:System.Windows.Ink.IncrementalHitTester.AddPoints%2A> method in the stylus events to add the points to the <xref:System.Windows.Ink.IncrementalStrokeHitTester>. When the points added to the <xref:System.Windows.Ink.IncrementalStrokeHitTester> intersect a <xref:System.Windows.Ink.Stroke>, the <xref:System.Windows.Ink.IncrementalStrokeHitTester> raises the <xref:System.Windows.Ink.IncrementalStrokeHitTester.StrokeHit> event.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to dynamically erase a portion of a <xref:System.Windows.Ink.Stroke>. To create a control that enables a user to erase ink, see [How to: Erase Ink on a Custom Control](~/docs/framework/wpf/advanced/how-to-erase-ink-on-a-custom-control.md).  
+  
+ [!code-csharp[InkEraser#2](~/samples/snippets/csharp/VS_Snippets_Wpf/InkEraser/CSharp/InkEraser.cs#2)]
+ [!code-vb[InkEraser#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkEraser/VisualBasic/InkEraser.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddPointsCore">
+      <MemberSignature Language="C#" Value="protected override void AddPointsCore (System.Collections.Generic.IEnumerable&lt;System.Windows.Point&gt; points);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddPointsCore(class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Windows.Point&gt; points) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.IncrementalStrokeHitTester.AddPointsCore(System.Collections.Generic.IEnumerable{System.Windows.Point})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="points" Type="System.Collections.Generic.IEnumerable&lt;System.Windows.Point&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="points">The points to add</param>
+        <summary>Adds points to the <see cref="T:System.Windows.Ink.IncrementalHitTester" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnStrokeHit">
+      <MemberSignature Language="C#" Value="protected void OnStrokeHit (System.Windows.Ink.StrokeHitEventArgs eventArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnStrokeHit(class System.Windows.Ink.StrokeHitEventArgs eventArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.IncrementalStrokeHitTester.OnStrokeHit(System.Windows.Ink.StrokeHitEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgs" Type="System.Windows.Ink.StrokeHitEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgs">Event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Ink.IncrementalStrokeHitTester.StrokeHit" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrokeHit">
+      <MemberSignature Language="C#" Value="public event System.Windows.Ink.StrokeHitEventHandler StrokeHit;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Ink.StrokeHitEventHandler StrokeHit" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Ink.IncrementalStrokeHitTester.StrokeHit" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.StrokeHitEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="T:System.Windows.Ink.IncrementalStrokeHitTester" /> intersects an ink <see cref="T:System.Windows.Ink.Stroke" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to dynamically erase a portion of a <xref:System.Windows.Ink.Stroke>. To create a control that enables a user to erase ink, see [How to: Erase Ink on a Custom Control](~/docs/framework/wpf/advanced/how-to-erase-ink-on-a-custom-control.md).  
+  
+ [!code-csharp[InkEraser#2](~/samples/snippets/csharp/VS_Snippets_Wpf/InkEraser/CSharp/InkEraser.cs#2)]
+ [!code-vb[InkEraser#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkEraser/VisualBasic/InkEraser.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 730a6670-fb8c-41fc-8a1b-eb97a837e432
 caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Retrieve the Shallow Value of an Element (Visual Basic)

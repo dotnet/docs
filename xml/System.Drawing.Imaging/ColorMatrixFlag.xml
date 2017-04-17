@@ -1,0 +1,66 @@
+<Type Name="ColorMatrixFlag" FullName="System.Drawing.Imaging.ColorMatrixFlag">
+  <TypeSignature Language="C#" Value="public enum ColorMatrixFlag" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ColorMatrixFlag extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.ColorMatrixFlag" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the types of images and colors that will be affected by the color and grayscale adjustment settings of an <see cref="T:System.Drawing.Imaging.ImageAttributes" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AltGrays">
+      <MemberSignature Language="C#" Value="AltGrays" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.ColorMatrixFlag AltGrays = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ColorMatrixFlag.AltGrays" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.ColorMatrixFlag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Only gray shades are adjusted.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.ColorMatrixFlag Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ColorMatrixFlag.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.ColorMatrixFlag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>All color values, including gray shades, are adjusted by the same color-adjustment matrix.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipGrays">
+      <MemberSignature Language="C#" Value="SkipGrays" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.ColorMatrixFlag SkipGrays = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ColorMatrixFlag.SkipGrays" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.ColorMatrixFlag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>All colors are adjusted, but gray shades are not adjusted. A gray shade is any color that has the same value for its red, green, and blue components.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,63 @@
+<Type Name="EntityReference" FullName="System.Data.Objects.DataClasses.EntityReference">
+  <TypeSignature Language="C#" Value="public abstract class EntityReference : System.Data.Objects.DataClasses.RelatedEnd" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit EntityReference extends System.Data.Objects.DataClasses.RelatedEnd" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.EntityReference" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Objects.DataClasses.RelatedEnd</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Base class that implements non-generic functionality for an <see cref="T:System.Data.Objects.DataClasses.EntityReference`1" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Objects.DataClasses.EntityReference> class exposes the <xref:System.Data.EntityKey> of the related object and is a base class for the <xref:System.Data.Objects.DataClasses.EntityReference%601> class. An <xref:System.Data.Objects.DataClasses.EntityReference%601> object is returned by a navigation property when the related end has a multiplicity of zero or one. For more information, see [NavigationProperty Element (CSDL)](http://msdn.microsoft.com/en-us/5829a238-a50e-4c81-901d-7b54fc00f27e).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EntityKey">
+      <MemberSignature Language="C#" Value="public System.Data.EntityKey EntityKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.EntityKey EntityKey" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EntityReference.EntityKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.EntityKey</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the key for the related object.</summary>
+        <value>An <see cref="T:System.Data.EntityKey" /> that is the key of the related object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Having the entity key of the related object available on the <xref:System.Data.Objects.DataClasses.EntityReference> object makes it easier to return information about the related object without having to load it from the data source.  
+  
+ Exposing the <xref:System.Data.EntityKey> of the related object on the  <xref:System.Data.Objects.DataClasses.EntityReference> object also enables Object Service to dynamically create an association between two attached objects and delete an object without having to load the related ends. For more information, see [Creating, Adding, Modifying, and Deleting Objects](http://msdn.microsoft.com/en-us/f76f1fad-c553-4b59-820b-89b3dec2fad1).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

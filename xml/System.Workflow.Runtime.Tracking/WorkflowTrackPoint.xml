@@ -1,0 +1,113 @@
+<Type Name="WorkflowTrackPoint" FullName="System.Workflow.Runtime.Tracking.WorkflowTrackPoint">
+  <TypeSignature Language="C#" Value="public sealed class WorkflowTrackPoint" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WorkflowTrackPoint extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.WorkflowTrackPoint" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines a point associated with a set of workflow status events that are tracked in the potential execution path of a root workflow instance.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ Whenever the status of the workflow instance changes, the workflow instance emits a workflow status event based on one of the <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent> values to the runtime tracking infrastructure. A <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint> defines an interest in all the points during the execution of a workflow instance at which specific types of workflow status events occur. You can add a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint> to <xref:System.Workflow.Runtime.Tracking.TrackingProfile.WorkflowTrackPoints%2A?displayProperty=fullName> to instruct the runtime tracking infrastructure to send a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord> to the tracking service when a specified set of workflow status events occur. A <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint> may be matched at multiple points in the workflow instance.  
+  
+ Set <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint.MatchingLocation%2A> with an appropriately configured <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingLocation> to specify the types of workflow status events that the runtime tracking infrastructure uses to match the <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint>. You can add to <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint.Annotations%2A> to specify additional information associated with the track point that should be sent by the runtime tracking infrastructure when the track point is matched.  
+  
+ This class cannot be inherited.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowTrackPoint ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.WorkflowTrackPoint.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.WorkflowTrackPoint" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint> is initialized with no annotations and no <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint.MatchingLocation%2A>. You must set a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint.MatchingLocation%2A> for the track point.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Annotations">
+      <MemberSignature Language="C#" Value="public System.Workflow.Runtime.Tracking.TrackingAnnotationCollection Annotations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Runtime.Tracking.TrackingAnnotationCollection Annotations" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.WorkflowTrackPoint.Annotations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.Tracking.TrackingAnnotationCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of annotations associated with the track point.</summary>
+        <value>An <see cref="T:System.Workflow.Runtime.Tracking.TrackingAnnotationCollection" /> that contains the annotations associated with the track point. The default is an empty collection; it specifies that no annotations are to be associated with the track point.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can add to <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint.Annotations%2A> to specify annotations to be returned in the <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord> sent to the tracking service when the track point is matched.  
+  
+ Annotations are strings that you define that contain information to associate with the track point. For example, an annotation could contain information about the possible execution path the workflow can take from this track point, or it could contain information to be displayed in a user interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchingLocation">
+      <MemberSignature Language="C#" Value="public System.Workflow.Runtime.Tracking.WorkflowTrackingLocation MatchingLocation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Runtime.Tracking.WorkflowTrackingLocation MatchingLocation" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.WorkflowTrackPoint.MatchingLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.Tracking.WorkflowTrackingLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Workflow.Runtime.Tracking.WorkflowTrackingLocation" /> that specifies the workflow status events that should be matched by the runtime tracking infrastructure for the track point.</summary>
+        <value>A <see cref="T:System.Workflow.Runtime.Tracking.WorkflowTrackingLocation" /> that specified the workflow status events that should be matched by the runtime tracking infrastructure for the track point.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You must set a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint.MatchingLocation%2A> for the track point. The <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint.MatchingLocation%2A> specifies one or more <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent> values that are used by the runtime tracking infrastructure to match the track point.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

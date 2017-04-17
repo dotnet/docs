@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "covariance, Out keyword [Visual Basic]"
 ms.assetid: c4418369-1518-4a46-9a1e-054c61038eca
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -1,0 +1,73 @@
+<Type Name="MarginProperty" FullName="System.Windows.Forms.VisualStyles.MarginProperty">
+  <TypeSignature Language="C#" Value="public enum MarginProperty" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MarginProperty extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.MarginProperty" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Identifies the margin properties of a visual style element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.MarginProperty> enumeration represents a set of margin properties that describe the placement of visual style elements. The <xref:System.Windows.Forms.VisualStyles.MarginProperty> values are used as an argument in the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetMargins%2A?displayProperty=fullName> method to specify which property value to retrieve for the element that the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> currently represents.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CaptionMargins">
+      <MemberSignature Language="C#" Value="CaptionMargins" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.MarginProperty CaptionMargins = int32(3603)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.MarginProperty.CaptionMargins" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.MarginProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies where caption text can be placed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentMargins">
+      <MemberSignature Language="C#" Value="ContentMargins" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.MarginProperty ContentMargins = int32(3602)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.MarginProperty.ContentMargins" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.MarginProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies where content can be placed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SizingMargins">
+      <MemberSignature Language="C#" Value="SizingMargins" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.MarginProperty SizingMargins = int32(3601)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.MarginProperty.SizingMargins" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.MarginProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a margin used for nine-grid sizing.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

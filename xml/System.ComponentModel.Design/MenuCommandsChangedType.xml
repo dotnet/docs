@@ -1,0 +1,71 @@
+<Type Name="MenuCommandsChangedType" FullName="System.ComponentModel.Design.MenuCommandsChangedType">
+  <TypeSignature Language="C#" Value="public enum MenuCommandsChangedType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MenuCommandsChangedType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.MenuCommandsChangedType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the type of action that occurred to the related object's <see cref="T:System.Windows.Forms.Design.MenuCommands" /> collection.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CommandAdded">
+      <MemberSignature Language="C#" Value="CommandAdded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.MenuCommandsChangedType CommandAdded = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.MenuCommandsChangedType.CommandAdded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.MenuCommandsChangedType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that one or more command objects were added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandChanged">
+      <MemberSignature Language="C#" Value="CommandChanged" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.MenuCommandsChangedType CommandChanged = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.MenuCommandsChangedType.CommandChanged" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.MenuCommandsChangedType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that one or more commands have changed their status.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandRemoved">
+      <MemberSignature Language="C#" Value="CommandRemoved" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.MenuCommandsChangedType CommandRemoved = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.MenuCommandsChangedType.CommandRemoved" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.MenuCommandsChangedType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that one or more commands were removed.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

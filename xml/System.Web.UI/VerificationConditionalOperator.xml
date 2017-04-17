@@ -1,0 +1,57 @@
+<Type Name="VerificationConditionalOperator" FullName="System.Web.UI.VerificationConditionalOperator">
+  <TypeSignature Language="C#" Value="public enum VerificationConditionalOperator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VerificationConditionalOperator extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.VerificationConditionalOperator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies operators for a conditional expression used in a <see cref="T:System.Web.UI.VerificationAttribute" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When using extending a class, member or indexer with a <xref:System.Web.UI.VerificationAttribute>, you may use a conditional expression to define how accessibility is verified. The left side of a conditional expression is the <xref:System.Web.UI.VerificationAttribute.ConditionalProperty%2A> and the right side is the <xref:System.Web.UI.VerificationAttribute.ConditionalValue%2A>. When the Equals operator is used, the left side must equal the right side of the conditional expression for the verification rule to report true. When the NotEquals operator is used, the left side must not equal to the right side of the conditional expression for the verification rule to report true.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="Equals" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.VerificationConditionalOperator Equals = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.VerificationConditionalOperator.Equals" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.VerificationConditionalOperator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The equal to operator (=).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotEquals">
+      <MemberSignature Language="C#" Value="NotEquals" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.VerificationConditionalOperator NotEquals = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.VerificationConditionalOperator.NotEquals" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.VerificationConditionalOperator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The not equal to operator (!=).</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

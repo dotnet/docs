@@ -1,0 +1,358 @@
+<Type Name="MetadataReaderExtensions" FullName="System.Reflection.Metadata.Ecma335.MetadataReaderExtensions">
+  <TypeSignature Language="C#" Value="public static class MetadataReaderExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MetadataReaderExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.MetadataReaderExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetEditAndContinueLogEntries">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Reflection.Metadata.Ecma335.EditAndContinueLogEntry&gt; GetEditAndContinueLogEntries (this System.Reflection.Metadata.MetadataReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Reflection.Metadata.Ecma335.EditAndContinueLogEntry&gt; GetEditAndContinueLogEntries(class System.Reflection.Metadata.MetadataReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetEditAndContinueLogEntries(System.Reflection.Metadata.MetadataReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Reflection.Metadata.Ecma335.MetadataReaderExtensions/&lt;GetEditAndContinueLogEntries&gt;d__10))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Reflection.Metadata.Ecma335.EditAndContinueLogEntry&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Reflection.Metadata.MetadataReader" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEditAndContinueMapEntries">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Reflection.Metadata.EntityHandle&gt; GetEditAndContinueMapEntries (this System.Reflection.Metadata.MetadataReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Reflection.Metadata.EntityHandle&gt; GetEditAndContinueMapEntries(class System.Reflection.Metadata.MetadataReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetEditAndContinueMapEntries(System.Reflection.Metadata.MetadataReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Reflection.Metadata.Ecma335.MetadataReaderExtensions/&lt;GetEditAndContinueMapEntries&gt;d__11))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Reflection.Metadata.EntityHandle&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Reflection.Metadata.MetadataReader" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHeapMetadataOffset">
+      <MemberSignature Language="C#" Value="public static int GetHeapMetadataOffset (this System.Reflection.Metadata.MetadataReader reader, System.Reflection.Metadata.Ecma335.HeapIndex heapIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetHeapMetadataOffset(class System.Reflection.Metadata.MetadataReader reader, valuetype System.Reflection.Metadata.Ecma335.HeapIndex heapIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetHeapMetadataOffset(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.Ecma335.HeapIndex)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Reflection.Metadata.MetadataReader" RefType="this" />
+        <Parameter Name="heapIndex" Type="System.Reflection.Metadata.Ecma335.HeapIndex" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="heapIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHeapSize">
+      <MemberSignature Language="C#" Value="public static int GetHeapSize (this System.Reflection.Metadata.MetadataReader reader, System.Reflection.Metadata.Ecma335.HeapIndex heapIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetHeapSize(class System.Reflection.Metadata.MetadataReader reader, valuetype System.Reflection.Metadata.Ecma335.HeapIndex heapIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetHeapSize(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.Ecma335.HeapIndex)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Reflection.Metadata.MetadataReader" RefType="this" />
+        <Parameter Name="heapIndex" Type="System.Reflection.Metadata.Ecma335.HeapIndex" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="heapIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNextHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.BlobHandle GetNextHandle (this System.Reflection.Metadata.MetadataReader reader, System.Reflection.Metadata.BlobHandle handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.BlobHandle GetNextHandle(class System.Reflection.Metadata.MetadataReader reader, valuetype System.Reflection.Metadata.BlobHandle handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetNextHandle(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.BlobHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.BlobHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Reflection.Metadata.MetadataReader" RefType="this" />
+        <Parameter Name="handle" Type="System.Reflection.Metadata.BlobHandle" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="handle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNextHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.StringHandle GetNextHandle (this System.Reflection.Metadata.MetadataReader reader, System.Reflection.Metadata.StringHandle handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.StringHandle GetNextHandle(class System.Reflection.Metadata.MetadataReader reader, valuetype System.Reflection.Metadata.StringHandle handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetNextHandle(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.StringHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.StringHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Reflection.Metadata.MetadataReader" RefType="this" />
+        <Parameter Name="handle" Type="System.Reflection.Metadata.StringHandle" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="handle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNextHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.UserStringHandle GetNextHandle (this System.Reflection.Metadata.MetadataReader reader, System.Reflection.Metadata.UserStringHandle handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.UserStringHandle GetNextHandle(class System.Reflection.Metadata.MetadataReader reader, valuetype System.Reflection.Metadata.UserStringHandle handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetNextHandle(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.UserStringHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.UserStringHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Reflection.Metadata.MetadataReader" RefType="this" />
+        <Parameter Name="handle" Type="System.Reflection.Metadata.UserStringHandle" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="handle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTableMetadataOffset">
+      <MemberSignature Language="C#" Value="public static int GetTableMetadataOffset (this System.Reflection.Metadata.MetadataReader reader, System.Reflection.Metadata.Ecma335.TableIndex tableIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetTableMetadataOffset(class System.Reflection.Metadata.MetadataReader reader, valuetype System.Reflection.Metadata.Ecma335.TableIndex tableIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetTableMetadataOffset(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.Ecma335.TableIndex)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Reflection.Metadata.MetadataReader" RefType="this" />
+        <Parameter Name="tableIndex" Type="System.Reflection.Metadata.Ecma335.TableIndex" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="tableIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTableRowCount">
+      <MemberSignature Language="C#" Value="public static int GetTableRowCount (this System.Reflection.Metadata.MetadataReader reader, System.Reflection.Metadata.Ecma335.TableIndex tableIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetTableRowCount(class System.Reflection.Metadata.MetadataReader reader, valuetype System.Reflection.Metadata.Ecma335.TableIndex tableIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetTableRowCount(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.Ecma335.TableIndex)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Reflection.Metadata.MetadataReader" RefType="this" />
+        <Parameter Name="tableIndex" Type="System.Reflection.Metadata.Ecma335.TableIndex" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="tableIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTableRowSize">
+      <MemberSignature Language="C#" Value="public static int GetTableRowSize (this System.Reflection.Metadata.MetadataReader reader, System.Reflection.Metadata.Ecma335.TableIndex tableIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetTableRowSize(class System.Reflection.Metadata.MetadataReader reader, valuetype System.Reflection.Metadata.Ecma335.TableIndex tableIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetTableRowSize(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.Ecma335.TableIndex)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Reflection.Metadata.MetadataReader" RefType="this" />
+        <Parameter Name="tableIndex" Type="System.Reflection.Metadata.Ecma335.TableIndex" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="tableIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTypesWithEvents">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Reflection.Metadata.TypeDefinitionHandle&gt; GetTypesWithEvents (this System.Reflection.Metadata.MetadataReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Reflection.Metadata.TypeDefinitionHandle&gt; GetTypesWithEvents(class System.Reflection.Metadata.MetadataReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetTypesWithEvents(System.Reflection.Metadata.MetadataReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Reflection.Metadata.Ecma335.MetadataReaderExtensions/&lt;GetTypesWithEvents&gt;d__13))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Reflection.Metadata.TypeDefinitionHandle&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Reflection.Metadata.MetadataReader" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTypesWithProperties">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Reflection.Metadata.TypeDefinitionHandle&gt; GetTypesWithProperties (this System.Reflection.Metadata.MetadataReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Reflection.Metadata.TypeDefinitionHandle&gt; GetTypesWithProperties(class System.Reflection.Metadata.MetadataReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.GetTypesWithProperties(System.Reflection.Metadata.MetadataReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Reflection.Metadata.Ecma335.MetadataReaderExtensions/&lt;GetTypesWithProperties&gt;d__12))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Reflection.Metadata.TypeDefinitionHandle&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Reflection.Metadata.MetadataReader" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveSignatureTypeKind">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.SignatureTypeKind ResolveSignatureTypeKind (this System.Reflection.Metadata.MetadataReader reader, System.Reflection.Metadata.EntityHandle typeHandle, byte rawTypeKind);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.SignatureTypeKind ResolveSignatureTypeKind(class System.Reflection.Metadata.MetadataReader reader, valuetype System.Reflection.Metadata.EntityHandle typeHandle, unsigned int8 rawTypeKind) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.ResolveSignatureTypeKind(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.EntityHandle,System.Byte)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeKind</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Reflection.Metadata.MetadataReader" RefType="this" />
+        <Parameter Name="typeHandle" Type="System.Reflection.Metadata.EntityHandle" />
+        <Parameter Name="rawTypeKind" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="typeHandle">To be added.</param>
+        <param name="rawTypeKind">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

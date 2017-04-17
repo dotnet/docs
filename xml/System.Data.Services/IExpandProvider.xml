@@ -1,0 +1,49 @@
+<Type Name="IExpandProvider" FullName="System.Data.Services.IExpandProvider">
+  <TypeSignature Language="C#" Value="public interface IExpandProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExpandProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.IExpandProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>This interface declares the methods required to support the <c>$expand</c> query option for an [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)].</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ApplyExpansions">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerable ApplyExpansions (System.Linq.IQueryable queryable, System.Collections.Generic.ICollection&lt;System.Data.Services.ExpandSegmentCollection&gt; expandPaths);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerable ApplyExpansions(class System.Linq.IQueryable queryable, class System.Collections.Generic.ICollection`1&lt;class System.Data.Services.ExpandSegmentCollection&gt; expandPaths) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.IExpandProvider.ApplyExpansions(System.Linq.IQueryable,System.Collections.Generic.ICollection{System.Data.Services.ExpandSegmentCollection})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queryable" Type="System.Linq.IQueryable" />
+        <Parameter Name="expandPaths" Type="System.Collections.Generic.ICollection&lt;System.Data.Services.ExpandSegmentCollection&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="queryable">The <see cref="T:System.Linq.IQueryable`1" /> object to expand.</param>
+        <param name="expandPaths">A collection of <see cref="T:System.Data.Services.ExpandSegmentCollection" /> paths to expand.</param>
+        <summary>Applies expansions to the specified <paramref name="queryable" /> parameter.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerable" /> object of the same type as the supplied <paramref name="queryable" /> object that includes the specified <paramref name="expandPaths" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Services.IExpandProvider.ApplyExpansions%2A> method may modify the `expandPaths` to indicate which expansions are included.  
+  
+ The returned <xref:System.Collections.IEnumerable> may implement the <xref:System.Data.Services.IExpandedResult> interface to provide enumerable objects for the expansions; otherwise, the expanded information is expected to be found directly in the enumerated objects.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

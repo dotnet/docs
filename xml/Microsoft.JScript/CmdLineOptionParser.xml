@@ -1,0 +1,161 @@
+<Type Name="CmdLineOptionParser" FullName="Microsoft.JScript.CmdLineOptionParser">
+  <TypeSignature Language="C#" Value="public class CmdLineOptionParser" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CmdLineOptionParser extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.CmdLineOptionParser" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Determines whether options that are specified to the command-line compiler jsc.exe are correctly formed, and reads the arguments if any are included.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CmdLineOptionParser ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.CmdLineOptionParser.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.CmdLineOptionParser" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsArgumentOption">
+      <MemberSignature Language="C#" Value="public static string IsArgumentOption (string option, string prefix);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string IsArgumentOption(string option, string prefix) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.CmdLineOptionParser.IsArgumentOption(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="option" Type="System.String" />
+        <Parameter Name="prefix" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="option">The command-line option that the user specified.</param>
+        <param name="prefix">The option name.</param>
+        <summary>Gets the argument from the specified command-line option. Applies to options that have only one name, such as <c>/out:&lt;filename&gt;</c>.</summary>
+        <returns>The argument, "" if the argument is not specified, or null if the option or argument is not correctly formed.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsArgumentOption">
+      <MemberSignature Language="C#" Value="public static string IsArgumentOption (string option, string shortPrefix, string longPrefix);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string IsArgumentOption(string option, string shortPrefix, string longPrefix) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.CmdLineOptionParser.IsArgumentOption(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="option" Type="System.String" />
+        <Parameter Name="shortPrefix" Type="System.String" />
+        <Parameter Name="longPrefix" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="option">The command-line option that the user specified.</param>
+        <param name="shortPrefix">The short form of the option name.</param>
+        <param name="longPrefix">The long form of the option name.</param>
+        <summary>Gets the argument from the specified command-line option. Applies to options that can be specified by a short or long form of the option name, such as <c>/r</c> or <c>/reference</c> for <c>/r[eference]:&lt;file list&gt;</c>.</summary>
+        <returns>The argument, "" if the argument is not specified, or null if the option or argument is not correctly formed.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBooleanOption">
+      <MemberSignature Language="C#" Value="public static object IsBooleanOption (string option, string prefix);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object IsBooleanOption(string option, string prefix) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.CmdLineOptionParser.IsBooleanOption(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="option" Type="System.String" />
+        <Parameter Name="prefix" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="option">The command-line option that the user specified.</param>
+        <param name="prefix">The option name.</param>
+        <summary>Gets the <c>+</c> or <c>-</c> argument from the specified command-line option. Applies to options that have only one name, such as <c>/debug[+|-]</c>.</summary>
+        <returns>
+          <see langword="false" /> for <c>-</c>; <see langword="true" /> for <c>+</c> or if the argument is not specified; null if the option or argument is not correctly formed.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBooleanOption">
+      <MemberSignature Language="C#" Value="public static object IsBooleanOption (string option, string shortPrefix, string longPrefix);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object IsBooleanOption(string option, string shortPrefix, string longPrefix) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.CmdLineOptionParser.IsBooleanOption(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="option" Type="System.String" />
+        <Parameter Name="shortPrefix" Type="System.String" />
+        <Parameter Name="longPrefix" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="option">The command-line option that the user specified.</param>
+        <param name="shortPrefix">The short form of the option name.</param>
+        <param name="longPrefix">The long form of the option name.</param>
+        <summary>Gets the <c>+</c> or <c>-</c> argument from the specified command-line option. Applies to options that can be specified by a short or long form of the option name.</summary>
+        <returns>
+          <see langword="false" /> for <c>-</c>; <see langword="true" /> for <c>+</c> or if the argument is not specified; null if the option or argument is not correctly formed.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSimpleOption">
+      <MemberSignature Language="C#" Value="public static bool IsSimpleOption (string option, string prefix);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsSimpleOption(string option, string prefix) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.CmdLineOptionParser.IsSimpleOption(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="option" Type="System.String" />
+        <Parameter Name="prefix" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="option">The command-line option that the user specified.</param>
+        <param name="prefix">The option name.</param>
+        <summary>Verifies that the specified option is correctly formed.</summary>
+        <returns>
+          <see langword="true" /> if the option is correctly formed; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

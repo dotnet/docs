@@ -1,0 +1,87 @@
+<Type Name="FieldDirection" FullName="System.CodeDom.FieldDirection">
+  <TypeSignature Language="C#" Value="public enum FieldDirection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed FieldDirection extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.CodeDom.FieldDirection" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines identifiers used to indicate the direction of parameter and argument declarations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.CodeDom.FieldDirection> allows for passing arguments to functions by reference, or using incoming or outgoing parameters.  
+  
+   
+  
+## Examples  
+ The following example demonstrates use of <xref:System.CodeDom.FieldDirection> to indicate the field direction types of the parameters of a method in a method declaration.  
+  
+ [!code-cpp[CodeParameterDeclarationExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeParameterDeclarationExample/CPP/codeparameterdeclarationexample.cpp#3)]
+ [!code-csharp[CodeParameterDeclarationExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeParameterDeclarationExample/CS/codeparameterdeclarationexample.cs#3)]
+ [!code-vb[CodeParameterDeclarationExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeParameterDeclarationExample/VB/codeparameterdeclarationexample.vb#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="In">
+      <MemberSignature Language="C#" Value="In" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.FieldDirection In = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.FieldDirection.In" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.FieldDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An incoming field.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Out">
+      <MemberSignature Language="C#" Value="Out" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.FieldDirection Out = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.FieldDirection.Out" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.FieldDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An outgoing field.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ref">
+      <MemberSignature Language="C#" Value="Ref" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.FieldDirection Ref = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.FieldDirection.Ref" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.FieldDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A field by reference.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

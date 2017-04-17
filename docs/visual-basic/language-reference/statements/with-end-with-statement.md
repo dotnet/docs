@@ -26,8 +26,8 @@ helpviewer_keywords:
   - "End keyword, With...End With statements"
 ms.assetid: 340d5fbb-4f43-48ec-a024-80843c137817
 caps.latest.revision: 34
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

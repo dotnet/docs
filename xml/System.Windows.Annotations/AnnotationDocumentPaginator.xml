@@ -1,0 +1,403 @@
+<Type Name="AnnotationDocumentPaginator" FullName="System.Windows.Annotations.AnnotationDocumentPaginator">
+  <TypeSignature Language="C#" Value="public sealed class AnnotationDocumentPaginator : System.Windows.Documents.DocumentPaginator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AnnotationDocumentPaginator extends System.Windows.Documents.DocumentPaginator" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.AnnotationDocumentPaginator" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Documents.DocumentPaginator</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a <see cref="T:System.Windows.Documents.DocumentPaginator" /> for printing a document together with its associated annotations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Annotations.AnnotationDocumentPaginator> class wraps the <xref:System.Windows.Documents.DocumentPaginator> specified to the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor to add the user annotations to the pages for printing.  
+  
+   
+  
+## Examples  
+ The following example shows use of the <xref:System.Windows.Annotations.AnnotationDocumentPaginator> class.  
+  
+ [!code-csharp[DocViewerAnnotationsXps#DocViewAnnXpsPrint](~/samples/snippets/csharp/VS_Snippets_Wpf/DocViewerAnnotationsXps/CSharp/Window1.xaml.cs#docviewannxpsprint)]
+ [!code-vb[DocViewerAnnotationsXps#DocViewAnnXpsPrint](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DocViewerAnnotationsXps/visualbasic/window1.xaml.vb#docviewannxpsprint)]  
+  
+ [!code-csharp[DocViewerAnnotationsXps#DocViewAnnXpsDocPaginator](~/samples/snippets/csharp/VS_Snippets_Wpf/DocViewerAnnotationsXps/CSharp/AnnotationsHelperXps.cs#docviewannxpsdocpaginator)]
+ [!code-vb[DocViewerAnnotationsXps#DocViewAnnXpsDocPaginator](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DocViewerAnnotationsXps/visualbasic/annotationshelperxps.vb#docviewannxpsdocpaginator)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AnnotationDocumentPaginator (System.Windows.Documents.DocumentPaginator originalPaginator, System.IO.Stream annotationStore);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Documents.DocumentPaginator originalPaginator, class System.IO.Stream annotationStore) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationDocumentPaginator.#ctor(System.Windows.Documents.DocumentPaginator,System.IO.Stream)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="originalPaginator" Type="System.Windows.Documents.DocumentPaginator" />
+        <Parameter Name="annotationStore" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="originalPaginator">The document to add the printed annotations to.</param>
+        <param name="annotationStore">The annotation storage stream to retrieve the annotations from.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Annotations.AnnotationDocumentPaginator" /> class based on a specified <see cref="T:System.Windows.Documents.DocumentPaginator" /> and annotation storage <see cref="T:System.IO.Stream" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default this constructor sets the text flow direction to <xref:System.Windows.FlowDirection>.  If needed you can use one of the alternate <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor overloads to set the text <xref:System.Windows.FlowDirection> to a different setting.  
+  
+ The <xref:System.Windows.Annotations.AnnotationDocumentPaginator> class wraps the <xref:System.Windows.Documents.DocumentPaginator> specified to the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor to add the user annotations to the pages for printing.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AnnotationDocumentPaginator (System.Windows.Documents.DocumentPaginator originalPaginator, System.Windows.Annotations.Storage.AnnotationStore annotationStore);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Documents.DocumentPaginator originalPaginator, class System.Windows.Annotations.Storage.AnnotationStore annotationStore) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationDocumentPaginator.#ctor(System.Windows.Documents.DocumentPaginator,System.Windows.Annotations.Storage.AnnotationStore)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="originalPaginator" Type="System.Windows.Documents.DocumentPaginator" />
+        <Parameter Name="annotationStore" Type="System.Windows.Annotations.Storage.AnnotationStore" />
+      </Parameters>
+      <Docs>
+        <param name="originalPaginator">The document to add the printed annotations to.</param>
+        <param name="annotationStore">The store to retrieve the annotations from.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Annotations.AnnotationDocumentPaginator" /> class based on a specified <see cref="T:System.Windows.Documents.DocumentPaginator" /> and <see cref="T:System.Windows.Annotations.Storage.AnnotationStore" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default this constructor sets the text flow direction to <xref:System.Windows.FlowDirection>.  If needed you can use one of the alternate <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor overloads to set the text <xref:System.Windows.FlowDirection> to a different setting.  
+  
+ The <xref:System.Windows.Annotations.AnnotationDocumentPaginator> class wraps the <xref:System.Windows.Documents.DocumentPaginator> specified to the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor to add the user annotations to the pages for printing.  
+  
+   
+  
+## Examples  
+ The following example shows use of the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor.  
+  
+ [!code-csharp[DocViewerAnnotationsXps#DocViewAnnXpsPrint](~/samples/snippets/csharp/VS_Snippets_Wpf/DocViewerAnnotationsXps/CSharp/Window1.xaml.cs#docviewannxpsprint)]
+ [!code-vb[DocViewerAnnotationsXps#DocViewAnnXpsPrint](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DocViewerAnnotationsXps/visualbasic/window1.xaml.vb#docviewannxpsprint)]  
+  
+ [!code-csharp[DocViewerAnnotationsXps#DocViewAnnXpsDocPaginator](~/samples/snippets/csharp/VS_Snippets_Wpf/DocViewerAnnotationsXps/CSharp/AnnotationsHelperXps.cs#docviewannxpsdocpaginator)]
+ [!code-vb[DocViewerAnnotationsXps#DocViewAnnXpsDocPaginator](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DocViewerAnnotationsXps/visualbasic/annotationshelperxps.vb#docviewannxpsdocpaginator)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AnnotationDocumentPaginator (System.Windows.Documents.DocumentPaginator originalPaginator, System.IO.Stream annotationStore, System.Windows.FlowDirection flowDirection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Documents.DocumentPaginator originalPaginator, class System.IO.Stream annotationStore, valuetype System.Windows.FlowDirection flowDirection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationDocumentPaginator.#ctor(System.Windows.Documents.DocumentPaginator,System.IO.Stream,System.Windows.FlowDirection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="originalPaginator" Type="System.Windows.Documents.DocumentPaginator" />
+        <Parameter Name="annotationStore" Type="System.IO.Stream" />
+        <Parameter Name="flowDirection" Type="System.Windows.FlowDirection" />
+      </Parameters>
+      <Docs>
+        <param name="originalPaginator">The document to add the printed annotations to.</param>
+        <param name="annotationStore">The annotation storage stream to retrieve the annotations from.</param>
+        <param name="flowDirection">The text flow direction, <see cref="F:System.Windows.FlowDirection.LeftToRight" /> or <see cref="F:System.Windows.FlowDirection.RightToLeft" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Annotations.AnnotationDocumentPaginator" /> class based on a specified <see cref="T:System.Windows.Documents.DocumentPaginator" />, annotation storage <see cref="T:System.IO.Stream" />, and text <see cref="T:System.Windows.FlowDirection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Annotations.AnnotationDocumentPaginator> class wraps the <xref:System.Windows.Documents.DocumentPaginator> specified to the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor to add the user annotations to the pages for printing.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AnnotationDocumentPaginator (System.Windows.Documents.DocumentPaginator originalPaginator, System.Windows.Annotations.Storage.AnnotationStore annotationStore, System.Windows.FlowDirection flowDirection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Documents.DocumentPaginator originalPaginator, class System.Windows.Annotations.Storage.AnnotationStore annotationStore, valuetype System.Windows.FlowDirection flowDirection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationDocumentPaginator.#ctor(System.Windows.Documents.DocumentPaginator,System.Windows.Annotations.Storage.AnnotationStore,System.Windows.FlowDirection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="originalPaginator" Type="System.Windows.Documents.DocumentPaginator" />
+        <Parameter Name="annotationStore" Type="System.Windows.Annotations.Storage.AnnotationStore" />
+        <Parameter Name="flowDirection" Type="System.Windows.FlowDirection" />
+      </Parameters>
+      <Docs>
+        <param name="originalPaginator">The document to add the printed annotations to.</param>
+        <param name="annotationStore">The store to retrieve the annotations from.</param>
+        <param name="flowDirection">The text flow direction, <see cref="F:System.Windows.FlowDirection.LeftToRight" /> or <see cref="F:System.Windows.FlowDirection.RightToLeft" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Annotations.AnnotationDocumentPaginator" /> class based on a specified <see cref="T:System.Windows.Documents.DocumentPaginator" />, <see cref="T:System.Windows.Annotations.Storage.AnnotationStore" />, and text <see cref="T:System.Windows.FlowDirection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Annotations.AnnotationDocumentPaginator> class wraps the <xref:System.Windows.Documents.DocumentPaginator> specified to the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor to add the user annotations to the pages for printing.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelAsync">
+      <MemberSignature Language="C#" Value="public override void CancelAsync (object userState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CancelAsync(object userState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationDocumentPaginator.CancelAsync(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="userState">The unique application-defined identifier passed in the call to start the asynchronous operation.</param>
+        <summary>Cancels all asynchronous operations initiated with a given <paramref name="userState" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ComputePageCount">
+      <MemberSignature Language="C#" Value="public override void ComputePageCount ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ComputePageCount() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationDocumentPaginator.ComputePageCount" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Forces a pagination of the content, updates <see cref="P:System.Windows.Annotations.AnnotationDocumentPaginator.PageCount" /> with the new total, and sets <see cref="P:System.Windows.Annotations.AnnotationDocumentPaginator.IsPageCountValid" /> to <see langword="true" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Immediately after <xref:System.Windows.Annotations.AnnotationDocumentPaginator.ComputePageCount%2A> returns, <xref:System.Windows.Annotations.AnnotationDocumentPaginator.IsPageCountValid%2A> will be `true` and the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.PageCount%2A> property will reflect the total number of pages.  
+  
+ The number of pages may change if the annotation content is modified or the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.PageSize%2A> is changed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ComputePageCountAsync">
+      <MemberSignature Language="C#" Value="public override void ComputePageCountAsync (object userState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ComputePageCountAsync(object userState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationDocumentPaginator.ComputePageCountAsync(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="userState">An application-defined object for identifying the asynchronous operation.</param>
+        <summary>Starts an asynchronous pagination of the content, updates <see cref="P:System.Windows.Annotations.AnnotationDocumentPaginator.PageCount" /> with the new total, and sets <see cref="P:System.Windows.Annotations.AnnotationDocumentPaginator.IsPageCountValid" /> to <see langword="true" /> when it is finished.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `userState` parameter is intended for use with <xref:System.Windows.Annotations.AnnotationDocumentPaginator.CancelAsync%2A> method if the application wishes to cancel the asynchronous operation before completion.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPage">
+      <MemberSignature Language="C#" Value="public override System.Windows.Documents.DocumentPage GetPage (int pageNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Documents.DocumentPage GetPage(int32 pageNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationDocumentPaginator.GetPage(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Documents.DocumentPage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pageNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="pageNumber">The zero-based page number of the <see cref="T:System.Windows.Documents.DocumentPage" /> to return.</param>
+        <summary>Returns a <see cref="T:System.Windows.Documents.DocumentPage" /> together with associated user-annotations for a specified page number.</summary>
+        <returns>The <see cref="T:System.Windows.Documents.DocumentPage" /> for the specified <paramref name="pageNumber" />; or <see cref="F:System.Windows.Documents.DocumentPage.Missing" />, if the specified <paramref name="pageNumber" /> does not exist.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPageAsync">
+      <MemberSignature Language="C#" Value="public override void GetPageAsync (int pageNumber, object userState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetPageAsync(int32 pageNumber, object userState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationDocumentPaginator.GetPageAsync(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pageNumber" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="pageNumber">The zero-based page number of the <see cref="T:System.Windows.Documents.DocumentPage" /> to retrieve.</param>
+        <param name="userState">An application-defined object that is used to identify the asynchronous operation.</param>
+        <summary>Asynchronously returns a <see cref="T:System.Windows.Documents.DocumentPage" /> together with associated user-annotations for a specified page number.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `userState` parameter is intended for use with <xref:System.Windows.Annotations.AnnotationDocumentPaginator.CancelAsync%2A> method if the application wishes to cancel the asynchronous operation before completion.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPageCountValid">
+      <MemberSignature Language="C#" Value="public override bool IsPageCountValid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsPageCountValid" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.AnnotationDocumentPaginator.IsPageCountValid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether <see cref="P:System.Windows.Annotations.AnnotationDocumentPaginator.PageCount" /> is the total number of pages.</summary>
+        <value>
+          <see langword="true" /> if pagination is complete and <see cref="P:System.Windows.Annotations.AnnotationDocumentPaginator.PageCount" /> represents the total number of pages; otherwise, <see langword="false" /> if pagination is in process and <see cref="P:System.Windows.Annotations.AnnotationDocumentPaginator.PageCount" /> represents the number of pages currently formatted.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Annotations.AnnotationDocumentPaginator.IsPageCountValid%2A> may switch from `true` to `false` and <xref:System.Windows.Annotations.AnnotationDocumentPaginator.PageCount%2A> recomputed if a change to the content or <xref:System.Windows.Annotations.AnnotationDocumentPaginator.PageSize%2A> triggers repagination.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageCount">
+      <MemberSignature Language="C#" Value="public override int PageCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PageCount" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.AnnotationDocumentPaginator.PageCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates the number of pages currently formatted.</summary>
+        <value>If <see cref="P:System.Windows.Annotations.AnnotationDocumentPaginator.IsPageCountValid" /> is <see langword="true" />, the total number of annotation pages; otherwise if <see cref="P:System.Windows.Annotations.AnnotationDocumentPaginator.IsPageCountValid" /> is <see langword="false" />, the number of pages currently formatted (pagination in process).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Annotations.AnnotationDocumentPaginator.IsPageCountValid%2A> may change from `true` to `false` and <xref:System.Windows.Annotations.AnnotationDocumentPaginator.PageCount%2A> recomputed if a change to the content or <xref:System.Windows.Annotations.AnnotationDocumentPaginator.PageSize%2A> triggers repagination.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageSize">
+      <MemberSignature Language="C#" Value="public override System.Windows.Size PageSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Size PageSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.AnnotationDocumentPaginator.PageSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the suggested width and height of each page.</summary>
+        <value>The suggested width and height for formatting pages.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Annotations.AnnotationDocumentPaginator.PageSize%2A> gets or sets the *suggested* size for formatting pages.  Use the <xref:System.Windows.Documents.DocumentPage.Size%2A> property to get the actual size of the page (if it is required the actual size may be cropped from the suggested <xref:System.Windows.Annotations.AnnotationDocumentPaginator.PageSize%2A>).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Source">
+      <MemberSignature Language="C#" Value="public override System.Windows.Documents.IDocumentPaginatorSource Source { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.IDocumentPaginatorSource Source" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.AnnotationDocumentPaginator.Source" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Documents.IDocumentPaginatorSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the source document that is being paginated.</summary>
+        <value>The source document that is being paginated.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Annotations.AnnotationDocumentPaginator" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Annotations.AnnotationDocumentPaginator> class wraps the <xref:System.Windows.Documents.DocumentPaginator> specified to the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor to add the user annotations to the pages for printing.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

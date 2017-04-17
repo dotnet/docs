@@ -1,0 +1,207 @@
+<Type Name="Locks" FullName="DbLinq.Util.Locks">
+  <TypeSignature Language="C#" Value="public static class Locks" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Locks extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:DbLinq.Util.Locks" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Linq</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetLockInstance">
+      <MemberSignature Language="C#" Value="public static System.Threading.ReaderWriterLockSlim GetLockInstance ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.ReaderWriterLockSlim GetLockInstance() cil managed" />
+      <MemberSignature Language="DocId" Value="M:DbLinq.Util.Locks.GetLockInstance" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.ReaderWriterLockSlim</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLockInstance">
+      <MemberSignature Language="C#" Value="public static System.Threading.ReaderWriterLockSlim GetLockInstance (System.Threading.LockRecursionPolicy recursionPolicy);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.ReaderWriterLockSlim GetLockInstance(valuetype System.Threading.LockRecursionPolicy recursionPolicy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:DbLinq.Util.Locks.GetLockInstance(System.Threading.LockRecursionPolicy)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.ReaderWriterLockSlim</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="recursionPolicy" Type="System.Threading.LockRecursionPolicy" />
+      </Parameters>
+      <Docs>
+        <param name="recursionPolicy">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReadLock">
+      <MemberSignature Language="C#" Value="public static void GetReadLock (System.Threading.ReaderWriterLockSlim locks);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GetReadLock(class System.Threading.ReaderWriterLockSlim locks) cil managed" />
+      <MemberSignature Language="DocId" Value="M:DbLinq.Util.Locks.GetReadLock(System.Threading.ReaderWriterLockSlim)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="locks" Type="System.Threading.ReaderWriterLockSlim" />
+      </Parameters>
+      <Docs>
+        <param name="locks">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReadOnlyLock">
+      <MemberSignature Language="C#" Value="public static void GetReadOnlyLock (System.Threading.ReaderWriterLockSlim locks);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GetReadOnlyLock(class System.Threading.ReaderWriterLockSlim locks) cil managed" />
+      <MemberSignature Language="DocId" Value="M:DbLinq.Util.Locks.GetReadOnlyLock(System.Threading.ReaderWriterLockSlim)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="locks" Type="System.Threading.ReaderWriterLockSlim" />
+      </Parameters>
+      <Docs>
+        <param name="locks">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetWriteLock">
+      <MemberSignature Language="C#" Value="public static void GetWriteLock (System.Threading.ReaderWriterLockSlim locks);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GetWriteLock(class System.Threading.ReaderWriterLockSlim locks) cil managed" />
+      <MemberSignature Language="DocId" Value="M:DbLinq.Util.Locks.GetWriteLock(System.Threading.ReaderWriterLockSlim)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="locks" Type="System.Threading.ReaderWriterLockSlim" />
+      </Parameters>
+      <Docs>
+        <param name="locks">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReleaseLock">
+      <MemberSignature Language="C#" Value="public static void ReleaseLock (System.Threading.ReaderWriterLockSlim locks);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ReleaseLock(class System.Threading.ReaderWriterLockSlim locks) cil managed" />
+      <MemberSignature Language="DocId" Value="M:DbLinq.Util.Locks.ReleaseLock(System.Threading.ReaderWriterLockSlim)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="locks" Type="System.Threading.ReaderWriterLockSlim" />
+      </Parameters>
+      <Docs>
+        <param name="locks">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReleaseReadLock">
+      <MemberSignature Language="C#" Value="public static void ReleaseReadLock (System.Threading.ReaderWriterLockSlim locks);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ReleaseReadLock(class System.Threading.ReaderWriterLockSlim locks) cil managed" />
+      <MemberSignature Language="DocId" Value="M:DbLinq.Util.Locks.ReleaseReadLock(System.Threading.ReaderWriterLockSlim)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="locks" Type="System.Threading.ReaderWriterLockSlim" />
+      </Parameters>
+      <Docs>
+        <param name="locks">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReleaseReadOnlyLock">
+      <MemberSignature Language="C#" Value="public static void ReleaseReadOnlyLock (System.Threading.ReaderWriterLockSlim locks);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ReleaseReadOnlyLock(class System.Threading.ReaderWriterLockSlim locks) cil managed" />
+      <MemberSignature Language="DocId" Value="M:DbLinq.Util.Locks.ReleaseReadOnlyLock(System.Threading.ReaderWriterLockSlim)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="locks" Type="System.Threading.ReaderWriterLockSlim" />
+      </Parameters>
+      <Docs>
+        <param name="locks">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReleaseWriteLock">
+      <MemberSignature Language="C#" Value="public static void ReleaseWriteLock (System.Threading.ReaderWriterLockSlim locks);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ReleaseWriteLock(class System.Threading.ReaderWriterLockSlim locks) cil managed" />
+      <MemberSignature Language="DocId" Value="M:DbLinq.Util.Locks.ReleaseWriteLock(System.Threading.ReaderWriterLockSlim)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="locks" Type="System.Threading.ReaderWriterLockSlim" />
+      </Parameters>
+      <Docs>
+        <param name="locks">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,784 @@
+<Type Name="DataflowBlock" FullName="System.Threading.Tasks.Dataflow.DataflowBlock">
+  <TypeSignature Language="C#" Value="public static class DataflowBlock" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DataflowBlock extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Dataflow.DataflowBlock" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+    <AssemblyVersion>4.6.0.0</AssemblyVersion>
+    <AssemblyVersion>4.6.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AsObservable&lt;TOutput&gt;">
+      <MemberSignature Language="C#" Value="public static IObservable&lt;TOutput&gt; AsObservable&lt;TOutput&gt; (this System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IObservable`1&lt;!!TOutput&gt; AsObservable&lt;TOutput&gt;(class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!TOutput&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.AsObservable``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IObservable&lt;TOutput&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TOutput" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TOutput">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsObserver&lt;TInput&gt;">
+      <MemberSignature Language="C#" Value="public static IObserver&lt;TInput&gt; AsObserver&lt;TInput&gt; (this System.Threading.Tasks.Dataflow.ITargetBlock&lt;TInput&gt; target);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IObserver`1&lt;!!TInput&gt; AsObserver&lt;TInput&gt;(class System.Threading.Tasks.Dataflow.ITargetBlock`1&lt;!!TInput&gt; target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.AsObserver``1(System.Threading.Tasks.Dataflow.ITargetBlock{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IObserver&lt;TInput&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TInput" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="target" Type="System.Threading.Tasks.Dataflow.ITargetBlock&lt;TInput&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TInput">To be added.</typeparam>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Choose&lt;T1,T2&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;int&gt; Choose&lt;T1,T2&gt; (System.Threading.Tasks.Dataflow.ISourceBlock&lt;T1&gt; source1, Action&lt;T1&gt; action1, System.Threading.Tasks.Dataflow.ISourceBlock&lt;T2&gt; source2, Action&lt;T2&gt; action2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;int32&gt; Choose&lt;T1, T2&gt;(class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!T1&gt; source1, class System.Action`1&lt;!!T1&gt; action1, class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!T2&gt; source2, class System.Action`1&lt;!!T2&gt; action2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.Choose``2(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Action{``0},System.Threading.Tasks.Dataflow.ISourceBlock{``1},System.Action{``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source1" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;T1&gt;" />
+        <Parameter Name="action1" Type="System.Action&lt;T1&gt;" />
+        <Parameter Name="source2" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;T2&gt;" />
+        <Parameter Name="action2" Type="System.Action&lt;T2&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <param name="source1">To be added.</param>
+        <param name="action1">To be added.</param>
+        <param name="source2">To be added.</param>
+        <param name="action2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Choose&lt;T1,T2&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;int&gt; Choose&lt;T1,T2&gt; (System.Threading.Tasks.Dataflow.ISourceBlock&lt;T1&gt; source1, Action&lt;T1&gt; action1, System.Threading.Tasks.Dataflow.ISourceBlock&lt;T2&gt; source2, Action&lt;T2&gt; action2, System.Threading.Tasks.Dataflow.DataflowBlockOptions dataflowBlockOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;int32&gt; Choose&lt;T1, T2&gt;(class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!T1&gt; source1, class System.Action`1&lt;!!T1&gt; action1, class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!T2&gt; source2, class System.Action`1&lt;!!T2&gt; action2, class System.Threading.Tasks.Dataflow.DataflowBlockOptions dataflowBlockOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.Choose``2(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Action{``0},System.Threading.Tasks.Dataflow.ISourceBlock{``1},System.Action{``1},System.Threading.Tasks.Dataflow.DataflowBlockOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source1" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;T1&gt;" />
+        <Parameter Name="action1" Type="System.Action&lt;T1&gt;" />
+        <Parameter Name="source2" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;T2&gt;" />
+        <Parameter Name="action2" Type="System.Action&lt;T2&gt;" />
+        <Parameter Name="dataflowBlockOptions" Type="System.Threading.Tasks.Dataflow.DataflowBlockOptions" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <param name="source1">To be added.</param>
+        <param name="action1">To be added.</param>
+        <param name="source2">To be added.</param>
+        <param name="action2">To be added.</param>
+        <param name="dataflowBlockOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Choose&lt;T1,T2,T3&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;int&gt; Choose&lt;T1,T2,T3&gt; (System.Threading.Tasks.Dataflow.ISourceBlock&lt;T1&gt; source1, Action&lt;T1&gt; action1, System.Threading.Tasks.Dataflow.ISourceBlock&lt;T2&gt; source2, Action&lt;T2&gt; action2, System.Threading.Tasks.Dataflow.ISourceBlock&lt;T3&gt; source3, Action&lt;T3&gt; action3);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;int32&gt; Choose&lt;T1, T2, T3&gt;(class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!T1&gt; source1, class System.Action`1&lt;!!T1&gt; action1, class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!T2&gt; source2, class System.Action`1&lt;!!T2&gt; action2, class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!T3&gt; source3, class System.Action`1&lt;!!T3&gt; action3) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.Choose``3(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Action{``0},System.Threading.Tasks.Dataflow.ISourceBlock{``1},System.Action{``1},System.Threading.Tasks.Dataflow.ISourceBlock{``2},System.Action{``2})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+        <TypeParameter Name="T3" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source1" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;T1&gt;" />
+        <Parameter Name="action1" Type="System.Action&lt;T1&gt;" />
+        <Parameter Name="source2" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;T2&gt;" />
+        <Parameter Name="action2" Type="System.Action&lt;T2&gt;" />
+        <Parameter Name="source3" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;T3&gt;" />
+        <Parameter Name="action3" Type="System.Action&lt;T3&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="T3">To be added.</typeparam>
+        <param name="source1">To be added.</param>
+        <param name="action1">To be added.</param>
+        <param name="source2">To be added.</param>
+        <param name="action2">To be added.</param>
+        <param name="source3">To be added.</param>
+        <param name="action3">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Choose&lt;T1,T2,T3&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;int&gt; Choose&lt;T1,T2,T3&gt; (System.Threading.Tasks.Dataflow.ISourceBlock&lt;T1&gt; source1, Action&lt;T1&gt; action1, System.Threading.Tasks.Dataflow.ISourceBlock&lt;T2&gt; source2, Action&lt;T2&gt; action2, System.Threading.Tasks.Dataflow.ISourceBlock&lt;T3&gt; source3, Action&lt;T3&gt; action3, System.Threading.Tasks.Dataflow.DataflowBlockOptions dataflowBlockOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;int32&gt; Choose&lt;T1, T2, T3&gt;(class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!T1&gt; source1, class System.Action`1&lt;!!T1&gt; action1, class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!T2&gt; source2, class System.Action`1&lt;!!T2&gt; action2, class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!T3&gt; source3, class System.Action`1&lt;!!T3&gt; action3, class System.Threading.Tasks.Dataflow.DataflowBlockOptions dataflowBlockOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.Choose``3(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Action{``0},System.Threading.Tasks.Dataflow.ISourceBlock{``1},System.Action{``1},System.Threading.Tasks.Dataflow.ISourceBlock{``2},System.Action{``2},System.Threading.Tasks.Dataflow.DataflowBlockOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+        <TypeParameter Name="T3" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source1" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;T1&gt;" />
+        <Parameter Name="action1" Type="System.Action&lt;T1&gt;" />
+        <Parameter Name="source2" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;T2&gt;" />
+        <Parameter Name="action2" Type="System.Action&lt;T2&gt;" />
+        <Parameter Name="source3" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;T3&gt;" />
+        <Parameter Name="action3" Type="System.Action&lt;T3&gt;" />
+        <Parameter Name="dataflowBlockOptions" Type="System.Threading.Tasks.Dataflow.DataflowBlockOptions" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="T3">To be added.</typeparam>
+        <param name="source1">To be added.</param>
+        <param name="action1">To be added.</param>
+        <param name="source2">To be added.</param>
+        <param name="action2">To be added.</param>
+        <param name="source3">To be added.</param>
+        <param name="action3">To be added.</param>
+        <param name="dataflowBlockOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Encapsulate&lt;TInput,TOutput&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Dataflow.IPropagatorBlock&lt;TInput,TOutput&gt; Encapsulate&lt;TInput,TOutput&gt; (System.Threading.Tasks.Dataflow.ITargetBlock&lt;TInput&gt; target, System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Dataflow.IPropagatorBlock`2&lt;!!TInput, !!TOutput&gt; Encapsulate&lt;TInput, TOutput&gt;(class System.Threading.Tasks.Dataflow.ITargetBlock`1&lt;!!TInput&gt; target, class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!TOutput&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.Encapsulate``2(System.Threading.Tasks.Dataflow.ITargetBlock{``0},System.Threading.Tasks.Dataflow.ISourceBlock{``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Dataflow.IPropagatorBlock&lt;TInput,TOutput&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TInput" />
+        <TypeParameter Name="TOutput" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="target" Type="System.Threading.Tasks.Dataflow.ITargetBlock&lt;TInput&gt;" />
+        <Parameter Name="source" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TInput">To be added.</typeparam>
+        <typeparam name="TOutput">To be added.</typeparam>
+        <param name="target">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LinkTo&lt;TOutput&gt;">
+      <MemberSignature Language="C#" Value="public static IDisposable LinkTo&lt;TOutput&gt; (this System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt; source, System.Threading.Tasks.Dataflow.ITargetBlock&lt;TOutput&gt; target);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IDisposable LinkTo&lt;TOutput&gt;(class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!TOutput&gt; source, class System.Threading.Tasks.Dataflow.ITargetBlock`1&lt;!!TOutput&gt; target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.LinkTo``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Threading.Tasks.Dataflow.ITargetBlock{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IDisposable</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TOutput" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;" RefType="this" />
+        <Parameter Name="target" Type="System.Threading.Tasks.Dataflow.ITargetBlock&lt;TOutput&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TOutput">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LinkTo&lt;TOutput&gt;">
+      <MemberSignature Language="C#" Value="public static IDisposable LinkTo&lt;TOutput&gt; (this System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt; source, System.Threading.Tasks.Dataflow.ITargetBlock&lt;TOutput&gt; target, Predicate&lt;TOutput&gt; predicate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IDisposable LinkTo&lt;TOutput&gt;(class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!TOutput&gt; source, class System.Threading.Tasks.Dataflow.ITargetBlock`1&lt;!!TOutput&gt; target, class System.Predicate`1&lt;!!TOutput&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.LinkTo``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Threading.Tasks.Dataflow.ITargetBlock{``0},System.Predicate{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IDisposable</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TOutput" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;" RefType="this" />
+        <Parameter Name="target" Type="System.Threading.Tasks.Dataflow.ITargetBlock&lt;TOutput&gt;" />
+        <Parameter Name="predicate" Type="System.Predicate&lt;TOutput&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TOutput">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="target">To be added.</param>
+        <param name="predicate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LinkTo&lt;TOutput&gt;">
+      <MemberSignature Language="C#" Value="public static IDisposable LinkTo&lt;TOutput&gt; (this System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt; source, System.Threading.Tasks.Dataflow.ITargetBlock&lt;TOutput&gt; target, System.Threading.Tasks.Dataflow.DataflowLinkOptions linkOptions, Predicate&lt;TOutput&gt; predicate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IDisposable LinkTo&lt;TOutput&gt;(class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!TOutput&gt; source, class System.Threading.Tasks.Dataflow.ITargetBlock`1&lt;!!TOutput&gt; target, class System.Threading.Tasks.Dataflow.DataflowLinkOptions linkOptions, class System.Predicate`1&lt;!!TOutput&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.LinkTo``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Threading.Tasks.Dataflow.ITargetBlock{``0},System.Threading.Tasks.Dataflow.DataflowLinkOptions,System.Predicate{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IDisposable</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TOutput" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;" RefType="this" />
+        <Parameter Name="target" Type="System.Threading.Tasks.Dataflow.ITargetBlock&lt;TOutput&gt;" />
+        <Parameter Name="linkOptions" Type="System.Threading.Tasks.Dataflow.DataflowLinkOptions" />
+        <Parameter Name="predicate" Type="System.Predicate&lt;TOutput&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TOutput">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="target">To be added.</param>
+        <param name="linkOptions">To be added.</param>
+        <param name="predicate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NullTarget&lt;TInput&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Dataflow.ITargetBlock&lt;TInput&gt; NullTarget&lt;TInput&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Dataflow.ITargetBlock`1&lt;!!TInput&gt; NullTarget&lt;TInput&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.NullTarget``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Dataflow.ITargetBlock&lt;TInput&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TInput" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="TInput">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutputAvailableAsync&lt;TOutput&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; OutputAvailableAsync&lt;TOutput&gt; (this System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; OutputAvailableAsync&lt;TOutput&gt;(class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!TOutput&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.OutputAvailableAsync``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TOutput" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TOutput">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutputAvailableAsync&lt;TOutput&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; OutputAvailableAsync&lt;TOutput&gt; (this System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt; source, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; OutputAvailableAsync&lt;TOutput&gt;(class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!TOutput&gt; source, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.OutputAvailableAsync``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TOutput" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TOutput">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Post&lt;TInput&gt;">
+      <MemberSignature Language="C#" Value="public static bool Post&lt;TInput&gt; (this System.Threading.Tasks.Dataflow.ITargetBlock&lt;TInput&gt; target, TInput item);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Post&lt;TInput&gt;(class System.Threading.Tasks.Dataflow.ITargetBlock`1&lt;!!TInput&gt; target, !!TInput item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.Post``1(System.Threading.Tasks.Dataflow.ITargetBlock{``0},``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TInput" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="target" Type="System.Threading.Tasks.Dataflow.ITargetBlock&lt;TInput&gt;" RefType="this" />
+        <Parameter Name="item" Type="TInput" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TInput">To be added.</typeparam>
+        <param name="target">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Receive&lt;TOutput&gt;">
+      <MemberSignature Language="C#" Value="public static TOutput Receive&lt;TOutput&gt; (this System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TOutput Receive&lt;TOutput&gt;(class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!TOutput&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.Receive``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TOutput</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TOutput" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TOutput">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Receive&lt;TOutput&gt;">
+      <MemberSignature Language="C#" Value="public static TOutput Receive&lt;TOutput&gt; (this System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt; source, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TOutput Receive&lt;TOutput&gt;(class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!TOutput&gt; source, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.Receive``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TOutput</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TOutput" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TOutput">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Receive&lt;TOutput&gt;">
+      <MemberSignature Language="C#" Value="public static TOutput Receive&lt;TOutput&gt; (this System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt; source, TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TOutput Receive&lt;TOutput&gt;(class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!TOutput&gt; source, valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.Receive``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TOutput</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TOutput" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;" RefType="this" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TOutput">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Receive&lt;TOutput&gt;">
+      <MemberSignature Language="C#" Value="public static TOutput Receive&lt;TOutput&gt; (this System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt; source, TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TOutput Receive&lt;TOutput&gt;(class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!TOutput&gt; source, valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.Receive``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TOutput</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TOutput" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;" RefType="this" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TOutput">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceiveAsync&lt;TOutput&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;TOutput&gt; ReceiveAsync&lt;TOutput&gt; (this System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;!!TOutput&gt; ReceiveAsync&lt;TOutput&gt;(class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!TOutput&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;TOutput&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TOutput" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TOutput">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceiveAsync&lt;TOutput&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;TOutput&gt; ReceiveAsync&lt;TOutput&gt; (this System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt; source, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;!!TOutput&gt; ReceiveAsync&lt;TOutput&gt;(class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!TOutput&gt; source, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;TOutput&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TOutput" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TOutput">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceiveAsync&lt;TOutput&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;TOutput&gt; ReceiveAsync&lt;TOutput&gt; (this System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt; source, TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;!!TOutput&gt; ReceiveAsync&lt;TOutput&gt;(class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!TOutput&gt; source, valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;TOutput&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TOutput" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;" RefType="this" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TOutput">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceiveAsync&lt;TOutput&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;TOutput&gt; ReceiveAsync&lt;TOutput&gt; (this System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt; source, TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;!!TOutput&gt; ReceiveAsync&lt;TOutput&gt;(class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!!TOutput&gt; source, valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync``1(System.Threading.Tasks.Dataflow.ISourceBlock{``0},System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;TOutput&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TOutput" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;" RefType="this" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TOutput">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendAsync&lt;TInput&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; SendAsync&lt;TInput&gt; (this System.Threading.Tasks.Dataflow.ITargetBlock&lt;TInput&gt; target, TInput item);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; SendAsync&lt;TInput&gt;(class System.Threading.Tasks.Dataflow.ITargetBlock`1&lt;!!TInput&gt; target, !!TInput item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync``1(System.Threading.Tasks.Dataflow.ITargetBlock{``0},``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TInput" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="target" Type="System.Threading.Tasks.Dataflow.ITargetBlock&lt;TInput&gt;" RefType="this" />
+        <Parameter Name="item" Type="TInput" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TInput">To be added.</typeparam>
+        <param name="target">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendAsync&lt;TInput&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; SendAsync&lt;TInput&gt; (this System.Threading.Tasks.Dataflow.ITargetBlock&lt;TInput&gt; target, TInput item, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; SendAsync&lt;TInput&gt;(class System.Threading.Tasks.Dataflow.ITargetBlock`1&lt;!!TInput&gt; target, !!TInput item, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync``1(System.Threading.Tasks.Dataflow.ITargetBlock{``0},``0,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TInput" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="target" Type="System.Threading.Tasks.Dataflow.ITargetBlock&lt;TInput&gt;" RefType="this" />
+        <Parameter Name="item" Type="TInput" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TInput">To be added.</typeparam>
+        <param name="target">To be added.</param>
+        <param name="item">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryReceive&lt;TOutput&gt;">
+      <MemberSignature Language="C#" Value="public static bool TryReceive&lt;TOutput&gt; (this System.Threading.Tasks.Dataflow.IReceivableSourceBlock&lt;TOutput&gt; source, out TOutput item);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryReceive&lt;TOutput&gt;(class System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1&lt;!!TOutput&gt; source, !!TOutput item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowBlock.TryReceive``1(System.Threading.Tasks.Dataflow.IReceivableSourceBlock{``0},``0@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TOutput" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Threading.Tasks.Dataflow.IReceivableSourceBlock&lt;TOutput&gt;" RefType="this" />
+        <Parameter Name="item" Type="TOutput&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TOutput">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

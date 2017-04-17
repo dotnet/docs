@@ -1,0 +1,344 @@
+<Type Name="CallContext" FullName="System.Runtime.Remoting.Messaging.CallContext">
+  <TypeSignature Language="C#" Value="public sealed class CallContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit CallContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Messaging.CallContext" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a set of properties that are carried with the execution code path. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Runtime.Remoting.Messaging.CallContext> is a specialized collection object similar to a Thread Local Storage for method calls and provides data slots that are unique to each logical thread of execution. The slots are not shared across call contexts on other logical threads. Objects can be added to the <xref:System.Runtime.Remoting.Messaging.CallContext> as it travels down and back up the execution code path, and examined by various objects along the path.  
+  
+ When a remote method call is made to an object in another <xref:System.AppDomain>, the <xref:System.Runtime.Remoting.Messaging.CallContext> class generates a <xref:System.Runtime.Remoting.Messaging.LogicalCallContext> instance that travels along with the remote call. Only objects that expose the <xref:System.Runtime.Remoting.Messaging.ILogicalThreadAffinative> interface and are stored in the <xref:System.Runtime.Remoting.Messaging.CallContext> are propagated outside the <xref:System.AppDomain> in a <xref:System.Runtime.Remoting.Messaging.LogicalCallContext>. Objects that do not support this interface are not transmitted in <xref:System.Runtime.Remoting.Messaging.LogicalCallContext> instances with remote method calls.  
+  
+> [!NOTE]
+>  All methods in <xref:System.Runtime.Remoting.Messaging.CallContext> are static and operate on the call context in the current <xref:System.Threading.Thread>.  
+  
+> [!NOTE]
+>  This class makes a link demand. A `SecurityException` is thrown if the immediate caller does not have infrastructure permission. See [Link Demands](~/docs/framework/misc/link-demands.md) for more information.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Runtime.Remoting.Messaging.CallContext> class to transmit [Principal and Identity Objects](~/docs/standard/security/principal-and-identity-objects.md) to a remote location for identification. To view the code for the `LogicalCallContextData` class used in this sample, see the example for the <xref:System.Runtime.Remoting.Messaging.ILogicalThreadAffinative> interface. To view the code for the `HelloServiceClass` class used in this sample, see the example for the <xref:System.Runtime.Remoting.Messaging.CallContext.GetData%2A> method. To view the code for the server class used in this sample, see the example for the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A> class.  
+  
+ [!code-cpp[CallContext#1](~/samples/snippets/cpp/VS_Snippets_Remoting/CallContext/CPP/client.cpp#1)]
+ [!code-csharp[CallContext#1](~/samples/snippets/csharp/VS_Snippets_Remoting/CallContext/CS/client.cs#1)]
+ [!code-vb[CallContext#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CallContext/VB/client.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission Value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+  </Docs>
+  <Members>
+    <Member MemberName="FreeNamedDataSlot">
+      <MemberSignature Language="C#" Value="public static void FreeNamedDataSlot (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void FreeNamedDataSlot(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.CallContext.FreeNamedDataSlot(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the data slot to empty.</param>
+        <summary>Empties a data slot with the specified name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows a client creating a named data slot, calling a method on the remote object that displays the value of the named data slot that was returned from the logical thread, and frees that named data slot.  
+  
+ [!code-cpp[CallContext_GetHeaders#1](~/samples/snippets/cpp/VS_Snippets_Remoting/CallContext_GetHeaders/CPP/callcontext_client.cpp#1)]
+ [!code-csharp[CallContext_GetHeaders#1](~/samples/snippets/csharp/VS_Snippets_Remoting/CallContext_GetHeaders/CS/callcontext_client.cs#1)]
+ [!code-vb[CallContext_GetHeaders#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CallContext_GetHeaders/VB/callcontext_client.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetData">
+      <MemberSignature Language="C#" Value="public static object GetData (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetData(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.CallContext.GetData(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the item in the call context.</param>
+        <summary>Retrieves an object with the specified name from the <see cref="T:System.Runtime.Remoting.Messaging.CallContext" />.</summary>
+        <returns>The object in the call context associated with the specified name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Runtime.Remoting.Messaging.CallContext.GetData%2A> method to transmit [Principal and Identity Objects](~/docs/standard/security/principal-and-identity-objects.md) to a remote location for identification. To view the code for the `LogicalCallContextData` class used in this sample, see the example for the <xref:System.Runtime.Remoting.Messaging.ILogicalThreadAffinative> interface. To view the code for the client class used in the sample, see the example for the <xref:System.Runtime.Remoting.Messaging.CallContext> class. To view the code for the server class used in this sample, see the example for the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A> class.  
+  
+ [!code-cpp[CallContext#3](~/samples/snippets/cpp/VS_Snippets_Remoting/CallContext/CPP/service.cpp#3)]
+ [!code-csharp[CallContext#3](~/samples/snippets/csharp/VS_Snippets_Remoting/CallContext/CS/service.cs#3)]
+ [!code-vb[CallContext#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CallContext/VB/service.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHeaders">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.Messaging.Header[] GetHeaders ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.Messaging.Header[] GetHeaders() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.CallContext.GetHeaders" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Messaging.Header[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the headers that are sent along with the method call.</summary>
+        <returns>The headers that are sent along with the method call.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example sends headers to a remote method and prints the content of those headers to the console when the remote method returns.  
+  
+ [!code-cpp[CallContext_GetHeaders#2](~/samples/snippets/cpp/VS_Snippets_Remoting/CallContext_GetHeaders/CPP/callcontext_client.cpp#2)]
+ [!code-csharp[CallContext_GetHeaders#2](~/samples/snippets/csharp/VS_Snippets_Remoting/CallContext_GetHeaders/CS/callcontext_client.cs#2)]
+ [!code-vb[CallContext_GetHeaders#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CallContext_GetHeaders/VB/callcontext_client.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="HostContext">
+      <MemberSignature Language="C#" Value="public static object HostContext { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property object HostContext" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.CallContext.HostContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the host context associated with the current thread.</summary>
+        <value>The host context associated with the current thread.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="LogicalGetData">
+      <MemberSignature Language="C#" Value="public static object LogicalGetData (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object LogicalGetData(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.CallContext.LogicalGetData(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the item in the logical call context.</param>
+        <summary>Retrieves an object with the specified name from the logical call context.</summary>
+        <returns>The object in the logical call context associated with the specified name.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="LogicalSetData">
+      <MemberSignature Language="C#" Value="public static void LogicalSetData (string name, object data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void LogicalSetData(string name, object data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.CallContext.LogicalSetData(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="data" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name with which to associate the new item in the logical call context.</param>
+        <param name="data">The object to store in the logical call context, this object must be serializable.</param>
+        <summary>Stores a given object in the logical call context and associates it with the specified name.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="SetData">
+      <MemberSignature Language="C#" Value="public static void SetData (string name, object data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetData(string name, object data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.CallContext.SetData(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="data" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name with which to associate the new item in the call context.</param>
+        <param name="data">The object to store in the call context.</param>
+        <summary>Stores a given object and associates it with the specified name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Runtime.Remoting.Messaging.CallContext.SetData%2A> method to transmit [Principal and Identity Objects](~/docs/standard/security/principal-and-identity-objects.md) to a remote location for identification. To view the code for the `LogicalCallContextData` class used in this sample, see the example for the <xref:System.Runtime.Remoting.Messaging.ILogicalThreadAffinative> interface. To view the code for the `HelloServiceClass` class used in this sample, see the example for the <xref:System.Runtime.Remoting.Messaging.CallContext.GetData%2A> method. To view the code for the server class used in this sample, see the example for the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A> class.  
+  
+ [!code-cpp[CallContext#1](~/samples/snippets/cpp/VS_Snippets_Remoting/CallContext/CPP/client.cpp#1)]
+ [!code-csharp[CallContext#1](~/samples/snippets/csharp/VS_Snippets_Remoting/CallContext/CS/client.cs#1)]
+ [!code-vb[CallContext#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CallContext/VB/client.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="SetHeaders">
+      <MemberSignature Language="C#" Value="public static void SetHeaders (System.Runtime.Remoting.Messaging.Header[] headers);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetHeaders(class System.Runtime.Remoting.Messaging.Header[] headers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.CallContext.SetHeaders(System.Runtime.Remoting.Messaging.Header[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headers" Type="System.Runtime.Remoting.Messaging.Header[]" />
+      </Parameters>
+      <Docs>
+        <param name="headers">A <see cref="T:System.Runtime.Remoting.Messaging.Header" /> array of the headers that are to be sent along with the method call.</param>
+        <summary>Sets the headers that are sent along with the method call.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example code shows the ease with which a header is put on the logical thread.  
+  
+ [!code-cpp[CallContext_GetHeaders#3](~/samples/snippets/cpp/VS_Snippets_Remoting/CallContext_GetHeaders/CPP/callcontext_share.cpp#3)]
+ [!code-csharp[CallContext_GetHeaders#3](~/samples/snippets/csharp/VS_Snippets_Remoting/CallContext_GetHeaders/CS/callcontext_share.cs#3)]
+ [!code-vb[CallContext_GetHeaders#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CallContext_GetHeaders/VB/callcontext_share.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

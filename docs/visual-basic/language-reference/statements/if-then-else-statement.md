@@ -32,8 +32,8 @@ helpviewer_keywords:
   - "Else statement [Visual Basic]"
 ms.assetid: 790068a2-1307-4e28-8a72-be5ebda099e9
 caps.latest.revision: 29
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

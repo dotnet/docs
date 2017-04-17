@@ -1,0 +1,202 @@
+<Type Name="WorkflowInstanceUnhandledExceptionRecord" FullName="System.Activities.Tracking.WorkflowInstanceUnhandledExceptionRecord">
+  <TypeSignature Language="C#" Value="public sealed class WorkflowInstanceUnhandledExceptionRecord : System.Activities.Tracking.WorkflowInstanceRecord" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WorkflowInstanceUnhandledExceptionRecord extends System.Activities.Tracking.WorkflowInstanceRecord" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Tracking.WorkflowInstanceUnhandledExceptionRecord" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.Tracking.WorkflowInstanceRecord</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains the data sent to a tracking participant by the run-time tracking infrastructure when a workflow instance encounters an unhandled exception.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowInstanceUnhandledExceptionRecord (Guid instanceId, string activityDefinitionId, System.Activities.Tracking.ActivityInfo faultSource, Exception exception);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid instanceId, string activityDefinitionId, class System.Activities.Tracking.ActivityInfo faultSource, class System.Exception exception) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.WorkflowInstanceUnhandledExceptionRecord.#ctor(System.Guid,System.String,System.Activities.Tracking.ActivityInfo,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="activityDefinitionId" Type="System.String" />
+        <Parameter Name="faultSource" Type="System.Activities.Tracking.ActivityInfo" />
+        <Parameter Name="exception" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The instance ID of the generating workflow instance.</param>
+        <param name="activityDefinitionId">The activity definition ID of the generating workflow activity.</param>
+        <param name="faultSource">The activity that generated the fault.</param>
+        <param name="exception">The unhandled exception data.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Tracking.WorkflowInstanceUnhandledExceptionRecord" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowInstanceUnhandledExceptionRecord (Guid instanceId, long recordNumber, string activityDefinitionId, System.Activities.Tracking.ActivityInfo faultSource, Exception exception);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid instanceId, int64 recordNumber, string activityDefinitionId, class System.Activities.Tracking.ActivityInfo faultSource, class System.Exception exception) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.WorkflowInstanceUnhandledExceptionRecord.#ctor(System.Guid,System.Int64,System.String,System.Activities.Tracking.ActivityInfo,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="recordNumber" Type="System.Int64" />
+        <Parameter Name="activityDefinitionId" Type="System.String" />
+        <Parameter Name="faultSource" Type="System.Activities.Tracking.ActivityInfo" />
+        <Parameter Name="exception" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The instance ID of the generating workflow instance.</param>
+        <param name="recordNumber">A sequence that defines the order in which tracking events are generated.</param>
+        <param name="activityDefinitionId">The display name of the root activity of the workflow.</param>
+        <param name="faultSource">The activity that generated the fault.</param>
+        <param name="exception">The unhandled exception data.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Tracking.WorkflowInstanceUnhandledExceptionRecord" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowInstanceUnhandledExceptionRecord (Guid instanceId, string activityDefinitionId, System.Activities.Tracking.ActivityInfo faultSource, Exception exception, System.Activities.WorkflowIdentity workflowDefinitionIdentity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid instanceId, string activityDefinitionId, class System.Activities.Tracking.ActivityInfo faultSource, class System.Exception exception, class System.Activities.WorkflowIdentity workflowDefinitionIdentity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.WorkflowInstanceUnhandledExceptionRecord.#ctor(System.Guid,System.String,System.Activities.Tracking.ActivityInfo,System.Exception,System.Activities.WorkflowIdentity)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="activityDefinitionId" Type="System.String" />
+        <Parameter Name="faultSource" Type="System.Activities.Tracking.ActivityInfo" />
+        <Parameter Name="exception" Type="System.Exception" />
+        <Parameter Name="workflowDefinitionIdentity" Type="System.Activities.WorkflowIdentity" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The instance ID of the generating workflow instance.</param>
+        <param name="activityDefinitionId">The display name of the root activity of the workflow.</param>
+        <param name="faultSource">The activity that generated the fault.</param>
+        <param name="exception">The unhandled exception data.</param>
+        <param name="workflowDefinitionIdentity">The information about the workflow identity.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Tracking.WorkflowInstanceUnhandledExceptionRecord" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowInstanceUnhandledExceptionRecord (Guid instanceId, long recordNumber, string activityDefinitionId, System.Activities.Tracking.ActivityInfo faultSource, Exception exception, System.Activities.WorkflowIdentity workflowDefinitionIdentity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid instanceId, int64 recordNumber, string activityDefinitionId, class System.Activities.Tracking.ActivityInfo faultSource, class System.Exception exception, class System.Activities.WorkflowIdentity workflowDefinitionIdentity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.WorkflowInstanceUnhandledExceptionRecord.#ctor(System.Guid,System.Int64,System.String,System.Activities.Tracking.ActivityInfo,System.Exception,System.Activities.WorkflowIdentity)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="recordNumber" Type="System.Int64" />
+        <Parameter Name="activityDefinitionId" Type="System.String" />
+        <Parameter Name="faultSource" Type="System.Activities.Tracking.ActivityInfo" />
+        <Parameter Name="exception" Type="System.Exception" />
+        <Parameter Name="workflowDefinitionIdentity" Type="System.Activities.WorkflowIdentity" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The instance ID of the generating workflow instance.</param>
+        <param name="recordNumber">A sequence that defines the order in which tracking events are generated.</param>
+        <param name="activityDefinitionId">The display name of the root activity of the workflow.</param>
+        <param name="faultSource">The activity that generated the fault.</param>
+        <param name="exception">The unhandled exception data.</param>
+        <param name="workflowDefinitionIdentity">The information about the workflow identity.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Tracking.WorkflowInstanceUnhandledExceptionRecord" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="protected override System.Activities.Tracking.TrackingRecord Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Activities.Tracking.TrackingRecord Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.WorkflowInstanceUnhandledExceptionRecord.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Tracking.TrackingRecord</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FaultSource">
+      <MemberSignature Language="C#" Value="public System.Activities.Tracking.ActivityInfo FaultSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Tracking.ActivityInfo FaultSource" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.WorkflowInstanceUnhandledExceptionRecord.FaultSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Tracking.ActivityInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the activity that generated the fault.</summary>
+        <value>The faulting activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.WorkflowInstanceUnhandledExceptionRecord.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the tracking record data.</summary>
+        <returns>The tracking data.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnhandledException">
+      <MemberSignature Language="C#" Value="public Exception UnhandledException { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Exception UnhandledException" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.WorkflowInstanceUnhandledExceptionRecord.UnhandledException" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the unhandled exception data.</summary>
+        <value>The exception data.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

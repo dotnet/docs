@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 24fd244d-ebae-4721-8858-89bb544aea0b
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Concepts and Terminology (Functional Transformation) (Visual Basic)

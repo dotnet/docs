@@ -1,0 +1,57 @@
+<Type Name="WizardStepEditableRegion" FullName="System.Web.UI.Design.WebControls.WizardStepEditableRegion">
+  <TypeSignature Language="C#" Value="public class WizardStepEditableRegion : System.Web.UI.Design.EditableDesignerRegion" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WizardStepEditableRegion extends System.Web.UI.Design.EditableDesignerRegion" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.WizardStepEditableRegion" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Design.EditableDesignerRegion</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines an editable region of content within the design-time markup of a wizard step for a <see cref="T:System.Web.UI.Design.WebControls.WizardDesigner" /> object.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WizardStepEditableRegion (System.Web.UI.Design.WebControls.WizardDesigner designer, System.Web.UI.WebControls.WizardStepBase wizardStep);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Design.WebControls.WizardDesigner designer, class System.Web.UI.WebControls.WizardStepBase wizardStep) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WizardStepEditableRegion.#ctor(System.Web.UI.Design.WebControls.WizardDesigner,System.Web.UI.WebControls.WizardStepBase)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="designer" Type="System.Web.UI.Design.WebControls.WizardDesigner" />
+        <Parameter Name="wizardStep" Type="System.Web.UI.WebControls.WizardStepBase" />
+      </Parameters>
+      <Docs>
+        <param name="designer">A <see cref="T:System.Web.UI.Design.WebControls.WizardDesigner" /> that is the parent designer for the wizard.</param>
+        <param name="wizardStep">A <see cref="T:System.Web.UI.WebControls.WizardStepBase" /> that defines the step.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.WizardStepEditableRegion" /> class using the given designer and step.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Step">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WizardStepBase Step { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WizardStepBase Step" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.WizardStepEditableRegion.Step" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WizardStepBase</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the associated design-time wizard step.</summary>
+        <value>The associated design-time wizard step.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

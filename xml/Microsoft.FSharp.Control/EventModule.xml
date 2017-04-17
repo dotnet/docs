@@ -1,0 +1,440 @@
+<Type Name="EventModule" FullName="Microsoft.FSharp.Control.EventModule">
+  <TypeSignature Language="C#" Value="public static class EventModule" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed EventModule extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Control.EventModule" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Module)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationRepresentation(Microsoft.FSharp.Core.CompilationRepresentationFlags.ModuleSuffix)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.RequireQualifiedAccess</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add&lt;T,TDel&gt;">
+      <MemberSignature Language="C#" Value="public static void Add&lt;T,TDel&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt; callback, Microsoft.FSharp.Control.IEvent&lt;TDel,T&gt; sourceEvent) where TDel : Delegate;" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Add&lt;T, (class System.Delegate) TDel&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.Unit&gt; callback, class Microsoft.FSharp.Control.IEvent`2&lt;!!TDel, !!T&gt; sourceEvent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.EventModule.Add``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Control.IEvent{``1,``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("add")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TDel">
+          <Constraints>
+            <BaseTypeName>System.Delegate</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="callback" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt;" />
+        <Parameter Name="sourceEvent" Type="Microsoft.FSharp.Control.IEvent&lt;TDel,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TDel">To be added.</typeparam>
+        <param name="callback">To be added.</param>
+        <param name="sourceEvent">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Choose&lt;T,TResult,TDel&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.IEvent&lt;Microsoft.FSharp.Control.FSharpHandler&lt;TResult&gt;,TResult&gt; Choose&lt;T,TResult,TDel&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt;&gt; chooser, Microsoft.FSharp.Control.IEvent&lt;TDel,T&gt; sourceEvent) where TDel : Delegate;" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.IEvent`2&lt;class Microsoft.FSharp.Control.FSharpHandler`1&lt;!!TResult&gt;, !!TResult&gt; Choose&lt;T, TResult, (class System.Delegate) TDel&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!TResult&gt;&gt; chooser, class Microsoft.FSharp.Control.IEvent`2&lt;!!TDel, !!T&gt; sourceEvent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.EventModule.Choose``3(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpOption{``1}},Microsoft.FSharp.Control.IEvent{``2,``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("choose")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.IEvent&lt;Microsoft.FSharp.Control.FSharpHandler&lt;TResult&gt;,TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+        <TypeParameter Name="TDel">
+          <Constraints>
+            <BaseTypeName>System.Delegate</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="chooser" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt;&gt;" />
+        <Parameter Name="sourceEvent" Type="Microsoft.FSharp.Control.IEvent&lt;TDel,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <typeparam name="TDel">To be added.</typeparam>
+        <param name="chooser">To be added.</param>
+        <param name="sourceEvent">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter&lt;T,TDel&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.IEvent&lt;Microsoft.FSharp.Control.FSharpHandler&lt;T&gt;,T&gt; Filter&lt;T,TDel&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate, Microsoft.FSharp.Control.IEvent&lt;TDel,T&gt; sourceEvent) where TDel : Delegate;" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.IEvent`2&lt;class Microsoft.FSharp.Control.FSharpHandler`1&lt;!!T&gt;, !!T&gt; Filter&lt;T, (class System.Delegate) TDel&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate, class Microsoft.FSharp.Control.IEvent`2&lt;!!TDel, !!T&gt; sourceEvent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.EventModule.Filter``2(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},Microsoft.FSharp.Control.IEvent{``1,``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("filter")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.IEvent&lt;Microsoft.FSharp.Control.FSharpHandler&lt;T&gt;,T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TDel">
+          <Constraints>
+            <BaseTypeName>System.Delegate</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="predicate" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Boolean&gt;" />
+        <Parameter Name="sourceEvent" Type="Microsoft.FSharp.Control.IEvent&lt;TDel,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TDel">To be added.</typeparam>
+        <param name="predicate">To be added.</param>
+        <param name="sourceEvent">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Map&lt;T,TResult,TDel&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.IEvent&lt;Microsoft.FSharp.Control.FSharpHandler&lt;TResult&gt;,TResult&gt; Map&lt;T,TResult,TDel&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt; mapping, Microsoft.FSharp.Control.IEvent&lt;TDel,T&gt; sourceEvent) where TDel : Delegate;" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.IEvent`2&lt;class Microsoft.FSharp.Control.FSharpHandler`1&lt;!!TResult&gt;, !!TResult&gt; Map&lt;T, TResult, (class System.Delegate) TDel&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TResult&gt; mapping, class Microsoft.FSharp.Control.IEvent`2&lt;!!TDel, !!T&gt; sourceEvent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.EventModule.Map``3(Microsoft.FSharp.Core.FSharpFunc{``0,``1},Microsoft.FSharp.Control.IEvent{``2,``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("map")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.IEvent&lt;Microsoft.FSharp.Control.FSharpHandler&lt;TResult&gt;,TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+        <TypeParameter Name="TDel">
+          <Constraints>
+            <BaseTypeName>System.Delegate</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="mapping" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt;" />
+        <Parameter Name="sourceEvent" Type="Microsoft.FSharp.Control.IEvent&lt;TDel,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <typeparam name="TDel">To be added.</typeparam>
+        <param name="mapping">To be added.</param>
+        <param name="sourceEvent">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Merge&lt;TDel1,T,TDel2&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.IEvent&lt;Microsoft.FSharp.Control.FSharpHandler&lt;T&gt;,T&gt; Merge&lt;TDel1,T,TDel2&gt; (Microsoft.FSharp.Control.IEvent&lt;TDel1,T&gt; event1, Microsoft.FSharp.Control.IEvent&lt;TDel2,T&gt; event2) where TDel1 : Delegate where TDel2 : Delegate;" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.IEvent`2&lt;class Microsoft.FSharp.Control.FSharpHandler`1&lt;!!T&gt;, !!T&gt; Merge&lt;(class System.Delegate) TDel1, T, (class System.Delegate) TDel2&gt;(class Microsoft.FSharp.Control.IEvent`2&lt;!!TDel1, !!T&gt; event1, class Microsoft.FSharp.Control.IEvent`2&lt;!!TDel2, !!T&gt; event2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.EventModule.Merge``3(Microsoft.FSharp.Control.IEvent{``0,``1},Microsoft.FSharp.Control.IEvent{``2,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("merge")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.IEvent&lt;Microsoft.FSharp.Control.FSharpHandler&lt;T&gt;,T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TDel1">
+          <Constraints>
+            <BaseTypeName>System.Delegate</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TDel2">
+          <Constraints>
+            <BaseTypeName>System.Delegate</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="event1" Type="Microsoft.FSharp.Control.IEvent&lt;TDel1,T&gt;" />
+        <Parameter Name="event2" Type="Microsoft.FSharp.Control.IEvent&lt;TDel2,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TDel1">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TDel2">To be added.</typeparam>
+        <param name="event1">To be added.</param>
+        <param name="event2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pairwise&lt;TDel,T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.IEvent&lt;Microsoft.FSharp.Control.FSharpHandler&lt;Tuple&lt;T,T&gt;&gt;,Tuple&lt;T,T&gt;&gt; Pairwise&lt;TDel,T&gt; (Microsoft.FSharp.Control.IEvent&lt;TDel,T&gt; sourceEvent) where TDel : Delegate;" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.IEvent`2&lt;class Microsoft.FSharp.Control.FSharpHandler`1&lt;class System.Tuple`2&lt;!!T, !!T&gt;&gt;, class System.Tuple`2&lt;!!T, !!T&gt;&gt; Pairwise&lt;(class System.Delegate) TDel, T&gt;(class Microsoft.FSharp.Control.IEvent`2&lt;!!TDel, !!T&gt; sourceEvent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.EventModule.Pairwise``2(Microsoft.FSharp.Control.IEvent{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("pairwise")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.IEvent&lt;Microsoft.FSharp.Control.FSharpHandler&lt;System.Tuple&lt;T,T&gt;&gt;,System.Tuple&lt;T,T&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TDel">
+          <Constraints>
+            <BaseTypeName>System.Delegate</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="sourceEvent" Type="Microsoft.FSharp.Control.IEvent&lt;TDel,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TDel">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="sourceEvent">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Partition&lt;T,TDel&gt;">
+      <MemberSignature Language="C#" Value="public static Tuple&lt;Microsoft.FSharp.Control.IEvent&lt;Microsoft.FSharp.Control.FSharpHandler&lt;T&gt;,T&gt;,Microsoft.FSharp.Control.IEvent&lt;Microsoft.FSharp.Control.FSharpHandler&lt;T&gt;,T&gt;&gt; Partition&lt;T,TDel&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate, Microsoft.FSharp.Control.IEvent&lt;TDel,T&gt; sourceEvent) where TDel : Delegate;" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;class Microsoft.FSharp.Control.IEvent`2&lt;class Microsoft.FSharp.Control.FSharpHandler`1&lt;!!T&gt;, !!T&gt;, class Microsoft.FSharp.Control.IEvent`2&lt;class Microsoft.FSharp.Control.FSharpHandler`1&lt;!!T&gt;, !!T&gt;&gt; Partition&lt;T, (class System.Delegate) TDel&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate, class Microsoft.FSharp.Control.IEvent`2&lt;!!TDel, !!T&gt; sourceEvent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.EventModule.Partition``2(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},Microsoft.FSharp.Control.IEvent{``1,``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("partition")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Tuple&lt;Microsoft.FSharp.Control.IEvent&lt;Microsoft.FSharp.Control.FSharpHandler&lt;T&gt;,T&gt;,Microsoft.FSharp.Control.IEvent&lt;Microsoft.FSharp.Control.FSharpHandler&lt;T&gt;,T&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TDel">
+          <Constraints>
+            <BaseTypeName>System.Delegate</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="predicate" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Boolean&gt;" />
+        <Parameter Name="sourceEvent" Type="Microsoft.FSharp.Control.IEvent&lt;TDel,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TDel">To be added.</typeparam>
+        <param name="predicate">To be added.</param>
+        <param name="sourceEvent">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Scan&lt;TResult,T,TDel&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.IEvent&lt;Microsoft.FSharp.Control.FSharpHandler&lt;TResult&gt;,TResult&gt; Scan&lt;TResult,T,TDel&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TResult,Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt;&gt; collector, TResult state, Microsoft.FSharp.Control.IEvent&lt;TDel,T&gt; sourceEvent) where TDel : Delegate;" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.IEvent`2&lt;class Microsoft.FSharp.Control.FSharpHandler`1&lt;!!TResult&gt;, !!TResult&gt; Scan&lt;TResult, T, (class System.Delegate) TDel&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TResult, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TResult&gt;&gt; collector, !!TResult state, class Microsoft.FSharp.Control.IEvent`2&lt;!!TDel, !!T&gt; sourceEvent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.EventModule.Scan``3(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,``0}},``0,Microsoft.FSharp.Control.IEvent{``2,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("scan")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.IEvent&lt;Microsoft.FSharp.Control.FSharpHandler&lt;TResult&gt;,TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TResult" />
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TDel">
+          <Constraints>
+            <BaseTypeName>System.Delegate</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="collector" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TResult,Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt;&gt;" />
+        <Parameter Name="state" Type="TResult" />
+        <Parameter Name="sourceEvent" Type="Microsoft.FSharp.Control.IEvent&lt;TDel,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TResult">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TDel">To be added.</typeparam>
+        <param name="collector">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="sourceEvent">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Split&lt;T,TResult1,TResult2,TDel&gt;">
+      <MemberSignature Language="C#" Value="public static Tuple&lt;Microsoft.FSharp.Control.IEvent&lt;Microsoft.FSharp.Control.FSharpHandler&lt;TResult1&gt;,TResult1&gt;,Microsoft.FSharp.Control.IEvent&lt;Microsoft.FSharp.Control.FSharpHandler&lt;TResult2&gt;,TResult2&gt;&gt; Split&lt;T,TResult1,TResult2,TDel&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpChoice&lt;TResult1,TResult2&gt;&gt; splitter, Microsoft.FSharp.Control.IEvent&lt;TDel,T&gt; sourceEvent) where TDel : Delegate;" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;class Microsoft.FSharp.Control.IEvent`2&lt;class Microsoft.FSharp.Control.FSharpHandler`1&lt;!!TResult1&gt;, !!TResult1&gt;, class Microsoft.FSharp.Control.IEvent`2&lt;class Microsoft.FSharp.Control.FSharpHandler`1&lt;!!TResult2&gt;, !!TResult2&gt;&gt; Split&lt;T, TResult1, TResult2, (class System.Delegate) TDel&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpChoice`2&lt;!!TResult1, !!TResult2&gt;&gt; splitter, class Microsoft.FSharp.Control.IEvent`2&lt;!!TDel, !!T&gt; sourceEvent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.EventModule.Split``4(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpChoice{``1,``2}},Microsoft.FSharp.Control.IEvent{``3,``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("split")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Tuple&lt;Microsoft.FSharp.Control.IEvent&lt;Microsoft.FSharp.Control.FSharpHandler&lt;TResult1&gt;,TResult1&gt;,Microsoft.FSharp.Control.IEvent&lt;Microsoft.FSharp.Control.FSharpHandler&lt;TResult2&gt;,TResult2&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult1" />
+        <TypeParameter Name="TResult2" />
+        <TypeParameter Name="TDel">
+          <Constraints>
+            <BaseTypeName>System.Delegate</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="splitter" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpChoice&lt;TResult1,TResult2&gt;&gt;" />
+        <Parameter Name="sourceEvent" Type="Microsoft.FSharp.Control.IEvent&lt;TDel,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult1">To be added.</typeparam>
+        <typeparam name="TResult2">To be added.</typeparam>
+        <typeparam name="TDel">To be added.</typeparam>
+        <param name="splitter">To be added.</param>
+        <param name="sourceEvent">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

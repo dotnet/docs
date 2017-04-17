@@ -42,7 +42,7 @@ Used to obtain the size in bytes for an unmanaged type. Unmanaged types include 
   
  The following example shows how to retrieve the size of an `int`:  
   
-```cs  
+```csharp  
 // Constant value 4:  
 int intSize = sizeof(int);   
 ```  

@@ -1,0 +1,493 @@
+<Type Name="DataBinder" FullName="System.Web.UI.DataBinder">
+  <TypeSignature Language="C#" Value="public sealed class DataBinder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataBinder extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataBinder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides support for rapid application development (RAD) designers to generate and parse data-binding expression syntax. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the overloaded static <xref:System.Web.UI.DataBinder.Eval%2A> method of this class in data-binding syntax in an ASP.NET Web page. This provides an easier syntax to work with than standard data binding. However, because `DataBinder.Eval` provides automatic type conversion, it can result in slower performance.  
+  
+ For more information about ASP.NET data binding, expressions, and syntax, see [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742) and [Data-Binding Expressions Overview](http://msdn.microsoft.com/library/14cdd57d-0f82-4667-b503-73e1a96f136a).  
+  
+ Starting in .NET Framework 4.5, you can use model binding to simplify some of the tasks that you had to perform through data-binding in earlier versions. For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
+  
+   
+  
+## Examples  
+ The following example uses the static <xref:System.Web.UI.DataBinder.GetPropertyValue%2A> method to populate the fields of a <xref:System.Web.UI.WebControls.Repeater> control using an <xref:System.Collections.ArrayList> of `Product` objects. The <xref:System.Web.UI.DataBinder.Eval%2A> method could be applied with the same syntax, but it would not perform as quickly.  
+  
+ This example uses a custom `Product` class which exposes a string `Model` property and a numeric `UnitPrice` property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.DataBinder#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.DataBinder/CS/Default.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.DataBinder#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.DataBinder/VB/Default.aspx#1)]  -->  
+  
+ The following code is the custom `Product` class. This code should be included in a separate class file in the App_Code directory, such as Product.cs or Product.vb.  
+  
+ [!code-csharp[System.Web.UI.DataBinder#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.DataBinder/CS/App_Code/Product.cs#2)]
+ [!code-vb[System.Web.UI.DataBinder#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.DataBinder/VB/App_Code/Product.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataBinder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBinder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataBinder" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableCaching">
+      <MemberSignature Language="C#" Value="public static bool EnableCaching { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool EnableCaching" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataBinder.EnableCaching" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether data caching is enabled at run time.</summary>
+        <value>
+          <see langword="true" /> if caching is enabled for the <see cref="T:System.Web.UI.DataBinder" /> class; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Eval">
+      <MemberSignature Language="C#" Value="public static object Eval (object container, string expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object Eval(object container, string expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBinder.Eval(System.Object,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="container" Type="System.Object" />
+        <Parameter Name="expression" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="container">The object reference against which the expression is evaluated. This must be a valid object identifier in the page's specified language.</param>
+        <param name="expression">The navigation path from the <c>container</c> object to the public property value to be placed in the bound control property. This must be a string of property or field names separated by periods, such as <c>Tables[0].DefaultView.[0].Price</c> in C# or <c>Tables(0).DefaultView.(0).Price</c> in Visual Basic.</param>
+        <summary>Evaluates data-binding expressions at run time.</summary>
+        <returns>An <see cref="T:System.Object" /> instance that results from the evaluation of the data-binding expression.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the `expression` parameter must evaluate to a public property.  
+  
+ This method is automatically called when you create data bindings in a rapid application development (RAD) designer such as Visual Studio. You can also use it declaratively to simplify casting to a text string. To do so, you use the `<%#  %>` expression syntax, as used in standard ASP.NET data binding.  
+  
+ This method is particularly useful when binding data to controls that are in a templated list.  
+  
+> [!NOTE]
+>  Because this method performs late-bound evaluation, using reflection at run time, it can cause performance to noticeably slow compared to standard ASP.NET data-binding syntax.  
+  
+ For any of the list Web controls, such as <xref:System.Web.UI.WebControls.GridView>, <xref:System.Web.UI.WebControls.DetailsView>, <xref:System.Web.UI.WebControls.DataList>, or <xref:System.Web.UI.WebControls.Repeater>, `container` should be `Container.DataItem`. If you are binding against the page, `container` should be `Page`.  
+  
+ Starting in .NET Framework 4.5, you can use model binding to simplify some of the tasks that you had to perform through data-binding in earlier versions. For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
+  
+   
+  
+## Examples  
+ The following examples show how to use the `Eval` method to bind data to <xref:System.Web.UI.WebControls.Repeater> control. It requires a data class named Product.  
+  
+ [!code-csharp[System.Web.UI.DataBinder.Eval#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.ui.databinder.eval/cs/product.cs#1)]
+ [!code-vb[System.Web.UI.DataBinder.Eval#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.ui.databinder.eval/vb/product.vb#1)]  
+  
+ The code-behind file loads test data and binds that data to a <xref:System.Web.UI.WebControls.Repeater> control.  
+  
+ [!code-csharp[System.Web.UI.DataBinder.Eval#2](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.ui.databinder.eval/cs/showproducts.aspx.cs#2)]
+ [!code-vb[System.Web.UI.DataBinder.Eval#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.ui.databinder.eval/vb/showproducts.aspx.vb#2)]  
+  
+ In the declarative syntax for the <xref:System.Web.UI.WebControls.Repeater> control, you use the <xref:System.Web.UI.DataBinder.Eval%2A> method with `Container.DataItem` for the `container` parameter.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.DataBinder.Eval#3](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.ui.databinder.eval/cs/showproducts3.aspx#3)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.DataBinder.Eval#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.ui.databinder.eval/vb/showproducts3.aspx#3)]  -->  
+  
+ Or, you can call `Eval` function and not include the `container` parameter.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.DataBinder.Eval#4](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.ui.databinder.eval/cs/showproducts4.aspx#4)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.DataBinder.Eval#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.ui.databinder.eval/vb/showproducts4.aspx#4)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="expression" /> is <see langword="null" /> or is an empty string after trimming.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Eval">
+      <MemberSignature Language="C#" Value="public static string Eval (object container, string expression, string format);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Eval(object container, string expression, string format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBinder.Eval(System.Object,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="container" Type="System.Object" />
+        <Parameter Name="expression" Type="System.String" />
+        <Parameter Name="format" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="container">The object reference against which the expression is evaluated. This must be a valid object identifier in the page's specified language.</param>
+        <param name="expression">The navigation path from the <c>container</c> object to the public property value to be placed in the bound control property. This must be a string of property or field names separated by periods, such as <c>Tables[0].DefaultView.[0].Price</c> in C# or <c>Tables(0).DefaultView.(0).Price</c> in Visual Basic.</param>
+        <param name="format">A .NET Framework format string (like those used by <see cref="M:System.String.Format(System.String,System.Object)" />) that converts the <see cref="T:System.Object" /> instance returned by the data-binding expression to a <see cref="T:System.String" /> object.</param>
+        <summary>Evaluates data-binding expressions at run time and formats the result as a string.</summary>
+        <returns>A <see cref="T:System.String" /> object that results from evaluating the data-binding expression and converting it to a string type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of `expression` must evaluate to a public property.  
+  
+ For more information about format strings in the .NET Framework, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
+  
+ This method is automatically called when you create data bindings in a rapid application development (RAD) designer such as Visual Studio. You can also use it declaratively to convert the <xref:System.Object> resulting from the data-binding expression to a <xref:System.String>.  To use the method declaratively, use the `<%#   %>` expression syntax, as used in standard ASP.NET data binding.  
+  
+ This method is particularly useful when binding data to controls that are in a templated list.  
+  
+> [!NOTE]
+>  Because this method performs late-bound evaluation, using reflection at run time, it can cause performance to noticeably slow compared to standard ASP.NET data-binding syntax. Use this method judiciously, particularly when string formatting is not required.  
+  
+ For any of the list Web controls, such as <xref:System.Web.UI.WebControls.GridView>, <xref:System.Web.UI.WebControls.DetailsView>, <xref:System.Web.UI.WebControls.DataList>, or <xref:System.Web.UI.WebControls.Repeater>, `container` should be `Container.DataItem`. If you are binding against the page, `container` should be `Page`.  
+  
+ Starting in .NET Framework 4.5, you can use model binding to simplify some of the tasks that you had to perform through data-binding in earlier versions. For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
+  
+   
+  
+## Examples  
+ The following examples show how to use the `Eval` method to bind data to <xref:System.Web.UI.WebControls.Repeater> control. It requires a data class named Product.  
+  
+ [!code-csharp[System.Web.UI.DataBinder.Eval#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.ui.databinder.eval/cs/product.cs#1)]
+ [!code-vb[System.Web.UI.DataBinder.Eval#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.ui.databinder.eval/vb/product.vb#1)]  
+  
+ The code-behind file loads test data and binds that data to a <xref:System.Web.UI.WebControls.Repeater> control.  
+  
+ [!code-csharp[System.Web.UI.DataBinder.Eval#2](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.ui.databinder.eval/cs/showproducts.aspx.cs#2)]
+ [!code-vb[System.Web.UI.DataBinder.Eval#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.ui.databinder.eval/vb/showproducts.aspx.vb#2)]  
+  
+ In the declarative syntax for the <xref:System.Web.UI.WebControls.Repeater> control, you use the <xref:System.Web.UI.DataBinder.Eval%2A> method with `Container.DataItem` for the `container` parameter.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.DataBinder.Eval#3](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.ui.databinder.eval/cs/showproducts3.aspx#3)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.DataBinder.Eval#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.ui.databinder.eval/vb/showproducts3.aspx#3)]  -->  
+  
+ Or, you can call `Eval` function and not include the `container` parameter.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.DataBinder.Eval#4](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.ui.databinder.eval/cs/showproducts4.aspx#4)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.DataBinder.Eval#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.ui.databinder.eval/vb/showproducts4.aspx#4)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataItem">
+      <MemberSignature Language="C#" Value="public static object GetDataItem (object container);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetDataItem(object container) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBinder.GetDataItem(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="container" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="container">The object reference against which the expression is evaluated. This must be a valid object identifier in the page's specified language.</param>
+        <summary>Retrieves an object's declared data item.</summary>
+        <returns>An object that represents the container's declared data item. Returns <see langword="null" /> if no data item is found or if the container evaluates to <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method calls the <xref:System.Web.UI.DataBinder.GetDataItem%28System.Object%2CSystem.Boolean%40%29> method, ignoring its `foundDataItem` parameter when returning the result.  
+  
+ An object's data item is identified in one of two ways. If the container object implements the <xref:System.Web.UI.IDataItemContainer> interface, the <xref:System.Web.UI.IDataItemContainer.DataItem%2A> property identifies the data item, and its value is returned. Otherwise, the method attempts to resolve and return a container property named "DataItem".  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataItem">
+      <MemberSignature Language="C#" Value="public static object GetDataItem (object container, out bool foundDataItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetDataItem(object container, bool foundDataItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBinder.GetDataItem(System.Object,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="container" Type="System.Object" />
+        <Parameter Name="foundDataItem" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="container">The object reference against which the expression is evaluated. This must be a valid object identifier in the page's specified language.</param>
+        <param name="foundDataItem">A Boolean value that indicates whether the data item was successfully resolved and returned. This parameter is passed uninitialized.</param>
+        <summary>Retrieves an object's declared data item, indicating success or failure.</summary>
+        <returns>An object that represents the container's declared data item. Returns <see langword="null" /> if no data item is found or if the container evaluates to <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An object's data item is identified two ways. If the container object implements the <xref:System.Web.UI.IDataItemContainer> interface, the <xref:System.Web.UI.IDataItemContainer.DataItem%2A> property identifies the data item, and is returned. Otherwise, the method attempts to resolve and return a container property named "DataItem".  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIndexedPropertyValue">
+      <MemberSignature Language="C#" Value="public static object GetIndexedPropertyValue (object container, string expr);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetIndexedPropertyValue(object container, string expr) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBinder.GetIndexedPropertyValue(System.Object,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="container" Type="System.Object" />
+        <Parameter Name="expr" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="container">The object reference against which <c>expr</c> is evaluated. This must be a valid object identifier in the specified language for the page.</param>
+        <param name="expr">The navigation path from the <c>container</c> object to the public property value to place in the bound control property. This must be a string of property or field names separated by periods, such as <c>Tables[0].DefaultView.[0].Price</c> in C# or <c>Tables(0).DefaultView.(0).Price</c> in Visual Basic.</param>
+        <summary>Retrieves the value of a property of the specified container and navigation path.</summary>
+        <returns>An object that results from the evaluation of the data-binding expression.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of `expr` must evaluate to a public property.  
+  
+ For any of the list Web controls, such as <xref:System.Web.UI.WebControls.GridView>, <xref:System.Web.UI.WebControls.DetailsView>, <xref:System.Web.UI.WebControls.DataList>, or <xref:System.Web.UI.WebControls.Repeater>, `container` should be `Container.DataItem`. If you are binding against the page, `container` should be `Page`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="container" /> is <see langword="null" />.  
+  
+ \- or -  
+  
+ <paramref name="expr" /> is <see langword="null" /> or an empty string ("").</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="expr" /> is not a valid indexed expression.  
+  
+ \- or -  
+  
+ <paramref name="expr" /> does not allow indexed access.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIndexedPropertyValue">
+      <MemberSignature Language="C#" Value="public static string GetIndexedPropertyValue (object container, string propName, string format);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetIndexedPropertyValue(object container, string propName, string format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBinder.GetIndexedPropertyValue(System.Object,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="container" Type="System.Object" />
+        <Parameter Name="propName" Type="System.String" />
+        <Parameter Name="format" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="container">The object reference against which the expression is evaluated. This must be a valid object identifier in the specified language for the page.</param>
+        <param name="propName">The name of the property that contains the value to retrieve.</param>
+        <param name="format">A string that specifies the format in which to display the results.</param>
+        <summary>Retrieves the value of the specified property for the specified container, and then formats the results.</summary>
+        <returns>The value of the specified property in the format specified by <paramref name="format" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataBinder.GetIndexedPropertyValue%2A> method invokes the <xref:System.Web.UI.DataBinder.GetIndexedPropertyValue%2A> method, and then uses the <xref:System.String.Format%2A?displayProperty=fullName> method to format the result as specified in the `format` parameter. A .NET Framework format string (like those used by <xref:System.String.Format%2A?displayProperty=fullName>) converts the <xref:System.Object> instance returned by the data-binding expression to a <xref:System.String> object.  
+  
+ Exceptions that are thrown for the <xref:System.Web.UI.DataBinder.GetIndexedPropertyValue%2A> method apply to the <xref:System.Web.UI.DataBinder.GetIndexedPropertyValue%2A> method as well.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.DataBinder.GetIndexedPropertyValue%2A> method declaratively to bind to an indexed value.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic DataBinder.Eval Example#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataBinder.Eval Example/CS/sourcecs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic DataBinder.Eval Example#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataBinder.Eval Example/VB/sourcevb.aspx#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPropertyValue">
+      <MemberSignature Language="C#" Value="public static object GetPropertyValue (object container, string propName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetPropertyValue(object container, string propName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBinder.GetPropertyValue(System.Object,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="container" Type="System.Object" />
+        <Parameter Name="propName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="container">The object that contains the property.</param>
+        <param name="propName">The name of the property that contains the value to retrieve.</param>
+        <summary>Retrieves the value of the specified property of the specified object.</summary>
+        <returns>The value of the specified property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataBinder.GetPropertyValue%2A> method is used to retrieve the value of a property in an object.  
+  
+   
+  
+## Examples  
+ The example for <xref:System.Web.UI.DataBinder> demonstrates the use of this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="container" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="propName" /> is <see langword="null" /> or an empty string ("").</exception>
+        <exception cref="T:System.Web.HttpException">The object in <paramref name="container" /> does not have the property specified by <paramref name="propName" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPropertyValue">
+      <MemberSignature Language="C#" Value="public static string GetPropertyValue (object container, string propName, string format);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPropertyValue(object container, string propName, string format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBinder.GetPropertyValue(System.Object,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="container" Type="System.Object" />
+        <Parameter Name="propName" Type="System.String" />
+        <Parameter Name="format" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="container">The object that contains the property.</param>
+        <param name="propName">The name of the property that contains the value to retrieve.</param>
+        <param name="format">A string that specifies the format in which to display the results.</param>
+        <summary>Retrieves the value of the specified property of the specified object, and then formats the results.</summary>
+        <returns>The value of the specified property in the format specified by <paramref name="format" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This version of the <xref:System.Web.UI.DataBinder.GetPropertyValue%2A> method is used to retrieve and format the value of a property in an object.  
+  
+   
+  
+## Examples  
+ The example for <xref:System.Web.UI.DataBinder> demonstrates the use of this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="container" /> is <see langword="null" />.  
+  
+ \- or -  
+  
+ <paramref name="propName" /> is <see langword="null" /> or an empty string ("").</exception>
+        <exception cref="T:System.Web.HttpException">The object in <paramref name="container" /> does not have the property specified by <paramref name="propName" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBindableType">
+      <MemberSignature Language="C#" Value="public static bool IsBindableType (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsBindableType(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBinder.IsBindableType(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">A <see cref="T:System.Type" /> that represents the data type to test.</param>
+        <summary>Determines whether the specified data type can be bound.</summary>
+        <returns>
+          <see langword="true" /> for types that can be automatically data bound in controls; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="Eval">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Uses reflection to parse and evaluate a data-binding expression against an object at run time.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Starting in .NET Framework 4.5, you can use model binding to simplify some of the tasks that you had to perform through data-binding in earlier versions. For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

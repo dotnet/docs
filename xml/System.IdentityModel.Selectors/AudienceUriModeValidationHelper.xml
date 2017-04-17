@@ -1,0 +1,42 @@
+<Type Name="AudienceUriModeValidationHelper" FullName="System.IdentityModel.Selectors.AudienceUriModeValidationHelper">
+  <TypeSignature Language="C#" Value="public static class AudienceUriModeValidationHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit AudienceUriModeValidationHelper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.AudienceUriModeValidationHelper" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A helper class for the <see cref="T:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator" /> class that verifies that the <see cref="P:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode" /> property is set to a valid value.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsDefined">
+      <MemberSignature Language="C#" Value="public static bool IsDefined (System.IdentityModel.Selectors.AudienceUriMode validationMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsDefined(valuetype System.IdentityModel.Selectors.AudienceUriMode validationMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.AudienceUriModeValidationHelper.IsDefined(System.IdentityModel.Selectors.AudienceUriMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="validationMode" Type="System.IdentityModel.Selectors.AudienceUriMode" />
+      </Parameters>
+      <Docs>
+        <param name="validationMode">The <see cref="T:System.IdentityModel.Selectors.AudienceUriMode" /> to verify its validity.</param>
+        <summary>Gets a value that indicates whether the value of the specified <see cref="T:System.IdentityModel.Selectors.AudienceUriMode" /> is valid.</summary>
+        <returns>
+          <see langword="true" /> when the <paramref name="validationMode" /> is <see cref="F:System.IdentityModel.Selectors.AudienceUriMode.Always" />, <see cref="F:System.IdentityModel.Selectors.AudienceUriMode.BearerKeyOnly" />, or <see cref="F:System.IdentityModel.Selectors.AudienceUriMode.Never" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,66 @@
+<Type Name="OperationAction" FullName="System.Data.Metadata.Edm.OperationAction">
+  <TypeSignature Language="C#" Value="public enum OperationAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OperationAction extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.OperationAction" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the list of possible actions when the parent <see langword="End" /> of the <see cref="T:System.Data.Metadata.Edm.RelationshipType" /> is deleted.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Cascade">
+      <MemberSignature Language="C#" Value="Cascade" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.OperationAction Cascade = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.OperationAction.Cascade" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.OperationAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When a parent <see langword="End" /> is deleted, its associated child ends are deleted as well.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.OperationAction None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.OperationAction.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.OperationAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Only a parent <see langword="End" /> can be deleted.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Restrict">
+      <MemberSignature Language="C#" Value="Restrict" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.OperationAction Restrict = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.OperationAction.Restrict" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.OperationAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A parent <see langword="End" /> cannot be deleted if it has one or more associated child ends.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

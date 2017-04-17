@@ -1,0 +1,86 @@
+<Type Name="Row" FullName="System.Data.Common.CommandTrees.ExpressionBuilder.Row">
+  <TypeSignature Language="C#" Value="public sealed class Row" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Row extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.ExpressionBuilder.Row" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a constructor-like means of calling <see cref="M:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.NewRow(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Data.Common.CommandTrees.DbExpression}})" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Row (System.Collections.Generic.KeyValuePair&lt;string,System.Data.Common.CommandTrees.DbExpression&gt; columnValue, System.Collections.Generic.KeyValuePair&lt;string,System.Data.Common.CommandTrees.DbExpression&gt;[] columnValues);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Collections.Generic.KeyValuePair`2&lt;string, class System.Data.Common.CommandTrees.DbExpression&gt; columnValue, valuetype System.Collections.Generic.KeyValuePair`2&lt;string, class System.Data.Common.CommandTrees.DbExpression&gt;[] columnValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.Row.#ctor(System.Collections.Generic.KeyValuePair{System.String,System.Data.Common.CommandTrees.DbExpression},System.Collections.Generic.KeyValuePair{System.String,System.Data.Common.CommandTrees.DbExpression}[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="columnValue" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Data.Common.CommandTrees.DbExpression&gt;" />
+        <Parameter Name="columnValues" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Data.Common.CommandTrees.DbExpression&gt;[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="columnValue">A key-value pair that provides the first column in the new row instance. (required)</param>
+        <param name="columnValues">A key-value pairs that provide any subsequent columns in the new row instance. (optional)</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Common.CommandTrees.ExpressionBuilder.Row" /> class with the specified first column value and optional successive column values.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression op_Implicit (System.Data.Common.CommandTrees.ExpressionBuilder.Row row);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(class System.Data.Common.CommandTrees.ExpressionBuilder.Row row) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.Row.op_Implicit(System.Data.Common.CommandTrees.ExpressionBuilder.Row)~System.Data.Common.CommandTrees.DbExpression" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="row" Type="System.Data.Common.CommandTrees.ExpressionBuilder.Row" />
+      </Parameters>
+      <Docs>
+        <param name="row">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToExpression">
+      <MemberSignature Language="C#" Value="public System.Data.Common.CommandTrees.DbNewInstanceExpression ToExpression ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Common.CommandTrees.DbNewInstanceExpression ToExpression() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.Row.ToExpression" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbNewInstanceExpression</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbNewInstanceExpression" /> that constructs a new row based on the columns contained in this Row instance.</summary>
+        <returns>A new DbNewInstanceExpression that constructs a row with the same column names and DbExpression values as this Row instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

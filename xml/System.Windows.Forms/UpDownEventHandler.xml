@@ -1,0 +1,25 @@
+<Type Name="UpDownEventHandler" FullName="System.Windows.Forms.UpDownEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void UpDownEventHandler(object source, UpDownEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UpDownEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.UpDownEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="source" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Forms.UpDownEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="source">The source of the event.</param>
+    <param name="e">An <see cref="T:System.Windows.Forms.UpDownEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle an event for an internal class.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

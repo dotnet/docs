@@ -1,0 +1,137 @@
+<Type Name="CloseReason" FullName="System.Windows.Forms.CloseReason">
+  <TypeSignature Language="C#" Value="public enum CloseReason" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CloseReason extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.CloseReason" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the reason that a form was closed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Form.FormClosing> and <xref:System.Windows.Forms.Form.FormClosed> events are raised when a <xref:System.Windows.Forms.Form> is closed, either through user action or programmatically. Handlers for these events receive parameters of type <xref:System.Windows.Forms.FormClosingEventArgs> and <xref:System.Windows.Forms.FormClosedEventArgs>, respectively. Both of these event argument classes use the <xref:System.Windows.Forms.CloseReason> enumeration.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ApplicationExitCall">
+      <MemberSignature Language="C#" Value="ApplicationExitCall" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.CloseReason ApplicationExitCall = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.CloseReason.ApplicationExitCall" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.CloseReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="M:System.Windows.Forms.Application.Exit" /> method of the <see cref="T:System.Windows.Forms.Application" /> class was invoked.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FormOwnerClosing">
+      <MemberSignature Language="C#" Value="FormOwnerClosing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.CloseReason FormOwnerClosing = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.CloseReason.FormOwnerClosing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.CloseReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The owner form is closing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MdiFormClosing">
+      <MemberSignature Language="C#" Value="MdiFormClosing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.CloseReason MdiFormClosing = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.CloseReason.MdiFormClosing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.CloseReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The parent form of this multiple document interface (MDI) form is closing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.CloseReason None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.CloseReason.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.CloseReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The cause of the closure was not defined or could not be determined.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TaskManagerClosing">
+      <MemberSignature Language="C#" Value="TaskManagerClosing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.CloseReason TaskManagerClosing = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.CloseReason.TaskManagerClosing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.CloseReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Microsoft Windows Task Manager is closing the application.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UserClosing">
+      <MemberSignature Language="C#" Value="UserClosing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.CloseReason UserClosing = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.CloseReason.UserClosing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.CloseReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The user is closing the form through the user interface (UI), for example by clicking the **Close** button on the form window, selecting **Close** from the window's control menu, or pressing ALT+F4.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowsShutDown">
+      <MemberSignature Language="C#" Value="WindowsShutDown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.CloseReason WindowsShutDown = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.CloseReason.WindowsShutDown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.CloseReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The operating system is closing all applications before shutting down.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

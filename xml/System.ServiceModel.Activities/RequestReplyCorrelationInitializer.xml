@@ -1,0 +1,34 @@
+<Type Name="RequestReplyCorrelationInitializer" FullName="System.ServiceModel.Activities.RequestReplyCorrelationInitializer">
+  <TypeSignature Language="C#" Value="public sealed class RequestReplyCorrelationInitializer : System.ServiceModel.Activities.CorrelationInitializer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RequestReplyCorrelationInitializer extends System.ServiceModel.Activities.CorrelationInitializer" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.RequestReplyCorrelationInitializer" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Activities.CorrelationInitializer</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Initializes the associated <see cref="P:System.ServiceModel.Activities.CorrelationInitializer.CorrelationHandle" /> based on the <see cref="T:System.ServiceModel.Channels.RequestContext" /> that is created for the two-way operation.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RequestReplyCorrelationInitializer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.RequestReplyCorrelationInitializer.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.RequestReplyCorrelationInitializer" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

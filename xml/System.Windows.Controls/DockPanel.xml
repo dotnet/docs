@@ -1,0 +1,225 @@
+<Type Name="DockPanel" FullName="System.Windows.Controls.DockPanel">
+  <TypeSignature Language="C#" Value="public class DockPanel : System.Windows.Controls.Panel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi DockPanel extends System.Windows.Controls.Panel" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DockPanel" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Controls.Panel</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines an area where you can arrange child elements either horizontally or vertically, relative to each other.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Controls.DockPanel> contains a collection of <xref:System.Windows.UIElement> objects, which are in the <xref:System.Windows.Controls.Panel.Children%2A> property.  
+  
+ The <xref:System.Windows.Controls.DockPanel.SetDock%2A> method changes the position of an element relative to other elements within the same container. Alignment properties, such as <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>, change the position of an element relative to its parent element.  
+  
+ If you set the <xref:System.Windows.Controls.DockPanel.LastChildFill%2A> property to `true`, which is the default setting, the last child element of a <xref:System.Windows.Controls.DockPanel> always fills the remaining space, regardless of any other dock value that you set on the last child element. To dock a child element in another direction, you must set the <xref:System.Windows.Controls.DockPanel.LastChildFill%2A> property to `false` and must also specify an explicit dock direction for the last child element.  
+  
+ Panel elements do not receive focus by default. To compel a panel element to receive focus, set the <xref:System.Windows.UIElement.Focusable%2A> property to `true`.  
+  
+ **Note:** The position of child elements of a <xref:System.Windows.Controls.DockPanel> on the screen is determined by the <xref:System.Windows.Controls.DockPanel.Dock%2A> property of the respective child elements *and* the relative order of those child elements under the <xref:System.Windows.Controls.DockPanel>. Therefore, a set of child elements with the same Dock property values can be positioned differently on the screen depending on the order of these children under the <xref:System.Windows.Controls.DockPanel>. Child ordering effects positioning because the <xref:System.Windows.Controls.DockPanel> iterates through its child elements in order, setting the position of each element depending on remaining space.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DockPanel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DockPanel.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DockPanel" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArrangeOverride">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Size ArrangeOverride (System.Windows.Size arrangeSize);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size ArrangeOverride(valuetype System.Windows.Size arrangeSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DockPanel.ArrangeOverride(System.Windows.Size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="arrangeSize" Type="System.Windows.Size" />
+      </Parameters>
+      <Docs>
+        <param name="arrangeSize">The <see cref="T:System.Windows.Size" /> this element uses to arrange its child elements.</param>
+        <summary>Arranges the content (child elements) of a <see cref="T:System.Windows.Controls.DockPanel" /> element.</summary>
+        <returns>The <see cref="T:System.Windows.Size" /> that represents the arranged size of this <see cref="T:System.Windows.Controls.DockPanel" /> element.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DockProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DockProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DockProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DockPanel.DockProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.DockPanel.Dock" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDock">
+      <MemberSignature Language="C#" Value="public static System.Windows.Controls.Dock GetDock (System.Windows.UIElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Controls.Dock GetDock(class System.Windows.UIElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DockPanel.GetDock(System.Windows.UIElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Windows.AttachedPropertyBrowsableForChildren</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Dock</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.UIElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element from which the property value is read.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Controls.DockPanel.Dock" /> attached property for a specified <see cref="T:System.Windows.UIElement" />.</summary>
+        <returns>The <see cref="P:System.Windows.Controls.DockPanel.Dock" /> property value for the element.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastChildFill">
+      <MemberSignature Language="C#" Value="public bool LastChildFill { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LastChildFill" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DockPanel.LastChildFill" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the last child element within a <see cref="T:System.Windows.Controls.DockPanel" /> stretches to fill the remaining available space.</summary>
+        <value>
+          <see langword="true" /> if the last child element stretches to fill the remaining space; otherwise <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you set the <xref:System.Windows.Controls.DockPanel.LastChildFill%2A> property to `true`, which is the default setting, the last child element of a <xref:System.Windows.Controls.DockPanel> always fills the remaining space, regardless of any other dock value that you set on the last child element. To dock a child element in another direction, you must set the <xref:System.Windows.Controls.DockPanel.LastChildFill%2A> property to `false` and must also specify an explicit dock direction on the last child element.  
+  
+<a name="dependencyPropertyInfo_LastChildFill"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.DockPanel>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsArrange%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastChildFillProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty LastChildFillProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty LastChildFillProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DockPanel.LastChildFillProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.DockPanel.LastChildFill" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeasureOverride">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size constraint);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size constraint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DockPanel.MeasureOverride(System.Windows.Size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="constraint" Type="System.Windows.Size" />
+      </Parameters>
+      <Docs>
+        <param name="constraint">A maximum <see cref="T:System.Windows.Size" /> to not exceed.</param>
+        <summary>Measures the child elements of a <see cref="T:System.Windows.Controls.DockPanel" /> prior to arranging them during the <see cref="M:System.Windows.Controls.DockPanel.ArrangeOverride(System.Windows.Size)" /> pass.</summary>
+        <returns>A <see cref="T:System.Windows.Size" /> that represents the element size you want.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Controls.DockPanel> determines its size by analyzing the sizing properties and <xref:System.Windows.Controls.DockPanel.Dock%2A> property value of its child elements. A child element can occupy all the space on the side where it is docked. Child elements that are docked to the `Left` or `Right` are granted all the vertical space for their entire width. Child elements that are docked to the `Top` or `Bottom` are granted all the horizontal space for their entire height.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDock">
+      <MemberSignature Language="C#" Value="public static void SetDock (System.Windows.UIElement element, System.Windows.Controls.Dock dock);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetDock(class System.Windows.UIElement element, valuetype System.Windows.Controls.Dock dock) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DockPanel.SetDock(System.Windows.UIElement,System.Windows.Controls.Dock)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.UIElement" />
+        <Parameter Name="dock" Type="System.Windows.Controls.Dock" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element to which the attached property is written.</param>
+        <param name="dock">The needed <see cref="T:System.Windows.Controls.Dock" /> value.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Controls.DockPanel.Dock" /> attached property to a specified element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.DockPanel.SetDock%2A> method changes the position of a child element relative to other child elements within the same container. Alignment properties, such as <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>, change the position of a child element relative to its parent element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,323 @@
+<Type Name="RibbonControlLength" FullName="System.Windows.Controls.Ribbon.RibbonControlLength">
+  <TypeSignature Language="C#" Value="public struct RibbonControlLength : IEquatable&lt;System.Windows.Controls.Ribbon.RibbonControlLength&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit RibbonControlLength extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Windows.Controls.Ribbon.RibbonControlLength&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonControlLength" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;System.Windows.Controls.Ribbon.RibbonControlLength&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Controls.Ribbon.RibbonControlLengthConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents widths in a <see cref="T:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RibbonControlLength (double pixels);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 pixels) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlLength.#ctor(System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="pixels" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="pixels">The absolute pixel value to initialize the length to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Ribbon.RibbonControlLength" /> structure with an absolute value in pixels.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="pixels" /> is <see cref="F:System.Double.NaN" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RibbonControlLength (double value, System.Windows.Controls.Ribbon.RibbonControlLengthUnitType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 value, valuetype System.Windows.Controls.Ribbon.RibbonControlLengthUnitType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlLength.#ctor(System.Double,System.Windows.Controls.Ribbon.RibbonControlLengthUnitType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+        <Parameter Name="type" Type="System.Windows.Controls.Ribbon.RibbonControlLengthUnitType" />
+      </Parameters>
+      <Docs>
+        <param name="value">The requested size of the element.</param>
+        <param name="type">The type that is used to determine how the size of the element is calculated.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Ribbon.RibbonControlLength" /> structure with the specified value and length unit.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is <see cref="F:System.Double.NaN" />.  
+  
+ -or-  
+  
+ <paramref name="type" /> is <see cref="F:System.Windows.Controls.Ribbon.RibbonControlLengthUnitType.Star" /> and <paramref name="value" /> is <see cref="F:System.Double.NegativeInfinity" /> or <see cref="F:System.Double.PositiveInfinity" />.  
+  
+ -or-  
+  
+ <paramref name="type" /> is not <see cref="F:System.Windows.Controls.Ribbon.RibbonControlLengthUnitType.Auto" />, <see cref="F:System.Windows.Controls.Ribbon.RibbonControlLengthUnitType.Pixel" />, <see cref="F:System.Windows.Controls.Ribbon.RibbonControlLengthUnitType.Star" />, or <see cref="F:System.Windows.Controls.Ribbon.RibbonControlLengthUnitType.Item" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Auto">
+      <MemberSignature Language="C#" Value="public static System.Windows.Controls.Ribbon.RibbonControlLength Auto { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Controls.Ribbon.RibbonControlLength Auto" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlLength.Auto" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Ribbon.RibbonControlLength</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Windows.Controls.Ribbon.RibbonControlLength" /> structure that represents the standard automatic sizing mode.</summary>
+        <value>A <see cref="T:System.Windows.Controls.Ribbon.RibbonControlLength" /> structure that represents the standard automatic sizing mode.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlLength.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare to the current instance.</param>
+        <summary>Determines whether the specified object is equal to the current <see cref="T:System.Windows.Controls.Ribbon.RibbonControlLength" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified object is a <see cref="T:System.Windows.Controls.Ribbon.RibbonControlLength" /> with the same value and sizing mode as the current <see cref="T:System.Windows.Controls.Ribbon.RibbonControlLength" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Windows.Controls.Ribbon.RibbonControlLength other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Windows.Controls.Ribbon.RibbonControlLength other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlLength.Equals(System.Windows.Controls.Ribbon.RibbonControlLength)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Windows.Controls.Ribbon.RibbonControlLength" />
+      </Parameters>
+      <Docs>
+        <param name="other">The <see cref="T:System.Windows.Controls.Ribbon.RibbonControlLength" /> to compare to the current instance.</param>
+        <summary>Determines whether the specified <see cref="T:System.Windows.Controls.Ribbon.RibbonControlLength" /> is equal to the current <see cref="T:System.Windows.Controls.Ribbon.RibbonControlLength" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified object is a <see cref="T:System.Windows.Controls.Ribbon.RibbonControlLength" /> with the same value and sizing mode as the current <see cref="T:System.Windows.Controls.Ribbon.RibbonControlLength" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlLength.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a hash code for the <see cref="T:System.Windows.Controls.Ribbon.RibbonControlLength" />.</summary>
+        <returns>A hash code for the current <see cref="T:System.Windows.Controls.Ribbon.RibbonControlLength" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAbsolute">
+      <MemberSignature Language="C#" Value="public bool IsAbsolute { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAbsolute" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlLength.IsAbsolute" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this instance sizes elements based on a fixed pixel or logical value.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlLength.RibbonControlLengthUnitType" /> property is set to <see cref="F:System.Windows.Controls.Ribbon.RibbonControlLengthUnitType.Pixel" /> or <see cref="F:System.Windows.Controls.Ribbon.RibbonControlLengthUnitType.Item" />; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAuto">
+      <MemberSignature Language="C#" Value="public bool IsAuto { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAuto" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlLength.IsAuto" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this instance automatically sizes elements.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlLength.RibbonControlLengthUnitType" /> property is set to <see cref="F:System.Windows.Controls.Ribbon.RibbonControlLengthUnitType.Auto" />; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsStar">
+      <MemberSignature Language="C#" Value="public bool IsStar { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsStar" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlLength.IsStar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this instance automatically sizes elements based on a weighted proportion of available space.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlLength.RibbonControlLengthUnitType" /> property is set to <see cref="F:System.Windows.Controls.Ribbon.RibbonControlLengthUnitType.Star" />; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Controls.Ribbon.RibbonControlLength length1, System.Windows.Controls.Ribbon.RibbonControlLength length2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Controls.Ribbon.RibbonControlLength length1, valuetype System.Windows.Controls.Ribbon.RibbonControlLength length2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlLength.op_Equality(System.Windows.Controls.Ribbon.RibbonControlLength,System.Windows.Controls.Ribbon.RibbonControlLength)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="length1" Type="System.Windows.Controls.Ribbon.RibbonControlLength" />
+        <Parameter Name="length2" Type="System.Windows.Controls.Ribbon.RibbonControlLength" />
+      </Parameters>
+      <Docs>
+        <param name="length1">The first <see cref="T:System.Windows.Controls.Ribbon.RibbonControlLength" /> instance to compare.</param>
+        <param name="length2">The second <see cref="T:System.Windows.Controls.Ribbon.RibbonControlLength" /> instance to compare.</param>
+        <summary>Compares two <see cref="T:System.Windows.Controls.Ribbon.RibbonControlLength" /> structures for equality.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:System.Windows.Controls.Ribbon.RibbonControlLength" /> instances have the same value and sizing mode; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Controls.Ribbon.RibbonControlLength length1, System.Windows.Controls.Ribbon.RibbonControlLength length2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Controls.Ribbon.RibbonControlLength length1, valuetype System.Windows.Controls.Ribbon.RibbonControlLength length2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlLength.op_Inequality(System.Windows.Controls.Ribbon.RibbonControlLength,System.Windows.Controls.Ribbon.RibbonControlLength)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="length1" Type="System.Windows.Controls.Ribbon.RibbonControlLength" />
+        <Parameter Name="length2" Type="System.Windows.Controls.Ribbon.RibbonControlLength" />
+      </Parameters>
+      <Docs>
+        <param name="length1">The first <see cref="T:System.Windows.Controls.Ribbon.RibbonControlLength" /> instance to compare.</param>
+        <param name="length2">The second <see cref="T:System.Windows.Controls.Ribbon.RibbonControlLength" /> instance to compare.</param>
+        <summary>Compares two <see cref="T:System.Windows.Controls.Ribbon.RibbonControlLength" /> structures to determine whether they are not equal.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:System.Windows.Controls.Ribbon.RibbonControlLength" /> instances do not have the same value or sizing mode; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RibbonControlLengthUnitType">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.Ribbon.RibbonControlLengthUnitType RibbonControlLengthUnitType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.Ribbon.RibbonControlLengthUnitType RibbonControlLengthUnitType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlLength.RibbonControlLengthUnitType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Ribbon.RibbonControlLengthUnitType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type that is used to determine how the size of the element is calculated.</summary>
+        <value>One of the enumeration values that specifies how the size of the element is calculated.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlLength.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string that represents the current object.</summary>
+        <returns>A string that represent the current object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public double Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Value" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlLength.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the absolute value of the <see cref="T:System.Windows.Controls.Ribbon.RibbonControlLength" /> in pixels or logical units.</summary>
+        <value>The absolute value of the <see cref="T:System.Windows.Controls.Ribbon.RibbonControlLength" /> in pixels or logical units, or 1.0 if the <see cref="P:System.Windows.Controls.Ribbon.RibbonControlLength.RibbonControlLengthUnitType" /> property is set to <see cref="F:System.Windows.Controls.Ribbon.RibbonControlLengthUnitType.Auto" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

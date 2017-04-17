@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrFinancial_LifeNEZero"
 ms.assetid: c402da97-a2b2-4219-a83a-0cebbfdffef2
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

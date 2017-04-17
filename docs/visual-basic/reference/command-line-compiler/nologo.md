@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "/nologo compiler option [Visual Basic]"
 ms.assetid: 25ef54b6-d676-4639-a2d2-a747a158bc07
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

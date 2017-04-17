@@ -1,0 +1,344 @@
+<Type Name="GroupPrincipal" FullName="System.DirectoryServices.AccountManagement.GroupPrincipal">
+  <TypeSignature Language="C#" Value="public class GroupPrincipal : System.DirectoryServices.AccountManagement.Principal" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GroupPrincipal extends System.DirectoryServices.AccountManagement.Principal" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.GroupPrincipal" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.DirectoryServices.AccountManagement.Principal</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.DirectoryServices.AccountManagement.DirectoryRdnPrefix("CN")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical(System.Security.SecurityCriticalScope.Everything)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Encapsulates group accounts. Group accounts can be arbitrary collections of principal objects or accounts created for administrative purposes.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GroupPrincipal (System.DirectoryServices.AccountManagement.PrincipalContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.AccountManagement.PrincipalContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.GroupPrincipal.#ctor(System.DirectoryServices.AccountManagement.PrincipalContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> class by using the specified context.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The group principal account is not persisted when it is created. To persist the account, call the <xref:System.DirectoryServices.AccountManagement.Principal.Save%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GroupPrincipal (System.DirectoryServices.AccountManagement.PrincipalContext context, string samAccountName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.AccountManagement.PrincipalContext context, string samAccountName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.GroupPrincipal.#ctor(System.DirectoryServices.AccountManagement.PrincipalContext,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+        <Parameter Name="samAccountName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
+        <param name="samAccountName">The SAM account name for this principal.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> class and assigns it to the specified context and SAM account name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The group principal account is not persisted when it is created. To persist the account, call the <xref:System.DirectoryServices.AccountManagement.Principal.Save%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public override void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.GroupPrincipal.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Disposes the current instance of the <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindByIdentity">
+      <MemberSignature Language="C#" Value="public static System.DirectoryServices.AccountManagement.GroupPrincipal FindByIdentity (System.DirectoryServices.AccountManagement.PrincipalContext context, string identityValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.AccountManagement.GroupPrincipal FindByIdentity(class System.DirectoryServices.AccountManagement.PrincipalContext context, string identityValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.GroupPrincipal.FindByIdentity(System.DirectoryServices.AccountManagement.PrincipalContext,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.GroupPrincipal</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+        <Parameter Name="identityValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
+        <param name="identityValue">The identity of the group principal. This parameter can be any format that is contained in the <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration.</param>
+        <summary>Returns a group principal object that matches the specified identity value.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> object that matches the specified identity value and type, or null if no matches are found.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.MultipleMatchesException">Multiple group principal objects matching the current group object were found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FindByIdentity">
+      <MemberSignature Language="C#" Value="public static System.DirectoryServices.AccountManagement.GroupPrincipal FindByIdentity (System.DirectoryServices.AccountManagement.PrincipalContext context, System.DirectoryServices.AccountManagement.IdentityType identityType, string identityValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.AccountManagement.GroupPrincipal FindByIdentity(class System.DirectoryServices.AccountManagement.PrincipalContext context, valuetype System.DirectoryServices.AccountManagement.IdentityType identityType, string identityValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.GroupPrincipal.FindByIdentity(System.DirectoryServices.AccountManagement.PrincipalContext,System.DirectoryServices.AccountManagement.IdentityType,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.GroupPrincipal</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+        <Parameter Name="identityType" Type="System.DirectoryServices.AccountManagement.IdentityType" />
+        <Parameter Name="identityValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
+        <param name="identityType">A <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration value that specifies the format of the <c>identityValue</c> parameter.</param>
+        <param name="identityValue">The identity of the group principal. This parameter can be any format that is contained in the <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration.</param>
+        <summary>Returns a group principal object that matches the specified identity type, and value. This version of the <see cref="Overlaod:System.DirectoryServices.AccountManagement.GroupPrincipal.FindByIdentity" /> method determines the format of the identity value.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.GroupPrincipal" /> that matches the specified identity value and type, or null if no matches are found.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.MultipleMatchesException">Multiple group principal objects matching the current group object were found.</exception>
+        <exception cref="T:System.ComponenetModel.InvalidEnumerationOperatorException">The identity value is not a valid <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMembers">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.Principal&gt; GetMembers ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.AccountManagement.PrincipalSearchResult`1&lt;class System.DirectoryServices.AccountManagement.Principal&gt; GetMembers() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.GroupPrincipal.GetMembers" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.Principal&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a collection of the principal objects that is contained in the group.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult'1" /> object that contains the principal objects that are members of the group, or an empty collection if the group has no members.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does not search the current group recursively. Therefore, group objects may be returned in the principal object collection.  
+  
+ Members are returned without respect to the context. For example, if an AD DS context based at "CN=SpecialUsers,DC=Fabrikam,DC=com", the PrincipalFindResult set will include group members that are located under "CN=NormalUsers,DC=Fabrikam,DC=com" also, even though they fall under a scope that is not part of the context that is searched. The returned principal collection may also contain members that are located in a different store than the group.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMembers">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.Principal&gt; GetMembers (bool recursive);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.AccountManagement.PrincipalSearchResult`1&lt;class System.DirectoryServices.AccountManagement.Principal&gt; GetMembers(bool recursive) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.GroupPrincipal.GetMembers(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.Principal&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="recursive" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="recursive">A Boolean value that specifies whether the group is searched recursively.</param>
+        <summary>Returns a collection of the principal objects that is contained in the group. When the recursive flag is set to true, this method searches the current group recursively and returns all nested group members.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult'1" /> object that contains the principal objects that are members of the group, or an empty collection if the group has no members.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned principal collection does not contain group objects when the recursive flag is set to `true`; only leaf nodes are returned. For example, when a group that contains a computer object and a group object (with only user principals) is searched recursively, the returned collection contains the computer object and the user principal objects in the nested group. Since the group object is not a leaf, even when it is empty, it is not returned in the recursive search.  When the recursive flag is set to `false`, the returned collection may contain group objects.  
+  
+ Members are returned without respect to the context. For example, if an AD DS context based at "CN=SpecialUsers,DC=Fabrikam,DC=com", the PrincipalFindResult set will include group members that are located under "CN=NormalUsers,DC=Fabrikam,DC=com" also, even though they fall under a scope that is not part of the context that is searched. The returned principal collection may also contain members that are located in a different store than the group.  
+  
+   
+  
+## Examples  
+ The following code connects to the LDAP domain "fabrikam.com" with the username set to "administrator" and the password set to "SecretPwd123" in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor.  
+  
+ A search is performed to find the group that has the name "Domain Admins" under the container specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor "DC=fabrikam,DC=com." If the group is found, all the principals that are members of this group, which includes recursive members, are then enumerated  
+  
+```  
+PrincipalContext ctx = new PrincipalContext(ContextType.Domain,                                                                      
+                                            "fabrikam.com",   
+                                            "DC=fabrikam,DC=com",   
+                                            "administrator",   
+                                            "SecretPwd123");  
+  
+GroupPrincipal grp = GroupPrincipal.FindByIdentity(ctx,   
+                                                   IdentityType.Name,   
+                                                   "Domain Admins");  
+  
+if (grp != null)  
+{  
+    foreach (Principal p in grp.GetMembers(true))  
+    {  
+         Console.WriteLine(p.Name);  
+    }  
+    grp.Dispose();  
+}  
+  
+ctx.Dispose();   
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupScope">
+      <MemberSignature Language="C#" Value="public Nullable&lt;System.DirectoryServices.AccountManagement.GroupScope&gt; GroupScope { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DirectoryServices.AccountManagement.GroupScope&gt; GroupScope" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.GroupPrincipal.GroupScope" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DirectoryServices.AccountManagement.GroupScope&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Nullable <see cref="T:System.DirectoryServices.AccountManagement.GroupScope" /> enumeration that specifies the scope for this group principal.</summary>
+        <value>A nullable <see cref="T:System.DirectoryServices.AccountManagement.GroupScope" /> enumeration value that specifies the scope of this group or null if no scope has been set.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The application may not set this property to null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSecurityGroup">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsSecurityGroup { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsSecurityGroup" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.GroupPrincipal.IsSecurityGroup" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Nullable Boolean value that indicates whether the group is security-enabled.</summary>
+        <value>
+          <see langword="true" /> if the group is security enabled, or null if the group has not been persisted; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this property returns false, the group is temporarily not security-enabled. When the [IsSecurityGroup](assetId:///IsSecurityGroup?qualifyHint=False&amp;autoUpgrade=True) property is reset to true later, the group will have the same properties as before it was set to false.  
+  
+ If the principal has not been persisted in the store, this property returns null. After the principal is persisted, the default security-enabled setting depends on the store. The AD DS and AD LDS stores disable new principals when they are persisted, whereas SAM enables new principals when they are persisted.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The application may not set this property to null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Members">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.AccountManagement.PrincipalCollection Members { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.AccountManagement.PrincipalCollection Members" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.GroupPrincipal.Members" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.PrincipalCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of principal objects that represent the members of the group.</summary>
+        <value>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalCollection" /> object that contains the principal objects that represent the members of the group.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For AD DS groups, the <xref:System.DirectoryServices.AccountManagement.GroupPrincipal.Members%2A> property includes user principals that are members of the group because of their primaryId Attribute. When the group contains these types of members, the following restrictions apply:  
+  
+-   The <xref:System.DirectoryServices.AccountManagment.PrincipalCollection.Remove%2A> method cannot be used to remove members that are part of the group because of their primaryId Attribute.  
+  
+-   The <xref:System.DirectoryServices.AccountManagment.PrincipalCollection.Clear%2A> method cannot be used to clear members that are part of the group because of their primaryId Attribute.  
+  
+   
+  
+## Examples  
+ The following code connects to the LDAP domain "fabrikam.com" with the username set to "administrator" and the password set to "SecretPwd123" in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor.  
+  
+ A search is performed to find the group that has name "Domain Admins" under the container specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor, "DC=fabrikam,DC=com." If the group is found, the user who has name "John Smith" is removed from the group and the user who has name "Jim Daly" is added to the group  
+  
+```  
+PrincipalContext ctx = new PrincipalContext(ContextType.Domain,                                                                       
+                                            "fabrikam.com",                                                                               
+                                            "DC=fabrikam,DC=com",                                                                 
+                                            "administrator",   
+                                            "SecretPwd123");  
+  
+GroupPrincipal grp = GroupPrincipal.FindByIdentity(ctx,   
+                                                   IdentityType.Name,   
+                                                   "Domain Admins");  
+  
+if (grp != null)  
+{  
+    grp.Members.Remove(ctx, IdentityType.Name, "John Smith");            
+    grp.Members.Add(ctx, IdentityType.Name, "Jim Daly");  
+    grp.Save();  
+    grp.Dispose();  
+}  
+ctx.Dispose();  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,96 @@
+<Type Name="ReplicatorChildEventArgs" FullName="System.Workflow.Activities.ReplicatorChildEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class ReplicatorChildEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ReplicatorChildEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.ReplicatorChildEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains event arguments for the <see cref="T:System.Workflow.Activities.ReplicatorActivity" /> activity handlers called at initialization of child <see cref="T:System.Workflow.ComponentModel.Activity" /> instances in addition to when the child <see cref="T:System.Workflow.ComponentModel.Activity" /> instances are finished.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReplicatorChildEventArgs (object instanceData, System.Workflow.ComponentModel.Activity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object instanceData, class System.Workflow.ComponentModel.Activity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ReplicatorChildEventArgs.#ctor(System.Object,System.Workflow.ComponentModel.Activity)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="instanceData" Type="System.Object" />
+        <Parameter Name="activity" Type="System.Workflow.ComponentModel.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="instanceData">Object instance that represents the data/execution context associated with the current child <see cref="T:System.Workflow.ComponentModel.Activity" /> instance executed through the <see cref="T:System.Workflow.Activities.ReplicatorActivity" />.</param>
+        <param name="activity">Child <see cref="T:System.Workflow.ComponentModel.Activity" /> of the current <see cref="T:System.Workflow.Activities.ReplicatorActivity" /> instance that raised the event.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.ReplicatorChildEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Activity">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Activity Activity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Activity Activity" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.ReplicatorChildEventArgs.Activity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Activity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the child/template <see cref="T:System.Workflow.ComponentModel.Activity" /> of the <see cref="T:System.Workflow.Activities.ReplicatorActivity" /> instance that raised the event.</summary>
+        <value>An <see cref="T:System.Workflow.ComponentModel.Activity" /> class instance that represents the child activity of the <see cref="T:System.Workflow.Activities.ReplicatorActivity" /> that raised the event.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstanceData">
+      <MemberSignature Language="C#" Value="public object InstanceData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object InstanceData" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.ReplicatorChildEventArgs.InstanceData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current item in the <see cref="T:System.Workflow.Activities.ReplicatorActivity" /> enumerable collection.</summary>
+        <value>The current item in the <see cref="T:System.Workflow.Activities.ReplicatorActivity" /> enumerable collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The data for this item is frequently used to initialize values in the data context of the current child activity instance.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 83b3ddca-830a-4b71-9756-9e4bdf907302
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Find Attributes of Siblings with a Specific Name (XPath-LINQ to XML) (Visual Basic)

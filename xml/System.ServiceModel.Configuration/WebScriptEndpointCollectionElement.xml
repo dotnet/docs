@@ -1,0 +1,38 @@
+<Type Name="WebScriptEndpointCollectionElement" FullName="System.ServiceModel.Configuration.WebScriptEndpointCollectionElement">
+  <TypeSignature Language="C#" Value="public class WebScriptEndpointCollectionElement : System.ServiceModel.Configuration.StandardEndpointCollectionElement&lt;System.ServiceModel.Description.WebScriptEndpoint,System.ServiceModel.Configuration.WebScriptEndpointElement&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebScriptEndpointCollectionElement extends System.ServiceModel.Configuration.StandardEndpointCollectionElement`2&lt;class System.ServiceModel.Description.WebScriptEndpoint, class System.ServiceModel.Configuration.WebScriptEndpointElement&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WebScriptEndpointCollectionElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Configuration.StandardEndpointCollectionElement&lt;System.ServiceModel.Description.WebScriptEndpoint,System.ServiceModel.Configuration.WebScriptEndpointElement&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.ServiceModel.Description.WebScriptEndpoint</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="!1">System.ServiceModel.Configuration.WebScriptEndpointElement</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a collection of <see cref="T:System.ServiceModel.Description.WebScriptEndpoint" /> objects.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebScriptEndpointCollectionElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WebScriptEndpointCollectionElement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Configuration.WebScriptEndpointCollectionElement" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

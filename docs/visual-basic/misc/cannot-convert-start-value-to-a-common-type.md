@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrForLoop_CommonType3"
 ms.assetid: 21c45bcf-539c-488a-9cae-221558c37146
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

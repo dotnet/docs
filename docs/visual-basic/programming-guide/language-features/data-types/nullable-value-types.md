@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "data types [Visual Basic], nullable"
 ms.assetid: 9ac3b602-6f96-4e6d-96f7-cd4e81c468a6
 caps.latest.revision: 23
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

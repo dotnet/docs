@@ -1,0 +1,38 @@
+﻿<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      DataContext="{DynamicResource ExpenseData}"
+      WindowTitle="ExpenseIt - View Chart">
+  <Grid>
+    <Grid.ToolTip>
+      <TextBlock>Chart view</TextBlock>
+    </Grid.ToolTip>
+    <Grid.RowDefinitions>
+      <RowDefinition />
+      <RowDefinition Height="100" />
+    </Grid.RowDefinitions>
+    <!--<SnippetItemsControl>-->
+    <ItemsControl Style="{DynamicResource ExpenseChart}"
+                  Margin="20"
+                  Grid.Row="0" />
+    <!--</SnippetItemsControl>-->
+    <Rectangle Style="{DynamicResource TotalRectangle}"
+               Margin="15"
+               Grid.Row="1"
+               Grid.RowSpan="1" />
+    <StackPanel Style="{DynamicResource TotalExpensesFlow}"
+                Margin="15"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                Height="50"
+                Grid.Row="3">
+      <TextBlock Style="{DynamicResource TotalExpensesLabel}"
+                 VerticalAlignment="Center"
+                 Margin="10">Total Expenses:</TextBlock>
+      <TextBlock Style="{DynamicResource TotalExpenses}"
+                 Text="$" />
+      <TextBlock Style="{DynamicResource TotalExpenses}"
+                 HorizontalAlignment="Left"
+                 Text="{Binding Path=TotalExpenses}" />
+    </StackPanel>
+  </Grid>
+</Page>

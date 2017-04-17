@@ -1,0 +1,229 @@
+<Type Name="Activity&lt;TResult&gt;" FullName="System.Activities.Activity&lt;TResult&gt;">
+  <TypeSignature Language="C#" Value="public abstract class Activity&lt;TResult&gt; : System.Activities.ActivityWithResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Activity`1&lt;TResult&gt; extends System.Activities.ActivityWithResult" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Activity`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TResult" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Activities.ActivityWithResult</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Activities.XamlIntegration.ActivityWithResultConverter))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ValueSerializer(typeof(System.Activities.XamlIntegration.ActivityWithResultValueSerializer))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="TResult">The type of the return value of the activity.</typeparam>
+    <summary>An abstract base class used to create composite activities from pre-existing <see cref="T:System.Activities.Activity" /> objects, which specifies a result type using the activity’s type specifier.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Activity%601> is the base class in the activity type hierarchy. All other activity types with generic type definitions such as <xref:System.Activities.CodeActivity%601>, <xref:System.Activities.NativeActivity%601>, <xref:System.Activities.AsyncCodeActivity%601>, and <xref:System.Activities.DynamicActivity%601> derive from this class.  
+  
+   
+  
+## Examples  
+ The following example shows how to derive a class from <xref:System.Activities.Activity%601>.  
+  
+ [!code-csharp[HelloWorld#0](~/samples/snippets/csharp/VS_Snippets_CFX/helloworld/cs/appendstring.cs#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Activity ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Activity`1.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a derived class, creates a new instance of the derived class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromValue">
+      <MemberSignature Language="C#" Value="public static System.Activities.Activity&lt;TResult&gt; FromValue (TResult constValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Activity`1&lt;!TResult&gt; FromValue(!TResult constValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Activity`1.FromValue(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Activity&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="constValue" Type="TResult" />
+      </Parameters>
+      <Docs>
+        <param name="constValue">The value used to create the <see cref="T:System.Activities.Activity`1" /> expression.</param>
+        <summary>Returns a <see cref="T:System.Activities.Activity`1" /> expression that evaluates to the given value.</summary>
+        <returns>A workflow expression that evaluates to the given value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromVariable">
+      <MemberSignature Language="C#" Value="public static System.Activities.Activity&lt;TResult&gt; FromVariable (System.Activities.Variable variable);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Activity`1&lt;!TResult&gt; FromVariable(class System.Activities.Variable variable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Activity`1.FromVariable(System.Activities.Variable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Activity&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="variable" Type="System.Activities.Variable" />
+      </Parameters>
+      <Docs>
+        <param name="variable">The value for the expression.</param>
+        <summary>Returns a <see cref="T:System.Activities.Activity`1" /> expression that evaluates to the given <see cref="T:System.Activities.Variable" />.</summary>
+        <returns>A workflow expression that evaluates to the given variable.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the type of the <xref:System.Activities.Variable> is not compatible with the type of the <xref:System.Activities.Activity%601>, then an <xref:System.ArgumentException> is thrown.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromVariable">
+      <MemberSignature Language="C#" Value="public static System.Activities.Activity&lt;TResult&gt; FromVariable (System.Activities.Variable&lt;TResult&gt; variable);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Activity`1&lt;!TResult&gt; FromVariable(class System.Activities.Variable`1&lt;!TResult&gt; variable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Activity`1.FromVariable(System.Activities.Variable{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Activity&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="variable" Type="System.Activities.Variable&lt;TResult&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="variable">The value for the expression.</param>
+        <summary>Returns a <see cref="T:System.Activities.Activity`1" /> expression that evaluates to the given <see cref="T:System.Activities.Variable`1" />.</summary>
+        <returns>A workflow expression that evaluates to the given variable.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static System.Activities.Activity&lt;TResult&gt; op_Implicit (System.Activities.Variable variable);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Activities.Activity`1&lt;!TResult&gt; op_Implicit(class System.Activities.Variable variable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Activity`1.op_Implicit(System.Activities.Variable)~System.Activities.Activity{`0}" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Activity&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="variable" Type="System.Activities.Variable" />
+      </Parameters>
+      <Docs>
+        <param name="variable">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static System.Activities.Activity&lt;TResult&gt; op_Implicit (System.Activities.Variable&lt;TResult&gt; variable);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Activities.Activity`1&lt;!TResult&gt; op_Implicit(class System.Activities.Variable`1&lt;!TResult&gt; variable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Activity`1.op_Implicit(System.Activities.Variable{`0})~System.Activities.Activity{`0}" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Activity&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="variable" Type="System.Activities.Variable&lt;TResult&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="variable">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static System.Activities.Activity&lt;TResult&gt; op_Implicit (TResult constValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Activities.Activity`1&lt;!TResult&gt; op_Implicit(!TResult constValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Activity`1.op_Implicit(`0)~System.Activities.Activity{`0}" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Activity&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="constValue" Type="TResult" />
+      </Parameters>
+      <Docs>
+        <param name="constValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Result">
+      <MemberSignature Language="C#" Value="public System.Activities.OutArgument&lt;TResult&gt; Result { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.OutArgument`1&lt;!TResult&gt; Result" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Activity`1.Result" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.OutArgument&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the result argument for the <see cref="T:System.Activities.Activity`1" />.</summary>
+        <value>The result argument for the <see cref="T:System.Activities.Activity`1" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is thrown.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

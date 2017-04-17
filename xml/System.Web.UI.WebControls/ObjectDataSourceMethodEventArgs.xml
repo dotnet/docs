@@ -1,0 +1,118 @@
+<Type Name="ObjectDataSourceMethodEventArgs" FullName="System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs">
+  <TypeSignature Language="C#" Value="public class ObjectDataSourceMethodEventArgs : System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ObjectDataSourceMethodEventArgs extends System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.CancelEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.ObjectDataSource.Inserting" />, <see cref="E:System.Web.UI.WebControls.ObjectDataSource.Updating" />, and <see cref="E:System.Web.UI.WebControls.ObjectDataSource.Deleting" /> events of the <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs> class is used in the <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnSelecting%2A>, <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnUpdating%2A>, <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnInserting%2A>, and <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnDeleting%2A> methods to provide access to input parameters that are passed to the <xref:System.Web.UI.WebControls.ObjectDataSource.Select%2A>, <xref:System.Web.UI.WebControls.ObjectDataSource.Update%2A>, <xref:System.Web.UI.WebControls.ObjectDataSource.Delete%2A>, and <xref:System.Web.UI.WebControls.ObjectDataSource.Insert%2A> methods of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. These parameters are accessed using the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs.InputParameters%2A> property. By adding a delegate to handle the <xref:System.Web.UI.WebControls.ObjectDataSource.Selecting>, <xref:System.Web.UI.WebControls.ObjectDataSource.Updating>, <xref:System.Web.UI.WebControls.ObjectDataSource.Inserting>, or <xref:System.Web.UI.WebControls.ObjectDataSource.Deleting> event, you can examine and manipulate the values of the parameters and perform any additional preprocessing that is required. Any changes to the parameters in this dictionary will affect which method overload is called for the operation. When the <xref:System.Web.UI.WebControls.ObjectDataSource.DataObjectTypeName%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control is set, you can only modify the data object properties for the items in this dictionary; you cannot add or remove parameters. For more information, see <xref:System.Web.UI.WebControls.ObjectDataSource.Delete%2A>.  
+  
+ The <xref:System.Web.UI.WebControls.ObjectDataSource> control exposes many events that you can handle to work with the underlying business object at various times in its life cycle. The following table lists the events and associated <xref:System.EventArgs> classes and event handler delegates.  
+  
+|Event|`EventArgs` class|EventHandler delegate|  
+|-----------|-----------------------|---------------------------|  
+|<xref:System.Web.UI.WebControls.ObjectDataSource.ObjectCreating>.<br /><br /> Occurs immediately before the instance of the business object is created.|<xref:System.Web.UI.WebControls.ObjectDataSourceEventArgs>|<xref:System.Web.UI.WebControls.ObjectDataSourceObjectEventHandler>|  
+|<xref:System.Web.UI.WebControls.ObjectDataSource.ObjectCreated>.<br /><br /> Occurs immediately after the instance of the business object is created.|<xref:System.Web.UI.WebControls.ObjectDataSourceEventArgs>|<xref:System.Web.UI.WebControls.ObjectDataSourceObjectEventHandler>|  
+|<xref:System.Web.UI.WebControls.ObjectDataSource.Selecting>.<br /><br /> Occurs before the data is retrieved.|<xref:System.Web.UI.WebControls.ObjectDataSourceSelectingEventArgs>|<xref:System.Web.UI.WebControls.ObjectDataSourceSelectingEventHandler>|  
+|<xref:System.Web.UI.WebControls.ObjectDataSource.Inserting>, <xref:System.Web.UI.WebControls.ObjectDataSource.Updating>, and <xref:System.Web.UI.WebControls.ObjectDataSource.Deleting>.<br /><br /> Occur before an insert, update, or delete operation is performed.|<xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs>|<xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventHandler>|  
+|<xref:System.Web.UI.WebControls.ObjectDataSource.Selected>.<br /><br /> Occurs after the data is retrieved.|<xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs>|<xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventHandler>|  
+|<xref:System.Web.UI.WebControls.ObjectDataSource.Inserted>, <xref:System.Web.UI.WebControls.ObjectDataSource.Updated>, and <xref:System.Web.UI.WebControls.ObjectDataSource.Deleted>.<br /><br /> Occur after the insert, update, or delete operation is completed.|<xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs>|<xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventHandler>|  
+|<xref:System.Web.UI.WebControls.ObjectDataSource.ObjectDisposing>.<br /><br /> Occurs before a business object is destroyed.|<xref:System.Web.UI.WebControls.ObjectDataSourceDisposingEventArgs>|<xref:System.Web.UI.WebControls.ObjectDataSourceDisposingEventHandler>|  
+  
+   
+  
+## Examples  
+ This section contains two code examples. The first code example demonstrates how to use an <xref:System.Web.UI.WebControls.ObjectDataSource> control with a business object and a <xref:System.Web.UI.WebControls.DetailsView> control to insert data. The second code example provides an example middle-tier business object that is used by the first code example.  
+  
+ The following code example demonstrates how to use an <xref:System.Web.UI.WebControls.ObjectDataSource> control with a business object and a <xref:System.Web.UI.WebControls.DetailsView> control to insert data. The <xref:System.Web.UI.WebControls.DetailsView> initially displays a new `NorthwindEmployee` record, along with an automatically generated **Insert** button. After you enter data into the fields of the <xref:System.Web.UI.WebControls.DetailsView> control, click the **Insert** button, and the <xref:System.Web.UI.WebControls.ObjectDataSource.InsertMethod%2A> property will identify which method performs the <xref:System.Web.UI.WebControls.ObjectDataSource.Insert%2A> action.  
+  
+ In this example, the `UpdateEmployeeInfo` method is used to perform an insert; however, it requires a `NorthwindEmployee` parameter to insert the data. For this reason, the collection of strings that the <xref:System.Web.UI.WebControls.DetailsView> control passes automatically is not sufficient. The `NorthwindEmployeeInserting` delegate is an <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventHandler> object that handles the <xref:System.Web.UI.WebControls.ObjectDataSource.Inserting> event and enables you to manipulate the input parameters before the <xref:System.Web.UI.WebControls.ObjectDataSource.Insert%2A> operation proceeds. Because the `UpdateEmployeeInfo` method requires a `NorthwindEmployee` object as a parameter, one is created using the collection of strings and is added to the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs.InputParameters%2A> collection.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_4/CS/objds4cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_4/VB/objds4vb.aspx#1)]  -->  
+  
+ The following code example provides an example middle-tier business object that the preceding code example uses. The following list describes the two major classes that are defined in the code example:  
+  
+-   The `EmployeeLogic` class, which is a stateless class that encapsulates business logic.  
+  
+-   The `NorthwindEmployee` class, which is a model class that contains only the basic functionality that is required to load and persist data from the data tier.  
+  
+ In addition, a `NorthwindDataException` class is provided as a convenience.  
+  
+ This set of example classes uses the Northwind Traders database, which is an example database available with Microsoft SQL Server and Microsoft Access. For a complete working example, use these classes by placing them in the App_Code directory under the application root or by compiling them and placing the resulting DLL in the Bin directory. The `UpdateEmployeeInfo` method is not completely implemented, so you will not insert data into the Northwind Traders database when you experiment with this example.  
+  
+ [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_4#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_4/CS/northwindemployee4.cs#2)]
+ [!code-vb[System.Web.UI.WebControls.ObjectDataSource_4#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_4/VB/northwindemployee4.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ObjectDataSourceMethodEventArgs (System.Collections.Specialized.IOrderedDictionary inputParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Specialized.IOrderedDictionary inputParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs.#ctor(System.Collections.Specialized.IOrderedDictionary)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="inputParameters" Type="System.Collections.Specialized.IOrderedDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="inputParameters">An <see cref="T:System.Collections.Specialized.IOrderedDictionary" /> of <see cref="T:System.Web.UI.WebControls.Parameter" /> objects that represent the names of the parameters of the business object method and their associated values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs" /> class using the specified input parameters collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputParameters">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary InputParameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.IOrderedDictionary InputParameters" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs.InputParameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.IOrderedDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection that contains business object method parameters and their values.</summary>
+        <value>An <see cref="T:System.Collections.IDictionary" /> of name/value pairs that represent the business object method parameters and their corresponding values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Parameters can be passed to the business object method by reference or by value. If you use an <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventHandler> object to handle the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Selecting>, <xref:System.Web.UI.WebControls.ObjectDataSourceView.Updating>, <xref:System.Web.UI.WebControls.ObjectDataSourceView.Inserting>, or <xref:System.Web.UI.WebControls.ObjectDataSourceView.Deleting> events, you can access and manipulate these parameters using the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs.InputParameters%2A> property. Any changes to the parameters in this dictionary will affect which method overload is called for the operation.  When the <xref:System.Web.UI.WebControls.ObjectDataSource.DataObjectTypeName%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSource> control is set, you can modify only the data object properties for the items in this dictionary; you cannot add or remove parameters. For more information, see <xref:System.Web.UI.WebControls.ObjectDataSource.Delete%2A>.  
+  
+ Parameters that are passed by reference are returned in the <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs.OutputParameters%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs> object.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.DropDownList> control, <xref:System.Web.UI.WebControls.TextBox> controls, and several <xref:System.Web.UI.WebControls.ObjectDataSource> controls to update data. The <xref:System.Web.UI.WebControls.DropDownList> displays the name of a Northwind Employee, while the <xref:System.Web.UI.WebControls.TextBox> controls are used to enter and update address information. Because the <xref:System.Web.UI.WebControls.ObjectDataSource.UpdateParameters%2A> property contains a <xref:System.Web.UI.WebControls.ControlParameter> object that is bound to the selected value of the <xref:System.Web.UI.WebControls.DropDownList> control, the button that triggers the <xref:System.Web.UI.WebControls.ObjectDataSource.Update%2A> method is only enabled after an employee is selected.  
+  
+ In this example, the `NorthwindEmployeeUpdating` method is called before the <xref:System.Web.UI.WebControls.ObjectDataSource.Update%2A> method to add the correct parameters and values to the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs.InputParameters%2A> collection. You can add the parameters and values dynamically, as demonstrated, or declaratively.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_13#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_13/CS/objds13cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_13#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_13/VB/objds13vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

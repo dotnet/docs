@@ -1,0 +1,122 @@
+<Type Name="FilePrompt" FullName="System.Speech.Synthesis.FilePrompt">
+  <TypeSignature Language="C#" Value="public class FilePrompt : System.Speech.Synthesis.Prompt" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FilePrompt extends System.Speech.Synthesis.Prompt" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.FilePrompt" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Speech.Synthesis.Prompt</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("{_text}")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a prompt created from a file.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FilePrompt (string path, System.Speech.Synthesis.SynthesisMediaType media);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, valuetype System.Speech.Synthesis.SynthesisMediaType media) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.FilePrompt.#ctor(System.String,System.Speech.Synthesis.SynthesisMediaType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="media" Type="System.Speech.Synthesis.SynthesisMediaType" />
+      </Parameters>
+      <Docs>
+        <param name="path">The path of the file containing the prompt content.</param>
+        <param name="media">The media type of the file.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Speech.Synthesis.FilePrompt" /> class, and specifies the path to the file and its media type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this class to create an object from an existing Speech Synthesis Markup Language (SSML) file that the <xref:System.Speech.Synthesis.SpeechSynthesizer> can consume to generate speech.  
+  
+   
+  
+## Examples  
+ The example that follows creates a <xref:System.Speech.Synthesis.FilePrompt> object that specifies a path to an SSML prompt. To speak the contents of the prompt, the example then provides the <xref:System.Speech.Synthesis.FilePrompt> object as the argument to the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> method.  
+  
+```csharp  
+using System;  
+using System.Speech.Synthesis;  
+  
+namespace SampleSynthesis  
+{  
+    class Program  
+    {  
+        static void Main(string[] args)  
+        {  
+  
+            // Initialize a new instance of the SpeechSynthesizer.  
+            using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+            {  
+  
+                // Configure the audio output.   
+                synth.SetOutputToDefaultAudioDevice();  
+  
+                // Create a FilePrompt object that references an SSML prompt.  
+                FilePrompt ssmlFile = new FilePrompt("c:\\test\\Weather.ssml", SynthesisMediaType.Ssml);  
+  
+                // Speak the contents of the SSML prompt.  
+                synth.Speak(ssmlFile);  
+            }  
+  
+            Console.WriteLine();  
+            Console.WriteLine("Press any key to exit...");  
+            Console.ReadKey();  
+        }  
+    }  
+}  
+```  
+  
+ The following is the SSML file that the preceding example references.  
+  
+```xml  
+<?xml version="1.0" encoding="ISO-8859-1"?>  
+<speak version="1.0"  
+ xmlns="http://www.w3.org/2001/10/synthesis"  
+ xml:lang="en-US">  
+  
+  <s> The weather forecast for today is partly cloudy with some sun breaks. </s>  
+  
+</speak>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FilePrompt (Uri promptFile, System.Speech.Synthesis.SynthesisMediaType media);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri promptFile, valuetype System.Speech.Synthesis.SynthesisMediaType media) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.FilePrompt.#ctor(System.Uri,System.Speech.Synthesis.SynthesisMediaType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="promptFile" Type="System.Uri" />
+        <Parameter Name="media" Type="System.Speech.Synthesis.SynthesisMediaType" />
+      </Parameters>
+      <Docs>
+        <param name="promptFile">The URI of the file containing the prompt content.</param>
+        <param name="media">The media type of the file.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Speech.Synthesis.FilePrompt" /> class, and specifies the location of the file and its media type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

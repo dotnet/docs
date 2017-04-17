@@ -1,0 +1,2196 @@
+<Type Name="SqlDataSourceView" FullName="System.Web.UI.WebControls.SqlDataSourceView">
+  <TypeSignature Language="C#" Value="public class SqlDataSourceView : System.Web.UI.DataSourceView, System.Web.UI.IStateManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlDataSourceView extends System.Web.UI.DataSourceView implements class System.Web.UI.IStateManager" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SqlDataSourceView" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.DataSourceView</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.IStateManager</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Supports the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> control and provides an interface for data-bound controls to perform SQL data operations against relational databases.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView> class is intended primarily to be used by data-bound controls, and not as a programmable object in page code.  
+  
+ ASP.NET data source controls contain one or more lists of data, represented by data source view objects. The <xref:System.Web.UI.WebControls.SqlDataSourceView> class extends the <xref:System.Web.UI.DataSourceView> class, defines the capabilities of the <xref:System.Web.UI.WebControls.SqlDataSource> control with which it is associated, and implements the basic data functionality for the data source control. The <xref:System.Web.UI.WebControls.SqlDataSourceView> class implements the data functionality for the <xref:System.Web.UI.WebControls.SqlDataSource> control, including the <xref:System.Web.UI.WebControls.SqlDataSourceView.Select%2A>, <xref:System.Web.UI.WebControls.SqlDataSourceView.Update%2A>, <xref:System.Web.UI.WebControls.SqlDataSourceView.Insert%2A>, and <xref:System.Web.UI.WebControls.SqlDataSourceView.Delete%2A> operations, sorting, filtering, and managing settings that are kept in view state.  
+  
+ Although the <xref:System.Web.UI.WebControls.SqlDataSourceView> object is not directly exposed to page developers by the <xref:System.Web.UI.WebControls.SqlDataSource> control, many of its properties are. The most basic operation that a data source view performs is data retrieval from the underlying database using the <xref:System.Web.UI.WebControls.SqlDataSourceView.Select%2A> method, which retrieves an <xref:System.Collections.IEnumerable> collection of data items. The <xref:System.Web.UI.WebControls.SqlDataSourceView> class implements data retrieval from relational databases using SQL queries. The SQL queries can be parameterized for greater flexibility and security. The following data retrieval methods, properties, and events are implemented by the <xref:System.Web.UI.WebControls.SqlDataSourceView> and exposed directly by its <xref:System.Web.UI.WebControls.SqlDataSource> control to page developers and other callers:  
+  
+-   The <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> property  
+  
+-   The <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> property  
+  
+-   The <xref:System.Web.UI.WebControls.SqlDataSource.Selecting> event  
+  
+-   The <xref:System.Web.UI.WebControls.SqlDataSource.Selected> event  
+  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView> object supports updating data in a relational database using SQL commands. The SQL commands can be parameterized for greater flexibility and security. Data-bound controls, such as the <xref:System.Web.UI.WebControls.GridView> and <xref:System.Web.UI.WebControls.DetailsView>, can be configured to perform updates automatically using the <xref:System.Web.UI.WebControls.SqlDataSourceView>, while other controls cannot. The following update methods, properties, and events are implemented by the <xref:System.Web.UI.WebControls.SqlDataSourceView> and exposed directly by its <xref:System.Web.UI.WebControls.SqlDataSource> control to page developers and other callers:  
+  
+-   The <xref:System.Web.UI.WebControls.SqlDataSource.UpdateCommand%2A> property  
+  
+-   The <xref:System.Web.UI.WebControls.SqlDataSource.UpdateParameters%2A> property  
+  
+-   The <xref:System.Web.UI.WebControls.SqlDataSource.Updating> event  
+  
+-   The <xref:System.Web.UI.WebControls.SqlDataSource.Updated> event  
+  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView> supports inserting new rows of data into a relational database. The SQL commands that are specified in the <xref:System.Web.UI.WebControls.SqlDataSourceView.InsertCommand%2A> property can be parameterized for greater flexibility and security. Data-bound controls, such as the <xref:System.Web.UI.WebControls.GridView> and <xref:System.Web.UI.WebControls.DetailsView>, can be configured to perform inserts automatically using the <xref:System.Web.UI.WebControls.SqlDataSourceView>, while other controls cannot. The following insert methods, properties, and events are implemented by the <xref:System.Web.UI.WebControls.SqlDataSourceView> and exposed directly by its <xref:System.Web.UI.WebControls.SqlDataSource> control to page developers and other callers:  
+  
+-   The <xref:System.Web.UI.WebControls.SqlDataSource.InsertCommand%2A> property  
+  
+-   The <xref:System.Web.UI.WebControls.SqlDataSource.InsertParameters%2A> property  
+  
+-   The <xref:System.Web.UI.WebControls.SqlDataSource.Inserting> event  
+  
+-   The <xref:System.Web.UI.WebControls.SqlDataSource.Inserted> event  
+  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView> object also supports deleting data from a relational database. As with other commands, the SQL commands that are specified in the <xref:System.Web.UI.WebControls.SqlDataSourceView.DeleteCommand%2A> property can be parameterized for greater flexibility and security. Data-bound controls, such as the <xref:System.Web.UI.WebControls.GridView> and <xref:System.Web.UI.WebControls.DetailsView>, can be configured to perform deletes automatically using the <xref:System.Web.UI.WebControls.SqlDataSourceView>, while other controls cannot. The following delete methods, properties, and events are implemented by the <xref:System.Web.UI.WebControls.SqlDataSourceView> and exposed directly by its <xref:System.Web.UI.WebControls.SqlDataSource> control to page developers and other callers:  
+  
+-   The <xref:System.Web.UI.WebControls.SqlDataSource.DeleteCommand%2A> property  
+  
+-   The <xref:System.Web.UI.WebControls.SqlDataSource.DeleteParameters%2A> property  
+  
+-   The <xref:System.Web.UI.WebControls.SqlDataSource.Deleting> event  
+  
+-   The <xref:System.Web.UI.WebControls.SqlDataSource.Deleted> event  
+  
+ Data retrieval is more powerful when the clause that is used to filter the data during data retrieval is dynamic. In other words, an SQL query with a static WHERE clause is not as flexible and powerful as an SQL query where the values in the WHERE clause are bound to values that can change, such as values that are displayed in controls on a Web Forms page. Instead of rebuilding an SQL query and setting the <xref:System.Web.UI.WebControls.SqlDataSourceView.SelectCommand%2A> property on every page load, you can use the <xref:System.Web.UI.WebControls.SqlDataSourceView.FilterExpression%2A> and <xref:System.Web.UI.WebControls.SqlDataSourceView.FilterParameters%2A> properties to apply dynamic filtering to data retrieval. These properties are implemented by the <xref:System.Web.UI.WebControls.SqlDataSourceView> and exposed directly by its <xref:System.Web.UI.WebControls.SqlDataSource> control to data-bound controls and other callers.  
+  
+ You can sort the data that you retrieve with the <xref:System.Web.UI.WebControls.SqlDataSource> control by adding an ORDER BY clause, which causes the database to perform the ordering for you when you retrieve data or by ordering the data in memory after it is retrieved. You can supply a sorting expression to the <xref:System.Web.UI.WebControls.SqlDataSourceView> by setting the <xref:System.Web.UI.DataSourceSelectArguments.SortExpression%2A> property of the <xref:System.Web.UI.DataSourceSelectArguments> object that is passed to the <xref:System.Web.UI.WebControls.SqlDataSourceView.Select%2A> method. The syntax for the <xref:System.Web.UI.DataSourceSelectArguments.SortExpression%2A> property is the same as the syntax for a <xref:System.Data.DataView.Sort%2A?displayProperty=fullName> property. If you use a stored procedure to retrieve data, you can also use the <xref:System.Web.UI.WebControls.SqlDataSourceView.SortParameterName%2A> property to specify a parameter that is used specifically for sorting the results of a stored procedure call.  
+  
+ When more than one user can change the database concurrently, there is the potential for concurrency conflict. The <xref:System.Web.UI.WebControls.SqlDataSource> control has controls concurrency through the <xref:System.Web.UI.WebControls.SqlDataSource.ConflictDetection?displayProperty=fullName> property. The functionality is implemented in the <xref:System.Web.UI.WebControls.SqlDataSourceView.ConflictDetection?displayProperty=fullName> property.  
+  
+ Like many other Web server controls, the <xref:System.Web.UI.WebControls.SqlDataSourceView> implements the <xref:System.Web.UI.IStateManager> interface and uses view state to track its state across page requests. Implementations of the <xref:System.Web.UI.WebControls.SqlDataSourceView.IsTrackingViewState%2A> and property and the <xref:System.Web.UI.WebControls.SqlDataSourceView.LoadViewState%2A>, <xref:System.Web.UI.WebControls.SqlDataSourceView.SaveViewState%2A>, and <xref:System.Web.UI.WebControls.SqlDataSourceView.TrackViewState%2A> methods are provided to enable view state tracking for the control. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlDataSourceView (System.Web.UI.WebControls.SqlDataSource owner, string name, System.Web.HttpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.SqlDataSource owner, string name, class System.Web.HttpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.#ctor(System.Web.UI.WebControls.SqlDataSource,System.String,System.Web.HttpContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Web.UI.WebControls.SqlDataSource" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="context" Type="System.Web.HttpContext" />
+      </Parameters>
+      <Docs>
+        <param name="owner">The data source control with which the <see cref="T:System.Web.UI.WebControls.SqlDataSourceView" /> is associated.</param>
+        <param name="name">A unique name for the data source view, within the scope of the data source control that owns it.</param>
+        <param name="context">The current <see cref="T:System.Web.HttpContext" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.SqlDataSourceView" /> class setting the specified <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> control as the owner of the current view.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.%23ctor%2A> constructor is called by the <xref:System.Web.UI.WebControls.SqlDataSource.GetView%2A> method to return a new instance of a data source view with the specified `name` parameter. The <xref:System.Web.UI.WebControls.SqlDataSource> control is associated with only one <xref:System.Web.UI.WebControls.SqlDataSourceView> object at any one time, and always names the view `Table`, although this naming restriction is imposed by the <xref:System.Web.UI.WebControls.SqlDataSource> control, not the <xref:System.Web.UI.WebControls.SqlDataSourceView>. You can override the <xref:System.Web.UI.WebControls.SqlDataSource.GetView%2A> method to support views with a different naming convention.  
+  
+ The <xref:System.Web.HttpContext> object that is passed by the `context` parameter is used by the data source view to access parameter objects, such as the <xref:System.Web.UI.WebControls.SqlDataSourceView.FilterParameters%2A> and <xref:System.Web.UI.WebControls.SqlDataSourceView.SelectParameters%2A> properties.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelSelectOnNullParameter">
+      <MemberSignature Language="C#" Value="public bool CancelSelectOnNullParameter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CancelSelectOnNullParameter" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.CancelSelectOnNullParameter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether a data retrieval operation is canceled when any parameter that is contained in the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.SelectParameters" /> collection evaluates to <see langword="null" />.</summary>
+        <value>
+          <see langword="true" />, if a data retrieval operation is canceled when a parameter contained in the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.SelectParameters" /> collection evaluated to <see langword="null" />; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.Web.UI.WebControls.SqlDataSource.CancelSelectOnNullParameter%2A> property is stored in view state.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanDelete">
+      <MemberSignature Language="C#" Value="public override bool CanDelete { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanDelete" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.CanDelete" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.WebControls.SqlDataSourceView" /> object that is associated with the current <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> control supports the delete operation.</summary>
+        <value>
+          <see langword="true" />, if the operation is supported; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.CanDelete%2A> property returns `true` if the <xref:System.Web.UI.WebControls.SqlDataSourceView.DeleteCommand%2A> property is set. A delete operation could still fail if all the data properties are not set or are not set correctly.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanInsert">
+      <MemberSignature Language="C#" Value="public override bool CanInsert { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanInsert" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.CanInsert" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.WebControls.SqlDataSourceView" /> object that is associated with the current <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> control supports the insert operation.</summary>
+        <value>
+          <see langword="true" />, if the operation is supported; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.CanInsert%2A> property returns `true` if the <xref:System.Web.UI.WebControls.SqlDataSourceView.InsertCommand%2A> property is set. An insert operation could still fail if all the data properties are not set or are not set correctly.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanPage">
+      <MemberSignature Language="C#" Value="public override bool CanPage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanPage" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.CanPage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.WebControls.SqlDataSourceView" /> object that is associated with the current <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> control supports the paging of retrieved data.</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView> object does not support paging.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanRetrieveTotalRowCount">
+      <MemberSignature Language="C#" Value="public override bool CanRetrieveTotalRowCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanRetrieveTotalRowCount" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.CanRetrieveTotalRowCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.WebControls.SqlDataSourceView" /> object that is associated with the current <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> control supports retrieving the total number of data rows, in addition to the set of data.</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView> object does not support retrieving row counts.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanSort">
+      <MemberSignature Language="C#" Value="public override bool CanSort { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanSort" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.CanSort" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.WebControls.SqlDataSourceView" /> object that is associated with the current <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> control supports a sorted view on the retrieved data.</summary>
+        <value>
+          <see langword="true" />, if sorting is supported; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.CanSort%2A> property returns `true`, if the current <xref:System.Web.UI.WebControls.SqlDataSource.DataSourceMode%2A> property is set to the <xref:System.Web.UI.WebControls.SqlDataSourceMode> value and the <xref:System.Web.UI.WebControls.SqlDataSourceView.SortParameterName%2A> property is set.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanUpdate">
+      <MemberSignature Language="C#" Value="public override bool CanUpdate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanUpdate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.CanUpdate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.WebControls.SqlDataSourceView" /> object that is associated with the current <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> control supports the update operation.</summary>
+        <value>
+          <see langword="true" />, if the operation is supported; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.CanUpdate%2A> property returns `true` if the <xref:System.Web.UI.WebControls.SqlDataSourceView.UpdateCommand%2A> property is set. A delete operation could still fail if all the data properties are not set or are not set correctly.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConflictDetection">
+      <MemberSignature Language="C#" Value="public System.Web.UI.ConflictOptions ConflictDetection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.ConflictOptions ConflictDetection" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.ConflictDetection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ConflictOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value indicating how the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> control performs updates and deletes when data in a row in the underlying database changes during the time of the operation.</summary>
+        <value>One of the <see cref="T:System.Web.UI.ConflictOptions" /> values. The default is the <see cref="F:System.Web.UI.ConflictOptions.OverwriteChanges" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.ConflictDetection%2A> property determines whether parameters for old and new values are applied to the `Update` method. For example, if the command that is specified by the <xref:System.Web.UI.WebControls.SqlDataSourceView.SelectCommand%2A> property returns a <xref:System.Data.DataSet> object with the columns `Name` and `Number`, and the <xref:System.Web.UI.WebControls.SqlDataSourceView.ConflictDetection%2A> property is set to the <xref:System.Web.UI.ConflictOptions> value, parameters are created for `Name` and `Number` for the update operation. If the <xref:System.Web.UI.WebControls.SqlDataSourceView.ConflictDetection%2A> property is set to the <xref:System.Web.UI.ConflictOptions> value, parameters are created for `Name`, `Number`, `original_Name`, and `original_Number`. (The exact name of the parameters for the original values depends on the <xref:System.Web.UI.WebControls.SqlDataSourceView.OldValuesParameterFormatString%2A>.) Then, the <xref:System.Web.UI.WebControls.SqlDataSourceView> object determines if the method that is specified in the <xref:System.Web.UI.WebControls.SqlDataSourceView.UpdateCommand%2A> property has parameters that match.  
+  
+ Concurrency control is a technique data stores use to control how data is read and changed in the store when multiple clients are accessing and manipulating the same data. For example, one client reads data and presents it to a user, while another client reads the same data, and presents it to a different user. If both users update the data and submit it to the data storage, some unexpected result might occur, because both clients might update different values for the same data. This is considered a conflict. By setting the <xref:System.Web.UI.WebControls.SqlDataSourceView.ConflictDetection%2A> property to the <xref:System.Web.UI.ConflictOptions> value, the update operation can then compare the old and new values to the original data source to detect conflicts and handle them as required.  
+  
+ The value of the <xref:System.Web.UI.WebControls.SqlDataSourceView.ConflictDetection%2A> property is stored in view state.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The selected value is not one of the <see cref="T:System.Web.UI.ConflictOptions" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public int Delete (System.Collections.IDictionary keys, System.Collections.IDictionary oldValues);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Delete(class System.Collections.IDictionary keys, class System.Collections.IDictionary oldValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.Delete(System.Collections.IDictionary,System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keys" Type="System.Collections.IDictionary" />
+        <Parameter Name="oldValues" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="keys">An <see cref="T:System.Collections.IDictionary" /> of object or row key values for the <see cref="M:System.Web.UI.WebControls.SqlDataSourceView.ExecuteDelete(System.Collections.IDictionary,System.Collections.IDictionary)" /> operation to delete.</param>
+        <param name="oldValues">An <see cref="T:System.Collections.IDictionary" /> that contains row values that are evaluated only if the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.ConflictDetection" /> property is set to the <see cref="F:System.Web.UI.ConflictOptions.CompareAllValues" /> value.</param>
+        <summary>Performs a delete operation using the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.DeleteCommand" /> SQL string, any parameters that are specified in the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.DeleteParameters" /> collection, and the values that are in the specified <paramref name="keys" /> and <paramref name="oldValues" /> collections.</summary>
+        <returns>A value that represents the number of rows deleted from the underlying database.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.Delete%2A> method calls the <xref:System.Web.UI.WebControls.SqlDataSourceView.ExecuteDelete%2A> method, passing the `keys` and `oldValues` parameters.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> cannot establish a connection with the underlying data source.  
+  
+ \- or -  
+  
+ The <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.ConflictDetection" /> property is set to the <see cref="F:System.Web.UI.ConflictOptions.CompareAllValues" /> value and no <paramref name="oldValues" /> parameters are passed.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.CanDelete" /> property is <see langword="false" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteCommand">
+      <MemberSignature Language="C#" Value="public string DeleteCommand { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DeleteCommand" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.DeleteCommand" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the SQL string that the <see cref="T:System.Web.UI.WebControls.SqlDataSourceView" /> uses to delete data from the underlying database.</summary>
+        <value>An SQL string that the <see cref="T:System.Web.UI.WebControls.SqlDataSourceView" /> uses to delete data.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because different database products use different varieties of SQL, the syntax of the SQL string depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property.  
+  
+ If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=fullName>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the  <xref:System.Data.Odbc?displayProperty=fullName> or <xref:System.Data.OleDb?displayProperty=fullName>, the placeholder of the parameter is `'?'`. For more information on parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.DeleteCommand%2A> can be an SQL string or the name of a stored procedure, if the underlying database supports stored procedures.  
+  
+ The value of the <xref:System.Web.UI.WebControls.SqlDataSourceView.DeleteCommand%2A> property is stored in view state.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.SqlDataSource.DeleteCommand%2A> text to delete an order from the Northwind database Orders table. Data is retrieved from the Orders table and displayed in a <xref:System.Web.UI.WebControls.GridView> control. The <xref:System.Web.UI.WebControls.GridView> renders a **Delete** button automatically when the <xref:System.Web.UI.WebControls.GridView.AutoGenerateDeleteButton%2A> property is set to `true` and automatically populates the <xref:System.Web.UI.WebControls.SqlDataSource.DeleteParameters%2A> collection and calls the <xref:System.Web.UI.WebControls.SqlDataSourceView.Delete%2A> method when the **Delete** button is clicked. Finally, because this example deletes data, an event handler is added to attempt to back up the database to disk before the delete operation is performed.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_10sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_10sql/CS/sql10cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_10sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_10sql/VB/sql10vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteCommandType">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.SqlDataSourceCommandType DeleteCommandType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.SqlDataSourceCommandType DeleteCommandType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.DeleteCommandType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.SqlDataSourceCommandType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the text in the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.DeleteCommand" /> property is a SQL statement or the name of a stored procedure.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.SqlDataSourceCommandType" /> values. The default is the <see cref="F:System.Web.UI.WebControls.SqlDataSourceCommandType.Text" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.Web.UI.WebControls.SqlDataSourceView.DeleteCommandType%2A> property is stored in view state.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The selected value is not one of the <see cref="T:System.Web.UI.WebControls.SqlDataSourceCommandType" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Deleted">
+      <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.SqlDataSourceStatusEventHandler Deleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.SqlDataSourceStatusEventHandler Deleted" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.SqlDataSourceView.Deleted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.SqlDataSourceStatusEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a delete operation has completed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Handle the <xref:System.Web.UI.WebControls.SqlDataSourceView.Deleted> event to examine the values of output parameters after a delete operation has completed. The output parameters are available from the <xref:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs> object that is associated with the event.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteParameters">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.ParameterCollection DeleteParameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.ParameterCollection DeleteParameters" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.DeleteParameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.WebControls.ParameterCollectionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.ParameterCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the parameters collection containing the parameters that are used by the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.DeleteCommand" /> property.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.ParameterCollection" /> that contains the parameters used by the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.DeleteCommand" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Web.UI.WebControls.SqlDataSourceView.DeleteCommand%2A> property contains a parameterized SQL query, the <xref:System.Web.UI.WebControls.SqlDataSourceView.DeleteParameters%2A> collection contains any <xref:System.Web.UI.WebControls.Parameter> objects that correspond to the parameter placeholders in the SQL string.  
+  
+ Parameter names might be affected by the <xref:System.Web.UI.WebControls.SqlDataSourceView.OldValuesParameterFormatString%2A> property; specifically, if the name identifies a primary key, such as a key that is specified using the `DataKeyNames` property of a data-bound control, or in delete and update scenarios in which the <xref:System.Web.UI.WebControls.SqlDataSourceView.ConflictDetection%2A> property is set to the <xref:System.Web.UI.ConflictOptions> value and a set of `oldValues` is passed to the corresponding data method. In this case, the format string is applied to each parameter name in the `oldValues` collection.  
+  
+ Depending on the ADO.NET provider, the order of the parameters in the <xref:System.Web.UI.WebControls.SqlDataSourceView.DeleteParameters%2A> collection might be important. The <xref:System.Data.OleDb?displayProperty=fullName> and <xref:System.Data.Odbc?displayProperty=fullName> providers associate the parameters in the collection according to the order that the parameters appear in the parameterized SQL query. The <xref:System.Data.SqlClient?displayProperty=fullName> provider, which is the default ADO.NET provider for the <xref:System.Web.UI.WebControls.SqlDataSource> control, associates the parameters in the collection by matching the name of the parameter with the placeholder in the SQL query. For more information on parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.SqlDataSource.DeleteCommand%2A> text to delete an order from the Northwind database. Initially, data is retrieved from the Orders table and displayed in a <xref:System.Web.UI.WebControls.DropDownList> control. You must explicitly declare the <xref:System.Web.UI.WebControls.SqlDataSource.DeleteParameters%2A> property and call the <xref:System.Web.UI.WebControls.SqlDataSourceView.Delete%2A> method when using data-bound controls, such as the <xref:System.Web.UI.WebControls.DropDownList> (unlike controls, such as the <xref:System.Web.UI.WebControls.GridView> and <xref:System.Web.UI.WebControls.DetailsView>, which automatically populate the parameters and call the <xref:System.Web.UI.WebControls.SqlDataSource.Delete%2A> method on a data source control). In this example, the <xref:System.Web.UI.WebControls.Button.OnClick%2A> event is delegated to the private <xref:System.Web.UI.WebControls.SqlDataSourceView.OnDeleted%2A> event handler, which explicitly calls the <xref:System.Web.UI.WebControls.SqlDataSource.Delete%2A> method of the <xref:System.Web.UI.WebControls.SqlDataSource> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_11sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_11sql/CS/sql11cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_11sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_11sql/VB/sql11vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deleting">
+      <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.SqlDataSourceCommandEventHandler Deleting;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.SqlDataSourceCommandEventHandler Deleting" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.SqlDataSourceView.Deleting" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.SqlDataSourceCommandEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs before a delete operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Handle the <xref:System.Web.UI.WebControls.SqlDataSourceView.Deleting> event to perform additional initialization operations that are specific to your application, to validate the values of parameters, or to change the parameter values before the <xref:System.Web.UI.WebControls.SqlDataSource> control performs the delete operation.  
+  
+ The connection to the underlying data source is not yet open when the event handler delegate is called. Therefore, you cannot cancel the <xref:System.Web.UI.WebControls.SqlDataSourceView.Delete%2A> operation directly by calling the <xref:System.Data.Common.DbCommand.Cancel%2A> method on the <xref:System.Data.Common.DbCommand> object that is exposed by the <xref:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs> object. You can, however, cancel the operation by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs> to `true`.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to handle the <xref:System.Web.UI.WebControls.SqlDataSource.Deleting> event that is raised before a delete operation occurs. Because this example deletes data from the Northwind database, an <xref:System.Web.UI.WebControls.SqlDataSourceView.OnDeleting%2A> handler is added to attempt to back up the database to disk before the delete operation is performed.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_10sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_10sql/CS/sql10cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_10sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_10sql/VB/sql10vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteDelete">
+      <MemberSignature Language="C#" Value="protected override int ExecuteDelete (System.Collections.IDictionary keys, System.Collections.IDictionary oldValues);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance int32 ExecuteDelete(class System.Collections.IDictionary keys, class System.Collections.IDictionary oldValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.ExecuteDelete(System.Collections.IDictionary,System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keys" Type="System.Collections.IDictionary" />
+        <Parameter Name="oldValues" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="keys">An <see cref="T:System.Collections.IDictionary" /> of object or row key values for the <see cref="M:System.Web.UI.WebControls.SqlDataSourceView.ExecuteDelete(System.Collections.IDictionary,System.Collections.IDictionary)" /> operation to delete.</param>
+        <param name="oldValues">An <see cref="T:System.Collections.IDictionary" /> that contains row values that are evaluated only if the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.ConflictDetection" /> property is set to the <see cref="F:System.Web.UI.ConflictOptions.CompareAllValues" /> value.</param>
+        <summary>Performs a delete operation using the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.DeleteCommand" /> SQL string, any parameters that are specified in the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.DeleteParameters" /> collection, and the values that are in the specified <paramref name="keys" /> and <paramref name="oldValues" /> collections.</summary>
+        <returns>A value that represents the number of rows deleted from the underlying database.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView> class implements the inherited <xref:System.Web.UI.DataSourceView.ExecuteDelete%2A> method to delete data from a database. Page developers and data-bound control authors do not call the <xref:System.Web.UI.WebControls.SqlDataSourceView.ExecuteDelete%2A> method directly; instead, use the publicly exposed <xref:System.Web.UI.WebControls.SqlDataSource.Delete%2A> method.  
+  
+ The values that are contained in the `keys` collection are evaluated and merged with any values that are contained by the <xref:System.Web.UI.WebControls.SqlDataSourceView.DeleteParameters%2A> collection. If the <xref:System.Web.UI.WebControls.SqlDataSourceView.ConflictDetection%2A> property is set to the <xref:System.Web.UI.ConflictOptions> value, the values that are contained in the `oldValues` collection are formatted with the <xref:System.Web.UI.WebControls.SqlDataSourceView.OldValuesParameterFormatString%2A> property and are also merged.  
+  
+ Before the delete operation is performed, the <xref:System.Web.UI.WebControls.SqlDataSourceView.OnDeleting%2A> method is called to raise the <xref:System.Web.UI.WebControls.SqlDataSourceView.Deleting> event. You can handle this event to examine the values of the parameters and to perform any preprocessing before a delete.  
+  
+ To perform a delete operation, the <xref:System.Web.UI.WebControls.SqlDataSourceView> object builds a <xref:System.Data.Common.DbCommand> object using the <xref:System.Web.UI.WebControls.SqlDataSourceView.DeleteCommand%2A> text and any associated <xref:System.Web.UI.WebControls.SqlDataSourceView.DeleteParameters%2A> properties, and then executes the <xref:System.Data.Common.DbCommand> object against the underlying database. After the delete operation completes, the <xref:System.Web.UI.WebControls.SqlDataSourceView.OnDeleted%2A> method is called to raise the <xref:System.Web.UI.WebControls.SqlDataSourceView.Deleted> event. You can handle this event to examine any return values and error codes and to perform any post-processing.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> cannot establish a connection with the underlying data source.  
+  
+ \- or -  
+  
+ The <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.ConflictDetection" /> property is set to the <see cref="F:System.Web.UI.ConflictOptions.CompareAllValues" /> value and no <paramref name="oldValues" /> parameters are passed.</exception>
+        <exception cref="T:System.Web.HttpException">The current user does not have the correct permissions to access to the database.  
+  
+ \- or -  
+  
+ The instance of the control is an <see cref="T:System.Web.UI.WebControls.AccessDataSource" /> control and access is denied to the path specified for the <see cref="P:System.Web.UI.WebControls.AccessDataSource.DataFile" /> property.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.CanDelete" /> property is <see langword="false" />.  
+  
+ \- or -  
+  
+ A design-time relative path was not mapped correctly by the designer before using an instance of the <see cref="T:System.Web.UI.WebControls.AccessDataSource" /> control.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteInsert">
+      <MemberSignature Language="C#" Value="protected override int ExecuteInsert (System.Collections.IDictionary values);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance int32 ExecuteInsert(class System.Collections.IDictionary values) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.ExecuteInsert(System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="values" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="values">An <see cref="T:System.Collections.IDictionary" /> of values used with the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.InsertCommand" /> property to perform the insert database operation. If there are no parameters associated with the query or if the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.InsertCommand" /> property is not a parameterized SQL query, pass <see langword="null" />.</param>
+        <summary>Performs an insert operation using the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.InsertCommand" /> SQL string, any parameters that are specified in the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.InsertParameters" /> collection, and the values that are in the specified <paramref name="values" /> collection.</summary>
+        <returns>A value that represents the number of rows inserted into the underlying database.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView> class implements the inherited <xref:System.Web.UI.DataSourceView.ExecuteInsert%2A> method to insert data into a database. Page developers and data-bound control authors do not call the <xref:System.Web.UI.WebControls.SqlDataSourceView.ExecuteInsert%2A> method directly; instead, use the publicly exposed <xref:System.Web.UI.WebControls.SqlDataSource.Insert%2A> method.  
+  
+ Before the insert operation is performed, the <xref:System.Web.UI.WebControls.SqlDataSourceView.OnInserting%2A> method is called to raise the <xref:System.Web.UI.WebControls.SqlDataSourceView.Inserting> event. You can handle this event to examine the values of the parameters and to perform any preprocessing before an insert.  
+  
+ To perform an insert operation, the <xref:System.Web.UI.WebControls.SqlDataSourceView> object builds a <xref:System.Data.Common.DbCommand> object using the <xref:System.Web.UI.WebControls.SqlDataSourceView.InsertCommand%2A> text and any associated <xref:System.Web.UI.WebControls.SqlDataSourceView.InsertParameters%2A> properties, and then executes the <xref:System.Data.Common.DbCommand> object against the underlying database. After the insert completes, the <xref:System.Web.UI.WebControls.SqlDataSourceView.OnInserted%2A> method is called to raise the <xref:System.Web.UI.WebControls.SqlDataSourceView.Inserted> event. You can handle this event to examine any return values and error codes and to perform any post-processing.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> cannot establish a connection with the underlying data source.</exception>
+        <exception cref="T:System.Web.HttpException">The current user does not have the correct permissions to gain access to the database.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.CanInsert" /> property is <see langword="false" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteSelect">
+      <MemberSignature Language="C#" Value="protected override System.Collections.IEnumerable ExecuteSelect (System.Web.UI.DataSourceSelectArguments arguments);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Collections.IEnumerable ExecuteSelect(class System.Web.UI.DataSourceSelectArguments arguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.ExecuteSelect(System.Web.UI.DataSourceSelectArguments)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="arguments" Type="System.Web.UI.DataSourceSelectArguments" />
+      </Parameters>
+      <Docs>
+        <param name="arguments">A <see cref="T:System.Web.UI.DataSourceSelectArguments" /> object used to request operations on the data beyond basic data retrieval.</param>
+        <summary>Retrieves data from the underlying database using the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.SelectCommand" /> SQL string and any parameters that are in the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.SelectParameters" /> collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerable" /> list of data rows.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView> class implements the inherited <xref:System.Web.UI.WebControls.SqlDataSourceView.ExecuteSelect%2A> method to retrieve data from a database. Page developers and data-bound control authors do not call the <xref:System.Web.UI.WebControls.SqlDataSourceView.ExecuteSelect%2A> method directly; instead, use the publicly exposed <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> method.  
+  
+ Before the data retrieval is performed, the <xref:System.Web.UI.WebControls.SqlDataSourceView.OnSelecting%2A> method is called to raise the <xref:System.Web.UI.WebControls.SqlDataSourceView.Selecting> event. You can handle this event to examine the values of the parameters and to perform any preprocessing before data is retrieved.  
+  
+ To perform the operation, the <xref:System.Web.UI.WebControls.SqlDataSourceView> object builds a <xref:System.Data.Common.DbCommand> object using the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> text and any associated <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A>, and executes it against the underlying database. After the operation completes, the <xref:System.Web.UI.WebControls.SqlDataSourceView.OnSelected%2A> method is called to raise the <xref:System.Web.UI.WebControls.SqlDataSource.Selected> event. You can handle this event to examine any return values, error codes, and perform any post-processing.  
+  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.ExecuteSelect%2A> method returns a <xref:System.Data.DataView> object if the <xref:System.Web.UI.WebControls.SqlDataSource.DataSourceMode%2A> is set to <xref:System.Web.UI.WebControls.SqlDataSourceMode>, or a <xref:System.Data.IDataReader> object if the <xref:System.Web.UI.WebControls.SqlDataSource.DataSourceMode%2A> is set to <xref:System.Web.UI.WebControls.SqlDataSourceMode>. Close the <xref:System.Data.IDataReader> object when you have finished reading the data.  
+  
+ If the <xref:System.Web.UI.WebControls.SqlDataSource.DataSourceMode%2A> is set to <xref:System.Web.UI.WebControls.SqlDataSourceMode> and caching is enabled, the <xref:System.Web.UI.WebControls.SqlDataSourceView> retrieves data from and saves data to the cache during the data operation. The cache is created, discarded, or refreshed based on the caching behavior specified by the combination of the <xref:System.Web.UI.WebControls.SqlDataSource.CacheDuration%2A> and <xref:System.Web.UI.WebControls.SqlDataSource.CacheExpirationPolicy%2A> properties.  
+  
+> [!IMPORTANT]
+>  When you are using client impersonation under Windows authentication, the data is cached when the first user accesses the data. If another user requests the same data, the data is retrieved from the cache. The data is not retrieved by making another call to the database to verify the user's access to the data. If you expect multiple users to access the data, and you want each retrieval to the data to be verified by the database's security configurations, do not use caching.  
+  
+ If the <xref:System.Web.UI.WebControls.SqlDataSource.DataSourceMode%2A> is set to <xref:System.Web.UI.WebControls.SqlDataSourceMode> and a <xref:System.Web.UI.WebControls.SqlDataSourceView.FilterExpression%2A> has been specified, it is evaluated along with any supplied <xref:System.Web.UI.WebControls.SqlDataSourceView.FilterParameters%2A> and the resulting filter is applied to the list of data during the data retrieval operation.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The <paramref name="arguments" /> passed to the <see cref="M:System.Web.UI.WebControls.SqlDataSourceView.ExecuteSelect(System.Web.UI.DataSourceSelectArguments)" /> method specify that the data source should perform some additional work while retrieving data to enable paging or sorting through the retrieved data, but the data source control does not support the requested capability.  
+  
+ \- or -  
+  
+ Caching is enabled but the <see cref="P:System.Web.UI.WebControls.SqlDataSource.DataSourceMode" /> property of the data source is not set to <see cref="F:System.Web.UI.WebControls.SqlDataSourceMode.DataSet" />.  
+  
+ \- or -  
+  
+ The <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.SortParameterName" /> property is set but <see cref="P:System.Data.SqlClient.SqlCommand.CommandType" /> is not set to <see cref="F:System.Data.CommandType.StoredProcedure" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The data source cannot create a database connection.  
+  
+ \- or -  
+  
+ Caching is enabled but the internal cache and command types do not match.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteUpdate">
+      <MemberSignature Language="C#" Value="protected override int ExecuteUpdate (System.Collections.IDictionary keys, System.Collections.IDictionary values, System.Collections.IDictionary oldValues);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance int32 ExecuteUpdate(class System.Collections.IDictionary keys, class System.Collections.IDictionary values, class System.Collections.IDictionary oldValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.ExecuteUpdate(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keys" Type="System.Collections.IDictionary" />
+        <Parameter Name="values" Type="System.Collections.IDictionary" />
+        <Parameter Name="oldValues" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="keys">An <see cref="T:System.Collections.IDictionary" /> of primary keys to use with the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.UpdateCommand" /> property to perform the update database operation. If there are no keys associated with the query or if the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.UpdateCommand" /> property is not a parameterized SQL query, pass <see langword="null" />.</param>
+        <param name="values">An <see cref="T:System.Collections.IDictionary" /> of values to use with the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.UpdateCommand" /> property to perform the update database operation. If there are no parameters associated with the query or if the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.UpdateCommand" /> is not a parameterized SQL query, pass <see langword="null" />.</param>
+        <param name="oldValues">An <see cref="T:System.Collections.IDictionary" /> that represents the original values in the database. If there are no parameters associated with the query or if the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.UpdateCommand" /> property is not a parameterized SQL query, pass <see langword="null" />.</param>
+        <summary>Performs an update operation using the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.UpdateCommand" /> SQL string, any parameters that are in the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.UpdateParameters" /> collection, and the values that are in the specified <paramref name="keys" />, <paramref name="values" />, and <paramref name="oldValues" /> collections.</summary>
+        <returns>A value that represents the number of rows updated in the underlying database.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView> class implements the inherited <xref:System.Web.UI.WebControls.SqlDataSourceView.ExecuteUpdate%2A> method to update data in a database. Page developers and data-bound control authors do not call the <xref:System.Web.UI.WebControls.SqlDataSourceView.ExecuteUpdate%2A> method directly; instead, use the publicly exposed <xref:System.Web.UI.WebControls.SqlDataSource.Update%2A> method.  
+  
+ The values contained in the `keys` and `values` collections are evaluated and merged with any values contained by the <xref:System.Web.UI.WebControls.SqlDataSourceView.UpdateParameters%2A> collection. If the <xref:System.Web.UI.WebControls.SqlDataSourceView.ConflictDetection%2A> property is set to  <xref:System.Web.UI.ConflictOptions>, the values contained in the `oldValues` collection are formatted with the <xref:System.Web.UI.WebControls.SqlDataSourceView.OldValuesParameterFormatString%2A> and also merged.  
+  
+ Before the update operation is performed, the <xref:System.Web.UI.WebControls.SqlDataSourceView.OnUpdating%2A> method is called to raise the <xref:System.Web.UI.WebControls.SqlDataSourceView.Updating> event. You can handle this event to examine the values of the parameters and perform any preprocessing before an update.  
+  
+ To perform the operation, the <xref:System.Web.UI.WebControls.SqlDataSourceView> builds a <xref:System.Data.Common.DbCommand> object using the <xref:System.Web.UI.WebControls.SqlDataSourceView.UpdateCommand%2A> text and any associated <xref:System.Web.UI.WebControls.SqlDataSourceView.UpdateParameters%2A> properties, and then executes the <xref:System.Data.Common.DbCommand> object against the underlying database. After the operation completes, the <xref:System.Web.UI.WebControls.SqlDataSourceView.OnUpdated%2A> method is called to raise the <xref:System.Web.UI.WebControls.SqlDataSourceView.Updated> event. You can handle this event to examine any return values and error codes and to perform any post-processing.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> cannot establish a connection with the underlying data source.  
+  
+ \- or -  
+  
+ The <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.ConflictDetection" /> property is set to the <see cref="F:System.Web.UI.ConflictOptions.CompareAllValues" /> value and no <paramref name="oldValues" /> parameters are passed.</exception>
+        <exception cref="T:System.Web.HttpException">The current user does not have the correct permissions to gain access to the database.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.CanUpdate" /> property is <see langword="false" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterExpression">
+      <MemberSignature Language="C#" Value="public string FilterExpression { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FilterExpression" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.FilterExpression" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a filtering expression that is applied when the <see cref="Overload:System.Web.UI.WebControls.SqlDataSourceView.Select" /> method is called.</summary>
+        <value>A string that represents a filtering expression applied when data is retrieved using the <see cref="M:System.Web.UI.WebControls.SqlDataSource.Select(System.Web.UI.DataSourceSelectArguments)" /> method.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The syntax that is used for the <xref:System.Web.UI.WebControls.SqlDataSourceView.FilterExpression%2A> property is a format string–style syntax. You can include parameters in the <xref:System.Web.UI.WebControls.SqlDataSourceView.FilterExpression%2A> property. If the type of the parameter is string or character, enclose the parameter in single quotation marks. Quotation marks are not required, if the parameter is a numeric type.  
+  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.FilterParameters%2A> collection contains the parameters that are evaluated for the placeholders that are found in the <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> property.  
+  
+ The <xref:System.Web.UI.WebControls.SqlDataSource> control supports filtering data only when in `DataSet` mode.  
+  
+ The value of the <xref:System.Web.UI.WebControls.SqlDataSourceView.FilterExpression%2A> property is stored in view state.  
+  
+> [!IMPORTANT]
+>  You should validate any filter parameter value that you receive from the client. The runtime simply substitutes the parameter value into the filter expression and applies it to the <xref:System.Data.DataView> object that is returned by the <xref:System.Web.UI.WebControls.ObjectDataSource.Select%2A> method. If you are using the <xref:System.Web.UI.WebControls.ObjectDataSource.FilterExpression%2A> property as a security measure to limit the number of items that are returned, you must validate the parameter values before the filtering occurs.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to retrieve data from the Northwind database and filter it using the <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> and <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A> properties. The <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> property of the <xref:System.Web.UI.WebControls.SqlDataSource> control is applied any time the <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> method is executed to retrieve data. In this example, the <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> property contains a placeholder for a filter parameter, which is contained in the <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A> collection. In this example, the filter parameter is a <xref:System.Web.UI.WebControls.ControlParameter> object that is bound to the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property of the <xref:System.Web.UI.WebControls.DropDownList> control. Because the <xref:System.Web.UI.WebControls.DropDownList> control has its <xref:System.Web.UI.WebControls.ListControl.AutoPostBack%2A> property set to `true`, any change in the <xref:System.Web.UI.WebControls.DropDownList> selection causes the page to post to the server and the <xref:System.Web.UI.WebControls.GridView> control to rebind to the data source control with the new filter.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_17sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_17sql/CS/sql17cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_17sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_17sql/VB/sql17vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.FilterExpression" /> property was set when the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> is in the <see cref="F:System.Web.UI.WebControls.SqlDataSourceMode.DataReader" /> mode.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Filtering">
+      <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.SqlDataSourceFilteringEventHandler Filtering;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.SqlDataSourceFilteringEventHandler Filtering" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.SqlDataSourceView.Filtering" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.SqlDataSourceFilteringEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs before a filter operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Handle the <xref:System.Web.UI.WebControls.SqlDataSourceView.Filtering> event to perform validation operations on filter parameter values before the <xref:System.Web.UI.WebControls.SqlDataSourceView> object performs a filter operation. You can cancel the <xref:System.Web.UI.WebControls.SqlDataSourceView.Select%2A> method by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.SqlDataSourceFilteringEventArgs> object to `true`. The event is raised only if the <xref:System.Web.UI.WebControls.SqlDataSourceView.FilterExpression%2A> property is set.  
+  
+> [!IMPORTANT]
+>  You should validate any filter parameter value that you receive from the client. The runtime simply substitutes the parameter value into the filter expression and applies it to the <xref:System.Data.DataView> object that is returned by the <xref:System.Web.UI.WebControls.ObjectDataSource.Select%2A> method. If you are using the <xref:System.Web.UI.WebControls.ObjectDataSource.FilterExpression%2A> property as a security measure to limit the number of items that are returned, you must validate the parameter values before the filtering occurs.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterParameters">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.ParameterCollection FilterParameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.ParameterCollection FilterParameters" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.FilterParameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.WebControls.ParameterCollectionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.ParameterCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of parameters that are associated with any parameter placeholders in the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.FilterExpression" /> string.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.ParameterCollection" /> that contains a set of parameters associated with any parameter placeholders found in the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.FilterExpression" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The parameters in the <xref:System.Web.UI.WebControls.SqlDataSourceView.FilterParameters%2A> collection are associated with any parameters that are specified in the <xref:System.Web.UI.WebControls.SqlDataSourceView.FilterExpression%2A> property. The parameter placeholders that are specified in the <xref:System.Web.UI.WebControls.SqlDataSourceView.FilterExpression%2A> are evaluated by order and matched to parameter objects in the <xref:System.Web.UI.WebControls.SqlDataSourceView.FilterParameters%2A> collection when the <xref:System.Web.UI.WebControls.SqlDataSourceView.Select%2A> method is called.  
+  
+> [!IMPORTANT]
+>  You should validate any filter parameter value that you receive from the client. The runtime simply substitutes the parameter value into the filter expression and applies it to the <xref:System.Data.DataView> object that is returned by the <xref:System.Web.UI.WebControls.ObjectDataSource.Select%2A> method. If you are using the <xref:System.Web.UI.WebControls.ObjectDataSource.FilterExpression%2A> property as a security measure to limit the number of items that are returned, you must validate the parameter values before the filtering occurs.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to retrieve data from the Northwind database and filter it using the <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> and <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A> properties. The <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> property of the <xref:System.Web.UI.WebControls.SqlDataSource> control is applied any time the <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> method is executed to retrieve data. In this example, the <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> property contains a placeholder for a filter parameter, which is contained in the <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A> collection. In addition, the filter parameter is a <xref:System.Web.UI.WebControls.ControlParameter> object that is bound to the <xref:System.Web.UI.WebControls.ListControl.SelectedValue%2A> property of the <xref:System.Web.UI.WebControls.DropDownList> control. Because the <xref:System.Web.UI.WebControls.DropDownList> control has its <xref:System.Web.UI.WebControls.ListControl.AutoPostBack%2A> property set to `true`, any change in the <xref:System.Web.UI.WebControls.DropDownList> selection causes the page to post information back to the server and the <xref:System.Web.UI.WebControls.GridView> control to rebind to the data source control with the new filter.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_17sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_17sql/CS/sql17cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_17sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_17sql/VB/sql17vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public int Insert (System.Collections.IDictionary values);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Insert(class System.Collections.IDictionary values) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.Insert(System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="values" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="values">An <see cref="T:System.Collections.IDictionary" /> of parameters for the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.InsertCommand" /> property to use to perform the insert database operation. If there are no parameters associated with the query or if the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.InsertCommand" /> is not a parameterized SQL query, pass <see langword="null" />.</param>
+        <summary>Performs an insert operation using the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.InsertCommand" /> SQL string, any parameters that are specified in the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.InsertParameters" /> collection, and the values that are in the specified <paramref name="values" /> collection.</summary>
+        <returns>A value that represents the number of rows inserted into the underlying database.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.Insert%2A> method calls the <xref:System.Web.UI.WebControls.SqlDataSourceView.ExecuteInsert%2A> method, passing the `values` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> cannot establish a connection with the underlying data source.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.CanInsert" /> property is <see langword="false" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertCommand">
+      <MemberSignature Language="C#" Value="public string InsertCommand { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InsertCommand" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.InsertCommand" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the SQL string that the <see cref="T:System.Web.UI.WebControls.SqlDataSourceView" /> object uses to insert data into the underlying database.</summary>
+        <value>An SQL string that the <see cref="T:System.Web.UI.WebControls.SqlDataSourceView" /> uses to insert data.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because different database products use different varieties of SQL, the syntax of the SQL string depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=fullName>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=fullName> or <xref:System.Data.OleDb?displayProperty=fullName>, the placeholder of the parameter is `'?'`. For more information on parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.InsertCommand%2A> property can be an SQL string or the name of a stored procedure, if the data source supports stored procedures.  
+  
+ The value of the <xref:System.Web.UI.WebControls.SqlDataSourceView.InsertCommand%2A> property is stored in view state.  
+  
+   
+  
+## Examples  
+ This section contains two code examples. The first code example demonstrates how to insert data into a database using the <xref:System.Web.UI.WebControls.SqlDataSource> control. The second code example demonstrates how to retrieve data from Microsoft SQL Server, display it in a <xref:System.Web.UI.WebControls.GridView> control, and use a <xref:System.Web.UI.WebControls.DetailsView> control to see details of a selected row in the <xref:System.Web.UI.WebControls.GridView> and as a form to insert new records.  
+  
+ The following code example demonstrates how to insert data into a database using the <xref:System.Web.UI.WebControls.SqlDataSource> control. The current data in the table is displayed in the <xref:System.Web.UI.WebControls.DropDownList> control. You can add new records by entering values in the <xref:System.Web.UI.WebControls.TextBox> controls, and then clicking the **Insert** button. When the **Insert** button is clicked, the specified values are inserted into the database and the <xref:System.Web.UI.WebControls.DropDownList> is refreshed.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_24sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_24sql/CS/sql24cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_24sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_24sql/VB/sql24vb.aspx#1)]  -->  
+  
+ The following code example demonstrates how to retrieve data from SQL Server, display it in a <xref:System.Web.UI.WebControls.GridView> control, and use a <xref:System.Web.UI.WebControls.DetailsView> control to see details of a selected row in the <xref:System.Web.UI.WebControls.GridView> and as a form to insert new records.  
+  
+ Initially, the data is displayed in the <xref:System.Web.UI.WebControls.GridView> control and the selected row of the <xref:System.Web.UI.WebControls.GridView> is also displayed in the <xref:System.Web.UI.WebControls.DetailsView> control. The <xref:System.Web.UI.WebControls.GridView> and <xref:System.Web.UI.WebControls.DetailsView> controls use different data source controls; the one that is associated with the <xref:System.Web.UI.WebControls.DetailsView> has the <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> and <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A> properties, which ensure that the selected row of the <xref:System.Web.UI.WebControls.GridView> is displayed.  
+  
+ If you click the automatically generated **Insert** button of the <xref:System.Web.UI.WebControls.DetailsView> control, the <xref:System.Web.UI.WebControls.DetailsView> shows a different user interface, which is used to insert a new record. The example uses a stored procedure to insert records and returns the primary key of the inserted row. If you insert a record, the <xref:System.Web.UI.WebControls.DetailsView> automatically populates the <xref:System.Web.UI.WebControls.SqlDataSource.InsertParameters%2A> collection with values from the bound columns and calls the <xref:System.Web.UI.WebControls.SqlDataSource.Insert%2A> method. The <xref:System.Web.UI.WebControls.DetailsView> can infer the correct parameters from any <xref:System.Web.UI.WebControls.BoundField> object and a parameter for the <xref:System.Web.UI.WebControls.TemplateField> object when the ASP.NET two-way data-binding syntax is used. In this example, an additional parameter is added in the <xref:System.Web.UI.WebControls.SqlDataSourceView.OnInserting%2A> event handler to handle the primary key that is returned by the stored procedure.  
+  
+ Finally, after data is inserted by the <xref:System.Web.UI.WebControls.DetailsView> control into the database, the <xref:System.Web.UI.WebControls.SqlDataSourceView.OnInserted%2A> event handler is called to handle the <xref:System.Web.UI.WebControls.SqlDataSource.Inserted> event, the value of the primary key of the inserted row is displayed, and the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method of the <xref:System.Web.UI.WebControls.GridView> control is called explicitly to refresh the data.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/CS/sql15cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/VB/sql15vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertCommandType">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.SqlDataSourceCommandType InsertCommandType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.SqlDataSourceCommandType InsertCommandType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.InsertCommandType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.SqlDataSourceCommandType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the text in the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.InsertCommand" /> property is a SQL statement or the name of a stored procedure.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.SqlDataSourceCommandType" /> values. The value is the <see cref="F:System.Web.UI.WebControls.SqlDataSourceCommandType.Text" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.Web.UI.WebControls.SqlDataSourceView.InsertCommandType%2A> property is stored in view state.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to retrieve data from Microsoft SQL Server, display it in a <xref:System.Web.UI.WebControls.GridView> control, and use a <xref:System.Web.UI.WebControls.DetailsView> control to see details of a selected row in the <xref:System.Web.UI.WebControls.GridView> and as a form to insert new records.  
+  
+ The <xref:System.Web.UI.WebControls.GridView> control displays a set of data and the <xref:System.Web.UI.WebControls.DetailsView> control displays the details for a particular row. If you click the automatically generated **Insert** button of the <xref:System.Web.UI.WebControls.DetailsView> control, the <xref:System.Web.UI.WebControls.DetailsView> shows a different user interface, which is used to insert a new record. The example uses a stored procedure to insert records and returns the primary key of the inserted row. The stored procedure name is set in the <xref:System.Web.UI.WebControls.SqlDataSource.InsertCommand%2A> property and is identified as a stored procedure by setting the <xref:System.Web.UI.WebControls.SqlDataSource.InsertCommandType%2A> property to the <xref:System.Web.UI.WebControls.SqlDataSourceCommandType> value.  
+  
+ Finally, after data is inserted by the <xref:System.Web.UI.WebControls.DetailsView> control into the database, the <xref:System.Web.UI.WebControls.SqlDataSourceView.OnInserted%2A> event handler is called to handle the <xref:System.Web.UI.WebControls.SqlDataSource.Inserted> event, the value of the primary key of the inserted row is displayed, and the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method of the <xref:System.Web.UI.WebControls.GridView> control is called explicitly to refresh the data.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/CS/sql15cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/VB/sql15vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The selected value is not one of the <see cref="T:System.Web.UI.WebControls.SqlDataSourceCommandType" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Inserted">
+      <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.SqlDataSourceStatusEventHandler Inserted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.SqlDataSourceStatusEventHandler Inserted" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.SqlDataSourceView.Inserted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.SqlDataSourceStatusEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when an insert operation has completed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Handle the <xref:System.Web.UI.WebControls.SqlDataSourceView.Inserted> event to examine the values of output parameters after an insert operation has completed. The output parameters are available from the <xref:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs> object that is associated with the event.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to retrieve data from Microsoft SQL Server and display it in a <xref:System.Web.UI.WebControls.GridView> control. The example also uses a <xref:System.Web.UI.WebControls.DetailsView> control to display details of the selected row in the <xref:System.Web.UI.WebControls.GridView>, and as a form to insert new records.  
+  
+ Initially, the data is displayed in the <xref:System.Web.UI.WebControls.GridView> control and the selected row of the <xref:System.Web.UI.WebControls.GridView> is also displayed in the <xref:System.Web.UI.WebControls.DetailsView>. The <xref:System.Web.UI.WebControls.GridView> and <xref:System.Web.UI.WebControls.DetailsView> controls use different data source controls; the one that is associated with the <xref:System.Web.UI.WebControls.DetailsView> has the <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> and <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A> properties, which ensure that the selected row of the <xref:System.Web.UI.WebControls.GridView> is displayed.  
+  
+ If you click the automatically generated **Insert** button of the <xref:System.Web.UI.WebControls.DetailsView> control, the <xref:System.Web.UI.WebControls.DetailsView> shows a different user interface that is used to insert a new record. The example uses a stored procedure to insert records and returns the primary key of the inserted row. If you insert a record, the <xref:System.Web.UI.WebControls.DetailsView> automatically populates the <xref:System.Web.UI.WebControls.SqlDataSource.InsertParameters%2A> collection with values from the bound columns and calls the <xref:System.Web.UI.WebControls.SqlDataSource.Insert%2A> method. The <xref:System.Web.UI.WebControls.DetailsView> can infer the correct parameters from any <xref:System.Web.UI.WebControls.BoundField> object and a parameter for the <xref:System.Web.UI.WebControls.TemplateField> object when the ASP.NET two-way data-binding syntax is used. In this example, an additional parameter is added in the <xref:System.Web.UI.WebControls.SqlDataSourceView.OnInserting%2A> event handler to handle the primary key that is returned by the stored procedure.  
+  
+ Finally, after data is inserted by the <xref:System.Web.UI.WebControls.DetailsView> control into the database, the <xref:System.Web.UI.WebControls.SqlDataSourceView.OnInserted%2A> event handler is called to handle the <xref:System.Web.UI.WebControls.SqlDataSource.Inserted> event, the value of the primary key of the inserted row is displayed, and the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method of the <xref:System.Web.UI.WebControls.GridView> control is called explicitly to refresh the data.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/CS/sql15cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/VB/sql15vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Inserting">
+      <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.SqlDataSourceCommandEventHandler Inserting;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.SqlDataSourceCommandEventHandler Inserting" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.SqlDataSourceView.Inserting" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.SqlDataSourceCommandEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs before an insert operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Handle the <xref:System.Web.UI.WebControls.SqlDataSourceView.Inserting> event to perform additional initialization operations that are specific to your application, to validate the values of parameters, or to change the parameter values before the <xref:System.Web.UI.WebControls.SqlDataSource> control performs the insert operation.  
+  
+ The connection to the underlying data source is not yet open when the event handler delegate is called. Therefore, you cannot cancel the database operation directly by calling the <xref:System.Data.Common.DbCommand.Cancel%2A> method on the <xref:System.Data.Common.DbCommand> object that is exposed by the <xref:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs> object. You can, however, cancel the database operation by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs> to `true`.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to retrieve data from Microsoft SQL Server, display it in a <xref:System.Web.UI.WebControls.GridView> control. The example also uses a <xref:System.Web.UI.WebControls.DetailsView> control to display details of the selected row in the <xref:System.Web.UI.WebControls.GridView>, and as a form to insert new records.  
+  
+ Initially, the data is displayed in the <xref:System.Web.UI.WebControls.GridView> control and the selected row of the <xref:System.Web.UI.WebControls.GridView> is also displayed in the <xref:System.Web.UI.WebControls.DetailsView> control. The <xref:System.Web.UI.WebControls.GridView> and <xref:System.Web.UI.WebControls.DetailsView> controls use different data source controls; the one that is associated with the <xref:System.Web.UI.WebControls.DetailsView> has the <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> and <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A> properties, which ensure that the selected row of the <xref:System.Web.UI.WebControls.GridView> is displayed.  
+  
+ If you click the automatically generated **Insert** button of the <xref:System.Web.UI.WebControls.DetailsView> control, the <xref:System.Web.UI.WebControls.DetailsView> shows a different user interface, which is used to insert a new record. The example uses a stored procedure to insert records and returns the primary key of the inserted row. If you insert a record, the <xref:System.Web.UI.WebControls.DetailsView> automatically populates the <xref:System.Web.UI.WebControls.SqlDataSource.InsertParameters%2A> collection with values from the bound columns and calls the <xref:System.Web.UI.WebControls.SqlDataSource.Insert%2A> method. The <xref:System.Web.UI.WebControls.DetailsView> can infer the correct parameters from any <xref:System.Web.UI.WebControls.BoundField> object, and a parameter for the <xref:System.Web.UI.WebControls.TemplateField> object when the ASP.NET two-way data-binding syntax is used. In this example, an additional parameter is added in the <xref:System.Web.UI.WebControls.SqlDataSourceView.OnInserting%2A> event handler to handle the primary key that is returned by the stored procedure.  
+  
+ Finally, after data is inserted by the <xref:System.Web.UI.WebControls.DetailsView> control into the database, the <xref:System.Web.UI.WebControls.SqlDataSourceView.OnInserted%2A> event handler is called to handle the <xref:System.Web.UI.WebControls.SqlDataSource.Inserted> event, the value of the primary key of the inserted row is displayed, and the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method of the <xref:System.Web.UI.WebControls.GridView> control is called explicitly to refresh the data.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/CS/sql15cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/VB/sql15vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertParameters">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.ParameterCollection InsertParameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.ParameterCollection InsertParameters" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.InsertParameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.WebControls.ParameterCollectionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.ParameterCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the parameters collection containing the parameters that are used by the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.InsertCommand" /> property.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.ParameterCollection" /> that contains the parameters used by the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.InsertCommand" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Web.UI.WebControls.SqlDataSourceView.InsertCommand%2A> property contains a parameterized SQL query, the <xref:System.Web.UI.WebControls.SqlDataSourceView.InsertParameters%2A> collection contains any <xref:System.Web.UI.WebControls.Parameter> objects that correspond to the parameter placeholders in the SQL string.  
+  
+ Depending on the ADO.NET provider, the order of the parameters in the <xref:System.Web.UI.WebControls.SqlDataSourceView.InsertParameters%2A> collection might be important. The <xref:System.Data.OleDb?displayProperty=fullName> and <xref:System.Data.Odbc?displayProperty=fullName> providers associate the parameters in the collection according to the order in which the parameters appear in the parameterized SQL query. The <xref:System.Data.SqlClient?displayProperty=fullName> provider, which is the default ADO.NET provider for the <xref:System.Web.UI.WebControls.SqlDataSource> control, associates the parameters in the collection by matching the name of the parameter with a placeholder alias in the SQL query. For more information on parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to insert data into a database using the <xref:System.Web.UI.WebControls.SqlDataSource> control and a simple Web Forms page. The current data in the table is displayed in the <xref:System.Web.UI.WebControls.DropDownList> control. You can add new records by entering values in the <xref:System.Web.UI.WebControls.TextBox> controls, and then clicking the **Insert** button. When the **Insert** button is clicked, the specified values are inserted into the database and the <xref:System.Web.UI.WebControls.DropDownList> is refreshed.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_24sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_24sql/CS/sql24cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_24sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_24sql/VB/sql24vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTrackingViewState">
+      <MemberSignature Language="C#" Value="protected bool IsTrackingViewState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsTrackingViewState" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.IsTrackingViewState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.WebControls.SqlDataSourceView" /> object is saving changes to its view state.</summary>
+        <value>
+          <see langword="true" />, if the data source view is marked to save its state; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadViewState">
+      <MemberSignature Language="C#" Value="protected virtual void LoadViewState (object savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void LoadViewState(object savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.LoadViewState(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savedState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="savedState">An object that represents the <see cref="T:System.Web.UI.WebControls.SqlDataSourceView" /> state to restore.</param>
+        <summary>Restores the previously saved view state for the data source view.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is primarily used by the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] infrastructure and is not intended to be used directly from your code.  However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.LoadViewState%2A> method restores view-state information for the <xref:System.Web.UI.WebControls.SqlDataSourceView> object from a previous page request that was saved by the <xref:System.Web.UI.WebControls.SqlDataSourceView.SaveViewState%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OldValuesParameterFormatString">
+      <MemberSignature Language="C#" Value="public string OldValuesParameterFormatString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OldValuesParameterFormatString" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.OldValuesParameterFormatString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("{0}")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a format string to apply to the names of any parameters that are passed to the <see cref="Overload:System.Web.UI.WebControls.SqlDataSourceView.Delete" /> or <see cref="Overload:System.Web.UI.WebControls.SqlDataSourceView.Update" /> method.</summary>
+        <value>A string that represents a format string applied to the names of any <paramref name="oldValues" /> parameters passed to the <see cref="Overload:System.Web.UI.WebControls.SqlDataSourceView.Delete" /> or <see cref="Overload:System.Web.UI.WebControls.SqlDataSourceView.Update" /> methods. The default is "{0}".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.OldValuesParameterFormatString%2A> format string is applied to primary keys only, such as those that are identified by the `DataKeyNames` property of the data-bound control or in delete and update scenarios where the <xref:System.Web.UI.WebControls.SqlDataSourceView.ConflictDetection%2A> property is set to the <xref:System.Web.UI.ConflictOptions> value and a set of `oldValues` is passed to the corresponding data method. In this case, the format string is applied to each parameter name in the `oldValues` collection. For more information, see <xref:System.Web.UI.WebControls.SqlDataSource.OldValuesParameterFormatString?displayProperty=fullName>.  
+  
+ The value of the <xref:System.Web.UI.WebControls.SqlDataSourceView.OldValuesParameterFormatString%2A> property is stored in view state.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDeleted">
+      <MemberSignature Language="C#" Value="protected virtual void OnDeleted (System.Web.UI.WebControls.SqlDataSourceStatusEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDeleted(class System.Web.UI.WebControls.SqlDataSourceStatusEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.OnDeleted(System.Web.UI.WebControls.SqlDataSourceStatusEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Web.UI.WebControls.SqlDataSourceStatusEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.WebControls.SqlDataSourceView.Deleted" /> event after the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> control has completed a delete operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.OnDeleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding the <see cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnDeleted(System.Web.UI.WebControls.SqlDataSourceStatusEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnDeleted(System.Web.UI.WebControls.SqlDataSourceStatusEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDeleting">
+      <MemberSignature Language="C#" Value="protected virtual void OnDeleting (System.Web.UI.WebControls.SqlDataSourceCommandEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDeleting(class System.Web.UI.WebControls.SqlDataSourceCommandEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.OnDeleting(System.Web.UI.WebControls.SqlDataSourceCommandEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Web.UI.WebControls.SqlDataSourceCommandEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.WebControls.SqlDataSourceView.Deleting" /> event before the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> control attempts a delete operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.OnDeleting%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to handle the <xref:System.Web.UI.WebControls.SqlDataSource.Deleting> event, which is raised before a <xref:System.Web.UI.WebControls.SqlDataSourceView.Delete%2A> operation occurs. Because this example deletes data from the Northwind database, an <xref:System.Web.UI.WebControls.SqlDataSourceView.OnDeleting%2A> handler is added to attempt to back up the database to disk before the delete is performed.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_10sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_10sql/CS/sql10cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_10sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_10sql/VB/sql10vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding the <see cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnDeleting(System.Web.UI.WebControls.SqlDataSourceCommandEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnDeleting(System.Web.UI.WebControls.SqlDataSourceCommandEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnFiltering">
+      <MemberSignature Language="C#" Value="protected virtual void OnFiltering (System.Web.UI.WebControls.SqlDataSourceFilteringEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnFiltering(class System.Web.UI.WebControls.SqlDataSourceFilteringEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.OnFiltering(System.Web.UI.WebControls.SqlDataSourceFilteringEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Web.UI.WebControls.SqlDataSourceFilteringEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Web.UI.WebControls.SqlDataSourceFilteringEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.WebControls.SqlDataSourceView.Filtering" /> event before the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> control filters the results of a select operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.OnFiltering%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding the <see cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnFiltering(System.Web.UI.WebControls.SqlDataSourceFilteringEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnFiltering(System.Web.UI.WebControls.SqlDataSourceFilteringEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInserted">
+      <MemberSignature Language="C#" Value="protected virtual void OnInserted (System.Web.UI.WebControls.SqlDataSourceStatusEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnInserted(class System.Web.UI.WebControls.SqlDataSourceStatusEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.OnInserted(System.Web.UI.WebControls.SqlDataSourceStatusEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Web.UI.WebControls.SqlDataSourceStatusEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.WebControls.SqlDataSourceView.Inserted" /> event after the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> control has completed an insert operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.OnInserted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to retrieve data from Microsoft SQL Server, display it in a <xref:System.Web.UI.WebControls.GridView> control, and use a <xref:System.Web.UI.WebControls.DetailsView> control to see details of a selected row in the <xref:System.Web.UI.WebControls.GridView> and as a form to insert new records.  
+  
+ Initially, the data is displayed in the <xref:System.Web.UI.WebControls.GridView> control and the selected row of the <xref:System.Web.UI.WebControls.GridView> is also displayed in the <xref:System.Web.UI.WebControls.DetailsView> control. The <xref:System.Web.UI.WebControls.GridView> and <xref:System.Web.UI.WebControls.DetailsView> controls use different data source controls; the one that is associated with the <xref:System.Web.UI.WebControls.DetailsView> has the <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> and <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A> properties, which ensure that the selected row of the <xref:System.Web.UI.WebControls.GridView> is displayed.  
+  
+ If you click the automatically generated **Insert** button of the <xref:System.Web.UI.WebControls.DetailsView> control, the <xref:System.Web.UI.WebControls.DetailsView> shows a different user interface, which is used to insert a new record. The example uses a stored procedure to insert records and returns the primary key of the inserted row. If you insert a record, the <xref:System.Web.UI.WebControls.DetailsView> automatically populates the <xref:System.Web.UI.WebControls.SqlDataSource.InsertParameters%2A> collection with values from the bound columns and calls the <xref:System.Web.UI.WebControls.SqlDataSource.Insert%2A> method. The <xref:System.Web.UI.WebControls.DetailsView> can infer the correct parameters from any <xref:System.Web.UI.WebControls.BoundField> object and a parameter for the <xref:System.Web.UI.WebControls.TemplateField> object when the ASP.NET two-way data-binding syntax is used. In this example, an additional parameter is added in the <xref:System.Web.UI.WebControls.SqlDataSourceView.OnInserting%2A> event handler to handle the primary key that is returned by the stored procedure.  
+  
+ Finally, after data is inserted by the <xref:System.Web.UI.WebControls.DetailsView> control into the database, the <xref:System.Web.UI.WebControls.SqlDataSourceView.OnInserted%2A> event handler is called to handle the <xref:System.Web.UI.WebControls.SqlDataSource.Inserted> event, the value of the primary key of the inserted row is displayed, and the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method of the <xref:System.Web.UI.WebControls.GridView> control is called explicitly to refresh the data.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/CS/sql15cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/VB/sql15vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding the <see cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnInserted(System.Web.UI.WebControls.SqlDataSourceStatusEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnInserted(System.Web.UI.WebControls.SqlDataSourceStatusEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInserting">
+      <MemberSignature Language="C#" Value="protected virtual void OnInserting (System.Web.UI.WebControls.SqlDataSourceCommandEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnInserting(class System.Web.UI.WebControls.SqlDataSourceCommandEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.OnInserting(System.Web.UI.WebControls.SqlDataSourceCommandEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Web.UI.WebControls.SqlDataSourceCommandEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.WebControls.SqlDataSourceView.Inserting" /> event before the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> control attempts an insert operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.OnInserting%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to retrieve data from Microsoft SQL Server, display it in a <xref:System.Web.UI.WebControls.GridView> control, and use a <xref:System.Web.UI.WebControls.DetailsView> control to see details of a selected row in the <xref:System.Web.UI.WebControls.GridView> and as a form to insert new records.  
+  
+ Initially, the data is displayed in the <xref:System.Web.UI.WebControls.GridView> control and the selected row of the <xref:System.Web.UI.WebControls.GridView> is also displayed in the <xref:System.Web.UI.WebControls.DetailsView> control. The <xref:System.Web.UI.WebControls.GridView> and <xref:System.Web.UI.WebControls.DetailsView> controls use different data source controls; the one that is associated with the <xref:System.Web.UI.WebControls.DetailsView> has the <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> and <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A> properties, which ensure that the selected row of the <xref:System.Web.UI.WebControls.GridView> is displayed.  
+  
+ If you click the automatically generated **Insert** button of the <xref:System.Web.UI.WebControls.DetailsView> control, the <xref:System.Web.UI.WebControls.DetailsView> shows a different user interface, which is used to insert a new record. The example uses a stored procedure to insert records and returns the primary key of the inserted row. If you insert a record, the <xref:System.Web.UI.WebControls.DetailsView> automatically populates the <xref:System.Web.UI.WebControls.SqlDataSource.InsertParameters%2A> collection with values from the bound columns and calls the <xref:System.Web.UI.WebControls.SqlDataSource.Insert%2A> method. The <xref:System.Web.UI.WebControls.DetailsView> can infer the correct parameters from any <xref:System.Web.UI.WebControls.BoundField> object and a parameter for the <xref:System.Web.UI.WebControls.TemplateField> object when the ASP.NET two-way data-binding syntax is used. In this example, an additional parameter is added in the <xref:System.Web.UI.WebControls.SqlDataSourceView.OnInserting%2A> event handler to handle the primary key that is returned by the stored procedure.  
+  
+ Finally, after data is inserted by the <xref:System.Web.UI.WebControls.DetailsView> control into the database, the <xref:System.Web.UI.WebControls.SqlDataSourceView.OnInserted%2A> event handler is called to handle the <xref:System.Web.UI.WebControls.SqlDataSource.Inserted> event, the value of the primary key of the inserted row is displayed, and the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method of the <xref:System.Web.UI.WebControls.GridView> control is called explicitly to refresh the data.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/CS/sql15cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/VB/sql15vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding the <see cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnInserting(System.Web.UI.WebControls.SqlDataSourceCommandEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnInserting(System.Web.UI.WebControls.SqlDataSourceCommandEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSelected">
+      <MemberSignature Language="C#" Value="protected virtual void OnSelected (System.Web.UI.WebControls.SqlDataSourceStatusEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelected(class System.Web.UI.WebControls.SqlDataSourceStatusEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.OnSelected(System.Web.UI.WebControls.SqlDataSourceStatusEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Web.UI.WebControls.SqlDataSourceStatusEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.WebControls.SqlDataSourceView.Selected" /> event after the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> control has completed a data retrieval operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.OnSelected%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding the <see cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnSelected(System.Web.UI.WebControls.SqlDataSourceStatusEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnSelected(System.Web.UI.WebControls.SqlDataSourceStatusEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSelecting">
+      <MemberSignature Language="C#" Value="protected virtual void OnSelecting (System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelecting(class System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.OnSelecting(System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.WebControls.SqlDataSourceView.Selecting" /> event before the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> control attempts a data retrieval operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.OnSelecting%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding the <see cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnSelecting(System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnSelecting(System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnUpdated">
+      <MemberSignature Language="C#" Value="protected virtual void OnUpdated (System.Web.UI.WebControls.SqlDataSourceStatusEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnUpdated(class System.Web.UI.WebControls.SqlDataSourceStatusEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.OnUpdated(System.Web.UI.WebControls.SqlDataSourceStatusEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Web.UI.WebControls.SqlDataSourceStatusEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.WebControls.SqlDataSourceView.Updated" /> event after the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> control has completed an update operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.OnUpdated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to display and update data retrieved from an ODBC database in a <xref:System.Web.UI.WebControls.GridView> control. After a record is successfully updated, the <xref:System.Web.UI.WebControls.SqlDataSource.Updated> event is handled by an event handler to perform a post-processing step where an e-mail message notification is sent.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_7odbc#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_7odbc/CS/odbc7cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_7odbc#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_7odbc/VB/odbc7vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding the <see cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnUpdated(System.Web.UI.WebControls.SqlDataSourceStatusEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnUpdated(System.Web.UI.WebControls.SqlDataSourceStatusEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnUpdating">
+      <MemberSignature Language="C#" Value="protected virtual void OnUpdating (System.Web.UI.WebControls.SqlDataSourceCommandEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnUpdating(class System.Web.UI.WebControls.SqlDataSourceCommandEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.OnUpdating(System.Web.UI.WebControls.SqlDataSourceCommandEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Web.UI.WebControls.SqlDataSourceCommandEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.WebControls.SqlDataSourceView.Updating" /> event before the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> control attempts an update operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.OnUpdating%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to display data that is retrieved from a Microsoft SQL Server database in a <xref:System.Web.UI.WebControls.DropDownList> control and update the record using a <xref:System.Web.UI.WebControls.TextBox> control. The example shows how you can use a <xref:System.Data.Common.DbTransaction> object to add transaction context when using the <xref:System.Web.UI.WebControls.SqlDataSource> control to update data.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_9sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_9sql/CS/sql9cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_9sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_9sql/VB/sql9vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding the <see cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnUpdating(System.Web.UI.WebControls.SqlDataSourceCommandEventArgs)" /> in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.SqlDataSourceView.OnUpdating(System.Web.UI.WebControls.SqlDataSourceCommandEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterPrefix">
+      <MemberSignature Language="C#" Value="protected virtual string ParameterPrefix { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ParameterPrefix" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.ParameterPrefix" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the string that is used to prefix a parameter placeholder in a parameterized SQL query.</summary>
+        <value>The "@" string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ SQL queries and commands can be parameterized, in that they contain placeholders for values that are bound to the query at run time. Depending on the ADO.NET provider that is set for the <xref:System.Web.UI.WebControls.SqlDataSource> control, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property, the parameters are evaluated by alias or by their ordering in the <xref:System.Web.UI.WebControls.ParameterCollection> object.  
+  
+ If the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> is not set or is set to the <xref:System.Data.SqlClient?displayProperty=fullName>, parameters are evaluated by alias and the <xref:System.Web.UI.WebControls.SqlDataSourceView.ParameterPrefix%2A> property is used to add a parameter prefix to the <xref:System.Web.UI.WebControls.Parameter.Name%2A> property of each <xref:System.Web.UI.WebControls.Parameter> object in a <xref:System.Web.UI.WebControls.ParameterCollection> during a data retrieval or data manipulation operation. If the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property is set to the <xref:System.Data.OleDb?displayProperty=fullName> or <xref:System.Data.Odbc?displayProperty=fullName>, the parameters are evaluated by order and the <xref:System.Web.UI.WebControls.SqlDataSourceView.ParameterPrefix%2A> and <xref:System.Web.UI.WebControls.Parameter.Name%2A> properties are ignored.  
+  
+ If you extend the <xref:System.Web.UI.WebControls.SqlDataSourceView> class, you can override the <xref:System.Web.UI.WebControls.SqlDataSourceView.ParameterPrefix%2A> property to supply a prefix other than the `"@"` string, if required.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RaiseUnsupportedCapabilityError">
+      <MemberSignature Language="C#" Value="protected override void RaiseUnsupportedCapabilityError (System.Web.UI.DataSourceCapabilities capability);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RaiseUnsupportedCapabilityError(valuetype System.Web.UI.DataSourceCapabilities capability) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.RaiseUnsupportedCapabilityError(System.Web.UI.DataSourceCapabilities)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="capability" Type="System.Web.UI.DataSourceCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="capability">One of the <see cref="T:System.Web.UI.DataSourceCapabilities" /> values that is compared against the capabilities that the view supports.</param>
+        <summary>Compares the capabilities that are requested for an <see cref="M:System.Web.UI.WebControls.SqlDataSourceView.ExecuteSelect(System.Web.UI.DataSourceSelectArguments)" /> operation against those that the view supports and is called by the <see cref="M:System.Web.UI.DataSourceSelectArguments.RaiseUnsupportedCapabilitiesError(System.Web.UI.DataSourceView)" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.RaiseUnsupportedCapabilityError%2A> method is used by the data source view to examine each of the capabilities that are requested by a data-bound control, which is represented by the <xref:System.Web.UI.DataSourceSelectArguments> object that is passed to the <xref:System.Web.UI.WebControls.SqlDataSourceView.Select%2A> method, and to compare those capabilities to the capabilities that are supported by the data source view. For the capabilities that are represented by the <xref:System.Web.UI.DataSourceSelectArguments> object and are not supported by the data source view, a <xref:System.NotSupportedException> exception is raised.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The data source does not have the selected <paramref name="capability" /> enabled.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveViewState">
+      <MemberSignature Language="C#" Value="protected virtual object SaveViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object SaveViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.SaveViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Saves the changes to the view state for the  <see cref="T:System.Web.UI.WebControls.SqlDataSourceView" /> control since the time that the page was posted back to the server.</summary>
+        <returns>The object that contains the changes to the <see cref="T:System.Web.UI.WebControls.SqlDataSourceView" /> view state; otherwise, <see langword="null" />, if there is no view state associated with the object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.SaveViewState%2A> method is primarily used by control developers.  
+  
+ View state is the accumulation of the values of the properties for a server control. These values are automatically placed in the <xref:System.Web.UI.Control.ViewState%2A> property for the server control, which is an instance of the <xref:System.Web.UI.StateBag> class. The <xref:System.Web.UI.Control.ViewState%2A> value for the server control is then persisted to a string object after the save state stage of the server control life cycle.  
+  
+ When view state is saved, the string object that was persisted after the save state stage of the server control life cycle is returned to the client as a variable that is stored in an HTML `Hidden` element. When you author custom server controls, you can improve efficiency by overriding the <xref:System.Web.UI.WebControls.SqlDataSourceView.SaveViewState%2A> method and modifying the `ViewState` property for your server control. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Select">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerable Select (System.Web.UI.DataSourceSelectArguments arguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IEnumerable Select(class System.Web.UI.DataSourceSelectArguments arguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.Select(System.Web.UI.DataSourceSelectArguments)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="arguments" Type="System.Web.UI.DataSourceSelectArguments" />
+      </Parameters>
+      <Docs>
+        <param name="arguments">A <see cref="T:System.Web.UI.DataSourceSelectArguments" /> used to request operations on the data beyond basic data retrieval.</param>
+        <summary>Retrieves data from the underlying database using the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.SelectCommand" /> SQL string and any parameters that are in the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.SelectParameters" /> collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerable" /> list of data rows.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.Select%2A> method calls the <xref:System.Web.UI.WebControls.SqlDataSourceView.ExecuteSelect%2A> method, passing the `selectArgs` parameter.  
+  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.ExecuteSelect%2A> method returns a <xref:System.Data.DataView> object, if the <xref:System.Web.UI.WebControls.SqlDataSource.DataSourceMode%2A> property is set to the <xref:System.Web.UI.WebControls.SqlDataSourceMode> value or it returns a <xref:System.Data.IDataReader> object, if the <xref:System.Web.UI.WebControls.SqlDataSource.DataSourceMode%2A> property is set to the <xref:System.Web.UI.WebControls.SqlDataSourceMode> value. Close the <xref:System.Data.IDataReader> object when you have finished reading the data.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The <paramref name="selectArgs" /> passed to the <see cref="M:System.Web.UI.WebControls.SqlDataSourceView.Select(System.Web.UI.DataSourceSelectArguments)" /> method specify that the data source should perform some additional work while retrieving data to enable paging or sorting through the retrieved data, but the data source control does not support the requested capability.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> cannot establish a connection with the underlying data source.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectCommand">
+      <MemberSignature Language="C#" Value="public string SelectCommand { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SelectCommand" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.SelectCommand" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the SQL string that the <see cref="T:System.Web.UI.WebControls.SqlDataSourceView" /> object uses to retrieve data from the underlying database.</summary>
+        <value>An SQL string that the <see cref="T:System.Web.UI.WebControls.SqlDataSourceView" /> uses to retrieve data.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because different database products use different varieties of SQL, the syntax of the SQL string depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=fullName>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=fullName> or <xref:System.Data.OleDb?displayProperty=fullName>, the placeholder of the parameter is `'?'`. For more information on parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.SelectCommand%2A> property can be an SQL string or the name of a stored procedure, if the data source supports stored procedures.  
+  
+> [!IMPORTANT]
+>  It is more secure to use a stored procedure than a SQL statement for the <xref:System.Web.UI.WebControls.SqlDataSourceView.SelectCommand%2A> property.  
+  
+ The value of the <xref:System.Web.UI.WebControls.SqlDataSourceView.SelectCommand%2A> property is stored in view state.  
+  
+   
+  
+## Examples  
+ This section contains two code examples. The first code example demonstrates how to set the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> text to a basic SQL query to retrieve data from a Microsoft SQL Server database and display it in a <xref:System.Web.UI.WebControls.DropDownList> control. The second code example demonstrates how to set the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> text to the name of a stored procedure to retrieve data from a SQL Server database and display it in a <xref:System.Web.UI.WebControls.DropDownList>.  
+  
+ The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> text to a basic SQL query to retrieve data from a SQL Server database and display it in a <xref:System.Web.UI.WebControls.DropDownList> control. The <xref:System.Web.UI.WebControls.Button> and <xref:System.Web.UI.WebControls.TextBox> controls are provided as a simple interface to update the address for the selected user in the <xref:System.Web.UI.WebControls.DropDownList>.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_8sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_8sql/CS/sql8cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_8sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_8sql/VB/sql8vb.aspx#1)]  -->  
+  
+ The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> text to the name of a stored procedure to retrieve data from a SQL Server database and display it in a <xref:System.Web.UI.WebControls.DropDownList> control. The <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> property can be an SQL query or the name of a stored procedure, if the data source supports stored procedures.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_14sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_14sql/CS/sql14cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_14sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_14sql/VB/sql14vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectCommandType">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.SqlDataSourceCommandType SelectCommandType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.SqlDataSourceCommandType SelectCommandType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.SelectCommandType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.SqlDataSourceCommandType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the text in the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.SelectCommand" /> property is a SQL query or the name of a stored procedure.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.SqlDataSourceCommandType" /> values. The default is the <see cref="F:System.Web.UI.WebControls.SqlDataSourceCommandType.Text" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.Web.UI.WebControls.SqlDataSourceView.SelectCommandType%2A> property is stored in view state.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> text to the name of a stored procedure and the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommandType%2A> property to the <xref:System.Web.UI.WebControls.SqlDataSourceCommandType> value to retrieve data from a Microsoft SQL Server database and display it in a <xref:System.Web.UI.WebControls.DropDownList>.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_14sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_14sql/CS/sql14cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_14sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_14sql/VB/sql14vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The selected value is not one of the <see cref="T:System.Web.UI.WebControls.SqlDataSourceCommandType" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Selected">
+      <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.SqlDataSourceStatusEventHandler Selected;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.SqlDataSourceStatusEventHandler Selected" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.SqlDataSourceView.Selected" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.SqlDataSourceStatusEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a data retrieval operation has completed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Handle the <xref:System.Web.UI.WebControls.SqlDataSourceView.Selected> event to examine the values of output parameters after a data retrieval operation has completed. The output parameters are available from the <xref:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs> object that is associated with the event.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Selecting">
+      <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.SqlDataSourceSelectingEventHandler Selecting;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.SqlDataSourceSelectingEventHandler Selecting" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.SqlDataSourceView.Selecting" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.SqlDataSourceSelectingEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs before a data retrieval operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Handle the <xref:System.Web.UI.WebControls.SqlDataSourceView.Selecting> event to perform additional initialization operations that are specific to your application, to validate the values of parameters, or to change the parameter values before the <xref:System.Web.UI.WebControls.SqlDataSource> control performs the data retrieval operation.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectParameters">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.ParameterCollection SelectParameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.ParameterCollection SelectParameters" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.SelectParameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.ParameterCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the parameters collection containing the parameters that are used by the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.SelectCommand" /> property.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.ParameterCollection" /> that contains the parameters used by the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.SelectCommand" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Web.UI.WebControls.SqlDataSourceView.SelectCommand%2A> property contains a parameterized SQL query, the <xref:System.Web.UI.WebControls.SqlDataSourceView.SelectParameters%2A> collection contains any <xref:System.Web.UI.WebControls.Parameter> objects that correspond to the parameter placeholders in the SQL string.  
+  
+ Depending on the ADO.NET provider, the order of the parameters in the <xref:System.Web.UI.WebControls.SqlDataSourceView.SelectParameters%2A> collection might be important. The <xref:System.Data.OleDb?displayProperty=fullName> and <xref:System.Data.Odbc?displayProperty=fullName> providers associate the parameters in the collection according to the order in which the parameters appear in the parameterized SQL query. The <xref:System.Data.SqlClient?displayProperty=fullName> provider, which is the default ADO.NET provider for the <xref:System.Web.UI.WebControls.SqlDataSource> control, associates the parameters in the collection by matching the name of the parameter with a placeholder alias in the SQL query. For more information on parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to retrieve data from the Northwind database in Microsoft SQL Server by setting the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> property to an SQL query. The SQL query is parameterized and the placeholder in the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> property is matched to the <xref:System.Web.UI.WebControls.ControlParameter> object that is added to the <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> collection. In this way, the <xref:System.Web.UI.WebControls.DropDownList> control, to which the <xref:System.Web.UI.WebControls.ControlParameter> is bound, acts as a filter for what is displayed in the <xref:System.Web.UI.WebControls.ListBox> control.  
+  
+> [!NOTE]
+>  Because the parameter is used in a WHERE clause, the use of the <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> property in this code example is functionally equivalent to using both the <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> and <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A> properties.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_2sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_2sql/CS/sql2cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_2sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_2sql/VB/sql2vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SortParameterName">
+      <MemberSignature Language="C#" Value="public string SortParameterName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SortParameterName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.SortParameterName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of a stored procedure parameter that is used to sort retrieved data when data retrieval is performed using a stored procedure.</summary>
+        <value>The name of a stored procedure parameter used to sort retrieved data when data retrieval is performed using a stored procedure.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.SortParameterName%2A> property is evaluated only when the SQL command that is contained by the <xref:System.Web.UI.WebControls.SqlDataSourceView.SelectCommand%2A> property is the name of a stored procedure. In this case, if the <xref:System.Web.UI.WebControls.SqlDataSourceView.SortParameterName%2A> property is set, it contains the name of a parameter that is used to sort the results of the stored procedure.  
+  
+ If the  <xref:System.Web.UI.WebControls.SqlDataSourceView.ParameterPrefix%2A> property is set, it is prepended to the <xref:System.Web.UI.WebControls.SqlDataSourceView.SortParameterName%2A> property.  
+  
+ The value of the <xref:System.Web.UI.WebControls.SqlDataSourceView.SortParameterName%2A> property is stored in view state.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
+      <MemberSignature Language="C#" Value="bool System.Web.UI.IStateManager.IsTrackingViewState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.IStateManager.IsTrackingViewState" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.System#Web#UI#IStateManager#IsTrackingViewState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For a description of this member, see <see cref="P:System.Web.UI.IStateManager.IsTrackingViewState" />.</summary>
+        <value>
+          <see langword="true" />, if the data source view is marked to save its state; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.SqlDataSourceView> instance is cast to the <xref:System.Web.UI.IStateManager> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
+      <MemberSignature Language="C#" Value="void IStateManager.LoadViewState (object savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.LoadViewState(object savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.System#Web#UI#IStateManager#LoadViewState(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savedState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="savedState">An object that represents the <see cref="T:System.Web.UI.WebControls.SqlDataSourceView" /> state to restore.</param>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IStateManager.LoadViewState(System.Object)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.SqlDataSourceView> instance is cast to the <xref:System.Web.UI.IStateManager> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
+      <MemberSignature Language="C#" Value="object IStateManager.SaveViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Web.UI.IStateManager.SaveViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.System#Web#UI#IStateManager#SaveViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IStateManager.SaveViewState" />.</summary>
+        <returns>The object that contains the changes to the <see cref="T:System.Web.UI.WebControls.SqlDataSourceView" /> view state; otherwise, <see langword="null" />, if there is no view state associated with the object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.SqlDataSourceView> instance is cast to the <xref:System.Web.UI.IStateManager> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
+      <MemberSignature Language="C#" Value="void IStateManager.TrackViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.TrackViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.System#Web#UI#IStateManager#TrackViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IStateManager.TrackViewState" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.SqlDataSourceView> instance is cast to the <xref:System.Web.UI.IStateManager> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackViewState">
+      <MemberSignature Language="C#" Value="protected virtual void TrackViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void TrackViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.TrackViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Causes the <see cref="T:System.Web.UI.WebControls.SqlDataSourceView" /> object to track changes to its view state so that the changes can be stored in the <see cref="T:System.Web.UI.StateBag" /> object for the control and persisted across requests for the same page.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="public int Update (System.Collections.IDictionary keys, System.Collections.IDictionary values, System.Collections.IDictionary oldValues);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Update(class System.Collections.IDictionary keys, class System.Collections.IDictionary values, class System.Collections.IDictionary oldValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceView.Update(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keys" Type="System.Collections.IDictionary" />
+        <Parameter Name="values" Type="System.Collections.IDictionary" />
+        <Parameter Name="oldValues" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="keys">An <see cref="T:System.Collections.IDictionary" /> of primary keys to use with the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.UpdateCommand" /> property to perform the update database operation. If there are no keys associated with the query or if the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.UpdateCommand" /> is not a parameterized SQL query, pass <see langword="null" />.</param>
+        <param name="values">An <see cref="T:System.Collections.IDictionary" /> of values to use with the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.UpdateCommand" /> property to perform the update database operation. If there are no parameters associated with the query or if the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.UpdateCommand" /> is not a parameterized SQL query, pass <see langword="null" />.</param>
+        <param name="oldValues">An <see cref="T:System.Collections.IDictionary" /> that represents the original values in the database. If there are no parameters associated with the query or if the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.UpdateCommand" /> is not a parameterized SQL query, pass <see langword="null" />.</param>
+        <summary>Performs an update operation using the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.UpdateCommand" /> SQL string, any parameters that are in the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.UpdateParameters" /> collection, and the values that are in the specified <paramref name="keys" />, <paramref name="values" />, and <paramref name="oldValues" /> collections.</summary>
+        <returns>A value that represents the number of rows updated in the underlying database.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.Update%2A> method calls the <xref:System.Web.UI.WebControls.SqlDataSourceView.ExecuteUpdate%2A> method, passing the `keys`, `values`, and `oldValues` parameters. For more information, see <xref:System.Web.UI.WebControls.SqlDataSource.UpdateCommand?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.SqlDataSource> control to display data in a <xref:System.Web.UI.WebControls.DropDownList> control and update data when the **Submit** button is clicked. The <xref:System.Web.UI.WebControls.SqlDataSource.UpdateCommand%2A> property is set with a parameterized SQL statement and two <xref:System.Web.UI.WebControls.ControlParameter> parameters are added to the <xref:System.Web.UI.WebControls.SqlDataSource.UpdateParameters%2A> collection. When the **Submit** button is clicked, the <xref:System.Web.UI.WebControls.Button.OnClick%2A> event is handled to call the <xref:System.Web.UI.WebControls.SqlDataSourceView.Update%2A> method explicitly.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_8sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_8sql/CS/sql8cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_8sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_8sql/VB/sql8vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> cannot establish a connection with the underlying data source.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.CanUpdate" /> property is <see langword="false" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateCommand">
+      <MemberSignature Language="C#" Value="public string UpdateCommand { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UpdateCommand" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.UpdateCommand" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the SQL string that the <see cref="T:System.Web.UI.WebControls.SqlDataSourceView" /> object uses to update data in the underlying database.</summary>
+        <value>A SQL string that the <see cref="T:System.Web.UI.WebControls.SqlDataSourceView" /> uses to update data.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because different database products use different varieties of SQL, the syntax of the SQL string depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=fullName>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=fullName> or <xref:System.Data.OleDb?displayProperty=fullName>, the placeholder of the parameter is `'?'`. For more information on parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceView.UpdateCommand%2A> property can be an SQL string or the name of a stored procedure, if the data source supports stored procedures.  
+  
+ The value of the <xref:System.Web.UI.WebControls.SqlDataSourceView.UpdateCommand%2A> property is stored in view state.  
+  
+   
+  
+## Examples  
+ This section contains two code examples. The first code example demonstrates how to set the <xref:System.Web.UI.WebControls.SqlDataSource.UpdateCommand%2A> property of the <xref:System.Web.UI.WebControls.SqlDataSource> control and update data in a Microsoft SQL Server database using the <xref:System.Web.UI.WebControls.GridView> control. The second code example demonstrates how to update data in an ODBC database using the <xref:System.Web.UI.WebControls.GridView> control.  
+  
+ The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.SqlDataSource.UpdateCommand%2A> property of the <xref:System.Web.UI.WebControls.SqlDataSource> control and update data in a SQL Server database using the <xref:System.Web.UI.WebControls.GridView> control. The <xref:System.Web.UI.WebControls.GridView> control automatically populates the <xref:System.Web.UI.WebControls.SqlDataSource.UpdateParameters%2A> collection, inferring the parameters from the <xref:System.Web.UI.WebControls.BoundField> objects, and calls the <xref:System.Web.UI.WebControls.SqlDataSourceView.Update%2A> method when the **Update** link on the editable <xref:System.Web.UI.WebControls.GridView> control is selected. This example also includes some post-processing—after a record is updated, an e-mail message notification is sent.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_7sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_7sql/CS/sql7cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_7sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_7sql/VB/sql7vb.aspx#1)]  -->  
+  
+ The following code example, which is functionally identical to the preceding code example, demonstrates how to update data in an ODBC database using the <xref:System.Web.UI.WebControls.GridView> control. The <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property is set to the ADO.NET provider for ODBC, the <xref:System.Data.Odbc?displayProperty=fullName>, and the <xref:System.Web.UI.WebControls.SqlDataSource.ConnectionString%2A> property is set to the name of an ODBC data source name (DSN).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_7odbc#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_7odbc/CS/odbc7cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_7odbc#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_7odbc/VB/odbc7vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateCommandType">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.SqlDataSourceCommandType UpdateCommandType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.SqlDataSourceCommandType UpdateCommandType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.UpdateCommandType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.SqlDataSourceCommandType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the text in the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.UpdateCommand" /> property is a SQL statement or the name of a stored procedure.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.SqlDataSourceCommandType" /> values. The default is the <see cref="F:System.Web.UI.WebControls.SqlDataSourceCommandType.Text" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.Web.UI.WebControls.SqlDataSourceView.UpdateCommandType%2A> property is stored in view state.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The selected value is not one of the <see cref="T:System.Web.UI.WebControls.SqlDataSourceCommandType" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Updated">
+      <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.SqlDataSourceStatusEventHandler Updated;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.SqlDataSourceStatusEventHandler Updated" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.SqlDataSourceView.Updated" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.SqlDataSourceStatusEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when an update operation has completed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Handle the <xref:System.Web.UI.WebControls.SqlDataSourceView.Updated> event to examine the values of output parameters after an update operation has completed. The output parameters are available from the <xref:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs> object that is associated with the event.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to display and update data that is retrieved from an ODBC database in a <xref:System.Web.UI.WebControls.GridView> control. After a record is successfully updated, the <xref:System.Web.UI.WebControls.SqlDataSource.Updated> event is handled by an event handler to perform a post-processing step where an e-mail message notification is sent.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_7odbc#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_7odbc/CS/odbc7cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_7odbc#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_7odbc/VB/odbc7vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateParameters">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.ParameterCollection UpdateParameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.ParameterCollection UpdateParameters" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceView.UpdateParameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.WebControls.ParameterCollectionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.ParameterCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the parameters collection containing the parameters that are used by the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.UpdateCommand" /> property.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.ParameterCollection" /> that contains the parameters used by the <see cref="P:System.Web.UI.WebControls.SqlDataSourceView.UpdateCommand" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Web.UI.WebControls.SqlDataSourceView.UpdateCommand%2A> property contains a parameterized SQL query, the <xref:System.Web.UI.WebControls.SqlDataSourceView.UpdateParameters%2A> collection contains any <xref:System.Web.UI.WebControls.Parameter> objects that correspond to the parameter placeholders that are in the SQL string.  
+  
+ Parameter names might be affected by the <xref:System.Web.UI.WebControls.SqlDataSource.OldValuesParameterFormatString%2A> property; specifically, if the name identifies a primary key, such as a key that is specified using the `DataKeyNames` property, or in delete and update scenarios where the <xref:System.Web.UI.WebControls.SqlDataSource.ConflictDetection%2A> property is set to the <xref:System.Web.UI.ConflictOptions> value, and a set of `oldValues` are passed to the corresponding data method. In this case, the format string is applied to each parameter name in the `oldValues` collection.  
+  
+ Depending on the ADO.NET provider, the order of the parameters in the <xref:System.Web.UI.WebControls.SqlDataSourceView.UpdateParameters%2A> collection might be important. The <xref:System.Data.OleDb?displayProperty=fullName> and <xref:System.Data.Odbc?displayProperty=fullName> providers associate the parameters in the collection according to the order in which the parameters appear in the parameterized SQL query. The <xref:System.Data.SqlClient?displayProperty=fullName> provider, which is the default ADO.NET provider for the <xref:System.Web.UI.WebControls.SqlDataSource> control, associates the parameters in the collection by matching the name of the parameter with a placeholder alias in the SQL query. For more information on parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.SqlDataSource> control to display data in a <xref:System.Web.UI.WebControls.DropDownList> control and update data when the **Submit** button is clicked. The <xref:System.Web.UI.WebControls.SqlDataSource.UpdateCommand%2A> property is set with a parameterized SQL statement, and two <xref:System.Web.UI.WebControls.ControlParameter> parameters are added to the <xref:System.Web.UI.WebControls.SqlDataSource.UpdateParameters%2A> collection. When the **Submit** button is clicked, the <xref:System.Web.UI.WebControls.Button.OnClick%2A> event is handled to call the <xref:System.Web.UI.WebControls.SqlDataSource.Update%2A> method explicitly.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_8sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_8sql/CS/sql8cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_8sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_8sql/VB/sql8vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Updating">
+      <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.SqlDataSourceCommandEventHandler Updating;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.SqlDataSourceCommandEventHandler Updating" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.SqlDataSourceView.Updating" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.SqlDataSourceCommandEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs before an update operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Handle the <xref:System.Web.UI.WebControls.SqlDataSourceView.Updating> event to perform additional initialization operations that are specific to your application, to validate the values of parameters, or to change the parameter values before the <xref:System.Web.UI.WebControls.SqlDataSource> control performs the update operation.  
+  
+ The connection to the underlying data source is not yet open when the event handler delegate is called. Therefore, you cannot cancel the operation directly by calling the <xref:System.Data.Common.DbCommand.Cancel%2A> method on the <xref:System.Data.Common.DbCommand> object that is exposed by the <xref:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs> object. You can, however, cancel the database operation by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs> to `true`.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to display data that is retrieved from a Microsoft SQL Server database in a <xref:System.Web.UI.WebControls.DropDownList> control and update the record using a <xref:System.Web.UI.WebControls.TextBox> control. The example shows how you can use a <xref:System.Data.Common.DbTransaction> object to add transaction context when using the <xref:System.Web.UI.WebControls.SqlDataSource> control to update data.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_9sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_9sql/CS/sql9cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_9sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_9sql/VB/sql9vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

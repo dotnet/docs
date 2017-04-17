@@ -1,0 +1,169 @@
+<Type Name="WorkflowSymbol" FullName="System.Activities.Debugger.Symbol.WorkflowSymbol">
+  <TypeSignature Language="C#" Value="public class WorkflowSymbol" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowSymbol extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Debugger.Symbol.WorkflowSymbol" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a workflow symbol.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowSymbol ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.Symbol.WorkflowSymbol.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Debugger.Symbol.WorkflowSymbol" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CalculateChecksum">
+      <MemberSignature Language="C#" Value="public bool CalculateChecksum ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CalculateChecksum() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.Symbol.WorkflowSymbol.CalculateChecksum" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Indicates whether the workflow symbol to calculate the checksum symbols.</summary>
+        <returns>
+          <see langword="True" /> if the workflow symbol to calculate the checksum symbols; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Decode">
+      <MemberSignature Language="C#" Value="public static System.Activities.Debugger.Symbol.WorkflowSymbol Decode (string symbolString);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Debugger.Symbol.WorkflowSymbol Decode(string symbolString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.Symbol.WorkflowSymbol.Decode(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Debugger.Symbol.WorkflowSymbol</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="symbolString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="symbolString">The symbol string.</param>
+        <summary>Converts the data encoding format into a data object for a specified type.</summary>
+        <returns>The data encoded format converts into a data object for a specified type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Encode">
+      <MemberSignature Language="C#" Value="public string Encode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Encode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.Symbol.WorkflowSymbol.Encode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Specifies the encoding format for the symbol.</summary>
+        <returns>The encoding format for the symbol.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileName">
+      <MemberSignature Language="C#" Value="public string FileName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FileName" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.Symbol.WorkflowSymbol.FileName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the file name for the workflow symbol.</summary>
+        <value>The file name for the workflow symbol.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChecksum">
+      <MemberSignature Language="C#" Value="public byte[] GetChecksum ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetChecksum() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.Symbol.WorkflowSymbol.GetChecksum" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the checksum for the workflow symbol.</summary>
+        <returns>The checksum for the workflow symbol.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Symbols">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.Activities.Debugger.Symbol.ActivitySymbol&gt; Symbols { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.Activities.Debugger.Symbol.ActivitySymbol&gt; Symbols" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.Symbol.WorkflowSymbol.Symbols" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.Activities.Debugger.Symbol.ActivitySymbol&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the collection of symbols.</summary>
+        <value>The collection of symbols.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.Symbol.WorkflowSymbol.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string that represents the workflow symbol.</summary>
+        <returns>A string that represents the workflow symbol.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

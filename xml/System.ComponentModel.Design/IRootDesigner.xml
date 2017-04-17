@@ -1,0 +1,122 @@
+<Type Name="IRootDesigner" FullName="System.ComponentModel.Design.IRootDesigner">
+  <TypeSignature Language="C#" Value="public interface IRootDesigner : IDisposable, System.ComponentModel.Design.IDesigner" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRootDesigner implements class System.ComponentModel.Design.IDesigner, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IRootDesigner" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.Design.IDesigner</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides support for root-level designer view technologies.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A root designer is the designer that is in the top position, or root, of the current design-time document object hierarchy. A root designer must implement the <xref:System.ComponentModel.Design.IRootDesigner> interface. A root designer typically manages the background view in designer view mode, and usually displays the controls within the base container of the current design time project.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates a <xref:System.ComponentModel.Design.IRootDesigner> implementation associated with a sample user control. This <xref:System.ComponentModel.Design.IRootDesigner> implementation displays a control for the background view in designer view by overriding the <xref:System.ComponentModel.Design.IRootDesigner.GetView%2A> method. You need to add a reference to the System.Design assembly to compile the example.  
+  
+ To use this example, add the source code to a project and show the `RootViewSampleComponent` in designer view to display the custom root designer view.  
+  
+ [!code-cpp[IRootDesigner Sample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IRootDesigner Sample/CPP/class1.cpp#1)]
+ [!code-csharp[IRootDesigner Sample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IRootDesigner Sample/CS/class1.cs#1)]
+ [!code-vb[IRootDesigner Sample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IRootDesigner Sample/VB/class1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetView">
+      <MemberSignature Language="C#" Value="public object GetView (System.ComponentModel.Design.ViewTechnology technology);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetView(valuetype System.ComponentModel.Design.ViewTechnology technology) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IRootDesigner.GetView(System.ComponentModel.Design.ViewTechnology)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="technology" Type="System.ComponentModel.Design.ViewTechnology" />
+      </Parameters>
+      <Docs>
+        <param name="technology">A <see cref="T:System.ComponentModel.Design.ViewTechnology" /> that indicates a particular view technology.</param>
+        <summary>Gets a view object for the specified view technology.</summary>
+        <returns>An object that represents the view for this designer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns a view object that can present a user interface to the user. The returned data type is an <xref:System.Object>, because there can be a variety of different user interface technologies. Development environments typically support more than one technology.  
+  
+> [!NOTE]
+>  The <xref:System.ComponentModel.Design.ViewTechnology?displayProperty=fullName> and <xref:System.ComponentModel.Design.ViewTechnology?displayProperty=fullName> fields are obsolete. Use <xref:System.ComponentModel.Design.ViewTechnology?displayProperty=fullName> for new designer implementations.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The specified view technology is not supported or does not exist.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportedTechnologies">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Design.ViewTechnology[] SupportedTechnologies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ComponentModel.Design.ViewTechnology[] SupportedTechnologies" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.IRootDesigner.SupportedTechnologies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.ViewTechnology[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the set of technologies that this designer can support for its display.</summary>
+        <value>An array of supported <see cref="T:System.ComponentModel.Design.ViewTechnology" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.ViewTechnology> enumeration indicates the supported view technologies.  
+  
+> [!NOTE]
+>  The <xref:System.ComponentModel.Design.ViewTechnology?displayProperty=fullName> and <xref:System.ComponentModel.Design.ViewTechnology?displayProperty=fullName> fields are obsolete. Use <xref:System.ComponentModel.Design.ViewTechnology?displayProperty=fullName> for new designer implementations.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

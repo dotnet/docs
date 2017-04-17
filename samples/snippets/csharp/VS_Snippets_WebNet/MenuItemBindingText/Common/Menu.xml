@@ -1,0 +1,39 @@
+<MapHomeNode ImageUrl="~\Images\Home.gif"
+  Title="Home"
+  Description="Root Page"
+  ToolTip="Home Page">
+  <MapNode ImageUrl="~\Images\Music.gif"
+    Title="Music"
+    Description="Music Category"
+    ToolTip="Music Page">
+    <MapNode ImageUrl="~\Images\Classical.gif"
+      Title="Classical"
+      Description="Classical Section"
+      ToolTip="Classical Page"/>
+    <MapNode ImageUrl="~\Images\Rock.gif"
+      Title="Rock"
+      Description="Rock Section"
+      ToolTip="Rock Page"/>
+    <MapNode ImageUrl="~\Images\Jazz.gif"
+      Title="Jazz"
+      Description="Jazz Section"
+      ToolTip="Jazz Page"/>
+  </MapNode>
+  <MapNode ImageUrl="~\Images\Movies.gif"
+    Title="Movies"
+    Description="Movies Category"
+    ToolTip="Movies Page">
+    <MapNode ImageUrl="~\Images\Action.gif"
+      Title="Action"
+      Description="Action Section"
+      ToolTip="Action Page"/>
+    <MapNode ImageUrl="~\Images\Drama.gif"
+      Title="Drama"
+      Description="Drama Section"
+      ToolTip="Drama Page"/>
+    <MapNode ImageUrl="~\Images\Musical.gif"
+      Title="Musical"
+      Description="Musical Section"
+      ToolTip="Musical Page"/>
+  </MapNode>
+</MapHomeNode>

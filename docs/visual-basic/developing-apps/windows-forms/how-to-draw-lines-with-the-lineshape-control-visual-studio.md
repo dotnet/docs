@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "lines, drawing"
 ms.assetid: 83e71b4e-aa76-4f9b-b547-8704309fd1e5
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -61,7 +61,7 @@ You can use the <xref:Microsoft.VisualBasic.PowerPacks.LineShape> control to dra
 Imports Microsoft.VisualBasic.PowerPacks  
 ```  
   
-```cs  
+```csharp  
 using Microsoft.VisualBasic.PowerPacks;  
 ```  
   

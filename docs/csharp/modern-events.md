@@ -36,7 +36,7 @@ The program will work exactly the same.
 You could also change the `SearchDirectoryArgs` to a struct, if you
 also make one more change:
 
-```cs  
+```csharp  
 internal struct SearchDirectoryArgs  
 {  
     internal string CurrentSearchDirectory { get; }  
@@ -92,7 +92,7 @@ You need to reconcile this opposing guidance. Somehow, you must
 create a safe `async void` method. The basics of the pattern you need
 to implement are below:
 
-```cs
+```csharp
 worker.StartWorking += async (sender, eventArgs) =>
 {
     try 

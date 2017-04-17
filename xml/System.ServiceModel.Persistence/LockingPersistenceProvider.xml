@@ -1,0 +1,583 @@
+<Type Name="LockingPersistenceProvider" FullName="System.ServiceModel.Persistence.LockingPersistenceProvider">
+  <TypeSignature Language="C#" Value="public abstract class LockingPersistenceProvider : System.ServiceModel.Persistence.PersistenceProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit LockingPersistenceProvider extends System.ServiceModel.Persistence.PersistenceProvider" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Persistence.LockingPersistenceProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.WorkflowServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Persistence.PersistenceProvider</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The WF3 types are deprecated.  Instead, please use the new WF4 types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The abstract base class from which all durable service persistence providers that implement locking are derived.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In addition to persistence, the <xref:System.ServiceModel.Persistence.LockingPersistenceProvider> class implements locking of service state data records. Methods that interact with persisted data (such as the `Load` method) have an optional parameter (`lockInstance`) that defines whether locks on the data in question are released or maintained.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected LockingPersistenceProvider (Guid id);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.#ctor(System.Guid)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="id" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="id">The unique identifier to be associated with this persistence provider instance.</param>
+        <summary>When implemented in a derived class, creates a new instance of the <see cref="T:System.ServiceModel.Persistence.LockingPersistenceProvider" /> class, configured with the specified identity value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginCreate">
+      <MemberSignature Language="C#" Value="public override IAsyncResult BeginCreate (object instance, TimeSpan timeout, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginCreate(object instance, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.BeginCreate(System.Object,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The instance whose state information is saved into the persistence store.</param>
+        <param name="timeout">The interval in which the operation must be completed without timing out.</param>
+        <param name="callback">The delegate that receives the notification when the operation completes.</param>
+        <param name="state">The state information associated with the asynchronous operation.</param>
+        <summary>Begins an asynchronous operation to create instance state information in the persistence store using the parameters. This method does not unlock the instance after saving the state information.</summary>
+        <returns>The status of an asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method calls into the <xref:System.ServiceModel.Persistence.LockingPersistenceProvider.BeginCreate%2A> method, which takes an additional parameter to determine whether the instance is unlocked. This method passes `false` as a value for this parameter to the calling method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginCreate">
+      <MemberSignature Language="C#" Value="public abstract IAsyncResult BeginCreate (object instance, TimeSpan timeout, bool unlockInstance, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginCreate(object instance, valuetype System.TimeSpan timeout, bool unlockInstance, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.BeginCreate(System.Object,System.TimeSpan,System.Boolean,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="unlockInstance" Type="System.Boolean" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The instance whose state information is saved into the persistence store.</param>
+        <param name="timeout">The interval in which the operation must be completed without timing out.</param>
+        <param name="unlockInstance">
+          <see langword="true" /> if the instance must be unlocked in the persistence store; otherwise <see langword="false" />.</param>
+        <param name="callback">The delegate that receives the notification when the operation completes.</param>
+        <param name="state">The state information associated with the asynchronous operation.</param>
+        <summary>Begins an asynchronous operation to create instance state information in the persistence store using the parameters. This method unlocks the instance after saving the instance state if the value of the <paramref name="unlockInstance" /> parameter is <see langword="true" />.</summary>
+        <returns>The status of an asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginLoad">
+      <MemberSignature Language="C#" Value="public override IAsyncResult BeginLoad (TimeSpan timeout, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginLoad(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.BeginLoad(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The interval in which the operation must be completed without timing out.</param>
+        <param name="callback">The delegate that receives the notification when the operation completes.</param>
+        <param name="state">The state information associated with the asynchronous operation.</param>
+        <summary>Begins an asynchronous operation to load an instance based on state information in the persistence store using the parameters. This method does not lock the instance.</summary>
+        <returns>The status of an asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method calls into the <xref:System.ServiceModel.Persistence.LockingPersistenceProvider.BeginLoad%2A>, which takes an additional parameter that specifies whether the instance must be locked in the persistence store. This method passes `false` as a value for this parameter to the calling method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginLoad">
+      <MemberSignature Language="C#" Value="public abstract IAsyncResult BeginLoad (TimeSpan timeout, bool lockInstance, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginLoad(valuetype System.TimeSpan timeout, bool lockInstance, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.BeginLoad(System.TimeSpan,System.Boolean,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="lockInstance" Type="System.Boolean" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">An interval in which the operation must be completed before timing out.</param>
+        <param name="lockInstance">
+          <see langword="true" /> if the instance must be locked; otherwise <see langword="false" />.</param>
+        <param name="callback">The delegate that receives the notification when the operation completes.</param>
+        <param name="state">The state information associated with the asynchronous operation.</param>
+        <summary>Begins an asynchronous operation to load an instance based on state information in the persistence store using the parameters. This method locks the instance after loading the instance state if the value of the <paramref name="lockInstance" /> parameter is <see langword="true" />.</summary>
+        <returns>The status of an asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginLoadIfChanged">
+      <MemberSignature Language="C#" Value="public override IAsyncResult BeginLoadIfChanged (TimeSpan timeout, object instanceToken, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginLoadIfChanged(valuetype System.TimeSpan timeout, object instanceToken, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.BeginLoadIfChanged(System.TimeSpan,System.Object,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="instanceToken" Type="System.Object" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The time period after which the persistence provider aborts this operation.</param>
+        <param name="instanceToken">The token returned by a previous <see langword="Create" /> or <see langword="Update" /> method that represents the current state held by the caller.</param>
+        <param name="callback">The method to be called when the operation is completed.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous operation from other operations.</param>
+        <summary>When implemented in a derived class, represents the beginning of the LoadIfChanged phase. The LoadIfChanged phase occurs when state data is loaded into the persistence provider from the persistence store and the state data in the persistence store has been changed. This method call does not lock the instance in the persistence store.</summary>
+        <returns>The status of an asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginLoadIfChanged">
+      <MemberSignature Language="C#" Value="public virtual IAsyncResult BeginLoadIfChanged (TimeSpan timeout, object instanceToken, bool lockInstance, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginLoadIfChanged(valuetype System.TimeSpan timeout, object instanceToken, bool lockInstance, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.BeginLoadIfChanged(System.TimeSpan,System.Object,System.Boolean,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="instanceToken" Type="System.Object" />
+        <Parameter Name="lockInstance" Type="System.Boolean" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The time period after which the persistence provider aborts this operation.</param>
+        <param name="instanceToken">The token returned by a previous <see langword="Create" /> or <see langword="Update" /> method that represents the current state held by the caller.</param>
+        <param name="lockInstance">
+          <see langword="true" /> if the instance is locked in the persistence store; otherwise <see langword="false" />.</param>
+        <param name="callback">The method to be called when the operation is completed.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous operation from other operations.</param>
+        <summary>When implemented in a derived class, represents the beginning of the LoadIfChanged phase. The LoadIfChanged phase occurs when state data is loaded into the persistence provider from the persistence store and the state data in the persistence store has been changed. This method call lets you specify whether you want to lock the instance in the persistence store.</summary>
+        <returns>The status of an asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginUnlock">
+      <MemberSignature Language="C#" Value="public abstract IAsyncResult BeginUnlock (TimeSpan timeout, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginUnlock(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.BeginUnlock(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">An interval in which the operation must be completed before timing out.</param>
+        <param name="callback">The delegate that receives the notification when the operation completes.</param>
+        <param name="state">The state information associated with the asynchronous operation.</param>
+        <summary>Begins an asynchronous operation to unlock an instance in the persistence store.</summary>
+        <returns>The status of an asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginUpdate">
+      <MemberSignature Language="C#" Value="public override IAsyncResult BeginUpdate (object instance, TimeSpan timeout, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginUpdate(object instance, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.BeginUpdate(System.Object,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The instance whose state information is being updated in the persistence store.</param>
+        <param name="timeout">The interval in which the operation must complete without timing out.</param>
+        <param name="callback">The delegate that receives the notification when the operation is completed.</param>
+        <param name="state">The state information about the asynchronous operation.</param>
+        <summary>Begins an asynchronous operation to update instance state information in the persistence store using the parameters passed. This operation does not unlock the instance in the instance store.</summary>
+        <returns>The status of an asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method calls into the <xref:System.ServiceModel.Persistence.LockingPersistenceProvider.BeginUpdate%2A> method and passes a `false` value for the `unlockInstance` parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginUpdate">
+      <MemberSignature Language="C#" Value="public abstract IAsyncResult BeginUpdate (object instance, TimeSpan timeout, bool unlockInstance, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginUpdate(object instance, valuetype System.TimeSpan timeout, bool unlockInstance, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.BeginUpdate(System.Object,System.TimeSpan,System.Boolean,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="unlockInstance" Type="System.Boolean" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The instance whose state information is being updated in the persistence store.</param>
+        <param name="timeout">The interval in which the operation must complete without timing out.</param>
+        <param name="unlockInstance">
+          <see langword="true" /> if the instance must be locked after the instance state is updated in the persistence store; otherwise <see langword="false" />.</param>
+        <param name="callback">The delegate that receives the notification when the operation completes.</param>
+        <param name="state">The state information about the asynchronous operation.</param>
+        <summary>Begins an asynchronous operation to update instance state information in the persistence store using the parameters passed. This operation locks the instance in the persistence store if the value of the <paramref name="unlockInstance" /> parameter is <see langword="true" />.</summary>
+        <returns>The status of an asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public override object Create (object instance, TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Create(object instance, valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.Create(System.Object,System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The instance object whose state information must be saved into the persistence store.</param>
+        <param name="timeout">The interval in which the operation must complete before timing out.</param>
+        <summary>Creates instance state information in the persistence store using parameters passed into the method. This method does not unlock the instance in the persistence store after saving the instance state.</summary>
+        <returns>The state information.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public abstract object Create (object instance, TimeSpan timeout, bool unlockInstance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Create(object instance, valuetype System.TimeSpan timeout, bool unlockInstance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.Create(System.Object,System.TimeSpan,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="unlockInstance" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The instance object whose state information is saved into the persistence store.</param>
+        <param name="timeout">The interval within which the operation must complete before timing out.</param>
+        <param name="unlockInstance">
+          <see langword="true" /> if the instance must be unlocked in the persistence store; otherwise <see langword="false" />.</param>
+        <summary>This method creates instance state information in the persistence store using parameters passed into the method. The method unlocks the instance in the instance store if the value of the <paramref name="unlockInstance" /> parameter is <see langword="true" />.</summary>
+        <returns>The state information.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndUnlock">
+      <MemberSignature Language="C#" Value="public abstract void EndUnlock (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndUnlock(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.EndUnlock(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">The result returned by the unlock operation.</param>
+        <summary>Ends the asynchronous operation to unlock an instance in the persistence store.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public override object Load (TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Load(valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.Load(System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The time period after which the persistence provider aborts this attempt.</param>
+        <summary>Loads service state information from the persistence store without locking the instance.</summary>
+        <returns>The service state information.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method invokes the <xref:System.ServiceModel.Persistence.LockingPersistenceProvider.Load%2A> method with `lockInstance` parameter set to `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public abstract object Load (TimeSpan timeout, bool lockInstance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Load(valuetype System.TimeSpan timeout, bool lockInstance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.Load(System.TimeSpan,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="lockInstance" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The period after which the persistence provider aborts this operation.</param>
+        <param name="lockInstance">
+          <see langword="true" /> if the instance should be locked; otherwise <see langword="false" />.</param>
+        <summary>Loads state information from the persistence store after locking the instance.</summary>
+        <returns>The state information.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadIfChanged">
+      <MemberSignature Language="C#" Value="public override bool LoadIfChanged (TimeSpan timeout, object instanceToken, out object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool LoadIfChanged(valuetype System.TimeSpan timeout, object instanceToken, object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.LoadIfChanged(System.TimeSpan,System.Object,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="instanceToken" Type="System.Object" />
+        <Parameter Name="instance" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The time period after which the persistence provider aborts this operation.</param>
+        <param name="instanceToken">The token returned by the previous <see langword="Create" /> or <see langword="Update" /> method calls, which represents the current state held by the caller.</param>
+        <param name="instance">The actual instance state information.</param>
+        <summary>Loads the instance state information from the persistence store if the state information has been changed since the last time the information was loaded by the caller. This method does not lock the instance in the persistence store.</summary>
+        <returns>
+          <see langword="true" /> if the instance should be locked in the persistence store at the end of this operation; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadIfChanged">
+      <MemberSignature Language="C#" Value="public virtual bool LoadIfChanged (TimeSpan timeout, object instanceToken, bool lockInstance, out object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool LoadIfChanged(valuetype System.TimeSpan timeout, object instanceToken, bool lockInstance, object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.LoadIfChanged(System.TimeSpan,System.Object,System.Boolean,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="instanceToken" Type="System.Object" />
+        <Parameter Name="lockInstance" Type="System.Boolean" />
+        <Parameter Name="instance" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The time period after which the persistence provider aborts this operation.</param>
+        <param name="instanceToken">The token returned by the previous Create or Update method calls, which represents the current state held by the caller.</param>
+        <param name="lockInstance">
+          <see langword="true" /> if the instance should be locked in the persistence store at the end of this operation; otherwise <see langword="false" />.</param>
+        <param name="instance">The instance state information.</param>
+        <summary>Loads the instance state information from the persistence store if the state information has been changed since the last time the information was loaded by the caller. This method also lets the caller specify whether to lock the instance in the persistence store.</summary>
+        <returns>
+          <see langword="true" /> if the instance should be locked in the persistence store at the end of this operation; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unlock">
+      <MemberSignature Language="C#" Value="public abstract void Unlock (TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Unlock(valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.Unlock(System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The time period after which the persistence provider aborts the operation.</param>
+        <summary>Unlocks the instance whose ID is specified when constructing the <see cref="T:System.ServiceModel.Persistence.LockingPersistenceProvider" /> object in the persistence store.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="public override object Update (object instance, TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Update(object instance, valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.Update(System.Object,System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The instance state information.</param>
+        <param name="timeout">The time period after which the persistence provider aborts the operation.</param>
+        <summary>When implemented in a derived class, updates the instance state information in the persistence store. This method does not unlock the instance after updating the instance state information in the persistence store.</summary>
+        <returns>The instance state information.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="public abstract object Update (object instance, TimeSpan timeout, bool unlockInstance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Update(object instance, valuetype System.TimeSpan timeout, bool unlockInstance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.LockingPersistenceProvider.Update(System.Object,System.TimeSpan,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="unlockInstance" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The instance state information.</param>
+        <param name="timeout">The time period after which the persistence provider aborts the operation.</param>
+        <param name="unlockInstance">
+          <see langword="true" /> if the instance is unlocked after the instance state information is updated; otherwise <see langword="false" />.</param>
+        <summary>When implemented in a derived class, updates the instance state information in the persistence store. This method does not unlock the instance after updating the instance state information in the persistence store.</summary>
+        <returns>The instance state information.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

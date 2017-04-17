@@ -1,0 +1,77 @@
+<Type Name="IProvideCustomContentState" FullName="System.Windows.Navigation.IProvideCustomContentState">
+  <TypeSignature Language="C#" Value="public interface IProvideCustomContentState" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IProvideCustomContentState" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.IProvideCustomContentState" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Implemented by a class that needs to add custom state to the navigation history entry for content before the content is navigated away from.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Navigation.IProvideCustomContentState> allows you to associate a piece of custom state, implemented as a custom <xref:System.Windows.Navigation.CustomContentState> class, with the navigation history entry for content that has been navigated away from.  
+  
+ Custom state can also be associated in this way by using the following:  
+  
+-   Calling **AddBackEntry**:  
+  
+    -   <xref:System.Windows.Navigation.NavigationService.AddBackEntry%2A?displayProperty=fullName>  
+  
+    -   <xref:System.Windows.Navigation.NavigationWindow.AddBackEntry%2A?displayProperty=fullName>  
+  
+    -   <xref:System.Windows.Controls.Frame.AddBackEntry%2A?displayProperty=fullName>.  
+  
+-   Setting <xref:System.Windows.Navigation.NavigatingCancelEventArgs.Content%2A?displayProperty=fullName> when one of the following events are raised:  
+  
+    -   <xref:System.Windows.Navigation.NavigationService.Navigating?displayProperty=fullName>  
+  
+    -   <xref:System.Windows.Navigation.NavigationWindow.Navigating?displayProperty=fullName>  
+  
+    -   <xref:System.Windows.Controls.Frame.Navigating?displayProperty=fullName>  
+  
+    -   <xref:System.Windows.Navigation.NavigationWindow.Navigating?displayProperty=fullName>  
+  
+ You must implement <xref:System.Windows.Navigation.IProvideCustomContentState> when you add custom state to navigation history by calling **AddBackEntry**, otherwise navigation history will not function correctly; consider the following steps:  
+  
+1.  **AddBackEntry** is called to associate a custom state with the current content.  
+  
+2.  The navigation history entry is navigated back to, and the <xref:System.Windows.Navigation.CustomContentState.Replay%2A> method of the custom state is called, and the state is applied to the content.  
+  
+3.  The previous content is navigated to in forward navigation history.  
+  
+4.  The navigation history entry is navigated back to, but the custom state has not been retained since the last time the navigation history entry it was associated with was navigated to.  
+  
+ This is the default behavior because the state that is initially recorded in custom state may change after it was added to navigation history. If the custom state object is navigated back to and its state is applied, before some aspect about the state changes before the entry in navigation history is navigated to, the change in state cannot be reflected in the custom state object. Furthermore, <xref:System.Windows.Navigation.NavigationService.AddBackEntry%2A> can't be explicitly called to add a new custom state object that reflects the state changes. Consequently, to ensure the current state for a particular navigation is always stored in navigation history, <xref:System.Windows.Navigation.IProvideCustomContentState.GetContentState%2A> is called.  
+  
+> [!IMPORTANT]
+>  When you store information in custom content state, you cannot store any references to the instance of the page for which you are remembering state. This prevents [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] from releasing the page instance, and defeats the purpose of the default navigation history behavior. If you must do this, you might consider using <xref:System.Windows.Controls.Page.KeepAlive%2A> instead.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetContentState">
+      <MemberSignature Language="C#" Value="public System.Windows.Navigation.CustomContentState GetContentState ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Navigation.CustomContentState GetContentState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.IProvideCustomContentState.GetContentState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Navigation.CustomContentState</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an instance of a custom state class that is to be associated with content in navigation history.</summary>
+        <returns>An instance of a custom <see cref="T:System.Windows.Navigation.CustomContentState" /> class that is to be associated with content in navigation history.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

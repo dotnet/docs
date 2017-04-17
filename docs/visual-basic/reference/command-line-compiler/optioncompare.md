@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "/optioncompare compiler option [Visual Basic]"
 ms.assetid: 7237b766-b44d-4cc5-9a3c-885348a7d9e4
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

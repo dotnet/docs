@@ -44,7 +44,7 @@ The following sections describe features and classes that can be used to synchro
   
  A `lock` statement is given an object as an argument, and is followed by a code block that is to be executed by only one thread at a time. For example:  
   
-```cs  
+```csharp  
 public class TestThreading  
 {  
     private System.Object lockThis = new System.Object();  
@@ -74,7 +74,7 @@ public class TestThreading
 ## Monitors  
  Like the `lock` keyword, monitors prevent blocks of code from simultaneous execution by multiple threads. The <xref:System.Threading.Monitor.Enter%2A> method allows one and only one thread to proceed into the following statements; all other threads are blocked until the executing thread calls <xref:System.Threading.Monitor.Exit%2A>. This is just like using the `lock` keyword. For example:  
   
-```cs  
+```csharp  
 lock (x)  
 {  
     DoSomething();  
@@ -83,7 +83,7 @@ lock (x)
   
  This is equivalent to:  
   
-```cs  
+```csharp  
 System.Object obj = (System.Object)x;  
 System.Threading.Monitor.Enter(obj);  
 try  
@@ -107,7 +107,7 @@ finally
   
  In the following example, a thread is created and started by the `Main` function. The new thread waits on an event using the <xref:System.Threading.WaitHandle.WaitOne%2A> method. The thread is suspended until the event becomes signaled by the primary thread that is executing the `Main` function. Once the event becomes signaled, the auxiliary thread returns. In this case, because the event is only used for one thread activation, either the <xref:System.Threading.AutoResetEvent> or <xref:System.Threading.ManualResetEvent> classes could be used.  
   
-```cs  
+```csharp  
 using System;  
 using System.Threading;  
   

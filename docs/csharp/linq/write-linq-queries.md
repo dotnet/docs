@@ -2,7 +2,7 @@
 title: "Write LINQ queries in C#"
 description: How to write queries.
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 12/1/2016
@@ -70,19 +70,19 @@ This topic shows the three ways in which you can write a LINQ query in C#:
   
  The previous query can be written by using implicit typing with `var`, as follows:  
   
-```cs  
+```csharp  
 var numCount = (from num in numbers...  
 ```  
   
  It can be written in method syntax as follows:  
   
-```cs  
+```csharp  
 var numCount = numbers.Where(n => n < 3 || n > 7).Count();  
 ```  
   
  It can be written by using explicit typing, as follows:  
   
-```cs  
+```csharp  
 int numCount = numbers.Where(n => n < 3 || n > 7).Count();  
 ```  
   

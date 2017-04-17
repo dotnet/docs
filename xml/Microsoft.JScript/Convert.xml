@@ -1,0 +1,543 @@
+<Type Name="Convert" FullName="Microsoft.JScript.Convert">
+  <TypeSignature Language="C#" Value="public sealed class Convert" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Convert extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Convert" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Converts data from one type to another. This is a utility class.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Convert ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.Convert" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckIfDoubleIsInteger">
+      <MemberSignature Language="C#" Value="public static double CheckIfDoubleIsInteger (double d);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 CheckIfDoubleIsInteger(float64 d) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.CheckIfDoubleIsInteger(System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="d" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="d">The <see cref="T:System.Double" /> to test.</param>
+        <summary>Determines whether a <see cref="T:System.Double" /> variable contains an integer value.</summary>
+        <returns>If <paramref name="d" /> contains an integer value, <paramref name="d" /> is returned. If not, an exception is thrown.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckIfSingleIsInteger">
+      <MemberSignature Language="C#" Value="public static float CheckIfSingleIsInteger (float s);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 CheckIfSingleIsInteger(float32 s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.CheckIfSingleIsInteger(System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="s">The <see cref="T:System.Single" /> to test.</param>
+        <summary>Determines whether a <see cref="T:System.Single" /> variable contains an integer value.</summary>
+        <returns>If <paramref name="s" /> contains an integer value, <paramref name="s" /> is returned. If not, an exception is thrown.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Coerce">
+      <MemberSignature Language="C#" Value="public static object Coerce (object value, object type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object Coerce(object value, object type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.Coerce(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="type" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value to convert to a new type.</param>
+        <param name="type">The type to convert <c>value</c> to.</param>
+        <summary>Converts the specified value to the specified type.</summary>
+        <returns>
+          <paramref name="value" /> converted to <paramref name="type" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does not allow conversions that cause a loss of information, such as converting 1.5 to an integer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Coerce2">
+      <MemberSignature Language="C#" Value="public static object Coerce2 (object value, TypeCode target, bool truncationPermitted);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object Coerce2(object value, valuetype System.TypeCode target, bool truncationPermitted) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.Coerce2(System.Object,System.TypeCode,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="target" Type="System.TypeCode" />
+        <Parameter Name="truncationPermitted" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value to convert to a new type.</param>
+        <param name="target">The type to convert <c>value</c> to.</param>
+        <param name="truncationPermitted">
+          <see langword="true" /> to allow data loss; otherwise, <see langword="false" />.</param>
+        <summary>Converts the specified value to the specified <see cref="T:System.TypeCode" />, optionally allowing data loss.</summary>
+        <returns>
+          <paramref name="value" /> converted to the <paramref name="target" /> type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CoerceT">
+      <MemberSignature Language="C#" Value="public static object CoerceT (object value, Type t, bool explicitOK);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CoerceT(object value, class System.Type t, bool explicitOK) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.CoerceT(System.Object,System.Type,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="t" Type="System.Type" />
+        <Parameter Name="explicitOK" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value to convert to a new type.</param>
+        <param name="t">The type to convert <c>value</c> to.</param>
+        <param name="explicitOK">
+          <see langword="true" /> to allow data loss; otherwise, <see langword="false" />.</param>
+        <summary>Converts the specified value to the specified <see cref="T:System.Type" />, optionally allowing data loss.</summary>
+        <returns>
+          <paramref name="value" /> converted to the type <paramref name="t" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBadIndex">
+      <MemberSignature Language="C#" Value="public static bool IsBadIndex (Microsoft.JScript.AST ast);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsBadIndex(class Microsoft.JScript.AST ast) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.IsBadIndex(Microsoft.JScript.AST)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ast" Type="Microsoft.JScript.AST" />
+      </Parameters>
+      <Docs>
+        <param name="ast">The variable to test.</param>
+        <summary>Determines whether a variable contains an array index value.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="ast" /> contains an array index value; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThrowTypeMismatch">
+      <MemberSignature Language="C#" Value="public static void ThrowTypeMismatch (object val);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ThrowTypeMismatch(object val) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.ThrowTypeMismatch(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="val" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="val">The source code that caused the exception.</param>
+        <summary>Throws a <see cref="T:Microsoft.JScript.JScriptException" /> exception in all cases.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToBoolean">
+      <MemberSignature Language="C#" Value="public static bool ToBoolean (double d);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ToBoolean(float64 d) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.ToBoolean(System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="d" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="d">The value to convert.</param>
+        <summary>Converts the specified <see cref="T:System.Double" /> to a <see cref="T:System.Boolean" />.</summary>
+        <returns>
+          <see langword="false" /> if <paramref name="d" /> is 0; otherwise, <see langword="true" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToBoolean">
+      <MemberSignature Language="C#" Value="public static bool ToBoolean (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ToBoolean(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.ToBoolean(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value to convert.</param>
+        <summary>Converts the specified <see cref="T:System.Object" /> to a <see cref="T:System.Boolean" />.</summary>
+        <returns>
+          <paramref name="value" /> converted to a <see cref="T:System.Boolean" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToBoolean">
+      <MemberSignature Language="C#" Value="public static bool ToBoolean (object value, bool explicitConversion);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ToBoolean(object value, bool explicitConversion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.ToBoolean(System.Object,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="explicitConversion" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value to convert.</param>
+        <param name="explicitConversion">
+          <see langword="true" /> to allow data loss; otherwise, <see langword="false" />.</param>
+        <summary>Converts the specified <see cref="T:System.Object" /> value to a <see cref="T:System.Boolean" /> structure, optionally allowing data loss.</summary>
+        <returns>
+          <paramref name="value" /> converted to a <see cref="T:System.Boolean" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToForInObject">
+      <MemberSignature Language="C#" Value="public static object ToForInObject (object value, Microsoft.JScript.Vsa.VsaEngine engine);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object ToForInObject(object value, class Microsoft.JScript.Vsa.VsaEngine engine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.ToForInObject(System.Object,Microsoft.JScript.Vsa.VsaEngine)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="engine" Type="Microsoft.JScript.Vsa.VsaEngine" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value to convert.</param>
+        <param name="engine">A reference to the scripting engine.</param>
+        <summary>Converts the specified value to an <see cref="T:System.Object" /> that represents a collection of <see cref="T:Microsoft.JScript.AST" /> objects.</summary>
+        <returns>
+          <paramref name="value" /> converted to an <see cref="T:System.Object" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToInt32">
+      <MemberSignature Language="C#" Value="public static int ToInt32 (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ToInt32(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.ToInt32(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value to convert.</param>
+        <summary>Converts the specified value to an <see cref="T:System.Int32" />.</summary>
+        <returns>
+          <paramref name="value" /> converted to an <see cref="T:System.Int32" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToNativeArray">
+      <MemberSignature Language="C#" Value="public static object ToNativeArray (object value, RuntimeTypeHandle handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object ToNativeArray(object value, valuetype System.RuntimeTypeHandle handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.ToNativeArray(System.Object,System.RuntimeTypeHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="handle" Type="System.RuntimeTypeHandle" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:Microsoft.JScript.ArrayObject" /> to convert.</param>
+        <param name="handle">The type of the elements in the array.</param>
+        <summary>Converts the specified <see cref="T:Microsoft.JScript.ArrayObject" /> to a typed <see cref="T:System.Array" />.</summary>
+        <returns>
+          <paramref name="value" /> converted to an <see cref="T:System.Array" /> if this is possible; otherwise, <paramref name="value" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToNumber">
+      <MemberSignature Language="C#" Value="public static double ToNumber (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 ToNumber(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.ToNumber(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value to convert.</param>
+        <summary>Converts the specified <see cref="T:System.Object" /> to a <see cref="T:System.Double" />.</summary>
+        <returns>
+          <paramref name="value" /> converted to a <see cref="T:System.Double" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToNumber">
+      <MemberSignature Language="C#" Value="public static double ToNumber (string str);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 ToNumber(string str) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.ToNumber(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="str">The value to convert.</param>
+        <summary>Converts the specified <see cref="T:System.String" /> to a <see cref="T:System.Double" />.</summary>
+        <returns>
+          <paramref name="str" /> converted to a <see cref="T:System.Double" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToObject">
+      <MemberSignature Language="C#" Value="public static object ToObject (object value, Microsoft.JScript.Vsa.VsaEngine engine);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object ToObject(object value, class Microsoft.JScript.Vsa.VsaEngine engine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.ToObject(System.Object,Microsoft.JScript.Vsa.VsaEngine)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="engine" Type="Microsoft.JScript.Vsa.VsaEngine" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value to convert.</param>
+        <param name="engine">A reference to the scripting engine.</param>
+        <summary>Converts the specified value to an <see cref="T:System.Object" />. Throws an error if it cannot perform the conversion.</summary>
+        <returns>
+          <paramref name="value" /> converted to an <see cref="T:System.Object" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToObject2">
+      <MemberSignature Language="C#" Value="public static object ToObject2 (object value, Microsoft.JScript.Vsa.VsaEngine engine);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object ToObject2(object value, class Microsoft.JScript.Vsa.VsaEngine engine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.ToObject2(System.Object,Microsoft.JScript.Vsa.VsaEngine)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="engine" Type="Microsoft.JScript.Vsa.VsaEngine" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value to convert.</param>
+        <param name="engine">A reference to the scripting engine.</param>
+        <summary>Converts the specified value to an <see cref="T:System.Object" />. Returns null if it cannot perform the conversion.</summary>
+        <returns>
+          <paramref name="value" /> converted to an <see cref="T:System.Object" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public static string ToString (bool b);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(bool b) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.ToString(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="b" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="b">The value to convert.</param>
+        <summary>Converts the specified <see cref="T:System.Boolean" /> to a <see cref="T:System.String" />.</summary>
+        <returns>
+          <paramref name="b" /> converted to a <see cref="T:System.String" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public static string ToString (double d);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(float64 d) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.ToString(System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="d" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="d">The value to convert.</param>
+        <summary>Converts the specified <see cref="T:System.Double" /> to a <see cref="T:System.String" />.</summary>
+        <returns>
+          <paramref name="d" /> converted to a <see cref="T:System.String" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public static string ToString (object value, bool explicitOK);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(object value, bool explicitOK) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Convert.ToString(System.Object,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="explicitOK" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value to convert.</param>
+        <param name="explicitOK">
+          <see langword="true" /> to allow data loss; otherwise, <see langword="false" />.</param>
+        <summary>Converts the specified <see cref="T:System.Object" /> to a <see cref="T:System.String" />, optionally allowing data loss.</summary>
+        <returns>
+          <paramref name="value" /> converted to a <see cref="T:System.String" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

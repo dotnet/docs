@@ -1,0 +1,174 @@
+<Type Name="IPersonalizable" FullName="System.Web.UI.WebControls.WebParts.IPersonalizable">
+  <TypeSignature Language="C#" Value="public interface IPersonalizable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPersonalizable" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.IPersonalizable" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines additional management capabilities for the application and extraction of personalization state.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In addition to using the `Personalizable` attribute on control properties, a control can also implement <xref:System.Web.UI.WebControls.WebParts.IPersonalizable> for additional management capabilities for the application and extraction of personalization state. For example, controls that need to manage private state information should implement this interface. Controls that access personalized data through complex mechanisms, such as custom cache solutions, data persistence to mainframes, or XML Web services, should also implement this interface.  
+  
+> [!IMPORTANT]
+>  You should not add types based on classes defined in the App_Code directory and then depend on the default binary serialization mechanism. App_Code-based artifacts are not consistently binary-serializable due to the fact that they can have their assembly names changed at random points in time.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.WebParts.IPersonalizable> interface. The example consists of an .aspx page that references a Web Part control named `UrlListWebPart`. The following code is the .aspx file for the example.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_IPersonalizable_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IPersonalizable_Overview/CS/IPersonalizableCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_IPersonalizable_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IPersonalizable_Overview/VB/IPersonalizableVB.aspx#1)]  -->  
+  
+ The following code is the source for the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control. This file should be placed in the App_Code directory.  
+  
+ [!code-csharp[WebParts_IPersonalizable_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IPersonalizable_Overview/CS/urllistwebpart.cs#2)]
+ [!code-vb[WebParts_IPersonalizable_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IPersonalizable_Overview/VB/urllistwebpart.vb#2)]  
+  
+ Load the page in a browser. Type in a name to represent a URL, then add an actual URL beginning with `http://`, and click the **Add** button to add the URL.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsDirty">
+      <MemberSignature Language="C#" Value="public bool IsDirty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDirty" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.IPersonalizable.IsDirty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the custom data that a control manages has changed.</summary>
+        <value>
+          <see langword="true" /> if the custom data managed with the <see cref="T:System.Web.UI.WebControls.WebParts.IPersonalizable" /> interface has changed; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When data managed by a control has changed, the control is considered "dirty." A control should return `true` if the custom data that it manages through the <xref:System.Web.UI.WebControls.WebParts.IPersonalizable> interface has changed. If a control returns `true` from this property, the control's <xref:System.Web.UI.WebControls.WebParts.IPersonalizable.Save%2A> interface method implementation is called during property value extraction.  
+  
+> [!NOTE]
+>  This property is checked automatically by the personalization infrastructure during the latter phases of processing a POST request. However, for GET requests, the value returned from the <xref:System.Web.UI.WebControls.WebParts.IPersonalizable.IsDirty%2A> property is not checked. Some other event has to have caused the control to be considered "dirty" for any control state--not just data managed by <xref:System.Web.UI.WebControls.WebParts.IPersonalizable>--to be saved. If a control can mark itself as "dirty" during a GET request, or if the personalization infrastructure under some very specific boundary conditions considers a control "dirty" during a GET request, then <xref:System.Web.UI.WebControls.WebParts.IPersonalizable.Save%2A> will always be called.  
+  
+ A control can reference its associated <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control and check the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.Scope%2A> property to determine the current scope. The "dirty" state of a control's custom data should be appropriate for the current scope.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates use of the <xref:System.Web.UI.WebControls.WebParts.IPersonalizable.IsDirty%2A> property. The first part of the example is the Web page that hosts a <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_IPersonalizable_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IPersonalizable_Overview/CS/IPersonalizableCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_IPersonalizable_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IPersonalizable_Overview/VB/IPersonalizableVB.aspx#1)]  -->  
+  
+ The second part of the example is the code for the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control called `UrlListWebPart`. This file should be placed in the App_Code directory to run the example. Note that the source code implements the <xref:System.Web.UI.WebControls.WebParts.IPersonalizable.IsDirty%2A> property.  
+  
+ [!code-csharp[WebParts_IPersonalizable_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IPersonalizable_Overview/CS/urllistwebpart.cs#2)]
+ [!code-vb[WebParts_IPersonalizable_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IPersonalizable_Overview/VB/urllistwebpart.vb#2)]  
+  
+ Load the page in a browser. Type in a name to represent a URL, then add an actual URL beginning with `http://`, and click the **Add** button to add the URL.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public void Load (System.Web.UI.WebControls.WebParts.PersonalizationDictionary state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Load(class System.Web.UI.WebControls.WebParts.PersonalizationDictionary state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.IPersonalizable.Load(System.Web.UI.WebControls.WebParts.PersonalizationDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="System.Web.UI.WebControls.WebParts.PersonalizationDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="state">A <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationDictionary" /> that contains custom scoped data that was loaded from the underlying data store.</param>
+        <summary>Loads custom data into a control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called on a control to allow it to load custom data into itself. It can also return a value that indicates whether a control's custom state must be written back to the underlying data store, regardless of whether any other personalization data on the page has changed. A control can set its own custom properties and carry out additional internal logic based on the values contained in the personalization dictionary. This method is called by the Web Parts control set while applying personalization data to a control.  
+  
+ You should also be aware of the merge behavior of <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope>-scoped versus <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope>-scoped properties contained in the <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary> object. The `state` parameter contains a merged representation of custom data that was loaded from the underlying data store. In <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope, all the values that were previously added when the page itself was in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope would be available. In <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope, if a value associated with <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> personalization scope had one value added when the page was in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope, and a different value when the page was in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope, then the personalization infrastructure would only include the <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope>-scoped value (as opposed to the <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope value) within the `state` parameter.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates an implementation of the <xref:System.Web.UI.WebControls.WebParts.IPersonalizable.Load%2A> method in a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control. For the full code required to run this example, see the Example section in the <xref:System.Web.UI.WebControls.WebParts.IPersonalizable> class overview.  
+  
+ [!code-csharp[WebParts_IPersonalizable_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IPersonalizable_Overview/CS/urllistwebpart.cs#2)]
+ [!code-vb[WebParts_IPersonalizable_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IPersonalizable_Overview/VB/urllistwebpart.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Save">
+      <MemberSignature Language="C#" Value="public void Save (System.Web.UI.WebControls.WebParts.PersonalizationDictionary state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Save(class System.Web.UI.WebControls.WebParts.PersonalizationDictionary state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.IPersonalizable.Save(System.Web.UI.WebControls.WebParts.PersonalizationDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="System.Web.UI.WebControls.WebParts.PersonalizationDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="state">A <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationDictionary" /> that contains custom scoped data that was loaded from the underlying data store.</param>
+        <summary>Saves custom properties and internal state information in the control's <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationDictionary" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A server control can store its own custom properties and internal state information the <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary> specified in the `state` parameter. The information is stored as a series of name/value pairs. It is the responsibility of the control to use name/value pairs that it can recognize during subsequent calls made to the control through the <xref:System.Web.UI.WebControls.WebParts.IPersonalizable.Load%2A> method.  
+  
+ A control can reference its associated <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control and check the <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> object to determine the current scope. Custom state information should be appropriate for the current scope. Note that each <xref:System.Web.UI.WebControls.WebParts.PersonalizationEntry> value that is added to the <xref:System.Web.UI.WebControls.WebParts.PersonalizationDictionary> object should be associated with the appropriate scope value, because the personalization infrastructure depends on this when merging <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> and <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope>-scoped custom data prior to passing it to the <xref:System.Web.UI.WebControls.WebParts.IPersonalizable.Load%2A> method.  
+  
+ When using the standard ASP.NET implementation of Web Parts, controls must ensure that objects placed in the state dictionary can be serialized by the ASP.NET <xref:System.Web.UI.ObjectStateFormatter> class. In practice, this means the following:  
+  
+-   Primitive .NET Framework types, strings, and collection-oriented .NET Framework types such as arrays, array lists, hash tables, and hybrid dictionaries, are automatically serializable.  
+  
+-   Custom types that supply their own <xref:System.ComponentModel.TypeConverter> classes capable of serializing to and deserializing from strings are considered serializable.  
+  
+-   Custom types that can be serialized by the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> class are considered serializable.  
+  
+> [!IMPORTANT]
+>  You should not add types based on classes defined in the App_Code directory and then depend on the default binary serialization mechanism. App_Code-based artifacts are not consistently binary-serializable due to the fact that they can have their assembly names changed at random points in time.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates implementing the <xref:System.Web.UI.WebControls.WebParts.IPersonalizable.Save%2A> method in a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control. For the full code required to run this example, see the Example section in the <xref:System.Web.UI.WebControls.WebParts.IPersonalizable> class overview.  
+  
+ [!code-csharp[WebParts_IPersonalizable_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IPersonalizable_Overview/CS/urllistwebpart.cs#2)]
+ [!code-vb[WebParts_IPersonalizable_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IPersonalizable_Overview/VB/urllistwebpart.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

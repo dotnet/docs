@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "declaring enumerations"
 ms.assetid: db4ca1c3-f429-4c81-ae81-29e0157b29fd
 caps.latest.revision: 24
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

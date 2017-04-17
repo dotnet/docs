@@ -1,0 +1,83 @@
+<Type Name="CompiledTemplateBuilder" FullName="System.Web.UI.CompiledTemplateBuilder">
+  <TypeSignature Language="C#" Value="public sealed class CompiledTemplateBuilder : System.Web.UI.ITemplate" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CompiledTemplateBuilder extends System.Object implements class System.Web.UI.ITemplate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.CompiledTemplateBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.ITemplate</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>An <see cref="T:System.Web.UI.ITemplate" /> implementation that is called from the generated page class code. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.CompiledTemplateBuilder> class is used by ASP.NET to create a template for a templated control from the generated class code. It is not meant to be used directly in your code.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CompiledTemplateBuilder (System.Web.UI.BuildTemplateMethod buildTemplateMethod);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.BuildTemplateMethod buildTemplateMethod) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.CompiledTemplateBuilder.#ctor(System.Web.UI.BuildTemplateMethod)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="buildTemplateMethod" Type="System.Web.UI.BuildTemplateMethod" />
+      </Parameters>
+      <Docs>
+        <param name="buildTemplateMethod">A delegate used to handle the <see cref="M:System.Web.UI.CompiledTemplateBuilder.InstantiateIn(System.Web.UI.Control)" /> method call.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.CompiledTemplateBuilder" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is used internally by ASP.NET to create a new instance of the <xref:System.Web.UI.CompiledTemplateBuilder> class. It is not meant to be used directly in your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstantiateIn">
+      <MemberSignature Language="C#" Value="public void InstantiateIn (System.Web.UI.Control container);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InstantiateIn(class System.Web.UI.Control container) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.CompiledTemplateBuilder.InstantiateIn(System.Web.UI.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="container" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="container">A <see cref="T:System.Web.UI.Control" /> that represents the container used to store the child controls in the template.</param>
+        <summary>Populates the <see cref="T:System.Web.UI.Control" /> object with the child controls contained in the template.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.CompiledBindableTemplateBuilder.InstantiateIn%2A> method is the <xref:System.Web.UI.TemplateBuilder> class's implementation of the <xref:System.Web.UI.ITemplate.InstantiateIn%2A?displayProperty=fullName> method. It is used by ASP.NET to create the control hierarchy of the template and is not meant to be used directly in your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

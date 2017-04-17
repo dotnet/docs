@@ -1,0 +1,38 @@
+<Type Name="DiscoveryEndpointCollectionElement" FullName="System.ServiceModel.Discovery.Configuration.DiscoveryEndpointCollectionElement">
+  <TypeSignature Language="C#" Value="public class DiscoveryEndpointCollectionElement : System.ServiceModel.Configuration.StandardEndpointCollectionElement&lt;System.ServiceModel.Discovery.DiscoveryEndpoint,System.ServiceModel.Discovery.Configuration.DiscoveryEndpointElement&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DiscoveryEndpointCollectionElement extends System.ServiceModel.Configuration.StandardEndpointCollectionElement`2&lt;class System.ServiceModel.Discovery.DiscoveryEndpoint, class System.ServiceModel.Discovery.Configuration.DiscoveryEndpointElement&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.Configuration.DiscoveryEndpointCollectionElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Configuration.StandardEndpointCollectionElement&lt;System.ServiceModel.Discovery.DiscoveryEndpoint,System.ServiceModel.Discovery.Configuration.DiscoveryEndpointElement&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.ServiceModel.Discovery.DiscoveryEndpoint</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="!1">System.ServiceModel.Discovery.Configuration.DiscoveryEndpointElement</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a container for <see cref="T:System.ServiceModel.Discovery.Configuration.DiscoveryEndpointElement" /> configuration elements.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DiscoveryEndpointCollectionElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.DiscoveryEndpointCollectionElement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.Configuration.DiscoveryEndpointCollectionElement" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

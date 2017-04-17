@@ -1,0 +1,81 @@
+<Type Name="IHasXmlNode" FullName="System.Xml.IHasXmlNode">
+  <TypeSignature Language="C#" Value="public interface IHasXmlNode" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IHasXmlNode" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.IHasXmlNode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Enables a class to return an <see cref="T:System.Xml.XmlNode" /> from the current context or position.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `IHasXmlNode` interface provides an interface that enables a class to return an <xref:System.Xml.XmlNode> from the current context or position. It is implemented by <xref:System.Xml.XPath.XPathNavigator> objects that operate over classes that have <xref:System.Xml.XmlNode> nodes. For example, if the `XPathNavigator` object is created by an <xref:System.Xml.XmlDocument>, you can use the <xref:System.Xml.IHasXmlNode.GetNode%2A> method to return the `XmlNode` representing the current position of the navigator.  
+  
+   
+  
+## Examples  
+ The following example uses the `GetNode` method to retrieve and modify the selected node.  
+  
+ [!code-cpp[IHasXmlNode.GetNode#1](~/samples/snippets/cpp/VS_Snippets_Data/IHasXmlNode.GetNode/CPP/hasxmlnode.cpp#1)]
+ [!code-csharp[IHasXmlNode.GetNode#1](~/samples/snippets/csharp/VS_Snippets_Data/IHasXmlNode.GetNode/CS/hasxmlnode.cs#1)]
+ [!code-vb[IHasXmlNode.GetNode#1](~/samples/snippets/visualbasic/VS_Snippets_Data/IHasXmlNode.GetNode/VB/hasxmlnode.vb#1)]  
+  
+ The example uses the file `books.xml` as input.  
+  
+ [!code-xml[IHasXmlNode.GetNode#2](~/samples/snippets/xml/VS_Snippets_Data/IHasXmlNode.GetNode/XML/books.xml#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetNode">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlNode GetNode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlNode GetNode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.IHasXmlNode.GetNode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the <see cref="T:System.Xml.XmlNode" /> for the current position.</summary>
+        <returns>The <see langword="XmlNode" /> for the current position.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following C# code uses `GetNode` to access a node the <xref:System.Xml.XPath.XPathNavigator> is currently positioned on.  
+  
+```  
+XmlDocument doc = new XmlDocument();  
+doc.Load("books.xml");  
+XPathNavigator nav =  doc.CreateNavigator();  
+XmlNode node = ((IHasXmlNode)nav).GetNode();  
+Console.WriteLine(node.LocalName);   
+//You can edit the returned XmlNode.  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

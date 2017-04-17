@@ -1,0 +1,39 @@
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  x:Class="Microsoft.Samples.PerFrameAnimations.SampleViewer"
+  xmlns:customControls="clr-namespace:Microsoft.Samples.PerFrameAnimations"
+  WindowTitle="Per-Frame Animation Sample"
+  Background="White">
+  
+  
+  
+  <TabControl>
+
+
+    <TabItem Header="Color Changing Example">
+      <Frame Source="SimpleExample\SimpleExample.xaml" />
+    </TabItem>
+    
+    <TabItem Header="Follow Animation">
+       <Frame Source="FollowExample\FollowExample.xaml" />
+    </TabItem>
+ 
+    <TabItem Header="Frame-Independent Follow Animation">
+       <Frame Source="FrameIndependentFollowExample\FrameIndependentFollowExample.xaml" />
+    </TabItem>
+    
+    <TabItem Header="Reusable Frame-Independent Follow Animation">
+       <Frame Source="ReusableFollowExample\ReusableFollowExample.xaml" />
+    </TabItem>    
+    
+    <TabItem Header="Particle Effect Examples">
+       <Frame Source="ParticleEffectExamples\ParticleEffectExamples.xaml" />
+    </TabItem>  
+
+ 
+  </TabControl>
+  
+  
+
+</Page>

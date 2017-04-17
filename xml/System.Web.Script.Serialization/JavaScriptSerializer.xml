@@ -1,0 +1,628 @@
+<Type Name="JavaScriptSerializer" FullName="System.Web.Script.Serialization.JavaScriptSerializer">
+  <TypeSignature Language="C#" Value="public class JavaScriptSerializer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JavaScriptSerializer extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Script.Serialization.JavaScriptSerializer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>[Json.NET](http://www.newtonsoft.com/json) should be used serialization and deserialization. Provides serialization and deserialization functionality for AJAX-enabled applications.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Script.Serialization.JavaScriptSerializer> class is used internally by the asynchronous communication layer to serialize and deserialize the data that is passed between the browser and the Web server. You cannot access that instance of the serializer. However, this class exposes a public API. Therefore, you can use the class when you want to work with JavaScript Object Notation (JSON) in managed code.  
+  
+ To serialize an object, use the <xref:System.Web.Script.Serialization.JavaScriptSerializer.Serialize%2A> method. To deserialize a JSON string, use the <xref:System.Web.Script.Serialization.JavaScriptSerializer.Deserialize%2A> or <xref:System.Web.Script.Serialization.JavaScriptSerializer.DeserializeObject%2A> methods. To serialize and deserialize types that are not natively supported by <xref:System.Web.Script.Serialization.JavaScriptSerializer>, implement custom converters by using the <xref:System.Web.Script.Serialization.JavaScriptConverter> class. Then register the converters by using the <xref:System.Web.Script.Serialization.JavaScriptSerializer.RegisterConverters%2A> method.  
+  
+## Mapping Between Managed Types and JSON  
+ The following table shows the mapping between managed types and JSON for the serialization process. These managed types are natively supported by <xref:System.Web.Script.Serialization.JavaScriptSerializer>. When you are deserializing from a JSON string to a managed type, the same mapping applies. However, deserialization can be asymmetric; not all serializable managed types can be deserialized from JSON.  
+  
+> [!NOTE]
+>  A multidimensional array is serialized as a one-dimensional array, and you should use it as a flat array.  
+  
+|Managed type|JSON equivalent|  
+|------------------|---------------------|  
+|<xref:System.String> (UTF-8 encoding only).|String|  
+|<xref:System.Char>|String|  
+|Single null char (such as, \0 )|Null|  
+|<xref:System.Boolean>|Boolean. Represented in JSON as `true` or `false`|  
+|`null` (`null` object references and <xref:System.Nullable> value types).|A string value of null|  
+|<xref:System.DBNull>|A string value of null|  
+|Primitive numeric (or numeric-compatible) types: <xref:System.Byte>, <xref:System.SByte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>, <xref:System.Double>, and <xref:System.Single>. The culture-invariant string representation is used.|Number|  
+|<xref:System.DateTime>|Date object, represented in JSON as "\\/Date(number of ticks)\\/". The number of ticks is a positive or negative long value that indicates the number of ticks (milliseconds) that have elapsed since midnight 01 January, 1970 UTC.<br /><br /> The maximum supported date value is <xref:System.DateTime.MaxValue> (12/31/9999 11:59:59 PM) and the minimum supported date value is <xref:System.DateTime.MinValue> (1/1/0001 12:00:00 AM).|  
+|Enumerations of integer type|Integer equivalent of the enumeration value|  
+|Types that implement <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> that are not also implementations of <xref:System.Collections.IDictionary> or <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>. This includes types such as <xref:System.Array>, <xref:System.Collections.ArrayList>, and <xref:System.Collections.Generic.List%601>.|Array that uses JSON array syntax|  
+|Types that implement <xref:System.Collections.IDictionary> or <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>. This includes types such as <xref:System.Collections.Generic.Dictionary%602> and <xref:System.Collections.Hashtable>.|JavaScript object that uses JSON dictionary syntax|  
+|Custom concrete (non-abstract) types that have public instance properties that have get accessors or public instance fields.<br /><br /> Note that public write-only properties, public property or public field attributes marked with <xref:System.Web.Script.Serialization.ScriptIgnoreAttribute>, and public indexed properties in these types are ignored.|JavaScript object that uses JSON dictionary syntax. A special metadata property named "__type" is included to ensure correct deserialization. Make sure that public instance properties have get and set accessors to ensure correct deserialization.|  
+|<xref:System.Guid>|String representation of a GUID|  
+|<xref:System.Uri>|String representation of the return value of <xref:System.Uri.GetComponents%2A>|  
+  
+   
+  
+## Examples  
+ The first example provides a simple illustration of how to serialize and deserialize data objects. It requires a class names Person which is shown below.  
+  
+ [!code-csharp[System.Web.Script.Serialization.JavaScriptSerializer#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/cs/default.aspx.cs#1)]
+ [!code-vb[System.Web.Script.Serialization.JavaScriptSerializer#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/vb/default.aspx.vb#1)]  
+  
+ [!code-csharp[System.Web.Script.Serialization.JavaScriptSerializer#2](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/cs/person.cs#2)]
+ [!code-vb[System.Web.Script.Serialization.JavaScriptSerializer#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.script.serialization.javascriptserializer/vb/person.vb#2)]  
+  
+ The next example shows a more complicated and complete project that uses the <xref:System.Web.Script.Serialization.JavaScriptSerializer> class to save and restore the state of an object by using JSON serialization. This code uses a custom converter that is provided for the <xref:System.Web.Script.Serialization.JavaScriptConverter> class.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Script.Serialization#4](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.Script.Serialization/CS/Default.aspx#4)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Script.Serialization#4](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.Script.Serialization/VB/Default.aspx#4)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JavaScriptSerializer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Script.Serialization.JavaScriptSerializer.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Script.Serialization.JavaScriptSerializer" /> class that has no type resolver.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An instance of the <xref:System.Web.Script.Serialization.JavaScriptSerializer> class without a type resolver does not include type metadata properties (named "__type") in the serialized JSON string. A type metadata property is used by the <xref:System.Web.Script.Serialization.JavaScriptSerializer.Deserialize%2A> and <xref:System.Web.Script.Serialization.JavaScriptSerializer.DeserializeObject%2A> methods to determine the appropriate managed type to which the JSON string will be converted. For information about type resolvers, see the <xref:System.Web.Script.Serialization.JavaScriptTypeResolver> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JavaScriptSerializer (System.Web.Script.Serialization.JavaScriptTypeResolver resolver);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.Script.Serialization.JavaScriptTypeResolver resolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Script.Serialization.JavaScriptSerializer.#ctor(System.Web.Script.Serialization.JavaScriptTypeResolver)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="resolver" Type="System.Web.Script.Serialization.JavaScriptTypeResolver" />
+      </Parameters>
+      <Docs>
+        <param name="resolver">The custom type-resolver object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Script.Serialization.JavaScriptSerializer" /> class that has a custom type resolver.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When it is serializing an object, the <xref:System.Web.Script.Serialization.JavaScriptSerializer> class uses the `resolver` parameter to determine the appropriate value to include in the serialized JSON string for the type metadata property ("__type"). Similarly, when the <xref:System.Web.Script.Serialization.JavaScriptSerializer> class  is deserializing a JSON string, it resolves the type metadata property value to the appropriate managed type by using the resolver instance.  
+  
+ You can set the `resolver` parameter to `null`, which is equivalent to calling the <xref:System.Web.Script.Serialization.JavaScriptSerializer.%23ctor%2A> constructor.  
+  
+ The instance of <xref:System.Web.Script.Serialization.JavaScriptSerializer> that is used by the asynchronous communication layer for invoking Web services from client script uses a special type resolver. This type resolver restricts the types that can be deserialized to those defined in the Web service’s method signature, or the ones that have the <xref:System.Web.Script.Services.GenerateScriptTypeAttribute> applied. You cannot modify this built-in type resolver programmatically.  
+  
+> [!IMPORTANT]
+>  Using an instance of this object initialized with a custom type-resolver can present a security risk. Use this object only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToType">
+      <MemberSignature Language="C#" Value="public object ConvertToType (object obj, Type targetType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object ConvertToType(object obj, class System.Type targetType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Script.Serialization.JavaScriptSerializer.ConvertToType(System.Object,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="targetType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to convert.</param>
+        <param name="targetType">The type to convert the object to.</param>
+        <summary>Converts the specified object to the specified type.</summary>
+        <returns>The serialized JSON string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Web.Script.Serialization.JavaScriptSerializer> instance is serializing a type for which a custom converter is registered, the serializer calls the <xref:System.Web.Script.Serialization.JavaScriptConverter.Serialize%2A> method to obtain the dictionary of name/value pairs that will be converted to a JSON-formatted string.  
+  
+ The <xref:System.Web.Script.Serialization.JavaScriptSerializer.Serialize%2A> method can also throw exceptions if the object graph is too complex, or if registered instances of <xref:System.Web.Script.Serialization.JavaScriptConverter> have caused converter recursion.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The resulting JSON-formatted string exceeds the value of <see cref="P:System.Web.Script.Serialization.JavaScriptSerializer.MaxJsonLength" />.  
+  
+ -or-  
+  
+ <paramref name="obj" /> contains a circular reference. A circular reference occurs when a child object has a reference to a parent object, and the parent object has a reference to the child object.</exception>
+        <exception cref="T:System.ArgumentException">The recursion limit defined by <see cref="P:System.Web.Script.Serialization.JavaScriptSerializer.RecursionLimit" /> was exceeded.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToType&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T ConvertToType&lt;T&gt; (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T ConvertToType&lt;T&gt;(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Script.Serialization.JavaScriptSerializer.ConvertToType``1(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type to which <c>obj</c> will be converted.</typeparam>
+        <param name="obj">The object to convert.</param>
+        <summary>Converts the given object to the specified type.</summary>
+        <returns>The object that has been converted to the target type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Script.Serialization.JavaScriptSerializer.ConvertToType%2A> method tries to convert the object instance that is represented by `obj` to an instance of type `T`. During this conversion there is no guarantee that object reference equality is maintained. Therefore, you cannot assume that `obj` and `T` refer to the same object.  
+  
+ <xref:System.Web.Script.Serialization.JavaScriptSerializer.ConvertToType%2A> is intended to be used if you implement a class that derives from <xref:System.Web.Script.Serialization.JavaScriptConverter>. Converter code must be able to take a value that is in the dictionary that the serializer passes to it, and then convert that value to an instance of type `T`. Instead of re-implementing the custom conversion code to perform this task, you can call the <xref:System.Web.Script.Serialization.JavaScriptSerializer.ConvertToType%2A> method from the converter code.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.Script.Serialization.JavaScriptSerializer.ConvertToType%2A> method to obtain a <xref:System.Web.UI.WebControls.ListItem> object from a value in the dictionary that is passed to the converter. This code example is part of a larger example provided for the <xref:System.Web.Script.Serialization.JavaScriptSerializer> class.  
+  
+ [!code-csharp[System.Web.Script.Serialization#5](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.Script.Serialization/CS/App_Code/ListItemCollectionConverter.cs#5)]
+ [!code-vb[System.Web.Script.Serialization#5](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.Script.Serialization/VB/App_Code/ListItemCollectionConverter.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="obj" /> (or a nested member of <paramref name="obj" />) contains a "__type" property that indicates a custom type, but the type resolver that is associated with the serializer cannot find a corresponding managed type.  
+  
+ -or-  
+  
+ <paramref name="obj" /> (or a nested member of <paramref name="obj" />) contains a "__type" property that indicates a custom type, but the result of deserializing the corresponding JSON string cannot be assigned to the expected target type.  
+  
+ -or-  
+  
+ <paramref name="obj" /> (or a nested member of <paramref name="obj" />) contains a "__type" property that indicates either <see cref="T:System.Object" /> or a non-instantiable type (for example, an abstract type or an interface).  
+  
+ -or-  
+  
+ An attempt was made to convert <paramref name="obj" /> to an array-like managed type, which is not supported for use as a deserialization target.  
+  
+ -or-  
+  
+ It is not possible to convert <paramref name="obj" /> to <paramref name="T" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="obj" /> is a dictionary type and a non-string key value was encountered.  
+  
+ -or-  
+  
+ <paramref name="obj" /> includes member definitions that are not available on type <paramref name="T" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Deserialize">
+      <MemberSignature Language="C#" Value="public object Deserialize (string input, Type targetType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Deserialize(string input, class System.Type targetType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Script.Serialization.JavaScriptSerializer.Deserialize(System.String,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+        <Parameter Name="targetType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="input">The JSON string to deserialize.</param>
+        <param name="targetType">The type of the resulting object.</param>
+        <summary>Converts a JSON-formatted string to an object of the specified type.</summary>
+        <returns>The deserialized object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This deserialization method does not try to cast the root of the object graph to a specific type, the way that the <xref:System.Web.Script.Serialization.JavaScriptSerializer.Deserialize%2A> method does.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="input" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The length of <paramref name="input" /> exceeds the value of <see cref="P:System.Web.Script.Serialization.JavaScriptSerializer.MaxJsonLength" />.  
+  
+ -or-  
+  
+ The recursion limit defined by <see cref="P:System.Web.Script.Serialization.JavaScriptSerializer.RecursionLimit" /> was exceeded.  
+  
+ -or-  
+  
+ <paramref name="input" /> contains an unexpected character sequence.  
+  
+ -or-  
+  
+ <paramref name="input" /> is a dictionary type and a non-string key value was encountered.  
+  
+ -or-  
+  
+ <paramref name="input" /> includes member definitions that are not available on the target type.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="input" /> contains a "__type" property that indicates a custom type, but the type resolver that is currently associated with the serializer cannot find a corresponding managed type.  
+  
+ -or-  
+  
+ <paramref name="input" /> contains a "__type" property that indicates a custom type, but the result of deserializing the corresponding JSON string cannot be assigned to the expected target type.  
+  
+ -or-  
+  
+ <paramref name="input" /> contains a "__type" property that indicates either <see cref="T:System.Object" /> or a non-instantiable type (for example, an abstract type or an interface).  
+  
+ -or-  
+  
+ An attempt was made to convert a JSON array to an array-like managed type that is not supported for use as a JSON deserialization target.  
+  
+ -or-  
+  
+ It is not possible to convert <paramref name="input" /> to the target type.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Deserialize&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T Deserialize&lt;T&gt; (string input);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Deserialize&lt;T&gt;(string input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Script.Serialization.JavaScriptSerializer.Deserialize``1(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the resulting object.</typeparam>
+        <param name="input">The JSON string to be deserialized.</param>
+        <summary>Converts the specified JSON string to an object of type <paramref name="T" />.</summary>
+        <returns>The deserialized object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Script.Serialization.JavaScriptSerializer.Deserialize%2A> method is equivalent to first using the <xref:System.Web.Script.Serialization.JavaScriptSerializer.DeserializeObject%2A> method to obtain an object graph and then trying to cast the result to type `T`.  
+  
+ During deserialization, the serializer’s current type resolver is referenced, which determines the managed type to use when converting elements that are nested inside arrays and dictionary types. As a result, the deserialization process iterates through all nested elements of `input`. For more information about type resolvers, see the <xref:System.Web.Script.Serialization.JavaScriptTypeResolver> class.  
+  
+   
+  
+## Examples  
+ The following example provides a simple illustration of how to serialize and deserialize data objects. It requires a class names Person which is shown below.  
+  
+<!-- TODO: review snippet reference  [!CODE [System.Web.Script.JavaScriptSerializer#1](System.Web.Script.JavaScriptSerializer#1)]  -->  
+  
+<!-- TODO: review snippet reference  [!CODE [System.Web.Script.JavaScriptSerializer#2](System.Web.Script.JavaScriptSerializer#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="input" /> length exceeds the value of <see cref="P:System.Web.Script.Serialization.JavaScriptSerializer.MaxJsonLength" />.  
+  
+ -or-  
+  
+ The recursion limit defined by <see cref="P:System.Web.Script.Serialization.JavaScriptSerializer.RecursionLimit" /> was exceeded.  
+  
+ -or-  
+  
+ <paramref name="input" /> contains an unexpected character sequence.  
+  
+ -or-  
+  
+ <paramref name="input" /> is a dictionary type and a non-string key value was encountered.  
+  
+ -or-  
+  
+ <paramref name="input" /> includes member definitions that are not available on type <paramref name="T" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="input" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="input" /> contains a "__type" property that indicates a custom type, but the type resolver associated with the serializer cannot find a corresponding managed type.  
+  
+ -or-  
+  
+ <paramref name="input" /> contains a "__type" property that indicates a custom type, but the result of deserializing the corresponding JSON string cannot be assigned to the expected target type.  
+  
+ -or-  
+  
+ <paramref name="input" /> contains a "__type" property that indicates either <see cref="T:System.Object" /> or a non-instantiable type (for example, an abstract types or an interface).  
+  
+ -or-  
+  
+ An attempt was made to convert a JSON array to an array-like managed type that is not supported for use as a JSON deserialization target.  
+  
+ -or-  
+  
+ It is not possible to convert <paramref name="input" /> to <paramref name="T" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DeserializeObject">
+      <MemberSignature Language="C#" Value="public object DeserializeObject (string input);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object DeserializeObject(string input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Script.Serialization.JavaScriptSerializer.DeserializeObject(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="input">The JSON string to be deserialized.</param>
+        <summary>Converts the specified JSON string to an object graph.</summary>
+        <returns>The deserialized object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This deserialization method does not try to cast the root of the object graph to a specific type, as with the <xref:System.Web.Script.Serialization.JavaScriptSerializer.Deserialize%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="input" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="input" /> length exceeds the value of <see cref="P:System.Web.Script.Serialization.JavaScriptSerializer.MaxJsonLength" />.  
+  
+ -or-  
+  
+ The recursion limit defined by <see cref="P:System.Web.Script.Serialization.JavaScriptSerializer.RecursionLimit" /> was exceeded.  
+  
+ -or-  
+  
+ <paramref name="input" /> contains an unexpected character sequence.  
+  
+ -or-  
+  
+ <paramref name="input" /> is a dictionary type and a non-string key value was encountered.  
+  
+ -or-  
+  
+ <paramref name="input" /> includes member definitions that are not available on the target type.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="input" /> contains a "__type" property that indicates a custom type, but the type resolver that is currently associated with the serializer cannot find a corresponding managed type.  
+  
+ -or-  
+  
+ <paramref name="input" /> contains a "__type" property that indicates a custom type, but the result of deserializing the corresponding JSON string cannot be assigned to the expected target type.  
+  
+ -or-  
+  
+ <paramref name="input" /> contains a "__type" property that indicates either <see cref="T:System.Object" /> or a non-instantiable type (for example, an abstract type or an interface).  
+  
+ -or-  
+  
+ An attempt was made to convert a JSON array to an array-like managed type that is not supported for use as a JSON deserialization target.  
+  
+ -or-  
+  
+ It is not possible to convert <paramref name="input" /> to the target type.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxJsonLength">
+      <MemberSignature Language="C#" Value="public int MaxJsonLength { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxJsonLength" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Script.Serialization.JavaScriptSerializer.MaxJsonLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum length of JSON strings that are accepted by the <see cref="T:System.Web.Script.Serialization.JavaScriptSerializer" /> class.</summary>
+        <value>The maximum length of JSON strings. The default is 2097152 characters, which is equivalent to 4 MB of Unicode string data.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.Web.Script.Serialization.JavaScriptSerializer.MaxJsonLength%2A> property applies only when you explicitly create an instance of the <xref:System.Web.Script.Serialization.JavaScriptSerializer> class. Use the `jsonSerialization` element of the configuration file to set the maximum length for the internal serializer instance that is used by the asynchronous communication layer. For more information about the configuration elements for serialization, see [How to: Configure ASP.NET Services in Microsoft Ajax](http://msdn.microsoft.com/library/ea4fb56e-bc1d-405a-9877-00cf5e552a30).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The property is set to a value that is less than one.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RecursionLimit">
+      <MemberSignature Language="C#" Value="public int RecursionLimit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RecursionLimit" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Script.Serialization.JavaScriptSerializer.RecursionLimit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the limit for constraining the number of object levels to process.</summary>
+        <value>The number of object levels. The default is 100.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Script.Serialization.JavaScriptSerializer.RecursionLimit%2A> property refers to the number of levels in the object hierarchy that <xref:System.Web.Script.Serialization.JavaScriptSerializer> will process in the following cases:  
+  
+-   When the <xref:System.Web.Script.Serialization.JavaScriptSerializer> class is deserializing a JSON string.  
+  
+-   When the <xref:System.Web.Script.Serialization.JavaScriptSerializer> class is walking an object graph during serialization.  
+  
+ The value of <xref:System.Web.Script.Serialization.JavaScriptSerializer.RecursionLimit%2A> applies only when you explicitly create an instance of the <xref:System.Web.Script.Serialization.JavaScriptSerializer> class. Use the `jsonSerialization` element of the configuration file to set the number of object levels to process for the internal serializer instance that is used by the asynchronous communication layer. For more information about the configuration elements for serialization, see [How to: Configure ASP.NET Services in Microsoft Ajax](http://msdn.microsoft.com/library/ea4fb56e-bc1d-405a-9877-00cf5e552a30).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The property is set to a value that is less than one.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterConverters">
+      <MemberSignature Language="C#" Value="public void RegisterConverters (System.Collections.Generic.IEnumerable&lt;System.Web.Script.Serialization.JavaScriptConverter&gt; converters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterConverters(class System.Collections.Generic.IEnumerable`1&lt;class System.Web.Script.Serialization.JavaScriptConverter&gt; converters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Script.Serialization.JavaScriptSerializer.RegisterConverters(System.Collections.Generic.IEnumerable{System.Web.Script.Serialization.JavaScriptConverter})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="converters" Type="System.Collections.Generic.IEnumerable&lt;System.Web.Script.Serialization.JavaScriptConverter&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="converters">An array that contains the custom converters to be registered.</param>
+        <summary>Registers a custom converter with the <see cref="T:System.Web.Script.Serialization.JavaScriptSerializer" /> instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can register one or more custom converters with a <xref:System.Web.Script.Serialization.JavaScriptSerializer> instance by using the <xref:System.Web.Script.Serialization.JavaScriptSerializer.RegisterConverters%2A> method. When custom converters are registered, <xref:System.Web.Script.Serialization.JavaScriptSerializer> uses the converters both to serialize managed types and to deserialize JSON strings to managed types.  
+  
+ Multiple converters can be registered with the same <xref:System.Web.Script.Serialization.JavaScriptSerializer> instance, and these converters can indicate support for the same type. As a result, the last converter that is registered for a specific type is the one that will be used by <xref:System.Web.Script.Serialization.JavaScriptSerializer> to serialize the type.  
+  
+ For more information about custom converters, see the <xref:System.Web.Script.Serialization.JavaScriptConverter> class.  
+  
+   
+  
+## Examples  
+ The following example shows how to register a custom converter with a <xref:System.Web.Script.Serialization.JavaScriptSerializer> instance. This code example is part of a larger example provided for the <xref:System.Web.Script.Serialization.JavaScriptSerializer>class.  
+  
+ [!code-csharp[System.Web.Script.Serialization#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.Script.Serialization/CS/Default.aspx#1)]
+ [!code-vb[System.Web.Script.Serialization#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.Script.Serialization/VB/Default.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="converters" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Serialize">
+      <MemberSignature Language="C#" Value="public string Serialize (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Serialize(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Script.Serialization.JavaScriptSerializer.Serialize(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to serialize.</param>
+        <summary>Converts an object to a JSON string.</summary>
+        <returns>The serialized JSON string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Web.Script.Serialization.JavaScriptSerializer> instance is serializing a type for which a custom converter is registered, the serializer calls the <xref:System.Web.Script.Serialization.JavaScriptConverter.Serialize%2A> method to obtain the dictionary of name/value pairs that will be converted to a JSON string.  
+  
+ The <xref:System.Web.Script.Serialization.JavaScriptSerializer.Serialize%2A> method can also throw exceptions if the object graph is too complex, or if registered instances of <xref:System.Web.Script.Serialization.JavaScriptConverter> have caused converter recursion.  
+  
+   
+  
+## Examples  
+ The following example provides a simple illustration of how to serialize and deserialize data objects. It requires a class names Person which is shown below.  
+  
+<!-- TODO: review snippet reference  [!CODE [System.Web.Script.JavaScriptSerializer#1](System.Web.Script.JavaScriptSerializer#1)]  -->  
+  
+<!-- TODO: review snippet reference  [!CODE [System.Web.Script.JavaScriptSerializer#2](System.Web.Script.JavaScriptSerializer#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The resulting JSON string exceeds the value of <see cref="P:System.Web.Script.Serialization.JavaScriptSerializer.MaxJsonLength" />.  
+  
+ -or-  
+  
+ <paramref name="obj" /> contains a circular reference. A circular reference occurs when a child object has a reference to a parent object, and the parent object has a reference to the child object.</exception>
+        <exception cref="T:System.ArgumentException">The recursion limit defined by <see cref="P:System.Web.Script.Serialization.JavaScriptSerializer.RecursionLimit" /> was exceeded.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Serialize">
+      <MemberSignature Language="C#" Value="public void Serialize (object obj, System.Text.StringBuilder output);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Serialize(object obj, class System.Text.StringBuilder output) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Script.Serialization.JavaScriptSerializer.Serialize(System.Object,System.Text.StringBuilder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="output" Type="System.Text.StringBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to serialize.</param>
+        <param name="output">The <see cref="T:System.Text.StringBuilder" /> object that is used to write the JSON string.</param>
+        <summary>Serializes an object and writes the resulting JSON string to the specified <see cref="T:System.Text.StringBuilder" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Web.Script.Serialization.JavaScriptSerializer> instance is serializing a type for which a custom converter is registered, the serializer calls the <xref:System.Web.Script.Serialization.JavaScriptConverter.Serialize%2A> method to obtain the dictionary of name/value pairs that will be converted to a JSON string.  
+  
+ The <xref:System.Web.Script.Serialization.JavaScriptSerializer.Serialize%2A> method can also throw exceptions if the object graph is too complex, or if registered instances of <xref:System.Web.Script.Serialization.JavaScriptConverter> have caused converter recursion.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The resulting JSON string exceeds the value of <see cref="P:System.Web.Script.Serialization.JavaScriptSerializer.MaxJsonLength" />.  
+  
+ -or-  
+  
+ <paramref name="obj" /> contains a circular reference. A circular reference occurs when a child object has a reference to a parent object, and the parent object has a reference to the child object.</exception>
+        <exception cref="T:System.ArgumentException">The recursion limit defined by <see cref="P:System.Web.Script.Serialization.JavaScriptSerializer.RecursionLimit" /> was exceeded.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="output" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

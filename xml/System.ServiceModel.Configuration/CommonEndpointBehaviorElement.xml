@@ -1,0 +1,87 @@
+<Type Name="CommonEndpointBehaviorElement" FullName="System.ServiceModel.Configuration.CommonEndpointBehaviorElement">
+  <TypeSignature Language="C#" Value="public class CommonEndpointBehaviorElement : System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement&lt;System.ServiceModel.Configuration.BehaviorExtensionElement&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CommonEndpointBehaviorElement extends System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement`1&lt;class System.ServiceModel.Configuration.BehaviorExtensionElement&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.CommonEndpointBehaviorElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement&lt;System.ServiceModel.Configuration.BehaviorExtensionElement&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TServiceModelExtensionElement">System.ServiceModel.Configuration.BehaviorExtensionElement</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the configuration element that contains a list of endpoint behaviors that is applied to all [!INCLUDE[indigo1](~/includes/indigo1-md.md)] endpoints on the machine before the behaviors in the <see langword="endpointBehaviors" /> section are applied.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CommonEndpointBehaviorElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.CommonEndpointBehaviorElement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.CommonEndpointBehaviorElement" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public override void Add (System.ServiceModel.Configuration.BehaviorExtensionElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Add(class System.ServiceModel.Configuration.BehaviorExtensionElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.CommonEndpointBehaviorElement.Add(System.ServiceModel.Configuration.BehaviorExtensionElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.ServiceModel.Configuration.BehaviorExtensionElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">A <see cref="T:System.ServiceModel.Configuration.BehaviorExtensionElement" /> to be added.</param>
+        <summary>Adds the specified element to this configuration section.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The type associated with <paramref name="element" /> is invalid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CanAdd">
+      <MemberSignature Language="C#" Value="public override bool CanAdd (System.ServiceModel.Configuration.BehaviorExtensionElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanAdd(class System.ServiceModel.Configuration.BehaviorExtensionElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.CommonEndpointBehaviorElement.CanAdd(System.ServiceModel.Configuration.BehaviorExtensionElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.ServiceModel.Configuration.BehaviorExtensionElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">A <see cref="T:System.ServiceModel.Configuration.BehaviorExtensionElement" /> to be added.</param>
+        <summary>Adds a new behavior element to this section and returns a value indicating if the operation is successful.</summary>
+        <returns>
+          <see langword="true" /> if the operation is successful; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The type associated with <paramref name="element" /> is invalid.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

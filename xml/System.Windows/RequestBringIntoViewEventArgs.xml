@@ -1,0 +1,110 @@
+<Type Name="RequestBringIntoViewEventArgs" FullName="System.Windows.RequestBringIntoViewEventArgs">
+  <TypeSignature Language="C#" Value="public class RequestBringIntoViewEventArgs : System.Windows.RoutedEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RequestBringIntoViewEventArgs extends System.Windows.RoutedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.RequestBringIntoViewEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.RoutedEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.FrameworkElement.RequestBringIntoView" /> routed event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.FrameworkElement.RequestBringIntoView?displayProperty=fullName> event is raised by elements when you call <xref:System.Windows.FrameworkElement.BringIntoView%2A> from that element. Generally, this routed event is not handled by the source. Intermediate classes that do not implement scrollable regions or similar concepts that clip content should not handle the event.  The event should be permitted to bubble to parent elements that implement a scrollable region or otherwise specify <xref:System.Windows.UIElement.ClipToBounds%2A> `false`. Such parent elements typically provide class handling for the <xref:System.Windows.FrameworkElement.RequestBringIntoView> event, which is where the necessary rendering logic occurs whenever a given element requests that it be made viewable within the clipping region.  
+  
+ Content elements can cause the event to be raised by their content hosts (through calling <xref:System.Windows.FrameworkContentElement.BringIntoView%2A> and raising <xref:System.Windows.FrameworkElement.RequestBringIntoView?displayProperty=fullName> from the content host). Similarly, you can request logical tree elements to be brought into view with the helper method <xref:System.Windows.LogicalTreeHelper.BringIntoView%2A?displayProperty=fullName>.  
+  
+ A <xref:System.Windows.Controls.ListBox> implements a related but different method <xref:System.Windows.Controls.ListBox.ScrollIntoView%2A>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="InvokeEventHandler">
+      <MemberSignature Language="C#" Value="protected override void InvokeEventHandler (Delegate genericHandler, object genericTarget);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InvokeEventHandler(class System.Delegate genericHandler, object genericTarget) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.RequestBringIntoViewEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="genericHandler" Type="System.Delegate" />
+        <Parameter Name="genericTarget" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="genericHandler">The generic handler to call in a type-specific way.</param>
+        <param name="genericTarget">The target to call the handler on.</param>
+        <summary>Invokes event handlers in a type-specific way, which can increase event system efficiency.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation casts the generic handler as a <xref:System.Windows.RequestBringIntoViewEventHandler> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetObject">
+      <MemberSignature Language="C#" Value="public System.Windows.DependencyObject TargetObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DependencyObject TargetObject" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.RequestBringIntoViewEventArgs.TargetObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object that should be made visible in response to the event.</summary>
+        <value>The object that called <see cref="M:System.Windows.FrameworkElement.BringIntoView" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This object is typically the same object as returned by <xref:System.Windows.RoutedEventArgs.Source%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetRect">
+      <MemberSignature Language="C#" Value="public System.Windows.Rect TargetRect { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Rect TargetRect" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.RequestBringIntoViewEventArgs.TargetRect" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Rect</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the rectangular region in the object's coordinate space which should be made visible.</summary>
+        <value>The requested rectangular space.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the signature of <xref:System.Windows.FrameworkElement.BringIntoView%2A> that was invoked to raise the event didn't specify a target rectangle, this property may be the <xref:System.Windows.Rect.Empty%2A> value of the <xref:System.Windows.Rect> structure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

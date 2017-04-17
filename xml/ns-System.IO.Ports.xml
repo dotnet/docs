@@ -1,0 +1,13 @@
+<Namespace Name="System.IO.Ports">
+  <Docs>
+    <summary>The <see cref="N:System.IO.Ports" /> namespace contains classes for controlling serial ports. The most important class, <see cref="T:System.IO.Ports.SerialPort" />, provides a framework for synchronous and event-driven I/O, access to pin and break states, and access to serial driver properties. It can be used to wrap <see cref="T:System.IO.Stream" /> objects, allowing the serial port to be accessed by classes that use streams.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The namespace includes enumerations that simplify the control of serial ports, such as <xref:System.IO.Ports.Handshake>, <xref:System.IO.Ports.Parity>, <xref:System.IO.Ports.SerialPinChange>, and <xref:System.IO.Ports.StopBits>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

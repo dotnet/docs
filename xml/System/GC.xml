@@ -1,0 +1,1617 @@
+<Type Name="GC" FullName="System.GC">
+  <TypeSignature Language="C#" Value="public static class GC" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit GC extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.GC" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Controls the system garbage collector, a service that automatically reclaims unused memory.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The garbage collector is a common language runtime component that controls the allocation and release of managed memory. The methods in this class influence when garbage collection is performed on an object and when resources allocated by an object are released. Properties in this class provide information about the total amount of memory available in the system and the age category, or generation, of memory allocated to an object.  
+  
+ The garbage collector tracks and reclaims objects allocated in managed memory. Periodically, the garbage collector performs garbage collection to reclaim memory allocated to objects for which there are no valid references. Garbage collection happens automatically when a request for memory cannot be satisfied using available free memory. Alternatively, an application can force garbage collection using the <xref:System.GC.Collect%2A> method.  
+  
+ Garbage collection consists of the following steps:  
+  
+1.  The garbage collector searches for managed objects that are referenced in managed code.  
+  
+2.  The garbage collector tries to finalize objects that are not referenced.  
+  
+3.  The garbage collector frees objects that are not referenced and reclaims their memory.  
+  
+ This topic includes the following sections:  
+  
+ [The garbage collector and unmanaged resources](#unmanaged)   
+ [Object aging and generations](#generations)   
+ [Disallowing garbage collection](#NoGCRegion)  
+  
+<a name="unmanaged"></a>   
+## The garbage collector and unmanaged resources  
+ During a collection, the garbage collector will not free an object if it finds one or more references to the object in managed code. However, the garbage collector does not recognize references to an object from unmanaged code, and might free objects that are being used exclusively in unmanaged code unless explicitly prevented from doing so. The <xref:System.GC.KeepAlive%2A> method provides a mechanism that prevents the garbage collector from collecting objects that are still in use in unmanaged code.  
+  
+ Aside from managed memory allocations, implementations of the garbage collector do not maintain information about resources held by an object, such as file handles or database connections. When a type uses unmanaged resources that must be released before instances of the type are reclaimed, the type can implement a finalizer.  
+  
+ In most cases, finalizers are implemented by overriding the <xref:System.Object.Finalize%2A?displayProperty=fullName> method; however, types written in C# or C++ implement destructors, which compilers turn into an override of <xref:System.Object.Finalize%2A?displayProperty=fullName>. In most cases, if an object has a finalizer, the garbage collector calls it prior to freeing the object. However, the garbage collector is not required to call finalizers in all situations; for example, the <xref:System.GC.SuppressFinalize%2A> method explicitly prevents an object's finalizer from being called. Also, the garbage collector is not required to use a specific thread to finalize objects, or guarantee the order in which finalizers are called for objects that reference each other but are otherwise available for garbage collection.  
+  
+ In scenarios where resources must be released at a specific time, classes can implement the <xref:System.IDisposable> interface, which contains the <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> method that performs resource management and cleanup tasks. Classes that implement <xref:System.IDisposable.Dispose%2A> must specify, as part of their class contract, if and when class consumers call the method to clean up the object. The garbage collector does not, by default, call the <xref:System.IDisposable.Dispose%2A> method; however, implementations of the <xref:System.IDisposable.Dispose%2A> method can call methods in the <xref:System.GC> class to customize the finalization behavior of the garbage collector.  
+  
+ For more information on object finalization and the dispose pattern, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).  
+  
+<a name="generations"></a>   
+## Object aging and generations  
+ The garbage collector in the common language runtime supports object aging using generations. A generation is a unit of measure of the relative age of objects in memory. The generation number, or age, of an object indicates the generation to which an object belongs. Objects created more recently are part of newer generations, and have lower generation numbers than objects created earlier in the application life cycle. Objects in the most recent generation are in generation 0. This implementation of the garbage collector supports three generations of objects, generations 0, 1, and 2. You can retrieve the value of the <xref:System.GC.MaxGeneration%2A> property to determine the maximum generation number supported by the system.  
+  
+ Object aging allows applications to target garbage collection at a specific set of generations rather than requiring the garbage collector to evaluate all generations. Overloads of the <xref:System.GC.Collect%2A> method that include a `generation` parameter allow you to specify the oldest generation to be garbage collected.  
+  
+<a name="NoGCRegion"></a>   
+## Disallowing garbage collection  
+ Starting with the [!INCLUDE[net_v46](~/includes/net-v46-md.md)], the garbage collector supports a no GC region latency mode that can be used during the execution of critical paths in which garbage collection can adversely affect an app's performance. The no GC region latency mode requires that you specify an amount of memory that can be allocated without interference from the garbage collector. If the runtime can allocate that memory, the runtime will not perform a garbage collection while code in the critical path is executing.  
+  
+ You define the beginning of the critical path of the no GC region by calling one of the overloads of the <xref:System.GC.TryStartNoGCRegion%2A>. You specify the end of its critical path by calling the <xref:System.GC.EndNoGCRegion%2A> method.  
+  
+ You cannot nest calls to the <xref:System.GC.TryStartNoGCRegion%2A> method, and you should only call the <xref:System.GC.EndNoGCRegion%2A> method if the runtime is currently in no GC region latency mode. In other words, you should not call <xref:System.GC.TryStartNoGCRegion%2A> multiple times (after the first method call, subsequent calls will not succeed), and you should not expect calls to <xref:System.GC.EndNoGCRegion%2A> to succeed just because the first call to <xref:System.GC.TryStartNoGCRegion%2A> succeeded.  
+  
+   
+  
+## Examples  
+ The following example uses several GC methods to get generation and memory information about a block of unused objects and print it to the console. The unused objects are then collected, and the resulting memory totals are displayed.  
+  
+ [!code-cpp[System.GC.Collect Int Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.gc.collect int example/CPP/class1.cpp#1)]
+ [!code-csharp[System.GC.Collect Int Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.gc.collect int example/CS/class1.cs#1)]
+ [!code-vb[System.GC.Collect Int Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.gc.collect int example/VB/class1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddMemoryPressure">
+      <MemberSignature Language="C#" Value="public static void AddMemoryPressure (long bytesAllocated);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddMemoryPressure(int64 bytesAllocated) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.GC.AddMemoryPressure(System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bytesAllocated" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="bytesAllocated">The incremental amount of unmanaged memory that has been allocated.</param>
+        <summary>Informs the runtime of a large allocation of unmanaged memory that should be taken into account when scheduling garbage collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In determining when to schedule garbage collection, the runtime takes into account how much managed memory is allocated. If a small managed object allocates a large amount of unmanaged memory, the runtime takes into account only the managed memory, and thus underestimates the urgency of scheduling garbage collection. The <xref:System.GC.AddMemoryPressure%2A> method informs the runtime of this additional pressure on system memory.  
+  
+ In the simplest usage pattern, a managed object allocates unmanaged memory in the constructor and releases it in the `Dispose` or `Finalize` method. Call the <xref:System.GC.AddMemoryPressure%2A> method after allocating the unmanaged memory, and call the <xref:System.GC.RemoveMemoryPressure%2A> method after releasing it.  
+  
+ In more complicated scenarios, where the unmanaged memory allocation changes substantially during the lifetime of the managed object, you can call the <xref:System.GC.AddMemoryPressure%2A> and <xref:System.GC.RemoveMemoryPressure%2A> methods to communicate these incremental changes to the runtime.  
+  
+> [!CAUTION]
+>  You must ensure that you remove exactly the amount of pressure you add. Failing to do so can adversely affect the performance of the system in applications that run for long periods of time.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="bytesAllocated" /> is less than or equal to 0.  
+  
+ -or-  
+  
+ On a 32-bit computer, <paramref name="bytesAllocated" /> is larger than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code when manipulating garbage-collection priority. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelFullGCNotification">
+      <MemberSignature Language="C#" Value="public static void CancelFullGCNotification ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CancelFullGCNotification() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.GC.CancelFullGCNotification" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Cancels the registration of a garbage collection notification.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method cancels a garbage collection notification that was registered by using the <xref:System.GC.RegisterForFullGCNotification%2A> method. You do not have to call this method before adjusting threshold parameter values in subsequent calls to the <xref:System.GC.RegisterForFullGCNotification%2A> method.  
+  
+   
+  
+## Examples  
+ The following example cancels a garbage collection registration. This example is part of a larger example provided for the [Garbage Collection Notifications](~/docs/standard/garbage-collection/notifications.md) topic.  
+  
+ [!code-cpp[GCNotification#7](~/samples/snippets/cpp/VS_Snippets_CLR/GCNotification/cpp/program.cpp#7)]
+ [!code-csharp[GCNotification#7](~/samples/snippets/csharp/VS_Snippets_CLR/GCNotification/cs/Program.cs#7)]
+ [!code-vb[GCNotification#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/GCNotification/vb/program.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This member is not available when concurrent garbage collection is enabled. See the [&lt;gcConcurrent&gt;](~/docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) runtime setting for information about how to disable concurrent garbage collection.</exception>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Collect">
+      <MemberSignature Language="C#" Value="public static void Collect ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Collect() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.GC.Collect" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Forces an immediate garbage collection of all generations.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to try to reclaim all memory that is inaccessible. It performs a blocking garbage collection of all generations.  
+  
+ All objects, regardless of how long they have been in memory, are considered for collection; however, objects that are referenced in managed code are not collected. Use this method to force the system to try to reclaim the maximum amount of available memory.  
+  
+ Starting with the [!INCLUDE[net_v451](~/includes/net-v451-md.md)], you can compact the large object heap (LOH) by setting the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=fullName> property to <xref:System.Runtime.GCLargeObjectHeapCompactionMode?displayProperty=fullName> before calling the <xref:System.GC.Collect%2A> method, as the following example illustrates.  
+  
+ [!code-csharp[System.Runtime.GCSettings#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.gcsettings/cs/lohcompactionmode1.cs#1)]
+ [!code-vb[System.Runtime.GCSettings#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.gcsettings/vb/lohcompactionmode1.vb#1)]  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.GC.Collect%2A> method to perform a collection on all generations of memory. The code generates a number of unused objects, and then calls the <xref:System.GC.Collect%2A> method to clean them from memory.  
+  
+ [!code-cpp[System.GC.Collect Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.GC.Collect Example/CPP/class1.cpp#1)]
+ [!code-csharp[System.GC.Collect Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.GC.Collect Example/CS/class1.cs#1)]
+ [!code-vb[System.GC.Collect Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.GC.Collect Example/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Collect">
+      <MemberSignature Language="C#" Value="public static void Collect (int generation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Collect(int32 generation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.GC.Collect(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="generation" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="generation">The number of the oldest generation to be garbage collected.</param>
+        <summary>Forces an immediate garbage collection from generation 0 through a specified generation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to try to reclaim memory that is inaccessible. However, using this method does not guarantee that all inaccessible memory in the specified generation is reclaimed.  
+  
+ If object aging is implemented, the garbage collector does not collect objects with a generation number that is higher than the specified generation. If object aging is not implemented, the garbage collector considers all objects during the garbage collection.  
+  
+ Use the <xref:System.GC.MaxGeneration%2A> property to determine the maximum valid value of the `generation` parameter.  
+  
+ To have the garbage collector consider all objects regardless of their generation, use the version of this method that takes no parameters. To have the garbage collector reclaim objects based on a <xref:System.GCCollectionMode> setting, use the <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%29?displayProperty=fullName> method overload.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.GC.Collect%2A> method to perform a collection on individual layers of memory. The code generates a number of unused objects, and then calls the <xref:System.GC.Collect%2A> method to clean them from memory.  
+  
+ [!code-cpp[System.GC.Collect Int Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.gc.collect int example/CPP/class1.cpp#1)]
+ [!code-csharp[System.GC.Collect Int Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.gc.collect int example/CS/class1.cs#1)]
+ [!code-vb[System.GC.Collect Int Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.gc.collect int example/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="generation" /> is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Collect">
+      <MemberSignature Language="C#" Value="public static void Collect (int generation, GCCollectionMode mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Collect(int32 generation, valuetype System.GCCollectionMode mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.GC.Collect(System.Int32,System.GCCollectionMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="generation" Type="System.Int32" />
+        <Parameter Name="mode" Type="System.GCCollectionMode" />
+      </Parameters>
+      <Docs>
+        <param name="generation">The number of the oldest generation to be garbage collected.</param>
+        <param name="mode">An enumeration value that specifies whether the garbage collection is forced (<see cref="F:System.GCCollectionMode.Default" /> or <see cref="F:System.GCCollectionMode.Forced" />) or optimized (<see cref="F:System.GCCollectionMode.Optimized" />).</param>
+        <summary>Forces a garbage collection from generation 0 through a specified generation, at a time specified by a <see cref="T:System.GCCollectionMode" /> value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the `mode` parameter to specify whether garbage collection should occur immediately or only if the time is optimal to reclaim objects. Using this method does not guarantee that all inaccessible memory in the specified generation is reclaimed.  
+  
+ To adjust the intrusiveness of garbage collection during critical periods in your application, set the <xref:System.Runtime.GCSettings.LatencyMode%2A> property.  
+  
+ The garbage collector does not collect objects with a generation number higher than specified by the `generation` parameter. Use the <xref:System.GC.MaxGeneration%2A> property to determine the maximum valid value of `generation`.  
+  
+ To have the garbage collector consider all objects regardless of their generation, use the version of this method that takes no parameters.  
+  
+ To have the garbage collector reclaim objects up to a specified generation of objects, use the <xref:System.GC.Collect%28System.Int32%29?displayProperty=fullName> method overload. When you specify the maximum generation, all objects are collected.  
+  
+   
+  
+## Examples  
+ The following example forces a garbage collection for generation 2 objects with the <xref:System.GCCollectionMode> setting.  
+  
+ [!code-csharp[System.GC.GCCollectionMode#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.GC.GCCollectionMode/cs/Program.cs#1)]
+ [!code-vb[System.GC.GCCollectionMode#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.GC.GCCollectionMode/vb/program.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="generation" /> is not valid.  
+  
+ -or-  
+  
+ <paramref name="mode" /> is not one of the <see cref="T:System.GCCollectionMode" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Collect">
+      <MemberSignature Language="C#" Value="public static void Collect (int generation, GCCollectionMode mode, bool blocking);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Collect(int32 generation, valuetype System.GCCollectionMode mode, bool blocking) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.GC.Collect(System.Int32,System.GCCollectionMode,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="generation" Type="System.Int32" />
+        <Parameter Name="mode" Type="System.GCCollectionMode" />
+        <Parameter Name="blocking" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="generation">The number of the oldest generation to be garbage collected.</param>
+        <param name="mode">An enumeration value that specifies whether the garbage collection is forced (<see cref="F:System.GCCollectionMode.Default" /> or <see cref="F:System.GCCollectionMode.Forced" />) or optimized (<see cref="F:System.GCCollectionMode.Optimized" />).</param>
+        <param name="blocking">
+          <see langword="true" /> to perform a blocking garbage collection; <see langword="false" /> to perform a background garbage collection where possible.</param>
+        <summary>Forces a garbage collection from generation 0 through a specified generation, at a time specified by a <see cref="T:System.GCCollectionMode" /> value, with a value specifying whether the collection should be blocking.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table summarizes the interaction of the `mode` and `blocking` parameters:  
+  
+|`mode`|`blocking` is `true`|`blocking` is `false`|  
+|-|-|-|  
+|<xref:System.GCCollectionMode> or <xref:System.GCCollectionMode>|A blocking collection is performed as soon as possible. If a background collection is in progress and `generation` is 0 or 1, the <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%29> method immediately triggers a blocking collection and returns when the collection is finished. If a background collection is in progress and `generation` is 2, the method waits until the background collection is finished, triggers a blocking generation 2 collection, and then returns.|A collection is performed as soon as possible. The <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%29> method requests a background collection, but this is not guaranteed; depending on the circumstances, a blocking collection may still be performed. If a background collection is already in progress, the method returns immediately.|  
+|<xref:System.GCCollectionMode>|A blocking collection may be performed, depending on the state of the garbage collector and the `generation` parameter. The garbage collector tries to provide optimal performance.|A collection may be performed, depending on the state of the garbage collector. The <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%29> method requests a background collection, but this is not guaranteed; depending on the circumstances, a blocking collection may still be performed. The garbage collector tries to provide optimal performance. If a background collection is already in progress, the method returns immediately.|  
+  
+ If a call to the <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%29> method performs a full blocking garbage collection, you can also compact the large object heap by setting the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=fullName> property to <xref:System.Runtime.GCLargeObjectHeapCompactionMode?displayProperty=fullName> before calling the <xref:System.GC.Collect%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="generation" /> is not valid.  
+  
+ -or-  
+  
+ <paramref name="mode" /> is not one of the <see cref="T:System.GCCollectionMode" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Collect">
+      <MemberSignature Language="C#" Value="public static void Collect (int generation, GCCollectionMode mode, bool blocking, bool compacting);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Collect(int32 generation, valuetype System.GCCollectionMode mode, bool blocking, bool compacting) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.GC.Collect(System.Int32,System.GCCollectionMode,System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="generation" Type="System.Int32" />
+        <Parameter Name="mode" Type="System.GCCollectionMode" />
+        <Parameter Name="blocking" Type="System.Boolean" />
+        <Parameter Name="compacting" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="generation">The number of the oldest generation to be garbage collected.</param>
+        <param name="mode">An enumeration value that specifies whether the garbage collection is forced (<see cref="F:System.GCCollectionMode.Default" /> or <see cref="F:System.GCCollectionMode.Forced" />) or optimized (<see cref="F:System.GCCollectionMode.Optimized" />).</param>
+        <param name="blocking">
+          <see langword="true" /> to perform a blocking garbage collection; <see langword="false" /> to perform a background garbage collection where possible. See the Remarks section for more information.</param>
+        <param name="compacting">
+          <see langword="true" /> to compact the small object heap; <see langword="false" /> to sweep only. See the Remarks section for more information.</param>
+        <summary>Forces a garbage collection from generation 0 through a specified generation, at a time specified by a <see cref="T:System.GCCollectionMode" /> value, with values that specify whether the collection should be blocking and compacting.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `blocking` is `false`, the GC decides whether to perform a background or a blocking garbage collection. If `compacting` is `true`, it performs a blocking garbage collection.  
+  
+ If `compacting` is `true`, the runtime compacts the small object heap (SOH). The large object heap (LOH) is not compacted unless the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=fullName> property is set to <xref:System.Runtime.GCLargeObjectHeapCompactionMode?displayProperty=fullName>. Note that this includes all blocking garbage collections, not just full blocking garbage collections.  
+  
+ You can call the <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%2CSystem.Boolean%29> method to reduce the managed heap to the smallest size possible, as the following code fragment illustrates.  
+  
+ [!code-csharp[System.GC.Collect#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.gc.collect/cs/collect4.cs#1)]
+ [!code-vb[System.GC.Collect#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.gc.collect/vb/collect4.vb#1)]  
+  
+ Specifying `true` for the `compacting` argument guarantees a compacting, full blocking garbage collection. Setting the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=fullName> property to <xref:System.Runtime.GCLargeObjectHeapCompactionMode?displayProperty=fullName> ensures that both the LOH and SOH are compacted.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectionCount">
+      <MemberSignature Language="C#" Value="public static int CollectionCount (int generation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 CollectionCount(int32 generation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.GC.CollectionCount(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="generation" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="generation">The generation of objects for which the garbage collection count is to be determined.</param>
+        <summary>Returns the number of times garbage collection has occurred for the specified generation of objects.</summary>
+        <returns>The number of times garbage collection has occurred for the specified generation since the process was started.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you implement your own resource management, you might need to force garbage collection periodically by calling the <xref:System.GC.Collect%2A> method. Because this is an expensive operation, you can improve performance by skipping the call when a garbage collection has occurred recently. Save the value returned by <xref:System.GC.CollectionCount%2A> immediately after calling <xref:System.GC.Collect%2A>. The next time you need to call <xref:System.GC.Collect%2A>, compare the current value returned by <xref:System.GC.CollectionCount%2A> to the saved value. If the two values are equal, no collection has occurred in the interim and it is reasonable to call <xref:System.GC.Collect%2A> again.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="generation" /> is less than 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndNoGCRegion">
+      <MemberSignature Language="C#" Value="public static void EndNoGCRegion ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void EndNoGCRegion() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.GC.EndNoGCRegion" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ends the no GC region latency mode.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.GC.EndNoGCRegion%2A> method throws an <xref:System.InvalidOperationException> if the garbage collector is not in no GC region latency mode. This occurs under any of the following conditions:  
+  
+-   The <xref:System.GC.TryStartNoGCRegion%2A> method was not called previously.  
+  
+-   The call to the <xref:System.GC.TryStartNoGCRegion%2A> method returned `false`.  
+  
+-   The call to the <xref:System.GC.TryStartNoGCRegion%2A> method threw an exception.  
+  
+ You can prevent an exception for any of these reasons by using code such as the following:  
+  
+ [!code-csharp[System.GC.EndNoGCRegion#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.gc.endnogcregion/cs/endnogcregion1.cs#1)]
+ [!code-vb[System.GC.EndNoGCRegion#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.gc.endnogcregion/vb/endnogcregion1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The garbage collector is not in no GC region latency mode. See the Remarks section for more information.  
+  
+ -or-  
+  
+ The no GC region latency mode was ended previously because a garbage collection was induced.  
+  
+ -or-  
+  
+ A memory allocation exceeded the amount specified in the call to the <see cref="M:System.GC.TryStartNoGCRegion(System.Int64)" /> method.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGeneration">
+      <MemberSignature Language="C#" Value="public static int GetGeneration (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetGeneration(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.GC.GetGeneration(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object that generation information is retrieved for.</param>
+        <summary>Returns the current generation number of the specified object.</summary>
+        <returns>The current generation number of <paramref name="obj" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to determine the age of an object, and then use that information with the <xref:System.GC.Collect%2A> method to force the garbage collector to collect objects in the same generation. For example, use this method when you have a set of objects that are created as a group and that become inaccessible at the same time.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.GC.GetGeneration%2A> method to determine the age of an object. The example then performs garbage collections to clean up memory and compare the pre and post collection memory totals in the console.  
+  
+ [!code-cpp[System.GC.Collect Int Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.gc.collect int example/CPP/class1.cpp#1)]
+ [!code-csharp[System.GC.Collect Int Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.gc.collect int example/CS/class1.cs#1)]
+ [!code-vb[System.GC.Collect Int Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.gc.collect int example/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGeneration">
+      <MemberSignature Language="C#" Value="public static int GetGeneration (WeakReference wo);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetGeneration(class System.WeakReference wo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.GC.GetGeneration(System.WeakReference)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="wo" Type="System.WeakReference" />
+      </Parameters>
+      <Docs>
+        <param name="wo">A <see cref="T:System.WeakReference" /> that refers to the target object whose generation number is to be determined.</param>
+        <summary>Returns the current generation number of the target of a specified weak reference.</summary>
+        <returns>The current generation number of the target of <paramref name="wo" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the use of the <xref:System.GC.GetGeneration%2A> method to determine the age of a weak reference object.  
+  
+ [!code-cpp[System.GC.GetGenerationWeak Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.GC.GetGenerationWeak Example/CPP/systemgcgetgenerationweak.cpp#1)]
+ [!code-csharp[System.GC.GetGenerationWeak Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.GC.GetGenerationWeak Example/CS/systemgcgetgenerationweak.cs#1)]
+ [!code-vb[System.GC.GetGenerationWeak Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.GC.GetGenerationWeak Example/VB/systemgcgetgenerationweak.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">Garbage collection has already been performed on <paramref name="wo" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTotalMemory">
+      <MemberSignature Language="C#" Value="public static long GetTotalMemory (bool forceFullCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 GetTotalMemory(bool forceFullCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.GC.GetTotalMemory(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="forceFullCollection" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="forceFullCollection">
+          <see langword="true" /> to indicate that this method can wait for garbage collection to occur before returning; otherwise, <see langword="false" />.</param>
+        <summary>Retrieves the number of bytes currently thought to be allocated. A parameter indicates whether this method can wait a short interval before returning, to allow the system to collect garbage and finalize objects.</summary>
+        <returns>A number that is the best available approximation of the number of bytes currently allocated in managed memory.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `forceFullCollection` parameter is `true`, this method waits a short interval before returning while the system collects garbage and finalizes objects. The duration of the interval is an internally specified limit determined by the number of garbage collection cycles completed and the change in the amount of memory recovered between cycles. The garbage collector does not guarantee that all inaccessible memory is collected.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.GC.GetTotalMemory%2A> method to get and display the number of bytes currently allocated in managed memory.  
+  
+ [!code-cpp[System.GC.Collect Int Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.gc.collect int example/CPP/class1.cpp#1)]
+ [!code-csharp[System.GC.Collect Int Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.gc.collect int example/CS/class1.cs#1)]
+ [!code-vb[System.GC.Collect Int Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.gc.collect int example/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeepAlive">
+      <MemberSignature Language="C#" Value="public static void KeepAlive (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void KeepAlive(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.GC.KeepAlive(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to reference.</param>
+        <summary>References the specified object, which makes it ineligible for garbage collection from the start of the current routine to the point where this method is called.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The purpose of the <xref:System.GC.KeepAlive%2A> method is to ensure the existence of a reference to an object that is at risk of being prematurely reclaimed by the garbage collector. A common scenario where this might happen is when there are no references to the object in managed code or data, but the object is still in use in unmanaged code such as Win32 APIs, unmanaged DLLs, or methods using COM.  
+  
+ This method references the `obj` parameter, making that object ineligible for garbage collection from the start of the routine to the point, in execution order, where this method is called. Code this method at the end, not the beginning, of the range of instructions where `obj` must be available.  
+  
+ The <xref:System.GC.KeepAlive%2A> method performs no operation and produces no side effects other than extending the lifetime of the object passed in as a parameter.  
+  
+   
+  
+## Examples  
+ The following code example creates an object at the beginning of its `Main` method and does not refer to the object again until the end, when the <xref:System.GC.KeepAlive%2A> method is called. The object persists for the 30-second duration of the `Main` method, despite calls to the <xref:System.GC.Collect%2A> and <xref:System.GC.WaitForPendingFinalizers%2A> methods.  
+  
+ [!code-cpp[System.GC.KeepAlive Example2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.GC.KeepAlive Example2/CPP/gckeepalive.cpp#1)]
+ [!code-csharp[System.GC.KeepAlive Example2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.GC.KeepAlive Example2/CS/gckeepalive.cs#1)]
+ [!code-vb[System.GC.KeepAlive Example2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.GC.KeepAlive Example2/VB/gckeepalive.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxGeneration">
+      <MemberSignature Language="C#" Value="public static int MaxGeneration { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property int32 MaxGeneration" />
+      <MemberSignature Language="DocId" Value="P:System.GC.MaxGeneration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the maximum number of generations that the system currently supports.</summary>
+        <value>A value that ranges from zero to the maximum number of supported generations.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The generation number, or age, of an object is an implementation-defined relative measure of an object's lifespan. The most recently created objects are in generation 0 and the oldest objects are in a generation less than or equal to the generation returned by the <xref:System.GC.MaxGeneration%2A> property.  
+  
+ The garbage collector assumes that newer memory is more likely to be eligible for garbage collection than older memory. Therefore, the garbage collector improves its performance by adjusting generation numbers each time it reclaims memory, and the <xref:System.GC.MaxGeneration%2A> property value can grow over time.  
+  
+ If object aging is implemented, the <xref:System.GC.MaxGeneration%2A> property returns the maximum generation number used by the system; otherwise, this property returns zero.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the MaxGeneration property to display the largest generation number currently in use.  
+  
+ [!code-cpp[System.GC.Collect Int Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.gc.collect int example/CPP/class1.cpp#1)]
+ [!code-csharp[System.GC.Collect Int Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.gc.collect int example/CS/class1.cs#1)]
+ [!code-vb[System.GC.Collect Int Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.gc.collect int example/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>For this implementation, the value returned by the <see cref="P:System.GC.MaxGeneration" /> property is guaranteed to remain constant for the lifetime of an executing application.  
+  
+ Use the <see cref="P:System.GC.MaxGeneration" /> property to determine the maximum value you can specify when calling the <see cref="M:System.GC.Collect(System.Int32)" /> method that takes a generation parameter.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterForFullGCNotification">
+      <MemberSignature Language="C#" Value="public static void RegisterForFullGCNotification (int maxGenerationThreshold, int largeObjectHeapThreshold);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterForFullGCNotification(int32 maxGenerationThreshold, int32 largeObjectHeapThreshold) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.GC.RegisterForFullGCNotification(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="maxGenerationThreshold" Type="System.Int32" />
+        <Parameter Name="largeObjectHeapThreshold" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="maxGenerationThreshold">A number between 1 and 99 that specifies when the notification should be raised based on the objects allocated in generation 2.</param>
+        <param name="largeObjectHeapThreshold">A number between 1 and 99 that specifies when the notification should be raised based on objects allocated in the large object heap.</param>
+        <summary>Specifies that a garbage collection notification should be raised when conditions favor full garbage collection and when the collection has been completed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For each generation, the garbage collector sets a threshold for allocations into that generation. When the size of allocations exceeds this threshold, a garbage collection is triggered on that generation. For example, if generation 2’s threshold is 20MB (which means that 20MB survives generation 1 collections and is promoted into generation 2), and more than 20MB has survived generation 1 and is prompted into generation 2, the next garbage collection will be attempted as a generation 2 collection. Similarly, if the large object heap's (LOH's) threshold is 20MB and your app has allocated more than 20MB of large objects, the next garbage collection will also be attempted as a generation 2 collection (since the LOH is only collected in gen2 garbage collections).  
+  
+ The `maxGenerationThreshold` and `largeObjectHeapThreshold` thresholds control how much in advance you are notified before a full garbage collection occurs. The greater the threshold, the more allocations that can occur between notification and the next full garbage collection.  
+  
+ If you have situations in which a full garbage collection by the common language runtime would adversely affect your application's performance, you can ask to be notified when the runtime is about to do a full garbage collection and circumvent that collection by inducing a collection yourself (using the <xref:System.GC.Collect%2A> method) when conditions are still favorable. In addition to changing the garbage collection schedule yourself, full GC notification is useful in following the scenarios:  
+  
+-   You monitor for the approach of a full garbage collection and, when you are notified that one is approaching, you reduce live data size (for example, by releasing some cache entries). As a result, when the garbage collection occurs, it is able to reclaim more memory.  
+  
+-   You monitor for the completion of a full garbage collection so that you can collect some statistics.  For example, you might want to measure the size of the heap at GC completion so that you know the size of live data. (After a full GC, the heap is at its smallest size.)  
+  
+ For more information about what represents a full garbage collection, see [Garbage Collection Notifications](~/docs/standard/garbage-collection/notifications.md).  
+  
+ When you register for a garbage collection notification, you can be notified when a full garbage collection is approaching and when it is completed. This pattern resembles how the operating system monitors for low memory notifications.  
+  
+ Use the following guidelines for specifying the `maxGenerationThreshold` and `largeObjectHeapThreshold` parameters:  
+  
+-   The larger the threshold value, the more allocations will occur between the notification and the full garbage collection.  
+  
+     A larger threshold value provides more opportunities for the runtime to check for an approaching collection. This increases the likelihood that you will be notified. However, you should not set the threshold too high because that results in a more allocations before the runtime induces the next collection.  
+  
+     When you induce a collection yourself upon notification using a high threshold value, fewer objects are reclaimed than would be reclaimed by the runtime's next collection.  
+  
+-   The smaller the threshold value, the fewer the allocations between notification and the full garbage collection.  
+  
+   
+  
+## Examples  
+ The following example shows how to register a garbage collection notification and start a thread to monitor the status of the garbage collection notification. This code example is part of a larger example provided for [Garbage Collection Notifications](~/docs/standard/garbage-collection/notifications.md) topic.  
+  
+ [!code-cpp[GCNotification#2](~/samples/snippets/cpp/VS_Snippets_CLR/GCNotification/cpp/program.cpp#2)]
+ [!code-csharp[GCNotification#2](~/samples/snippets/csharp/VS_Snippets_CLR/GCNotification/cs/Program.cs#2)]
+ [!code-vb[GCNotification#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/GCNotification/vb/program.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="maxGenerationThreshold " />or <paramref name="largeObjectHeapThreshold " />is not between 1 and 99.</exception>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveMemoryPressure">
+      <MemberSignature Language="C#" Value="public static void RemoveMemoryPressure (long bytesAllocated);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveMemoryPressure(int64 bytesAllocated) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.GC.RemoveMemoryPressure(System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bytesAllocated" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="bytesAllocated">The amount of unmanaged memory that has been released.</param>
+        <summary>Informs the runtime that unmanaged memory has been released and no longer needs to be taken into account when scheduling garbage collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In determining when to schedule garbage collection, the runtime takes into account how much managed memory is allocated. If a small managed object allocates a large amount of unmanaged memory, the runtime takes into account only the managed memory, and thus underestimates the urgency of scheduling garbage collection. The <xref:System.GC.AddMemoryPressure%2A> method informs the runtime of this additional pressure on system memory, and the <xref:System.GC.RemoveMemoryPressure%2A> method informs the runtime that the additional pressure has been released.  
+  
+ In the simplest usage pattern, a managed object allocates unmanaged memory in the constructor and releases it in the `Dispose` or `Finalize` method. Call the <xref:System.GC.AddMemoryPressure%2A> method after allocating the unmanaged memory, and call the <xref:System.GC.RemoveMemoryPressure%2A> method after releasing it.  
+  
+ In more complicated scenarios, where the unmanaged memory allocation changes substantially during the lifetime of the managed object, you can call the <xref:System.GC.AddMemoryPressure%2A> and <xref:System.GC.RemoveMemoryPressure%2A> methods to communicate these incremental changes to the runtime.  
+  
+> [!CAUTION]
+>  You must ensure that you remove exactly the amount of pressure you add. Failing to do so can adversely affect the performance of the system in applications that run for long periods of time.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="bytesAllocated" /> is less than or equal to 0.  
+  
+ -or-  
+  
+ On a 32-bit computer, <paramref name="bytesAllocated" /> is larger than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code when manipulating garbage-collection priority. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ReRegisterForFinalize">
+      <MemberSignature Language="C#" Value="public static void ReRegisterForFinalize (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ReRegisterForFinalize(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.GC.ReRegisterForFinalize(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object that a finalizer must be called for.</param>
+        <summary>Requests that the system call the finalizer for the specified object for which <see cref="M:System.GC.SuppressFinalize(System.Object)" /> has previously been called.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.GC.ReRegisterForFinalize%2A> method adds the `obj` parameter to the list of objects that request finalization before the garbage collector frees the object. The `obj` parameter must be the caller of this method.  
+  
+ Calling the <xref:System.GC.ReRegisterForFinalize%2A> method does not guarantee that the garbage collector will call an object's finalizer.  
+  
+ By default, all objects that implement finalizers are added to the list of objects that require finalization; however, an object might have already been finalized or might have disabled finalization by calling the <xref:System.GC.SuppressFinalize%2A> method.  
+  
+ A finalizer can use this method to resurrect itself or an object that it references.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the ReRegisterForFinalize method to finalize an object a second time after garbage collection.  
+  
+ [!code-cpp[System.GC.ReregisterForFinalize Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.GC.ReRegisterForFinalize Example/CPP/class1.cpp#1)]
+ [!code-csharp[System.GC.ReregisterForFinalize Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.GC.ReRegisterForFinalize Example/CS/class1.cs#1)]
+ [!code-vb[System.GC.ReregisterForFinalize Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.GC.ReRegisterForFinalize Example/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="obj" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SuppressFinalize">
+      <MemberSignature Language="C#" Value="public static void SuppressFinalize (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SuppressFinalize(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.GC.SuppressFinalize(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object whose finalizer must not be executed.</param>
+        <summary>Requests that the common language runtime not call the finalizer for the specified object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method sets a bit in the object header of `obj`, which the runtime checks when calling finalizers. A finalizer, which is represented by the <xref:System.Object.Finalize%2A?displayProperty=fullName> method, is used to release unmanaged resources before an object is garbage-collected. If `obj` does not have a finalizer, the call to the <xref:System.GC.SuppressFinalize%2A> method has no effect.  
+  
+ Objects that implement the <xref:System.IDisposable> interface can call this method from the object's <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> implementation to prevent the garbage collector from calling <xref:System.Object.Finalize%2A?displayProperty=fullName> on an object that does not require it. Typically, this is done to prevent the finalizer from releasing unmanaged resources that have already been freed by the <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> implementation.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.GC.SuppressFinalize%2A> method in a resource class to prevent a redundant garbage collection from being called. The example uses the [dispose pattern](~/docs/standard/design-guidelines/dispose-pattern.md) to free both managed resources (that is, objects that implement <xref:System.IDisposable>) and unmanaged resources.  
+  
+ [!code-csharp[System.GC.SuppressFinalize#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.gc.suppressfinalize/cs/suppressfinalize1.cs#1)]
+ [!code-vb[System.GC.SuppressFinalize#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.gc.suppressfinalize/vb/suppressfinalize1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="obj" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryStartNoGCRegion">
+      <MemberSignature Language="C#" Value="public static bool TryStartNoGCRegion (long totalSize);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryStartNoGCRegion(int64 totalSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.GC.TryStartNoGCRegion(System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="totalSize" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="totalSize">The amount of memory in bytes to allocate without triggering a garbage collection. It must be less than or equal to the size of an ephemeral segment. For information on the size of an ephemeral segement, see the "Ephemeral generations and segments" section in the [Fundamentals of Garbage Collection](~/docs/standard/garbage-collection/fundamentals.md) article.</param>
+        <summary>Attempts to disallow garbage collection during the execution of a critical path if a specified amount of memory is available.</summary>
+        <returns>
+          <see langword="true" /> if the runtime was able to commit the required amount of memory and the garbage collector is able to enter no GC region latency mode; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.GC.TryStartNoGCRegion%28System.Int64%29> method attempts to place the garbage collector in no GC region latency mode, which disallows garbage collection while an app executes a critical region of code.  If the runtime is unable to initially allocate the requested amount of memory, the garbage collector performs a full blocking garbage collection in an attempt to free additional memory. The garbage collector enters no GC region latency mode if it is able to allocate the required amount of memory, which in this case is actually 2 * `totalSize` bytes (it attempts to allocate `totalSize` bytes for the small object heap and `totalSize` bytes for the large object heap).  
+  
+ `totalSize` must be large enough to handle all memory allocations that occur in the critical path. This includes allocations by the app, as well as allocations that the runtime makes on the app's behalf.  
+  
+> [!IMPORTANT]
+>  You cannot nest calls to the <xref:System.GC.TryStartNoGCRegion%2A> method, and you should only call the <xref:System.GC.EndNoGCRegion%2A> method if the runtime is currently in no GC region latency mode. In other words, you should not call <xref:System.GC.TryStartNoGCRegion%2A> multiple times (after the first method call, subsequent calls will not succeed), and you should not expect calls to <xref:System.GC.EndNoGCRegion%2A> to succeed just because the first call to <xref:System.GC.TryStartNoGCRegion%2A> succeeded.  
+  
+ You exit the no GC region latency mode by calling the <xref:System.GC.EndNoGCRegion%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="totalSize" /> exceeds the ephemeral segment size.</exception>
+        <exception cref="T:System.InvalidOperationException">The process is already in no GC region latency mode.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryStartNoGCRegion">
+      <MemberSignature Language="C#" Value="public static bool TryStartNoGCRegion (long totalSize, bool disallowFullBlockingGC);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryStartNoGCRegion(int64 totalSize, bool disallowFullBlockingGC) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.GC.TryStartNoGCRegion(System.Int64,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="totalSize" Type="System.Int64" />
+        <Parameter Name="disallowFullBlockingGC" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="totalSize">The amount of memory in bytes to allocate without triggering a garbage collection. It must be less than or equal to the size of an ephemeral segment. For information on the size of an ephemeral segement, see the "Ephemeral generations and segments" section in the [Fundamentals of Garbage Collection](~/docs/standard/garbage-collection/fundamentals.md) article.</param>
+        <param name="disallowFullBlockingGC">
+          <see langword="true" /> to omit a full blocking garbage collection if the garbage collector is initially unable to allocate <c>totalSize</c> bytes; otherwise, <see langword="false" />.</param>
+        <summary>Attempts to disallow garbage collection during the execution of a critical path if a specified amount of memory is available, and controls whether the garbage collector does a full blocking garbage collection if not enough memory is initially available.</summary>
+        <returns>
+          <see langword="true" /> if the runtime was able to commit the required amount of memory and the garbage collector is able to enter no GC region latency mode; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.GC.TryStartNoGCRegion%28System.Int64%2CSystem.Boolean%29> method attempts to place the garbage collector in no GC region latency mode, which disallows garbage collection while an app executes a critical region of code.  If the runtime is unable to initially allocate the requested amount of memory and the `disallowFullBlockingGC` argument is `false`, the garbage collector performs a full blocking garbage collection in an attempt to free additional memory; otherwise, the allocation fails, and the method returns `false`. The garbage collector enters no GC region latency mode if it is able to allocate the required amount of memory, which in this case is actually 2 * `totalSize` (it attempts to allocate `totalSize` for the small object heap and `totalSize` for the large object heap).  
+  
+ `totalSize` must be large enough to handle all memory allocations that occur in the critical path. This includes allocations by the app, as well as allocations that the runtime makes on the app's behalf.  
+  
+ Setting `disallowFullBlockingGC` to `true` to prevent a full blocking garbage collection if not enough memory is initially available is most useful in load balancing scenarios: one system can call this method and report itself as ready to accept requests if it returns `true`, and have the load balancer redirect requests to other systems if it returns `false`. It can then do a full blocking garbage collection when it's not handling requests by calling the <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%2CSystem.Boolean%29> method.  
+  
+> [!IMPORTANT]
+>  You cannot nest calls to the <xref:System.GC.TryStartNoGCRegion%2A> method, and you should only call the <xref:System.GC.EndNoGCRegion%2A> method if the runtime is currently in no GC region latency mode. In other words, you should not call <xref:System.GC.TryStartNoGCRegion%2A> multiple times (after the first method call, subsequent calls will not succeed), and you should not expect calls to <xref:System.GC.EndNoGCRegion%2A> to succeed just because the first call to <xref:System.GC.TryStartNoGCRegion%2A> succeeded.  
+  
+ You exit the no GC region latency mode by calling the <xref:System.GC.EndNoGCRegion%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="totalSize" /> exceeds the ephemeral segment size.</exception>
+        <exception cref="T:System.InvalidOperationException">The process is already in no GC region latency mode.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryStartNoGCRegion">
+      <MemberSignature Language="C#" Value="public static bool TryStartNoGCRegion (long totalSize, long lohSize);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryStartNoGCRegion(int64 totalSize, int64 lohSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.GC.TryStartNoGCRegion(System.Int64,System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="totalSize" Type="System.Int64" />
+        <Parameter Name="lohSize" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="totalSize">The amount of memory in bytes to allocate without triggering a garbage collection. <c>totalSize</c> –<c>lohSize</c> must be less than or equal to the size of an ephemeral segment. For information on the size of an ephemeral segement, see the "Ephemeral generations and segments" section in the [Fundamentals of Garbage Collection](~/docs/standard/garbage-collection/fundamentals.md) article.</param>
+        <param name="lohSize">The number of bytes in <c>totalSize</c> to use for large object heap (LOH) allocations.</param>
+        <summary>Attempts to disallow garbage collection during the execution of a critical path if a specified amount of memory is available for the large object heap and the small object heap.</summary>
+        <returns>
+          <see langword="true" /> if the runtime was able to commit the required amount of memory and the garbage collector is able to enter no GC region latency mode; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.GC.TryStartNoGCRegion%28System.Int64%2CSystem.Int64%29> method attempts to place the garbage collector in no GC region latency mode, which disallows garbage collection while an app executes a critical region of code.  If the runtime is unable to initially allocate the requested amount of memory, the garbage collector performs a full blocking garbage collection in an attempt to free additional memory. The garbage collector enters no GC region latency mode if it is able to allocate `lohSize` for the LOH and `totalSize` – `lohSize` for the small object heap (SOH).  
+  
+ `lohSize` must be large enough to handle all memory allocations that occur in the critical path for the LOH, and `totalSize` – `lohSize` must be large enough to handle all memory allocations that occur in the critical path for the SOH. This includes allocations by the app, as well as allocations that the runtime makes on the app's behalf.  
+  
+> [!IMPORTANT]
+>  You cannot nest calls to the <xref:System.GC.TryStartNoGCRegion%2A> method, and you should only call the <xref:System.GC.EndNoGCRegion%2A> method if the runtime is currently in no GC region latency mode. In other words, you should not call <xref:System.GC.TryStartNoGCRegion%2A> multiple times (after the first method call, subsequent calls will not succeed), and you should not expect calls to <xref:System.GC.EndNoGCRegion%2A> to succeed just because the first call to <xref:System.GC.TryStartNoGCRegion%2A> succeeded.  
+  
+ You exit the no GC region latency mode by calling the <xref:System.GC.EndNoGCRegion%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="totalSize" /> – <paramref name="lohSize" /> exceeds the ephemeral segment size.</exception>
+        <exception cref="T:System.InvalidOperationException">The process is already in no GC region latency mode.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryStartNoGCRegion">
+      <MemberSignature Language="C#" Value="public static bool TryStartNoGCRegion (long totalSize, long lohSize, bool disallowFullBlockingGC);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryStartNoGCRegion(int64 totalSize, int64 lohSize, bool disallowFullBlockingGC) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.GC.TryStartNoGCRegion(System.Int64,System.Int64,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="totalSize" Type="System.Int64" />
+        <Parameter Name="lohSize" Type="System.Int64" />
+        <Parameter Name="disallowFullBlockingGC" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="totalSize">The amount of memory in bytes to allocate without triggering a garbage collection. <c>totalSize</c> –<c>lohSize</c> must be less than or equal to the size of an ephemeral segment. For information on the size of an ephemeral segement, see the "Ephemeral generations and segments" section in the [Fundamentals of Garbage Collection](~/docs/standard/garbage-collection/fundamentals.md) article.</param>
+        <param name="lohSize">The number of bytes in <c>totalSize</c> to use for large object heap (LOH) allocations.</param>
+        <param name="disallowFullBlockingGC">
+          <see langword="true" /> to omit a full blocking garbage collection if the garbage collector is initially unable to allocate the specified memory on the small object heap (SOH) and LOH; otherwise, <see langword="false" />.</param>
+        <summary>Attempts to disallow garbage collection during the execution of a critical path if a specified amount of memory is available for the large object heap and the small object heap, and controls whether the garbage collector does a full blocking garbage collection if not enough memory is initially available.</summary>
+        <returns>
+          <see langword="true" /> if the runtime was able to commit the required amount of memory and the garbage collector is able to enter no GC region latency mode; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.GC.TryStartNoGCRegion%28System.Int64%2CSystem.Int64%2CSystem.Boolean%29> method attempts to place the garbage collector in no GC region latency mode, which disallows garbage collection while an app executes a critical region of code.  If the runtime is unable to initially allocate the requested amount of memory and the `disallowFullBlockingGC` argument is `false`, the garbage collector performs a full blocking garbage collection in an attempt to free additional memory; otherwise, the allocation fails, and the method returns `false`. The garbage collector enters no GC region latency mode if it is able to allocate `lohSize` for the LOH and `totalSize` – `lohSize` for the small object heap (SOH).  
+  
+ `lohSize` must be large enough to handle all memory allocations that occur in the critical path for the LOH, and `totalSize` – `lohSize` must be large enough to handle all memory allocations that occur in the critical path for the SOH. This includes allocations by the app, as well as allocations that the runtime makes on the app's behalf.  
+  
+ Setting `disallowFullBlockingGC` to `true` to prevent a full blocking garbage collection if not enough memory is initially available is most useful in load balancing scenarios: one system can call this method and report itself as ready to accept requests if it returns `true`, and have the load balancer redirect requests to other systems if it returns `false`. It can then do a full blocking garbage collection when it's not handling requests by calling the <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%2CSystem.Boolean%29> method.  
+  
+> [!IMPORTANT]
+>  You cannot nest calls to the <xref:System.GC.TryStartNoGCRegion%2A> method, and you should only call the <xref:System.GC.EndNoGCRegion%2A> method if the runtime is currently in no GC region latency mode. In other words, you should not call <xref:System.GC.TryStartNoGCRegion%2A> multiple times (after the first method call, subsequent calls will not succeed), and you should not expect calls to <xref:System.GC.EndNoGCRegion%2A> to succeed just because the first call to <xref:System.GC.TryStartNoGCRegion%2A> succeeded.  
+  
+ You exit the no GC region latency mode by calling the <xref:System.GC.EndNoGCRegion%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="totalSize" /> – <paramref name="lohSize" /> exceeds the ephemeral segment size.</exception>
+        <exception cref="T:System.InvalidOperationException">The process is already in no GC region latency mode.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WaitForFullGCApproach">
+      <MemberSignature Language="C#" Value="public static GCNotificationStatus WaitForFullGCApproach ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.GCNotificationStatus WaitForFullGCApproach() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.GC.WaitForFullGCApproach" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.GCNotificationStatus</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the status of a registered notification for determining whether a full, blocking garbage collection by the common language runtime is imminent.</summary>
+        <returns>The status of the registered garbage collection notification.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.GCNotificationStatus> enumeration returned by this method to determine the status of the current garbage collection notification that was registered by using the <xref:System.GC.RegisterForFullGCNotification%2A> method. You can also use the <xref:System.GC.WaitForFullGCComplete%2A> method to determine whether the full garbage collection has completed.  
+  
+ When the enumeration returns <xref:System.GCNotificationStatus>, you can do tasks such as preventing additional objects from being allocated and inducing a collection yourself with the <xref:System.GC.Collect%2A> method. Note that the notification does not guarantee that a full garbage collection will occur, only that conditions have reached the threshold that are favorable for a full garbage collection to occur.  
+  
+ This method waits indefinitely for a garbage collection notification to be obtained. If you want to specify a time-out period for the method to return if the notification cannot be obtained, use the <xref:System.GC.WaitForFullGCApproach%28System.Int32%29?displayProperty=fullName> method overload. If you call this method without specifying a time-out, you can call the <xref:System.GC.CancelFullGCNotification%2A> method if you are waiting longer than preferred.  
+  
+ You should follow this method with a call to the <xref:System.GC.WaitForFullGCComplete%2A> method to make sure that you have had a full garbage collection. Calling this method alone causes indeterminate results.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this method to determine whether a full, blocking garbage collection is approaching. Whenever the status of the notification is <xref:System.GCNotificationStatus>, the user method `OnFullGCApproachNotify` is called to perform actions in response to the approaching collection. This code example is part of a larger example provided for [Garbage Collection Notifications](~/docs/standard/garbage-collection/notifications.md) topic.  
+  
+ [!code-cpp[GCNotification#3](~/samples/snippets/cpp/VS_Snippets_CLR/GCNotification/cpp/program.cpp#3)]
+ [!code-csharp[GCNotification#3](~/samples/snippets/csharp/VS_Snippets_CLR/GCNotification/cs/Program.cs#3)]
+ [!code-vb[GCNotification#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/GCNotification/vb/program.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="WaitForFullGCApproach">
+      <MemberSignature Language="C#" Value="public static GCNotificationStatus WaitForFullGCApproach (int millisecondsTimeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.GCNotificationStatus WaitForFullGCApproach(int32 millisecondsTimeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.GC.WaitForFullGCApproach(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.GCNotificationStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="millisecondsTimeout" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="millisecondsTimeout">The length of time to wait before a notification status can be obtained. Specify -1 to wait indefinitely.</param>
+        <summary>Returns, in a specified time-out period, the status of a registered notification for determining whether a full, blocking garbage collection by the common language runtime is imminent.</summary>
+        <returns>The status of the registered garbage collection notification.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.GCNotificationStatus> enumeration returned by this method to determine the status of the current garbage collection notification that was registered by using the <xref:System.GC.RegisterForFullGCNotification%2A> method. You can also use the <xref:System.GC.WaitForFullGCComplete%2A> method to determine whether the full garbage collection has completed.  
+  
+ Note that this method returns immediately whenever a garbage collection notification status is obtained, regardless of the value specified by `millisecondsTimeout`. If a garbage collection notification status is not obtained before `millisecondsTimeout` times out, this method returns <xref:System.GCNotificationStatus>.  
+  
+ When the enumeration returns <xref:System.GCNotificationStatus>, you can do tasks such as preventing additional objects from being allocated and inducing a collection yourself with the <xref:System.GC.Collect%2A> method. Note that the notification does not guarantee that a full garbage collection will occur, only that conditions have reached the threshold that are favorable for a full garbage collection to occur.  
+  
+ You can call the <xref:System.GC.CancelFullGCNotification%2A> method when you cannot wait for the time-out period to elapse.  
+  
+ You should follow this method with a call to the <xref:System.GC.WaitForFullGCComplete%2A> method to make sure that you have had a full garbage collection. Calling this method alone causes indeterminate results.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="millisecondsTimeout" /> must be either non-negative or less than or equal to <see cref="F:System.Int32.MaxValue" /> or -1.</exception>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="WaitForFullGCComplete">
+      <MemberSignature Language="C#" Value="public static GCNotificationStatus WaitForFullGCComplete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.GCNotificationStatus WaitForFullGCComplete() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.GC.WaitForFullGCComplete" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.GCNotificationStatus</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the status of a registered notification for determining whether a full, blocking garbage collection by the common language runtime has completed.</summary>
+        <returns>The status of the registered garbage collection notification.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.GCNotificationStatus> enumeration returned by this method to determine the status of the current garbage collection notification that was registered by using the <xref:System.GC.RegisterForFullGCNotification%2A> method. You can also use the <xref:System.GC.WaitForFullGCApproach%2A> method to determine whether a full garbage collection is imminent.  
+  
+ When the enumeration returns <xref:System.GCNotificationStatus>, you can do tasks such as resuming work and obtaining a collection count with the <xref:System.GC.CollectionCount%2A> property.  
+  
+ This method waits indefinitely for a garbage collection notification to be obtained. If you want to specify a time-out period for the method to return if the notification cannot be obtained, use the <xref:System.GC.WaitForFullGCApproach%28System.Int32%29?displayProperty=fullName> method overload. If you call this method without specifying a time-out, you can call the <xref:System.GC.CancelFullGCNotification%2A> method if you are waiting longer than preferred.  
+  
+ This method call should be preceded with a call to the <xref:System.GC.WaitForFullGCApproach%2A> method to make sure that you have had a full garbage collection. Calling this method alone can produce indeterminate results.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this method to determine whether a full garbage collection has completed. Whenever the status of the notification is <xref:System.GCNotificationStatus>, the user method `OnFullGCCompletedNotify` is called to perform actions in response to the completed collection. This code example is part of a larger example provided for [Garbage Collection Notifications](~/docs/standard/garbage-collection/notifications.md) topic.  
+  
+ [!code-cpp[GCNotification#4](~/samples/snippets/cpp/VS_Snippets_CLR/GCNotification/cpp/program.cpp#4)]
+ [!code-csharp[GCNotification#4](~/samples/snippets/csharp/VS_Snippets_CLR/GCNotification/cs/Program.cs#4)]
+ [!code-vb[GCNotification#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/GCNotification/vb/program.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="WaitForFullGCComplete">
+      <MemberSignature Language="C#" Value="public static GCNotificationStatus WaitForFullGCComplete (int millisecondsTimeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.GCNotificationStatus WaitForFullGCComplete(int32 millisecondsTimeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.GC.WaitForFullGCComplete(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.GCNotificationStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="millisecondsTimeout" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="millisecondsTimeout">The length of time to wait before a notification status can be obtained. Specify -1 to wait indefinitely.</param>
+        <summary>Returns, in a specified time-out period, the status of a registered notification for determining whether a full, blocking garbage collection by common language the runtime has completed.</summary>
+        <returns>The status of the registered garbage collection notification.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.GCNotificationStatus> enumeration returned by this method to determine the status of the current garbage collection notification that was registered by using the <xref:System.GC.RegisterForFullGCNotification%2A> method. You can also use the <xref:System.GC.WaitForFullGCApproach%2A> method to determine whether a full garbage collection is imminent.  
+  
+ Note that this method returns immediately whenever a garbage collection notification status is obtained, regardless of the value specified by `millisecondsTimeout`. If a garbage collection notification status is not obtained before `millisecondsTimeout` times out, this method returns <xref:System.GCNotificationStatus>.  
+  
+ When the enumeration returns <xref:System.GCNotificationStatus>, you can do tasks such as resuming work and obtaining a collection count with the <xref:System.GC.CollectionCount%2A> property.  
+  
+ You can call the <xref:System.GC.CancelFullGCNotification%2A> method when you cannot wait for the time-out period to elapse.  
+  
+ This method call should be preceded with a call to the <xref:System.GC.WaitForFullGCApproach%2A> method to make sure that you have had a full garbage collection. Calling this method alone can produce indeterminate results.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="millisecondsTimeout" /> must be either non-negative or less than or equal to <see cref="F:System.Int32.MaxValue" /> or -1.</exception>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="WaitForPendingFinalizers">
+      <MemberSignature Language="C#" Value="public static void WaitForPendingFinalizers ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WaitForPendingFinalizers() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.GC.WaitForPendingFinalizers" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Suspends the current thread until the thread that is processing the queue of finalizers has emptied that queue.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the garbage collector finds objects that can be reclaimed, it checks each object to determine the object's finalization requirements. If an object implements a finalizer and has not disabled finalization by calling <xref:System.GC.SuppressFinalize%2A>, the object is placed in a list of objects that are marked as ready for finalization. The garbage collector calls the <xref:System.Object.Finalize%2A> methods for the objects in this list and removes the entries from the list. This method blocks until all finalizers have run to completion.  
+  
+ The thread on which finalizers are run is unspecified, so there is no guarantee that this method will terminate. However, this thread can be interrupted by another thread while the <xref:System.GC.WaitForPendingFinalizers%2A> method is in progress. For example, you can start another thread that waits for a period of time and then interrupts this thread if this thread is still suspended.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.GC.WaitForPendingFinalizers%2A> method to suspend the current thread until finalization of all the collected objects is complete.  
+  
+ [!code-cpp[System.GC.WaitForPendingFinalizers Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.GC.WaitForPendingFinalizers Example/CPP/class1.cpp#1)]
+ [!code-csharp[System.GC.WaitForPendingFinalizers Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.GC.WaitForPendingFinalizers Example/CS/class1.cs#1)]
+ [!code-vb[System.GC.WaitForPendingFinalizers Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.GC.WaitForPendingFinalizers Example/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="TryStartNoGCRegion">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attempts to disallow garbage collection during the execution of a critical path.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  You cannot nest calls to the <xref:System.GC.TryStartNoGCRegion%2A> method, and you should only call the <xref:System.GC.EndNoGCRegion%2A> method if the runtime is currently in no GC region latency mode. In other words, you should not call <xref:System.GC.TryStartNoGCRegion%2A> multiple times (after the first method call, subsequent calls will not succeed), and you should not expect calls to <xref:System.GC.EndNoGCRegion%2A> to succeed just because the first call to <xref:System.GC.TryStartNoGCRegion%2A> succeeded.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

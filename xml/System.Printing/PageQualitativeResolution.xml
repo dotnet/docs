@@ -1,0 +1,123 @@
+<Type Name="PageQualitativeResolution" FullName="System.Printing.PageQualitativeResolution">
+  <TypeSignature Language="C#" Value="public enum PageQualitativeResolution" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PageQualitativeResolution extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.PageQualitativeResolution" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the page resolution as a qualitative, non-numerical, value.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this type as an alternative, or supplement, to stating resolution in dots per inch (dpi).  
+  
+ This enumeration is used to provide values for the <xref:System.Printing.PageResolution.QualitativeResolution%2A> property. The <xref:System.Printing.PageResolution> class, in turn, is used to provide values for the <xref:System.Printing.PrintCapabilities.PageResolutionCapability%2A> property where it specifies the various resolutions that a printer supports, and the <xref:System.Printing.PrintTicket.PageResolution%2A> property, where it instructs a printer what resolution to use.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageQualitativeResolution Default = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PageQualitativeResolution.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageQualitativeResolution</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The default qualitative resolution for the printer.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Draft">
+      <MemberSignature Language="C#" Value="Draft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageQualitativeResolution Draft = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PageQualitativeResolution.Draft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageQualitativeResolution</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Draft-level quality, which is 300 dpi for most printers.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="High">
+      <MemberSignature Language="C#" Value="High" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageQualitativeResolution High = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PageQualitativeResolution.High" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageQualitativeResolution</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>High quality, which is 1200 dpi or greater for most printers.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="Normal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageQualitativeResolution Normal = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PageQualitativeResolution.Normal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageQualitativeResolution</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Normal quality, which is 600 dpi for most printers.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Other">
+      <MemberSignature Language="C#" Value="Other" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageQualitativeResolution Other = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PageQualitativeResolution.Other" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageQualitativeResolution</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Other quality.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageQualitativeResolution Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PageQualitativeResolution.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageQualitativeResolution</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The feature (whose options are represented by this enumeration) is set to an option not defined in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

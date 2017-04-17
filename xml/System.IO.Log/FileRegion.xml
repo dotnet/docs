@@ -1,0 +1,157 @@
+<Type Name="FileRegion" FullName="System.IO.Log.FileRegion">
+  <TypeSignature Language="C#" Value="public sealed class FileRegion" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FileRegion extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Log.FileRegion" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.Log</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a region of a file to be archived. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.IO.Log.LogArchiveSnapshot> object contains the information necessary to generate a consistent backup of the data in a <xref:System.IO.Log.LogStore>. The actual data is contained in the enumerable collection of <xref:System.IO.Log.FileRegion> objects returned by the <xref:System.IO.Log.LogArchiveSnapshot.ArchiveRegions%2A> property. Each <xref:System.IO.Log.FileRegion> instance represents a sequence of bytes in a file that must be archived.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to archive a log store to XML using the <xref:System.IO.Log.LogStore> and <xref:System.IO.Log.FileRegion> classes.  
+  
+ [!code-csharp[FileRegion#0](~/samples/snippets/csharp/VS_Snippets_CFX/fileregion/cs/fileregion.cs#0)]
+ [!code-vb[FileRegion#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/fileregion/vb/fileregion.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FileLength">
+      <MemberSignature Language="C#" Value="public long FileLength { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 FileLength" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.FileRegion.FileLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the length of the file in bytes.</summary>
+        <value>The length of the file in bytes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property returns the length of the entire file instead of that of a single region in the file. The length of the region in the file can be found by examining the <xref:System.IO.Log.LogStore.Length%2A> property of the stream returned by the <xref:System.IO.Log.FileRegion.GetStream%2A> method.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to archive a log store to XML using the <xref:System.IO.Log.LogStore> and <xref:System.IO.Log.FileRegion> classes.  
+  
+ [!code-csharp[FileRegion#0](~/samples/snippets/csharp/VS_Snippets_CFX/fileregion/cs/fileregion.cs#0)]
+ [!code-vb[FileRegion#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/fileregion/vb/fileregion.vb#0)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStream">
+      <MemberSignature Language="C#" Value="public System.IO.Stream GetStream ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Stream GetStream() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRegion.GetStream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a stream that can be used to read the data to be archived.</summary>
+        <returns>A stream that contains the data to be archived.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to archive a log store to XML using the <xref:System.IO.Log.LogStore> and <xref:System.IO.Log.FileRegion> classes.  
+  
+ [!code-csharp[FileRegion#0](~/samples/snippets/csharp/VS_Snippets_CFX/fileregion/cs/fileregion.cs#0)]
+ [!code-vb[FileRegion#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/fileregion/vb/fileregion.vb#0)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IO.IOException">The request could not be performed because of an unexpected I/O exception.</exception>
+        <exception cref="T:System.NotSupportedException">The operation is not supported.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Access for the specified log store is denied by the operating system.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Offset">
+      <MemberSignature Language="C#" Value="public long Offset { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 Offset" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.FileRegion.Offset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the offset into the file where the data begins.</summary>
+        <value>The offset into the file where the data begins.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to archive a log store to XML using the <xref:System.IO.Log.LogStore> and <xref:System.IO.Log.FileRegion> classes.  
+  
+ [!code-csharp[FileRegion#0](~/samples/snippets/csharp/VS_Snippets_CFX/fileregion/cs/fileregion.cs#0)]
+ [!code-vb[FileRegion#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/fileregion/vb/fileregion.vb#0)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public string Path { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.FileRegion.Path" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the fully qualified location of the file containing this region.</summary>
+        <value>The fully qualified location of the file containing this region.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to archive a log store to XML using the <xref:System.IO.Log.LogStore> and <xref:System.IO.Log.FileRegion> classes.  
+  
+ [!code-csharp[FileRegion#0](~/samples/snippets/csharp/VS_Snippets_CFX/fileregion/cs/fileregion.cs#0)]
+ [!code-vb[FileRegion#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/fileregion/vb/fileregion.vb#0)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

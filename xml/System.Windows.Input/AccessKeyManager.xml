@@ -1,0 +1,207 @@
+<Type Name="AccessKeyManager" FullName="System.Windows.Input.AccessKeyManager">
+  <TypeSignature Language="C#" Value="public sealed class AccessKeyManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AccessKeyManager extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.AccessKeyManager" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Maintains the registration of all access keys and the handling of interop keyboard commands between [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)], [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)], and [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)].</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Windows.Input.AccessKeyManager> object is created on demand with one per <xref:System.Windows.Threading.Dispatcher>.  
+  
+ The <xref:System.Windows.Input.AccessKeyManager> is attached as an event handler for <xref:System.Windows.Input.InputManager.PostProcessInput> and exposes methods to <xref:System.Windows.Input.AccessKeyManager.Register%2A> and <xref:System.Windows.Input.AccessKeyManager.Unregister%2A> access keys.  
+  
+ When the registered access key is pressed, the <xref:System.Windows.Input.AccessKeyManager> calls the <xref:System.Windows.UIElement.OnAccessKey%2A> method on the target element.  
+  
+ An element can be associated with any number of access keys.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AccessKeyPressedEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent AccessKeyPressedEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent AccessKeyPressedEvent" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.AccessKeyManager.AccessKeyPressedEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutedEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="E:System.Windows.Input.AccessKeyManager.AccessKeyPressed" /> routed event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAccessKeyPressedHandler">
+      <MemberSignature Language="C#" Value="public static void AddAccessKeyPressedHandler (System.Windows.DependencyObject element, System.Windows.Input.AccessKeyPressedEventHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddAccessKeyPressedHandler(class System.Windows.DependencyObject element, class System.Windows.Input.AccessKeyPressedEventHandler handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.AccessKeyManager.AddAccessKeyPressedHandler(System.Windows.DependencyObject,System.Windows.Input.AccessKeyPressedEventHandler)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="handler" Type="System.Windows.Input.AccessKeyPressedEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to be added.</param>
+        <summary>Adds a handler for the <see cref="E:System.Windows.Input.AccessKeyManager.AccessKeyPressed" /> attached event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsKeyRegistered">
+      <MemberSignature Language="C#" Value="public static bool IsKeyRegistered (object scope, string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsKeyRegistered(object scope, string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.AccessKeyManager.IsKeyRegistered(System.Object,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scope" Type="System.Object" />
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="scope">The presentation source to query for <c>key</c>.</param>
+        <param name="key">The key to query.</param>
+        <summary>Indicates whether the specified key is registered as an access keys in the specified scope.</summary>
+        <returns>
+          <see langword="true" /> if the key is registered; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessKey">
+      <MemberSignature Language="C#" Value="public static bool ProcessKey (object scope, string key, bool isMultiple);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ProcessKey(object scope, string key, bool isMultiple) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.AccessKeyManager.ProcessKey(System.Object,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scope" Type="System.Object" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="isMultiple" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="scope">The scope for the access key.</param>
+        <param name="key">The access key.</param>
+        <param name="isMultiple">Indicates if <c>key</c> has multiple matches.</param>
+        <summary>Processes the specified access keys as if a <see cref="E:System.Windows.UIElement.KeyDown" /> event for the key was passed to the <see cref="T:System.Windows.Input.AccessKeyManager" />.</summary>
+        <returns>
+          <see langword="true" /> if there are more keys that match; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Register">
+      <MemberSignature Language="C#" Value="public static void Register (string key, System.Windows.IInputElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Register(string key, class System.Windows.IInputElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.AccessKeyManager.Register(System.String,System.Windows.IInputElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="element" Type="System.Windows.IInputElement" />
+      </Parameters>
+      <Docs>
+        <param name="key">The access key.</param>
+        <param name="element">The element to associate <c>key</c> with.</param>
+        <summary>Associates the specified access keys with the specified element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the access keys is pressed, the  <xref:System.Windows.UIElement.OnAccessKey%2A> method of `element` is called.  
+  
+ An element can be associated with any number of access keys.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAccessKeyPressedHandler">
+      <MemberSignature Language="C#" Value="public static void RemoveAccessKeyPressedHandler (System.Windows.DependencyObject element, System.Windows.Input.AccessKeyPressedEventHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveAccessKeyPressedHandler(class System.Windows.DependencyObject element, class System.Windows.Input.AccessKeyPressedEventHandler handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.AccessKeyManager.RemoveAccessKeyPressedHandler(System.Windows.DependencyObject,System.Windows.Input.AccessKeyPressedEventHandler)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="handler" Type="System.Windows.Input.AccessKeyPressedEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" /> that listens to this event.</param>
+        <param name="handler">The event handler to be removed.</param>
+        <summary>Removes the specified <see cref="E:System.Windows.Input.AccessKeyManager.AccessKeyPressed" /> event handler from the specified object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unregister">
+      <MemberSignature Language="C#" Value="public static void Unregister (string key, System.Windows.IInputElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Unregister(string key, class System.Windows.IInputElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.AccessKeyManager.Unregister(System.String,System.Windows.IInputElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="element" Type="System.Windows.IInputElement" />
+      </Parameters>
+      <Docs>
+        <param name="key">The access key.</param>
+        <param name="element">The element from which to disassociate <c>key</c>.</param>
+        <summary>Disassociates the specified access keys from the specified element.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

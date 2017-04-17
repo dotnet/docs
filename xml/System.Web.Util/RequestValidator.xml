@@ -1,0 +1,224 @@
+<Type Name="RequestValidator" FullName="System.Web.Util.RequestValidator">
+  <TypeSignature Language="C#" Value="public class RequestValidator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RequestValidator extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Util.RequestValidator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines base methods for custom request validation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, ASP.NET does not validate requests until code explicitly requests a value from the request. For example, ASP.NET does not validate query-string values until code accesses the <xref:System.Web.HttpRequest.QueryString%2A> collection. By default, ASP.NET also does not validate some types of request data, such as form values, cookies, the names of files that have been uploaded using HTTP, and the value of the <xref:System.Web.HttpRequest.RawUrl%2A> property.  
+  
+ The <xref:System.Web.Util.RequestValidator> class is a base class that you can implement in order to provide custom request validation. By implementing this class, you can determine when validation occurs and what type of request data to perform validation on.  
+  
+ By default, ASP.NET provides cross-site scripting (XSS) checks. However, you can supplement or replace the request validation logic that is provided in ASP.NET by creating a custom implementation of the XSS. For example, you can write a custom request validation implementation that scans for SQL injection attacks in addition to checking for XSS attacks.  
+  
+ To create custom request validation, you write a custom class that derives from the <xref:System.Web.Util.RequestValidator> base class. You then configure ASP.NET to use the custom request validator in the application-level Web.config file. You can put the custom class in the App_Code folder, in a compiled class library in the Bin folder, or in a compiled class library in the GAC.  
+  
+> [!NOTE]
+>  Only one custom request validation type can be configured for an application. It is not possible to configure a different request validation type for individual virtual paths or pages.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a custom request validator that allows only a specific string to be used for query-string values.  
+  
+ [!code-csharp[System.Web.Util.RequestValidator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.util.requestvalidator/cs/requestvalidator.cs#1)]
+ [!code-vb[System.Web.Util.RequestValidator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.util.requestvalidator/vb/requestvalidator.vb#1)]  
+  
+ The following example shows how to configure ASP.NET to use the custom validator in the Web.config file for an application.  
+  
+```  
+<system.web>  
+  <httpRuntime requestValidationType="CustomRequestValidation" />  
+</system.web>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RequestValidator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Util.RequestValidator.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Util.RequestValidator" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Util.RequestValidator> class has a default constructor. When a new instance of the class is initialized, an internal method retrieves custom validation details from the application's configuration information. The configuration details are contained in the <xref:System.Web.Configuration.HttpRuntimeSection> section. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e9b81350-8aaf-47cc-9843-5f7d0c59f369) and the <xref:System.Web.Configuration.HttpRuntimeSection.RequestValidationType%2A> attribute.  
+  
+ During initialization, a single instance of the <xref:System.Web.Util.RequestValidator> class is created, and a reference to the instance is maintained in the <xref:System.Web.Util.RequestValidator.Current%2A> property. ASP.NET does not create a new request validator instance per request. Therefore, custom implementations of the <xref:System.Web.Util.RequestValidator> class must be thread-safe.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public static System.Web.Util.RequestValidator Current { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Web.Util.RequestValidator Current" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Util.RequestValidator.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Util.RequestValidator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a reference to the current <see cref="T:System.Web.Util.RequestValidator" /> instance that will be used in an application.</summary>
+        <value>An instance of the <see cref="T:System.Web.Util.RequestValidator" /> class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Util.RequestValidator.Current%2A> property maintains a reference to the single allowed instance of the <xref:System.Web.Util.RequestValidator> class. If no instance exists, a new one is created. If an instance already exists, the current instance is returned.  
+  
+ During initialization, a single instance of the <xref:System.Web.Util.RequestValidator> class is created, and a reference to the instance is made available in the <xref:System.Web.Util.RequestValidator.Current%2A> property. ASP.NET does not create a new request validator instance per request. Therefore, custom implementations of the <xref:System.Web.Util.RequestValidator> class must be thread-safe.  
+  
+> [!NOTE]
+>  The <xref:System.Web.Util.RequestValidator.Current%2A> property is not thread-safe while the property is setting a reference to the current <xref:System.Web.Util.RequestValidator> class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeIsValidRequestString">
+      <MemberSignature Language="C#" Value="public bool InvokeIsValidRequestString (System.Web.HttpContext context, string value, System.Web.Util.RequestValidationSource requestValidationSource, string collectionKey, out int validationFailureIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool InvokeIsValidRequestString(class System.Web.HttpContext context, string value, valuetype System.Web.Util.RequestValidationSource requestValidationSource, string collectionKey, int32 validationFailureIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Util.RequestValidator.InvokeIsValidRequestString(System.Web.HttpContext,System.String,System.Web.Util.RequestValidationSource,System.String,System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Web.HttpContext" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="requestValidationSource" Type="System.Web.Util.RequestValidationSource" />
+        <Parameter Name="collectionKey" Type="System.String" />
+        <Parameter Name="validationFailureIndex" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="context">The HTTP context of the request.</param>
+        <param name="value">The HTTP request data to validate.</param>
+        <param name="requestValidationSource">An enumeration that represents the source of request data that is being validated. The following are possible values for the enumeration:  
+  
+-   <see langword="QueryString" />  
+  
+-   <see langword="Form " />  
+  
+-   <see langword="Cookies" />  
+  
+-   <see langword="Files" />  
+  
+-   <see langword="Path" />  
+  
+-   <see langword="PathInfo" />  
+  
+-   <see langword="Headers" /></param>
+        <param name="collectionKey">(Optional) The key in the request collection of the item to validate. This parameter is used if the data to validate is obtained from a collection. If the data to validate is not from a collection, this parameter can be <see langword="null" />.</param>
+        <param name="validationFailureIndex">When this method returns, indicates the zero-based starting point of the problematic or invalid text in the request collection. This parameter is passed uninitialized.</param>
+        <summary>Provides a public method that calls the protected <see cref="M:System.Web.Util.RequestValidator.IsValidRequestString(System.Web.HttpContext,System.String,System.Web.Util.RequestValidationSource,System.String,System.Int32@)" /> method in order to validate HTTP request data.</summary>
+        <returns>
+          <see langword="true" /> if the string to validate does not contain unencoded characters that could be used in a malicious scripting attack; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Util.RequestValidator.InvokeIsValidRequestString%2A> method provides public access to the protected <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method. This lets you create a custom wrapper class for the <xref:System.Web.Util.RequestValidator> class and call the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method without having to inherit from the <xref:System.Web.Util.RequestValidator> class.  
+  
+ For information about request validation, see <xref:System.Web.UnvalidatedRequestValues>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValidRequestString">
+      <MemberSignature Language="C#" Value="protected virtual bool IsValidRequestString (System.Web.HttpContext context, string value, System.Web.Util.RequestValidationSource requestValidationSource, string collectionKey, out int validationFailureIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool IsValidRequestString(class System.Web.HttpContext context, string value, valuetype System.Web.Util.RequestValidationSource requestValidationSource, string collectionKey, int32 validationFailureIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Util.RequestValidator.IsValidRequestString(System.Web.HttpContext,System.String,System.Web.Util.RequestValidationSource,System.String,System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Web.HttpContext" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="requestValidationSource" Type="System.Web.Util.RequestValidationSource" />
+        <Parameter Name="collectionKey" Type="System.String" />
+        <Parameter Name="validationFailureIndex" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="context">The context of the current request.</param>
+        <param name="value">The HTTP request data to validate.</param>
+        <param name="requestValidationSource">An enumeration that represents the source of request data that is being validated. The following are possible values for the enumeration:  
+  
+ <see langword="QueryString" />  
+  
+ <see langword="Form " />  
+  
+ <see langword="Cookies" />  
+  
+ <see langword="Files" />  
+  
+ <see langword="RawUrl" />  
+  
+ <see langword="Path" />  
+  
+ <see langword="PathInfo" />  
+  
+ <see langword="Headers" /></param>
+        <param name="collectionKey">The key in the request collection of the item to validate. This parameter is optional. This parameter is used if the data to validate is obtained from a collection. If the data to validate is not from a collection, <c>collectionKey</c> can be <see langword="null" />.</param>
+        <param name="validationFailureIndex">When this method returns, indicates the zero-based starting point of the problematic or invalid text in the request collection. This parameter is passed uninitialized.</param>
+        <summary>Validates a string that contains HTTP request data.</summary>
+        <returns>
+          <see langword="true" /> if the string to be validated is valid; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You implement this method to perform custom validation of request data. The base behavior of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%28System.Web.HttpContext%2CSystem.String%2CSystem.Web.Util.RequestValidationSource%2CSystem.String%2CSystem.Int32%40%29> method is like the behavior that ASP.NET implements internally to check for dangerous strings in cross-site scripting validation. For more information, see [How To: Prevent Cross-Site Scripting in ASP.NET](http://go.microsoft.com/fwlink/?LinkID=178708).  
+  
+ If custom validation logic detects an error, this method should return `false` and provide a value in `validationFailureIndex` to indicate the starting point of the text that caused the error. The value in `validationFailureIndex` must be 0 or a positive integer.  
+  
+ The logic in a request validation check proceeds as follows:  
+  
+-   The <xref:System.Web.HttpRequest> class performs a null-character removal check on the incoming data.  
+  
+-   The <xref:System.Web.HttpRequest> class calls either the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method (the default implementation of the base method) or calls a derived version of the method.  
+  
+-   If <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method returns `false` to indicate a validation failure, ASP.NET constructs an error string (if necessary) and throws an <xref:System.Web.HttpRequestValidationException> exception.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

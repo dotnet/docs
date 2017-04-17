@@ -1,0 +1,229 @@
+<Type Name="CorHeader" FullName="System.Reflection.PortableExecutable.CorHeader">
+  <TypeSignature Language="C#" Value="public sealed class CorHeader" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CorHeader extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.CorHeader" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CodeManagerTableDirectory">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry CodeManagerTableDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry CodeManagerTableDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CorHeader.CodeManagerTableDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntryPointTokenOrRelativeVirtualAddress">
+      <MemberSignature Language="C#" Value="public int EntryPointTokenOrRelativeVirtualAddress { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 EntryPointTokenOrRelativeVirtualAddress" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CorHeader.EntryPointTokenOrRelativeVirtualAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportAddressTableJumpsDirectory">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry ExportAddressTableJumpsDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry ExportAddressTableJumpsDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CorHeader.ExportAddressTableJumpsDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Flags">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.CorFlags Flags { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.CorFlags Flags" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CorHeader.Flags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.CorFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MajorRuntimeVersion">
+      <MemberSignature Language="C#" Value="public ushort MajorRuntimeVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int16 MajorRuntimeVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CorHeader.MajorRuntimeVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedNativeHeaderDirectory">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry ManagedNativeHeaderDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry ManagedNativeHeaderDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CorHeader.ManagedNativeHeaderDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MetadataDirectory">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry MetadataDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry MetadataDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CorHeader.MetadataDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinorRuntimeVersion">
+      <MemberSignature Language="C#" Value="public ushort MinorRuntimeVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int16 MinorRuntimeVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CorHeader.MinorRuntimeVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourcesDirectory">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry ResourcesDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry ResourcesDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CorHeader.ResourcesDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrongNameSignatureDirectory">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry StrongNameSignatureDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry StrongNameSignatureDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CorHeader.StrongNameSignatureDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VtableFixupsDirectory">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry VtableFixupsDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry VtableFixupsDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CorHeader.VtableFixupsDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

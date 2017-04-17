@@ -1,0 +1,865 @@
+<Type Name="Extensions" FullName="System.Xml.XPath.Extensions">
+  <TypeSignature Language="C#" Value="public static class Extensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Extensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.XPath.Extensions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.XPath.XDocument</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.Linq</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>This class contains the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] extension methods that enable you to evaluate XPath expressions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is some performance penalty for using these methods. Using [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] queries yields better performance.  
+  
+ Although the ordering of returned collections is not specified in the XML XPath Language 1.0 Recommendation, this extension method returns nodes in document order.  
+  
+ Note that nodes are returned in document order even when you use a reverse axis, such as `preceding-sibling` or `ancestor-or-self`.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateNavigator">
+      <MemberSignature Language="C#" Value="public static System.Xml.XPath.XPathNavigator CreateNavigator (this System.Xml.Linq.XNode node);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XPath.XPathNavigator CreateNavigator(class System.Xml.Linq.XNode node) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XPath.Extensions.CreateNavigator(System.Xml.Linq.XNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XPath.XPathNavigator</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Xml.Linq.XNode" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="node">An <see cref="T:System.Xml.Linq.XNode" /> that can process XPath queries.</param>
+        <summary>Creates an <see cref="T:System.Xml.XPath.XPathNavigator" /> for an <see cref="T:System.Xml.Linq.XNode" />.</summary>
+        <returns>An <see cref="T:System.Xml.XPath.XPathNavigator" /> that can process XPath queries.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot edit the XML tree by using the <xref:System.Xml.XPath.XPathNavigator> that is returned by this method. The <xref:System.Xml.XPath.XPathNavigator.CanEdit%2A> property returns `false`.  
+  
+ You cannot create an <xref:System.Xml.XPath.XPathNavigator> for a <xref:System.Xml.Linq.XDocumentType> node. Document types do not participate in the XPath data model.  
+  
+ Namespace declarations are reported from left to right. In contrast, for <xref:System.Xml.XmlDocument> namespaces are reported from right to left. This is conformant behavior because namespace declarations are not ordered in the XPath data model.  
+  
+ The method <xref:System.Xml.XPath.XPathNavigator.MoveToId%2A> is not supported for navigators that are returned by this method.  
+  
+ You can use this method to perform an XSLT transformation. You can create an XML tree, create an <xref:System.Xml.XPath.XPathNavigator> from the XML tree, create a new document, and create a <xref:System.Xml.XmlWriter> that will write into the new document. Then, you can invoke the XSLT transformation, passing the <xref:System.Xml.XPath.XPathNavigator> and <xref:System.Xml.XmlWriter> to the transform. After the transformation successfully completes, the new XML tree is populated with the results of the transformation.  
+  
+ To perform an XSLT transformation, you can use either an <xref:System.Xml.XmlReader> or an <xref:System.Xml.XPath.XPathNavigator>. The two approaches have different performance characteristics. Some transformations will execute faster when using an <xref:System.Xml.XmlReader>, and others will execute faster when using a <xref:System.Xml.XPath.XPathNavigator>. If performance is a concern, we recommend that you experiment with each approach to determine which will perform better in your circumstances.  
+  
+   
+  
+## Examples  
+  
+```csharp  
+  
+                string xslMarkup = @"<?xml version='1.0'?>  
+<xsl:stylesheet xmlns:xsl='http://www.w3.org/1999/XSL/Transform' version='1.0'>  
+    <xsl:template match='/Parent'>  
+        <Root>  
+            <C1><xsl:value-of select='Child1'/></C1>  
+            <C2><xsl:value-of select='Child2'/></C2>  
+        </Root>  
+    </xsl:template>  
+</xsl:stylesheet>";  
+  
+XDocument xmlTree = new XDocument(  
+    new XElement("Parent",  
+        new XElement("Child1", "Child1 data"),  
+        new XElement("Child2", "Child2 data")  
+    )  
+);  
+  
+XDocument newTree = new XDocument();  
+using (XmlWriter writer = newTree.CreateWriter()) {  
+    // Load the style sheet.  
+    XslCompiledTransform xslt = new XslCompiledTransform();  
+    xslt.Load(XmlReader.Create(new StringReader(xslMarkup)));  
+  
+    // Execute the transform and output the results to a writer.  
+    xslt.Transform(xmlTree.CreateNavigator(), writer);  
+}  
+  
+Console.WriteLine(newTree);  
+```  
+  
+```vb  
+  
+                Dim xslMarkup As XDocument = _  
+    <?xml version='1.0'?>  
+    <xsl:stylesheet xmlns:xsl='http://www.w3.org/1999/XSL/Transform' version='1.0'>  
+        <xsl:template match='/Parent'>  
+            <Root>  
+                <C1><xsl:value-of select='Child1'/></C1>  
+                <C2><xsl:value-of select='Child2'/></C2>  
+            </Root>  
+        </xsl:template>  
+    </xsl:stylesheet>  
+  
+Dim xmlTree As XDocument = _  
+    <?xml version='1.0'?>  
+    <Parent>  
+        <Child1>Child1 data</Child1>  
+        <Child2>Child2 data</Child2>  
+    </Parent>  
+  
+Dim newTree As XDocument = New XDocument()  
+  
+Using writer As XmlWriter = newTree.CreateWriter()  
+    ' Load the style sheet.  
+    Dim xslt As XslCompiledTransform = _  
+        New XslCompiledTransform()  
+    xslt.Load(xslMarkup.CreateReader())  
+  
+    ' Execute the transform and output the results to a writer.  
+    xslt.Transform(xmlTree.CreateNavigator(), writer)  
+End Using  
+  
+Console.WriteLine(newTree)  
+```  
+  
+ This example produces the following output:  
+  
+```xml  
+  
+                <Root>  
+  <C1>Child1 data</C1>  
+  <C2>Child2 data</C2>  
+</Root>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateNavigator">
+      <MemberSignature Language="C#" Value="public static System.Xml.XPath.XPathNavigator CreateNavigator (this System.Xml.Linq.XNode node, System.Xml.XmlNameTable nameTable);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XPath.XPathNavigator CreateNavigator(class System.Xml.Linq.XNode node, class System.Xml.XmlNameTable nameTable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XPath.Extensions.CreateNavigator(System.Xml.Linq.XNode,System.Xml.XmlNameTable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XPath.XPathNavigator</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Xml.Linq.XNode" RefType="this" />
+        <Parameter Name="nameTable" Type="System.Xml.XmlNameTable" />
+      </Parameters>
+      <Docs>
+        <param name="node">An <see cref="T:System.Xml.Linq.XNode" /> that can process an XPath query.</param>
+        <param name="nameTable">A <see cref="T:System.Xml.XmlNameTable" /> to be used by <see cref="T:System.Xml.XPath.XPathNavigator" />.</param>
+        <summary>Creates an <see cref="T:System.Xml.XPath.XPathNavigator" /> for an <see cref="T:System.Xml.Linq.XNode" />. The <see cref="T:System.Xml.XmlNameTable" /> enables more efficient XPath expression processing.</summary>
+        <returns>An <see cref="T:System.Xml.XPath.XPathNavigator" /> that can process XPath queries.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot edit the XML tree using the <xref:System.Xml.XPath.XPathNavigator> that is returned by this method. The <xref:System.Xml.XPath.XPathNavigator.CanEdit%2A> property returns `false`.  
+  
+ You cannot create an <xref:System.Xml.XPath.XPathNavigator> for a <xref:System.Xml.Linq.XDocumentType> node. Document types do not participate in the XPath data model.  
+  
+ Namespace declarations are reported from left to right. In contrast, for <xref:System.Xml.XmlDocument> namespaces are reported from right to left. This is conformant behavior because namespace declarations are not ordered in the XPath data model.  
+  
+ The method <xref:System.Xml.XPath.XPathNavigator.MoveToId%2A> is not supported for navigators that are returned by this method.  
+  
+ If you use an <xref:System.Xml.XmlNameTable> with this method to create the <xref:System.Xml.XPath.XPathNavigator>, you will get better performance when evaluating XPath expressions.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XPathEvaluate">
+      <MemberSignature Language="C#" Value="public static object XPathEvaluate (this System.Xml.Linq.XNode node, string expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object XPathEvaluate(class System.Xml.Linq.XNode node, string expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XPath.Extensions.XPathEvaluate(System.Xml.Linq.XNode,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Xml.Linq.XNode" RefType="this" />
+        <Parameter Name="expression" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="node">The <see cref="T:System.Xml.Linq.XNode" /> on which to evaluate the XPath expression.</param>
+        <param name="expression">A <see cref="T:System.String" /> that contains an XPath expression.</param>
+        <summary>Evaluates an XPath expression.</summary>
+        <returns>An object that can contain a <see langword="bool" />, a <see langword="double" />, a <see langword="string" />, or an <see cref="T:System.Collections.Generic.IEnumerable`1" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the collection is an enumeration of elements or attributes, you can use the `Cast` operator to get a collection of <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XAttribute>.  
+  
+ Although the ordering of returned collections is not specified in the XML XPath Language 1.0 Recommendation, this extension method returns nodes in document order.  
+  
+ Note that nodes are returned in document order even when you use a reverse axis, such as `preceding-sibling` or `ancestor-or-self`.  
+  
+   
+  
+## Examples  
+ The following example creates a small XML tree with an attribute, then uses the <xref:System.Xml.XPath.Extensions.XPathEvaluate%2A> method to retrieve the attribute.  
+  
+```csharp  
+  
+                String xml = "<root a='value'/>";  
+XDocument d = XDocument.Parse(xml);  
+IEnumerable att = (IEnumerable)d.XPathEvaluate("/root/@a");  
+Console.WriteLine(att.Cast<XAttribute>().FirstOrDefault());  
+```  
+  
+```vb  
+  
+                Dim d As XDocument = _  
+    <?xml version='1.0'?>  
+    <root a='value'/>  
+Dim att As IEnumerable = CType(d.XPathEvaluate("/root/@a"), IEnumerable)  
+Console.WriteLine(att.Cast(Of XAttribute)().FirstOrDefault())  
+```  
+  
+ This example produces the following output:  
+  
+```  
+a="value"  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XPathEvaluate">
+      <MemberSignature Language="C#" Value="public static object XPathEvaluate (this System.Xml.Linq.XNode node, string expression, System.Xml.IXmlNamespaceResolver resolver);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object XPathEvaluate(class System.Xml.Linq.XNode node, string expression, class System.Xml.IXmlNamespaceResolver resolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XPath.Extensions.XPathEvaluate(System.Xml.Linq.XNode,System.String,System.Xml.IXmlNamespaceResolver)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Xml.Linq.XNode" RefType="this" />
+        <Parameter Name="expression" Type="System.String" />
+        <Parameter Name="resolver" Type="System.Xml.IXmlNamespaceResolver" />
+      </Parameters>
+      <Docs>
+        <param name="node">The <see cref="T:System.Xml.Linq.XNode" /> on which to evaluate the XPath expression.</param>
+        <param name="expression">A <see cref="T:System.String" /> that contains an XPath expression.</param>
+        <param name="resolver">A <see cref="T:System.Xml.IXmlNamespaceResolver" /> for the namespace prefixes in the XPath expression.</param>
+        <summary>Evaluates an XPath expression, resolving namespace prefixes using the specified <see cref="T:System.Xml.IXmlNamespaceResolver" />.</summary>
+        <returns>An object that contains the result of evaluating the expression. The object can be a <see langword="bool" />, a <see langword="double" />, a <see langword="string" />, or an <see cref="T:System.Collections.Generic.IEnumerable`1" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this method to evaluate XPath expressions that contain namespace prefixes.  
+  
+ Although the ordering of returned collections is not specified in the XML XPath Language 1.0 Recommendation, this extension method returns nodes in document order.  
+  
+ Note that nodes are returned in document order even when you use a reverse axis, such as `preceding-sibling` or `ancestor-or-self`.  
+  
+   
+  
+## Examples  
+ The following example creates an XML tree that contains a namespace. It uses an <xref:System.Xml.XmlReader> to read the XML document. It then gets an <xref:System.Xml.XmlNameTable> from the <xref:System.Xml.XmlReader>, and an <xref:System.Xml.XmlNamespaceManager> from the <xref:System.Xml.XmlNameTable>. It uses the <xref:System.Xml.XmlNamespaceManager> when selecting an element.  
+  
+```csharp  
+  
+                string markup =  
+@"<aw:Root xmlns:aw='http://www.adventure-works.com'>  
+    <aw:Child1 aw:Att='attdata'>child one data 1</aw:Child1>  
+</aw:Root>";  
+XmlReader reader = XmlReader.Create(new StringReader(markup));  
+XElement root = XElement.Load(reader);  
+XmlNameTable nameTable = reader.NameTable;  
+XmlNamespaceManager namespaceManager = new XmlNamespaceManager(nameTable);  
+namespaceManager.AddNamespace("aw", "http://www.adventure-works.com");  
+IEnumerable atts = (IEnumerable)root.XPathEvaluate("./aw:Child1/@aw:Att", namespaceManager);  
+IEnumerable<XAttribute> attList = atts.Cast<XAttribute>();  
+XAttribute att = attList.First();  
+Console.WriteLine(att);  
+```  
+  
+```vb  
+  
+                Dim markup As XElement = _  
+    <aw:Root xmlns:aw='http://www.adventure-works.com'>  
+        <aw:Child1 aw:Att='attdata'>child one data 1</aw:Child1>  
+    </aw:Root>  
+Dim reader As XmlReader = markup.CreateReader  
+Dim nameTable As XmlNameTable = reader.NameTable  
+Dim namespaceManager As XmlNamespaceManager = New XmlNamespaceManager(nameTable)  
+namespaceManager.AddNamespace("aw", "http://www.adventure-works.com")  
+Dim atts As IEnumerable = CType(markup.XPathEvaluate("./aw:Child1/@aw:Att", namespaceManager), IEnumerable)  
+Dim attList As IEnumerable(Of XAttribute) = atts.Cast(Of XAttribute)()  
+Dim att As XAttribute = attList.First()  
+Console.WriteLine(att)  
+```  
+  
+ This example produces the following output:  
+  
+```  
+aw:Att="attdata"  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XPathSelectElement">
+      <MemberSignature Language="C#" Value="public static System.Xml.Linq.XElement XPathSelectElement (this System.Xml.Linq.XNode node, string expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Linq.XElement XPathSelectElement(class System.Xml.Linq.XNode node, string expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XPath.Extensions.XPathSelectElement(System.Xml.Linq.XNode,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Linq.XElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Xml.Linq.XNode" RefType="this" />
+        <Parameter Name="expression" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="node">The <see cref="T:System.Xml.Linq.XNode" /> on which to evaluate the XPath expression.</param>
+        <param name="expression">A <see cref="T:System.String" /> that contains an XPath expression.</param>
+        <summary>Selects an <see cref="T:System.Xml.Linq.XElement" /> using a XPath expression.</summary>
+        <returns>An <see cref="T:System.Xml.Linq.XElement" />, or null.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a small XML tree and uses <xref:System.Xml.XPath.Extensions.XPathSelectElement%2A> to select a single element.  
+  
+```csharp  
+  
+                XElement root = new XElement("Root",  
+    new XElement("Child1", 1),  
+    new XElement("Child2", 2),  
+    new XElement("Child3", 3),  
+    new XElement("Child4", 4),  
+    new XElement("Child5", 5),  
+    new XElement("Child6", 6)  
+);  
+XElement el = root.XPathSelectElement("./Child4");  
+Console.WriteLine(el);  
+```  
+  
+```vb  
+  
+                Dim root As XElement = _  
+    <Root>  
+        <Child1>1</Child1>  
+        <Child2>2</Child2>  
+        <Child3>3</Child3>  
+        <Child4>4</Child4>  
+        <Child5>5</Child5>  
+        <Child6>6</Child6>  
+    </Root>  
+Dim el As XElement = root.XPathSelectElement("./Child4")  
+Console.WriteLine(el)  
+```  
+  
+ This example produces the following output:  
+  
+```  
+<Child4>4</Child4>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XPathSelectElement">
+      <MemberSignature Language="C#" Value="public static System.Xml.Linq.XElement XPathSelectElement (this System.Xml.Linq.XNode node, string expression, System.Xml.IXmlNamespaceResolver resolver);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Linq.XElement XPathSelectElement(class System.Xml.Linq.XNode node, string expression, class System.Xml.IXmlNamespaceResolver resolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XPath.Extensions.XPathSelectElement(System.Xml.Linq.XNode,System.String,System.Xml.IXmlNamespaceResolver)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Linq.XElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Xml.Linq.XNode" RefType="this" />
+        <Parameter Name="expression" Type="System.String" />
+        <Parameter Name="resolver" Type="System.Xml.IXmlNamespaceResolver" />
+      </Parameters>
+      <Docs>
+        <param name="node">The <see cref="T:System.Xml.Linq.XNode" /> on which to evaluate the XPath expression.</param>
+        <param name="expression">A <see cref="T:System.String" /> that contains an XPath expression.</param>
+        <param name="resolver">An <see cref="T:System.Xml.IXmlNamespaceResolver" /> for the namespace prefixes in the XPath expression.</param>
+        <summary>Selects an <see cref="T:System.Xml.Linq.XElement" /> using a XPath expression, resolving namespace prefixes using the specified <see cref="T:System.Xml.IXmlNamespaceResolver" />.</summary>
+        <returns>An <see cref="T:System.Xml.Linq.XElement" />, or null.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this method to evaluate XPath expressions that contain namespace prefixes.  
+  
+   
+  
+## Examples  
+ The following example creates an XML tree that contains a namespace. It uses an <xref:System.Xml.XmlReader> to read the XML document. It then gets an <xref:System.Xml.XmlNameTable> from the <xref:System.Xml.XmlReader>, and an <xref:System.Xml.XmlNamespaceManager> from the <xref:System.Xml.XmlNameTable>. It uses the <xref:System.Xml.XmlNamespaceManager> when selecting an element.  
+  
+```csharp  
+  
+                string markup = @"  
+<aw:Root xmlns:aw='http://www.adventure-works.com'>  
+    <aw:Child1>child one data</aw:Child1>  
+    <aw:Child2>child two data</aw:Child2>  
+</aw:Root>";  
+XmlReader reader = XmlReader.Create(new StringReader(markup));  
+XElement root = XElement.Load(reader);  
+XmlNameTable nameTable = reader.NameTable;  
+XmlNamespaceManager namespaceManager = new XmlNamespaceManager(nameTable);  
+namespaceManager.AddNamespace("aw", "http://www.adventure-works.com");  
+XElement child1 = root.XPathSelectElement("./aw:Child1", namespaceManager);  
+Console.WriteLine(child1);  
+```  
+  
+```vb  
+  
+                Dim markup As XElement = _  
+    <aw:Root xmlns:aw='http://www.adventure-works.com'>  
+        <aw:Child1>child one data</aw:Child1>  
+        <aw:Child2>child two data</aw:Child2>  
+    </aw:Root>  
+Dim reader As XmlReader = markup.CreateReader  
+Dim nameTable As XmlNameTable = reader.NameTable  
+Dim namespaceManager As XmlNamespaceManager = New XmlNamespaceManager(nameTable)  
+namespaceManager.AddNamespace("aw", "http://www.adventure-works.com")  
+Dim child1 As XElement = markup.XPathSelectElement("./aw:Child1", namespaceManager)  
+Console.WriteLine(child1)  
+```  
+  
+ This example produces the following output:  
+  
+```  
+<aw:Child1 xmlns:aw="http://www.adventure-works.com">child one data</aw:Child1>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XPathSelectElements">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; XPathSelectElements (this System.Xml.Linq.XNode node, string expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; XPathSelectElements(class System.Xml.Linq.XNode node, string expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XPath.Extensions.XPathSelectElements(System.Xml.Linq.XNode,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Xml.Linq.XNode" RefType="this" />
+        <Parameter Name="expression" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="node">The <see cref="T:System.Xml.Linq.XNode" /> on which to evaluate the XPath expression.</param>
+        <param name="expression">A <see cref="T:System.String" /> that contains an XPath expression.</param>
+        <summary>Selects a collection of elements using an XPath expression.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XElement" /> that contains the selected elements.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although the ordering of returned collections is not specified in the XML XPath Language 1.0 Recommendation, this extension method returns nodes in document order.  
+  
+ Note that nodes are returned in document order even when you use a reverse axis, such as `preceding-sibling` or `ancestor-or-self`.  
+  
+   
+  
+## Examples  
+ The following example creates a small XML tree and uses <xref:System.Xml.XPath.Extensions.XPathSelectElements%2A> to select a set of elements.  
+  
+```csharp  
+  
+                XElement root = new XElement("Root",  
+    new XElement("Child1", 1),  
+    new XElement("Child1", 2),  
+    new XElement("Child1", 3),  
+    new XElement("Child2", 4),  
+    new XElement("Child2", 5),  
+    new XElement("Child2", 6)  
+);  
+IEnumerable<XElement> list = root.XPathSelectElements("./Child2");  
+foreach (XElement el in list)  
+    Console.WriteLine(el);  
+```  
+  
+```vb  
+  
+                Dim root As XElement = _  
+    <Root>  
+        <Child1>1</Child1>  
+        <Child1>2</Child1>  
+        <Child1>3</Child1>  
+        <Child2>4</Child2>  
+        <Child2>5</Child2>  
+        <Child2>6</Child2>  
+    </Root>  
+Dim list As IEnumerable(Of XElement) = root.XPathSelectElements("./Child2")  
+For Each el As XElement In list  
+    Console.WriteLine(el)  
+Next  
+```  
+  
+ This example produces the following output:  
+  
+```  
+<Child2>4</Child2>  
+<Child2>5</Child2>  
+<Child2>6</Child2>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XPathSelectElements">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; XPathSelectElements (this System.Xml.Linq.XNode node, string expression, System.Xml.IXmlNamespaceResolver resolver);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; XPathSelectElements(class System.Xml.Linq.XNode node, string expression, class System.Xml.IXmlNamespaceResolver resolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XPath.Extensions.XPathSelectElements(System.Xml.Linq.XNode,System.String,System.Xml.IXmlNamespaceResolver)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Xml.Linq.XNode" RefType="this" />
+        <Parameter Name="expression" Type="System.String" />
+        <Parameter Name="resolver" Type="System.Xml.IXmlNamespaceResolver" />
+      </Parameters>
+      <Docs>
+        <param name="node">The <see cref="T:System.Xml.Linq.XNode" /> on which to evaluate the XPath expression.</param>
+        <param name="expression">A <see cref="T:System.String" /> that contains an XPath expression.</param>
+        <param name="resolver">A <see cref="T:System.Xml.IXmlNamespaceResolver" /> for the namespace prefixes in the XPath expression.</param>
+        <summary>Selects a collection of elements using an XPath expression, resolving namespace prefixes using the specified <see cref="T:System.Xml.IXmlNamespaceResolver" />.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XElement" /> that contains the selected elements.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this method to evaluate XPath expressions that contain namespace prefixes.  
+  
+ Although the ordering of returned collections is not specified in the XML XPath Language 1.0 Recommendation, this extension method returns nodes in document order.  
+  
+ Note that nodes are returned in document order even when you use a reverse axis, such as `preceding-sibling` or `ancestor-or-self`.  
+  
+   
+  
+## Examples  
+ This example creates an XML tree that contains a namespace. It uses an <xref:System.Xml.XmlReader> to read the XML document. It then gets an <xref:System.Xml.XmlNameTable> from the <xref:System.Xml.XmlReader>, and an <xref:System.Xml.XmlNamespaceManager> from the <xref:System.Xml.XmlNameTable>. It uses the <xref:System.Xml.XmlNamespaceManager> when selecting the list of elements.  
+  
+```csharp  
+  
+                string markup = @"  
+<aw:Root xmlns:aw='http://www.adventure-works.com'>  
+    <aw:Child1>child one data 1</aw:Child1>  
+    <aw:Child1>child one data 2</aw:Child1>  
+    <aw:Child1>child one data 3</aw:Child1>  
+    <aw:Child2>child two data 4</aw:Child2>  
+    <aw:Child2>child two data 5</aw:Child2>  
+    <aw:Child2>child two data 6</aw:Child2>  
+</aw:Root>";  
+XmlReader reader = XmlReader.Create(new StringReader(markup));  
+XElement root = XElement.Load(reader);  
+XmlNameTable nameTable = reader.NameTable;  
+XmlNamespaceManager namespaceManager = new XmlNamespaceManager(nameTable);  
+namespaceManager.AddNamespace("aw", "http://www.adventure-works.com");  
+IEnumerable<XElement> elements = root.XPathSelectElements("./aw:Child1", namespaceManager);  
+foreach (XElement el in elements)  
+    Console.WriteLine(el);  
+```  
+  
+```vb  
+  
+                Dim markup As XElement = _  
+<aw:Root xmlns:aw="http://www.adventure-works.com">  
+    <aw:Child1>child one data 1</aw:Child1>  
+    <aw:Child1>child one data 2</aw:Child1>  
+    <aw:Child1>child one data 3</aw:Child1>  
+    <aw:Child2>child two data 4</aw:Child2>  
+    <aw:Child2>child two data 5</aw:Child2>  
+    <aw:Child2>child two data 6</aw:Child2>  
+</aw:Root>  
+Dim reader As XmlReader = markup.CreateReader  
+Dim nameTable As XmlNameTable = reader.NameTable  
+Dim namespaceManager As XmlNamespaceManager = New XmlNamespaceManager(nameTable)  
+namespaceManager.AddNamespace("aw", "http://www.adventure-works.com")  
+Dim elements As IEnumerable(Of XElement) = markup.XPathSelectElements("./aw:Child1", namespaceManager)  
+For Each el As XElement In elements  
+    Console.WriteLine(el)  
+Next  
+```  
+  
+ This example produces the following output:  
+  
+```  
+<aw:Child1 xmlns:aw="http://www.adventure-works.com">child one data 1</aw:Child1>  
+<aw:Child1 xmlns:aw="http://www.adventure-works.com">child one data 2</aw:Child1>  
+<aw:Child1 xmlns:aw="http://www.adventure-works.com">child one data 3</aw:Child1>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="XPathEvaluate">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Evaluates an XPath expression.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although the ordering of returned collections is not specified in the XML XPath Language 1.0 Recommendation, this extension method returns nodes in document order.  
+  
+ Note that nodes are returned in document order even when you use a reverse axis, such as `preceding-sibling` or `ancestor-or-self`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="CreateNavigator">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an <see cref="T:System.Xml.XPath.XPathNavigator" /> for an <see cref="T:System.Xml.Linq.XNode" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot edit the XML tree by using the <xref:System.Xml.XPath.XPathNavigator> that is returned by this method. The <xref:System.Xml.XPath.XPathNavigator.CanEdit%2A> property returns `false`.  
+  
+ You cannot create an <xref:System.Xml.XPath.XPathNavigator> for a <xref:System.Xml.Linq.XDocumentType> node. Document types do not participate in the XPath data model.  
+  
+ Namespace declarations are reported from left to right. In contrast, for <xref:System.Xml.XmlDocument> namespaces are reported from right to left. This is conformant behavior because namespace declarations are not ordered in the XPath data model.  
+  
+ The method <xref:System.Xml.XPath.XPathNavigator.MoveToId%2A> is not supported for navigators that are returned by this method.  
+  
+ You can use this method to perform an XSLT transformation. You can create an XML tree, create an <xref:System.Xml.XPath.XPathNavigator> from the XML tree, create a new document, and create a <xref:System.Xml.XmlWriter> that will write into the new document. Then, you can invoke the XSLT transformation, passing the <xref:System.Xml.XPath.XPathNavigator> and <xref:System.Xml.XmlWriter> to the transformation. After the transformation successfully completes, the new XML tree is populated with the results of the transformation.  
+  
+ To perform an XSLT transformation, you can use either an <xref:System.Xml.XmlReader> or an <xref:System.Xml.XPath.XPathNavigator>. The two approaches have different performance characteristics. Some transformations will execute faster when using an <xref:System.Xml.XmlReader>, and others will execute faster when using a <xref:System.Xml.XPath.XPathNavigator>. If performance is a concern, we recommend that you experiment with each approach to determine which will perform better in your circumstances.  
+  
+```csharp  
+  
+            string xslMarkup = @"<?xml version='1.0'?>  
+<xsl:stylesheet xmlns:xsl='http://www.w3.org/1999/XSL/Transform' version='1.0'>  
+    <xsl:template match='/Parent'>  
+        <Root>  
+            <C1><xsl:value-of select='Child1'/></C1>  
+            <C2><xsl:value-of select='Child2'/></C2>  
+        </Root>  
+    </xsl:template>  
+</xsl:stylesheet>";  
+  
+XDocument xmlTree = new XDocument(  
+    new XElement("Parent",  
+        new XElement("Child1", "Child1 data"),  
+        new XElement("Child2", "Child2 data")  
+    )  
+);  
+  
+XDocument newTree = new XDocument();  
+using (XmlWriter writer = newTree.CreateWriter()) {  
+    // Load the style sheet.  
+    XslCompiledTransform xslt = new XslCompiledTransform();  
+    xslt.Load(XmlReader.Create(new StringReader(xslMarkup)));  
+  
+    // Execute the transform and output the results to a writer.  
+    xslt.Transform(xmlTree.CreateNavigator(), writer);  
+}  
+  
+Console.WriteLine(newTree);  
+```  
+  
+```vb  
+  
+            Dim xslMarkup As XDocument = <?xml version='1.0'?>  
+                             <xsl:stylesheet xmlns:xsl='http://www.w3.org/1999/XSL/Transform' version='1.0'>  
+                                 <xsl:template match='/Parent'>  
+                                     <Root>  
+                                         <C1><xsl:value-of select='Child1'/></C1>  
+                                         <C2><xsl:value-of select='Child2'/></C2>  
+                                     </Root>  
+                                 </xsl:template>  
+                             </xsl:stylesheet>  
+  
+Dim xmlTree As XDocument = <?xml version='1.0'?>  
+                           <Parent>  
+                               <Child1>Child1 data</Child1>  
+                               <Child2>Child2 data</Child2>  
+                           </Parent>  
+  
+Dim newTree As XDocument = New XDocument()  
+  
+Using writer As XmlWriter = newTree.CreateWriter()  
+    ' Load the style sheet.  
+    Dim xslt As XslCompiledTransform = _  
+        New XslCompiledTransform()  
+    xslt.Load(xslMarkup.CreateReader())  
+  
+    ' Execute the transform and output the results to a writer.  
+    xslt.Transform(xmlTree.CreateNavigator(), writer)  
+End Using  
+  
+Console.WriteLine(newTree)  
+```  
+  
+ This example produces the following output:  
+  
+```xml  
+  
+            <Root>  
+  <C1>Child1 data</C1>  
+  <C2>Child2 data</C2>  
+</Root>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="XPathSelectElements">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Selects a collection of elements using an XPath expression.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although the ordering of returned collections is not specified in the XML XPath Language 1.0 Recommendation, this extension method returns nodes in document order.  
+  
+ Note that nodes are returned in document order even when you use a reverse axis, such as `preceding-sibling` or `ancestor-or-self`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

@@ -1,0 +1,277 @@
+<Type Name="WebSocketError" FullName="System.Net.WebSockets.WebSocketError">
+  <TypeSignature Language="C#" Value="public enum WebSocketError" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebSocketError extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Net.WebSockets.WebSocketError" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net.WebSockets</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Contains the list of possible WebSocket errors.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ConnectionClosedPrematurely">
+      <MemberSignature Language="C#" Value="ConnectionClosedPrematurely" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketError ConnectionClosedPrematurely = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketError.ConnectionClosedPrematurely" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebSockets.WebSocketError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the connection was terminated unexpectedly.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Faulted">
+      <MemberSignature Language="C#" Value="Faulted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketError Faulted = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketError.Faulted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebSockets.WebSocketError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates a general error.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderError">
+      <MemberSignature Language="C#" Value="HeaderError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketError HeaderError = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketError.HeaderError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebSockets.WebSocketError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates an error occurred when parsing the HTTP headers during the opening handshake.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidMessageType">
+      <MemberSignature Language="C#" Value="InvalidMessageType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketError InvalidMessageType = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketError.InvalidMessageType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebSockets.WebSocketError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that a WebSocket frame with an unknown opcode was received.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidState">
+      <MemberSignature Language="C#" Value="InvalidState" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketError InvalidState = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketError.InvalidState" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebSockets.WebSocketError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the WebSocket is an invalid state for the given operation (such as being closed or aborted).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NativeError">
+      <MemberSignature Language="C#" Value="NativeError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketError NativeError = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketError.NativeError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebSockets.WebSocketError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that an unknown native error occurred.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotAWebSocket">
+      <MemberSignature Language="C#" Value="NotAWebSocket" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketError NotAWebSocket = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketError.NotAWebSocket" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebSockets.WebSocketError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the incoming request was not a valid websocket request.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Success">
+      <MemberSignature Language="C#" Value="Success" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketError Success = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketError.Success" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebSockets.WebSocketError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that there was no native error information for the exception.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsupportedProtocol">
+      <MemberSignature Language="C#" Value="UnsupportedProtocol" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketError UnsupportedProtocol = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketError.UnsupportedProtocol" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebSockets.WebSocketError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the client requested an unsupported WebSocket subprotocol.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsupportedVersion">
+      <MemberSignature Language="C#" Value="UnsupportedVersion" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketError UnsupportedVersion = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketError.UnsupportedVersion" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.WebSockets</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebSockets.WebSocketError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the client requested an unsupported version of the WebSocket protocol.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

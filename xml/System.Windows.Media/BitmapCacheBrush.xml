@@ -1,0 +1,304 @@
+<Type Name="BitmapCacheBrush" FullName="System.Windows.Media.BitmapCacheBrush">
+  <TypeSignature Language="C#" Value="public sealed class BitmapCacheBrush : System.Windows.Media.Brush" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BitmapCacheBrush extends System.Windows.Media.Brush" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.BitmapCacheBrush" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Brush</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Paints an area with cached content.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Media.BitmapCacheBrush> class to reuse a cached element efficiently. This is useful when you need to paint complex content onto multiple elements. Use the <xref:System.Windows.Media.BitmapCache> class to cache a complex element.  
+  
+ Assign a <xref:System.Windows.Media.Visual> to the <xref:System.Windows.Media.BitmapCacheBrush.Target%2A> property and optionally assign a <xref:System.Windows.Media.BitmapCache> to the <xref:System.Windows.Media.BitmapCacheBrush.BitmapCache%2A> property. The <xref:System.Windows.Media.CacheMode> of the brush and the target <xref:System.Windows.Media.Visual> interact to produce different behaviors. The following table describes this interaction.  
+  
+||Target has no CacheMode|Target has CacheMode|  
+|-|-----------------------------|--------------------------|  
+|Brush has no CacheMode|Target visual renders normally; brush uses default cache behavior.|Target visual renders into its own cache; brush uses target’s cache when rendering.|  
+|Brush has CacheMode|Target visual renders normally; brush renders target into its own cache and uses this to render.|Target visual renders into its own cache; brush renders target into brush's own cache and uses this to render.|  
+  
+ The <xref:System.Windows.Media.BitmapCacheBrush> class is similar to the <xref:System.Windows.Media.VisualBrush> class, but <xref:System.Windows.Media.BitmapCacheBrush> always renders from a cache on the target element, or from a cache defined by the <xref:System.Windows.Media.BitmapCacheBrush.BitmapCache%2A> property. The <xref:System.Windows.Media.BitmapCacheBrush> class also supports dirty regions.  
+  
+ The following table shows the default bitmap cache settings for the <xref:System.Windows.Media.BitmapCacheBrush> class.  
+  
+|Bitmap Cache Property|Default Setting|  
+|---------------------------|---------------------|  
+|<xref:System.Windows.Media.BitmapCache.SnapsToDevicePixels%2A>|`false`|  
+|<xref:System.Windows.Media.BitmapCache.EnableClearType%2A>|`false`|  
+|<xref:System.Windows.Media.BitmapCache.RenderAtScale%2A>|1|  
+  
+ The <xref:System.Windows.Media.BitmapCache.SnapsToDevicePixels%2A> property is ignored by the <xref:System.Windows.Media.BitmapCacheBrush> class.  
+  
+ The <xref:System.Windows.Media.BitmapCacheBrush> class ignores the following properties on the root <xref:System.Windows.Media.Visual>. This behavior differs from the <xref:System.Windows.Media.VisualBrush> class.  
+  
+-   <xref:System.Windows.Media.Visual.VisualOffset%2A>  
+  
+-   <xref:System.Windows.Media.Visual.VisualTransform%2A>  
+  
+-   <xref:System.Windows.Media.Visual.VisualClip%2A>  
+  
+-   <xref:System.Windows.Media.Visual.VisualEffect%2A>  
+  
+-   <xref:System.Windows.Media.Visual.VisualOpacity%2A>  
+  
+-   <xref:System.Windows.Media.Visual.VisualOpacityMask%2A>  
+  
+   
+  
+## Examples  
+ The following code example shows how to associate a <xref:System.Windows.Media.BitmapCache> with a <xref:System.Windows.Media.BitmapCacheBrush>. You can use the <xref:System.Windows.Media.BitmapCacheBrush> resource on multiple elements and achieve good performance. For the complete code listing, see [How to: Use a Cached Element as a Brush](~/docs/framework/wpf/graphics-multimedia/how-to-use-a-cached-element-as-a-brush.md).  
+  
+ [!code-xml[System.Windows.Media.BitmapCacheBrush#_BitmapCacheBrushCreation](~/samples/snippets/csharp/VS_Snippets_Wpf/system.windows.media.bitmapcachebrush/cs/window1.xaml#_bitmapcachebrushcreation)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BitmapCacheBrush ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.BitmapCacheBrush.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.BitmapCacheBrush" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BitmapCacheBrush (System.Windows.Media.Visual visual);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Visual visual) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.BitmapCacheBrush.#ctor(System.Windows.Media.Visual)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="visual" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="visual">A <see cref="T:System.Windows.Media.Visual" /> to cache and use as the <see cref="P:System.Windows.Media.BitmapCacheBrush.Target" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.BitmapCacheBrush" /> class with the specified <see cref="T:System.Windows.Media.Visual" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoLayoutContent">
+      <MemberSignature Language="C#" Value="public bool AutoLayoutContent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoLayoutContent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.BitmapCacheBrush.AutoLayoutContent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether layout is applied to the contents of this brush.</summary>
+        <value>
+          <see langword="true" /> if layout is applied; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Media.BitmapCacheBrush.AutoLayoutContent%2A> property is `true`, layout is applied to the contents of the brush if <xref:System.Windows.Media.BitmapCacheBrush.Target%2A> is a <xref:System.Windows.UIElement> with no parent.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoLayoutContentProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AutoLayoutContentProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AutoLayoutContentProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.BitmapCacheBrush.AutoLayoutContentProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.BitmapCacheBrush.AutoLayoutContent" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BitmapCache">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.BitmapCache BitmapCache { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.BitmapCache BitmapCache" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.BitmapCacheBrush.BitmapCache" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.BitmapCache</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Windows.Media.CacheMode" /> that represents cached content.</summary>
+        <value>A <see cref="T:System.Windows.Media.BitmapCache" /> that represents cached content.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.BitmapCacheBrush.BitmapCache%2A> property interacts with the <xref:System.Windows.Media.BitmapCacheBrush.Target%2A> property. For a table that shows this interaction, see the <xref:System.Windows.Media.BitmapCacheBrush> class overview.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BitmapCacheProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BitmapCacheProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BitmapCacheProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.BitmapCacheBrush.BitmapCacheProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.BitmapCacheBrush.BitmapCache" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.BitmapCacheBrush Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.BitmapCacheBrush Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.BitmapCacheBrush.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.BitmapCacheBrush</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable clone of the <see cref="T:System.Windows.Media.BitmapCacheBrush" />, making deep copies of the object's values. When copying the object's dependency properties, this method copies expressions (which might no longer resolve) but not animations or their current values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true." /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneCurrentValue">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.BitmapCacheBrush CloneCurrentValue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.BitmapCacheBrush CloneCurrentValue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.BitmapCacheBrush.CloneCurrentValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.BitmapCacheBrush</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable clone (deep copy) of the <see cref="T:System.Windows.Media.BitmapCacheBrush" /> using its current values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true." /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.BitmapCacheBrush.CreateInstanceCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Freezable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPropertyChanged">
+      <MemberSignature Language="C#" Value="protected override void OnPropertyChanged (System.Windows.DependencyPropertyChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPropertyChanged(valuetype System.Windows.DependencyPropertyChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.BitmapCacheBrush.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.DependencyPropertyChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Target">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Visual Target { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Visual Target" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.BitmapCacheBrush.Target" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Visual</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the target visual to cache.</summary>
+        <value>A <see cref="T:System.Windows.Media.Visual" /> to cache and paint with.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.BitmapCacheBrush.Target%2A> property interacts with the <xref:System.Windows.Media.BitmapCacheBrush.BitmapCache%2A> property. For a table that shows this interaction, see the <xref:System.Windows.Media.BitmapCacheBrush> class overview.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TargetProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TargetProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.BitmapCacheBrush.TargetProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.BitmapCacheBrush.Target" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

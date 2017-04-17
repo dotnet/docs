@@ -1,0 +1,423 @@
+<Type Name="ContextItemManager" FullName="System.Activities.Presentation.ContextItemManager">
+  <TypeSignature Language="C#" Value="public abstract class ContextItemManager : System.Collections.Generic.IEnumerable&lt;System.Activities.Presentation.ContextItem&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ContextItemManager extends System.Object implements class System.Collections.Generic.IEnumerable`1&lt;class System.Activities.Presentation.ContextItem&gt;, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.ContextItemManager" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.Activities.Presentation.ContextItem&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a class that maintains a set of context items published into the designer editing context. This class is abstract.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each <xref:System.Activities.Presentation.ContextItem> contained in the <xref:System.Activities.Presentation.ContextItemManager> represents a piece of transient state in a <xref:System.Activities.Presentation.WorkflowDesigner>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ContextItemManager ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ContextItemManager.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initiates a new instance of the <see cref="T:System.Activities.Presentation.ContextItemManager" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public abstract bool Contains (Type itemType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(class System.Type itemType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ContextItemManager.Contains(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="itemType">The type of item to check for.</param>
+        <summary>When overridden in a derived class, returns a value that indicates whether the item manager contains an item of the specified type.</summary>
+        <returns>
+          <see langword="true" /> if the context contains an instance of the specified item type; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="itemType" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains&lt;TItemType&gt;">
+      <MemberSignature Language="C#" Value="public bool Contains&lt;TItemType&gt; () where TItemType : System.Activities.Presentation.ContextItem;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains&lt;(class System.Activities.Presentation.ContextItem) TItemType&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ContextItemManager.Contains``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TItemType">
+          <Constraints>
+            <BaseTypeName>System.Activities.Presentation.ContextItem</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="TItemType">The type of item to check for.</typeparam>
+        <summary>Returns a value that indicates whether the item manager contains an item of the specified type.</summary>
+        <returns>
+          <see langword="true" /> if the context contains an instance of the specified item type; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This generic method invokes the abstract <xref:System.Activities.Presentation.ContextItemManager.Contains%2A> method, which must be implemented for this method to provide the type checking functionality.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IEnumerator&lt;System.Activities.Presentation.ContextItem&gt; GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.Activities.Presentation.ContextItem&gt; GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ContextItemManager.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerator&lt;System.Activities.Presentation.ContextItem&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, enumerates the context items in the editing context. This enumeration includes prior layers unless the enumerator hits an isolated layer.</summary>
+        <returns>Returns <see cref="T:System.Collections.Generic.IEnumerator`1" />, which contains an enumeration of context items.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTarget">
+      <MemberSignature Language="C#" Value="protected static object GetTarget (Delegate callback);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig object GetTarget(class System.Delegate callback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ContextItemManager.GetTarget(System.Delegate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="callback" Type="System.Delegate" />
+      </Parameters>
+      <Docs>
+        <param name="callback">The callback for the desired target.</param>
+        <summary>Represents a helper method that returns the target object for a delegate. If the delegate was created to proxy a generic delegate, this method returns the original object, not the proxy.</summary>
+        <returns>Returns <see cref="T:System.Object" />, which contains the target object of the callback.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callback" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public abstract System.Activities.Presentation.ContextItem GetValue (Type itemType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Activities.Presentation.ContextItem GetValue(class System.Type itemType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ContextItemManager.GetValue(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.ContextItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="itemType">The type of item to return.</param>
+        <summary>When overridden in a derived class, returns an instance of the requested item type. If there is no context item with the given type, an empty item will be created.</summary>
+        <returns>Returns <see cref="T:System.Activities.Presentation.ContextItem" />, which contains a context item of the requested type. If there is no item in the context for this type, a default one is created.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="itemType" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue&lt;TItemType&gt;">
+      <MemberSignature Language="C#" Value="public TItemType GetValue&lt;TItemType&gt; () where TItemType : System.Activities.Presentation.ContextItem;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TItemType GetValue&lt;(class System.Activities.Presentation.ContextItem) TItemType&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ContextItemManager.GetValue``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TItemType</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TItemType">
+          <Constraints>
+            <BaseTypeName>System.Activities.Presentation.ContextItem</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="TItemType">The type of item to return.</typeparam>
+        <summary>Returns an instance of the requested item type. If there is no context item with the given type, an empty item will be created.</summary>
+        <returns>Returns <see cref="T:System.Activities.Presentation.ContextItem" />, which contains a context item of the requested type. If there is no item in the context for this type, a default one is created.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This generic method invokes the abstract <xref:System.Activities.Presentation.ContextItemManager.GetValue%2A> method, which must be implemented for this method to provide the get type functionality.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotifyItemChanged">
+      <MemberSignature Language="C#" Value="protected static void NotifyItemChanged (System.Activities.Presentation.EditingContext context, System.Activities.Presentation.ContextItem item, System.Activities.Presentation.ContextItem previousItem);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig void NotifyItemChanged(class System.Activities.Presentation.EditingContext context, class System.Activities.Presentation.ContextItem item, class System.Activities.Presentation.ContextItem previousItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ContextItemManager.NotifyItemChanged(System.Activities.Presentation.EditingContext,System.Activities.Presentation.ContextItem,System.Activities.Presentation.ContextItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.Presentation.EditingContext" />
+        <Parameter Name="item" Type="System.Activities.Presentation.ContextItem" />
+        <Parameter Name="previousItem" Type="System.Activities.Presentation.ContextItem" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.Activities.Presentation.EditingContext" /> in use.</param>
+        <param name="item">The new <see cref="T:System.Activities.Presentation.ContextItem" />.</param>
+        <param name="previousItem">The previous <see cref="T:System.Activities.Presentation.ContextItem" />.</param>
+        <summary>Represents a helper method that invokes the protected <see cref="M:System.Activities.Presentation.ContextItem.OnItemChanged(System.Activities.Presentation.EditingContext,System.Activities.Presentation.ContextItem)" /> method.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" />, <paramref name="item" />, or <paramref name="previousItem" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveCallback">
+      <MemberSignature Language="C#" Value="protected static Delegate RemoveCallback (Delegate existing, Delegate toRemove);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.Delegate RemoveCallback(class System.Delegate existing, class System.Delegate toRemove) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ContextItemManager.RemoveCallback(System.Delegate,System.Delegate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Delegate</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="existing" Type="System.Delegate" />
+        <Parameter Name="toRemove" Type="System.Delegate" />
+      </Parameters>
+      <Docs>
+        <param name="existing">The existing delegate.</param>
+        <param name="toRemove">The delegate to be removed from <c>existing</c>.</param>
+        <summary>Represents a helper method that performs delegate removals and that unwraps delegates that are proxies to generic callbacks.</summary>
+        <returns>Returns <see cref="T:System.Delegate" />, which contains the new delegate that should be assigned to <paramref name="existing" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method in your implementations of the <xref:System.Activities.Presentation.ContextItemManager.Unsubscribe%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValue">
+      <MemberSignature Language="C#" Value="public abstract void SetValue (System.Activities.Presentation.ContextItem value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetValue(class System.Activities.Presentation.ContextItem value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ContextItemManager.SetValue(System.Activities.Presentation.ContextItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Activities.Presentation.ContextItem" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value to set into the <see cref="T:System.Activities.Presentation.ContextItem)" />.</param>
+        <summary>When overridden in a derived class, sets a context item to the specified value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Do not pass a `null` value. To set a <xref:System.Activities.Presentation.ContextItem>?qualifyHint=False&autoUpgrade=True) to an empty value, create an instance of the item using a default constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subscribe">
+      <MemberSignature Language="C#" Value="public abstract void Subscribe (Type contextItemType, System.Activities.Presentation.SubscribeContextCallback callback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Subscribe(class System.Type contextItemType, class System.Activities.Presentation.SubscribeContextCallback callback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ContextItemManager.Subscribe(System.Type,System.Activities.Presentation.SubscribeContextCallback)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contextItemType" Type="System.Type" />
+        <Parameter Name="callback" Type="System.Activities.Presentation.SubscribeContextCallback" />
+      </Parameters>
+      <Docs>
+        <param name="contextItemType">The type of item you want to subscribe to.</param>
+        <param name="callback">The <see cref="T:System.Activities.Presentation.SubscribeContextCallback" /> that is invoked when <c>contextItemType</c> changes.</param>
+        <summary>When overridden in a derived class, adds an event callback that is invoked when a context item of the specified item type changes.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="contextItemType" /> or <paramref name="callback" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Subscribe&lt;TContextItemType&gt;">
+      <MemberSignature Language="C#" Value="public void Subscribe&lt;TContextItemType&gt; (System.Activities.Presentation.SubscribeContextCallback&lt;TContextItemType&gt; callback) where TContextItemType : System.Activities.Presentation.ContextItem;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Subscribe&lt;(class System.Activities.Presentation.ContextItem) TContextItemType&gt;(class System.Activities.Presentation.SubscribeContextCallback`1&lt;!!TContextItemType&gt; callback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ContextItemManager.Subscribe``1(System.Activities.Presentation.SubscribeContextCallback{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TContextItemType">
+          <Constraints>
+            <BaseTypeName>System.Activities.Presentation.ContextItem</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="callback" Type="System.Activities.Presentation.SubscribeContextCallback&lt;TContextItemType&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TContextItemType">The type of item you want to subscribe to.</typeparam>
+        <param name="callback">A <see cref="T:System.Activities.Presentation.SubscribeContextCallback`1" /> that is invoked when <c>contextItemType</c> changes.</param>
+        <summary>Adds an event callback that is invoked when a context item of the specified item type changes.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="contextItemType" /> or <paramref name="callback" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ContextItemManager.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Enumerates the context items in the editing context.</summary>
+        <returns>Returns <see cref="T:System.Collections.IEnumerator" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unsubscribe">
+      <MemberSignature Language="C#" Value="public abstract void Unsubscribe (Type contextItemType, System.Activities.Presentation.SubscribeContextCallback callback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Unsubscribe(class System.Type contextItemType, class System.Activities.Presentation.SubscribeContextCallback callback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ContextItemManager.Unsubscribe(System.Type,System.Activities.Presentation.SubscribeContextCallback)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contextItemType" Type="System.Type" />
+        <Parameter Name="callback" Type="System.Activities.Presentation.SubscribeContextCallback" />
+      </Parameters>
+      <Docs>
+        <param name="contextItemType">The type of context item to remove the callback from.</param>
+        <param name="callback">The <see cref="T:System.Activities.Presentation.SubscribeContextCallback" /> to remove.</param>
+        <summary>When overridden in a derived class, removes a subscription.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callback" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Unsubscribe&lt;TContextItemType&gt;">
+      <MemberSignature Language="C#" Value="public void Unsubscribe&lt;TContextItemType&gt; (System.Activities.Presentation.SubscribeContextCallback&lt;TContextItemType&gt; callback) where TContextItemType : System.Activities.Presentation.ContextItem;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Unsubscribe&lt;(class System.Activities.Presentation.ContextItem) TContextItemType&gt;(class System.Activities.Presentation.SubscribeContextCallback`1&lt;!!TContextItemType&gt; callback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ContextItemManager.Unsubscribe``1(System.Activities.Presentation.SubscribeContextCallback{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TContextItemType">
+          <Constraints>
+            <BaseTypeName>System.Activities.Presentation.ContextItem</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="callback" Type="System.Activities.Presentation.SubscribeContextCallback&lt;TContextItemType&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TContextItemType">The type of context item to remove the callback from.</typeparam>
+        <param name="callback">The <see cref="T:System.Activities.Presentation.SubscribeContextCallback`1" /> to remove.</param>
+        <summary>Removes a subscription.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callback" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

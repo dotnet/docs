@@ -1,0 +1,380 @@
+<Type Name="CryptoAPITransform" FullName="System.Security.Cryptography.CryptoAPITransform">
+  <TypeSignature Language="C#" Value="public sealed class CryptoAPITransform : System.Security.Cryptography.ICryptoTransform" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CryptoAPITransform extends System.Object implements class System.IDisposable, class System.Security.Cryptography.ICryptoTransform" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CryptoAPITransform" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Security.Cryptography.ICryptoTransform</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Performs a cryptographic transformation of data. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use members of the <xref:System.Security.Cryptography.CryptoAPITransform> class.  
+  
+ [!code-cpp[System.Security.Cryptography.CryptoAPITransform#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CPP/members.cpp#1)]
+ [!code-csharp[System.Security.Cryptography.CryptoAPITransform#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CS/members.cs#1)]
+ [!code-vb[System.Security.Cryptography.CryptoAPITransform#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/VB/members.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CanReuseTransform">
+      <MemberSignature Language="C#" Value="public bool CanReuseTransform { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanReuseTransform" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CryptoAPITransform.CanReuseTransform" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the current transform can be reused.</summary>
+        <value>Always <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to call the <xref:System.Security.Cryptography.CryptoAPITransform.CanReuseTransform%2A> property to determine if the current transform can be reused. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptoAPITransform> class.  
+  
+ [!code-cpp[System.Security.Cryptography.CryptoAPITransform#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CPP/members.cpp#2)]
+ [!code-csharp[System.Security.Cryptography.CryptoAPITransform#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CS/members.cs#2)]
+ [!code-vb[System.Security.Cryptography.CryptoAPITransform#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/VB/members.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanTransformMultipleBlocks">
+      <MemberSignature Language="C#" Value="public bool CanTransformMultipleBlocks { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanTransformMultipleBlocks" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CryptoAPITransform.CanTransformMultipleBlocks" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether multiple blocks can be transformed.</summary>
+        <value>
+          <see langword="true" /> if multiple blocks can be transformed; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to call the <xref:System.Security.Cryptography.CryptoAPITransform.CanTransformMultipleBlocks%2A> property to determine if multiple blocks can be transformed. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptoAPITransform> class.  
+  
+ [!code-cpp[System.Security.Cryptography.CryptoAPITransform#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CPP/members.cpp#3)]
+ [!code-csharp[System.Security.Cryptography.CryptoAPITransform#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CS/members.cs#3)]
+ [!code-vb[System.Security.Cryptography.CryptoAPITransform#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/VB/members.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoAPITransform.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.Security.Cryptography.CryptoAPITransform" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is a simple call to <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>.  
+  
+ Calling `Dispose` allows the resources used by the <xref:System.Security.Cryptography.CryptoAPITransform> to be reallocated for other purposes. For more information about `Dispose`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to call the <xref:System.Security.Cryptography.CryptoAPITransform.Clear%2A> method to release the resources used by the current transform. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptoAPITransform> class.  
+  
+ [!code-cpp[System.Security.Cryptography.CryptoAPITransform#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CPP/members.cpp#7)]
+ [!code-csharp[System.Security.Cryptography.CryptoAPITransform#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CS/members.cs#7)]
+ [!code-vb[System.Security.Cryptography.CryptoAPITransform#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/VB/members.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoAPITransform.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the current instance of the <see cref="T:System.Security.Cryptography.CryptoAPITransform" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call `Dispose` when you are finished using the <xref:System.Security.Cryptography.CryptoAPITransform>. The `Dispose` method leaves the <xref:System.Security.Cryptography.CryptoAPITransform> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Security.Cryptography.CryptoAPITransform> so the garbage collector can reclaim the memory that the <xref:System.Security.Cryptography.CryptoAPITransform> was occupying.  
+  
+ For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+> [!NOTE]
+>  Always call `Dispose` before you release your last reference to the <xref:System.Security.Cryptography.CryptoAPITransform>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Security.Cryptography.CryptoAPITransform> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputBlockSize">
+      <MemberSignature Language="C#" Value="public int InputBlockSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 InputBlockSize" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CryptoAPITransform.InputBlockSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the input block size.</summary>
+        <value>The input block size in bytes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to call the <xref:System.Security.Cryptography.CryptoAPITransform.InputBlockSize%2A> property to retrieve the input block size. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptoAPITransform> class.  
+  
+ [!code-cpp[System.Security.Cryptography.CryptoAPITransform#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CPP/members.cpp#4)]
+ [!code-csharp[System.Security.Cryptography.CryptoAPITransform#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CS/members.cs#4)]
+ [!code-vb[System.Security.Cryptography.CryptoAPITransform#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/VB/members.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyHandle">
+      <MemberSignature Language="C#" Value="public IntPtr KeyHandle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int KeyHandle" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CryptoAPITransform.KeyHandle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the key handle.</summary>
+        <value>The key handle.</value>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="OutputBlockSize">
+      <MemberSignature Language="C#" Value="public int OutputBlockSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 OutputBlockSize" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CryptoAPITransform.OutputBlockSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the output block size.</summary>
+        <value>The output block size in bytes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to call the <xref:System.Security.Cryptography.CryptoAPITransform.OutputBlockSize%2A> property to retrieve the output block size. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptoAPITransform> class.  
+  
+ [!code-cpp[System.Security.Cryptography.CryptoAPITransform#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CPP/members.cpp#6)]
+ [!code-csharp[System.Security.Cryptography.CryptoAPITransform#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CS/members.cs#6)]
+ [!code-vb[System.Security.Cryptography.CryptoAPITransform#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/VB/members.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="public void Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoAPITransform.Reset" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Resets the internal state of <see cref="T:System.Security.Cryptography.CryptoAPITransform" /> so that it can be used again to do a different encryption or decryption.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.CryptoAPITransform.Reset%2A> method is called automatically when you call TransformFinalBlock. The `Reset` method is not called when, for example, the encrypted input data is garbage and cannot be decrypted. In this case, an exception is thrown and `Reset` is not called. You can choose to manually call the `Reset` method in this case.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransformBlock">
+      <MemberSignature Language="C#" Value="public int TransformBlock (byte[] inputBuffer, int inputOffset, int inputCount, byte[] outputBuffer, int outputOffset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 TransformBlock(unsigned int8[] inputBuffer, int32 inputOffset, int32 inputCount, unsigned int8[] outputBuffer, int32 outputOffset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoAPITransform.TransformBlock(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputBuffer" Type="System.Byte[]" />
+        <Parameter Name="inputOffset" Type="System.Int32" />
+        <Parameter Name="inputCount" Type="System.Int32" />
+        <Parameter Name="outputBuffer" Type="System.Byte[]" />
+        <Parameter Name="outputOffset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="inputBuffer">The input on which to perform the operation on.</param>
+        <param name="inputOffset">The offset into the input byte array from which to begin using data from.</param>
+        <param name="inputCount">The number of bytes in the input byte array to use as data.</param>
+        <param name="outputBuffer">The output to which to write the data to.</param>
+        <param name="outputOffset">The offset into the output byte array from which to begin writing data from.</param>
+        <summary>Computes the transformation for the specified region of the input byte array and copies the resulting transformation to the specified region of the output byte array.</summary>
+        <returns>The number of bytes written.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to call the <xref:System.Security.Cryptography.CryptoAPITransform.TransformBlock%2A> method to transform the bytes from `currentPosition` in the `sourceBytes` array, writing the bytes to the `targetBytes` array. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptoAPITransform> class.  
+  
+ [!code-cpp[System.Security.Cryptography.CryptoAPITransform#8](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CPP/members.cpp#8)]
+ [!code-csharp[System.Security.Cryptography.CryptoAPITransform#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CS/members.cs#8)]
+ [!code-vb[System.Security.Cryptography.CryptoAPITransform#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/VB/members.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="inputBuffer" /> parameter is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="outputBuffer" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The length of the input buffer is less than the sum of the input offset and the input count.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="inputOffset" /> is out of range. This parameter requires a non-negative number.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TransformFinalBlock">
+      <MemberSignature Language="C#" Value="public byte[] TransformFinalBlock (byte[] inputBuffer, int inputOffset, int inputCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] TransformFinalBlock(unsigned int8[] inputBuffer, int32 inputOffset, int32 inputCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(System.Byte[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputBuffer" Type="System.Byte[]" />
+        <Parameter Name="inputOffset" Type="System.Int32" />
+        <Parameter Name="inputCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="inputBuffer">The input on which to perform the operation on.</param>
+        <param name="inputOffset">The offset into the byte array from which to begin using data from.</param>
+        <param name="inputCount">The number of bytes in the byte array to use as data.</param>
+        <summary>Computes the transformation for the specified region of the specified byte array.</summary>
+        <returns>The computed transformation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to call the <xref:System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock%2A> method to transform the final block of bytes. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.CryptoAPITransform> class.  
+  
+ [!code-cpp[System.Security.Cryptography.CryptoAPITransform#9](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CPP/members.cpp#9)]
+ [!code-csharp[System.Security.Cryptography.CryptoAPITransform#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/CS/members.cs#9)]
+ [!code-vb[System.Security.Cryptography.CryptoAPITransform#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.CryptoAPITransform/VB/members.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="inputBuffer" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="inputOffset" /> parameter is less than zero.  
+  
+ -or-  
+  
+ The <paramref name="inputCount" /> parameter is less than zero.  
+  
+ -or-  
+  
+ The length of the input buffer is less than the sum of the input offset and the input count.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The <see cref="F:System.Security.Cryptography.PaddingMode.PKCS7" /> padding is invalid.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="inputOffset" /> parameter is out of range. This parameter requires a non-negative number.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

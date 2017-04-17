@@ -1,0 +1,47 @@
+<Type Name="ObjectDataSourceDisposingEventHandler" FullName="System.Web.UI.WebControls.ObjectDataSourceDisposingEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void ObjectDataSourceDisposingEventHandler(object sender, ObjectDataSourceDisposingEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ObjectDataSourceDisposingEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ObjectDataSourceDisposingEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.UI.WebControls.ObjectDataSourceDisposingEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event, the <see cref="T:System.Web.UI.WebControls.ObjectDataSource" />.</param>
+    <param name="e">An <see cref="T:System.Web.UI.WebControls.ObjectDataSourceDisposingEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Web.UI.WebControls.ObjectDataSourceView.ObjectDisposing" /> event of the <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create an <xref:System.Web.UI.WebControls.ObjectDataSourceDisposingEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ This section contains two code examples. The first code example demonstrates how to use an <xref:System.Web.UI.WebControls.ObjectDataSource> control with a business object and a <xref:System.Web.UI.WebControls.GridView> control to display information. The second code example provides an example middle-tier business object that the first code example uses.  
+  
+ The following code example demonstrates how to use an <xref:System.Web.UI.WebControls.ObjectDataSource> control with a business object and a <xref:System.Web.UI.WebControls.GridView> control to display information. You might work with a business object that is very expensive (in terms of time or resources) to create for every data operation that your Web page performs. One way to work with an expensive object might be to create an instance of it once, and then cache it for subsequent operations instead of creating and destroying it for every data operation. This example demonstrates this pattern. You can handle the <xref:System.Web.UI.WebControls.ObjectDataSource.ObjectCreating> event to check the cache first for an object, and then create an instance, only if one is not already cached. Then, handle the  <xref:System.Web.UI.WebControls.ObjectDataSource.ObjectDisposing> event to cache the business object for future use, instead of destroying it. In this example, the <xref:System.ComponentModel.CancelEventArgs.Cancel?displayProperty=fullName> property of the <xref:System.Web.UI.WebControls.ObjectDataSourceDisposingEventArgs> class is set to `true`, to direct the <xref:System.Web.UI.WebControls.ObjectDataSource> to not call <xref:System.IDisposable.Dispose%2A> on the instance.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_16#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_16/CS/objds16cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_16#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_16/VB/objds16vb.aspx#1)]  -->  
+  
+ The following code example provides an example middle-tier business object that the preceding code example uses. The code example consists of a basic business object, defined by the `EmployeeLogic` class, which is a class that maintains state and encapsulates business logic. For a complete working example, you must compile this code as a library, and then use these classes from an ASP page.  
+  
+ [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_16#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_16/CS/northwindemployee16.cs#2)]
+ [!code-vb[System.Web.UI.WebControls.ObjectDataSource_16#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_16/VB/northwindemployee16.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,141 @@
+<Type Name="VBFixedArrayAttribute" FullName="Microsoft.VisualBasic.VBFixedArrayAttribute">
+  <TypeSignature Language="C#" Value="public sealed class VBFixedArrayAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VBFixedArrayAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.VBFixedArrayAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Field, AllowMultiple=false, Inherited=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates that an array in a structure or non-local variable should be treated as a fixed-length array.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Visual Basic arrays are of variable length by default. This attribute is useful when using Visual Basic file input and output functions, such as `FileGet` and `FilePut`, and API calls that require fixed-length arrays.  
+  
+   
+  
+## Examples  
+ [!code-vb[VbCnAttributes#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbCnAttributes/VB/Class2.vb#22)]  
+  
+> [!NOTE]
+>  The `VBFixedArrayAttribute` is informational and does not allocate any storage. The purpose of this attribute is to modify how arrays in structures and non-local variables are used by methods or API calls that recognize the `VBFixedArrayAttribute`. Keep in mind that this attribute does not convert a variable length array to a fixed array and that you must still allocate array storage using `Dim` or `ReDim` statements.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VBFixedArrayAttribute (int UpperBound1);" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(int32 UpperBound1) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.VBFixedArrayAttribute.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="UpperBound1" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="UpperBound1">Initializes the value of upper field, which represents the size of the first dimension of the array.</param>
+        <summary>Initializes the value of the <see langword="Bounds" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The constructor runs when the `VBFixedArrayAttribute` attribute is applied to an array.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VBFixedArrayAttribute (int UpperBound1, int UpperBound2);" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(int32 UpperBound1, int32 UpperBound2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.VBFixedArrayAttribute.#ctor(System.Int32,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="UpperBound1" Type="System.Int32" />
+        <Parameter Name="UpperBound2" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="UpperBound1">Initializes the value of upper field, which represents the size of the first dimension of the array.</param>
+        <param name="UpperBound2">Initializes the value of upper field, which represents the size of the second dimension of the array.</param>
+        <summary>Initializes the value of the <see langword="Bounds" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The constructor runs when the `VBFixedArrayAttribute` attribute is applied to an array.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bounds">
+      <MemberSignature Language="C#" Value="public int[] Bounds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32[] Bounds" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.VBFixedArrayAttribute.Bounds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the bounds of the array.</summary>
+        <value>Contains an integer array that represents the bounds of the array.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The constructor sets this property when the `VBFixedArrayAttribute` is applied to an array.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public int Length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Length" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.VBFixedArrayAttribute.Length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the size of the array.</summary>
+        <value>Contains an integer that represents the number of elements in the array.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The constructor sets this property when the `VBFixedArrayAttribute` is applied to an array.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

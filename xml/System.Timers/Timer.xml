@@ -1,0 +1,727 @@
+<Type Name="Timer" FullName="System.Timers.Timer">
+  <TypeSignature Language="C#" Value="public class Timer : System.ComponentModel.Component, System.ComponentModel.ISupportInitialize" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Timer extends System.ComponentModel.Component implements class System.ComponentModel.ISupportInitialize" />
+  <TypeSignature Language="DocId" Value="T:System.Timers.Timer" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.Component</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.ISupportInitialize</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultEvent("Elapsed")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("Interval")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Generates an event after a set interval, with an option to generate recurring events.  
+  
+ To browse the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#System/services/timers/system/timers/Timer.cs#897683f27faba082).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#System/services/timers/system/timers/Timer.cs#897683f27faba082). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
+  
+ The <xref:System.Timers.Timer> component is a server-based timer that raises an <xref:System.Timers.Timer.Elapsed> event in your application after the number of milliseconds in the <xref:System.Timers.Timer.Interval%2A> property has elapsed. You can configure the <xref:System.Timers.Timer> object to raise the event just once or repeatedly using the <xref:System.Timers.Timer.AutoReset%2A> property. Typically, a <xref:System.Timers.Timer> object is declared at the class level so that it stays in scope as long as it is needed. You can then handle its <xref:System.Timers.Timer.Elapsed> event to provide regular processing. For example, suppose you have a critical server that must be kept running 24 hours a day, 7 days a week. You could create a service that uses a <xref:System.Timers.Timer> object to periodically check the server and ensure that the system is up and running. If the system is not responding, the service could attempt to restart the server or notify an administrator.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Timers.Timer> class is available in the .NET Framework only. It is not included in the .NET Standard Library and is not available on other platforms, such as .NET Core or the Universal Windows Platform. On these platforms, as well as for portability across all .NET platforms, you should use the <xref:System.Threading.Timer?displayProperty=fullName> class instead.  
+  
+ This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+  
+ The server-based <xref:System.Timers.Timer?displayProperty=fullName> class is designed for use with worker threads in a multithreaded environment. Server timers can move among threads to handle the raised <xref:System.Timers.Timer.Elapsed> event, resulting in more accuracy than Windows timers in raising the event on time.  
+  
+ The <xref:System.Timers.Timer?displayProperty=fullName> component raises the <xref:System.Timers.Timer.Elapsed> event, based on the value (in milliseconds) of the <xref:System.Timers.Timer.Interval%2A> property. You can handle this event to perform the processing you need. For example, suppose that you have an online sales application that continuously posts sales orders to a database. The service that compiles the instructions for shipping operates on a batch of orders rather than processing each order individually. You could use a <xref:System.Timers.Timer> to start the batch processing every 30 minutes.  
+  
+> [!IMPORTANT]
+>  The System.Timers.Timer class has the same resolution as the system clock. This means that the <xref:System.Timers.Timer.Elapsed> event will fire at an interval defined by the resolution of the system clock if the <xref:System.Timers.Timer.Interval%2A> property is less than the resolution of the system clock. For more information, see the <xref:System.Timers.Timer.Interval%2A> property.  
+  
+ When <xref:System.Timers.Timer.AutoReset%2A> is set to `false`, a <xref:System.Timers.Timer?displayProperty=fullName> object raises the <xref:System.Timers.Timer.Elapsed> event only once, after the first <xref:System.Timers.Timer.Interval%2A> has elapsed. To keep raising the <xref:System.Timers.Timer.Elapsed> event regularly at the interval defined by the <xref:System.Timers.Timer.Interval%2A>, set <xref:System.Timers.Timer.AutoReset%2A> to `true`, which is the default value.  
+  
+ The <xref:System.Timers.Timer> component catches and suppresses all exceptions thrown by event handlers for the <xref:System.Timers.Timer.Elapsed> event. This behavior is subject to change in future releases of the .NET Framework. Note, however, that this is not true of event handlers that execute asynchronously and include the `await` operator (in C#)  or the `Await` operator (in Visual Basic). Exceptions thrown in these event handlers are propagated back to the calling thread, as the following example illustrates. For more information on exceptions thrown in asynchronous methods, see   [Exception Handling](~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md).  
+  
+ [!code-csharp[System.Timers.Timer#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timers.timer/cs/AsyncHandlerEx1.cs#3)]
+ [!code-vb[System.Timers.Timer#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timers.timer/vb/AsyncHandlerEx1.vb#3)]  
+  
+ If the <xref:System.Timers.Timer.SynchronizingObject%2A> property is `null`, the <xref:System.Timers.Timer.Elapsed> event is raised on a <xref:System.Threading.ThreadPool> thread. If processing of the <xref:System.Timers.Timer.Elapsed> event lasts longer than <xref:System.Timers.Timer.Interval%2A>, the event might be raised again on another <xref:System.Threading.ThreadPool> thread. In this situation, the event handler should be reentrant.  
+  
+> [!NOTE]
+>  The event-handling method might run on one thread at the same time that another thread calls the <xref:System.Timers.Timer.Stop%2A> method or sets the <xref:System.Timers.Timer.Enabled%2A> property to `false`. This might result in the <xref:System.Timers.Timer.Elapsed> event being raised after the timer is stopped. The example code for the <xref:System.Timers.Timer.Stop%2A> method shows one way to avoid this race condition.  
+  
+ Even if <xref:System.Timers.Timer.SynchronizingObject%2A> is not `null`, <xref:System.Timers.Timer.Elapsed> events can occur after the <xref:System.Timers.Timer.Dispose%2A> or <xref:System.Timers.Timer.Stop%2A> method has been called or after the <xref:System.Timers.Timer.Enabled%2A> property has been set to `false`, because the signal to raise the <xref:System.Timers.Timer.Elapsed> event is always queued for execution on a thread pool thread. One way to resolve this race condition is to set a flag that tells the event handler for the <xref:System.Timers.Timer.Elapsed> event to ignore subsequent events.  
+  
+ If you use the <xref:System.Timers.Timer?displayProperty=fullName> class with a user interface element, such as a form or control, without placing the timer on that user interface element, assign the form or control that contains the <xref:System.Timers.Timer> to the <xref:System.Timers.Timer.SynchronizingObject%2A> property, so that the event is marshaled to the user interface thread.  
+  
+ For a list of default property values for an instance of <xref:System.Timers.Timer>, see the <xref:System.Timers.Timer.%23ctor%2A> constructor.  
+  
+> [!TIP]
+>  Be aware that the .NET Framework Class Library includes four classes named `Timer`, each of which offers different functionality:  
+>   
+>  -   <xref:System.Timers.Timer?displayProperty=fullName> (this topic): fires an event at regular intervals. The class is intended for use as a server-based or service component in a multithreaded environment; it has no user interface and is not visible at runtime.  
+> -   <xref:System.Threading.Timer?displayProperty=fullName>: executes a single callback method on a thread pool thread at regular intervals. The callback method is defined when the timer is instantiated and cannot be changed. Like the <xref:System.Timers.Timer?displayProperty=fullName> class, this class is intended for use as a server-based or service component in a multithreaded environment; it has no user interface and is not visible at runtime.  
+> -   <xref:System.Windows.Forms.Timer?displayProperty=fullName>: a Windows Forms component that fires an event at regular intervals. The component has no user interface and is designed for use in a single-threaded environment.  
+> -   <xref:System.Web.UI.Timer?displayProperty=fullName>: an ASP.NET component that performs asynchronous or synchronous web page postbacks at a regular interval.  
+  
+   
+  
+## Examples  
+ The following example instantiates a `System.Timers.Timer` object that fires its <xref:System.Timers.Timer.Elapsed?displayProperty=fullName> event every two seconds (2,000 milliseconds), sets up an event handler for the  event, and starts the timer. The event handler displays the value of the <xref:System.Timers.ElapsedEventArgs.SignalTime%2A?displayProperty=fullName> property each time it is raised.  
+  
+ [!code-csharp[System.Timers.Timer#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timers.timer/cs/timer2a.cs#2)]
+ [!code-vb[System.Timers.Timer#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timers.timer/vb/timer2a.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>Any public <see langword="static" /> members of this type are thread safe. Any instance members are not guaranteed to be thread safe.</threadsafe>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Timer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Timers.Timer.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Timers.Timer" /> class, and sets all the properties to their initial values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows initial property values for an instance of <xref:System.Timers.Timer>.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Timers.Timer.AutoReset%2A>|`true`|  
+|<xref:System.Timers.Timer.Enabled%2A>|`false`|  
+|<xref:System.Timers.Timer.Interval%2A>|100 milliseconds|  
+|<xref:System.Timers.Timer.SynchronizingObject%2A>|A null reference (`Nothing` in Visual Basic).|  
+  
+   
+  
+## Examples  
+ The following example instantiates a <xref:System.Timers.Timer> object that fires its <xref:System.Timers.Timer.Elapsed?displayProperty=fullName> event every two seconds (2000 milliseconds), sets up an event handler for the event, and starts the timer. The event handler displays the value of the <xref:System.Timers.ElapsedEventArgs.SignalTime%2A?displayProperty=fullName> property each time it is raised.  
+  
+ [!code-cpp[System.Timers.Timer#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.timers.timer/cpp/timer1.cpp#1)]
+ [!code-csharp[System.Timers.Timer#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timers.timer/cs/timer1.cs#1)]
+ [!code-vb[System.Timers.Timer#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timers.timer/vb/timer1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Timer (double interval);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 interval) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Timers.Timer.#ctor(System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="interval" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="interval">The time, in milliseconds, between events. The value must be greater than zero and less than or equal to <see cref="F:System.Int32.MaxValue" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Timers.Timer" /> class, and sets the <see cref="P:System.Timers.Timer.Interval" /> property to the specified number of milliseconds.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor sets the <xref:System.Timers.Timer.Interval%2A> property of the new timer instance, but does not enable the timer.  
+  
+   
+  
+## Examples  
+ The following example instantiates a <xref:System.Timers.Timer> object that fires its <xref:System.Timers.Timer.Elapsed?displayProperty=fullName> event every two seconds (2000 milliseconds), sets up an event handler for the event, and starts the timer. The event handler displays the value of the <xref:System.Timers.ElapsedEventArgs.SignalTime%2A?displayProperty=fullName> property each time it is raised.  
+  
+ [!code-csharp[System.Timers.Timer#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timers.timer/cs/AsyncHandlerEx1.cs#3)]
+ [!code-vb[System.Timers.Timer#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timers.timer/vb/AsyncHandlerEx1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The value of the <paramref name="interval" /> parameter is less than or equal to zero, or greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoReset">
+      <MemberSignature Language="C#" Value="public bool AutoReset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoReset" />
+      <MemberSignature Language="DocId" Value="P:System.Timers.Timer.AutoReset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Timers.TimersDescription("Indicates whether the timer will be restarted when it is enabled.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean indicating whether the <see cref="T:System.Timers.Timer" /> should raise the <see cref="E:System.Timers.Timer.Elapsed" /> event only once (<see langword="false" />) or repeatedly (<see langword="true" />).</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Timers.Timer" /> should raise the <see cref="E:System.Timers.Timer.Elapsed" /> event each time the interval elapses; <see langword="false" /> if it should raise the <see cref="E:System.Timers.Timer.Elapsed" /> event only once, after the first time the interval elapses. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Timers.Timer> is already enabled when the <xref:System.Timers.Timer.Start%2A> method is called, the interval is reset. If <xref:System.Timers.Timer.AutoReset%2A> is `false`, the <xref:System.Timers.Timer.Start%2A> method must be called in order to start the count again.  
+  
+ Resetting the interval affects when the <xref:System.Timers.Timer.Elapsed> event is raised. For example, if you set the interval to 5 seconds and then set the <xref:System.Timers.Timer.Enabled%2A> property to `true`, the count starts at the time <xref:System.Timers.Timer.Enabled%2A> is set. If you reset the interval to 10 seconds when the count is 3 seconds, the <xref:System.Timers.Timer.Elapsed> event is raised for the first time 13 seconds after the <xref:System.Timers.Timer.Enabled%2A> property was set to `true`.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Timers.Timer> whose <xref:System.Timers.Timer.Elapsed> event fires after 1.5 seconds. Its event handler then displays "Hello World!" on the console.  
+  
+ [!code-cpp[Classic Timer.Timer1 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Timer.Timer1 Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic Timer.Timer1 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Timer.Timer1 Example/CS/source.cs#1)]
+ [!code-vb[Classic Timer.Timer1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Timer.Timer1 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginInit">
+      <MemberSignature Language="C#" Value="public void BeginInit ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginInit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Timers.Timer.BeginInit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Begins the run-time initialization of a <see cref="T:System.Timers.Timer" /> that is used on a form or by another component.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)] design environment uses this method to start the initialization of a component that is used on a form or by another component. The <xref:System.Timers.Timer.EndInit%2A> method ends the initialization. Using the <xref:System.Timers.Timer.BeginInit%2A> and <xref:System.Timers.Timer.EndInit%2A> methods prevents the control from being used before it is fully initialized.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Timers.Timer.Close" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Timers.Timer" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Timers.Timer.Close%2A> method in turn calls the `Dispose` method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Timers.Timer.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases all resources used by the current <see cref="T:System.Timers.Timer" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Elapsed">
+      <MemberSignature Language="C#" Value="public event System.Timers.ElapsedEventHandler Elapsed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Timers.ElapsedEventHandler Elapsed" />
+      <MemberSignature Language="DocId" Value="E:System.Timers.Timer.Elapsed" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Timers.TimersDescription("Occurs when the Interval has elapsed.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Timers.ElapsedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the interval elapses.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Timers.Timer.Elapsed> event is raised if the <xref:System.Timers.Timer.Enabled%2A> property is `true` and the time interval (in milliseconds) defined by the <xref:System.Timers.Timer.Interval%2A> property elapses. If the <xref:System.Timers.Timer.AutoReset%2A> property is `true`, the event is raised repeatedly at an interval defined by the <xref:System.Timers.Timer.Interval%2A> property; otherwise, the event is raised only once, the first time the <xref:System.Timers.Timer.Interval%2A> value elapses.  
+  
+ If <xref:System.Timers.Timer.Interval%2A> is set after the <xref:System.Timers.Timer> has started, the count is reset. For example, if you set the interval to 5 seconds and then set <xref:System.Timers.Timer.Enabled%2A> to `true`, the count starts at the time <xref:System.Timers.Timer.Enabled%2A> is set. If you reset the interval to 10 seconds when count is 3 seconds, the <xref:System.Timers.Timer.Elapsed> event is raised for the first time 13 seconds after <xref:System.Timers.Timer.Enabled%2A> was set to `true`.  
+  
+ If the <xref:System.Timers.Timer.SynchronizingObject%2A> property is `null`,the <xref:System.Timers.Timer.Elapsed> event is raised on a <xref:System.Threading.ThreadPool> thread. If the processing of the <xref:System.Timers.Timer.Elapsed> event lasts longer than <xref:System.Timers.Timer.Interval%2A>, the event might be raised again on another <xref:System.Threading.ThreadPool> thread. In this situation, the event handler should be reentrant.  
+  
+> [!NOTE]
+>  The event-handling method might run on one thread at the same time that another thread calls the <xref:System.Timers.Timer.Stop%2A> method or sets the <xref:System.Timers.Timer.Enabled%2A> property to `false`. This might result in the <xref:System.Timers.Timer.Elapsed> event being raised after the timer is stopped. The example code for the <xref:System.Timers.Timer.Stop%2A> method shows one way to avoid this race condition.  
+  
+ Even if <xref:System.Timers.Timer.SynchronizingObject%2A> is not `null`, <xref:System.Timers.Timer.Elapsed> events can occur after the <xref:System.Timers.Timer.Dispose%2A> or <xref:System.Timers.Timer.Stop%2A> method has been called or after the <xref:System.Timers.Timer.Enabled%2A> property has been set to `false`, because the signal to raise the <xref:System.Timers.Timer.Elapsed> event is always queued for execution on a thread pool thread. One way to resolve this race condition is to set a flag that tells the event handler for the <xref:System.Timers.Timer.Elapsed> event to ignore subsequent events.  
+  
+ The <xref:System.Timers.Timer> component catches and suppresses all exceptions thrown by event handlers for the <xref:System.Timers.Timer.Elapsed> event. This behavior is subject to change in future releases of the .NET Framework.  
+  
+   
+  
+## Examples  
+ The following example instantiates a <xref:System.Timers.Timer> object that fires its <xref:System.Timers.Timer.Elapsed?displayProperty=fullName> event every two seconds (2000 milliseconds), sets up an event handler for the event, and starts the timer. The event handler displays the value of the <xref:System.Timers.ElapsedEventArgs.SignalTime%2A?displayProperty=fullName> property each time it is raised.  
+  
+ [!code-cpp[System.Timers.Timer#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.timers.timer/cpp/timer1.cpp#1)]
+ [!code-csharp[System.Timers.Timer#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timers.timer/cs/timer1.cs#1)]
+ [!code-vb[System.Timers.Timer#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timers.timer/vb/timer1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:System.Timers.Timer.Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Timers.TimersDescription("Indicates whether the timer is enabled to fire events at a defined interval.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Timers.Timer" /> should raise the <see cref="E:System.Timers.Timer.Elapsed" /> event.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Timers.Timer" /> should raise the <see cref="E:System.Timers.Timer.Elapsed" /> event; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting <xref:System.Timers.Timer.Enabled%2A> to `true` is the same as calling <xref:System.Timers.Timer.Start%2A>, while setting <xref:System.Timers.Timer.Enabled%2A> to `false` is the same as calling <xref:System.Timers.Timer.Stop%2A>.  
+  
+> [!NOTE]
+>  The signal to raise the <xref:System.Timers.Timer.Elapsed> event is always queued for execution on a <xref:System.Threading.ThreadPool> thread. This might result in the <xref:System.Timers.Timer.Elapsed> event being raised after the <xref:System.Timers.Timer.Enabled%2A> property is set to `false`. The code example for the <xref:System.Timers.Timer.Stop%2A> method shows one way to work around this race condition.  
+  
+ If <xref:System.Timers.Timer.Enabled%2A> is set to `true` and <xref:System.Timers.Timer.AutoReset%2A> is set to `false`, the <xref:System.Timers.Timer> raises the <xref:System.Timers.Timer.Elapsed> event only once, the first time the interval elapses.  
+  
+ If the interval is set after the <xref:System.Timers.Timer> has started, the count is reset. For example, if you set the interval to 5 seconds and then set the <xref:System.Timers.Timer.Enabled%2A> property to `true`, the count starts at the time <xref:System.Timers.Timer.Enabled%2A> is set. If you reset the interval to 10 seconds when count is 3 seconds, the <xref:System.Timers.Timer.Elapsed> event is raised for the first time 13 seconds after <xref:System.Timers.Timer.Enabled%2A> was set to `true`.  
+  
+> [!NOTE]
+>  Some visual designers, such as those in Microsoft Visual Studio, set the <xref:System.Timers.Timer.Enabled%2A> property to `true` when inserting a new <xref:System.Timers.Timer>.  
+  
+   
+  
+## Examples  
+ The following example instantiates a <xref:System.Timers.Timer> object that fires its <xref:System.Timers.Timer.Elapsed?displayProperty=fullName> event every two seconds (2000 milliseconds), sets up an event handler for the  event, and starts the timer. The event handler displays the value of the <xref:System.Timers.ElapsedEventArgs.SignalTime%2A?displayProperty=fullName> property each time it is raised.  
+  
+ [!code-cpp[System.Timers.Timer#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.timers.timer/cpp/timer1.cpp#1)]
+ [!code-csharp[System.Timers.Timer#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timers.timer/cs/timer1.cs#1)]
+ [!code-vb[System.Timers.Timer#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timers.timer/vb/timer1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">This property cannot be set because the timer has been disposed.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Timers.Timer.Interval" /> property was set to a value greater than <see cref="F:System.Int32.MaxValue" /> before the timer was enabled.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndInit">
+      <MemberSignature Language="C#" Value="public void EndInit ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndInit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Timers.Timer.EndInit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ends the run-time initialization of a <see cref="T:System.Timers.Timer" /> that is used on a form or by another component.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)] design environment uses this method to end the initialization of a component that is used on a form or by another component. The <xref:System.Timers.Timer.BeginInit%2A> method starts the initialization. Using the <xref:System.Timers.Timer.BeginInit%2A> and <xref:System.Timers.Timer.EndInit%2A> methods prevents the control from being used before it is fully initialized.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Interval">
+      <MemberSignature Language="C#" Value="public double Interval { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Interval" />
+      <MemberSignature Language="DocId" Value="P:System.Timers.Timer.Interval" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(100)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.SettingsBindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Timers.TimersDescription("The number of milliseconds between timer events.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the interval, expressed in milliseconds, at which to raise the <see cref="E:System.Timers.Timer.Elapsed" /> event.</summary>
+        <value>The time, in milliseconds, between <see cref="E:System.Timers.Timer.Elapsed" /> events. The value must be greater than zero, and less than or equal to <see cref="F:System.Int32.MaxValue" />. The default is 100 milliseconds.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the <xref:System.Timers.Timer.Interval%2A> property to determine the frequency at which the <xref:System.Timers.Timer.Elapsed> event is fired. Because the <xref:System.Timers.Timer> class depends on the system clock, it has the same resolution as the system clock. This means that the <xref:System.Timers.Timer.Elapsed> event will fire at an interval defined by the resolution of the system clock if the <xref:System.Timers.Timer.Interval%2A> property is less than the resolution of the system clock. The following example sets the <xref:System.Timers.Timer.Interval%2A> property to 5 milliseconds. When run on a [!INCLUDE[win7](~/includes/win7-md.md)] system whose system clock has a resolution of approximately 15 milliseconds, the event fires approximately every 15 milliseconds rather than every 5 milliseconds.  
+  
+ [!code-csharp[System.Timers.Timer.Interval#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timers.timer.interval/cs/interval2.cs#1)]
+ [!code-vb[System.Timers.Timer.Interval#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timers.timer.interval/vb/interval2.vb#1)]  
+  
+ You can use the following code to determine the resolution of the system clock on the current system:  
+  
+ [!code-csharp[System.Timers.Timer.Interval#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timers.timer.interval/cs/resolution1.cs#2)]
+ [!code-vb[System.Timers.Timer.Interval#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timers.timer.interval/vb/resolution1.vb#2)]  
+  
+ If your app requires greater resolution than that offered by the <xref:System.Timers.Timer> class or the system clock, use the high-resolution multimedia timers; see [How to: Use the High-Resolution Timer](http://msdn.microsoft.com/library/aa964692.aspx).  
+  
+ If the interval is set after the <xref:System.Timers.Timer> has started, the count is reset. For example, if you set the interval to 5 seconds and then set the <xref:System.Timers.Timer.Enabled%2A> property to `true`, the count starts at the time <xref:System.Timers.Timer.Enabled%2A> is set. If you reset the interval to 10 seconds when count is 3 seconds, the <xref:System.Timers.Timer.Elapsed> event is raised for the first time 13 seconds after <xref:System.Timers.Timer.Enabled%2A> was set to `true`.  
+  
+ If <xref:System.Timers.Timer.Enabled%2A> is set to `true` and <xref:System.Timers.Timer.AutoReset%2A> is set to `false`, the <xref:System.Timers.Timer> raises the <xref:System.Timers.Timer.Elapsed> event only once, the first time the interval elapses. <xref:System.Timers.Timer.Enabled%2A> is then set to `false`.  
+  
+> [!NOTE]
+>  If <xref:System.Timers.Timer.Enabled%2A> and <xref:System.Timers.Timer.AutoReset%2A> are both set to `false`, and the timer has previously been enabled, setting the <xref:System.Timers.Timer.Interval%2A> property causes the <xref:System.Timers.Timer.Elapsed> event to be raised once, as if the <xref:System.Timers.Timer.Enabled%2A> property had been set to `true`. To set the interval without raising the event, you can temporarily set the <xref:System.Timers.Timer.Enabled%2A> property to `true`, set the <xref:System.Timers.Timer.Interval%2A> property to the desired time interval, and then immediately set the <xref:System.Timers.Timer.Enabled%2A> property back to `false`.  
+  
+   
+  
+## Examples  
+ The following example instantiates a <xref:System.Timers.Timer> object that fires its <xref:System.Timers.Timer.Elapsed?displayProperty=fullName> event every two seconds (2000 milliseconds), sets up an event handler for the event, and starts the timer. The event handler displays the value of the <xref:System.Timers.ElapsedEventArgs.SignalTime%2A?displayProperty=fullName> property each time it is raised.  
+  
+ [!code-cpp[System.Timers.Timer#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.timers.timer/cpp/timer1.cpp#1)]
+ [!code-csharp[System.Timers.Timer#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timers.timer/cs/timer1.cs#1)]
+ [!code-vb[System.Timers.Timer#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timers.timer/vb/timer1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The interval is less than or equal to zero.  
+  
+ -or-  
+  
+ The interval is greater than <see cref="F:System.Int32.MaxValue" />, and the timer is currently enabled. (If the timer is not currently enabled, no exception is thrown until it becomes enabled.)</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Site">
+      <MemberSignature Language="C#" Value="public override System.ComponentModel.ISite Site { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.ISite Site" />
+      <MemberSignature Language="DocId" Value="P:System.Timers.Timer.Site" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.ISite</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the site that binds the <see cref="T:System.Timers.Timer" /> to its container in design mode.</summary>
+        <value>An <see cref="T:System.ComponentModel.ISite" /> interface representing the site that binds the <see cref="T:System.Timers.Timer" /> object to its container.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Sites bind a <xref:System.ComponentModel.Component> to a <xref:System.ComponentModel.Container> and enable communication between them, as well as providing a way for the container to manage its components.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public void Start ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Start() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Timers.Timer.Start" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Starts raising the <see cref="E:System.Timers.Timer.Elapsed" /> event by setting <see cref="P:System.Timers.Timer.Enabled" /> to <see langword="true" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Timers.Timer.Start%2A> is called and <xref:System.Timers.Timer.AutoReset%2A> is set to `false`, the <xref:System.Timers.Timer> raises the <xref:System.Timers.Timer.Elapsed> event only once, the first time the interval elapses. If <xref:System.Timers.Timer.Start%2A> is called and <xref:System.Timers.Timer.AutoReset%2A> is `true`, the <xref:System.Timers.Timer> raises the <xref:System.Timers.Timer.Elapsed> event the first time the interval elapses and continues to raise the event on the specified interval.  
+  
+ You can also start timing by setting <xref:System.Timers.Timer.Enabled%2A> to `true`.  
+  
+> [!NOTE]
+>  If <xref:System.Timers.Timer.AutoReset%2A> is `false`, the <xref:System.Timers.Timer.Start%2A> method must be called in order to start the count again.  
+  
+ A call to the <xref:System.Timers.Timer.Start%2A> method when the timer is enabled has no effect.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="T:System.Timers.Timer" /> is created with an interval equal to or greater than <see cref="F:System.Int32.MaxValue" /> + 1, or set to an interval less than zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public void Stop ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Stop() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Timers.Timer.Stop" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Stops raising the <see cref="E:System.Timers.Timer.Elapsed" /> event by setting <see cref="P:System.Timers.Timer.Enabled" /> to <see langword="false" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can also stop timing by setting <xref:System.Timers.Timer.Enabled%2A> to `false`.  
+  
+> [!NOTE]
+>  The signal to raise the <xref:System.Timers.Timer.Elapsed> event is always queued for execution on a <xref:System.Threading.ThreadPool> thread, so the event-handling method might run on one thread at the same time that a call to the <xref:System.Timers.Timer.Stop%2A> method runs on another thread. This might result in the <xref:System.Timers.Timer.Elapsed> event being raised after the <xref:System.Timers.Timer.Stop%2A> method is called. The code example in the next section shows one way to work around this race condition.  
+  
+   
+  
+## Examples  
+ The following example instantiates a `System.Timers.Timer` object that fires its <xref:System.Timers.Timer.Elapsed?displayProperty=fullName> event every two seconds (2,000 milliseconds), sets up an event handler for the  event, and starts the timer. The event handler displays the value of the <xref:System.Timers.ElapsedEventArgs.SignalTime%2A?displayProperty=fullName> property each time it is raised. When the user presses the Enter key, the application calls the  <xref:System.Timers.Timer.Stop%2A> method before terminating the application.  
+  
+ [!code-csharp[System.Timers.Timer#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timers.timer/cs/timer2a.cs#2)]
+ [!code-vb[System.Timers.Timer#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timers.timer/vb/timer2a.vb#2)]  
+  
+ The following code example shows one way to prevent the thread that calls the <xref:System.Timers.Timer.Stop%2A> method from continuing until a currently executing <xref:System.Timers.Timer.Elapsed> event ends, and also to prevent two <xref:System.Timers.Timer.Elapsed> events from executing the event handler at the same time (often referred to as reentrancy).  
+  
+ The example executes 100 test runs. Each time the test is run, the timer is started with an interval of 150 milliseconds. The event handler uses the <xref:System.Threading.Thread.Sleep%2A?displayProperty=fullName> method to simulate a task that randomly varies in length from 50 to 200 milliseconds. The test method also starts a control thread that waits for a second and then stops the timer. If an event is being handled when the control thread stops the timer, the control thread must wait until the event is finished before proceeding.  
+  
+ The <xref:System.Threading.Interlocked.CompareExchange%28System.Int32%40%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method overload is used to avoid reentrancy and to prevent the control thread from continuing until an executing event ends. The event handler uses the <xref:System.Threading.Interlocked.CompareExchange%28System.Int32%40%2CSystem.Int32%2CSystem.Int32%29> method to set a control variable to 1, but only if the value is currently zero. This is an atomic operation. If the return value is zero, the control variable has been set to 1 and the event handler proceeds. If the return value is non-zero, the event is simply discarded to avoid reentrancy. (If it were necessary to execute every event, the <xref:System.Threading.Monitor> class would be a better way to synchronize the events.) When the event handler ends, it sets the control variable back to zero. The example records the total number of events that executed, that were discarded because of reentrancy, and that occurred after the <xref:System.Timers.Timer.Stop%2A> method was called.  
+  
+ The control thread uses the <xref:System.Threading.Interlocked.CompareExchange%28System.Int32%40%2CSystem.Int32%2CSystem.Int32%29> method to set the control variable to -1 (minus one), but only if the value is currently zero. If the atomic operation returns non-zero, an event is currently executing. The control thread waits and tries again. The example records the number of times the control thread had to wait for an event to finish.  
+  
+ [!code-csharp[Timer.Stop#1](~/samples/snippets/csharp/VS_Snippets_CLR/Timer.Stop/CS/source.cs#1)]
+ [!code-vb[Timer.Stop#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Timer.Stop/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SynchronizingObject">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.ISynchronizeInvoke SynchronizingObject { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.ISynchronizeInvoke SynchronizingObject" />
+      <MemberSignature Language="DocId" Value="P:System.Timers.Timer.SynchronizingObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Timers.TimersDescription("The object used to marshal the event handler calls issued when an interval has elapsed.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.ISynchronizeInvoke</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the object used to marshal event-handler calls that are issued when an interval has elapsed.</summary>
+        <value>The <see cref="T:System.ComponentModel.ISynchronizeInvoke" /> representing the object used to marshal the event-handler calls that are issued when an interval has elapsed. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When <xref:System.Timers.Timer.SynchronizingObject%2A> is `null`, the method that handles the <xref:System.Timers.Timer.Elapsed> event is called on a thread from the system-thread pool. For more information on system-thread pools, see <xref:System.Threading.ThreadPool>.  
+  
+ When the <xref:System.Timers.Timer.Elapsed> event is handled by a visual Windows Forms component, such as a button, accessing the component through the system-thread pool might result in an exception or just might not work. Avoid this effect by setting <xref:System.Timers.Timer.SynchronizingObject%2A> to a Windows Forms component, which causes the method that handles the <xref:System.Timers.Timer.Elapsed> event to be called on the same thread that the component was created on.  
+  
+> [!NOTE]
+>  Even if the <xref:System.Timers.Timer.SynchronizingObject%2A> property is not `null`, <xref:System.Timers.Timer.Elapsed> events can occur after the <xref:System.Timers.Timer.Dispose%2A> or <xref:System.Timers.Timer.Stop%2A> method has been called or after the <xref:System.Timers.Timer.Enabled%2A> property has been set to `false`, because the signal to raise the <xref:System.Timers.Timer.Elapsed> event is always queued for execution on a thread pool thread. One way to resolve this race condition is to set a flag that tells the event handler for the <xref:System.Timers.Timer.Elapsed> event to ignore subsequent events.  
+  
+ If the <xref:System.Timers.Timer> is used inside Visual Studio in a Windows Forms designer, <xref:System.Timers.Timer.SynchronizingObject%2A> is automatically set to the control that contains the <xref:System.Timers.Timer>. For example, if you place a <xref:System.Timers.Timer> on a designer for `Form1` (which inherits from <xref:System.Windows.Forms.Form>), the <xref:System.Timers.Timer.SynchronizingObject%2A> property of <xref:System.Timers.Timer> is set to the instance of `Form1`.  
+  
+   
+  
+## Examples  
+ The following example is a Windows Forms app that serves as a very simple text file editor. When the text in the text box has not been saved, the app asks the user at one-minute intervals whether he or she wants to save the contents of the text box.  To do this, the <xref:System.Timers.Timer.Interval%2A> property is set to one minute (60,000 milliseconds), and the <xref:System.Timers.Timer.SynchronizingObject%2A> property is set to the <xref:System.Windows.Forms.Form> object.  
+  
+ [!code-csharp[System.Timers.Timer.SynchronizingObject#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Timers.Timer.SynchronizingObject/cs/Form1.cs#1)]
+ [!code-vb[System.Timers.Timer.SynchronizingObject#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Timers.Timer.SynchronizingObject/vb/Form1.vb#1)]  
+  
+ The example requires that you add the following controls to the form:  
+  
+-   A <xref:System.Windows.Forms.TextBox> control named `TextBox1` (its default name).  
+  
+-   A <xref:System.Windows.Forms.Button> control named `Button1` (its default name).  
+  
+-   A <xref:System.Windows.Forms.SaveFileDialog> control named `SaveSaveFileDialog1` (its default name) .  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

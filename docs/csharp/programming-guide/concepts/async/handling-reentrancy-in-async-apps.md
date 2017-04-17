@@ -119,7 +119,7 @@ TOTAL bytes returned:  890591
   
  The following code shows these changes, which are marked with asterisks. You can add the changes to the code at the end of this topic, or you can download the finished app from [Async Samples: Reentrancy in .NET Desktop Apps](http://go.microsoft.com/fwlink/?LinkId=266571). The project name is DisableStartButton.  
   
-```cs  
+```csharp  
 private async void StartButton_Click(object sender, RoutedEventArgs e)  
 {  
     // This line is commented out to make the results clearer in the output.  
@@ -155,7 +155,7 @@ private async void StartButton_Click(object sender, RoutedEventArgs e)
   
 1.  Declare a <xref:System.Threading.CancellationTokenSource> variable, `cts`, that’s in scope for all methods.  
   
-    ```cs  
+    ```csharp  
     public partial class MainWindow : Window   // Or class MainPage  
     {  
         // *** Declare a System.Threading.CancellationTokenSource.  
@@ -164,7 +164,7 @@ private async void StartButton_Click(object sender, RoutedEventArgs e)
   
 2.  In `StartButton_Click`, determine whether an operation is already underway. If the value of `cts` is null, no operation is already active. If the value isn't null, the operation that is already running is canceled.  
   
-    ```cs  
+    ```csharp  
     // *** If a download process is already underway, cancel it.  
     if (cts != null)  
     {  
@@ -174,7 +174,7 @@ private async void StartButton_Click(object sender, RoutedEventArgs e)
   
 3.  Set `cts` to a different value that represents the current process.  
   
-    ```cs  
+    ```csharp  
     // *** Now set cts to a new value that you can use to cancel the current process  
     // if the button is chosen again.  
     CancellationTokenSource newCTS = new CancellationTokenSource();  
@@ -183,7 +183,7 @@ private async void StartButton_Click(object sender, RoutedEventArgs e)
   
 4.  At the end of `StartButton_Click`, the current process is complete, so set the value of `cts` back to null.  
   
-    ```cs  
+    ```csharp  
     // *** When the process is complete, signal that another process can begin.  
     if (cts == newCTS)  
         cts = null;  
@@ -191,7 +191,7 @@ private async void StartButton_Click(object sender, RoutedEventArgs e)
   
  The following code shows all the changes in `StartButton_Click`. The additions are marked with asterisks.  
   
-```cs  
+```csharp  
 private async void StartButton_Click(object sender, RoutedEventArgs e)  
 {  
     // This line is commented out to make the results clearer in the output.  
@@ -238,7 +238,7 @@ private async void StartButton_Click(object sender, RoutedEventArgs e)
   
  The following code shows these changes, which are marked with asterisks.  
   
-```cs  
+```csharp  
 // *** Provide a parameter for the CancellationToken from StartButton_Click.  
 async Task AccessTheWebAsync(CancellationToken ct)  
 {  
@@ -398,7 +398,7 @@ TOTAL bytes returned:  920526
 #### Global Definitions  
  The sample code contains the following two global declarations that are visible from all methods.  
   
-```cs  
+```csharp  
 public partial class MainWindow : Window  // Class MainPage in Windows Store app.  
 {  
     // ***Declare the following variables where all methods can access them.   
@@ -411,7 +411,7 @@ public partial class MainWindow : Window  // Class MainPage in Windows Store app
 #### The Click Event Handler  
  The event handler, `StartButton_Click`, increments the group letter each time the user chooses the **Start** button. Then the handler calls `AccessTheWebAsync` to run the downloading operation.  
   
-```cs  
+```csharp  
 private async void StartButton_Click(object sender, RoutedEventArgs e)  
 {  
     // ***Verify that each group's results are displayed together, and that  
@@ -442,7 +442,7 @@ private async void StartButton_Click(object sender, RoutedEventArgs e)
   
  `FinishOneGroupAsync` returns a task that's assigned to `pendingWork` in `AccessTheWebAsync`. That value prevents interruption by another operation before the task is complete.  
   
-```cs  
+```csharp  
 private async Task<char> AccessTheWebAsync(char grp)  
 {  
     HttpClient client = new HttpClient();  
@@ -472,7 +472,7 @@ private async Task<char> AccessTheWebAsync(char grp)
   
  The first statement in `FinishOneGroupAsync` uses `pendingWork` to make sure that entering the method doesn't interfere with an operation that is already in the display process or that's already waiting. If such an operation is in progress, the entering operation must wait its turn.  
   
-```cs  
+```csharp  
 private async Task FinishOneGroupAsync(List<string> urls, Task<byte[]>[] contentTasks, char grp)  
 {  
     // ***Wait for the previous group to finish displaying results.  
@@ -595,7 +595,7 @@ private async Task FinishOneGroupAsync(List<string> urls, Task<byte[]>[] content
   
 7.  In the **XAML** view of MainWindow.xaml, replace the code with the following code.  
   
-    ```cs  
+    ```csharp  
     <Window x:Class="WebsiteDownloadWPF.MainWindow"  
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
@@ -619,7 +619,7 @@ private async Task FinishOneGroupAsync(List<string> urls, Task<byte[]>[] content
   
 10. In MainWindow.xaml.cs, replace the code with the following code.  
   
-    ```cs  
+    ```csharp  
     using System;  
     using System.Collections.Generic;  
     using System.Linq;  

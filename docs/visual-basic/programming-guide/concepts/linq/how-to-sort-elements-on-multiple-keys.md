@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 0c4c1462-3047-4766-b9e2-7e0e9cc7f421
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Sort Elements on Multiple Keys (Visual Basic)

@@ -1,0 +1,476 @@
+<Type Name="PropertyMap" FullName="System.Windows.Forms.Integration.PropertyMap">
+  <TypeSignature Language="C#" Value="public class PropertyMap" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PropertyMap extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Integration.PropertyMap" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsFormsIntegration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a way to translate property values between [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] controls and [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] elements.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.Integration.PropertyMap> class to define translations between [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] properties and [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] properties in a hybrid application. The <xref:System.Windows.Forms.Integration.ElementHost.PropertyMap%2A?displayProperty=fullName> and <xref:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap%2A?displayProperty=fullName> properties on the <xref:System.Windows.Forms.Integration.ElementHost> and <xref:System.Windows.Forms.Integration.WindowsFormsHost> classes define mappings from one technology to the other.  
+  
+ For more information, see [Walkthrough: Mapping Properties Using the ElementHost Control](https://msdn.microsoft.com/en-us/library/ms788740\(v=vs.100\).aspx) and [Walkthrough: Mapping Properties Using the WindowsFormsHost Element](https://msdn.microsoft.com/en-us/library/ms788729\(v=vs.100\).aspx).  
+  
+   
+  
+## Examples  
+ The following code example shows how to add a mapping for the <xref:System.Windows.Forms.Control.Margin%2A> property to an <xref:System.Windows.Forms.Integration.ElementHost> control.  
+  
+ [!code-csharp[PropertyMappingWithElementHost#12](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithElementHost/CSharp/PropertyMappingWithElementHost/Form1.cs#12)]
+ [!code-vb[PropertyMappingWithElementHost#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithElementHost/VisualBasic/PropertyMappingWithElementHost/Form1.vb#12)]  
+  
+ The following code example shows how to replace the default mapping for the <xref:System.Windows.FrameworkElement.FlowDirection%2A> property on a <xref:System.Windows.Forms.Integration.WindowsFormsHost> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[PropertyMappingWithWfh#12](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithWfh/CSharp/PropertyMappingWithWfh/Window1.xaml.cs#12)]  -->
+ <!-- TODO: review snippet reference [!code-vb[PropertyMappingWithWfh#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithWfh/VisualBasic/PropertyMappingWithWfh/Window1.xaml.vb#12)]  -->  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+    <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertyMap ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.PropertyMap.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsFormsIntegration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Integration.PropertyMap" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertyMap (object source);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.PropertyMap.#ctor(System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsFormsIntegration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="source" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="source">The object which has the properties to be translated.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Integration.PropertyMap" /> class with the given source object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `source` is the source of the properties which are translated by the <xref:System.Windows.Forms.Integration.PropertyMap>. The properties which are mapped in the <xref:System.Windows.Forms.Integration.PropertyMap> must exist on <xref:System.Windows.Forms.Integration.PropertyMap.SourceObject%2A>.  
+  
+ <xref:System.Windows.Forms.Integration.PropertyTranslator> delegates are called using the current property values on <xref:System.Windows.Forms.Integration.PropertyMap.SourceObject%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (string propertyName, System.Windows.Forms.Integration.PropertyTranslator translator);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string propertyName, class System.Windows.Forms.Integration.PropertyTranslator translator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.PropertyMap.Add(System.String,System.Windows.Forms.Integration.PropertyTranslator)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsFormsIntegration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="translator" Type="System.Windows.Forms.Integration.PropertyTranslator" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the property to map.</param>
+        <param name="translator">The <see cref="T:System.Windows.Forms.Integration.PropertyTranslator" /> delegate which is called when <c>propertyName</c> changes.</param>
+        <summary>Adds a <see cref="T:System.Windows.Forms.Integration.PropertyTranslator" /> delegate for the given property to the <see cref="T:System.Windows.Forms.Integration.PropertyMap" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When setting, if no <xref:System.Windows.Forms.Integration.PropertyTranslator> exists for `propertyName`, the new delegate is added to the <xref:System.Windows.Forms.Integration.PropertyMap>. If a <xref:System.Windows.Forms.Integration.PropertyTranslator> already exists for `propertyName`, an <xref:System.InvalidOperationException> is raised.  
+  
+   
+  
+## Examples  
+ The following code example shows how to add a mapping for the <xref:System.Windows.Forms.Control.Margin%2A> property to an <xref:System.Windows.Forms.Integration.ElementHost> control.  
+  
+ [!code-csharp[PropertyMappingWithElementHost#12](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithElementHost/CSharp/PropertyMappingWithElementHost/Form1.cs#12)]
+ [!code-vb[PropertyMappingWithElementHost#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithElementHost/VisualBasic/PropertyMappingWithElementHost/Form1.vb#12)]  
+  
+ The following code example shows how to add a mapping for the <xref:System.Windows.UIElement.Clip%2A> property to a <xref:System.Windows.Forms.Integration.WindowsFormsHost> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[PropertyMappingWithWfh#14](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithWfh/CSharp/PropertyMappingWithWfh/Window1.xaml.cs#14)]  -->
+ <!-- TODO: review snippet reference [!code-vb[PropertyMappingWithWfh#14](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithWfh/VisualBasic/PropertyMappingWithWfh/Window1.xaml.vb#14)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="propertyName" /> has an existing mapping.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Apply">
+      <MemberSignature Language="C#" Value="public void Apply (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Apply(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.PropertyMap.Apply(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsFormsIntegration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the property to translate.</param>
+        <summary>Runs the property translator for the given property, based on the source object's current property value.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The property given by <paramref name="propertyName" /> does not exist on <see cref="P:System.Windows.Forms.Integration.PropertyMap.SourceObject" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyAll">
+      <MemberSignature Language="C#" Value="public void ApplyAll ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ApplyAll() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.PropertyMap.ApplyAll" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsFormsIntegration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Runs the property translator for each mapped property, based on the source object's current property values.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.PropertyMap.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsFormsIntegration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all property mappings.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.PropertyMap.Contains(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsFormsIntegration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the property to search for.</param>
+        <summary>Gets a value indicating whether the given property is mapped.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="propertyName" /> exists in the property map; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultTranslators">
+      <MemberSignature Language="C#" Value="protected System.Collections.Generic.Dictionary&lt;string,System.Windows.Forms.Integration.PropertyTranslator&gt; DefaultTranslators { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;string, class System.Windows.Forms.Integration.PropertyTranslator&gt; DefaultTranslators" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.PropertyMap.DefaultTranslators" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsFormsIntegration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.Windows.Forms.Integration.PropertyTranslator&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of property mappings which are defined by default.</summary>
+        <value>A <see cref="T:System.Collections.Generic.Dictionary`2" /> which maps property names to corresponding <see cref="T:System.Windows.Forms.Integration.PropertyTranslator" /> delegates.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a list of default property mappings, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Integration.PropertyTranslator this[string propertyName] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Integration.PropertyTranslator Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.PropertyMap.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsFormsIntegration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Integration.PropertyTranslator</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the property to map.</param>
+        <summary>Gets or sets the <see cref="T:System.Windows.Forms.Integration.PropertyTranslator" /> delegate for the given property.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Integration.PropertyTranslator" /> delegate corresponding to the property specified by <paramref name="propertyName" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When setting, if no <xref:System.Windows.Forms.Integration.PropertyTranslator> exists for `propertyName`, the new delegate is added to the <xref:System.Windows.Forms.Integration.PropertyMap>. If a <xref:System.Windows.Forms.Integration.PropertyTranslator> already exists for `propertyName`, it is replaced.  
+  
+   
+  
+## Examples  
+ The following code example shows how to retrieve the <xref:System.Windows.Forms.Integration.PropertyTranslator> delegate for the <xref:System.Windows.Forms.Control.BackColor%2A> property of a <xref:System.Windows.Forms.Integration.ElementHost> control.  
+  
+ [!code-csharp[PropertyMappingWithElementHost#15](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithElementHost/CSharp/PropertyMappingWithElementHost/Form1.cs#15)]
+ [!code-vb[PropertyMappingWithElementHost#15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithElementHost/VisualBasic/PropertyMappingWithElementHost/Form1.vb#15)]  
+  
+ The following code example shows how to retrieve the <xref:System.Windows.Forms.Integration.PropertyTranslator> delegate for the <xref:System.Windows.Controls.Control.Background%2A> property of a <xref:System.Windows.Forms.Integration.WindowsFormsHost> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[PropertyMappingWithWfh#15](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithWfh/CSharp/PropertyMappingWithWfh/Window1.xaml.cs#15)]  -->
+ <!-- TODO: review snippet reference [!code-vb[PropertyMappingWithWfh#15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithWfh/VisualBasic/PropertyMappingWithWfh/Window1.xaml.vb#15)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyName" /> is <see langword="null" /> or an empty string; the specified <see cref="T:System.Windows.Forms.Integration.PropertyTranslator" /> delegate is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The property given by <paramref name="propertyName" /> does not exist on <see cref="P:System.Windows.Forms.Integration.PropertyMap.SourceObject" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Keys">
+      <MemberSignature Language="C#" Value="public System.Collections.ICollection Keys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Keys" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.PropertyMap.Keys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsFormsIntegration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Collections.ICollection" /> object containing the property names in the <see cref="T:System.Windows.Forms.Integration.PropertyMap" /> collection.</summary>
+        <value>An <see cref="T:System.Collections.ICollection" /> object containing the property names of the <see cref="T:System.Windows.Forms.Integration.PropertyMap" /> collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyMappingError">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.Forms.Integration.PropertyMappingExceptionEventArgs&gt; PropertyMappingError;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Forms.Integration.PropertyMappingExceptionEventArgs&gt; PropertyMappingError" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Integration.PropertyMap.PropertyMappingError" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsFormsIntegration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Windows.Forms.Integration.PropertyMappingExceptionEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when an exception is raised by a property translator.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Handlers for the <xref:System.Windows.Forms.Integration.PropertyMap.PropertyMappingError> event can optionally raise the exception by setting the <xref:System.Windows.Forms.Integration.IntegrationExceptionEventArgs.ThrowException%2A> flag on the <xref:System.Windows.Forms.Integration.PropertyMappingExceptionEventArgs>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.PropertyMap.Remove(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsFormsIntegration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the property to remove.</param>
+        <summary>Deletes the given property from the mapping.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to remove a mapping for the <xref:System.Windows.Forms.Control.Cursor%2A> property to an <xref:System.Windows.Forms.Integration.ElementHost> control.  
+  
+ [!code-csharp[PropertyMappingWithElementHost#13](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithElementHost/CSharp/PropertyMappingWithElementHost/Form1.cs#13)]
+ [!code-vb[PropertyMappingWithElementHost#13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithElementHost/VisualBasic/PropertyMappingWithElementHost/Form1.vb#13)]  
+  
+ The following code example shows how to add a mapping for the <xref:System.Windows.FrameworkElement.Cursor%2A> property to a <xref:System.Windows.Forms.Integration.WindowsFormsHost> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[PropertyMappingWithWfh#13](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithWfh/CSharp/PropertyMappingWithWfh/Window1.xaml.cs#13)]  -->
+ <!-- TODO: review snippet reference [!code-vb[PropertyMappingWithWfh#13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithWfh/VisualBasic/PropertyMappingWithWfh/Window1.xaml.vb#13)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyName" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="public void Reset (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reset(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.PropertyMap.Reset(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsFormsIntegration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the property to restore.</param>
+        <summary>Restores the default property mapping for the given property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Integration.PropertyMap.Reset%2A> method has the following effects on the <xref:System.Windows.Forms.Integration.PropertyMap>.  
+  
+-   A default property mapping that has been removed is restored.  
+  
+-   A property mapping that has been added is removed.  
+  
+-   A default property mapping that has been overridden is restored to its default value.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyName" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetAll">
+      <MemberSignature Language="C#" Value="public void ResetAll ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetAll() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.PropertyMap.ResetAll" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsFormsIntegration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Restores the default property mappings.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Integration.PropertyMap.ResetAll%2A> method has the following effects on the <xref:System.Windows.Forms.Integration.PropertyMap>.  
+  
+-   Default property mappings that have been removed are restored.  
+  
+-   Property mappings that have been added are removed.  
+  
+-   Default property mappings that have been overridden are restored to their default values.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceObject">
+      <MemberSignature Language="C#" Value="protected object SourceObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SourceObject" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.PropertyMap.SourceObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsFormsIntegration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object which has the properties to be translated.</summary>
+        <value>The object which has the properties to be translated.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The properties which are mapped in the <xref:System.Windows.Forms.Integration.PropertyMap> must exist on <xref:System.Windows.Forms.Integration.PropertyMap.SourceObject%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Values">
+      <MemberSignature Language="C#" Value="public System.Collections.ICollection Values { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Values" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.PropertyMap.Values" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsFormsIntegration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Collections.ICollection" /> containing the property translators in the <see cref="T:System.Windows.Forms.Integration.PropertyMap" /> collection.</summary>
+        <value>An <see cref="T:System.Collections.ICollection" /> containing the property translators in the <see cref="T:System.Windows.Forms.Integration.PropertyMap" /> collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

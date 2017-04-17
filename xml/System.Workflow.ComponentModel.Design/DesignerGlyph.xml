@@ -1,0 +1,316 @@
+<Type Name="DesignerGlyph" FullName="System.Workflow.ComponentModel.Design.DesignerGlyph">
+  <TypeSignature Language="C#" Value="public abstract class DesignerGlyph" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DesignerGlyph extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.DesignerGlyph" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Draws a glyph at the top-most Z order position on an activity designer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ The <xref:System.Workflow.ComponentModel.Design.DesignerGlyph> class is the base class for all designer glyphs used on a workflow design surface.  
+  
+ Activity designer developers can use classes that inherit from <xref:System.Workflow.ComponentModel.Design.DesignerGlyph> to draw custom glyphs onto the surface of an <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>. <xref:System.Workflow.ComponentModel.Design.DesignerGlyph> classes draw such glyphs at the top-level Z order, which places the custom glyph visually on top of all other glyphs on the designer based on the <xref:System.Workflow.ComponentModel.Design.DesignerGlyph.Priority%2A> value of the custom glyph. A lower value for the <xref:System.Workflow.ComponentModel.Design.DesignerGlyph.Priority%2A> property indicates a higher priority and therefore draws the glyph at the top-most Z order position on an activity designer.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates a glyph class that derives from the <xref:System.Workflow.ComponentModel.Design.DesignerGlyph> class.  The code overrides the <xref:System.Workflow.ComponentModel.Design.DesignerGlyph.GetBounds%2A> and <xref:System.Workflow.ComponentModel.Design.DesignerGlyph.OnPaint%2A> methods.  
+  
+ This code example is part of the Workflow Monitor SDK Sample from the DesignerGlyphProvider.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+  
+ [!code-csharp[WF_Samples#132](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#132)]
+ [!code-vb[WF_Samples#132](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#132)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>When you inherit from <see cref="T:System.Workflow.ComponentModel.Design.DesignerGlyph" />, you must override the following members: <see cref="M:System.Workflow.ComponentModel.Design.DesignerGlyph.OnPaint(System.Drawing.Graphics,System.Boolean,System.Workflow.ComponentModel.Design.AmbientTheme,System.Workflow.ComponentModel.Design.ActivityDesigner)" />.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DesignerGlyph ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.DesignerGlyph.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a derived class, initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.DesignerGlyph" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanBeActivated">
+      <MemberSignature Language="C#" Value="public virtual bool CanBeActivated { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanBeActivated" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.DesignerGlyph.CanBeActivated" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Workflow.ComponentModel.Design.DesignerGlyph" /> can gain focus on the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> with which it is associated.</summary>
+        <value>
+          <see langword="true" /> if the designer glyph can be activated; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates an implementation of the CanBeActivated property.  This example is from the Tracking Profile Designer SDK sample.  For more information, see [Tracking Profile Designer Sample](http://msdn.microsoft.com/en-us/a280199c-3000-4148-ac63-cb5aaeac07c8).  
+  
+ [!code-csharp[WF_Samples#119](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#119)]
+ [!code-vb[WF_Samples#119](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#119)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBounds">
+      <MemberSignature Language="C#" Value="public virtual System.Drawing.Rectangle GetBounds (System.Workflow.ComponentModel.Design.ActivityDesigner designer, bool activated);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Drawing.Rectangle GetBounds(class System.Workflow.ComponentModel.Design.ActivityDesigner designer, bool activated) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.DesignerGlyph.GetBounds(System.Workflow.ComponentModel.Design.ActivityDesigner,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="designer" Type="System.Workflow.ComponentModel.Design.ActivityDesigner" />
+        <Parameter Name="activated" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="designer">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> with which the glyph is associated.</param>
+        <param name="activated">
+          <see langword="true" /> to indicate whether the glyph appears on the activity designer surface; otherwise, <see langword="false" />.</param>
+        <summary>Returns the bounds for the glyph on the specified <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" />.</summary>
+        <returns>A <see cref="T:System.Drawing.Rectangle" /> that represents the bounds for the glyph.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unless overridden in a derived class, <xref:System.Workflow.ComponentModel.Design.DesignerGlyph.GetBounds%2A> returns the bounds of the activity designer with which the glyph is associated.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can override the <xref:System.Workflow.ComponentModel.Design.DesignerGlyph.GetBounds%2A> method. The code sets the size and location of the custom glyph object.  
+  
+ This code example is part of the Workflow Monitor SDK Sample from the DesignerGlyphProvider.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+  
+ [!code-csharp[WF_Samples#133](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#133)]
+ [!code-vb[WF_Samples#133](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#133)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="designer" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HighestPriority">
+      <MemberSignature Language="C#" Value="public const int HighestPriority = 0;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HighestPriority = (0)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerGlyph.HighestPriority" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>Represents the highest priority possible for a <see cref="T:System.Workflow.ComponentModel.Design.DesignerGlyph" />. This value is a constant.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A lower value for the <xref:System.Workflow.ComponentModel.Design.DesignerGlyph.Priority%2A> property indicates a higher priority and therefore draws the glyph at the top-most Z order position on an activity designer. The value of the <xref:System.Workflow.ComponentModel.Design.DesignerGlyph.HighestPriority> field is 0.  
+  
+> [!NOTE]
+>  This constant value serves as a guideline when creating custom glyphs. You are free to use different values for the <xref:System.Workflow.ComponentModel.Design.DesignerGlyph.Priority%2A> property when designing your custom glyph.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LowestPriority">
+      <MemberSignature Language="C#" Value="public const int LowestPriority = 1000000;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 LowestPriority = (1000000)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerGlyph.LowestPriority" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>1000000</MemberValue>
+      <Docs>
+        <summary>Represents the lowest priority possible for a <see cref="T:System.Workflow.ComponentModel.Design.DesignerGlyph" />. This value is a constant.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A high value for the <xref:System.Workflow.ComponentModel.Design.DesignerGlyph.Priority%2A> property indicates a lower priority and therefore draws the glyph at the bottom-most Z order position on an activity designer. The value of the <xref:System.Workflow.ComponentModel.Design.DesignerGlyph.LowestPriority> field is 1000000.  
+  
+> [!NOTE]
+>  This constant value serves as a guideline when creating custom glyphs. You are free to use different values for the <xref:System.Workflow.ComponentModel.Design.DesignerGlyph.Priority%2A> property when designing your custom glyph.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NormalPriority">
+      <MemberSignature Language="C#" Value="public const int NormalPriority = 10000;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 NormalPriority = (10000)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerGlyph.NormalPriority" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>10000</MemberValue>
+      <Docs>
+        <summary>Represents the normal priority for a <see cref="T:System.Workflow.ComponentModel.Design.DesignerGlyph" />. This value is a constant.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A lower value for the <xref:System.Workflow.ComponentModel.Design.DesignerGlyph.Priority%2A> property indicates a higher priority whereas a higher value indicates a lower priority. The value of the <xref:System.Workflow.ComponentModel.Design.DesignerGlyph.NormalPriority> field is 10000.  
+  
+> [!NOTE]
+>  This constant value serves as a guideline when creating custom glyphs. You are free to use different values for the <xref:System.Workflow.ComponentModel.Design.DesignerGlyph.Priority%2A> property when designing your custom glyph.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnActivate">
+      <MemberSignature Language="C#" Value="protected virtual void OnActivate (System.Workflow.ComponentModel.Design.ActivityDesigner designer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnActivate(class System.Workflow.ComponentModel.Design.ActivityDesigner designer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.DesignerGlyph.OnActivate(System.Workflow.ComponentModel.Design.ActivityDesigner)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="designer" Type="System.Workflow.ComponentModel.Design.ActivityDesigner" />
+      </Parameters>
+      <Docs>
+        <param name="designer">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> on which the glyph is drawn.</param>
+        <summary>Indicates to the glyph that an action has been performed which has activated the glyph.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates an implementation of the OnActivate method.  This example is from the Tracking Profile Designer SDK sample.  For more information, see [Tracking Profile Designer Sample](http://msdn.microsoft.com/en-us/a280199c-3000-4148-ac63-cb5aaeac07c8).  
+  
+ [!code-csharp[WF_Samples#119](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#119)]
+ [!code-vb[WF_Samples#119](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#119)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPaint">
+      <MemberSignature Language="C#" Value="protected abstract void OnPaint (System.Drawing.Graphics graphics, bool activated, System.Workflow.ComponentModel.Design.AmbientTheme ambientTheme, System.Workflow.ComponentModel.Design.ActivityDesigner designer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPaint(class System.Drawing.Graphics graphics, bool activated, class System.Workflow.ComponentModel.Design.AmbientTheme ambientTheme, class System.Workflow.ComponentModel.Design.ActivityDesigner designer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.DesignerGlyph.OnPaint(System.Drawing.Graphics,System.Boolean,System.Workflow.ComponentModel.Design.AmbientTheme,System.Workflow.ComponentModel.Design.ActivityDesigner)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="activated" Type="System.Boolean" />
+        <Parameter Name="ambientTheme" Type="System.Workflow.ComponentModel.Design.AmbientTheme" />
+        <Parameter Name="designer" Type="System.Workflow.ComponentModel.Design.ActivityDesigner" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> to perform fill and drawing tasks.</param>
+        <param name="activated">
+          <see langword="true" /> to indicate that the glyph appears on the design surface; otherwise, <see langword="false" />.</param>
+        <param name="ambientTheme">The <see cref="T:System.Workflow.ComponentModel.Design.AmbientTheme" /> to use to access ambient property settings.</param>
+        <param name="designer">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> from which to obtain information about user actions.</param>
+        <summary>When overridden in a derived class, performs any tasks required to render the glyph on the activity designer surface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.DesignerGlyph.OnPaint%2A> uses <xref:System.Workflow.ComponentModel.Design.AmbientTheme.CommentIndicatorPen%2A> to draw the bounds of the comment glyph and <xref:System.Workflow.ComponentModel.Design.AmbientTheme.CommentIndicatorBrush%2A> to fill it.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can override the <xref:System.Workflow.ComponentModel.Design.DesignerGlyph.OnPaint%2A> method. The code customizes how to draw the glyph object on the activity designer with which the glyph is associated.  
+  
+ This code example is part of the Workflow Monitor SDK Sample from the DesignerGlyphProvider.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+  
+ [!code-csharp[WF_Samples#134](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#134)]
+ [!code-vb[WF_Samples#134](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#134)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Priority">
+      <MemberSignature Language="C#" Value="public virtual int Priority { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Priority" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.DesignerGlyph.Priority" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the priority setting for the designer glyph on the activity design surface.</summary>
+        <value>An integer value that represents the priority setting for the <see cref="T:System.Workflow.ComponentModel.Design.DesignerGlyph" /> on the activity designer surface. A lower value indicates a higher priority and therefore draws the glyph at the top-most Z order position on an activity designer.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,74 @@
+<Type Name="SiteMapNodeItemEventArgs" FullName="System.Web.UI.WebControls.SiteMapNodeItemEventArgs">
+  <TypeSignature Language="C#" Value="public class SiteMapNodeItemEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SiteMapNodeItemEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SiteMapNodeItemEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.SiteMapPath.ItemCreated" /> and <see cref="E:System.Web.UI.WebControls.SiteMapPath.ItemDataBound" /> events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SiteMapPath.ItemCreated?displayProperty=fullName> event is raised when a <xref:System.Web.UI.WebControls.SiteMapNodeItem> is created by the <xref:System.Web.UI.WebControls.SiteMapPath> control. The <xref:System.Web.UI.WebControls.SiteMapPath.ItemDataBound?displayProperty=fullName> event is raised when `DataBind` is called on the item during a call to <xref:System.Web.UI.WebControls.SiteMapPath.CreateControlHierarchy%2A?displayProperty=fullName>.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SiteMapNodeItemEventArgs (System.Web.UI.WebControls.SiteMapNodeItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.SiteMapNodeItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapNodeItemEventArgs.#ctor(System.Web.UI.WebControls.SiteMapNodeItem)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="item" Type="System.Web.UI.WebControls.SiteMapNodeItem" />
+      </Parameters>
+      <Docs>
+        <param name="item">A <see cref="T:System.Web.UI.WebControls.SiteMapNodeItem" /> that is the source of the event.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.SiteMapNodeItemEventArgs" /> class, setting the specified <see cref="T:System.Web.UI.WebControls.SiteMapNodeItem" /> object as the source of the event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.SiteMapNodeItemEventArgs> using a <xref:System.Web.UI.WebControls.SiteMapNodeItem> that represents a <xref:System.Web.UI.WebControls.SiteMapNodeItemType>, and how to pass the event arguments to the <xref:System.Web.UI.WebControls.SiteMapPath.OnItemCreated%2A> method. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.SiteMapPath> class.  
+  
+ [!code-csharp[Urtue.Samples.Alexkr.DropDownNavigationPath_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.DropDownNavigationPath_1/CS/dropdownnavigationpath.cs#3)]
+ [!code-vb[Urtue.Samples.Alexkr.DropDownNavigationPath_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.DropDownNavigationPath_1/VB/dropdownnavigationpath.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.SiteMapNodeItem Item { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.SiteMapNodeItem Item" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapNodeItemEventArgs.Item" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.SiteMapNodeItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the node item that is the source of the event.</summary>
+        <value>The <see cref="T:System.Web.UI.WebControls.SiteMapNodeItem" /> that is the source of the event.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

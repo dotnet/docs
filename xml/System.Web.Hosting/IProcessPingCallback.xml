@@ -1,0 +1,56 @@
+<Type Name="IProcessPingCallback" FullName="System.Web.Hosting.IProcessPingCallback">
+  <TypeSignature Language="C#" Value="public interface IProcessPingCallback" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IProcessPingCallback" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IProcessPingCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("f11dc4c9-ddd1-4566-ad53-cf6f3a28fefe")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides functionality to respond to a ping request.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Hosting.IProcessPingCallback> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Respond">
+      <MemberSignature Language="C#" Value="public void Respond ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Respond() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IProcessPingCallback.Respond" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides a callback routine that responds to a ping request.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Hosting.IProcessPingCallback.Respond%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,247 @@
+<Type Name="SelectionPattern" FullName="System.Windows.Automation.SelectionPattern">
+  <TypeSignature Language="C#" Value="public class SelectionPattern : System.Windows.Automation.BasePattern" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SelectionPattern extends System.Windows.Automation.BasePattern" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.SelectionPattern" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationClient</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Automation.BasePattern</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a control that acts as a container for a collection of selectable child items. The children of this element support the <see cref="T:System.Windows.Automation.SelectionItemPattern" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See [Control Pattern Mapping for UI Automation Clients](~/docs/framework/ui-automation/control-pattern-mapping-for-ui-automation-clients.md) for examples of controls that may implement this control pattern.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Cached">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.SelectionPattern.SelectionPatternInformation Cached { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.SelectionPattern/SelectionPatternInformation Cached" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.SelectionPattern.Cached" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.SelectionPattern+SelectionPatternInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cached [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] property values for this <see cref="T:System.Windows.Automation.SelectionPattern" />.</summary>
+        <value>A structure containing the cached [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] property values for the control pattern.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Cached property values must have been previously requested using a <xref:System.Windows.Automation.CacheRequest>. Use <xref:System.Windows.Automation.SelectionPattern.Current%2A> to get the current value of a property.  
+  
+ For information on the properties available and their use, see <xref:System.Windows.Automation.SelectionPattern.SelectionPatternInformation>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The requested property is not in the cache.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CanSelectMultipleProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty CanSelectMultipleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty CanSelectMultipleProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SelectionPattern.CanSelectMultipleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.SelectionPattern.SelectionPatternInformation.CanSelectMultiple" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.SelectionPatternIdentifiers>.  
+  
+   
+  
+## Examples  
+ In the following example, a root element is passed to a function that returns a collection of [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] elements that are descendants of the root and satisfy a set of property conditions.  
+  
+ [!code-csharp[UIASelectionPattern_snip#100](~/samples/snippets/csharp/VS_Snippets_Wpf/UIASelectionPattern_snip/CSharp/UIASelectionPattern_snippets.cs#100)]
+ [!code-vb[UIASelectionPattern_snip#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIASelectionPattern_snip/VisualBasic/UIASelectionPattern_snippets.vb#100)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.SelectionPattern.SelectionPatternInformation Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.SelectionPattern/SelectionPatternInformation Current" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.SelectionPattern.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.SelectionPattern+SelectionPatternInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] property values for this <see cref="T:System.Windows.Automation.SelectionPattern" />.</summary>
+        <value>A structure containing the current [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] property values for the control pattern.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This pattern must be from an <xref:System.Windows.Automation.AutomationElement> with an <xref:System.Windows.Automation.AutomationElementMode> reference in order to get current values. If the <xref:System.Windows.Automation.AutomationElement> was obtained using <xref:System.Windows.Automation.AutomationElementMode>, it contains only cached data, and attempting to get the current value of any property raises an exception. Use <xref:System.Windows.Automation.SelectionPattern.Cached%2A> to get the cached value of a property that was previously specified using a <xref:System.Windows.Automation.CacheRequest>.  
+  
+ For information on the properties available and their use, see <xref:System.Windows.Automation.SelectionPattern.SelectionPatternInformation>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidatedEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationEvent InvalidatedEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationEvent InvalidatedEvent" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SelectionPattern.InvalidatedEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the event that is raised when a selection in a container has changed significantly and requires sending more addition and removal events than the <see cref="F:System.Windows.Automation.Provider.AutomationInteropProvider.InvalidateLimit" /> constant permits.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An invalidated event is raised when a selection in a container has changed significantly and requires sending more addition and removal events than the <xref:System.Windows.Automation.Provider.AutomationInteropProvider.InvalidateLimit> constant permits.  
+  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.SelectionPatternIdentifiers>.  
+  
+   
+  
+## Examples  
+ In the following example, an event listener is declared for the <xref:System.Windows.Automation.SelectionPattern.InvalidatedEvent>.  
+  
+ [!code-csharp[UIASelectionPattern_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIASelectionPattern_snip/CSharp/UIASelectionPattern_snippets.cs#103)]
+ [!code-vb[UIASelectionPattern_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIASelectionPattern_snip/VisualBasic/UIASelectionPattern_snippets.vb#103)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSelectionRequiredProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsSelectionRequiredProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsSelectionRequiredProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SelectionPattern.IsSelectionRequiredProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.SelectionPattern.SelectionPatternInformation.IsSelectionRequired" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.SelectionPatternIdentifiers>.  
+  
+   
+  
+## Examples  
+ In the following example, a root element is passed to a function that returns a collection of [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] elements that are descendants of the root and satisfy a set of property conditions.  
+  
+ [!code-csharp[UIASelectionPattern_snip#100](~/samples/snippets/csharp/VS_Snippets_Wpf/UIASelectionPattern_snip/CSharp/UIASelectionPattern_snippets.cs#100)]
+ [!code-vb[UIASelectionPattern_snip#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIASelectionPattern_snip/VisualBasic/UIASelectionPattern_snippets.vb#100)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pattern">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationPattern Pattern;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationPattern Pattern" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SelectionPattern.Pattern" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationPattern</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="T:System.Windows.Automation.SelectionPattern" /> control pattern.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.SelectionPatternIdentifiers>.  
+  
+ The pattern identifier is passed to methods such as <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A> to retrieve the control pattern of interest from the specified <xref:System.Windows.Automation.AutomationElement>.  
+  
+   
+  
+## Examples  
+ In the following example, a <xref:System.Windows.Automation.SelectionPattern> control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIASelectionPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIASelectionPattern_snip/CSharp/UIASelectionPattern_snippets.cs#101)]
+ [!code-vb[UIASelectionPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIASelectionPattern_snip/VisualBasic/UIASelectionPattern_snippets.vb#101)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectionProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty SelectionProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty SelectionProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SelectionPattern.SelectionProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the property that gets the selected items in a container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.SelectionPatternIdentifiers>.  
+  
+ This property is not present in <xref:System.Windows.Automation.SelectionPattern.SelectionPatternInformation> and must be retrieved by using <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A> or <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A>.  
+  
+   
+  
+## Examples  
+ In the following example, a collection of <xref:System.Windows.Automation.AutomationElement>s representing the selected items in a selection container is obtained.  
+  
+ [!code-csharp[UIASelectionPattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIASelectionPattern_snip/CSharp/UIASelectionPattern_snippets.cs#102)]
+ [!code-vb[UIASelectionPattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIASelectionPattern_snip/VisualBasic/UIASelectionPattern_snippets.vb#102)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

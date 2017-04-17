@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "data types [Visual Basic], assigning"
 ms.assetid: eed44dff-eaee-4937-a89f-444e418e74f6
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

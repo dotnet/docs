@@ -1,0 +1,200 @@
+<Type Name="TransactedReceiveScope" FullName="System.ServiceModel.Activities.TransactedReceiveScope">
+  <TypeSignature Language="C#" Value="public sealed class TransactedReceiveScope : System.Activities.NativeActivity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TransactedReceiveScope extends System.Activities.NativeActivity" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.TransactedReceiveScope" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.NativeActivity</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ContentProperty("Body")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>An activity which scopes the lifetime of a transaction which is initiated by a received message. The transaction may be flowed into the workflow on the initiating message, or be created by the dispatcher when the message is received.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Activities.TransactedReceiveScope> activity enables you to control the lifetime of the flowed transaction.  
+  
+> [!WARNING]
+>  For an initiating <xref:System.ServiceModel.Activities.TransactedReceiveScope> activity (a <xref:System.ServiceModel.Activities.TransactedReceiveScope> that contains a <xref:System.ServiceModel.Activities.Receive> activity with <xref:System.ServiceModel.Activities.Receive.CanCreateInstance%2A> set to `true`), the transaction is created before the runtime starts to execute the <xref:System.ServiceModel.Activities.TransactedReceiveScope> activity. This transaction is not ambient at the workflow activity layer, but it is ambient in the underlying persistence layers. If execution of the workflow encounters a <xref:System.Activities.Statements.Persist> activity before the <xref:System.ServiceModel.Activities.TransactedReceiveScope> activity, the runtime tries to persist under the ambient transaction. This behavior causes a block until the transaction is completed. Because the workflow execution has not reached the <xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A> section, the transaction cannot finish. This deadlock causes the workflow to stop responding until the transaction times out. When the transaction times out, the newly created instance is aborted.  
+  
+> [!IMPORTANT]
+>  Whenever you use a <xref:System.ServiceModel.Activities.TransactedReceiveScope> it is recommended to place all Receives in the workflow within <xref:System.ServiceModel.Activities.TransactedReceiveScope> activities.  
+  
+> [!IMPORTANT]
+>  When using <xref:System.ServiceModel.Activities.TransactedReceiveScope> and messages arrive in the incorrect order, the workflow will be aborted when trying to deliver the first out of order message. You must make sure your workflow is always at a consistent stopping point when the workflow idles. This will allow you to restart the workflow from a previous persistence point should the workflow be aborted.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.ServiceModel.Activities.TransactedReceiveScope> class in a <xref:System.Activities.Statements.Sequence> activity.  
+  
+ [!code-csharp[TransactedReceiveScope#0](~/samples/snippets/csharp/VS_Snippets_CFX/transactedreceivescope/cs/common/codeserviceworkflow.cs#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TransactedReceiveScope ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.TransactedReceiveScope.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.TransactedReceiveScope" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Body">
+      <MemberSignature Language="C#" Value="public System.Activities.Activity Body { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Activity Body" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.TransactedReceiveScope.Body" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.Activity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Activities.Activity" /> that makes up the body of the <see cref="T:System.ServiceModel.Activities.TransactedReceiveScope" /> activity.</summary>
+        <value>The body of the transacted receive scope.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The transaction is ambient for the entire duration of the body.  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A> property.  
+  
+ [!code-csharp[TransactedReceiveScope#0](~/samples/snippets/csharp/VS_Snippets_CFX/transactedreceivescope/cs/common/codeserviceworkflow.cs#0)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheMetadata">
+      <MemberSignature Language="C#" Value="protected override void CacheMetadata (System.Activities.NativeActivityMetadata metadata);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.NativeActivityMetadata metadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.TransactedReceiveScope.CacheMetadata(System.Activities.NativeActivityMetadata)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadata" Type="System.Activities.NativeActivityMetadata" />
+      </Parameters>
+      <Docs>
+        <param name="metadata">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="protected override void Execute (System.Activities.NativeActivityContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Execute(class System.Activities.NativeActivityContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.TransactedReceiveScope.Execute(System.Activities.NativeActivityContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.NativeActivityContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Request">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Activities.Receive Request { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Activities.Receive Request" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.TransactedReceiveScope.Request" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Activities.Receive</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.ServiceModel.Activities.Receive" /> activity associated with this <see cref="T:System.ServiceModel.Activities.TransactedReceiveScope" /> activity.</summary>
+        <value>The receive activity associated with the transacted receive scope.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to set the <xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A> property.  
+  
+ [!code-csharp[TransactedReceiveScope#0](~/samples/snippets/csharp/VS_Snippets_CFX/transactedreceivescope/cs/common/codeserviceworkflow.cs#0)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Variables">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Activities.Variable&gt; Variables { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.Variable&gt; Variables" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.TransactedReceiveScope.Variables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.Variable&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of <see cref="T:System.Activities.Variable" /> associated with this <see cref="T:System.ServiceModel.Activities.TransactedReceiveScope" />.</summary>
+        <value>The variables associated with the transacted receive scope.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to set the <xref:System.ServiceModel.Activities.TransactedReceiveScope.Variables%2A> property.  
+  
+ [!code-csharp[TransactedReceiveScope#0](~/samples/snippets/csharp/VS_Snippets_CFX/transactedreceivescope/cs/common/codeserviceworkflow.cs#0)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

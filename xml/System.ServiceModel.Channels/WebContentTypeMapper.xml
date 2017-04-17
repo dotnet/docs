@@ -1,0 +1,73 @@
+<Type Name="WebContentTypeMapper" FullName="System.ServiceModel.Channels.WebContentTypeMapper">
+  <TypeSignature Language="C#" Value="public abstract class WebContentTypeMapper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WebContentTypeMapper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.WebContentTypeMapper" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Web</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies the format to which the content type of an incoming message is mapped.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an extensibility point in the programming model that is used by the Web message encoder to override how content types are mapped to formats. To implement this class, override the <xref:System.ServiceModel.Channels.WebContentTypeMapper.GetMessageFormatForContentType%28System.String%29> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected WebContentTypeMapper ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.WebContentTypeMapper.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.WebContentTypeMapper" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMessageFormatForContentType">
+      <MemberSignature Language="C#" Value="public abstract System.ServiceModel.Channels.WebContentFormat GetMessageFormatForContentType (string contentType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.ServiceModel.Channels.WebContentFormat GetMessageFormatForContentType(string contentType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.WebContentTypeMapper.GetMessageFormatForContentType(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.WebContentFormat</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contentType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="contentType">The content type that indicates the MIME type of data to be interpreted.</param>
+        <summary>When overridden in a derived class, returns the message format used for a specified content type.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Channels.WebContentFormat" /> that specifies the format to which the message content type is mapped.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is intended to be an extensibility mechanism that can be used to override how content types are mapped to Web content formats. For example, if all incoming messages are processed as “raw binary data” without ever doing XML or JSON parsing, you could implement a <xref:System.ServiceModel.Channels.WebContentTypeMapper> that always returned <xref:System.ServiceModel.Channels.WebContentFormat> regardless of the content type that was passed in.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

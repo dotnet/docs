@@ -1,0 +1,25 @@
+<Type Name="VisualStyleElement+ComboBox" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+ComboBox">
+  <TypeSignature Language="C#" Value="public static class VisualStyleElement.ComboBox" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit VisualStyleElement/ComboBox extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.VisualStyleElement.ComboBox" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains a class that provides <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> objects for the drop-down arrow of the combo box control. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ComboBox> class provides a foundation in which the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ComboBox.DropDownButton> class is defined. <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ComboBox.DropDownButton> provides a set of properties that return a <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> for each state of the drop-down arrow of a combo box control. To get a <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> for the text box portion of a combo box, use one of the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox.TextEdit> properties.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

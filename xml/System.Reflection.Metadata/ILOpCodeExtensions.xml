@@ -1,0 +1,107 @@
+<Type Name="ILOpCodeExtensions" FullName="System.Reflection.Metadata.ILOpCodeExtensions">
+  <TypeSignature Language="C#" Value="public static class ILOpCodeExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ILOpCodeExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ILOpCodeExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetBranchOperandSize">
+      <MemberSignature Language="C#" Value="public static int GetBranchOperandSize (this System.Reflection.Metadata.ILOpCode opCode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetBranchOperandSize(valuetype System.Reflection.Metadata.ILOpCode opCode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ILOpCodeExtensions.GetBranchOperandSize(System.Reflection.Metadata.ILOpCode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="opCode" Type="System.Reflection.Metadata.ILOpCode" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="opCode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLongBranch">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.ILOpCode GetLongBranch (this System.Reflection.Metadata.ILOpCode opCode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.ILOpCode GetLongBranch(valuetype System.Reflection.Metadata.ILOpCode opCode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ILOpCodeExtensions.GetLongBranch(System.Reflection.Metadata.ILOpCode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="opCode" Type="System.Reflection.Metadata.ILOpCode" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="opCode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetShortBranch">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.ILOpCode GetShortBranch (this System.Reflection.Metadata.ILOpCode opCode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.ILOpCode GetShortBranch(valuetype System.Reflection.Metadata.ILOpCode opCode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ILOpCodeExtensions.GetShortBranch(System.Reflection.Metadata.ILOpCode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="opCode" Type="System.Reflection.Metadata.ILOpCode" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="opCode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBranch">
+      <MemberSignature Language="C#" Value="public static bool IsBranch (this System.Reflection.Metadata.ILOpCode opCode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsBranch(valuetype System.Reflection.Metadata.ILOpCode opCode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ILOpCodeExtensions.IsBranch(System.Reflection.Metadata.ILOpCode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="opCode" Type="System.Reflection.Metadata.ILOpCode" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="opCode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

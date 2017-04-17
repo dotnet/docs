@@ -1,0 +1,185 @@
+<Type Name="DataControlReference" FullName="System.Web.DynamicData.DataControlReference">
+  <TypeSignature Language="C#" Value="public class DataControlReference" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataControlReference extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DataControlReference" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DynamicData</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Enables the <see cref="T:System.Web.DynamicData.DynamicDataManager" /> to declaratively define data controls that it manages.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows the markup from a Dynamic Data page template that connects the <xref:System.Web.DynamicData.DynamicDataManager> to a <xref:System.Web.UI.WebControls.FormView> control.  
+  
+> [!NOTE]
+>  Some markup is removed for clarity.  
+  
+```  
+<asp:DynamicDataManager ID="DynamicDataManager1" runat="server"   
+    AutoLoadForeignKeys="true">  
+  <DataControls>  
+    <asp:DataControlReference ControlID="FormView1" />  
+  </DataControls>  
+</asp:DynamicDataManager>  
+  
+<asp:UpdatePanel ID="UpdatePanel1" runat="server">  
+  <ContentTemplate>  
+    <!-- Items ommited for clarity. -->  
+    <asp:FormView runat="server" ID="FormView1"   
+        DataSourceID="DetailsDataSource" DefaultMode="Edit"  
+        OnDataBound="FormView1_DataBound">  
+        <!-- Items ommited for clarity. -->  
+    </asp:FormView>  
+  
+  </ContentTemplate>  
+</asp:UpdatePanel>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataControlReference ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DataControlReference.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.DataControlReference" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [ASP.NET Dynamic Data Infrastructure](http://msdn.microsoft.com/library/161bbf29-a0b1-4034-b42f-e8b7a42f8bcf)  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlID">
+      <MemberSignature Language="C#" Value="public string ControlID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ControlID" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DataControlReference.ControlID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter("System.Web.DynamicData.Design.DataControlReferenceIDConverter, System.Web.DynamicData.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.IDReferenceProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the ID of the data-bound control that is managed by the <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control.</summary>
+        <value>The ID of the data-bound control that is managed by the <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows the markup from a Dynamic Data page template that connects the <xref:System.Web.DynamicData.DynamicDataManager> control to a <xref:System.Web.UI.WebControls.FormView> control. The <xref:System.Web.DynamicData.DataControlReference.ControlID%2A> property is set to "FormView1".  
+  
+> [!NOTE]
+>  Some markup is removed for clarity.  
+  
+```  
+<asp:DynamicDataManager ID="DynamicDataManager1" runat="server"   
+    AutoLoadForeignKeys="true">  
+  <DataControls>  
+    <asp:DataControlReference ControlID="FormView1" />  
+  </DataControls>  
+</asp:DynamicDataManager>  
+  
+<asp:UpdatePanel ID="UpdatePanel1" runat="server">  
+  <ContentTemplate>  
+  <!-- Items ommited for clarity. -->  
+    <asp:FormView runat="server" ID="FormView1"   
+        DataSourceID="DetailsDataSource" DefaultMode="Edit"  
+        OnDataBound="FormView1_DataBound">  
+        <!-- Items ommited for clarity. -->  
+    </asp:FormView>  
+  
+  </ContentTemplate>  
+</asp:UpdatePanel>  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Owner">
+      <MemberSignature Language="C#" Value="public System.Web.DynamicData.DynamicDataManager Owner { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.DynamicDataManager Owner" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DataControlReference.Owner" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.DynamicDataManager</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control that contains the data control.</summary>
+        <value>The <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control that contains the data control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DataControlReference.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the literal string <c>DataControl</c><c>:</c> that has the value of the <see cref="P:System.Web.DynamicData.DataControlReference.ControlID" /> control appended to it.</summary>
+        <returns>The literal string <c>DataControl:</c> that has the value of the <see cref="P:System.Web.DynamicData.DataControlReference.ControlID" /> property appended to it.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Web.DynamicData.DataControlReference.ControlID%2A> property is empty or `null`, the literal string `DataControl` is returned.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

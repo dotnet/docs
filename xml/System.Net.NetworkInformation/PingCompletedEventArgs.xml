@@ -1,0 +1,77 @@
+<Type Name="PingCompletedEventArgs" FullName="System.Net.NetworkInformation.PingCompletedEventArgs">
+  <TypeSignature Language="C#" Value="public class PingCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PingCompletedEventArgs extends System.ComponentModel.AsyncCompletedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.PingCompletedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.AsyncCompletedEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Net.NetworkInformation.Ping.PingCompleted" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Instances of this class are passed to a <xref:System.Net.NetworkInformation.PingCompletedEventHandler> method that is called when a <xref:System.Net.NetworkInformation.Ping.SendAsync%2A> call completes. The <xref:System.Net.NetworkInformation.Ping.SendAsync%2A> methods send an Internet Control Message Protocol (ICMP) echo request asynchronously and wait for a corresponding ICMP echo reply message. The <xref:System.Net.NetworkInformation.PingCompletedEventArgs.Reply%2A> property contains the results of the ICMP echo request.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates sending an ICMP echo request asynchronously.  
+  
+ [!code-cpp[NclPingAsync#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclPingAsync/CPP/asyncping.cpp#1)]
+ [!code-csharp[NclPingAsync#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclPingAsync/CS/asyncping.cs#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Reply">
+      <MemberSignature Language="C#" Value="public System.Net.NetworkInformation.PingReply Reply { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.NetworkInformation.PingReply Reply" />
+      <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.PingCompletedEventArgs.Reply" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.NetworkInformation.PingReply</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that contains data that describes an attempt to send an Internet Control Message Protocol (ICMP) echo request message and receive a corresponding ICMP echo reply message.</summary>
+        <value>A <see cref="T:System.Net.NetworkInformation.PingReply" /> object that describes the results of the ICMP echo request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value of <xref:System.Net.NetworkInformation.PingReply.Status%2A> is not <xref:System.Net.NetworkInformation.IPStatus>, you should not use the values that are returned by the <xref:System.Net.NetworkInformation.PingReply.RoundtripTime%2A>, <xref:System.Net.NetworkInformation.PingReply.Options%2A>, and <xref:System.Net.NetworkInformation.PingReply.Buffer%2A> properties. The <xref:System.Net.NetworkInformation.PingReply.RoundtripTime%2A> and <xref:System.Net.NetworkInformation.PingReply.Buffer%2A> properties will return zero, and the <xref:System.Net.NetworkInformation.PingReply.Options%2A> property will return `null`.  
+  
+   
+  
+## Examples  
+ The following code example implements a method that is used to respond to a <xref:System.Net.NetworkInformation.Ping.PingCompleted> event. For the complete example, see the <xref:System.Net.NetworkInformation.PingCompletedEventArgs> class overview.  
+  
+ [!code-cpp[NclPingAsync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclPingAsync/CPP/asyncping.cpp#4)]
+ [!code-csharp[NclPingAsync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclPingAsync/CS/asyncping.cs#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

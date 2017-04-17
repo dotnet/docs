@@ -1,0 +1,484 @@
+<Type Name="ScriptManagerProxy" FullName="System.Web.UI.ScriptManagerProxy">
+  <TypeSignature Language="C#" Value="public class ScriptManagerProxy : System.Web.UI.Control" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScriptManagerProxy extends System.Web.UI.Control" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptManagerProxy" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Control</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("Scripts")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.ScriptManagerProxyDesigner, System.Web.Extensions.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Drawing.ToolboxBitmap(typeof(EmbeddedResourceFinder), "System.Web.Resources.ScriptManagerProxy.bmp")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.NonVisualControl</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.ParseChildren(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.PersistChildren(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Enables nested components such as content pages and user controls to add script and service references to pages when a <see cref="T:System.Web.UI.ScriptManager" /> control is already defined in a parent element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this topic:  
+  
+-   [Introduction](#introduction)  
+  
+-   [Declarative Syntax](#declarative_syntax)  
+  
+<a name="introduction"></a>   
+## Introduction  
+ A Web page can contain only one <xref:System.Web.UI.ScriptManager> control, either directly on the page or indirectly inside a nested or parent component. The <xref:System.Web.UI.ScriptManagerProxy> control lets you add scripts and services to content pages and to user controls if the master page or host page already contains a <xref:System.Web.UI.ScriptManager> control.  
+  
+ When you use the <xref:System.Web.UI.ScriptManagerProxy> control, you can add to the script and service collections defined by the <xref:System.Web.UI.ScriptManager> control. If you do not want to include specific scripts and services on every page that includes a particular <xref:System.Web.UI.ScriptManager> control, you can remove them from the <xref:System.Web.UI.ScriptManager> control. You can then add them to individual pages by using the <xref:System.Web.UI.ScriptManagerProxy> control instead.  
+  
+<a name="declarative_syntax"></a>   
+## Declarative Syntax  
+  
+```  
+<asp:ScriptManagerProxy  
+    AuthenticationService-Path="uri"  
+    EnableTheming="True|False"  
+    EnableViewState="True|False"  
+    ID="string"  
+    OnDataBinding="DataBinding event handler"  
+    OnDisposed="Disposed event handler"  
+    OnInit="Init event handler"  
+    OnLoad="Load event handler"  
+    OnPreRender="PreRender event handler"  
+    OnUnload="Unload event handler"  
+    ProfileService-LoadProperties="string"  
+    ProfileService-Path="uri"  
+    RoleService-LoadRoles="True|False"  
+    RoleService-Path="uri"  
+    runat="server"  
+    SkinID="string"  
+    Visible="True|False"  
+>  
+        <AuthenticationService  
+            Path="uri"  
+        />  
+        <ProfileService  
+            LoadProperties="string"  
+            Path="uri"  
+        />  
+        <RoleService  
+            LoadRoles="True|False"  
+            Path="uri"  
+        />  
+        <Scripts>  
+            <asp:ScriptReference  
+                Assembly="string"  
+                IgnoreScriptPath="True|False"  
+                Name="string"  
+                NotifyScriptLoaded="True|False"  
+                Path="string"  
+                ResourceUICultures="string"  
+                ScriptMode="Auto|Debug|Inherit|Release"  
+            />  
+        </Scripts>  
+        <Services>  
+            <asp:ServiceReference  
+                InlineScript="True|False"  
+                Path="string"  
+            />  
+        </Services>  
+</asp:ScriptManagerProxy>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ScriptManagerProxy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManagerProxy.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ScriptManagerProxy" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A page that contains a <xref:System.Web.UI.ScriptManagerProxy> control must also contain a valid <xref:System.Web.UI.ScriptManager> control. For example, if you are putting a <xref:System.Web.UI.ScriptManagerProxy> control on a content page, the page must reference a master page that contains a <xref:System.Web.UI.ScriptManager> control.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">There is no <see cref="T:System.Web.UI.ScriptManager" /> for the current page.  
+  
+ \- or -  
+  
+ The current page is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthenticationService">
+      <MemberSignature Language="C#" Value="public System.Web.UI.AuthenticationServiceManager AuthenticationService { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.AuthenticationServiceManager AuthenticationService" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManagerProxy.AuthenticationService" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.AuthenticationServiceManager</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.UI.AuthenticationServiceManager" /> object that is associated with the current <see cref="T:System.Web.UI.ScriptManagerProxy" /> instance.</summary>
+        <value>The <see cref="T:System.Web.UI.AuthenticationServiceManager" /> object for the current <see cref="T:System.Web.UI.ScriptManagerProxy" /> instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.AuthenticationServiceManager> object that is returned by this property represents the authentication service that is registered with the page.  
+  
+ You can use the ASP.NET authentication service or use a custom authentication service. To use a custom service, you can register it by including a `AuthenticationService` element inside the `ScriptManagerProxy` element on the page. You can also programmatically configure the <xref:System.Web.UI.AuthenticationServiceManager> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompositeScript">
+      <MemberSignature Language="C#" Value="public System.Web.UI.CompositeScriptReference CompositeScript { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.CompositeScriptReference CompositeScript" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManagerProxy.CompositeScript" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.CompositeScriptReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to the composite script that supports the content page.</summary>
+        <value>A reference to the composite script.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Navigate">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Web.UI.HistoryEventArgs&gt; Navigate;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.UI.HistoryEventArgs&gt; Navigate" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.ScriptManagerProxy.Navigate" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Action")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Web.UI.HistoryEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the user clicks the browser's **Back** or **Forward** button.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a user clicks the browser's **Back** button, the browser navigates through previously-viewed URLs, which can include URLs that contain history-point state data. If client code in the Web page detects that the URL contains history state data, it makes a request to the server page. This acts as a postback event, and the <xref:System.Web.UI.ScriptManagerProxy> server control raises the `Navigate` event. You can handle this event and re-create the page as required in the Web application by using the state data that is passed with the event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInit">
+      <MemberSignature Language="C#" Value="protected override void OnInit (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManagerProxy.OnInit(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data.</param>
+        <summary>Raises the base <see cref="E:System.Web.UI.Control.Init" /> event and registers the <see cref="T:System.Web.UI.ScriptManagerProxy" /> control with the <see cref="T:System.Web.UI.ScriptManager" /> control.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProfileService">
+      <MemberSignature Language="C#" Value="public System.Web.UI.ProfileServiceManager ProfileService { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ProfileServiceManager ProfileService" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManagerProxy.ProfileService" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ProfileServiceManager</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.UI.ProfileServiceManager" /> object that is associated with the current <see cref="T:System.Web.UI.ScriptManagerProxy" /> instance.</summary>
+        <value>The <see cref="T:System.Web.UI.ProfileServiceManager" /> object for the current <see cref="T:System.Web.UI.ScriptManagerProxy" /> instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.ProfileServiceManager> object that is returned by this property represents the profile service that is registered with the page.  
+  
+ You can use the ASP.NET profile service or use a custom profile service. To use a custom service, you can register it by including a `ProfileService` element inside the `ScriptManagerProxy` element on the page. You can also programmatically configure the <xref:System.Web.UI.ProfileServiceManager> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RoleService">
+      <MemberSignature Language="C#" Value="public System.Web.UI.RoleServiceManager RoleService { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.RoleServiceManager RoleService" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManagerProxy.RoleService" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.RoleServiceManager</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.UI.RoleServiceManager" /> object that is associated with the current <see cref="T:System.Web.UI.ScriptManagerProxy" /> instance.</summary>
+        <value>The <see cref="T:System.Web.UI.RoleServiceManager" /> object for the current <see cref="T:System.Web.UI.ScriptManagerProxy" /> instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.RoleServiceManager> object that is returned by this property represents the role service that is registered with the page.  
+  
+ You can use the ASP.NET role service or use a custom role service. To use a custom service, you can register it by including a `RoleService` element inside the `ScriptManagerProxy` element on the page. You can also programmatically configure the <xref:System.Web.UI.RoleServiceManager> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Scripts">
+      <MemberSignature Language="C#" Value="public System.Web.UI.ScriptReferenceCollection Scripts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ScriptReferenceCollection Scripts" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManagerProxy.Scripts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.CollectionEditorBase, System.Web.Extensions.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ScriptReferenceCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.UI.ScriptReferenceCollection" /> object that contains a <see cref="T:System.Web.UI.ScriptReference" /> object for each script file that is explicitly registered with the <see cref="T:System.Web.UI.ScriptManagerProxy" /> control.</summary>
+        <value>A collection of <see cref="T:System.Web.UI.ScriptReference" /> objects for each script file that the <see cref="T:System.Web.UI.ScriptManagerProxy" /> control sends to the browser.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.ScriptManagerProxy.Scripts%2A> collection enables you to add script references to any scripts that are already registered with the <xref:System.Web.UI.ScriptManager> control.  
+  
+ You can add script references to the <xref:System.Web.UI.ScriptManagerProxy.Scripts%2A> collection declaratively by using the `ScriptReference` element. You can add script references programmatically by adding <xref:System.Web.UI.ScriptReference> objects to the <xref:System.Web.UI.ScriptManagerProxy.Scripts%2A> collection.  
+  
+ If a script is already registered with the <xref:System.Web.UI.ScriptManagerProxy> or <xref:System.Web.UI.ScriptManager> control, the script is not registered again.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Services">
+      <MemberSignature Language="C#" Value="public System.Web.UI.ServiceReferenceCollection Services { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ServiceReferenceCollection Services" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManagerProxy.Services" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.ServiceReferenceCollectionEditor, System.Web.Extensions.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ServiceReferenceCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.UI.ScriptReferenceCollection" /> object that contains a <see cref="T:System.Web.UI.ServiceReference" /> object for each service that is explicitly registered with the <see cref="T:System.Web.UI.ScriptManagerProxy" /> control.</summary>
+        <value>A collection that contains an <see cref="T:System.Web.UI.ServiceReference" /> object for each service that is registered with the <see cref="T:System.Web.UI.ScriptManagerProxy" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.ScriptManagerProxy.Services%2A> collection enables you to add services to any services that are already registered with the <xref:System.Web.UI.ScriptManager> control.  
+  
+ You can add service references to the <xref:System.Web.UI.ScriptManagerProxy.Services%2A> collection declaratively by using the `ServiceReference` element. You can add service references programmatically by adding <xref:System.Web.UI.ServiceReference> objects to the <xref:System.Web.UI.ScriptManagerProxy.Services%2A> collection.  
+  
+ If a service is already registered with the <xref:System.Web.UI.ScriptManagerProxy> or <xref:System.Web.UI.ScriptManager> control, the service is not registered again.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visible">
+      <MemberSignature Language="C#" Value="public override bool Visible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManagerProxy.Visible" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Overrides the <see cref="P:System.Web.UI.Control.Visible" /> property inherited from the base <see cref="T:System.Web.UI.Control" /> class to prevent setting this value.</summary>
+        <value>
+          <see langword="true" /> if the control is rendered on the page; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Control.Visible%2A> property is overridden in the <xref:System.Web.UI.ScriptManagerProxy> class to prevent setting this property. The <xref:System.Web.UI.ScriptManagerProxy.Visible%2A> property returns `true` unless it is inside a container, such as a <xref:System.Web.UI.UserControl> whose <xref:System.Web.UI.Control.Visible%2A> property is set to `false`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">A value is assigned to the <see cref="P:System.Web.UI.ScriptManagerProxy.Visible" /> property.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

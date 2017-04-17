@@ -1,0 +1,455 @@
+<Type Name="ListControlDesigner" FullName="System.Web.UI.Design.WebControls.ListControlDesigner">
+  <TypeSignature Language="C#" Value="public class ListControlDesigner : System.Web.UI.Design.WebControls.DataBoundControlDesigner" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListControlDesigner extends System.Web.UI.Design.WebControls.DataBoundControlDesigner" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.ListControlDesigner" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Design.WebControls.DataBoundControlDesigner</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Web.UI.Design.SupportsPreviewControl(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Serves as the base class for designers that provide design-time support in the Visual Web Designer for controls that are derived from the <see cref="T:System.Web.UI.WebControls.ListControl" /> abstract class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In the Visual Web Designer, when the user switches from Source to Design view, the markup source code that describes a control derived from the <xref:System.Web.UI.WebControls.ListControl> class is parsed and a design-time version of the control is created on the design surface. When the user switches back to Source view, the design-time control is persisted to the markup source code and edited into the markup for the Web page. The <xref:System.Web.UI.Design.WebControls.ListControlDesigner> class serves as the base class for designers that provide design-time support in the Visual Web Designer for controls that are derived from the <xref:System.Web.UI.WebControls.ListControl>.  
+  
+ The <xref:System.Web.UI.Design.WebControls.ListControlDesigner> class properties provide the following functionality:  
+  
+-   The <xref:System.Web.UI.Design.WebControls.ListControlDesigner.ActionLists%2A> property returns a <xref:System.ComponentModel.Design.DesignerActionListCollection> object, which typically contains an object that is derived from the <xref:System.ComponentModel.Design.DesignerActionList> object for each level in the inheritance tree of the designer.  
+  
+-   The <xref:System.Web.UI.Design.WebControls.ListControlDesigner.DataTextField%2A> and <xref:System.Web.UI.Design.WebControls.ListControlDesigner.DataValueField%2A> properties provide access to the corresponding properties of a control that is derived from the <xref:System.Web.UI.WebControls.ListControl> class. The <xref:System.Web.UI.Design.WebControls.ListControlDesigner.DataTextField%2A> and <xref:System.Web.UI.Design.WebControls.ListControlDesigner.DataValueField%2A> indicate the fields of the data source that provide the text and value content of the list items, respectively.  
+  
+ The <xref:System.Web.UI.Design.WebControls.ListControlDesigner> class methods provide the following functionality:  
+  
+-   The <xref:System.Web.UI.Design.WebControls.ListControlDesigner.DataBind%2A> method binds the associated control that is derived from the <xref:System.Web.UI.WebControls.ListControl> to a design-time data source.  
+  
+-   The <xref:System.Web.UI.Design.WebControls.ListControlDesigner.GetDesignTimeHtml%2A> method returns the markup that is used to render the associated control at design time.  
+  
+-   The <xref:System.Web.UI.Design.WebControls.ListControlDesigner.GetSelectedDataSource%2A> method returns the design-time <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource%2A> component from the associated control container.  
+  
+-   The <xref:System.Web.UI.Design.WebControls.ListControlDesigner.GetResolvedSelectedDataSource%2A> method returns the <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource%2A> from the control container, resolved to the design-time <xref:System.Web.UI.Design.WebControls.DataBoundControlDesigner.DataMember%2A> property of the control.  
+  
+-   The <xref:System.Web.UI.Design.WebControls.ListControlDesigner.Initialize%2A> method prepares the designer to view and design the associated control that is derived from the <xref:System.Web.UI.WebControls.ListControl>.  
+  
+-   The <xref:System.Web.UI.Design.WebControls.ListControlDesigner.OnDataSourceChanged%2A> method is called when the <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource%2A> for the associated control has changed.  
+  
+-   The <xref:System.Web.UI.Design.WebControls.ListControlDesigner.PreFilterProperties%2A> method is used to remove additional properties from, add additional properties to, or shadow properties of the associated control that is derived from the <xref:System.Web.UI.WebControls.ListControl>.  
+  
+   
+  
+## Examples  
+ This section provides two code examples. The first demonstrates how to derive a custom control designer.  The second demonstrates how to associate a derived control with a designer.  
+  
+ The following code example shows how to create a class named `SimpleRadioButtonListDesigner` that inherits from the <xref:System.Web.UI.Design.WebControls.ListControlDesigner> class. The `SimpleRadioButtonListDesigner` class overrides the <xref:System.Web.UI.Design.WebControls.ListControlDesigner.GetDesignTimeHtml%2A>, <xref:System.Web.UI.Design.WebControls.ListControlDesigner.Initialize%2A>, and <xref:System.Web.UI.Design.WebControls.ListControlDesigner.OnDataSourceChanged%2A> methods. The `SimpleRadioButtonListDesigner` class displays a `SimpleRadioButtonList` control on the design surface.  
+  
+ [!code-csharp[ListControlDesigner_Samples#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlDesigner_Samples/CS/SimpleRadioButtonListDesigner.cs#1)]
+ [!code-vb[ListControlDesigner_Samples#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlDesigner_Samples/VB/simpleradiobuttonlistdesigner.vb#1)]  
+  
+ The following code example derives the `SimpleRadioButtonList` control from the <xref:System.Web.UI.WebControls.RadioButtonList> control, and shows how to use the <xref:System.ComponentModel.DesignerAttribute> class to associate the `SimpleRadioButtonList` control with its designer, the `SimpleRadioButtonListDesigner` class.  
+  
+ [!code-csharp[ListControlDesigner_Samples#5](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlDesigner_Samples/CS/SimpleRadioButtonList.cs#5)]
+ [!code-vb[ListControlDesigner_Samples#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlDesigner_Samples/VB/simpleradiobuttonlist.vb#5)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListControlDesigner ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListControlDesigner.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.ListControlDesigner" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework internally constructs a new instance of the <xref:System.Web.UI.Design.WebControls.ListControlDesigner> class when it creates the associated control that is derived from the <xref:System.Web.UI.WebControls.ListControl> class on the design surface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActionLists">
+      <MemberSignature Language="C#" Value="public override System.ComponentModel.Design.DesignerActionListCollection ActionLists { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.DesignerActionListCollection ActionLists" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ListControlDesigner.ActionLists" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DesignerActionListCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the designer action list collection for the designer.</summary>
+        <value>The <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> associated with the designer.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataBind">
+      <MemberSignature Language="C#" Value="protected override void DataBind (System.Web.UI.WebControls.BaseDataBoundControl dataBoundControl);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DataBind(class System.Web.UI.WebControls.BaseDataBoundControl dataBoundControl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListControlDesigner.DataBind(System.Web.UI.WebControls.BaseDataBoundControl)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataBoundControl" Type="System.Web.UI.WebControls.BaseDataBoundControl" />
+      </Parameters>
+      <Docs>
+        <param name="dataBoundControl">The associated control derived from the <see cref="T:System.Web.UI.WebControls.ListControl" />, or a copy of that control.</param>
+        <summary>Binds the specified control to the design-time data source.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the <xref:System.Web.UI.Design.WebControls.DataBoundControlDesigner> base class, the <xref:System.Web.UI.Design.WebControls.DataBoundControlDesigner.DataBind%2A> method sets the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> and <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID%2A> properties of the <xref:System.Web.UI.WebControls.DataBoundControl> object to reference the design-time data source, then calls the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A?displayProperty=fullName> method, and then restores the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> and <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID%2A> properties to their original values.  
+  
+ For the <xref:System.Web.UI.Design.WebControls.ListControlDesigner> class, however, the <xref:System.Web.UI.Design.WebControls.ListControlDesigner.DataBind%2A> method has no functionality, because <xref:System.Web.UI.WebControls.ListItem> objects were just added to the <xref:System.Web.UI.WebControls.ListControl.Items%2A> collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataTextField">
+      <MemberSignature Language="C#" Value="public string DataTextField { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataTextField" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ListControlDesigner.DataTextField" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the data text field of the control.</summary>
+        <value>The <see cref="P:System.Web.UI.WebControls.ListControl.DataTextField" /> of the list control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.ListControlDesigner.DataTextField%2A> property sets or retrieves the markup to use for the design-time representation of the control at run time. This provides access via the designer to the <xref:System.Web.UI.WebControls.ListControl.DataTextField%2A> property of the associated control, which corresponds to the field of the data source that provides the text content of the list items.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataValueField">
+      <MemberSignature Language="C#" Value="public string DataValueField { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataValueField" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ListControlDesigner.DataValueField" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the data value field of the control.</summary>
+        <value>The <see cref="P:System.Web.UI.WebControls.ListControl.DataValueField" /> of the list control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.ListControlDesigner.DataValueField%2A> property provides access via the designer to the <xref:System.Web.UI.WebControls.ListControl.DataValueField%2A> property of the associated control, which indicates the field of the data source that provides the value content of the list items.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDesignTimeHtml">
+      <MemberSignature Language="C#" Value="public override string GetDesignTimeHtml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDesignTimeHtml() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListControlDesigner.GetDesignTimeHtml" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the HTML that is used to represent the control at design time.</summary>
+        <returns>A <see cref="T:System.String" /> containing the markup used to render the control derived from the <see cref="T:System.Web.UI.WebControls.ListControl" /> at design time.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the associated control derived from the <xref:System.Web.UI.WebControls.ListControl> object is data-bound, the <xref:System.Web.UI.Design.WebControls.ListControlDesigner.GetDesignTimeHtml%2A> method clears the <xref:System.Web.UI.WebControls.ListControl.Items%2A> collection and adds a <xref:System.String> message indicating the control is data-bound. If the associated control is not data-bound and the <xref:System.Web.UI.WebControls.ListControl.Items%2A> collection is empty, the <xref:System.Web.UI.Design.WebControls.ListControlDesigner.GetDesignTimeHtml%2A> adds a <xref:System.String> message indicating the control is unbound. Then, the <xref:System.Web.UI.Design.WebControls.ListControlDesigner.GetDesignTimeHtml%2A> calls its base method to generate the markup.  
+  
+   
+  
+## Examples  
+ The following code example overrides the <xref:System.Web.UI.Design.WebControls.ListControlDesigner.GetDesignTimeHtml%2A> method to customize the markup that is displayed for the associated control on a design surface. If the <xref:System.Web.UI.WebControls.WebControl.BackColor%2A> property is not defined for the associated control, it is set to `Gainsboro`, and the control is displayed with that background color. After this is done, the base implementation of the <xref:System.Web.UI.Design.WebControls.ListControlDesigner.GetDesignTimeHtml%2A> method is called.  
+  
+ This code example is part of a larger example provided for the <xref:System.Web.UI.Design.WebControls.ListControlDesigner> class.  
+  
+ [!code-csharp[ListControlDesigner_Samples#2](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlDesigner_Samples/CS/SimpleRadioButtonListDesigner.cs#2)]
+ [!code-vb[ListControlDesigner_Samples#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlDesigner_Samples/VB/simpleradiobuttonlistdesigner.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResolvedSelectedDataSource">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerable GetResolvedSelectedDataSource ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IEnumerable GetResolvedSelectedDataSource() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListControlDesigner.GetResolvedSelectedDataSource" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the data source component from the associated control container, resolved to a specific data member.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerable" /> containing the design-time <see cref="P:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource" />, resolved to the <see cref="P:System.Web.UI.Design.WebControls.DataBoundControlDesigner.DataMember" /> of the associated control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.ListControlDesigner.GetSelectedDataSource%2A> method returns `null` if a <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource%2A> property is not found, or if a <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource%2A> with the same name does not exist.  
+  
+ If the <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource%2A> cannot be resolved to the <xref:System.Web.UI.Design.WebControls.DataBoundControlDesigner.DataMember%2A> property of the associated control, the <xref:System.Web.UI.Design.WebControls.ListControlDesigner.GetResolvedSelectedDataSource%2A> returns an <xref:System.Collections.IEnumerable> interface containing the design-time <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSelectedDataSource">
+      <MemberSignature Language="C#" Value="public object GetSelectedDataSource ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetSelectedDataSource() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListControlDesigner.GetSelectedDataSource" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the data source component from the associated control container.</summary>
+        <returns>An object implementing an <see cref="T:System.Collections.IEnumerable" /> interface and containing the design-time <see cref="P:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource" /> of the associated control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.ListControlDesigner.GetSelectedDataSource%2A> method returns `null` if a <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource%2A> property is not found, or if a <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DataSource%2A> with the same name does not exist.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public override void Initialize (System.ComponentModel.IComponent component);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(class System.ComponentModel.IComponent component) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListControlDesigner.Initialize(System.ComponentModel.IComponent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+      </Parameters>
+      <Docs>
+        <param name="component">A control derived from the <see cref="T:System.Web.UI.WebControls.ListControl" /> that implements an <see cref="T:System.ComponentModel.IComponent" />.</param>
+        <summary>Prepares the designer to view, edit, and design the associated control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The designer host calls the <xref:System.Web.UI.Design.WebControls.ListControlDesigner.Initialize%2A> method when it is ready to use the designer to render the control that is derived from the <xref:System.Web.UI.WebControls.ListControl> class. The <xref:System.Web.UI.Design.WebControls.ListControlDesigner.Initialize%2A> method and its base methods configure properties and connect to events that are necessary for the operation of the designer.  
+  
+ The `component` parameter is the control, derived from the <xref:System.Web.UI.WebControls.ListControl>, that is associated with this designer or is a copy of that control.  
+  
+   
+  
+## Examples  
+ The following code example overrides the <xref:System.Web.UI.Design.WebControls.ListControlDesigner.Initialize%2A> method in a designer derived from the <xref:System.Web.UI.Design.WebControls.ListControlDesigner> class to ensure that only instances of a control class named `SimpleRadioButtonList` are used by the custom designer.  
+  
+ This code example is part of a larger example provided for the <xref:System.Web.UI.Design.WebControls.ListControlDesigner> class.  
+  
+ [!code-csharp[ListControlDesigner_Samples#3](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlDesigner_Samples/CS/SimpleRadioButtonListDesigner.cs#3)]
+ [!code-vb[ListControlDesigner_Samples#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlDesigner_Samples/VB/simpleradiobuttonlistdesigner.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDataSourceChanged">
+      <MemberSignature Language="C#" Value="public virtual void OnDataSourceChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnDataSourceChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListControlDesigner.OnDataSourceChanged" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Called when the data source for the associated control has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.OnDataSourceChanged%2A> base method connects the associated control that is derived from the <xref:System.Web.UI.WebControls.ListControl> object to the current data source and, if that is different from the data source to which the control was connected, updates the design-time markup. The <xref:System.Web.UI.Design.WebControls.ListControlDesigner.OnDataSourceChanged%2A> method updates the design-time markup after connecting to the current data source.  
+  
+   
+  
+## Examples  
+ The following code example overrides the <xref:System.Web.UI.Design.WebControls.ListControlDesigner.OnDataSourceChanged%2A> method in a class that inherits from the <xref:System.Web.UI.Design.WebControls.ListControlDesigner> class. When the data source that is associated with the designer class changes, the <xref:System.Web.UI.Design.WebControls.ListControlDesigner.OnDataSourceChanged%2A> method is called and this code sets a variable named `changedDataSource` to `true`.  
+  
+ This code example is part of a larger example provided for the <xref:System.Web.UI.Design.WebControls.ListControlDesigner> class.  
+  
+ [!code-csharp[ListControlDesigner_Samples#4](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlDesigner_Samples/CS/SimpleRadioButtonListDesigner.cs#4)]
+ [!code-vb[ListControlDesigner_Samples#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlDesigner_Samples/VB/simpleradiobuttonlistdesigner.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDataSourceChanged">
+      <MemberSignature Language="C#" Value="protected override void OnDataSourceChanged (bool forceUpdateView);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDataSourceChanged(bool forceUpdateView) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListControlDesigner.OnDataSourceChanged(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="forceUpdateView" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="forceUpdateView">A <see cref="T:System.Boolean" /> that indicates whether the design-time markup is to be unconditionally updated. This parameter is ignored.</param>
+        <summary>Called when the data source for the associated control has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.OnDataSourceChanged%2A> base method connects the associated control that is derived from the <xref:System.Web.UI.WebControls.ListControl> class to the current data source and, if that is different from the data source to which the control was connected, updates the design-time markup. The <xref:System.Web.UI.Design.WebControls.ListControlDesigner.OnDataSourceChanged%2A> method of the designer unconditionally updates the design-time markup after connecting to the current data source. The value of `forceUpdateView` is ignored.  
+  
+   
+  
+## Examples  
+ The following code example overrides the <xref:System.Web.UI.Design.WebControls.ListControlDesigner.OnDataSourceChanged%2A> method in a class that inherits from the <xref:System.Web.UI.Design.WebControls.ListControlDesigner> class. When the data source that is associated with the designer class changes, the <xref:System.Web.UI.Design.WebControls.ListControlDesigner.OnDataSourceChanged%2A> is called and this code sets a variable named `changedDataSource` to `true`.  
+  
+ This code example is part of a larger example provided for the <xref:System.Web.UI.Design.WebControls.ListControlDesigner> class.  
+  
+ [!code-csharp[ListControlDesigner_Samples#4](~/samples/snippets/csharp/VS_Snippets_WebNet/ListControlDesigner_Samples/CS/SimpleRadioButtonListDesigner.cs#4)]
+ [!code-vb[ListControlDesigner_Samples#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ListControlDesigner_Samples/VB/simpleradiobuttonlistdesigner.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="usage">
+          <para>Callers should use the public <see cref="M:System.Web.UI.Design.WebControls.ListControlDesigner.OnDataSourceChanged" /> override.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="PreFilterProperties">
+      <MemberSignature Language="C#" Value="protected override void PreFilterProperties (System.Collections.IDictionary properties);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PreFilterProperties(class System.Collections.IDictionary properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListControlDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="properties" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="properties">A collection implementing the <see cref="T:System.Collections.IDictionary" /> of the added or shadowed properties to expose for the associated control at design time.</param>
+        <summary>Used by the designer to remove additional properties from or add properties to the display in the **Properties** grid or to shadow properties of the associated control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=fullName> method to shadow various control properties with corresponding design-time properties that the designer implements, and to add properties to or remove properties from the **Properties** grid.  
+  
+ For controls that are derived from the <xref:System.Web.UI.WebControls.ListControl> object, the <xref:System.Web.UI.Design.WebControls.ListControlDesigner.PreFilterProperties%2A> adds the <xref:System.Web.UI.Design.DataFieldConverter> attribute to the <xref:System.Web.UI.WebControls.ListControl.DataTextField%2A> and <xref:System.Web.UI.WebControls.ListControl.DataValueField%2A> properties of the associated control.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Override the <see cref="M:System.Web.UI.Design.WebControls.DetailsViewDesigner.PreFilterProperties(System.Collections.IDictionary)" /> method to add properties to or change attributes of properties in the design-time property collection. Be sure to call the base method before performing other processing.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="UseDataSourcePickerActionList">
+      <MemberSignature Language="C#" Value="protected override bool UseDataSourcePickerActionList { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseDataSourcePickerActionList" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ListControlDesigner.UseDataSourcePickerActionList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the associated control should render its default action lists.</summary>
+        <value>Always returns <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.ListControlDesigner.UseDataSourcePickerActionList%2A> property returns `false` so that a data source dropdown is not displayed with the **Choose Data Source** menu item in the **Common Tasks** context menu. Instead, this menu item displays the **Choose Data Source** dialog box, which allows the user to select a <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> and the <xref:System.Web.UI.WebControls.ListControl.DataTextField%2A> and <xref:System.Web.UI.WebControls.ListControl.DataValueField%2A> properties.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Override the <see cref="P:System.Web.UI.Design.WebControls.ListControlDesigner.UseDataSourcePickerActionList" /> property to return <see langword="true" /> if you want the control that is derived from the <see cref="T:System.Web.UI.WebControls.ListControl" /> class to display a data source dropdown with the **Choose Data Source** menu item in the **Common Tasks** context menu at design time.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

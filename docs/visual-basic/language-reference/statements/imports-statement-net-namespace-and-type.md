@@ -27,8 +27,8 @@ helpviewer_keywords:
   - "declared elements [Visual Basic], container elements"
 ms.assetid: 7062f8aa-d890-4232-9eed-92836e13fb6e
 caps.latest.revision: 40
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

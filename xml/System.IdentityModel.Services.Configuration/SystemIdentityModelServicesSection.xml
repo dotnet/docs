@@ -1,0 +1,124 @@
+<Type Name="SystemIdentityModelServicesSection" FullName="System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection">
+  <TypeSignature Language="C#" Value="public sealed class SystemIdentityModelServicesSection : System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SystemIdentityModelServicesSection extends System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationSection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the <see langword="&lt;system.identityModel.services&gt;" /> section in a configuration file. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `<system.identityModel.services>` section configures authentication using WS-Federation protocol. It contains elements that configure the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) and the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SystemIdentityModelServicesSection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public static System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection Current" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to the <see langword="&lt;system.identityModel.services&gt;" /> section from the configuration file.</summary>
+        <value>The <see langword="&lt;system.identityModel.services&gt;" /> section from the configuration file. <see langword="null" /> if the configuration file does not contain a <see langword="&lt;system.identityModel.services&gt;" /> section.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultFederationConfigurationElement">
+      <MemberSignature Language="C#" Value="public static System.IdentityModel.Services.Configuration.FederationConfigurationElement DefaultFederationConfigurationElement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.IdentityModel.Services.Configuration.FederationConfigurationElement DefaultFederationConfigurationElement" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection.DefaultFederationConfigurationElement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Services.Configuration.FederationConfigurationElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the unnamed <see langword="&lt;federationConfiguration&gt;" /> element from the configuration file.</summary>
+        <value>The unnamed <see langword="&lt;federationConfiguration&gt;" /> element from the configuration file. <see langword="null" /> if the configuration file does not contain a <see langword="&lt;system.identityModel.services&gt;" /> section.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The unnamed `<federationConfiguration>` element does not have its `name` attribute set (<xref:System.IdentityModel.Services.Configuration.FederationConfigurationElement.Name%2A?displayProperty=fullName> property is `null`).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FederationConfigurationElements">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Services.Configuration.FederationConfigurationElementCollection FederationConfigurationElements { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Services.Configuration.FederationConfigurationElementCollection FederationConfigurationElements" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection.FederationConfigurationElements" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("", Options=System.Configuration.ConfigurationPropertyOptions.IsDefaultCollection)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Services.Configuration.FederationConfigurationElementCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of <see langword="&lt;federationConfiguration&gt;" /> elements configured in this <see langword="&lt;system.identityModel.services&gt;" /> section.</summary>
+        <value>A collection that contains all of the <see langword="&lt;federationConfiguration&gt;" /> elements configured in this <see langword="&lt;system.identityModel.services&gt;" /> section.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SectionName">
+      <MemberSignature Language="C#" Value="public const string SectionName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string SectionName" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection.SectionName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant that defines the name of the configuration section; “system.identityModel.services”.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

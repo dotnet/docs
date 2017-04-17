@@ -1,0 +1,73 @@
+<Type Name="DataGridSelectionUnit" FullName="System.Windows.Controls.DataGridSelectionUnit">
+  <TypeSignature Language="C#" Value="public enum DataGridSelectionUnit" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridSelectionUnit extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridSelectionUnit" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines constants that specify whether cells, rows, or both, are used for selection in a <see cref="T:System.Windows.Controls.DataGrid" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> and <xref:System.Windows.Controls.DataGrid.SelectionUnit%2A> properties together determine how users can select items in a <xref:System.Windows.Controls.DataGrid>. For example, if the <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> is <xref:System.Windows.Controls.DataGridSelectionMode> and the <xref:System.Windows.Controls.DataGrid.SelectionUnit%2A> is Cell, the user can select only one cell at a time in the <xref:System.Windows.Controls.DataGrid>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Cell">
+      <MemberSignature Language="C#" Value="Cell" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridSelectionUnit Cell = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridSelectionUnit.Cell" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DataGridSelectionUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Only cells are selectable. Clicking a cell selects the cell. Clicking a row or column header does nothing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CellOrRowHeader">
+      <MemberSignature Language="C#" Value="CellOrRowHeader" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridSelectionUnit CellOrRowHeader = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridSelectionUnit.CellOrRowHeader" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DataGridSelectionUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cells and rows are selectable. Clicking a cell selects only the cell. Clicking a row header selects the full row.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FullRow">
+      <MemberSignature Language="C#" Value="FullRow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridSelectionUnit FullRow = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridSelectionUnit.FullRow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DataGridSelectionUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Only full rows are selectable. Clicking a cell or a row header selects the full row.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

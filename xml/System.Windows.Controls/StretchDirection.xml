@@ -1,0 +1,77 @@
+<Type Name="StretchDirection" FullName="System.Windows.Controls.StretchDirection">
+  <TypeSignature Language="C#" Value="public enum StretchDirection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StretchDirection extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.StretchDirection" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes how scaling applies to content and restricts scaling to named axis types.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create an instance of <xref:System.Windows.Controls.Viewbox> and set the <xref:System.Windows.Controls.StretchDirection> of content by using code.  
+  
+ [!code-cpp[ViewBoxCode#2](~/samples/snippets/cpp/VS_Snippets_Wpf/ViewBoxCode/CPP/ViewboxCode.cpp#2)]
+ [!code-csharp[ViewBoxCode#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ViewBoxCode/Csharp/ViewboxCode.cs#2)]
+ [!code-vb[ViewBoxCode#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ViewBoxCode/VisualBasic/ViewBoxCodeVB.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Both">
+      <MemberSignature Language="C#" Value="Both" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.StretchDirection Both = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StretchDirection.Both" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.StretchDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The content stretches to fit the parent according to the <see cref="T:System.Windows.Media.Stretch" /> mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DownOnly">
+      <MemberSignature Language="C#" Value="DownOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.StretchDirection DownOnly = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StretchDirection.DownOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.StretchDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The content scales downward only when it is larger than the parent. If the content is smaller, no scaling upward is performed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UpOnly">
+      <MemberSignature Language="C#" Value="UpOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.StretchDirection UpOnly = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StretchDirection.UpOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.StretchDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The content scales upward only when it is smaller than the parent. If the content is larger, no scaling downward is performed.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

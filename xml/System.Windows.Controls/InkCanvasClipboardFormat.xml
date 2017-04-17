@@ -1,0 +1,76 @@
+<Type Name="InkCanvasClipboardFormat" FullName="System.Windows.Controls.InkCanvasClipboardFormat">
+  <TypeSignature Language="C#" Value="public enum InkCanvasClipboardFormat" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InkCanvasClipboardFormat extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.InkCanvasClipboardFormat" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the formats that an <see cref="T:System.Windows.Controls.InkCanvas" /> will accept from the Clipboard.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example sets the <xref:System.Windows.Controls.InkCanvas.PreferredPasteFormats%2A> to make the <xref:System.Windows.Controls.InkCanvas> accept [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] format, [!INCLUDE[TLA#tla_isf](~/includes/tlasharptla-isf-md.md)].  
+  
+ [!code-csharp[InkCanvasSamples#26](~/samples/snippets/csharp/VS_Snippets_Wpf/InkCanvasSamples/CSharp/Window1.xaml.cs#26)]
+ [!code-vb[InkCanvasSamples#26](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkCanvasSamples/VisualBasic/Window1.xaml.vb#26)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="InkSerializedFormat">
+      <MemberSignature Language="C#" Value="InkSerializedFormat" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.InkCanvasClipboardFormat InkSerializedFormat = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvasClipboardFormat.InkSerializedFormat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.InkCanvasClipboardFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the <see cref="T:System.Windows.Controls.InkCanvas" /> accepts Ink Serialized Format (ISF).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="Text" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.InkCanvasClipboardFormat Text = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvasClipboardFormat.Text" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.InkCanvasClipboardFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the <see cref="T:System.Windows.Controls.InkCanvas" /> accepts text.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Xaml">
+      <MemberSignature Language="C#" Value="Xaml" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.InkCanvasClipboardFormat Xaml = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvasClipboardFormat.Xaml" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.InkCanvasClipboardFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the <see cref="T:System.Windows.Controls.InkCanvas" /> accepts "Extensible Application Markup Language" (XAML) format.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,109 @@
+<Type Name="ObjectListShowCommandsEventArgs" FullName="System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs">
+  <TypeSignature Language="C#" Value="public class ObjectListShowCommandsEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ObjectListShowCommandsEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Mobile</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see http://go.microsoft.com/fwlink/?LinkId=157231.")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.MobileControls.ObjectList.ShowItemCommands" /> event of an <see cref="T:System.Web.UI.MobileControls.ObjectList" />. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An instance of a <xref:System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs> object is automatically created and passed to the event handler for the <xref:System.Web.UI.MobileControls.ObjectList.ShowItemCommands> event of an <xref:System.Web.UI.MobileControls.ObjectList>.  
+  
+ An inherited class or event handler can use this event to show commands unique to the item, by changing the collection of commands in the <xref:System.Web.UI.MobileControls.ObjectList.Commands%2A> property.  
+  
+   
+  
+## Examples  
+ For a code sample, see the example for the <xref:System.Web.UI.MobileControls.ObjectList> overview.  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ObjectListShowCommandsEventArgs (System.Web.UI.MobileControls.ObjectListItem item, System.Web.UI.MobileControls.ObjectListCommandCollection commands);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.MobileControls.ObjectListItem item, class System.Web.UI.MobileControls.ObjectListCommandCollection commands) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs.#ctor(System.Web.UI.MobileControls.ObjectListItem,System.Web.UI.MobileControls.ObjectListCommandCollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="item" Type="System.Web.UI.MobileControls.ObjectListItem" />
+        <Parameter Name="commands" Type="System.Web.UI.MobileControls.ObjectListCommandCollection" />
+      </Parameters>
+      <Docs>
+        <param name="item">Initializes the <see cref="P:System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs.ListItem" /> property.</param>
+        <param name="commands">Initializes the <see cref="P:System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs.Commands" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Constructs a new <xref:System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs> object, initializing the <xref:System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs.ListItem%2A> and <xref:System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs.Commands%2A> properties with the values of the `item` and `commands` parameters, respectively.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Commands">
+      <MemberSignature Language="C#" Value="public System.Web.UI.MobileControls.ObjectListCommandCollection Commands { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.ObjectListCommandCollection Commands" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs.Commands" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.MobileControls.ObjectListCommandCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the collection of commands in the <see cref="T:System.Web.UI.MobileControls.ObjectListCommandCollection" /> objects. Initially, the collection is empty. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The collection of commands in the <see cref="T:System.Web.UI.MobileControls.ObjectListCommandCollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can add or remove commands in the collection by using the <xref:System.Web.UI.MobileControls.ObjectListCommandCollection.Add%2A>, <xref:System.Web.UI.MobileControls.ObjectListCommandCollection.AddAt%2A>, <xref:System.Web.UI.MobileControls.ObjectListCommandCollection.Remove%2A>, and <xref:System.Web.UI.MobileControls.ObjectListCommandCollection.RemoveAt%2A> methods of the <xref:System.Web.UI.MobileControls.ObjectListCommandCollection> class. You can use this property to access and modify the commands for a single item in an <xref:System.Web.UI.MobileControls.ObjectList> object during the <xref:System.Web.UI.MobileControls.ObjectList.ShowItemCommands> event. Changes made do not affect the base collection of commands specified for the <xref:System.Web.UI.MobileControls.ObjectList> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListItem">
+      <MemberSignature Language="C#" Value="public System.Web.UI.MobileControls.ObjectListItem ListItem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.ObjectListItem ListItem" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ObjectListShowCommandsEventArgs.ListItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.MobileControls.ObjectListItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the list item for the specified commands that will be displayed. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The list item for the specified commands that will be displayed.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

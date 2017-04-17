@@ -1,0 +1,261 @@
+<Type Name="LosFormatter" FullName="System.Web.UI.LosFormatter">
+  <TypeSignature Language="C#" Value="public sealed class LosFormatter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LosFormatter extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.LosFormatter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Serializes the view state for a Web Forms page. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The limited object serialization (LOS) formatter is designed for highly compact ASCII format serialization. This class supports serializing any object graph, but is optimized for those containing strings, arrays, and hash tables. It offers second order optimization for many of the .NET Framework primitive types.  
+  
+ This is a private format and remains consistent only for the lifetime of a Web request.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LosFormatter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.LosFormatter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.LosFormatter" /> class using default values.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LosFormatter (bool enableMac, byte[] macKeyModifier);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool enableMac, unsigned int8[] macKeyModifier) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.LosFormatter.#ctor(System.Boolean,System.Byte[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="enableMac" Type="System.Boolean" />
+        <Parameter Name="macKeyModifier" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="enableMac">
+          <see langword="true" /> to enable view-state MAC; otherwise, <see langword="false" />.</param>
+        <param name="macKeyModifier">The modifier for the MAC key.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.LosFormatter" /> class using the specified enable flag and machine authentication code (MAC) key modifier.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LosFormatter (bool enableMac, string macKeyModifier);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool enableMac, string macKeyModifier) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.LosFormatter.#ctor(System.Boolean,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="enableMac" Type="System.Boolean" />
+        <Parameter Name="macKeyModifier" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="enableMac">
+          <see langword="true" /> to enable view-state MAC; otherwise, <see langword="false" />.</param>
+        <param name="macKeyModifier">The modifier for the MAC key.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.LosFormatter" /> class using the specified enable flag and machine authentication code (MAC) key modifier.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deserialize">
+      <MemberSignature Language="C#" Value="public object Deserialize (System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Deserialize(class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.LosFormatter.Deserialize(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="stream">A <see cref="T:System.IO.Stream" /> that contains the view-state value to transform.</param>
+        <summary>Transforms the view-state value contained in a <see cref="T:System.IO.Stream" /> object to a limited object serialization (LOS)-formatted object.</summary>
+        <returns>A LOS-formatted object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This version of the <xref:System.Web.UI.LosFormatter.Deserialize%2A> method is used to transform the view-state value contained in a <xref:System.IO.Stream> object to a LOS-formatted object.  
+  
+> [!IMPORTANT]
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deserialize">
+      <MemberSignature Language="C#" Value="public object Deserialize (System.IO.TextReader input);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Deserialize(class System.IO.TextReader input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.LosFormatter.Deserialize(System.IO.TextReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.IO.TextReader" />
+      </Parameters>
+      <Docs>
+        <param name="input">A <see cref="T:System.IO.TextReader" /> that contains the view-state value to transform.</param>
+        <summary>Transforms the view-state value contained in a <see cref="T:System.IO.TextReader" /> object to a limited object serialization (LOS)-formatted object.</summary>
+        <returns>A LOS-formatted object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This version of the <xref:System.Web.UI.LosFormatter.Deserialize%2A> method is used to transform the view-state value contained in a <xref:System.IO.TextReader> object to a LOS-formatted object.  
+  
+> [!IMPORTANT]
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deserialize">
+      <MemberSignature Language="C#" Value="public object Deserialize (string input);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Deserialize(string input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.LosFormatter.Deserialize(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="input">The view-state value to transform.</param>
+        <summary>Transforms the specified view-state value to a limited object serialization (LOS)-formatted object.</summary>
+        <returns>A LOS-formatted object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This version of the <xref:System.Web.UI.LosFormatter.Deserialize%2A> method is used to transform the specified view-state value to a LOS-formatted object.  
+  
+> [!IMPORTANT]
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The view state is invalid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Serialize">
+      <MemberSignature Language="C#" Value="public void Serialize (System.IO.Stream stream, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Serialize(class System.IO.Stream stream, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.LosFormatter.Serialize(System.IO.Stream,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The <see cref="T:System.IO.Stream" /> to receive the transformed value.</param>
+        <param name="value">The LOS-formatted object to transform into a view-state value.</param>
+        <summary>Transforms a limited object serialization (LOS)-formatted object into a view-state value and places the results into a <see cref="T:System.IO.Stream" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This version of the <xref:System.Web.UI.LosFormatter.Serialize%2A> method is used to transform a LOS-formatted object into a view-state value. The results are then placed into a <xref:System.IO.Stream> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Serialize">
+      <MemberSignature Language="C#" Value="public void Serialize (System.IO.TextWriter output, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Serialize(class System.IO.TextWriter output, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.LosFormatter.Serialize(System.IO.TextWriter,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="output" Type="System.IO.TextWriter" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="output">The <see cref="T:System.IO.TextWriter" /> to receive the transformed value.</param>
+        <param name="value">The LOS-formatted object to transform into a view-state value.</param>
+        <summary>Transforms a limited object serialization (LOS)-formatted object into a view-state value and places the results into a <see cref="T:System.IO.TextWriter" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This version of the <xref:System.Web.UI.LosFormatter.Serialize%2A> method is used to transform a LOS-formatted object into a view-state value. The results are then placed into a <xref:System.IO.TextWriter> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="Deserialize">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Transforms the specified view-state value to a limited object serialization (LOS)-formatted object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

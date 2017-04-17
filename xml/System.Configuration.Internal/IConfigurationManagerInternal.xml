@@ -1,0 +1,228 @@
+<Type Name="IConfigurationManagerInternal" FullName="System.Configuration.Internal.IConfigurationManagerInternal">
+  <TypeSignature Language="C#" Value="public interface IConfigurationManagerInternal" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IConfigurationManagerInternal" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.Internal.IConfigurationManagerInternal" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines an interface used by the .NET Framework to initialize configuration properties.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ApplicationConfigUri">
+      <MemberSignature Language="C#" Value="public string ApplicationConfigUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ApplicationConfigUri" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IConfigurationManagerInternal.ApplicationConfigUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the configuration file name related to the application path.</summary>
+        <value>A string value representing a configuration file name.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExeLocalConfigDirectory">
+      <MemberSignature Language="C#" Value="public string ExeLocalConfigDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ExeLocalConfigDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IConfigurationManagerInternal.ExeLocalConfigDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the local configuration directory of the application based on the entry assembly.</summary>
+        <value>A string representing the local configuration directory.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExeLocalConfigPath">
+      <MemberSignature Language="C#" Value="public string ExeLocalConfigPath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ExeLocalConfigPath" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IConfigurationManagerInternal.ExeLocalConfigPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the local configuration path of the application based on the entry assembly.</summary>
+        <value>A string value representing the local configuration path of the application.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExeProductName">
+      <MemberSignature Language="C#" Value="public string ExeProductName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ExeProductName" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IConfigurationManagerInternal.ExeProductName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the product name of the application based on the entry assembly.</summary>
+        <value>A string value representing the product name of the application.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExeProductVersion">
+      <MemberSignature Language="C#" Value="public string ExeProductVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ExeProductVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IConfigurationManagerInternal.ExeProductVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the product version of the application based on the entry assembly.</summary>
+        <value>A string value representing the product version of the application.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExeRoamingConfigDirectory">
+      <MemberSignature Language="C#" Value="public string ExeRoamingConfigDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ExeRoamingConfigDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IConfigurationManagerInternal.ExeRoamingConfigDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the roaming configuration directory of the application based on the entry assembly.</summary>
+        <value>A string value representing the roaming configuration directory of the application.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExeRoamingConfigPath">
+      <MemberSignature Language="C#" Value="public string ExeRoamingConfigPath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ExeRoamingConfigPath" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IConfigurationManagerInternal.ExeRoamingConfigPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the roaming user's configuration path based on the application's entry assembly.</summary>
+        <value>A string value representing the roaming user's configuration path.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MachineConfigPath">
+      <MemberSignature Language="C#" Value="public string MachineConfigPath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MachineConfigPath" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IConfigurationManagerInternal.MachineConfigPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the configuration path for the Machine.config file.</summary>
+        <value>A string value representing the path of the Machine.config file.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetConfigurationSystemInProgress">
+      <MemberSignature Language="C#" Value="public bool SetConfigurationSystemInProgress { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SetConfigurationSystemInProgress" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IConfigurationManagerInternal.SetConfigurationSystemInProgress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value representing the configuration system's status.</summary>
+        <value>
+          <see langword="true" /> if the configuration system is in the process of being initialized; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.Internal.IConfigurationManagerInternal.SetConfigurationSystemInProgress%2A> property is used by <xref:System.Diagnostics> during configuration initialization.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsUserConfig">
+      <MemberSignature Language="C#" Value="public bool SupportsUserConfig { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsUserConfig" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IConfigurationManagerInternal.SupportsUserConfig" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether user configuration settings are supported.</summary>
+        <value>
+          <see langword="true" /> if the configuration system supports user configuration settings; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserConfigFilename">
+      <MemberSignature Language="C#" Value="public string UserConfigFilename { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UserConfigFilename" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IConfigurationManagerInternal.UserConfigFilename" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the file used to store user configuration settings.</summary>
+        <value>A string specifying the name of the file used to store user configuration.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,89 @@
+<Type Name="QueryBuilderMode" FullName="System.ComponentModel.Design.Data.QueryBuilderMode">
+  <TypeSignature Language="C#" Value="public enum QueryBuilderMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed QueryBuilderMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Data.QueryBuilderMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the type of data-store query the design environment should construct.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.Data.QueryBuilderMode> enumeration is used when you call the <xref:System.ComponentModel.Design.Data.IDataEnvironment.BuildQuery%2A?displayProperty=fullName> method to indicate the type of query desired.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="Delete" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.Data.QueryBuilderMode Delete = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.Data.QueryBuilderMode.Delete" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.Data.QueryBuilderMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The query being built is a Delete query.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="Insert" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.Data.QueryBuilderMode Insert = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.Data.QueryBuilderMode.Insert" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.Data.QueryBuilderMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The query being built is an Insert query.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Select">
+      <MemberSignature Language="C#" Value="Select" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.Data.QueryBuilderMode Select = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.Data.QueryBuilderMode.Select" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.Data.QueryBuilderMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The query being built is a Select query.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="Update" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.Data.QueryBuilderMode Update = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.Data.QueryBuilderMode.Update" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.Data.QueryBuilderMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The query being built is an Update query.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

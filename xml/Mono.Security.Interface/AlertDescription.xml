@@ -1,0 +1,418 @@
+<Type Name="AlertDescription" FullName="Mono.Security.Interface.AlertDescription">
+  <TypeSignature Language="C#" Value="public enum AlertDescription" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AlertDescription extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.AlertDescription" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AccessDenied">
+      <MemberSignature Language="C#" Value="AccessDenied" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription AccessDenied = unsigned int8(49)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.AccessDenied" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BadCertificate">
+      <MemberSignature Language="C#" Value="BadCertificate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription BadCertificate = unsigned int8(42)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.BadCertificate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BadRecordMAC">
+      <MemberSignature Language="C#" Value="BadRecordMAC" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription BadRecordMAC = unsigned int8(20)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.BadRecordMAC" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CertificateExpired">
+      <MemberSignature Language="C#" Value="CertificateExpired" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription CertificateExpired = unsigned int8(45)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.CertificateExpired" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CertificateRevoked">
+      <MemberSignature Language="C#" Value="CertificateRevoked" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription CertificateRevoked = unsigned int8(44)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.CertificateRevoked" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CertificateUnknown">
+      <MemberSignature Language="C#" Value="CertificateUnknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription CertificateUnknown = unsigned int8(46)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.CertificateUnknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CloseNotify">
+      <MemberSignature Language="C#" Value="CloseNotify" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription CloseNotify = unsigned int8(0)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.CloseNotify" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DecodeError">
+      <MemberSignature Language="C#" Value="DecodeError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription DecodeError = unsigned int8(50)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.DecodeError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DecompressionFailure">
+      <MemberSignature Language="C#" Value="DecompressionFailure" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription DecompressionFailure = unsigned int8(30)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.DecompressionFailure" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DecryptError">
+      <MemberSignature Language="C#" Value="DecryptError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription DecryptError = unsigned int8(51)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.DecryptError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DecryptionFailed_RESERVED">
+      <MemberSignature Language="C#" Value="DecryptionFailed_RESERVED" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription DecryptionFailed_RESERVED = unsigned int8(21)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.DecryptionFailed_RESERVED" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportRestriction">
+      <MemberSignature Language="C#" Value="ExportRestriction" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription ExportRestriction = unsigned int8(60)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.ExportRestriction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HandshakeFailure">
+      <MemberSignature Language="C#" Value="HandshakeFailure" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription HandshakeFailure = unsigned int8(40)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.HandshakeFailure" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IlegalParameter">
+      <MemberSignature Language="C#" Value="IlegalParameter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription IlegalParameter = unsigned int8(47)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.IlegalParameter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InsuficientSecurity">
+      <MemberSignature Language="C#" Value="InsuficientSecurity" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription InsuficientSecurity = unsigned int8(71)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.InsuficientSecurity" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InternalError">
+      <MemberSignature Language="C#" Value="InternalError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription InternalError = unsigned int8(80)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.InternalError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoCertificate_RESERVED">
+      <MemberSignature Language="C#" Value="NoCertificate_RESERVED" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription NoCertificate_RESERVED = unsigned int8(41)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.NoCertificate_RESERVED" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoRenegotiation">
+      <MemberSignature Language="C#" Value="NoRenegotiation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription NoRenegotiation = unsigned int8(100)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.NoRenegotiation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtocolVersion">
+      <MemberSignature Language="C#" Value="ProtocolVersion" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription ProtocolVersion = unsigned int8(70)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.ProtocolVersion" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RecordOverflow">
+      <MemberSignature Language="C#" Value="RecordOverflow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription RecordOverflow = unsigned int8(22)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.RecordOverflow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnexpectedMessage">
+      <MemberSignature Language="C#" Value="UnexpectedMessage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription UnexpectedMessage = unsigned int8(10)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.UnexpectedMessage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnknownCA">
+      <MemberSignature Language="C#" Value="UnknownCA" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription UnknownCA = unsigned int8(48)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.UnknownCA" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsupportedCertificate">
+      <MemberSignature Language="C#" Value="UnsupportedCertificate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription UnsupportedCertificate = unsigned int8(43)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.UnsupportedCertificate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsupportedExtension">
+      <MemberSignature Language="C#" Value="UnsupportedExtension" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription UnsupportedExtension = unsigned int8(110)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.UnsupportedExtension" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UserCancelled">
+      <MemberSignature Language="C#" Value="UserCancelled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.AlertDescription UserCancelled = unsigned int8(90)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.AlertDescription.UserCancelled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.AlertDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

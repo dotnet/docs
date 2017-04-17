@@ -1,0 +1,457 @@
+<Type Name="PrintDialog" FullName="System.Windows.Controls.PrintDialog">
+  <TypeSignature Language="C#" Value="public class PrintDialog" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PrintDialog extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.PrintDialog" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Invokes a standard [!INCLUDE[TLA#tla_win#initcap](~/includes/tlasharptla-winsharpinitcap-md.md)] print dialog box that configures a <see cref="T:System.Printing.PrintTicket" /> and <see cref="T:System.Printing.PrintQueue" /> according to user input and then prints a document.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A user can use the **Print** dialog box to select a printer, configure it, and perform a print job.  
+  
+ Strictly speaking, you can use the <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A> method without ever opening the dialog. In that sense, the control can be used as an unseen printing component. But for performance reasons, it would be better to use either the <xref:System.Printing.PrintQueue.AddJob%2A> method or one of the many <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> methods of the <xref:System.Windows.Xps.XpsDocumentWriter>. For more about this, see [How to: Programmatically Print XPS Files](~/docs/framework/wpf/advanced/how-to-programmatically-print-xps-files.md).  
+  
+ Do not confuse this class, <xref:System.Windows.Controls.PrintDialog?displayProperty=fullName>, with <xref:System.Windows.Forms.PrintDialog?displayProperty=fullName>. The latter is used with Windows Forms applications. <xref:System.Windows.Controls.PrintDialog?displayProperty=fullName> is used with [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] applications.  
+  
+   
+  
+## Examples  
+ The following example shows how to create an instance of and display a simple <xref:System.Windows.Controls.PrintDialog> by using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] markup and code.  
+  
+ [!code-xml[PrintDialog#2](~/samples/snippets/csharp/VS_Snippets_Wpf/PrintDialog/CSharp/Window1.xaml#2)]  
+  
+ ...  
+  
+ [!code-csharp[PrintDialog#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PrintDialog/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[PrintDialog#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PrintDialog/visualbasic/window1.xaml.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrintDialog ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.PrintDialog.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.PrintDialog" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentPageEnabled">
+      <MemberSignature Language="C#" Value="public bool CurrentPageEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CurrentPageEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.PrintDialog.CurrentPageEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the option to print the current page is enabled.</summary>
+        <value>
+          <see langword="true" /> if the option to print the current page is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxPage">
+      <MemberSignature Language="C#" Value="public uint MaxPage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 MaxPage" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.PrintDialog.MaxPage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the highest page number that is allowed in page ranges.</summary>
+        <value>A <see cref="T:System.UInt32" /> that represents the highest page number that can be used in a page range in the **Print** dialog box.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Users who click **Print** when the **Print** dialog box is set to print pages outside the range that is set by the <xref:System.Windows.Controls.PrintDialog.MaxPage%2A> and <xref:System.Windows.Controls.PrintDialog.MinPage%2A> values will get an error message advising them of the maximum and minimum page numbers. Nothing will be printed.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The property is being set to less than 1.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MinPage">
+      <MemberSignature Language="C#" Value="public uint MinPage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 MinPage" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.PrintDialog.MinPage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the lowest page number that is allowed in page ranges.</summary>
+        <value>A <see cref="T:System.UInt32" /> that represents the lowest page number that can be used in a page range in the **Print** dialog box.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Users who click **Print** when the **Print** dialog box is set to print pages outside the range that is set by the <xref:System.Windows.Controls.PrintDialog.MaxPage%2A> and <xref:System.Windows.Controls.PrintDialog.MinPage%2A> values will get an error message advising them of the maximum and minimum page numbers. Nothing will be printed.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The property is being set to less than 1.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PageRange">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.PageRange PageRange { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.PageRange PageRange" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.PrintDialog.PageRange" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.PageRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the range of pages to print when <see cref="P:System.Windows.Controls.PrintDialog.PageRangeSelection" /> is set to <see cref="F:System.Windows.Controls.PageRangeSelection.UserPages" />.</summary>
+        <value>A <see cref="T:System.Windows.Controls.PageRange" /> that represents the range of pages that are printed.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="T:System.Windows.Controls.PageRange" /> object that is being used to set the property has either the beginning of the range or the end of the range set to a value that is less than 1.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PageRangeSelection">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.PageRangeSelection PageRangeSelection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.PageRangeSelection PageRangeSelection" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.PrintDialog.PageRangeSelection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.PageRangeSelection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Controls.PageRangeSelection" /> for this instance of <see cref="T:System.Windows.Controls.PrintDialog" />.</summary>
+        <value>The <see cref="T:System.Windows.Controls.PageRangeSelection" /> value that represents the type of page range to print.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Controls.PrintDialog.PageRangeSelection%2A> property by using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] markup and code.  
+  
+ [!code-xml[PrintDialog#2](~/samples/snippets/csharp/VS_Snippets_Wpf/PrintDialog/CSharp/Window1.xaml#2)]  
+  
+ ...  
+  
+ [!code-csharp[PrintDialog#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PrintDialog/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[PrintDialog#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PrintDialog/visualbasic/window1.xaml.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintableAreaHeight">
+      <MemberSignature Language="C#" Value="public double PrintableAreaHeight { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 PrintableAreaHeight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.PrintDialog.PrintableAreaHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the height of the printable area of the page.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the height of the printable page area.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to get the value of the <xref:System.Windows.Controls.PrintDialog.PrintableAreaHeight%2A> property by using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] markup and code.  
+  
+ [!code-xml[PrintDialog#4](~/samples/snippets/csharp/VS_Snippets_Wpf/PrintDialog/CSharp/Window1.xaml#4)]  
+  
+ ...  
+  
+ [!code-csharp[PrintDialog#5](~/samples/snippets/csharp/VS_Snippets_Wpf/PrintDialog/CSharp/Window1.xaml.cs#5)]
+ [!code-vb[PrintDialog#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PrintDialog/visualbasic/window1.xaml.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintableAreaWidth">
+      <MemberSignature Language="C#" Value="public double PrintableAreaWidth { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 PrintableAreaWidth" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.PrintDialog.PrintableAreaWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the width of the printable area of the page.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the width of the printable page area.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to get the value of the <xref:System.Windows.Controls.PrintDialog.PrintableAreaWidth%2A> property by using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] markup and code.  
+  
+ [!code-xml[PrintDialog#3](~/samples/snippets/csharp/VS_Snippets_Wpf/PrintDialog/CSharp/Window1.xaml#3)]  
+  
+ ...  
+  
+ [!code-csharp[PrintDialog#6](~/samples/snippets/csharp/VS_Snippets_Wpf/PrintDialog/CSharp/Window1.xaml.cs#6)]
+ [!code-vb[PrintDialog#6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PrintDialog/visualbasic/window1.xaml.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintDocument">
+      <MemberSignature Language="C#" Value="public void PrintDocument (System.Windows.Documents.DocumentPaginator documentPaginator, string description);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PrintDocument(class System.Windows.Documents.DocumentPaginator documentPaginator, string description) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.PrintDialog.PrintDocument(System.Windows.Documents.DocumentPaginator,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="documentPaginator" Type="System.Windows.Documents.DocumentPaginator" />
+        <Parameter Name="description" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="documentPaginator">The <see cref="T:System.Windows.Documents.DocumentPaginator" /> object to print.</param>
+        <param name="description">A description of the job that is to be printed. This text appears in the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] of the printer.</param>
+        <summary>Prints a <see cref="T:System.Windows.Documents.DocumentPaginator" /> object to the <see cref="T:System.Printing.PrintQueue" /> that is currently selected.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="documentPaginator" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintQueue">
+      <MemberSignature Language="C#" Value="public System.Printing.PrintQueue PrintQueue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Printing.PrintQueue PrintQueue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.PrintDialog.PrintQueue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Printing.PrintQueue" /> that represents the printer that is selected.</summary>
+        <value>The <see cref="T:System.Printing.PrintQueue" /> that the user selected.</value>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Drawing.Printing.PrintingPermission">for permission to print. Associated enumeration: <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.DefaultPrinting" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintTicket">
+      <MemberSignature Language="C#" Value="public System.Printing.PrintTicket PrintTicket { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Printing.PrintTicket PrintTicket" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.PrintDialog.PrintTicket" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintTicket</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Printing.PrintTicket" /> that is used by the <see cref="T:System.Windows.Controls.PrintDialog" /> when the user clicks **Print** for the current print job.</summary>
+        <value>A <see cref="T:System.Printing.PrintTicket" /> that is used the next time the **Print** button in the dialog box is clicked.  
+  
+ Setting this <see cref="P:System.Windows.Controls.PrintDialog.PrintTicket" /> property does not validate or modify the specified <see cref="T:System.Printing.PrintTicket" /> for a particular <see cref="T:System.Printing.PrintQueue" />.  If needed, use the <see cref="M:System.Printing.PrintQueue.MergeAndValidatePrintTicket(System.Printing.PrintTicket,System.Printing.PrintTicket)" /> method to create a <see cref="T:System.Printing.PrintQueue" />-specific <see cref="T:System.Printing.PrintTicket" /> that is valid for a given printer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Neither setting nor getting this property validates the <xref:System.Printing.PrintTicket>. To validate it use <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintVisual">
+      <MemberSignature Language="C#" Value="public void PrintVisual (System.Windows.Media.Visual visual, string description);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PrintVisual(class System.Windows.Media.Visual visual, string description) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.PrintDialog.PrintVisual(System.Windows.Media.Visual,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="visual" Type="System.Windows.Media.Visual" />
+        <Parameter Name="description" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="visual">The <see cref="T:System.Windows.Media.Visual" /> to print.</param>
+        <param name="description">A description of the job that is to be printed. This text appears in the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] of the printer.</param>
+        <summary>Prints a visual (non-text) object, which is derived from the <see cref="T:System.Windows.Media.Visual" /> class, to the <see cref="T:System.Printing.PrintQueue" /> that is currently selected.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="visual" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedPagesEnabled">
+      <MemberSignature Language="C#" Value="public bool SelectedPagesEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SelectedPagesEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.PrintDialog.SelectedPagesEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the option to print the selected pages is enabled.</summary>
+        <value>
+          <see langword="true" /> if the option to print the selected pages is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowDialog">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; ShowDialog ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Nullable`1&lt;bool&gt; ShowDialog() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.PrintDialog.ShowDialog" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Invokes the <see cref="T:System.Windows.Controls.PrintDialog" /> as a modal dialog box.</summary>
+        <returns>
+          <see langword="true" /> if a user clicks **Print**; <see langword="false" /> if a user clicks **Cancel**; or <see langword="null" /> if a user closes the dialog box without clicking **Print** or **Cancel**.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Controls.PrintDialog.ShowDialog%2A> method in code.  
+  
+ [!code-csharp[PrintDialog#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PrintDialog/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[PrintDialog#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PrintDialog/visualbasic/window1.xaml.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserPageRangeEnabled">
+      <MemberSignature Language="C#" Value="public bool UserPageRangeEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UserPageRangeEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.PrintDialog.UserPageRangeEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether users of the **Print** dialog box have the option to specify ranges of pages to print.</summary>
+        <value>
+          <see langword="true" /> if the option is available; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Controls.PrintDialog.UserPageRangeEnabled%2A> property by using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] markup and code.  
+  
+ [!code-xml[PrintDialog#2](~/samples/snippets/csharp/VS_Snippets_Wpf/PrintDialog/CSharp/Window1.xaml#2)]  
+  
+ ...  
+  
+ [!code-csharp[PrintDialog#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PrintDialog/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[PrintDialog#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PrintDialog/visualbasic/window1.xaml.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

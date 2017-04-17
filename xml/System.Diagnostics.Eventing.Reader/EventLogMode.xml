@@ -1,0 +1,66 @@
+<Type Name="EventLogMode" FullName="System.Diagnostics.Eventing.Reader.EventLogMode">
+  <TypeSignature Language="C#" Value="public enum EventLogMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EventLogMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventLogMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Determines the behavior for the event log service handles an event log when the log reaches its maximum allowed size (when the event log is full).</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AutoBackup">
+      <MemberSignature Language="C#" Value="AutoBackup" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.EventLogMode AutoBackup = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.EventLogMode.AutoBackup" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.EventLogMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Archive the log when full, do not overwrite events. The log is automatically archived when necessary. No events are overwritten.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Circular">
+      <MemberSignature Language="C#" Value="Circular" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.EventLogMode Circular = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.EventLogMode.Circular" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.EventLogMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>New events continue to be stored when the log file is full. Each new incoming event replaces the oldest event in the log.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Retain">
+      <MemberSignature Language="C#" Value="Retain" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.EventLogMode Retain = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.EventLogMode.Retain" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.EventLogMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Do not overwrite events. Clear the log manually rather than automatically.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

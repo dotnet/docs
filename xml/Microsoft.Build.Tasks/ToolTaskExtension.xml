@@ -1,0 +1,216 @@
+<Type Name="ToolTaskExtension" FullName="Microsoft.Build.Tasks.ToolTaskExtension">
+  <TypeSignature Language="C#" Value="public abstract class ToolTaskExtension : Microsoft.Build.Utilities.ToolTask" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ToolTaskExtension extends Microsoft.Build.Utilities.ToolTask" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.ToolTaskExtension" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Build.Utilities.ToolTask</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Comprises extended utility methods for constructing a task that wraps a command line tool.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddCommandLineCommands">
+      <MemberSignature Language="C#" Value="protected virtual void AddCommandLineCommands (Microsoft.Build.Tasks.CommandLineBuilderExtension commandLine);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void AddCommandLineCommands(class Microsoft.Build.Tasks.CommandLineBuilderExtension commandLine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.ToolTaskExtension.AddCommandLineCommands(Microsoft.Build.Tasks.CommandLineBuilderExtension)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="commandLine" Type="Microsoft.Build.Tasks.CommandLineBuilderExtension" />
+      </Parameters>
+      <Docs>
+        <param name="commandLine">The <see cref="T:Microsoft.Build.Tasks.CommandLineBuilderExtension" /> to fill.</param>
+        <summary>Fills the specified <see cref="T:Microsoft.Build.Tasks.CommandLineBuilderExtension" /> with the switches and other information that the command line tool must run from the command line and not from a response file.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddResponseFileCommands">
+      <MemberSignature Language="C#" Value="protected virtual void AddResponseFileCommands (Microsoft.Build.Tasks.CommandLineBuilderExtension commandLine);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void AddResponseFileCommands(class Microsoft.Build.Tasks.CommandLineBuilderExtension commandLine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.ToolTaskExtension.AddResponseFileCommands(Microsoft.Build.Tasks.CommandLineBuilderExtension)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="commandLine" Type="Microsoft.Build.Tasks.CommandLineBuilderExtension" />
+      </Parameters>
+      <Docs>
+        <param name="commandLine">The <see cref="T:Microsoft.Build.Tasks.CommandLineBuilderExtension" /> to fill.</param>
+        <summary>Fills the specified <see cref="T:Microsoft.Build.Tasks.CommandLineBuilderExtension" /> with the switches and other information that the command line tool can run from a response file.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bag">
+      <MemberSignature Language="C#" Value="protected System.Collections.Hashtable Bag { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Hashtable Bag" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ToolTaskExtension.Bag" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Hashtable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of parameters used by the derived task class.</summary>
+        <value>The collection of parameters used by the derived task class.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateCommandLineCommands">
+      <MemberSignature Language="C#" Value="protected override string GenerateCommandLineCommands ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GenerateCommandLineCommands() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.ToolTaskExtension.GenerateCommandLineCommands" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the switches and other information that the command line tool must run directly from the command line and not from a response file.</summary>
+        <returns>A string containing the switches and other information that the command line tool must run directly from the command line and not from a response file.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateResponseFileCommands">
+      <MemberSignature Language="C#" Value="protected override string GenerateResponseFileCommands ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GenerateResponseFileCommands() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.ToolTaskExtension.GenerateResponseFileCommands" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the switch used by the command line tool to specify the response file.</summary>
+        <returns>The switch used by the command line tool to specify the response file.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBoolParameterWithDefault">
+      <MemberSignature Language="C#" Value="protected bool GetBoolParameterWithDefault (string parameterName, bool defaultValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance bool GetBoolParameterWithDefault(string parameterName, bool defaultValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.ToolTaskExtension.GetBoolParameterWithDefault(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameterName" Type="System.String" />
+        <Parameter Name="defaultValue" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="parameterName">The name of the parameter to return.</param>
+        <param name="defaultValue">The value to return if <c>parameterName</c> does not exist in the <see cref="P:Microsoft.Build.Tasks.ToolTaskExtension.Bag" />.</param>
+        <summary>Gets the value of the specified Boolean parameter.</summary>
+        <returns>The parameter value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `parameterName` does not exist in the <xref:Microsoft.Build.Tasks.ToolTaskExtension.Bag%2A>, `defaultValue` is returned.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIntParameterWithDefault">
+      <MemberSignature Language="C#" Value="protected int GetIntParameterWithDefault (string parameterName, int defaultValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance int32 GetIntParameterWithDefault(string parameterName, int32 defaultValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.ToolTaskExtension.GetIntParameterWithDefault(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameterName" Type="System.String" />
+        <Parameter Name="defaultValue" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="parameterName">The name of the parameter to return.</param>
+        <param name="defaultValue">The value to return if <c>parameterName</c> does not exist in the <see cref="P:Microsoft.Build.Tasks.ToolTaskExtension.Bag" />.</param>
+        <summary>Gets the value of the specified integer parameter.</summary>
+        <returns>The parameter value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `parameterName` does not exist in the <xref:Microsoft.Build.Tasks.ToolTaskExtension.Bag%2A>, `defaultValue` is returned.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasLoggedErrors">
+      <MemberSignature Language="C#" Value="protected override bool HasLoggedErrors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasLoggedErrors" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ToolTaskExtension.HasLoggedErrors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns whether this ToolTask has logged any errors.</summary>
+        <value>
+          <see langword="true" /> if the ToolTask logged errors, <see langword="false" /> if otherwise.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Log">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Utilities.TaskLoggingHelper Log { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Utilities.TaskLoggingHelper Log" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ToolTaskExtension.Log" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Utilities.TaskLoggingHelper</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an instance of a <see cref="T:Microsoft.Build.Tasks.TaskLoggingHelperExtension" /> class containing task logging methods.</summary>
+        <value>An instance of a <see cref="T:Microsoft.Build.Tasks.TaskLoggingHelperExtension" /> class containing task logging methods.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

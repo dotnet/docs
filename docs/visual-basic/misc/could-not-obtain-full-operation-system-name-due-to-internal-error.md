@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrDiagnosticInfo_FullOSName"
 ms.assetid: f69da02b-eb9a-4284-bb9e-3025517ae6c1
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

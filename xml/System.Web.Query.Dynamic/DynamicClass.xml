@@ -1,0 +1,67 @@
+<Type Name="DynamicClass" FullName="System.Web.Query.Dynamic.DynamicClass">
+  <TypeSignature Language="C#" Value="public abstract class DynamicClass" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DynamicClass extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Query.Dynamic.DynamicClass" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides functionality to create new classes from values in a <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Web.UI.WebControls.LinqDataSource.Select%2A> property is set to an expression that contains the `new` function, a class is dynamically created that contains only the properties specified in the `new` function. The parser creates the `new` class by extending the <xref:System.Web.Query.Dynamic.DynamicClass> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DynamicClass ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Query.Dynamic.DynamicClass.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Query.Dynamic.DynamicClass" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Query.Dynamic.DynamicClass.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string representation of the dynamic class.</summary>
+        <returns>A string that represents the dynamic class and its properties.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Web.UI.WebControls.LinqDataSource.Select%2A> property is set to an expression that contains the `new` function, a class is dynamically created that contains only the properties specified in the `new` function. The parser creates the `new` class by extending the <xref:System.Web.Query.Dynamic.DynamicClass> class. The <xref:System.Web.Query.Dynamic.DynamicClass.ToString%2A> methods creates a string representation of the properties in the class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

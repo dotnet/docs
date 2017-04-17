@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "inline functions [Visual Basic]"
 ms.assetid: 137064b0-3928-4bfa-ba71-c3f9cbd951e2
 caps.latest.revision: 52
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

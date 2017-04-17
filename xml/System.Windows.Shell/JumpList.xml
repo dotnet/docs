@@ -1,0 +1,631 @@
+<Type Name="JumpList" FullName="System.Windows.Shell.JumpList">
+  <TypeSignature Language="C#" Value="public sealed class JumpList : System.ComponentModel.ISupportInitialize" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed JumpList extends System.Object implements class System.ComponentModel.ISupportInitialize" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Shell.JumpList" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.ISupportInitialize</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ContentProperty("JumpItems")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a list of items and tasks displayed as a menu on a [!INCLUDE[win7](~/includes/win7-md.md)] taskbar button.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [!INCLUDE[win7](~/includes/win7-md.md)] taskbar provides enhanced functionality for starting programs directly from the taskbar button by using Jump Lists. Jump Lists are also used in the [!INCLUDE[win7](~/includes/win7-md.md)] Start menu. You access a Jump List by right-clicking a taskbar button or by clicking the arrow next to a program in the Start menu. For more information about Jump Lists, see the [Taskbar](http://go.microsoft.com/fwlink/?LinkId=178478) section of the Windows User Experience Interaction Guidelines.  
+  
+ The <xref:System.Windows.Shell.JumpList> class provides a managed wrapper for the Jump List functionality in the [!INCLUDE[win7](~/includes/win7-md.md)] taskbar and manages the data passed to the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] shell. The functionality exposed by the <xref:System.Windows.Shell.JumpList> class is not available in versions of [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] earlier than [!INCLUDE[win7](~/includes/win7-md.md)]. Applications that use the <xref:System.Windows.Shell.JumpList> class will run in other versions of [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)], but the Jump List will not be available. For more information about the Windows shell and native Jump List APIs, see [Taskbar Extensions](http://go.microsoft.com/fwlink/?LinkId=178479).  
+  
+ The following illustration shows the Jump List for Windows Media Player, with items in the **Tasks** and **Frequent** categories.  
+  
+ ![Windows Media Player Jump List](~/add/media/wpfshell-jumplist.png "Windows Media Player Jump List")  
+Windows Media Player Jump List  
+  
+## Configuring a Jump List  
+ Jump Lists can contain two types of items, a <xref:System.Windows.Shell.JumpTask> and a <xref:System.Windows.Shell.JumpPath>. A <xref:System.Windows.Shell.JumpTask> is a link to a program and a <xref:System.Windows.Shell.JumpPath> is a link to a file. You can visually separate items in a Jump List by creating a <xref:System.Windows.Shell.JumpTask> that does not have a <xref:System.Windows.Shell.JumpTask.Title%2A> and <xref:System.Windows.Shell.JumpItem.CustomCategory%2A> specified. This empty <xref:System.Windows.Shell.JumpTask> will be displayed as a horizontal line in the Jump List.  
+  
+> [!NOTE]
+>  If the type of the file specified in a <xref:System.Windows.Shell.JumpPath> is not registered with your application, the file will not appear in the Jump List. For example, if you add a <xref:System.Windows.Shell.JumpPath> that points to a .txt file, your application must be registered to handle .txt files. For more information, see [Introduction to File Associations](http://go.microsoft.com/fwlink/?LinkId=178480).  
+  
+ Jump items are placed into categories in the <xref:System.Windows.Shell.JumpList>. By default, a <xref:System.Windows.Shell.JumpItem> is displayed in the **Tasks** category. Alternatively, you can specify a <xref:System.Windows.Shell.JumpItem.CustomCategory%2A> for the <xref:System.Windows.Shell.JumpItem>.  
+  
+ You can specify whether the standard **Recent** and **Frequent** categories are displayed in the <xref:System.Windows.Shell.JumpList> by setting the <xref:System.Windows.Shell.JumpList.ShowRecentCategory%2A> and <xref:System.Windows.Shell.JumpList.ShowFrequentCategory%2A> properties. The contents of these categories are managed by the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] shell. Because these categories might contain much of the same data, you typically display one or the other in your <xref:System.Windows.Shell.JumpList>, but not both. [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] automatically manages recent items if they are opened through a common file dialog box or used to open an application through file type association. When an item is accessed through the Jump List, you can notify the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] shell to add the item to the **Recent** category by calling the <xref:System.Windows.Shell.JumpList.AddToRecentCategory%2A> method.  
+  
+## Applying a Jump List to the Windows Shell  
+ You cannot access the shell’s Jump List directly or read its contents into the <xref:System.Windows.Shell.JumpList> class. Instead, the <xref:System.Windows.Shell.JumpList> class provides a representation of a Jump List that you can work with, and then apply to the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] shell. You typically create a <xref:System.Windows.Shell.JumpList> and set it one time when the application is first run. However, you can modify or replace the <xref:System.Windows.Shell.JumpList> at run time.  
+  
+ When you have set the <xref:System.Windows.Shell.JumpList> properties, you must apply the <xref:System.Windows.Shell.JumpList> to the Windows shell before its contents appear in the taskbar Jump List. This is done automatically when the <xref:System.Windows.Shell.JumpList> is first attached to an application, either in XAML or in a call to the <xref:System.Windows.Shell.JumpList.SetJumpList%2A> method. If you modify the contents of the <xref:System.Windows.Shell.JumpList> at run time, you must call the <xref:System.Windows.Shell.JumpList.Apply%2A> method to apply its current contents to the Windows shell.  
+  
+## Setting a Jump List in XAML  
+ A <xref:System.Windows.Shell.JumpList> is not automatically attached to an <xref:System.Windows.Application> object. You attach a <xref:System.Windows.Shell.JumpList> to an <xref:System.Windows.Application> object in XAML by using the attached property syntax. The <xref:System.Windows.Shell.JumpList> class implements the <xref:System.ComponentModel.ISupportInitialize> interface to support XAML declaration of a <xref:System.Windows.Shell.JumpList>. If the <xref:System.Windows.Shell.JumpList> is declared in XAML and attached to the current <xref:System.Windows.Application>, it is automatically applied to the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] shell when the <xref:System.Windows.Shell.JumpList> is initialized.  
+  
+## Setting and Modifying a Jump List in Code  
+ You attach a <xref:System.Windows.Shell.JumpList> to an <xref:System.Windows.Application> object in code by calling the static <xref:System.Windows.Shell.JumpList.SetJumpList%2A> method. This also applies the <xref:System.Windows.Shell.JumpList> to the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] shell.  
+  
+ To modify a <xref:System.Windows.Shell.JumpList> at run time, you call the <xref:System.Windows.Shell.JumpList.GetJumpList%2A> method to get the <xref:System.Windows.Shell.JumpList> that is currently attached to an <xref:System.Windows.Application>. After you have modified the properties of the <xref:System.Windows.Shell.JumpList>, you must call the <xref:System.Windows.Shell.JumpList.Apply%2A> method to apply the changes to the Windows shell.  
+  
+> [!NOTE]
+>  You typically create one <xref:System.Windows.Shell.JumpList> that is attached to the <xref:System.Windows.Application> and applied to the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] shell. However, you can create multiple <xref:System.Windows.Shell.JumpList> objects. Only one <xref:System.Windows.Shell.JumpList> at a time can be applied to the [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] shell, and only one <xref:System.Windows.Shell.JumpList> at a time can be associated with an <xref:System.Windows.Application>. The .NET Framework does not require that these be the same <xref:System.Windows.Shell.JumpList>.  
+  
+> [!NOTE]
+>  This class contains a link demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the immediate caller does not have full-trust permission. For more information about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+  
+   
+  
+## Examples  
+ The following example shows an application with a Jump List. The application has three buttons that enable you to add a task to the current Jump List, clear the contents of the Jump List, and apply a new Jump List to the application.  
+  
+ The following example shows how to declare a <xref:System.Windows.Shell.JumpList> in markup. The <xref:System.Windows.Shell.JumpList> contains two <xref:System.Windows.Shell.JumpTask> links and one <xref:System.Windows.Shell.JumpPath>. Applying the <xref:System.Windows.Shell.JumpPath> to the shell will fail if the application is not registered to handle the .txt file name extension.  
+  
+ [!code-xml[Shell_JumpListSample#000](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/app.xaml#000)]  
+  
+ The following example shows the code-behind page for `App.xaml`. This code handles the <xref:System.Windows.Shell.JumpList.JumpItemsRejected> and <xref:System.Windows.Shell.JumpList.JumpItemsRemovedByUser> events.  
+  
+ [!code-csharp[Shell_JumpListSample#100](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/app.xaml.cs#100)]  
+  
+ The following example shows the markup used to create the application user interface.  
+  
+ [!code-xml[Shell_JumpListSample#300](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/mainwindow.xaml#300)]  
+  
+ The following example shows the code-behind page for `MainWindow.xaml`. This code demonstrates how to modify, clear, and create a <xref:System.Windows.Shell.JumpList> in procedural code. For the new Jump List, the static <xref:System.Windows.Shell.JumpList.SetJumpList%2A> method is called to associate the <xref:System.Windows.Shell.JumpList> with the current application and apply the <xref:System.Windows.Shell.JumpList> to the Windows shell.  
+  
+ [!code-csharp[Shell_JumpListSample#200](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/mainwindow.xaml.cs#200)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.Permissions.UIPermission">for full access to modify the Windows shell. Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JumpList ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpList.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Shell.JumpList" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JumpList (System.Collections.Generic.IEnumerable&lt;System.Windows.Shell.JumpItem&gt; items, bool showFrequent, bool showRecent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Shell.JumpItem&gt; items, bool showFrequent, bool showRecent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpList.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Shell.JumpItem},System.Boolean,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;System.Windows.Shell.JumpItem&gt;" />
+        <Parameter Name="showFrequent" Type="System.Boolean" />
+        <Parameter Name="showRecent" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="items">The collection of <see cref="T:System.Windows.Shell.JumpItem" /> objects that are displayed in the Jump List.</param>
+        <param name="showFrequent">A value that indicates whether frequently used items are displayed in the Jump List.</param>
+        <param name="showRecent">A value that indicates whether recently used items are displayed in the Jump List.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Shell.JumpList" /> class with the specified parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The **Recent** and **Frequent** categories often contain many of the same jump items. As a result, applications typically display either the **Recent** or the **Frequent** category in the Jump List, but not both.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="AddToRecentCategory">
+      <MemberSignature Language="C#" Value="public static void AddToRecentCategory (string itemPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddToRecentCategory(string itemPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpList.AddToRecentCategory(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="itemPath">The path to add to the Jump List.</param>
+        <summary>Adds the specified item path to the **Recent** category of the Jump List.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The contents of the **Recent** category are managed by the Windows shell. To display recently used items in the Jump List, set the <xref:System.Windows.Shell.JumpList.ShowRecentCategory%2A> property to `true`.  
+  
+ You can call the <xref:System.Windows.Shell.JumpList.AddToRecentCategory%28System.String%29> method to request that the Windows shell add an item path to the **Recent** items list. If your application is not registered to handle the file type of the item, it will not appear in the **Recent** list and calls to <xref:System.Windows.Shell.JumpList.AddToRecentCategory%28System.String%29> will fail silently.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="AddToRecentCategory">
+      <MemberSignature Language="C#" Value="public static void AddToRecentCategory (System.Windows.Shell.JumpPath jumpPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddToRecentCategory(class System.Windows.Shell.JumpPath jumpPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpList.AddToRecentCategory(System.Windows.Shell.JumpPath)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="jumpPath" Type="System.Windows.Shell.JumpPath" />
+      </Parameters>
+      <Docs>
+        <param name="jumpPath">The <see cref="T:System.Windows.Shell.JumpPath" /> to add to the Jump List.</param>
+        <summary>Adds the specified jump path to the **Recent** category of the Jump List.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The contents of the **Recent** category are managed by the Windows shell. To display recently used items in the Jump List, set the <xref:System.Windows.Shell.JumpList.ShowRecentCategory%2A> property to `true`.  
+  
+ You can call the <xref:System.Windows.Shell.JumpList.AddToRecentCategory%28System.Windows.Shell.JumpPath%29> method to request that the Windows shell add the specified jump path to the **Recent** items list. If your application is not registered to handle the file type of the item, it will not appear in the **Recent** list and calls to <xref:System.Windows.Shell.JumpList.AddToRecentCategory%28System.Windows.Shell.JumpPath%29> will fail silently.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="AddToRecentCategory">
+      <MemberSignature Language="C#" Value="public static void AddToRecentCategory (System.Windows.Shell.JumpTask jumpTask);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddToRecentCategory(class System.Windows.Shell.JumpTask jumpTask) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpList.AddToRecentCategory(System.Windows.Shell.JumpTask)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="jumpTask" Type="System.Windows.Shell.JumpTask" />
+      </Parameters>
+      <Docs>
+        <param name="jumpTask">The <see cref="T:System.Windows.Shell.JumpTask" /> to add to the Jump List.</param>
+        <summary>Adds the specified jump task to the **Recent** category of the Jump List.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The contents of the **Recent** category are managed by the Windows shell. To display recently used items in the Jump List, set the <xref:System.Windows.Shell.JumpList.ShowRecentCategory%2A> property to `true`.  
+  
+ You can call the <xref:System.Windows.Shell.JumpList.AddToRecentCategory%28System.Windows.Shell.JumpTask%29> method to request that the Windows shell add the specified jump task to the **Recent** items list.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Apply">
+      <MemberSignature Language="C#" Value="public void Apply ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Apply() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpList.Apply" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sends the <see cref="T:System.Windows.Shell.JumpList" /> to the Windows shell in its current state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Shell.JumpList.Apply%2A> method sends the content of the <xref:System.Windows.Shell.JumpList> to the Windows shell in its current state. After this call is complete, the <xref:System.Windows.Shell.JumpList.JumpItems%2A> property is modified to contain only those items that the Windows shell successfully added to its taskbar Jump List. You can access the lists of removed items through event handlers for the <xref:System.Windows.Shell.JumpList.JumpItemsRejected> and <xref:System.Windows.Shell.JumpList.JumpItemsRemovedByUser> events.  
+  
+   
+  
+## Examples  
+ The following example shows how to get the current <xref:System.Windows.Shell.JumpList> and clear the contents of the <xref:System.Windows.Shell.JumpList.JumpItems%2A> collection. The <xref:System.Windows.Shell.JumpList.Apply%2A> method is then called to apply the <xref:System.Windows.Shell.JumpList> changes to the Windows shell. This example is part of a larger example available in the <xref:System.Windows.Shell.JumpList> class overview.  
+  
+ [!code-csharp[Shell_JumpListSample#230](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/mainwindow.xaml.cs#230)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Shell.JumpList" /> is not completely initialized.</exception>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginInit">
+      <MemberSignature Language="C#" Value="public void BeginInit ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginInit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpList.BeginInit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecurityTreatAsSafe</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Signals the start of the <see cref="T:System.Windows.Shell.JumpList" /> initialization.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Shell.JumpList> class implements the <xref:System.ComponentModel.ISupportInitialize> interface to support XAML declaration of a <xref:System.Windows.Shell.JumpList>. The <xref:System.Windows.Shell.JumpList.BeginInit%2A> method is only called when the <xref:System.Windows.Shell.JumpList> is declared in XAML and attached to an <xref:System.Windows.Application> by using the attached property syntax. You do not call this method from your code.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This call to <see cref="M:System.Windows.Shell.JumpList.BeginInit" /> is nested in a previous call to <see cref="M:System.Windows.Shell.JumpList.BeginInit" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndInit">
+      <MemberSignature Language="C#" Value="public void EndInit ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndInit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpList.EndInit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecurityTreatAsSafe</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Signals the end of the <see cref="T:System.Windows.Shell.JumpList" /> initialization.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Shell.JumpList> class implements the <xref:System.ComponentModel.ISupportInitialize> interface to support XAML declaration of a <xref:System.Windows.Shell.JumpList>. The <xref:System.Windows.Shell.JumpList.EndInit%2A> method is only called when the <xref:System.Windows.Shell.JumpList> is declared in XAML and attached to an <xref:System.Windows.Application> by using the attached property syntax. You do not call this method from your code.  
+  
+ The <xref:System.Windows.Shell.JumpList.EndInit%2A> method has the same effect as the <xref:System.Windows.Shell.JumpList.Apply%2A> method. <xref:System.Windows.Shell.JumpList.EndInit%2A> sends the content of the <xref:System.Windows.Shell.JumpList> to the Windows shell in its current state. After this call is complete, the <xref:System.Windows.Shell.JumpList.JumpItems%2A> property is modified to contain only those items that the Windows shell successfully added to its Jump List. You can access the lists of removed items through event handlers for the <xref:System.Windows.Shell.JumpList.JumpItemsRejected> and <xref:System.Windows.Shell.JumpList.JumpItemsRemovedByUser> events.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">This call to <see cref="M:System.Windows.Shell.JumpList.EndInit" /> is not paired with a call to <see cref="M:System.Windows.Shell.JumpList.BeginInit" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetJumpList">
+      <MemberSignature Language="C#" Value="public static System.Windows.Shell.JumpList GetJumpList (System.Windows.Application application);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Shell.JumpList GetJumpList(class System.Windows.Application application) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpList.GetJumpList(System.Windows.Application)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Shell.JumpList</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="application" Type="System.Windows.Application" />
+      </Parameters>
+      <Docs>
+        <param name="application">The application associated with the <see cref="T:System.Windows.Shell.JumpList" />.</param>
+        <summary>Returns the <see cref="T:System.Windows.Shell.JumpList" /> object associated with an application.</summary>
+        <returns>The <see cref="T:System.Windows.Shell.JumpList" /> object associated with the specified application.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can call the <xref:System.Windows.Shell.JumpList.GetJumpList%2A> method to get the <xref:System.Windows.Shell.JumpList> currently associated with an <xref:System.Windows.Application>. The .NET Framework does not require that this be the <xref:System.Windows.Shell.JumpList> that is currently applied to the Windows shell.  
+  
+   
+  
+## Examples  
+ The following example shows how to get the <xref:System.Windows.Shell.JumpList> associated with the current application. A <xref:System.Windows.Shell.JumpTask> is added to the <xref:System.Windows.Shell.JumpList.JumpItems%2A> collection and added to the **Recent** category. The <xref:System.Windows.Shell.JumpList.Apply%2A> method is called to apply the updated <xref:System.Windows.Shell.JumpList> to the Windows shell. This example is part of a larger example available in the <xref:System.Windows.Shell.JumpList> class overview.  
+  
+ [!code-csharp[Shell_JumpListSample#240](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/mainwindow.xaml.cs#240)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JumpItems">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;System.Windows.Shell.JumpItem&gt; JumpItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class System.Windows.Shell.JumpItem&gt; JumpItems" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpList.JumpItems" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Windows.Shell.JumpItem&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of <see cref="T:System.Windows.Shell.JumpItem" /> objects that are displayed in the Jump List.</summary>
+        <value>The collection of <see cref="T:System.Windows.Shell.JumpItem" /> objects displayed in the Jump List. The default is an empty collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Jump Lists can contain two types of items, a <xref:System.Windows.Shell.JumpTask> and a <xref:System.Windows.Shell.JumpPath>. A <xref:System.Windows.Shell.JumpTask> is a link to a program and a <xref:System.Windows.Shell.JumpPath> is a link to a file.  
+  
+ When a <xref:System.Windows.Shell.JumpList> is created, the <xref:System.Windows.Shell.JumpList.JumpItems%2A> collection is empty. You can add any <xref:System.Windows.Shell.JumpTask> or <xref:System.Windows.Shell.JumpPath> objects to the collection. The collection will only contain items that have been added by your program. After the <xref:System.Windows.Shell.JumpList> has been passed to the Windows shell by a successful call to either the <xref:System.Windows.Shell.JumpList.EndInit%2A> or <xref:System.Windows.Shell.JumpList.Apply%2A> methods, the <xref:System.Windows.Shell.JumpList.JumpItems%2A> collection will contain only the items that were successfully added to the taskbar Jump List. Items that were not successfully added are removed from the <xref:System.Windows.Shell.JumpList.JumpItems%2A> collection. You can access the lists of removed items through event handlers for the <xref:System.Windows.Shell.JumpList.JumpItemsRejected> and <xref:System.Windows.Shell.JumpList.JumpItemsRemovedByUser> events.  
+  
+   
+  
+## Examples  
+ The following example shows how to get the current <xref:System.Windows.Shell.JumpList> and clear the contents of the <xref:System.Windows.Shell.JumpList.JumpItems%2A> collection. The <xref:System.Windows.Shell.JumpList.Apply%2A> method is then called to apply the <xref:System.Windows.Shell.JumpList> changes to the Windows shell. This example is part of a larger example available in the <xref:System.Windows.Shell.JumpList> class overview.  
+  
+ [!code-csharp[Shell_JumpListSample#230](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/mainwindow.xaml.cs#230)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JumpItemsRejected">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.Shell.JumpItemsRejectedEventArgs&gt; JumpItemsRejected;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Shell.JumpItemsRejectedEventArgs&gt; JumpItemsRejected" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Shell.JumpList.JumpItemsRejected" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Windows.Shell.JumpItemsRejectedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when jump items are not successfully added to the Jump List by the Windows shell.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After the contents of the <xref:System.Windows.Shell.JumpList> are applied to the Windows shell, the <xref:System.Windows.Shell.JumpList.JumpItems%2A> property is modified to contain only those items that the Windows shell successfully added to its Jump List. You can access the lists of removed items through event handlers for the <xref:System.Windows.Shell.JumpList.JumpItemsRejected> and <xref:System.Windows.Shell.JumpList.JumpItemsRemovedByUser> events.  
+  
+   
+  
+## Examples  
+ The following example shows how to handle the <xref:System.Windows.Shell.JumpList.JumpItemsRejected> event to display the rejected items in a message box. This example is part of a larger example available in the <xref:System.Windows.Shell.JumpList> class overview.  
+  
+ [!code-csharp[Shell_JumpListSample#110](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/app.xaml.cs#110)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JumpItemsRemovedByUser">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.Shell.JumpItemsRemovedEventArgs&gt; JumpItemsRemovedByUser;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Shell.JumpItemsRemovedEventArgs&gt; JumpItemsRemovedByUser" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Shell.JumpList.JumpItemsRemovedByUser" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Windows.Shell.JumpItemsRemovedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when jump items previously in the Jump List are removed from the list by the user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After the contents of the <xref:System.Windows.Shell.JumpList> are applied to the Windows shell, the <xref:System.Windows.Shell.JumpList.JumpItems%2A> property is modified to contain only those items that the Windows shell successfully added to its Jump List. You can access the lists of removed items through event handlers for the <xref:System.Windows.Shell.JumpList.JumpItemsRejected> and <xref:System.Windows.Shell.JumpList.JumpItemsRemovedByUser> events.  
+  
+   
+  
+## Examples  
+ The following example shows how to handle the <xref:System.Windows.Shell.JumpList.JumpItemsRemovedByUser> event to display the rejected items in a message box. This example is part of a larger example available in the <xref:System.Windows.Shell.JumpList> class overview.  
+  
+ [!code-csharp[Shell_JumpListSample#120](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/app.xaml.cs#120)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetJumpList">
+      <MemberSignature Language="C#" Value="public static void SetJumpList (System.Windows.Application application, System.Windows.Shell.JumpList value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetJumpList(class System.Windows.Application application, class System.Windows.Shell.JumpList value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpList.SetJumpList(System.Windows.Application,System.Windows.Shell.JumpList)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="application" Type="System.Windows.Application" />
+        <Parameter Name="value" Type="System.Windows.Shell.JumpList" />
+      </Parameters>
+      <Docs>
+        <param name="application">The application associated with the <see cref="T:System.Windows.Shell.JumpList" />.</param>
+        <param name="value">The <see cref="T:System.Windows.Shell.JumpList" /> to associate with the application.</param>
+        <summary>Sets the <see cref="T:System.Windows.Shell.JumpList" /> object associated with an application.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can create multiple <xref:System.Windows.Shell.JumpList> objects. However, only one <xref:System.Windows.Shell.JumpList> at a time can be associated with an <xref:System.Windows.Application>. Call the <xref:System.Windows.Shell.JumpList.SetJumpList%2A> method to set the <xref:System.Windows.Shell.JumpList> currently associated with an <xref:System.Windows.Application>.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a <xref:System.Windows.Shell.JumpList> in code. The static <xref:System.Windows.Shell.JumpList.SetJumpList%2A> method is called to associate the <xref:System.Windows.Shell.JumpList> with the current application. The <xref:System.Windows.Shell.JumpList> is automatically applied to the Windows shell when it is set. This example is part of a larger example available in the <xref:System.Windows.Shell.JumpList> class overview.  
+  
+ [!code-csharp[Shell_JumpListSample#210](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/mainwindow.xaml.cs#210)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowFrequentCategory">
+      <MemberSignature Language="C#" Value="public bool ShowFrequentCategory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowFrequentCategory" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpList.ShowFrequentCategory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether frequently used items are displayed in the Jump List.</summary>
+        <value>
+          <see langword="true" /> if frequently used items are displayed in the Jump List; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The contents of the **Frequent** category are managed by the Windows shell. To display frequently used items in the Jump List, set the <xref:System.Windows.Shell.JumpList.ShowFrequentCategory%2A> property to `true`.  
+  
+ The **Recent** and **Frequent** categories often contain many of the same jump items. As a result, applications typically display either the **Recent** or the **Frequent** category in the Jump List, but not both.  
+  
+   
+  
+## Examples  
+ The following example shows a <xref:System.Windows.Shell.JumpList> configured to show the **Frequent** category. This example is part of a larger example available in the <xref:System.Windows.Shell.JumpList> class overview.  
+  
+ [!code-xml[Shell_JumpListSample#001](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/app.xaml#001)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowRecentCategory">
+      <MemberSignature Language="C#" Value="public bool ShowRecentCategory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowRecentCategory" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpList.ShowRecentCategory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether recently used items are displayed in the Jump List.</summary>
+        <value>
+          <see langword="true" /> if recently used items are displayed in the Jump List; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The contents of the **Recent** category are managed by the Windows shell. To display frequently used items in the Jump List, set the <xref:System.Windows.Shell.JumpList.ShowRecentCategory%2A> property to `true`.  
+  
+ The **Recent** and **Frequent** categories often contain many of the same jump items. As a result, applications typically display either the **Recent** or the **Frequent** category in the Jump List, but not both.  
+  
+ You can call the <xref:System.Windows.Shell.JumpList.AddToRecentCategory%2A> method to request that the Windows shell add items to the **Recent** items list. If your application is not registered to handle the file name type of the item, it will not appear in the **Recent** list and calls to <xref:System.Windows.Shell.JumpList.AddToRecentCategory%2A> will fail silently.  
+  
+   
+  
+## Examples  
+ The following example shows a <xref:System.Windows.Shell.JumpList> configured to show the **Recent** category. This example is part of a larger example available in the <xref:System.Windows.Shell.JumpList> class overview.  
+  
+ [!code-xml[Shell_JumpListSample#001](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/app.xaml#001)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

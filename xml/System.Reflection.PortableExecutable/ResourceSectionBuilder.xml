@@ -1,0 +1,57 @@
+<Type Name="ResourceSectionBuilder" FullName="System.Reflection.PortableExecutable.ResourceSectionBuilder">
+  <TypeSignature Language="C#" Value="public abstract class ResourceSectionBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ResourceSectionBuilder extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.ResourceSectionBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ResourceSectionBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.ResourceSectionBuilder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Serialize">
+      <MemberSignature Language="C#" Value="protected abstract void Serialize (System.Reflection.Metadata.BlobBuilder builder, System.Reflection.PortableExecutable.SectionLocation location);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Serialize(class System.Reflection.Metadata.BlobBuilder builder, valuetype System.Reflection.PortableExecutable.SectionLocation location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.ResourceSectionBuilder.Serialize(System.Reflection.Metadata.BlobBuilder,System.Reflection.PortableExecutable.SectionLocation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="System.Reflection.Metadata.BlobBuilder" />
+        <Parameter Name="location" Type="System.Reflection.PortableExecutable.SectionLocation" />
+      </Parameters>
+      <Docs>
+        <param name="builder">To be added.</param>
+        <param name="location">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

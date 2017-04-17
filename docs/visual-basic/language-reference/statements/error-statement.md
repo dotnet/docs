@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "errors [Visual Basic], simulating"
 ms.assetid: 85cd5c59-5224-4f02-aaf5-fcfefab17a29
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

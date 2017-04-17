@@ -1,0 +1,268 @@
+<Type Name="FormViewInsertedEventArgs" FullName="System.Web.UI.WebControls.FormViewInsertedEventArgs">
+  <TypeSignature Language="C#" Value="public class FormViewInsertedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FormViewInsertedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FormViewInsertedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.FormView.ItemInserted" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.FormView> control raises the <xref:System.Web.UI.WebControls.FormView.ItemInserted> event when an Insert button (a button with its `CommandName` property set to "Insert") within the control is clicked, but after the <xref:System.Web.UI.WebControls.FormView> control inserts the record. This allows you to provide an event-handling method that performs a custom routine, such as checking the results of an insert operation, whenever this event occurs.  
+  
+ A <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs> object is passed to the event-handling method, which allows you to determine the number of records affected and any exceptions that might have occurred. To determine the number of records affected by the insert operation, use the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.AffectedRows%2A> property. Use the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.Exception%2A> property to determine whether any exceptions occurred. You can also indicate whether the exception was handled in the event-handling method by setting the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.ExceptionHandled%2A> property. If you need to access the values of the inserted record, use the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.Values%2A> property.  
+  
+ By default, the <xref:System.Web.UI.WebControls.FormView> control returns to the mode specified by the <xref:System.Web.UI.WebControls.FormView.DefaultMode%2A> property after an insert operation. If an exception occurs during the insert operation, you can keep the <xref:System.Web.UI.WebControls.FormView> control in insert mode by setting the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.KeepInInsertMode%2A> property to `true`.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.FormViewDeletedEventArgs> class, see the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.%23ctor%2A> constructor.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs> object passed to the event-handling method for the <xref:System.Web.UI.WebControls.FormView.ItemInserted> event to determine whether an exception occurred during an insert operation.  
+  
+> [!IMPORTANT]
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[FormViewInsertedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertedEventArgs/CS/formviewinsertedeventargscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[FormViewInsertedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertedEventArgs/VB/formviewinsertedeventargsvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FormViewInsertedEventArgs (int affectedRows, Exception e);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 affectedRows, class System.Exception e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormViewInsertedEventArgs.#ctor(System.Int32,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="affectedRows" Type="System.Int32" />
+        <Parameter Name="e" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="affectedRows">The number of rows affected by the insert operation.</param>
+        <param name="e">An <see cref="T:System.Exception" /> that represents the exception raised when the insert operation was performed. If no exception was raised, use <see langword="null" /> for this parameter.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.FormViewInsertedEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs> class.  
+  
+ The following table shows the initial property values for an instance of <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs>.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.AffectedRows%2A>|The value of the `affectedRows` parameter.|  
+|<xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.Exception%2A>|The <xref:System.Exception?displayProperty=fullName> object contained in the `e` parameter.|  
+|<xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.ExceptionHandled%2A>|Initialized to `false`.|  
+|<xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.KeepInInsertMode%2A>|Initialized to `false`.|  
+  
+> [!NOTE]
+>  This constructor is used primarily by control developers when raising events.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AffectedRows">
+      <MemberSignature Language="C#" Value="public int AffectedRows { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AffectedRows" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.AffectedRows" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of rows affected by the insert operation.</summary>
+        <value>The number of rows affected by the insert operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.AffectedRows%2A> property to determine the number of records affected by the insert operation. This property is commonly used to verify that the correct number of records was inserted in the following situations:  
+  
+-   Verify that only a single record was inserted. Sometimes an improperly written insert statement can insert multiple records.  
+  
+-   Verify that a record was inserted when an error occurs during the insert operation that does not raise an exception.  
+  
+-   Verify that a record was inserted when a data source control that supports conflict detection (optimistic concurrency), such as the <xref:System.Web.UI.WebControls.SqlDataSource> and <xref:System.Web.UI.WebControls.ObjectDataSource> controls, has its <xref:System.Web.UI.WebControls.SqlDataSource.ConflictDetection%2A> property set to the `ConflictOptions.CompareAllValues` enumeration value. Under this setting, a record that has the same key value as a record by another user concurrently might not be inserted.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.AffectedRows%2A> property to verify that a record was inserted during the insert operation.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[FormViewInsertedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertedEventArgs/CS/formviewinsertedeventargscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[FormViewInsertedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertedEventArgs/VB/formviewinsertedeventargsvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Exception">
+      <MemberSignature Language="C#" Value="public Exception Exception { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Exception" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.Exception" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the exception (if any) that was raised during the insert operation.</summary>
+        <value>An <see cref="T:System.Exception" /> that represents the exception that was raised during the insert operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.Exception%2A> property to determine the exception (if any) that was raised during the insert operation. If no exceptions were raised, this property returns `null`.  
+  
+> [!NOTE]
+>  If an exception was raised and you decide to handle the exception in the event handler, be sure to set the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.ExceptionHandled%2A> property to `true`; otherwise, the <xref:System.Web.UI.WebControls.FormView> control re-throws the exception.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.Exception%2A> property to determine whether an exception was raised during an insert operation.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[FormViewInsertedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertedEventArgs/CS/formviewinsertedeventargscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[FormViewInsertedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertedEventArgs/VB/formviewinsertedeventargsvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExceptionHandled">
+      <MemberSignature Language="C#" Value="public bool ExceptionHandled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ExceptionHandled" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.ExceptionHandled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether an exception that was raised during the insert operation was handled in the event handler.</summary>
+        <value>
+          <see langword="true" /> if the exception was handled in the event handler; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an exception is raised during the insert operation, use the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.ExceptionHandled%2A> property to indicate whether the exception was handled in the event handler. When this property is set to `true`, the exception is considered handled and is not re-thrown. If this property is set to `false`, the <xref:System.Web.UI.WebControls.FormView> control re-throws the exception. To determine which exception was raised, use the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.Exception%2A> property.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.ExceptionHandled%2A> property to indicate that the exception was handled in the event handler.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[FormViewInsertedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertedEventArgs/CS/formviewinsertedeventargscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[FormViewInsertedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertedEventArgs/VB/formviewinsertedeventargsvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeepInInsertMode">
+      <MemberSignature Language="C#" Value="public bool KeepInInsertMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool KeepInInsertMode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.KeepInInsertMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Web.UI.WebControls.FormView" /> control should remain in insert mode after an insert operation.</summary>
+        <value>
+          <see langword="true" /> to remain in insert mode after an insert operation; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the <xref:System.Web.UI.WebControls.FormView> control returns to the mode specified by the <xref:System.Web.UI.WebControls.FormView.DefaultMode%2A> property. Use the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.KeepInInsertMode%2A> property to specify whether the <xref:System.Web.UI.WebControls.FormView> control should remain in insert mode after an insert operation. To keep the <xref:System.Web.UI.WebControls.FormView> control in insert mode, set this property to `true`.  
+  
+> [!NOTE]
+>  This property should be used only when a situation occurs (such as an exception being raised) that requires the control to behave differently than it normally would. If the <xref:System.Web.UI.WebControls.FormView> control needs to remain in insert mode by default, set the <xref:System.Web.UI.WebControls.FormView.DefaultMode%2A> property instead.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.KeepInInsertMode%2A> property to keep the <xref:System.Web.UI.WebControls.FormView> control in insert mode when an exception occurs during an insert operation.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[FormViewInsertedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertedEventArgs/CS/formviewinsertedeventargscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[FormViewInsertedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertedEventArgs/VB/formviewinsertedeventargsvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Values">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary Values { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.IOrderedDictionary Values" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormViewInsertedEventArgs.Values" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.IOrderedDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a dictionary that contains the field name/value pairs for the inserted record.</summary>
+        <value>An <see cref="T:System.Collections.Specialized.IOrderedDictionary" /> object that contains a dictionary of key field name/value pairs for the inserted record.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.Values%2A> property to access the values of the fields for the inserted record. For example, you can use these values to keep a log of inserted records.  
+  
+ The <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.Values%2A> property returns an <xref:System.Collections.Specialized.OrderedDictionary> object that implements the <xref:System.Collections.Specialized.IOrderedDictionary?displayProperty=fullName> interface. The <xref:System.Collections.Specialized.OrderedDictionary> object contains <xref:System.Collections.DictionaryEntry?displayProperty=fullName> objects that represent the fields of the inserted record. To access the field names, use the <xref:System.Collections.Specialized.OrderedDictionary.Keys%2A> property of the <xref:System.Collections.Specialized.OrderedDictionary> object. Similarly, you can access the field values by using the <xref:System.Collections.Specialized.OrderedDictionary.Values%2A> property.  
+  
+> [!NOTE]
+>  As a shortcut, you can also use the indexer of the <xref:System.Collections.Specialized.OrderedDictionary> object to access the field values directly. The advantage in using the indexer is that it returns field values directly. Data source controls that rely on the field order (such as <xref:System.Web.UI.WebControls.AccessDataSource>) can access field values only by index.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to iterate through the items in the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.Values%2A> collection.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[FormViewInsertedEventArgsValues#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertedEventArgsValues/CS/formviewinsertedeventargsvaluescs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[FormViewInsertedEventArgsValues#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertedEventArgsValues/VB/formviewinsertedeventargsvaluesvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

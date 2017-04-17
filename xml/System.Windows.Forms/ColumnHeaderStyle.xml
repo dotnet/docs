@@ -1,0 +1,82 @@
+<Type Name="ColumnHeaderStyle" FullName="System.Windows.Forms.ColumnHeaderStyle">
+  <TypeSignature Language="C#" Value="public enum ColumnHeaderStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ColumnHeaderStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ColumnHeaderStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the styles of the column headers in a <see cref="T:System.Windows.Forms.ListView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration to set the value of the <xref:System.Windows.Forms.ListView.HeaderStyle%2A> property of the <xref:System.Windows.Forms.ListView> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using the <xref:System.Windows.Forms.ColumnHeaderStyle> enumeration to set the <xref:System.Windows.Forms.ListView.HeaderStyle%2A?displayProperty=fullName> property of a <xref:System.Windows.Forms.ListView> control. To run this example paste the following code in a form and call the `InitializeListView` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler.  
+  
+ [!code-cpp[System.Windows.Forms.ListView1#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListView1/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.ListView1#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListView1/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ListView1#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListView1/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Clickable">
+      <MemberSignature Language="C#" Value="Clickable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ColumnHeaderStyle Clickable = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ColumnHeaderStyle.Clickable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ColumnHeaderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The column headers function like buttons and can carry out an action, such as sorting, when clicked.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Nonclickable">
+      <MemberSignature Language="C#" Value="Nonclickable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ColumnHeaderStyle Nonclickable = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ColumnHeaderStyle.Nonclickable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ColumnHeaderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The column headers do not respond to the click of a mouse.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ColumnHeaderStyle None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ColumnHeaderStyle.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ColumnHeaderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The column header is not displayed in report view.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

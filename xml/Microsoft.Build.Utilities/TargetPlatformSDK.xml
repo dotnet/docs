@@ -1,0 +1,162 @@
+<Type Name="TargetPlatformSDK" FullName="Microsoft.Build.Utilities.TargetPlatformSDK">
+  <TypeSignature Language="C#" Value="public class TargetPlatformSDK : IEquatable&lt;Microsoft.Build.Utilities.TargetPlatformSDK&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TargetPlatformSDK extends System.Object implements class System.IEquatable`1&lt;class Microsoft.Build.Utilities.TargetPlatformSDK&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.TargetPlatformSDK" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;Microsoft.Build.Utilities.TargetPlatformSDK&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a target platform SDK.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TargetPlatformSDK (string targetPlatformIdentifier, Version targetPlatformVersion, string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string targetPlatformIdentifier, class System.Version targetPlatformVersion, string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TargetPlatformSDK.#ctor(System.String,System.Version,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="targetPlatformIdentifier" Type="System.String" />
+        <Parameter Name="targetPlatformVersion" Type="System.Version" />
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="targetPlatformIdentifier">The identifier of the target platform.</param>
+        <param name="targetPlatformVersion">The version of the target platform.</param>
+        <param name="path">The path to the target platform SDK.</param>
+        <summary>Creates a new instance of a target platform SDK class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (Microsoft.Build.Utilities.TargetPlatformSDK other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class Microsoft.Build.Utilities.TargetPlatformSDK other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TargetPlatformSDK.Equals(Microsoft.Build.Utilities.TargetPlatformSDK)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="Microsoft.Build.Utilities.TargetPlatformSDK" />
+      </Parameters>
+      <Docs>
+        <param name="other">Target platform SDK to compare to this element.</param>
+        <summary>Ensures equality between target platform SDKs.</summary>
+        <returns>Returns <see langword="true" /> if items are equal, otherwise, returns <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TargetPlatformSDK.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">Object to compare to this element.</param>
+        <summary>Ensures equality between target platform SDK and object.</summary>
+        <returns>Returns <see langword="true" /> if items are equal, otherwise, returns <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TargetPlatformSDK.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Get hash code for the target platform SDK.</summary>
+        <returns>Returns a hash code.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public string Path { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.TargetPlatformSDK.Path" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the Path to the target platform SDK.</summary>
+        <value>Returns the path to the target platform SDK.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetPlatformIdentifier">
+      <MemberSignature Language="C#" Value="public string TargetPlatformIdentifier { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TargetPlatformIdentifier" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.TargetPlatformSDK.TargetPlatformIdentifier" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the target platform SDK identifier.</summary>
+        <value>Returns the target platform SDK identifier.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetPlatformVersion">
+      <MemberSignature Language="C#" Value="public Version TargetPlatformVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Version TargetPlatformVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.TargetPlatformSDK.TargetPlatformVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the version of the target platform.</summary>
+        <value>Returns the target platform version.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,324 @@
+<Type Name="FSharpFunc&lt;T,TResult&gt;" FullName="Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt;">
+  <TypeSignature Language="C#" Value="public abstract class FSharpFunc&lt;T,TResult&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit FSharpFunc`2&lt;T, TResult&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.FSharpFunc`2" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+    <TypeParameter Name="TResult" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.AbstractClass</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.ObjectType)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <typeparam name="TResult">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FSharpFunc ();" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FSharpFunc`2.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromConverter">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt; FromConverter (Converter&lt;T,TResult&gt; converter);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T, !TResult&gt; FromConverter(class System.Converter`2&lt;!T, !TResult&gt; converter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FSharpFunc`2.FromConverter(System.Converter{`0,`1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="converter" Type="System.Converter&lt;T,TResult&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="converter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invoke">
+      <MemberSignature Language="C#" Value="public abstract TResult Invoke (T func);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance !TResult Invoke(!T func) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FSharpFunc`2.Invoke(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="func" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="func">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeFast&lt;V&gt;">
+      <MemberSignature Language="C#" Value="public static V InvokeFast&lt;V&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;TResult,V&gt;&gt; func, T arg1, TResult arg2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!V InvokeFast&lt;V&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!TResult, !!V&gt;&gt; func, !T arg1, !TResult arg2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FSharpFunc`2.InvokeFast``1(Microsoft.FSharp.Core.FSharpFunc{`0,Microsoft.FSharp.Core.FSharpFunc{`1,``0}},`0,`1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>V</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="V" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="func" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;TResult,V&gt;&gt;" />
+        <Parameter Name="arg1" Type="T" />
+        <Parameter Name="arg2" Type="TResult" />
+      </Parameters>
+      <Docs>
+        <typeparam name="V">To be added.</typeparam>
+        <param name="func">To be added.</param>
+        <param name="arg1">To be added.</param>
+        <param name="arg2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeFast&lt;V,W&gt;">
+      <MemberSignature Language="C#" Value="public static W InvokeFast&lt;V,W&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;TResult,Microsoft.FSharp.Core.FSharpFunc&lt;V,W&gt;&gt;&gt; func, T arg1, TResult arg2, V arg3);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!W InvokeFast&lt;V, W&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!TResult, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!V, !!W&gt;&gt;&gt; func, !T arg1, !TResult arg2, !!V arg3) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FSharpFunc`2.InvokeFast``2(Microsoft.FSharp.Core.FSharpFunc{`0,Microsoft.FSharp.Core.FSharpFunc{`1,Microsoft.FSharp.Core.FSharpFunc{``0,``1}}},`0,`1,``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>W</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="V" />
+        <TypeParameter Name="W" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="func" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;TResult,Microsoft.FSharp.Core.FSharpFunc&lt;V,W&gt;&gt;&gt;" />
+        <Parameter Name="arg1" Type="T" />
+        <Parameter Name="arg2" Type="TResult" />
+        <Parameter Name="arg3" Type="V" />
+      </Parameters>
+      <Docs>
+        <typeparam name="V">To be added.</typeparam>
+        <typeparam name="W">To be added.</typeparam>
+        <param name="func">To be added.</param>
+        <param name="arg1">To be added.</param>
+        <param name="arg2">To be added.</param>
+        <param name="arg3">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeFast&lt;V,W,X&gt;">
+      <MemberSignature Language="C#" Value="public static X InvokeFast&lt;V,W,X&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;TResult,Microsoft.FSharp.Core.FSharpFunc&lt;V,Microsoft.FSharp.Core.FSharpFunc&lt;W,X&gt;&gt;&gt;&gt; func, T arg1, TResult arg2, V arg3, W arg4);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!X InvokeFast&lt;V, W, X&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!TResult, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!V, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!W, !!X&gt;&gt;&gt;&gt; func, !T arg1, !TResult arg2, !!V arg3, !!W arg4) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FSharpFunc`2.InvokeFast``3(Microsoft.FSharp.Core.FSharpFunc{`0,Microsoft.FSharp.Core.FSharpFunc{`1,Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,``2}}}},`0,`1,``0,``1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>X</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="V" />
+        <TypeParameter Name="W" />
+        <TypeParameter Name="X" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="func" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;TResult,Microsoft.FSharp.Core.FSharpFunc&lt;V,Microsoft.FSharp.Core.FSharpFunc&lt;W,X&gt;&gt;&gt;&gt;" />
+        <Parameter Name="arg1" Type="T" />
+        <Parameter Name="arg2" Type="TResult" />
+        <Parameter Name="arg3" Type="V" />
+        <Parameter Name="arg4" Type="W" />
+      </Parameters>
+      <Docs>
+        <typeparam name="V">To be added.</typeparam>
+        <typeparam name="W">To be added.</typeparam>
+        <typeparam name="X">To be added.</typeparam>
+        <param name="func">To be added.</param>
+        <param name="arg1">To be added.</param>
+        <param name="arg2">To be added.</param>
+        <param name="arg3">To be added.</param>
+        <param name="arg4">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeFast&lt;V,W,X,Y&gt;">
+      <MemberSignature Language="C#" Value="public static Y InvokeFast&lt;V,W,X,Y&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;TResult,Microsoft.FSharp.Core.FSharpFunc&lt;V,Microsoft.FSharp.Core.FSharpFunc&lt;W,Microsoft.FSharp.Core.FSharpFunc&lt;X,Y&gt;&gt;&gt;&gt;&gt; func, T arg1, TResult arg2, V arg3, W arg4, X arg5);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!Y InvokeFast&lt;V, W, X, Y&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!TResult, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!V, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!W, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!X, !!Y&gt;&gt;&gt;&gt;&gt; func, !T arg1, !TResult arg2, !!V arg3, !!W arg4, !!X arg5) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FSharpFunc`2.InvokeFast``4(Microsoft.FSharp.Core.FSharpFunc{`0,Microsoft.FSharp.Core.FSharpFunc{`1,Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpFunc{``2,``3}}}}},`0,`1,``0,``1,``2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Y</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="V" />
+        <TypeParameter Name="W" />
+        <TypeParameter Name="X" />
+        <TypeParameter Name="Y" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="func" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;TResult,Microsoft.FSharp.Core.FSharpFunc&lt;V,Microsoft.FSharp.Core.FSharpFunc&lt;W,Microsoft.FSharp.Core.FSharpFunc&lt;X,Y&gt;&gt;&gt;&gt;&gt;" />
+        <Parameter Name="arg1" Type="T" />
+        <Parameter Name="arg2" Type="TResult" />
+        <Parameter Name="arg3" Type="V" />
+        <Parameter Name="arg4" Type="W" />
+        <Parameter Name="arg5" Type="X" />
+      </Parameters>
+      <Docs>
+        <typeparam name="V">To be added.</typeparam>
+        <typeparam name="W">To be added.</typeparam>
+        <typeparam name="X">To be added.</typeparam>
+        <typeparam name="Y">To be added.</typeparam>
+        <param name="func">To be added.</param>
+        <param name="arg1">To be added.</param>
+        <param name="arg2">To be added.</param>
+        <param name="arg3">To be added.</param>
+        <param name="arg4">To be added.</param>
+        <param name="arg5">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static Converter&lt;T,TResult&gt; op_Implicit (Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt; func);" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname class System.Converter`2&lt;!T, !TResult&gt; op_Implicit(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T, !TResult&gt; func) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FSharpFunc`2.op_Implicit(Microsoft.FSharp.Core.FSharpFunc{`0,`1})~System.Converter{`0,`1}" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Converter&lt;T,TResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="func" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="func">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt; op_Implicit (Converter&lt;T,TResult&gt; converter);" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T, !TResult&gt; op_Implicit(class System.Converter`2&lt;!T, !TResult&gt; converter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FSharpFunc`2.op_Implicit(System.Converter{`0,`1})~Microsoft.FSharp.Core.FSharpFunc{`0,`1}" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="converter" Type="System.Converter&lt;T,TResult&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="converter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToConverter">
+      <MemberSignature Language="C#" Value="public static Converter&lt;T,TResult&gt; ToConverter (Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt; func);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Converter`2&lt;!T, !TResult&gt; ToConverter(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T, !TResult&gt; func) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FSharpFunc`2.ToConverter(Microsoft.FSharp.Core.FSharpFunc{`0,`1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Converter&lt;T,TResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="func" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="func">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,246 @@
+<Type Name="ScriptResourceAttribute" FullName="System.Web.UI.ScriptResourceAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ScriptResourceAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ScriptResourceAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptResourceAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly, AllowMultiple=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines a resource in an assembly to be used from a client script file. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.ScriptResourceAttribute> class is valid only when you use it in assembly declarations. You use it to enable a specified embedded script resource in an assembly. You can define the name of the embedded script library, the name of the resource file for the script library, and the name that is used in a script file for retrieving the resource values. The <xref:System.Web.UI.ScriptManager> class uses the properties in <xref:System.Web.UI.ScriptResourceAttribute> to determine the correct resource name for a script library. The <xref:System.Web.UI.ScriptResourceAttribute.TypeName%2A> property is used with a resource key to specify a resource.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.ScriptResourceAttribute> class can be used only to identify text-based resources for JavaScript files. To associate a localized image (binary) file with a particular culture, consider storing only its URL as a localized resource, which then be resolved and loaded in script.  
+  
+   
+  
+## Examples  
+ The following example shows a <xref:System.Web.UI.ScriptResourceAttribute> attribute for a script file named CheckAnswer.js that uses resources from the VerificationResources resource files. The name `Answer` is used to reference these resources.  
+  
+ [!code-csharp[LocalizingClientResourcesWalkthrough#3](~/samples/snippets/csharp/VS_Snippets_Atlas/LocalizingClientResourcesWalkthrough/cs/AssemblyInfo.cs#3)]
+ [!code-vb[LocalizingClientResourcesWalkthrough#3](~/samples/snippets/visualbasic/VS_Snippets_Atlas/LocalizingClientResourcesWalkthrough/vb/AssemblyInfo.vb#3)]  
+  
+ The following example shows how to use the resources in client script. The resource keys (`Correct` and `Incorrect`) are prefixed with `Answer` to identify the script resource definition that contains the values.  
+  
+ [!code-javascript[LocalizingClientResourcesWalkthrough#1](~/samples/snippets/csharp/VS_Snippets_Atlas/LocalizingClientResourcesWalkthrough/cs/CheckAnswer.js#1)]
+ <!-- TODO: review snippet reference [!code-javascript[LocalizingClientResourcesWalkthrough#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/LocalizingClientResourcesWalkthrough/vb/CheckAnswer.js#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ScriptResourceAttribute (string scriptName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string scriptName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptResourceAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="scriptName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="scriptName">The name of the script library.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ScriptResourceAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ScriptResourceAttribute (string scriptName, string stringResourceName, string stringResourceClientTypeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string scriptName, string stringResourceName, string stringResourceClientTypeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptResourceAttribute.#ctor(System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="scriptName" Type="System.String" />
+        <Parameter Name="stringResourceName" Type="System.String" />
+        <Parameter Name="stringResourceClientTypeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="scriptName">The name of the script library.</param>
+        <param name="stringResourceName">The name of the resource file for the script library.</param>
+        <param name="stringResourceClientTypeName">The name of the type to create for the values in the resource file.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ScriptResourceAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.ScriptResourceAttribute.%23ctor%2A> method is typically called by using the <xref:System.Web.UI.ScriptResourceAttribute> attribute as an assembly attribute in the application's AssemblyInfo file.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="scriptName" />, <paramref name="scriptResourceName" />, or <paramref name="typeName" /> is <see langword="null" /> or an empty string ("").</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptName">
+      <MemberSignature Language="C#" Value="public string ScriptName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ScriptName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceAttribute.ScriptName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the script library.</summary>
+        <value>The name of the script library.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows a <xref:System.Web.UI.ScriptResourceAttribute> attribute for a script file named CheckAnswer.js that uses resources from the VerificationResources resource files. The name `Answer` is used to reference these resources. In this example, the <xref:System.Web.UI.ScriptResourceAttribute.ScriptName%2A> property returns "LocalizingResources.CheckAnswer.js".  
+  
+ [!code-csharp[LocalizingClientResourcesWalkthrough#3](~/samples/snippets/csharp/VS_Snippets_Atlas/LocalizingClientResourcesWalkthrough/cs/AssemblyInfo.cs#3)]
+ [!code-vb[LocalizingClientResourcesWalkthrough#3](~/samples/snippets/visualbasic/VS_Snippets_Atlas/LocalizingClientResourcesWalkthrough/vb/AssemblyInfo.vb#3)]  
+  
+ The following example shows how to use the resources in client script. The resource keys (`Correct` and `Incorrect`) are prefixed with `Answer` to identify the script resource definition that contains the values.  
+  
+ [!code-javascript[LocalizingClientResourcesWalkthrough#1](~/samples/snippets/csharp/VS_Snippets_Atlas/LocalizingClientResourcesWalkthrough/cs/CheckAnswer.js#1)]
+ <!-- TODO: review snippet reference [!code-javascript[LocalizingClientResourcesWalkthrough#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/LocalizingClientResourcesWalkthrough/vb/CheckAnswer.js#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptResourceName">
+      <MemberSignature Language="C#" Value="public string ScriptResourceName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ScriptResourceName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceAttribute.ScriptResourceName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This property is obsolete. Use StringResourceName instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the resource file for the script library.</summary>
+        <value>The name of the resource file for the script library.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows a <xref:System.Web.UI.ScriptResourceAttribute> attribute for a script file named CheckAnswer.js that uses resources from the VerificationResources resource files. The name `Answer` is used to reference these resources. In this example, the <xref:System.Web.UI.ScriptResourceAttribute.ScriptResourceName%2A> property returns "LocalizingResources.VerificationResources". The file name extension is not included when you define the <xref:System.Web.UI.ScriptResourceAttribute.ScriptResourceName%2A>.  
+  
+ [!code-csharp[LocalizingClientResourcesWalkthrough#3](~/samples/snippets/csharp/VS_Snippets_Atlas/LocalizingClientResourcesWalkthrough/cs/AssemblyInfo.cs#3)]
+ [!code-vb[LocalizingClientResourcesWalkthrough#3](~/samples/snippets/visualbasic/VS_Snippets_Atlas/LocalizingClientResourcesWalkthrough/vb/AssemblyInfo.vb#3)]  
+  
+ The following example shows how to use the resources in client script. The resource keys (`Correct` and `Incorrect`) are prefixed with `Answer` to identify the script resource definition that contains the values.  
+  
+ [!code-javascript[LocalizingClientResourcesWalkthrough#1](~/samples/snippets/csharp/VS_Snippets_Atlas/LocalizingClientResourcesWalkthrough/cs/CheckAnswer.js#1)]
+ <!-- TODO: review snippet reference [!code-javascript[LocalizingClientResourcesWalkthrough#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/LocalizingClientResourcesWalkthrough/vb/CheckAnswer.js#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StringResourceClientTypeName">
+      <MemberSignature Language="C#" Value="public string StringResourceClientTypeName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StringResourceClientTypeName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceAttribute.StringResourceClientTypeName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the client type to create for the values in the resource file.</summary>
+        <value>The name of the client type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StringResourceName">
+      <MemberSignature Language="C#" Value="public string StringResourceName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StringResourceName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceAttribute.StringResourceName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the resource file for the script library.</summary>
+        <value>The name of the resource file.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeName">
+      <MemberSignature Language="C#" Value="public string TypeName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TypeName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptResourceAttribute.TypeName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This property is obsolete. Use StringResourceClientTypeName instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name that is used when retrieving the values in the resource file.</summary>
+        <value>The name that is used in client script when retrieving the values in the resource file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.ScriptResourceAttribute.TypeName%2A> property contains the value that is used for retrieving localized resources in client script. The client script must include the <xref:System.Web.UI.ScriptResourceAttribute.TypeName%2A> value and the key name for the resource to be localized.  
+  
+   
+  
+## Examples  
+ The following example shows a <xref:System.Web.UI.ScriptResourceAttribute> attribute for a script file named CheckAnswer.js that uses resources from the VerificationResources resource files. The name `Answer` is used to reference these resources. In this example, the <xref:System.Web.UI.ScriptResourceAttribute.TypeName%2A> property returns "Answer".  
+  
+ [!code-csharp[LocalizingClientResourcesWalkthrough#3](~/samples/snippets/csharp/VS_Snippets_Atlas/LocalizingClientResourcesWalkthrough/cs/AssemblyInfo.cs#3)]
+ [!code-vb[LocalizingClientResourcesWalkthrough#3](~/samples/snippets/visualbasic/VS_Snippets_Atlas/LocalizingClientResourcesWalkthrough/vb/AssemblyInfo.vb#3)]  
+  
+ The following example shows how to use the resources in client script. The resource keys (`Correct` and `Incorrect`) are prefixed with `Answer` to identify the script resource definition that contains the values.  
+  
+ [!code-javascript[LocalizingClientResourcesWalkthrough#1](~/samples/snippets/csharp/VS_Snippets_Atlas/LocalizingClientResourcesWalkthrough/cs/CheckAnswer.js#1)]
+ <!-- TODO: review snippet reference [!code-javascript[LocalizingClientResourcesWalkthrough#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/LocalizingClientResourcesWalkthrough/vb/CheckAnswer.js#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

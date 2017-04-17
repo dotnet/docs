@@ -1,0 +1,82 @@
+<Type Name="ExceptionValidationRule" FullName="System.Windows.Controls.ExceptionValidationRule">
+  <TypeSignature Language="C#" Value="public sealed class ExceptionValidationRule : System.Windows.Controls.ValidationRule" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExceptionValidationRule extends System.Windows.Controls.ValidationRule" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ExceptionValidationRule" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Controls.ValidationRule</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a rule that checks for exceptions that are thrown during the update of the binding source property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] data binding model enables you to associate <xref:System.Windows.Data.Binding.ValidationRules%2A> with a <xref:System.Windows.Data.Binding> object. The <xref:System.Windows.Controls.ExceptionValidationRule> class is a built-in rule that checks for exceptions that are thrown during the updates of the binding source property. You can provide custom logic to specify how the binding engine handles these exceptions by using a <xref:System.Windows.Data.UpdateSourceExceptionFilterCallback>. For more information, see <xref:System.Windows.Data.Binding.UpdateSourceExceptionFilter%2A>.  
+  
+ An alternative syntax to setting the <xref:System.Windows.Controls.ExceptionValidationRule> explicitly is to set the <xref:System.Windows.Data.Binding.ValidatesOnExceptions%2A> property to `true` on your <xref:System.Windows.Data.Binding> or <xref:System.Windows.Data.MultiBinding> object.  
+  
+ You can create a custom rule by creating a class that derives from <xref:System.Windows.Controls.ValidationRule>. For more information and a detailed discussion of data validation, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+  
+   
+  
+## Examples  
+ The <xref:System.Windows.Data.Binding.ValidationRules%2A> property takes a collection of <xref:System.Windows.Controls.ValidationRule> objects. The following example uses <xref:System.Windows.Controls.TextBox.Text%2A?displayProperty=fullName> as the binding target property and `StartPrice` (an integer) as the binding source property. When the user enters a value that cannot be converted to an integer, an exception is thrown, which causes the <xref:System.Windows.Controls.ExceptionValidationRule> to invalidate the target value.  
+  
+ [!code-xml[DataBindingLab#DefaultValidation](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/AddProductWindow.xaml#defaultvalidation)]  
+  
+ By default, when there is a validation error, the <xref:System.Windows.Controls.TextBox> appears with a red border. Optionally, you can write a custom <xref:System.Windows.Controls.Validation.ErrorTemplate%2A> to specify how you want to notify the user when there is a validation error.  
+  
+ For more information about data validation, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+  
+ For the complete sample, see [Data Binding Demo](http://go.microsoft.com/fwlink/?LinkID=163703).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExceptionValidationRule ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ExceptionValidationRule.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.ExceptionValidationRule" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public override System.Windows.Controls.ValidationResult Validate (object value, System.Globalization.CultureInfo cultureInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Controls.ValidationResult Validate(object value, class System.Globalization.CultureInfo cultureInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ExceptionValidationRule.Validate(System.Object,System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.ValidationResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="cultureInfo" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value (from the binding target) to check.</param>
+        <param name="cultureInfo">The culture to use in this rule.</param>
+        <summary>Performs validation checks on a value.</summary>
+        <returns>A <see cref="T:System.Windows.Controls.ValidationResult" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,87 @@
+<Type Name="ActivityTrackingLocationCollection" FullName="System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection">
+  <TypeSignature Language="C#" Value="public class ActivityTrackingLocationCollection : System.Collections.Generic.List&lt;System.Workflow.Runtime.Tracking.ActivityTrackingLocation&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ActivityTrackingLocationCollection extends System.Collections.Generic.List`1&lt;class System.Workflow.Runtime.Tracking.ActivityTrackingLocation&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.Generic.List&lt;System.Workflow.Runtime.Tracking.ActivityTrackingLocation&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.Workflow.Runtime.Tracking.ActivityTrackingLocation</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains a collection of <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackingLocation" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ An <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint> maintains two <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection> objects: <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.MatchingLocations%2A> specifies parameters used for matching activity status events and <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.ExcludedLocations%2A> specifies parameters used to exclude activity status events from matching.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivityTrackingLocationCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default constructor initializes the <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection> to an empty list.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivityTrackingLocationCollection (System.Collections.Generic.IEnumerable&lt;System.Workflow.Runtime.Tracking.ActivityTrackingLocation&gt; locations);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Workflow.Runtime.Tracking.ActivityTrackingLocation&gt; locations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection.#ctor(System.Collections.Generic.IEnumerable{System.Workflow.Runtime.Tracking.ActivityTrackingLocation})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="locations" Type="System.Collections.Generic.IEnumerable&lt;System.Workflow.Runtime.Tracking.ActivityTrackingLocation&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="locations">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> list of <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackingLocation" /> objects.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection" /> class by using a list of activity locations.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection> is initialized to contain the <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation> objects specified in `locations`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="locations" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

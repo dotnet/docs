@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "String data type, validation"
 ms.assetid: ae7d4b29-3436-4032-bdbf-4650eb1c8e19
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

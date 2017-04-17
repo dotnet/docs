@@ -1,0 +1,51 @@
+<Type Name="SerialDataReceivedEventArgs" FullName="System.IO.Ports.SerialDataReceivedEventArgs">
+  <TypeSignature Language="C#" Value="public class SerialDataReceivedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SerialDataReceivedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Ports.SerialDataReceivedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.IO.Ports.SerialPort.DataReceived" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used with the <xref:System.IO.Ports.SerialPort.DataReceived> event.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EventType">
+      <MemberSignature Language="C#" Value="public System.IO.Ports.SerialData EventType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Ports.SerialData EventType" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Ports.SerialDataReceivedEventArgs.EventType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Ports.SerialData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the event type.</summary>
+        <value>One of the <see cref="T:System.IO.Ports.SerialData" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property provides information about the event type that caused the <xref:System.IO.Ports.SerialPort.DataReceived> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

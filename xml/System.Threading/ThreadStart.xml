@@ -1,0 +1,60 @@
+<Type Name="ThreadStart" FullName="System.Threading.ThreadStart">
+  <TypeSignature Language="C#" Value="public delegate void ThreadStart();" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ThreadStart extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.ThreadStart" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading.Thread</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters />
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <summary>Represents the method that executes on a <see cref="T:System.Threading.Thread" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a managed thread is created, the method that executes on the thread is represented by a <xref:System.Threading.ThreadStart> delegate or a <xref:System.Threading.ParameterizedThreadStart> delegate that is passed to the <xref:System.Threading.Thread.%23ctor%2A> constructor. The thread does not begin executing until the <xref:System.Threading.Thread.Start%2A?displayProperty=fullName> method is called. Execution begins at the first line of the method represented by the <xref:System.Threading.ThreadStart> or <xref:System.Threading.ParameterizedThreadStart> delegate.  
+  
+> [!NOTE]
+>  Visual Basic and C# users can omit the <xref:System.Threading.ThreadStart> or <xref:System.Threading.ParameterizedThreadStart> delegate constructor when creating a thread. In Visual Basic, use the `AddressOf` operator when passing your method to the <xref:System.Threading.Thread.%23ctor%2A> constructor; for example, `Dim t As New Thread(AddressOf ThreadProc)`. In C#, simply specify the name of the thread procedure. The compiler selects the correct delegate constructor.  
+  
+ [C++]  
+  
+> [!NOTE]
+>  In version 2.0 of the .NET Framework, creating a <xref:System.Threading.ThreadStart> delegate for a static method in C++ requires only one parameter: the address of the callback method, qualified by the class name. In earlier versions two parameters were required when creating a delegate for a static method: zero (null) and the method address. For an instance method, all versions require two parameters: the instance variable and the method address.  
+  
+   
+  
+## Examples  
+ The following code example shows the syntax for creating and using a <xref:System.Threading.ThreadStart> delegate with an instance method and with a static method.  
+  
+ For another simple example that demonstrates how to create a <xref:System.Threading.ThreadStart> delegate, see the <xref:System.Threading.Thread.Start?displayProperty=fullName> method overload. For more information about thread creation, see [Creating Threads and Passing Data at Start Time](~/docs/standard/threading/creating-threads-and-passing-data-at-start-time.md).  
+  
+ [!code-cpp[System.Threading.ThreadStart2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.ThreadStart2/CPP/source.cpp#1)]
+ [!code-csharp[System.Threading.ThreadStart2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.ThreadStart2/CS/source.cs#1)]
+ [!code-vb[System.Threading.ThreadStart2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.ThreadStart2/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

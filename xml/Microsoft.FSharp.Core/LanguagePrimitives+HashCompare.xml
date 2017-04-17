@@ -1,0 +1,1092 @@
+<Type Name="LanguagePrimitives+HashCompare" FullName="Microsoft.FSharp.Core.LanguagePrimitives+HashCompare">
+  <TypeSignature Language="C#" Value="public static class LanguagePrimitives.HashCompare" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed LanguagePrimitives/HashCompare extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.LanguagePrimitives.HashCompare" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Module)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FastCompareTuple2&lt;T1,T2&gt;">
+      <MemberSignature Language="C#" Value="public static int FastCompareTuple2&lt;T1,T2&gt; (System.Collections.IComparer comparer, Tuple&lt;T1,T2&gt; tuple1, Tuple&lt;T1,T2&gt; tuple2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 FastCompareTuple2&lt;T1, T2&gt;(class System.Collections.IComparer comparer, class System.Tuple`2&lt;!!T1, !!T2&gt; tuple1, class System.Tuple`2&lt;!!T1, !!T2&gt; tuple2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.HashCompare.FastCompareTuple2``2(System.Collections.IComparer,System.Tuple{``0,``1},System.Tuple{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is a primitive library routine used by optimized F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="comparer" Type="System.Collections.IComparer" />
+        <Parameter Name="tuple1" Type="System.Tuple&lt;T1,T2&gt;" />
+        <Parameter Name="tuple2" Type="System.Tuple&lt;T1,T2&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <param name="comparer">To be added.</param>
+        <param name="tuple1">To be added.</param>
+        <param name="tuple2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FastCompareTuple3&lt;T1,T2,T3&gt;">
+      <MemberSignature Language="C#" Value="public static int FastCompareTuple3&lt;T1,T2,T3&gt; (System.Collections.IComparer comparer, Tuple&lt;T1,T2,T3&gt; tuple1, Tuple&lt;T1,T2,T3&gt; tuple2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 FastCompareTuple3&lt;T1, T2, T3&gt;(class System.Collections.IComparer comparer, class System.Tuple`3&lt;!!T1, !!T2, !!T3&gt; tuple1, class System.Tuple`3&lt;!!T1, !!T2, !!T3&gt; tuple2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.HashCompare.FastCompareTuple3``3(System.Collections.IComparer,System.Tuple{``0,``1,``2},System.Tuple{``0,``1,``2})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is a primitive library routine used by optimized F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+        <TypeParameter Name="T3" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="comparer" Type="System.Collections.IComparer" />
+        <Parameter Name="tuple1" Type="System.Tuple&lt;T1,T2,T3&gt;" />
+        <Parameter Name="tuple2" Type="System.Tuple&lt;T1,T2,T3&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="T3">To be added.</typeparam>
+        <param name="comparer">To be added.</param>
+        <param name="tuple1">To be added.</param>
+        <param name="tuple2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FastCompareTuple4&lt;T1,T2,T3,T4&gt;">
+      <MemberSignature Language="C#" Value="public static int FastCompareTuple4&lt;T1,T2,T3,T4&gt; (System.Collections.IComparer comparer, Tuple&lt;T1,T2,T3,T4&gt; tuple1, Tuple&lt;T1,T2,T3,T4&gt; tuple2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 FastCompareTuple4&lt;T1, T2, T3, T4&gt;(class System.Collections.IComparer comparer, class System.Tuple`4&lt;!!T1, !!T2, !!T3, !!T4&gt; tuple1, class System.Tuple`4&lt;!!T1, !!T2, !!T3, !!T4&gt; tuple2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.HashCompare.FastCompareTuple4``4(System.Collections.IComparer,System.Tuple{``0,``1,``2,``3},System.Tuple{``0,``1,``2,``3})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is a primitive library routine used by optimized F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+        <TypeParameter Name="T3" />
+        <TypeParameter Name="T4" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="comparer" Type="System.Collections.IComparer" />
+        <Parameter Name="tuple1" Type="System.Tuple&lt;T1,T2,T3,T4&gt;" />
+        <Parameter Name="tuple2" Type="System.Tuple&lt;T1,T2,T3,T4&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="T3">To be added.</typeparam>
+        <typeparam name="T4">To be added.</typeparam>
+        <param name="comparer">To be added.</param>
+        <param name="tuple1">To be added.</param>
+        <param name="tuple2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FastCompareTuple5&lt;T1,T2,T3,T4,T5&gt;">
+      <MemberSignature Language="C#" Value="public static int FastCompareTuple5&lt;T1,T2,T3,T4,T5&gt; (System.Collections.IComparer comparer, Tuple&lt;T1,T2,T3,T4,T5&gt; tuple1, Tuple&lt;T1,T2,T3,T4,T5&gt; tuple2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 FastCompareTuple5&lt;T1, T2, T3, T4, T5&gt;(class System.Collections.IComparer comparer, class System.Tuple`5&lt;!!T1, !!T2, !!T3, !!T4, !!T5&gt; tuple1, class System.Tuple`5&lt;!!T1, !!T2, !!T3, !!T4, !!T5&gt; tuple2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.HashCompare.FastCompareTuple5``5(System.Collections.IComparer,System.Tuple{``0,``1,``2,``3,``4},System.Tuple{``0,``1,``2,``3,``4})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is a primitive library routine used by optimized F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+        <TypeParameter Name="T3" />
+        <TypeParameter Name="T4" />
+        <TypeParameter Name="T5" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="comparer" Type="System.Collections.IComparer" />
+        <Parameter Name="tuple1" Type="System.Tuple&lt;T1,T2,T3,T4,T5&gt;" />
+        <Parameter Name="tuple2" Type="System.Tuple&lt;T1,T2,T3,T4,T5&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="T3">To be added.</typeparam>
+        <typeparam name="T4">To be added.</typeparam>
+        <typeparam name="T5">To be added.</typeparam>
+        <param name="comparer">To be added.</param>
+        <param name="tuple1">To be added.</param>
+        <param name="tuple2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FastEqualsTuple2&lt;T1,T2&gt;">
+      <MemberSignature Language="C#" Value="public static bool FastEqualsTuple2&lt;T1,T2&gt; (System.Collections.IEqualityComparer comparer, Tuple&lt;T1,T2&gt; tuple1, Tuple&lt;T1,T2&gt; tuple2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool FastEqualsTuple2&lt;T1, T2&gt;(class System.Collections.IEqualityComparer comparer, class System.Tuple`2&lt;!!T1, !!T2&gt; tuple1, class System.Tuple`2&lt;!!T1, !!T2&gt; tuple2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.HashCompare.FastEqualsTuple2``2(System.Collections.IEqualityComparer,System.Tuple{``0,``1},System.Tuple{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is a primitive library routine used by optimized F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="comparer" Type="System.Collections.IEqualityComparer" />
+        <Parameter Name="tuple1" Type="System.Tuple&lt;T1,T2&gt;" />
+        <Parameter Name="tuple2" Type="System.Tuple&lt;T1,T2&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <param name="comparer">To be added.</param>
+        <param name="tuple1">To be added.</param>
+        <param name="tuple2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FastEqualsTuple3&lt;T1,T2,T3&gt;">
+      <MemberSignature Language="C#" Value="public static bool FastEqualsTuple3&lt;T1,T2,T3&gt; (System.Collections.IEqualityComparer comparer, Tuple&lt;T1,T2,T3&gt; tuple1, Tuple&lt;T1,T2,T3&gt; tuple2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool FastEqualsTuple3&lt;T1, T2, T3&gt;(class System.Collections.IEqualityComparer comparer, class System.Tuple`3&lt;!!T1, !!T2, !!T3&gt; tuple1, class System.Tuple`3&lt;!!T1, !!T2, !!T3&gt; tuple2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.HashCompare.FastEqualsTuple3``3(System.Collections.IEqualityComparer,System.Tuple{``0,``1,``2},System.Tuple{``0,``1,``2})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is a primitive library routine used by optimized F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+        <TypeParameter Name="T3" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="comparer" Type="System.Collections.IEqualityComparer" />
+        <Parameter Name="tuple1" Type="System.Tuple&lt;T1,T2,T3&gt;" />
+        <Parameter Name="tuple2" Type="System.Tuple&lt;T1,T2,T3&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="T3">To be added.</typeparam>
+        <param name="comparer">To be added.</param>
+        <param name="tuple1">To be added.</param>
+        <param name="tuple2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FastEqualsTuple4&lt;T1,T2,T3,T4&gt;">
+      <MemberSignature Language="C#" Value="public static bool FastEqualsTuple4&lt;T1,T2,T3,T4&gt; (System.Collections.IEqualityComparer comparer, Tuple&lt;T1,T2,T3,T4&gt; tuple1, Tuple&lt;T1,T2,T3,T4&gt; tuple2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool FastEqualsTuple4&lt;T1, T2, T3, T4&gt;(class System.Collections.IEqualityComparer comparer, class System.Tuple`4&lt;!!T1, !!T2, !!T3, !!T4&gt; tuple1, class System.Tuple`4&lt;!!T1, !!T2, !!T3, !!T4&gt; tuple2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.HashCompare.FastEqualsTuple4``4(System.Collections.IEqualityComparer,System.Tuple{``0,``1,``2,``3},System.Tuple{``0,``1,``2,``3})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is a primitive library routine used by optimized F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+        <TypeParameter Name="T3" />
+        <TypeParameter Name="T4" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="comparer" Type="System.Collections.IEqualityComparer" />
+        <Parameter Name="tuple1" Type="System.Tuple&lt;T1,T2,T3,T4&gt;" />
+        <Parameter Name="tuple2" Type="System.Tuple&lt;T1,T2,T3,T4&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="T3">To be added.</typeparam>
+        <typeparam name="T4">To be added.</typeparam>
+        <param name="comparer">To be added.</param>
+        <param name="tuple1">To be added.</param>
+        <param name="tuple2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FastEqualsTuple5&lt;T1,T2,T3,T4,T5&gt;">
+      <MemberSignature Language="C#" Value="public static bool FastEqualsTuple5&lt;T1,T2,T3,T4,T5&gt; (System.Collections.IEqualityComparer comparer, Tuple&lt;T1,T2,T3,T4,T5&gt; tuple1, Tuple&lt;T1,T2,T3,T4,T5&gt; tuple2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool FastEqualsTuple5&lt;T1, T2, T3, T4, T5&gt;(class System.Collections.IEqualityComparer comparer, class System.Tuple`5&lt;!!T1, !!T2, !!T3, !!T4, !!T5&gt; tuple1, class System.Tuple`5&lt;!!T1, !!T2, !!T3, !!T4, !!T5&gt; tuple2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.HashCompare.FastEqualsTuple5``5(System.Collections.IEqualityComparer,System.Tuple{``0,``1,``2,``3,``4},System.Tuple{``0,``1,``2,``3,``4})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is a primitive library routine used by optimized F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+        <TypeParameter Name="T3" />
+        <TypeParameter Name="T4" />
+        <TypeParameter Name="T5" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="comparer" Type="System.Collections.IEqualityComparer" />
+        <Parameter Name="tuple1" Type="System.Tuple&lt;T1,T2,T3,T4,T5&gt;" />
+        <Parameter Name="tuple2" Type="System.Tuple&lt;T1,T2,T3,T4,T5&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="T3">To be added.</typeparam>
+        <typeparam name="T4">To be added.</typeparam>
+        <typeparam name="T5">To be added.</typeparam>
+        <param name="comparer">To be added.</param>
+        <param name="tuple1">To be added.</param>
+        <param name="tuple2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FastHashTuple2&lt;T1,T2&gt;">
+      <MemberSignature Language="C#" Value="public static int FastHashTuple2&lt;T1,T2&gt; (System.Collections.IEqualityComparer comparer, Tuple&lt;T1,T2&gt; tuple);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 FastHashTuple2&lt;T1, T2&gt;(class System.Collections.IEqualityComparer comparer, class System.Tuple`2&lt;!!T1, !!T2&gt; tuple) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.HashCompare.FastHashTuple2``2(System.Collections.IEqualityComparer,System.Tuple{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is a primitive library routine used by optimized F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="comparer" Type="System.Collections.IEqualityComparer" />
+        <Parameter Name="tuple" Type="System.Tuple&lt;T1,T2&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <param name="comparer">To be added.</param>
+        <param name="tuple">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FastHashTuple3&lt;T1,T2,T3&gt;">
+      <MemberSignature Language="C#" Value="public static int FastHashTuple3&lt;T1,T2,T3&gt; (System.Collections.IEqualityComparer comparer, Tuple&lt;T1,T2,T3&gt; tuple);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 FastHashTuple3&lt;T1, T2, T3&gt;(class System.Collections.IEqualityComparer comparer, class System.Tuple`3&lt;!!T1, !!T2, !!T3&gt; tuple) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.HashCompare.FastHashTuple3``3(System.Collections.IEqualityComparer,System.Tuple{``0,``1,``2})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is a primitive library routine used by optimized F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+        <TypeParameter Name="T3" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="comparer" Type="System.Collections.IEqualityComparer" />
+        <Parameter Name="tuple" Type="System.Tuple&lt;T1,T2,T3&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="T3">To be added.</typeparam>
+        <param name="comparer">To be added.</param>
+        <param name="tuple">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FastHashTuple4&lt;T1,T2,T3,T4&gt;">
+      <MemberSignature Language="C#" Value="public static int FastHashTuple4&lt;T1,T2,T3,T4&gt; (System.Collections.IEqualityComparer comparer, Tuple&lt;T1,T2,T3,T4&gt; tuple);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 FastHashTuple4&lt;T1, T2, T3, T4&gt;(class System.Collections.IEqualityComparer comparer, class System.Tuple`4&lt;!!T1, !!T2, !!T3, !!T4&gt; tuple) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.HashCompare.FastHashTuple4``4(System.Collections.IEqualityComparer,System.Tuple{``0,``1,``2,``3})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is a primitive library routine used by optimized F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+        <TypeParameter Name="T3" />
+        <TypeParameter Name="T4" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="comparer" Type="System.Collections.IEqualityComparer" />
+        <Parameter Name="tuple" Type="System.Tuple&lt;T1,T2,T3,T4&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="T3">To be added.</typeparam>
+        <typeparam name="T4">To be added.</typeparam>
+        <param name="comparer">To be added.</param>
+        <param name="tuple">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FastHashTuple5&lt;T1,T2,T3,T4,T5&gt;">
+      <MemberSignature Language="C#" Value="public static int FastHashTuple5&lt;T1,T2,T3,T4,T5&gt; (System.Collections.IEqualityComparer comparer, Tuple&lt;T1,T2,T3,T4,T5&gt; tuple);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 FastHashTuple5&lt;T1, T2, T3, T4, T5&gt;(class System.Collections.IEqualityComparer comparer, class System.Tuple`5&lt;!!T1, !!T2, !!T3, !!T4, !!T5&gt; tuple) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.HashCompare.FastHashTuple5``5(System.Collections.IEqualityComparer,System.Tuple{``0,``1,``2,``3,``4})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is a primitive library routine used by optimized F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+        <TypeParameter Name="T3" />
+        <TypeParameter Name="T4" />
+        <TypeParameter Name="T5" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="comparer" Type="System.Collections.IEqualityComparer" />
+        <Parameter Name="tuple" Type="System.Tuple&lt;T1,T2,T3,T4,T5&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="T3">To be added.</typeparam>
+        <typeparam name="T4">To be added.</typeparam>
+        <typeparam name="T5">To be added.</typeparam>
+        <param name="comparer">To be added.</param>
+        <param name="tuple">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericComparisonIntrinsic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static int GenericComparisonIntrinsic&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 GenericComparisonIntrinsic&lt;T&gt;(!!T x, !!T y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.HashCompare.GenericComparisonIntrinsic``1(``0,``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is a primitive library routine used by optimized F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+        <Parameter Name="y" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericComparisonWithComparerIntrinsic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static int GenericComparisonWithComparerIntrinsic&lt;T&gt; (System.Collections.IComparer comp, T x, T y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 GenericComparisonWithComparerIntrinsic&lt;T&gt;(class System.Collections.IComparer comp, !!T x, !!T y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.HashCompare.GenericComparisonWithComparerIntrinsic``1(System.Collections.IComparer,``0,``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is a primitive library routine used by optimized F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="comp" Type="System.Collections.IComparer" />
+        <Parameter Name="x" Type="T" />
+        <Parameter Name="y" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="comp">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericEqualityERIntrinsic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool GenericEqualityERIntrinsic&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool GenericEqualityERIntrinsic&lt;T&gt;(!!T x, !!T y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.HashCompare.GenericEqualityERIntrinsic``1(``0,``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is a primitive library routine used by optimized F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+        <Parameter Name="y" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericEqualityIntrinsic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool GenericEqualityIntrinsic&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool GenericEqualityIntrinsic&lt;T&gt;(!!T x, !!T y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.HashCompare.GenericEqualityIntrinsic``1(``0,``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is a primitive library routine used by optimized F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+        <Parameter Name="y" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericEqualityWithComparerIntrinsic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool GenericEqualityWithComparerIntrinsic&lt;T&gt; (System.Collections.IEqualityComparer comp, T x, T y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool GenericEqualityWithComparerIntrinsic&lt;T&gt;(class System.Collections.IEqualityComparer comp, !!T x, !!T y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.HashCompare.GenericEqualityWithComparerIntrinsic``1(System.Collections.IEqualityComparer,``0,``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is a primitive library routine used by optimized F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="comp" Type="System.Collections.IEqualityComparer" />
+        <Parameter Name="x" Type="T" />
+        <Parameter Name="y" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="comp">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericGreaterOrEqualIntrinsic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool GenericGreaterOrEqualIntrinsic&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool GenericGreaterOrEqualIntrinsic&lt;T&gt;(!!T x, !!T y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.HashCompare.GenericGreaterOrEqualIntrinsic``1(``0,``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is a primitive library routine used by optimized F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+        <Parameter Name="y" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericGreaterThanIntrinsic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool GenericGreaterThanIntrinsic&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool GenericGreaterThanIntrinsic&lt;T&gt;(!!T x, !!T y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.HashCompare.GenericGreaterThanIntrinsic``1(``0,``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is a primitive library routine used by optimized F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+        <Parameter Name="y" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericHashIntrinsic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static int GenericHashIntrinsic&lt;T&gt; (T input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 GenericHashIntrinsic&lt;T&gt;(!!T input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.HashCompare.GenericHashIntrinsic``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is a primitive library routine used by optimized F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="input" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericHashWithComparerIntrinsic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static int GenericHashWithComparerIntrinsic&lt;T&gt; (System.Collections.IEqualityComparer comp, T input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 GenericHashWithComparerIntrinsic&lt;T&gt;(class System.Collections.IEqualityComparer comp, !!T input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.HashCompare.GenericHashWithComparerIntrinsic``1(System.Collections.IEqualityComparer,``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is a primitive library routine used by optimized F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="comp" Type="System.Collections.IEqualityComparer" />
+        <Parameter Name="input" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="comp">To be added.</param>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericLessOrEqualIntrinsic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool GenericLessOrEqualIntrinsic&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool GenericLessOrEqualIntrinsic&lt;T&gt;(!!T x, !!T y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.HashCompare.GenericLessOrEqualIntrinsic``1(``0,``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is a primitive library routine used by optimized F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+        <Parameter Name="y" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericLessThanIntrinsic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool GenericLessThanIntrinsic&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool GenericLessThanIntrinsic&lt;T&gt;(!!T x, !!T y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.HashCompare.GenericLessThanIntrinsic``1(``0,``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is a primitive library routine used by optimized F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+        <Parameter Name="y" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LimitedGenericHashIntrinsic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static int LimitedGenericHashIntrinsic&lt;T&gt; (int limit, T input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 LimitedGenericHashIntrinsic&lt;T&gt;(int32 limit, !!T input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.HashCompare.LimitedGenericHashIntrinsic``1(System.Int32,``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is a primitive library routine used by optimized F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="limit" Type="System.Int32" />
+        <Parameter Name="input" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="limit">To be added.</param>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhysicalEqualityIntrinsic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool PhysicalEqualityIntrinsic&lt;T&gt; (T x, T y) where T : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool PhysicalEqualityIntrinsic&lt;class T&gt;(!!T x, !!T y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.HashCompare.PhysicalEqualityIntrinsic``1(``0,``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is a primitive library routine used by optimized F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+        <Parameter Name="y" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhysicalHashIntrinsic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static int PhysicalHashIntrinsic&lt;T&gt; (T input) where T : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 PhysicalHashIntrinsic&lt;class T&gt;(!!T input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.HashCompare.PhysicalHashIntrinsic``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is a primitive library routine used by optimized F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="input" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

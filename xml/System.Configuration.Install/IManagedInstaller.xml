@@ -1,0 +1,48 @@
+<Type Name="IManagedInstaller" FullName="System.Configuration.Install.IManagedInstaller">
+  <TypeSignature Language="C#" Value="public interface IManagedInstaller" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IManagedInstaller" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.Install.IManagedInstaller" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration.Install</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("1E233FE7-C16D-4512-8C3B-2E9988F08D38")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides an interface for a managed installer.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ManagedInstall">
+      <MemberSignature Language="C#" Value="public int ManagedInstall (string commandLine, int hInstall);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 ManagedInstall(string commandLine, int32 hInstall) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Install.IManagedInstaller.ManagedInstall(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="commandLine" Type="System.String" />
+        <Parameter Name="hInstall" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="commandLine">The command line that specifies the installation.</param>
+        <param name="hInstall">The handle to the installation.</param>
+        <summary>Executes a managed installation.</summary>
+        <returns>The return code for installutil.exe. A successful installation returns 0. Other values indicate failure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

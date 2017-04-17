@@ -1,0 +1,1370 @@
+<Type Name="Matrix3D" FullName="System.Windows.Media.Media3D.Matrix3D">
+  <TypeSignature Language="C#" Value="public struct Matrix3D : IFormattable" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit Matrix3D extends System.ValueType implements class System.IFormattable" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.Matrix3D" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IFormattable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Media.Media3D.Matrix3DConverter))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ValueSerializer(typeof(System.Windows.Media.Media3D.Converters.Matrix3DValueSerializer))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a 4 x 4 matrix used for transformations in [!INCLUDE[TLA#tla_3d](~/includes/tlasharptla-3d-md.md)] space.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Media3D.Matrix3D> has the following row-vector syntax:  
+  
+|||||  
+|-|-|-|-|  
+|<xref:System.Windows.Media.Media3D.Matrix3D.M11%2A>|<xref:System.Windows.Media.Media3D.Matrix3D.M12%2A>|<xref:System.Windows.Media.Media3D.Matrix3D.M13%2A>|<xref:System.Windows.Media.Media3D.Matrix3D.M14%2A>|  
+|<xref:System.Windows.Media.Media3D.Matrix3D.M21%2A>|<xref:System.Windows.Media.Media3D.Matrix3D.M22%2A>|<xref:System.Windows.Media.Media3D.Matrix3D.M23%2A>|<xref:System.Windows.Media.Media3D.Matrix3D.M24%2A>|  
+|<xref:System.Windows.Media.Media3D.Matrix3D.M31%2A>|<xref:System.Windows.Media.Media3D.Matrix3D.M32%2A>|<xref:System.Windows.Media.Media3D.Matrix3D.M33%2A>|<xref:System.Windows.Media.Media3D.Matrix3D.M34%2A>|  
+|<xref:System.Windows.Media.Media3D.Matrix3D.OffsetX%2A>|<xref:System.Windows.Media.Media3D.Matrix3D.OffsetY%2A>|<xref:System.Windows.Media.Media3D.Matrix3D.OffsetZ%2A>|<xref:System.Windows.Media.Media3D.Matrix3D.M44%2A>|  
+  
+ Note that because the fourth column is also accessible, the matrix allows developers to represent affine as well as non-affine transforms.  
+  
+ Matrices can be appended or prepended to other matrices. Appending matrix A to matrix B denotes a transformation by B and then by A:  
+  
+<a name="xamlAttributeUsage_Matrix"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="m11, m12, m13, m21, m22, m23, m31, m32, m33, offsetX, offsetY, offsetZ"/>  
+- or -  
+<object property="Identity"/>  
+```  
+  
+<a name="xamlValues_Matrix"></a>   
+## XAML Values  
+ *M11*  
+ <xref:System.Double?displayProperty=fullName>  
+  
+ The value in the first row and first column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M11%2A> property.  
+  
+ *M12*  
+ <xref:System.Double?displayProperty=fullName>  
+  
+ The value in the first row and second column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M12%2A> property.  
+  
+ *M13*  
+ <xref:System.Double?displayProperty=fullName>  
+  
+ The value in the first row and third column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M13%2A> property.  
+  
+ *M14*  
+ <xref:System.Double?displayProperty=fullName>  
+  
+ The value in the first row and fourth column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M14%2A> property.  
+  
+ *M21*  
+ <xref:System.Double?displayProperty=fullName>  
+  
+ The value in the second row and first column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M21%2A> property.  
+  
+ *M22*  
+ <xref:System.Double?displayProperty=fullName>  
+  
+ The value in the second row and second column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M22%2A> property.  
+  
+ *M23*  
+ <xref:System.Double?displayProperty=fullName>  
+  
+ The value in the second row and third column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M23%2A> property.  
+  
+ *M24*  
+ <xref:System.Double?displayProperty=fullName>  
+  
+ The value in the second row and fourth column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M24%2A> property.  
+  
+ *M31*  
+ <xref:System.Double?displayProperty=fullName>  
+  
+ The value in the third row and first column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M31%2A> property.  
+  
+ *M32*  
+ <xref:System.Double?displayProperty=fullName>  
+  
+ The value in the third row and second column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M32%2A> property.  
+  
+ *M33*  
+ <xref:System.Double?displayProperty=fullName>  
+  
+ The value in the third row and third column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M34%2A> property.  
+  
+ *M34*  
+ <xref:System.Double?displayProperty=fullName>  
+  
+ The value in the third row and fourth column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M33%2A> property.  
+  
+ *M44*  
+ <xref:System.Double?displayProperty=fullName>  
+  
+ The value in the fourth row and fourth column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.M44%2A> property.  
+  
+ *offsetX*  
+ <xref:System.Double?displayProperty=fullName>  
+  
+ The value in the fourth row and first column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.OffsetX%2A> property.  
+  
+ *offsetY*  
+ <xref:System.Double?displayProperty=fullName>  
+  
+ The value in the fourth row and second column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.OffsetY%2A> property.  
+  
+ *offsetZ*  
+ <xref:System.Double?displayProperty=fullName>  
+  
+ The value in the fourth row and third column of this <xref:System.Windows.Media.Media3D.Matrix3D>. For more information, see the <xref:System.Windows.Media.Media3D.Matrix3D.OffsetZ%2A> property.  
+  
+   
+  
+## Examples  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN15](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn15)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn15)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Matrix3D (double m11, double m12, double m13, double m14, double m21, double m22, double m23, double m24, double m31, double m32, double m33, double m34, double offsetX, double offsetY, double offsetZ, double m44);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 m11, float64 m12, float64 m13, float64 m14, float64 m21, float64 m22, float64 m23, float64 m24, float64 m31, float64 m32, float64 m33, float64 m34, float64 offsetX, float64 offsetY, float64 offsetZ, float64 m44) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="m11" Type="System.Double" />
+        <Parameter Name="m12" Type="System.Double" />
+        <Parameter Name="m13" Type="System.Double" />
+        <Parameter Name="m14" Type="System.Double" />
+        <Parameter Name="m21" Type="System.Double" />
+        <Parameter Name="m22" Type="System.Double" />
+        <Parameter Name="m23" Type="System.Double" />
+        <Parameter Name="m24" Type="System.Double" />
+        <Parameter Name="m31" Type="System.Double" />
+        <Parameter Name="m32" Type="System.Double" />
+        <Parameter Name="m33" Type="System.Double" />
+        <Parameter Name="m34" Type="System.Double" />
+        <Parameter Name="offsetX" Type="System.Double" />
+        <Parameter Name="offsetY" Type="System.Double" />
+        <Parameter Name="offsetZ" Type="System.Double" />
+        <Parameter Name="m44" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="m11">Value of the (1,1) field of the new matrix.</param>
+        <param name="m12">Value of the (1,2) field of the new matrix.</param>
+        <param name="m13">Value of the (1,3) field of the new matrix.</param>
+        <param name="m14">Value of the (1,4) field of the new matrix.</param>
+        <param name="m21">Value of the (2,1) field of the new matrix.</param>
+        <param name="m22">Value of the (2,2) field of the new matrix.</param>
+        <param name="m23">Value of the (2,3) field of the new matrix.</param>
+        <param name="m24">Value of the (2,4) field of the new matrix.</param>
+        <param name="m31">Value of the (3,1) field of the new matrix.</param>
+        <param name="m32">Value of the (3,2) field of the new matrix.</param>
+        <param name="m33">Value of the (3,3) field of the new matrix.</param>
+        <param name="m34">Value of the (3,4) field of the new matrix.</param>
+        <param name="offsetX">Value of the X offset field of the new matrix.</param>
+        <param name="offsetY">Value of the Y offset field of the new matrix.</param>
+        <param name="offsetZ">Value of the Z offset field of the new matrix.</param>
+        <param name="m44">Value of the (4,4) field of the new matrix.</param>
+        <summary>Constructor that sets matrix's initial values.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Append">
+      <MemberSignature Language="C#" Value="public void Append (System.Windows.Media.Media3D.Matrix3D matrix);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Append(valuetype System.Windows.Media.Media3D.Matrix3D matrix) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Append(System.Windows.Media.Media3D.Matrix3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matrix" Type="System.Windows.Media.Media3D.Matrix3D" />
+      </Parameters>
+      <Docs>
+        <param name="matrix">Matrix to append.</param>
+        <summary>Appends a specified matrix to the current matrix.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Matrices can be appended or prepended to other matrices. Appending matrix A to matrix B denotes a transformation by B and then by A:  
+  
+```  
+  
+A(B(...))  
+  
+```  
+  
+ Prepending A to B denotes a transformation by A and then by B:  
+  
+```  
+  
+B(A(...))  
+  
+```  
+  
+ To transform point P by A and then by B, append B to A:  
+  
+```  
+  
+C = A.Append(B);  
+P' = C.Transform(P);  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Determinant">
+      <MemberSignature Language="C#" Value="public double Determinant { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Determinant" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.Determinant" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retrieves the determinant of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
+        <value>The determinant of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">Object to test for equality.</param>
+        <summary>Tests equality between two matrices.</summary>
+        <returns>
+          <see cref="T:System.Boolean" /> that indicates whether the matrices are equal.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Windows.Media.Media3D.Matrix3D value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.Windows.Media.Media3D.Matrix3D value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Equals(System.Windows.Media.Media3D.Matrix3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Windows.Media.Media3D.Matrix3D" />
+      </Parameters>
+      <Docs>
+        <param name="value">The Matrix3D to which to compare.</param>
+        <summary>Tests equality between two matrices.</summary>
+        <returns>
+          <see cref="T:System.Boolean" /> that indicates whether the matrices are equal.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public static bool Equals (System.Windows.Media.Media3D.Matrix3D matrix1, System.Windows.Media.Media3D.Matrix3D matrix2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Equals(valuetype System.Windows.Media.Media3D.Matrix3D matrix1, valuetype System.Windows.Media.Media3D.Matrix3D matrix2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Equals(System.Windows.Media.Media3D.Matrix3D,System.Windows.Media.Media3D.Matrix3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matrix1" Type="System.Windows.Media.Media3D.Matrix3D" />
+        <Parameter Name="matrix2" Type="System.Windows.Media.Media3D.Matrix3D" />
+      </Parameters>
+      <Docs>
+        <param name="matrix1">The first Matrix3D to compare.</param>
+        <param name="matrix2">The second Matrix3D to compare.</param>
+        <summary>Tests equality between two matrices.</summary>
+        <returns>
+          <see cref="T:System.Boolean" /> that indicates whether the matrices are equal.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this matrix</summary>
+        <returns>Integer that specifies the hash code for this matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasInverse">
+      <MemberSignature Language="C#" Value="public bool HasInverse { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasInverse" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.HasInverse" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> is invertible.</summary>
+        <value>
+          <see langword="true" /> if the Matrix3D structure has an inverse; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Identity">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Matrix3D Identity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Media3D.Matrix3D Identity" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.Identity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Matrix3D</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Changes a <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure into an identity <see cref="T:System.Windows.Media.Media3D.Matrix3D" />.</summary>
+        <value>The identity Matrix3D.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In an identity matrix, all coefficients are 0 except the [1,1][2,2][3,3][4,4] coefficients, which are set to 1. The identity matrix is special in that when it is applied to vertices, they are unchanged. The identity matrix is used as the starting point for matrices that modify vertex values to create rotations, translations, and any other transformations that can be represented by a 4x4 matrix.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invert">
+      <MemberSignature Language="C#" Value="public void Invert ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Invert() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Invert" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Inverts this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To determine whether a Matrix3D structure is invertible, read its <xref:System.Windows.Media.Media3D.Matrix3D.HasInverse%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Throws InvalidOperationException if the matrix is not invertible.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAffine">
+      <MemberSignature Language="C#" Value="public bool IsAffine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAffine" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.IsAffine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure is affine.</summary>
+        <value>
+          <see langword="true" /> if the Matrix3D structure is affine; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsIdentity">
+      <MemberSignature Language="C#" Value="public bool IsIdentity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsIdentity" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.IsIdentity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Determines whether this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure is an identity Matrix3D.</summary>
+        <value>
+          <see langword="true" /> if the Matrix3D structure is an identity Matrix3D; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In an identity matrix, all coefficients are 0 except the [1,1][2,2][3,3][4,4] coefficients, which are set to 1. The identity matrix is special in that when it is applied to vertices, they are unchanged. The identity matrix is used as the starting point for matrices that modify vertex values to create rotations, translations, and any other transformations that can be represented by a 4x4 matrix.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M11">
+      <MemberSignature Language="C#" Value="public double M11 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 M11" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.M11" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the first row and first column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
+        <value>The value of the first row and first column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M12">
+      <MemberSignature Language="C#" Value="public double M12 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 M12" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.M12" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the first row and second column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
+        <value>The value of the first row and second column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M13">
+      <MemberSignature Language="C#" Value="public double M13 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 M13" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.M13" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the first row and third column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
+        <value>The value of the first row and third column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M14">
+      <MemberSignature Language="C#" Value="public double M14 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 M14" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.M14" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the first row and fourth column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
+        <value>The value of the first row and fourth column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M21">
+      <MemberSignature Language="C#" Value="public double M21 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 M21" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.M21" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the second row and first column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
+        <value>The value of the second row and first column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M22">
+      <MemberSignature Language="C#" Value="public double M22 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 M22" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.M22" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the second row and second column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
+        <value>The value of the second row and second column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M23">
+      <MemberSignature Language="C#" Value="public double M23 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 M23" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.M23" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the second row and third column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
+        <value>The value of the second row and third column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M24">
+      <MemberSignature Language="C#" Value="public double M24 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 M24" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.M24" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the second row and fourth column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
+        <value>The value of the second row and fourth column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M31">
+      <MemberSignature Language="C#" Value="public double M31 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 M31" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.M31" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the third row and first column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
+        <value>The value of the third row and first column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M32">
+      <MemberSignature Language="C#" Value="public double M32 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 M32" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.M32" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the third row and second column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
+        <value>The value of the third row and second column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M33">
+      <MemberSignature Language="C#" Value="public double M33 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 M33" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.M33" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the third row and third column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
+        <value>The value of the third row and third column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M34">
+      <MemberSignature Language="C#" Value="public double M34 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 M34" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.M34" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the third row and fourth column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
+        <value>The value of the third row and fourth column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M44">
+      <MemberSignature Language="C#" Value="public double M44 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 M44" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.M44" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the fourth row and fourth column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
+        <value>The value of the fourth row and fourth column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Multiply">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Matrix3D Multiply (System.Windows.Media.Media3D.Matrix3D matrix1, System.Windows.Media.Media3D.Matrix3D matrix2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Media3D.Matrix3D Multiply(valuetype System.Windows.Media.Media3D.Matrix3D matrix1, valuetype System.Windows.Media.Media3D.Matrix3D matrix2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Multiply(System.Windows.Media.Media3D.Matrix3D,System.Windows.Media.Media3D.Matrix3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Matrix3D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matrix1" Type="System.Windows.Media.Media3D.Matrix3D" />
+        <Parameter Name="matrix2" Type="System.Windows.Media.Media3D.Matrix3D" />
+      </Parameters>
+      <Docs>
+        <param name="matrix1">Matrix to multiply.</param>
+        <param name="matrix2">Matrix by which the first matrix is multiplied.</param>
+        <summary>Multiplies the specified matrices.</summary>
+        <returns>
+          <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> that is the result of multiplication.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OffsetX">
+      <MemberSignature Language="C#" Value="public double OffsetX { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 OffsetX" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.OffsetX" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the fourth row and first column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
+        <value>The value of the fourth row and first column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OffsetY">
+      <MemberSignature Language="C#" Value="public double OffsetY { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 OffsetY" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.OffsetY" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the fourth row and second column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
+        <value>The value of the fourth row and second column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OffsetZ">
+      <MemberSignature Language="C#" Value="public double OffsetZ { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 OffsetZ" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Matrix3D.OffsetZ" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the fourth row and third column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
+        <value>The value of the fourth row and third column of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Media.Media3D.Matrix3D matrix1, System.Windows.Media.Media3D.Matrix3D matrix2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Media.Media3D.Matrix3D matrix1, valuetype System.Windows.Media.Media3D.Matrix3D matrix2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.op_Equality(System.Windows.Media.Media3D.Matrix3D,System.Windows.Media.Media3D.Matrix3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matrix1" Type="System.Windows.Media.Media3D.Matrix3D" />
+        <Parameter Name="matrix2" Type="System.Windows.Media.Media3D.Matrix3D" />
+      </Parameters>
+      <Docs>
+        <param name="matrix1">The first matrix to compare.</param>
+        <param name="matrix2">The second matrix to compare.</param>
+        <summary>Compares two <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> instances for exact equality.</summary>
+        <returns>
+          <see cref="T:System.Boolean" /> that indicates whether the two matrix instances are equal.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that double values can acquire error when operated upon, so that an exact comparison between two values that are logically equal may fail. Furthermore, using this equality operator, Double.NaN is not equal to itself.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Media.Media3D.Matrix3D matrix1, System.Windows.Media.Media3D.Matrix3D matrix2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Media.Media3D.Matrix3D matrix1, valuetype System.Windows.Media.Media3D.Matrix3D matrix2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.op_Inequality(System.Windows.Media.Media3D.Matrix3D,System.Windows.Media.Media3D.Matrix3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matrix1" Type="System.Windows.Media.Media3D.Matrix3D" />
+        <Parameter Name="matrix2" Type="System.Windows.Media.Media3D.Matrix3D" />
+      </Parameters>
+      <Docs>
+        <param name="matrix1">The first matrix to compare.</param>
+        <param name="matrix2">The second matrix to compare.</param>
+        <summary>Compares two <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> instances for exact inequality.</summary>
+        <returns>
+          <see cref="T:System.Boolean" /> that indicates whether the two matrix instances are inequal.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that double values can acquire error when operated upon, so that an exact comparison between two values that are logically inequal may fail. Furthermore, using this equality operator, Double.NaN is not equal to itself.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Multiply">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Matrix3D op_Multiply (System.Windows.Media.Media3D.Matrix3D matrix1, System.Windows.Media.Media3D.Matrix3D matrix2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Matrix3D op_Multiply(valuetype System.Windows.Media.Media3D.Matrix3D matrix1, valuetype System.Windows.Media.Media3D.Matrix3D matrix2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.op_Multiply(System.Windows.Media.Media3D.Matrix3D,System.Windows.Media.Media3D.Matrix3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Matrix3D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matrix1" Type="System.Windows.Media.Media3D.Matrix3D" />
+        <Parameter Name="matrix2" Type="System.Windows.Media.Media3D.Matrix3D" />
+      </Parameters>
+      <Docs>
+        <param name="matrix1">Matrix to multiply.</param>
+        <param name="matrix2">Matrix by which the first matrix is multiplied.</param>
+        <summary>Multiplies the specified matrices.</summary>
+        <returns>
+          <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> that is the result of multiplication.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Matrix3D Parse (string source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Media3D.Matrix3D Parse(string source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Parse(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Matrix3D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="source">String representation of the Matrix3D.</param>
+        <summary>Converts a string representation of a <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure into the equivalent Matrix3D structure.</summary>
+        <returns>Matrix3D structure represented by the string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Prepend">
+      <MemberSignature Language="C#" Value="public void Prepend (System.Windows.Media.Media3D.Matrix3D matrix);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Prepend(valuetype System.Windows.Media.Media3D.Matrix3D matrix) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Prepend(System.Windows.Media.Media3D.Matrix3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matrix" Type="System.Windows.Media.Media3D.Matrix3D" />
+      </Parameters>
+      <Docs>
+        <param name="matrix">Matrix to prepend.</param>
+        <summary>Prepends a specified matrix to the current matrix.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotate">
+      <MemberSignature Language="C#" Value="public void Rotate (System.Windows.Media.Media3D.Quaternion quaternion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Rotate(valuetype System.Windows.Media.Media3D.Quaternion quaternion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Rotate(System.Windows.Media.Media3D.Quaternion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="quaternion" Type="System.Windows.Media.Media3D.Quaternion" />
+      </Parameters>
+      <Docs>
+        <param name="quaternion">
+          <see cref="T:System.Windows.Media.Media3D.Quaternion" /> that represents the rotation.</param>
+        <summary>Appends a rotation transform to the current <see cref="T:System.Windows.Media.Media3D.Matrix3D" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RotateAt">
+      <MemberSignature Language="C#" Value="public void RotateAt (System.Windows.Media.Media3D.Quaternion quaternion, System.Windows.Media.Media3D.Point3D center);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RotateAt(valuetype System.Windows.Media.Media3D.Quaternion quaternion, valuetype System.Windows.Media.Media3D.Point3D center) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.RotateAt(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Media3D.Point3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="quaternion" Type="System.Windows.Media.Media3D.Quaternion" />
+        <Parameter Name="center" Type="System.Windows.Media.Media3D.Point3D" />
+      </Parameters>
+      <Docs>
+        <param name="quaternion">
+          <see cref="T:System.Windows.Media.Media3D.Quaternion" /> that represents the rotation.</param>
+        <param name="center">Center <see cref="T:System.Windows.Media.Media3D.Point3D" /> about which to rotate.</param>
+        <summary>Rotates this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> about the specified <see cref="T:System.Windows.Media.Media3D.Point3D" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RotateAtPrepend">
+      <MemberSignature Language="C#" Value="public void RotateAtPrepend (System.Windows.Media.Media3D.Quaternion quaternion, System.Windows.Media.Media3D.Point3D center);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RotateAtPrepend(valuetype System.Windows.Media.Media3D.Quaternion quaternion, valuetype System.Windows.Media.Media3D.Point3D center) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.RotateAtPrepend(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Media3D.Point3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="quaternion" Type="System.Windows.Media.Media3D.Quaternion" />
+        <Parameter Name="center" Type="System.Windows.Media.Media3D.Point3D" />
+      </Parameters>
+      <Docs>
+        <param name="quaternion">
+          <see cref="T:System.Windows.Media.Media3D.Quaternion" /> that represents the rotation.</param>
+        <param name="center">Center <see cref="T:System.Windows.Media.Media3D.Point3D" /> about which to rotate.</param>
+        <summary>Prepends a rotation about a specified center <see cref="T:System.Windows.Media.Media3D.Point3D" /> to this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RotatePrepend">
+      <MemberSignature Language="C#" Value="public void RotatePrepend (System.Windows.Media.Media3D.Quaternion quaternion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RotatePrepend(valuetype System.Windows.Media.Media3D.Quaternion quaternion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.RotatePrepend(System.Windows.Media.Media3D.Quaternion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="quaternion" Type="System.Windows.Media.Media3D.Quaternion" />
+      </Parameters>
+      <Docs>
+        <param name="quaternion">Quaternion representing rotation.</param>
+        <summary>Prepends a rotation specified by a <see cref="T:System.Windows.Media.Media3D.Quaternion" /> to this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Scale">
+      <MemberSignature Language="C#" Value="public void Scale (System.Windows.Media.Media3D.Vector3D scale);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Scale(valuetype System.Windows.Media.Media3D.Vector3D scale) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Scale(System.Windows.Media.Media3D.Vector3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scale" Type="System.Windows.Media.Media3D.Vector3D" />
+      </Parameters>
+      <Docs>
+        <param name="scale">Vector3D by which to scale this Matrix3D structure.</param>
+        <summary>Appends the specified scale <see cref="T:System.Windows.Media.Media3D.Vector3D" /> to this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleAt">
+      <MemberSignature Language="C#" Value="public void ScaleAt (System.Windows.Media.Media3D.Vector3D scale, System.Windows.Media.Media3D.Point3D center);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScaleAt(valuetype System.Windows.Media.Media3D.Vector3D scale, valuetype System.Windows.Media.Media3D.Point3D center) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.ScaleAt(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Point3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scale" Type="System.Windows.Media.Media3D.Vector3D" />
+        <Parameter Name="center" Type="System.Windows.Media.Media3D.Point3D" />
+      </Parameters>
+      <Docs>
+        <param name="scale">Vector3D by which to scale this Matrix3D structure.</param>
+        <param name="center">Point3D about which to scale.</param>
+        <summary>Scales this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure by the specified <see cref="T:System.Windows.Media.Media3D.Vector3D" /> about the specified <see cref="T:System.Windows.Media.Media3D.Point3D" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleAtPrepend">
+      <MemberSignature Language="C#" Value="public void ScaleAtPrepend (System.Windows.Media.Media3D.Vector3D scale, System.Windows.Media.Media3D.Point3D center);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScaleAtPrepend(valuetype System.Windows.Media.Media3D.Vector3D scale, valuetype System.Windows.Media.Media3D.Point3D center) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.ScaleAtPrepend(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Point3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scale" Type="System.Windows.Media.Media3D.Vector3D" />
+        <Parameter Name="center" Type="System.Windows.Media.Media3D.Point3D" />
+      </Parameters>
+      <Docs>
+        <param name="scale">
+          <see cref="T:System.Windows.Media.Media3D.Vector3D" /> by which to scale this Matrix3D structure.</param>
+        <param name="center">Point3D about which to scale.</param>
+        <summary>Prepends the specified scale transformation about the specified <see cref="T:System.Windows.Media.Media3D.Point3D" /> to this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScalePrepend">
+      <MemberSignature Language="C#" Value="public void ScalePrepend (System.Windows.Media.Media3D.Vector3D scale);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScalePrepend(valuetype System.Windows.Media.Media3D.Vector3D scale) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.ScalePrepend(System.Windows.Media.Media3D.Vector3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scale" Type="System.Windows.Media.Media3D.Vector3D" />
+      </Parameters>
+      <Docs>
+        <param name="scale">Vector3D by which to scale this Matrix3D structure.</param>
+        <summary>Prepends the specifed scale <see cref="T:System.Windows.Media.Media3D.Vector3D" /> to the current <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetIdentity">
+      <MemberSignature Language="C#" Value="public void SetIdentity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetIdentity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.SetIdentity" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Changes this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure into an identity matrix.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In an identity matrix, all coefficients are 0 except the [1,1][2,2][3,3][4,4] coefficients, which are set to 1. The identity matrix is special in that when it is applied to vertices, they are unchanged. The identity matrix is used as the starting point for matrices that modify vertex values to create rotations, translations, and any other transformations that can be represented by a 4x4 matrix.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IFormattable.ToString">
+      <MemberSignature Language="C#" Value="string IFormattable.ToString (string format, IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.IFormattable.ToString(string format, class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.System#IFormattable#ToString(System.String,System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="format">The format to use.  
+  
+ -or-  
+  
+ A null reference (<see langword="Nothing" /> in Visual Basic) to use the default format defined for the type of the <see cref="T:System.IFormattable" /> implementation.</param>
+        <param name="provider">The provider to use to format the value.  
+  
+ -or-  
+  
+ A null reference (<see langword="Nothing" /> in Visual Basic) to obtain the numeric format information from the current locale setting of the operating system.</param>
+        <summary>Formats the value of the current instance using the specified format.</summary>
+        <returns>The value of the current instance in the specified format.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a string representation of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
+        <returns>String representation of this Matrix3D structure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public string ToString (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.ToString(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">Culture-specified formatting information.</param>
+        <summary>Creates a string representation of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
+        <returns>String representation of this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Transform">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.Point3D Transform (System.Windows.Media.Media3D.Point3D point);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Media.Media3D.Point3D Transform(valuetype System.Windows.Media.Media3D.Point3D point) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Transform(System.Windows.Media.Media3D.Point3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Point3D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="point" Type="System.Windows.Media.Media3D.Point3D" />
+      </Parameters>
+      <Docs>
+        <param name="point">Point3D to transform.</param>
+        <summary>Transforms the specified <see cref="T:System.Windows.Media.Media3D.Point3D" /> by the <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> and returns the result.</summary>
+        <returns>The result of transforming <paramref name="point" /> by this Matrix3D.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Throws InvalidOperationException if the transform is not affine.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Transform">
+      <MemberSignature Language="C#" Value="public void Transform (System.Windows.Media.Media3D.Point3D[] points);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Transform(valuetype System.Windows.Media.Media3D.Point3D[] points) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Transform(System.Windows.Media.Media3D.Point3D[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="points" Type="System.Windows.Media.Media3D.Point3D[]" />
+      </Parameters>
+      <Docs>
+        <param name="points">Point3D objects to transform. The original points in the array are replaced by their transformed values.</param>
+        <summary>Transforms the specified <see cref="T:System.Windows.Media.Media3D.Point3D" /> objects in the array by the <see cref="T:System.Windows.Media.Media3D.Matrix3D" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Throws InvalidOperationException if the transform is not affine.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Transform">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.Point4D Transform (System.Windows.Media.Media3D.Point4D point);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Media.Media3D.Point4D Transform(valuetype System.Windows.Media.Media3D.Point4D point) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Transform(System.Windows.Media.Media3D.Point4D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Point4D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="point" Type="System.Windows.Media.Media3D.Point4D" />
+      </Parameters>
+      <Docs>
+        <param name="point">
+          <see cref="T:System.Windows.Media.Media3D.Point4D" /> to transform.</param>
+        <summary>Transforms the specified <see cref="T:System.Windows.Media.Media3D.Point4D" /> by the <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> and returns the result..</summary>
+        <returns>The result of transforming <paramref name="point" /> by this Matrix3D.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Transform">
+      <MemberSignature Language="C#" Value="public void Transform (System.Windows.Media.Media3D.Point4D[] points);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Transform(valuetype System.Windows.Media.Media3D.Point4D[] points) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Transform(System.Windows.Media.Media3D.Point4D[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="points" Type="System.Windows.Media.Media3D.Point4D[]" />
+      </Parameters>
+      <Docs>
+        <param name="points">
+          <see cref="T:System.Windows.Media.Media3D.Point4D" /> objects to transform. The original points in the array are replaced by their transformed values.</param>
+        <summary>Transforms the specified <see cref="T:System.Windows.Media.Media3D.Point4D" /> objects in the array by the <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> and returns the result.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Transform">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.Vector3D Transform (System.Windows.Media.Media3D.Vector3D vector);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Media.Media3D.Vector3D Transform(valuetype System.Windows.Media.Media3D.Vector3D vector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Transform(System.Windows.Media.Media3D.Vector3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Vector3D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector" Type="System.Windows.Media.Media3D.Vector3D" />
+      </Parameters>
+      <Docs>
+        <param name="vector">
+          <see cref="T:System.Windows.Media.Media3D.Vector3D" /> to transform.</param>
+        <summary>Transforms the specified <see cref="T:System.Windows.Media.Media3D.Vector3D" /> by this <see cref="T:System.Windows.Media.Media3D.Matrix3D" />.</summary>
+        <returns>The result of transforming <paramref name="vector" /> by this Matrix3D.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Transform">
+      <MemberSignature Language="C#" Value="public void Transform (System.Windows.Media.Media3D.Vector3D[] vectors);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Transform(valuetype System.Windows.Media.Media3D.Vector3D[] vectors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Transform(System.Windows.Media.Media3D.Vector3D[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vectors" Type="System.Windows.Media.Media3D.Vector3D[]" />
+      </Parameters>
+      <Docs>
+        <param name="vectors">
+          <see cref="T:System.Windows.Media.Media3D.Vector3D" /> objects to transform. The original Vector3D objects in the array are replaced by their transformed values.</param>
+        <summary>Transforms the specified <see cref="T:System.Windows.Media.Media3D.Vector3D" /> objects in the array by this <see cref="T:System.Windows.Media.Media3D.Matrix3D" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Translate">
+      <MemberSignature Language="C#" Value="public void Translate (System.Windows.Media.Media3D.Vector3D offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Translate(valuetype System.Windows.Media.Media3D.Vector3D offset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.Translate(System.Windows.Media.Media3D.Vector3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="offset" Type="System.Windows.Media.Media3D.Vector3D" />
+      </Parameters>
+      <Docs>
+        <param name="offset">
+          <see cref="T:System.Windows.Media.Media3D.Vector3D" /> that specifies the offset for transformation.</param>
+        <summary>Appends a translation of the specified offset to the current <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TranslatePrepend">
+      <MemberSignature Language="C#" Value="public void TranslatePrepend (System.Windows.Media.Media3D.Vector3D offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TranslatePrepend(valuetype System.Windows.Media.Media3D.Vector3D offset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Matrix3D.TranslatePrepend(System.Windows.Media.Media3D.Vector3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="offset" Type="System.Windows.Media.Media3D.Vector3D" />
+      </Parameters>
+      <Docs>
+        <param name="offset">
+          <see cref="T:System.Windows.Media.Media3D.Vector3D" /> that specifies the offset for transformation.</param>
+        <summary>Prepends a translation of the specified offset to this <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

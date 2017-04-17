@@ -1,16 +1,17 @@
 ---
-title: dotnet-sln command | Microsoft Docs
+title: dotnet-sln command - .NET Core CLI | Microsoft Docs
 description: The dotnet-sln command provides a convenient option to add, remove, and list projects in a solution file.
 keywords: dotnet-sln, CLI, CLI command, .NET Core
 author: spboyer
 ms.author: mairaw
-ms.date: 03/13/2017
+ms.date: 04/11/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: e5a72d3e-c14b-4b0a-a978-c5e54a0988c6
 ---
+
 # dotnet-sln
 
 ## Name
@@ -20,31 +21,31 @@ ms.assetid: e5a72d3e-c14b-4b0a-a978-c5e54a0988c6
 ## Synopsis
 
 ```
-dotnet sln [<solution_name>] add <project> <project>
-dotnet sln [<solution_name>] add **/**
-dotnet sln [<solution_name>] remove <project> <project>
-dotnet sln [<solution_name>] remove **/**
-dotnet sln [<solution_name>] list
+dotnet sln [<SOLUTION_NAME>] add <PROJECT> <PROJECT> ...
+dotnet sln [<SOLUTION_NAME>] add <GLOBBING_PATTERN>
+dotnet sln [<SOLUTION_NAME>] remove <PROJECT> <PROJECT> ...
+dotnet sln [<SOLUTION_NAME>] remove <GLOBBING_PATTERN>
+dotnet sln [<SOLUTION_NAME>] list
 dotnet sln [-h|--help]
 ```
 
 ## Description
 
-The `dotnet sln` command provides a convenient way to add, remove and list projects in a solution file.
+The `dotnet sln` command provides a convenient way to add, remove, and list projects in a solution file.
 
 ## Commands
 
-`add <project>`
+`add <PROJECT> ...`
 
-`add **/*`
+`add <GLOBBING_PATTERN>`
 
-Adds a project or multiple projects to the solution file. [Glob patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are supported on Unix/Linux based terminals.
+Adds a project or multiple projects to the solution file. [Globbing patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are supported on Unix/Linux based terminals.
 
-`remove <project>`
+`remove <PROJECT> ...`
 
-`remove **/*`
+`remove <GLOBBING_PATTERN>`
 
-Remove a project or multiple projects from the solution file. [Glob patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are supported on Unix/Linux based terminals.
+Removes a project or multiple projects from the solution file. [Globbing patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are supported on Unix/Linux based terminals.
 
 `list`
 
@@ -52,9 +53,9 @@ List all projects in a solution file.
 
 ## Arguments
 
-`solution_name`
+`SOLUTION_NAME`
 
-Solution file to use. If not specified, the command will search the current directory for one. If there are multiple solution files in the directory, one must be specified.
+Solution file to use. If not specified, the command searches the current directory for one. If there are multiple solution files in the directory, one must be specified.
 
 ## Options
 
@@ -64,18 +65,26 @@ Prints out a short help for the command.
 
 ## Examples
 
-Add a project to a solution:
+Add a C# project to a solution:
 
 `dotnet sln todo.sln add todo-app/todo-app.csproj`
 
-Add a project to the solution in the current directory:
-
-`dotnet sln add todo-app.csproj`
-
-Remove a project from a solution:
+Remove a C# project from a solution:
 
 `dotnet sln todo.sln remove todo-app/todo-app.csproj`
 
-Add multiple projects to a solution using a glob pattern:
+Add multiple C# projects to a solution:
 
-`dotnet sln add **/**/*.fsproj`
+`dotnet sln todo.sln add todo-app/todo-app.csproj back-end/back-end.csproj`
+
+Remove multiple C# projects from a solution:
+
+`dotnet sln todo.sln remove todo-app/todo-app.csproj back-end/back-end.csproj`
+
+Add multiple C# projects to a solution using a globbing pattern:
+
+`dotnet sln todo.sln add **/*.csproj`
+
+Remove multiple C# projects from a solution using a globbing pattern:
+
+`dotnet sln todo.sln remove **/*.csproj`

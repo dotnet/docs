@@ -1,0 +1,18 @@
+<Type Name="DelegateOutArgument" FullName="System.Activities.DelegateOutArgument">
+  <TypeSignature Language="C#" Value="public abstract class DelegateOutArgument : System.Activities.DelegateArgument" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DelegateOutArgument extends System.Activities.DelegateArgument" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.DelegateOutArgument" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.DelegateArgument</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The abstract base class that represents a binding terminal that supports the flow of data out of an <see cref="T:System.Activities.ActivityDelegate" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

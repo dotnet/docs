@@ -1,0 +1,196 @@
+<Type Name="ZTestResult" FullName="System.Web.UI.DataVisualization.Charting.ZTestResult">
+  <TypeSignature Language="C#" Value="public class ZTestResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ZTestResult extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.ZTestResult" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Stores the results of a Z Test statistical formula.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ZTestResult ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ZTestResult.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.ZTestResult" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstSeriesMean">
+      <MemberSignature Language="C#" Value="public double FirstSeriesMean { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 FirstSeriesMean" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ZTestResult.FirstSeriesMean" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the mean of the first series.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstSeriesVariance">
+      <MemberSignature Language="C#" Value="public double FirstSeriesVariance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 FirstSeriesVariance" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ZTestResult.FirstSeriesVariance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the variance of the first series.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProbabilityZOneTail">
+      <MemberSignature Language="C#" Value="public double ProbabilityZOneTail { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ProbabilityZOneTail" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ZTestResult.ProbabilityZOneTail" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Probability Z one tail value.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProbabilityZTwoTail">
+      <MemberSignature Language="C#" Value="public double ProbabilityZTwoTail { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ProbabilityZTwoTail" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ZTestResult.ProbabilityZTwoTail" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Probability Z two tail value.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecondSeriesMean">
+      <MemberSignature Language="C#" Value="public double SecondSeriesMean { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 SecondSeriesMean" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ZTestResult.SecondSeriesMean" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the mean of the second series.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecondSeriesVariance">
+      <MemberSignature Language="C#" Value="public double SecondSeriesVariance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 SecondSeriesVariance" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ZTestResult.SecondSeriesVariance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the variance of the second series.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ZCriticalValueOneTail">
+      <MemberSignature Language="C#" Value="public double ZCriticalValueOneTail { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ZCriticalValueOneTail" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ZTestResult.ZCriticalValueOneTail" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Critical Z one tail value.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ZCriticalValueTwoTail">
+      <MemberSignature Language="C#" Value="public double ZCriticalValueTwoTail { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ZCriticalValueTwoTail" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ZTestResult.ZCriticalValueTwoTail" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Critical Z two tail value.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ZValue">
+      <MemberSignature Language="C#" Value="public double ZValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ZValue" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ZTestResult.ZValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Z value.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

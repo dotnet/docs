@@ -1,0 +1,99 @@
+<Type Name="StorageMappingItemCollection" FullName="System.Data.Mapping.StorageMappingItemCollection">
+  <TypeSignature Language="C#" Value="public class StorageMappingItemCollection : System.Data.Mapping.MappingItemCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StorageMappingItemCollection extends System.Data.Mapping.MappingItemCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Mapping.StorageMappingItemCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Mapping.MappingItemCollection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CLSCompliant(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a collection of items in Storage Mapping (CS Mapping) space.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No content here will be updated; please do not add material here.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StorageMappingItemCollection (System.Data.Metadata.Edm.EdmItemCollection edmCollection, System.Data.Metadata.Edm.StoreItemCollection storeCollection, System.Collections.Generic.IEnumerable&lt;System.Xml.XmlReader&gt; xmlReaders);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.Metadata.Edm.EdmItemCollection edmCollection, class System.Data.Metadata.Edm.StoreItemCollection storeCollection, class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.XmlReader&gt; xmlReaders) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Mapping.StorageMappingItemCollection.#ctor(System.Data.Metadata.Edm.EdmItemCollection,System.Data.Metadata.Edm.StoreItemCollection,System.Collections.Generic.IEnumerable{System.Xml.XmlReader})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="edmCollection" Type="System.Data.Metadata.Edm.EdmItemCollection" />
+        <Parameter Name="storeCollection" Type="System.Data.Metadata.Edm.StoreItemCollection" />
+        <Parameter Name="xmlReaders" Type="System.Collections.Generic.IEnumerable&lt;System.Xml.XmlReader&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="edmCollection">The <see cref="T:System.Data.Metadata.Edm.EdmItemCollection" /> that this mapping is to use.</param>
+        <param name="storeCollection">The <see cref="T:System.Data.Metadata.Edm.StoreItemCollection" /> that this mapping is to use.</param>
+        <param name="xmlReaders">The XML readers that this mapping is to use.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Mapping.StorageMappingItemCollection" /> class using the specified <see cref="T:System.Data.Metadata.Edm.EdmItemCollection" />, <see cref="T:System.Data.Metadata.Edm.StoreItemCollection" /> and XML readers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StorageMappingItemCollection (System.Data.Metadata.Edm.EdmItemCollection edmCollection, System.Data.Metadata.Edm.StoreItemCollection storeCollection, string[] filePaths);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.Metadata.Edm.EdmItemCollection edmCollection, class System.Data.Metadata.Edm.StoreItemCollection storeCollection, string[] filePaths) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Mapping.StorageMappingItemCollection.#ctor(System.Data.Metadata.Edm.EdmItemCollection,System.Data.Metadata.Edm.StoreItemCollection,System.String[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="edmCollection" Type="System.Data.Metadata.Edm.EdmItemCollection" />
+        <Parameter Name="storeCollection" Type="System.Data.Metadata.Edm.StoreItemCollection" />
+        <Parameter Name="filePaths" Type="System.String[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="edmCollection">The <see cref="T:System.Data.Metadata.Edm.EdmItemCollection" /> that this mapping is to use.</param>
+        <param name="storeCollection">The <see cref="T:System.Data.Metadata.Edm.StoreItemCollection" /> that this mapping is to use.</param>
+        <param name="filePaths">The file paths that this mapping is to use.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Mapping.StorageMappingItemCollection" /> class using the specified <see cref="T:System.Data.Metadata.Edm.EdmItemCollection" />, <see cref="T:System.Data.Metadata.Edm.StoreItemCollection" /> and a collection of string indicating the metadata file paths.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MappingVersion">
+      <MemberSignature Language="C#" Value="public double MappingVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 MappingVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Mapping.StorageMappingItemCollection.MappingVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the version of this <see cref="T:System.Data.Mapping.StorageMappingItemCollection" /> represents.</summary>
+        <value>The version of this <see cref="T:System.Data.Mapping.StorageMappingItemCollection" /> represents.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

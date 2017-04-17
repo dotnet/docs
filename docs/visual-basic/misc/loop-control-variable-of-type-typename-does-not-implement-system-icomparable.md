@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrArgument_IComparable2"
 ms.assetid: 8dba1270-380a-4f05-8bad-1031e6a9cc90
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

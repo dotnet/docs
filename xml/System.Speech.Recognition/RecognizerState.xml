@@ -1,0 +1,84 @@
+<Type Name="RecognizerState" FullName="System.Speech.Recognition.RecognizerState">
+  <TypeSignature Language="C#" Value="public enum RecognizerState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RecognizerState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.RecognizerState" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Enumerates values of the recognizer's state.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Speech.Recognition.RecognizerState> encapsulates the running state of the default speech recognition engine for clients using <xref:System.Speech.Recognition.SpeechRecognizer> to access the Windows Desktop Speech Recognition Technology service.  
+  
+ Applications can obtain the current state of the desktop recognition engine as a <xref:System.Speech.Recognition.RecognizerState> object by querying the <xref:System.Speech.Recognition.SpeechRecognizer.State%2A> property on a <xref:System.Speech.Recognition.SpeechRecognizer> instance.  To obtain the state of the desktop recognition engine after it changes, applications can query the <xref:System.Speech.Recognition.StateChangedEventArgs.RecognizerState%2A> property of the <xref:System.Speech.Recognition.StateChangedEventArgs> object passed to a handler for <xref:System.Speech.Recognition.SpeechRecognizer.StateChanged> events.  
+  
+> [!NOTE]
+>  <xref:System.Speech.Recognition.SpeechRecognitionEngine> instances run in-process and their running state is under the control of the application. Therefore, <xref:System.Speech.Recognition.SpeechRecognitionEngine> does not contain a property to return a <xref:System.Speech.Recognition.RecognizerState> object.  
+  
+ The state of a desktop speech recognition server is a read-only property and cannot be controlled programmatically. Users can change a shared speech recognizer's state using the Speech Recognition user interface (UI) or through the **Speech Recognition** member of the Windows **Control Panel**.  
+  
+ Both the **On** and **Sleep** settings in the Speech Recognition UI correspond to the `Listening` state. The **Off** setting in the Speech Recognition UI corresponds to Stopped.  
+  
+ <xref:System.Speech.Recognition.SpeechRecognizer.Enabled%2A> is the other property that affects the readiness of a shared speech recognition engine to receive and process speech input. You can use <xref:System.Speech.Recognition.SpeechRecognizer.Enabled%2A> to control whether or not a shared speech recognition engine's grammars are active for recognition. However, changing the <xref:System.Speech.Recognition.SpeechRecognizer.Enabled%2A> property has no effect on the <xref:System.Speech.Recognition.RecognizerState> property.  
+  
+ Information such as the description, the supported culture and audio formats, and the recognition engine name is encapsulated in the <xref:System.Speech.Recognition.RecognizerInfo> type.  
+  
+   
+  
+## Examples  
+ In the example below, an application displays the state of a recognizer in its implementation of a handler for the <xref:System.Speech.Recognition.SpeechRecognizer.StateChanged> event.  
+  
+```  
+  
+_recognizer.StateChanged +=  
+    delegate(object sender, StateChangedEventArgs eventArgs) {  
+        _recognizerStateLabel.Text = "Speech Recognizer State: " + eventArgs.RecognizerState.ToString();  
+    };  
+  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Listening">
+      <MemberSignature Language="C#" Value="Listening" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Recognition.RecognizerState Listening = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.RecognizerState.Listening" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Recognition.RecognizerState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The recognition engine is available to receive and analyze audio input.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stopped">
+      <MemberSignature Language="C#" Value="Stopped" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Recognition.RecognizerState Stopped = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.RecognizerState.Stopped" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Recognition.RecognizerState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The recognition engine is not receiving or analyzing audio input.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,251 @@
+<Type Name="ControlFilterExpression" FullName="System.Web.DynamicData.ControlFilterExpression">
+  <TypeSignature Language="C#" Value="public class ControlFilterExpression : System.Web.UI.WebControls.Expressions.DataSourceExpression" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ControlFilterExpression extends System.Web.UI.WebControls.Expressions.DataSourceExpression" />
+  <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.ControlFilterExpression" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DynamicData</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.Expressions.DataSourceExpression</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Modifies a database query by using the data key of the item that is selected in a data-bound control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.ControlFilterExpression> class that is designed to be used when a page contains two data-bound controls such as a <xref:System.Web.UI.WebControls.GridView> control and a <xref:System.Web.UI.WebControls.ListView> control. One control is the source, where a data key (row) is selected. The other control is the target where the data is displayed based on the selected data key. The target data is obtained by a data source control that executes the query that is defined in the <xref:System.Web.UI.WebControls.QueryExtender> class and that is built by using the selected data key.  
+  
+ To use the <xref:System.Web.DynamicData.ControlFilterExpression> class in a page, you follow these steps:  
+  
+-   Add the <xref:System.Web.UI.WebControls.QueryExtender> control to the page.  
+  
+-   Set the `TargetControlID` property of the <xref:System.Web.UI.WebControls.QueryExtender> control to the ID of the target data source control.  
+  
+-   Add a <xref:System.Web.DynamicData.ControlFilterExpression> instance to the <xref:System.Web.UI.WebControls.QueryExtender> control.  
+  
+-   Set the `ControlID` property of the <xref:System.Web.DynamicData.ControlFilterExpression> element to the source data-bound control.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.DynamicData.ControlFilterExpression> class to reference a source data-bound control, where the data key is selected. The <xref:System.Web.UI.WebControls.QueryExtender> control points to a target data source control that obtains data that is filtered by using the selected data key. In the example, the source data-bound control references a parent table and the target data-bound control references a child table.  
+  
+```  
+<asp:QueryExtender ID="QueryExtenderID"   
+    TargetControlID="TargetDataSourceID" runat="server">  
+    <asp:ControlFilterExpression ControlID="SourceGridViewID" />  
+</asp:QueryExtender>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ControlFilterExpression ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ControlFilterExpression.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.ControlFilterExpression" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Column">
+      <MemberSignature Language="C#" Value="public string Column { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Column" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ControlFilterExpression.Column" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the column that the query is based on.</summary>
+        <value>The name of the column that the query is based on.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is empty, the <xref:System.Web.DynamicData.ControlFilterExpression> control treats the selected data key as the primary key of the current table. This is useful in a list-details scenario where source and target data-bound controls operate on data from the same table.  
+  
+ If you assign a value to the property, the <xref:System.Web.DynamicData.ControlFilterExpression> control treats the data key as a foreign key. The value assigned to this property becomes the name of the column that is displayed in the target data-bound control. This is useful in a parent-child scenario where the target data-bound control operates on data from the child table and the source data-bound control operates on data from the parent table.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.DynamicData.ControlFilterExpression> class to set the column that the filter applies to.  
+  
+```  
+<asp:QueryExtender ID="QueryExtenderID"   
+    TargetControlID="TargetDataSourceID" runat="server">  
+    <asp:ControlFilterExpression ControlID="GridViewID" Column="Category"/>  
+</asp:QueryExtender>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlID">
+      <MemberSignature Language="C#" Value="public string ControlID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ControlID" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ControlFilterExpression.ControlID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the ID of the source data-bound control.</summary>
+        <value>The ID of the source data-bound control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.ControlFilterExpression.ControlID%2A> property identifies the source data-bound control from which the data key is selected. The selected data key is then used by the <xref:System.Web.DynamicData.ControlFilterExpression> control to build the query.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.DynamicData.ControlFilterExpression> class to set the ID of the source data-bound control.  
+  
+```  
+<asp:QueryExtender ID="QueryExtenderID"   
+    TargetControlID="TargetDataSourceID" runat="server">  
+    <asp:ControlFilterExpression ControlID="GridViewID" Column="Category"/>  
+</asp:QueryExtender>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetQueryable">
+      <MemberSignature Language="C#" Value="public override System.Linq.IQueryable GetQueryable (System.Linq.IQueryable source);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Linq.IQueryable GetQueryable(class System.Linq.IQueryable source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ControlFilterExpression.GetQueryable(System.Linq.IQueryable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Linq.IQueryable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Linq.IQueryable" />
+      </Parameters>
+      <Docs>
+        <param name="source">The data source query to modify.</param>
+        <summary>Gets the data source query to modify.</summary>
+        <returns>The object that represents the data source query that is modified by this <see cref="T:System.Web.DynamicData.ControlFilterExpression" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.ControlFilterExpression.GetQueryable%28System.Linq.IQueryable%29> method modifies the query based on the selected data key of the source data-bound control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadViewState">
+      <MemberSignature Language="C#" Value="protected override void LoadViewState (object savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadViewState(object savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ControlFilterExpression.LoadViewState(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savedState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="savedState">The state to restore.</param>
+        <summary>Restores the previously saved view state.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveViewState">
+      <MemberSignature Language="C#" Value="protected override object SaveViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object SaveViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ControlFilterExpression.SaveViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Saves the changes to view state since the time the page was posted to the server.</summary>
+        <returns>The object that contains the changes to view state. If there is no view state associated with the object, this method returns <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetContext">
+      <MemberSignature Language="C#" Value="public override void SetContext (System.Web.UI.Control owner, System.Web.HttpContext context, System.Web.UI.WebControls.IQueryableDataSource dataSource);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetContext(class System.Web.UI.Control owner, class System.Web.HttpContext context, class System.Web.UI.WebControls.IQueryableDataSource dataSource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ControlFilterExpression.SetContext(System.Web.UI.Control,System.Web.HttpContext,System.Web.UI.WebControls.IQueryableDataSource)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Web.UI.Control" />
+        <Parameter Name="context" Type="System.Web.HttpContext" />
+        <Parameter Name="dataSource" Type="System.Web.UI.WebControls.IQueryableDataSource" />
+      </Parameters>
+      <Docs>
+        <param name="owner">The control in which the <see cref="T:System.Web.DynamicData.ControlFilterExpression" /> instance is contained, such as the <see cref="T:System.Web.UI.WebControls.QueryExtender" /> control.</param>
+        <param name="context">The application's current <see cref="T:System.Web.HttpContext" /> object.</param>
+        <param name="dataSource">The target data source for the <see cref="T:System.Web.DynamicData.ControlFilterExpression" /> instance. If the <see cref="T:System.Web.DynamicData.DynamicFilterExpression" /> instance is contained in the <see cref="T:System.Web.UI.WebControls.QueryExtender" /> control, this parameter is the data source that the <see cref="T:System.Web.UI.WebControls.QueryExtender" /> control refers to</param>
+        <summary>Initializes the filter expression with data source information.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackViewState">
+      <MemberSignature Language="C#" Value="protected override void TrackViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void TrackViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ControlFilterExpression.TrackViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Causes the <see cref="T:System.Web.DynamicData.ControlFilterExpression" /> object to track changes to its view state so they can be stored in the control's view state object and to be persisted across requests for the same page.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

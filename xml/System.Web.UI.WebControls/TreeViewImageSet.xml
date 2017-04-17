@@ -1,0 +1,296 @@
+<Type Name="TreeViewImageSet" FullName="System.Web.UI.WebControls.TreeViewImageSet">
+  <TypeSignature Language="C#" Value="public enum TreeViewImageSet" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TreeViewImageSet extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TreeViewImageSet" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Represents an image set to use in the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.TreeViewImageSet> enumeration is used to represent the different sets of images that can be displayed in the <xref:System.Web.UI.WebControls.TreeView> control. You can select from a predefined set of images or create your own custom set by setting the <xref:System.Web.UI.WebControls.TreeView.ImageSet%2A> property to the Custom value. When defining a custom set of images, you should specify an image for each of the properties in the following table. Otherwise, the default image for that property is used.  
+  
+|Property|Description|  
+|--------------|-----------------|  
+|<xref:System.Web.UI.WebControls.TreeView.CollapseImageUrl%2A>|The URL to a custom image for the collapsed node indicator.|  
+|<xref:System.Web.UI.WebControls.TreeView.ExpandImageUrl%2A>|The URL to a custom image for the expanded node indicator.|  
+|<xref:System.Web.UI.WebControls.TreeView.LineImagesFolder%2A>|The URL to a folder that contains custom images for lines-connecting nodes.|  
+|<xref:System.Web.UI.WebControls.TreeView.NoExpandImageUrl%2A>|The URL to a custom image for the non-expanding node indicator.|  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeViewImageSet> enumeration to indicate which image set to use in the <xref:System.Web.UI.WebControls.TreeView> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TreeViewImageSet#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewImageSet/CS/treeviewimagesetcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TreeViewImageSet#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewImageSet/VB/treeviewimagesetvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Arrows">
+      <MemberSignature Language="C#" Value="Arrows" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TreeViewImageSet Arrows = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TreeViewImageSet.Arrows" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TreeViewImageSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A predefined set of arrow images.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BulletedList">
+      <MemberSignature Language="C#" Value="BulletedList" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TreeViewImageSet BulletedList = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TreeViewImageSet.BulletedList" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TreeViewImageSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A predefined set of diamond-shaped bullet images.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BulletedList2">
+      <MemberSignature Language="C#" Value="BulletedList2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TreeViewImageSet BulletedList2 = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TreeViewImageSet.BulletedList2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TreeViewImageSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A predefined set of square-shaped bullet images.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BulletedList3">
+      <MemberSignature Language="C#" Value="BulletedList3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TreeViewImageSet BulletedList3 = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TreeViewImageSet.BulletedList3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TreeViewImageSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A predefined set of sectioned, diamond shaped bullet images.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BulletedList4">
+      <MemberSignature Language="C#" Value="BulletedList4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TreeViewImageSet BulletedList4 = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TreeViewImageSet.BulletedList4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TreeViewImageSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A predefined set of alternate sectioned, diamond shaped bullet images in sizes that vary by level.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Contacts">
+      <MemberSignature Language="C#" Value="Contacts" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TreeViewImageSet Contacts = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TreeViewImageSet.Contacts" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TreeViewImageSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A predefined set of MSN Messenger–styled images.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Custom">
+      <MemberSignature Language="C#" Value="Custom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TreeViewImageSet Custom = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TreeViewImageSet.Custom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TreeViewImageSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A user-defined set of images. This is the default value of the <see cref="P:System.Web.UI.WebControls.TreeView.ImageSet" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Events">
+      <MemberSignature Language="C#" Value="Events" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TreeViewImageSet Events = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TreeViewImageSet.Events" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TreeViewImageSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A predefined set of event log–styled images.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Faq">
+      <MemberSignature Language="C#" Value="Faq" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TreeViewImageSet Faq = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TreeViewImageSet.Faq" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TreeViewImageSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A predefined set of FAQ-styled images.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Inbox">
+      <MemberSignature Language="C#" Value="Inbox" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TreeViewImageSet Inbox = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TreeViewImageSet.Inbox" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TreeViewImageSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A predefined set of e-mail–styled images.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Msdn">
+      <MemberSignature Language="C#" Value="Msdn" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TreeViewImageSet Msdn = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TreeViewImageSet.Msdn" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TreeViewImageSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A predefined set of Microsoft MSDN developer program–styled images.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="News">
+      <MemberSignature Language="C#" Value="News" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TreeViewImageSet News = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TreeViewImageSet.News" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TreeViewImageSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A predefined set of newsgroup-styled images.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Simple">
+      <MemberSignature Language="C#" Value="Simple" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TreeViewImageSet Simple = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TreeViewImageSet.Simple" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TreeViewImageSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A predefined set of simple-shaped outline images.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Simple2">
+      <MemberSignature Language="C#" Value="Simple2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TreeViewImageSet Simple2 = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TreeViewImageSet.Simple2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TreeViewImageSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A predefined set of filled simple-shaped images.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowsHelp">
+      <MemberSignature Language="C#" Value="WindowsHelp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TreeViewImageSet WindowsHelp = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TreeViewImageSet.WindowsHelp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TreeViewImageSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A predefined set of Microsoft Windows Help–styled images.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="XPFileExplorer">
+      <MemberSignature Language="C#" Value="XPFileExplorer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TreeViewImageSet XPFileExplorer = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TreeViewImageSet.XPFileExplorer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TreeViewImageSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A predefined set of Windows Explorer for Microsoft Windows XP–styled images.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

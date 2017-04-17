@@ -1,0 +1,79 @@
+<Type Name="RedirectingToIdentityProviderEventArgs" FullName="System.IdentityModel.Services.RedirectingToIdentityProviderEventArgs">
+  <TypeSignature Language="C#" Value="public class RedirectingToIdentityProviderEventArgs : System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RedirectingToIdentityProviderEventArgs extends System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.RedirectingToIdentityProviderEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.CancelEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.IdentityModel.Services.WSFederationAuthenticationModule.RedirectingToIdentityProvider" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.RedirectingToIdentityProvider> event is raised before the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> redirects the request to the identity provider. You can access and modify the request through the <xref:System.IdentityModel.Services.RedirectingToIdentityProviderEventArgs.SignInRequestMessage%2A> property. For example, you can modify the <xref:System.IdentityModel.Services.FederationMessage.BaseUri%2A> property in the sign-in message to change the identity provider to which the request will be redirected.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RedirectingToIdentityProviderEventArgs (System.IdentityModel.Services.SignInRequestMessage signInRequestMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Services.SignInRequestMessage signInRequestMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.RedirectingToIdentityProviderEventArgs.#ctor(System.IdentityModel.Services.SignInRequestMessage)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="signInRequestMessage" Type="System.IdentityModel.Services.SignInRequestMessage" />
+      </Parameters>
+      <Docs>
+        <param name="signInRequestMessage">The WS-Federation Passive Sign-in message that will be used to redirect the user to the Identity Provider.</param>
+        <summary>Initializes an instance of the <see cref="T:System.IdentityModel.Services.RedirectingToIdentityProviderEventArgs" /> class by using the specified WS-Federation Passive Sign-in message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Services.RedirectingToIdentityProviderEventArgs.SignInRequestMessage%2A> property in the new instance is initialized to the value of the `signInRequestMessage` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="signInRequestMessage" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SignInRequestMessage">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Services.SignInRequestMessage SignInRequestMessage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Services.SignInRequestMessage SignInRequestMessage" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.RedirectingToIdentityProviderEventArgs.SignInRequestMessage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Services.SignInRequestMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the WS-Federation Passive Sign-in message that will be used to redirect the user to the identity provider.</summary>
+        <value>The WS-Federation Sign-in message that will be used to redirect the user to the identity provider.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can change properties of the sign-in message to modify the request. For example, you can modify the <xref:System.IdentityModel.Services.FederationMessage.BaseUri%2A> property in the sign-in message to change the identity provider to which the request will be redirected.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "directives"
 ms.assetid: 20d5fe65-490a-4c23-88c2-ee4f490ed762
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

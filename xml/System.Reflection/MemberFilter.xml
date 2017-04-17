@@ -1,0 +1,50 @@
+<Type Name="MemberFilter" FullName="System.Reflection.MemberFilter">
+  <TypeSignature Language="C#" Value="public delegate bool MemberFilter(MemberInfo m, object filterCriteria);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed MemberFilter extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.MemberFilter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="m" Type="System.Reflection.MemberInfo" />
+    <Parameter Name="filterCriteria" Type="System.Object" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Boolean</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="m">The <see cref="T:System.Reflection.MemberInfo" /> object to which the filter is applied.</param>
+    <param name="filterCriteria">An arbitrary object used to filter the list.</param>
+    <summary>Represents a delegate that is used to filter a list of members represented in an array of <see cref="T:System.Reflection.MemberInfo" /> objects.</summary>
+    <returns>
+      <see langword="true" /> to include the member in the filtered list; otherwise <see langword="false" />.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Every derived class of a <xref:System.Delegate> and <xref:System.MulticastDelegate> has a constructor and an `Invoke` method. (See the code example in `Delegate`.)  
+  
+ The <xref:System.Type.FindMembers%2A> method uses this delegate to filter the list of members that it returns.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

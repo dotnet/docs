@@ -1,0 +1,218 @@
+<Type Name="ViewEventArgs" FullName="System.Windows.Forms.DataVisualization.Charting.ViewEventArgs">
+  <TypeSignature Language="C#" Value="public class ViewEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ViewEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides event data that is used as a parameter object in the <see cref="E:System.Windows.Forms.DataVisualization.Charting.Chart.AxisViewChanged" /> and <see cref="E:System.Windows.Forms.DataVisualization.Charting.Chart.AxisViewChanging" /> events of the root <see cref="T:System.Windows.Forms.DataVisualization.Charting.Chart" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is exposed as the `e` parameter in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AxisViewChanged> and <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AxisViewChanging> events. The <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AxisViewChanging> event is raised just before a new view is displayed, as a result of the end-user clicking and dragging in a chart area. The <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AxisViewChanged> event is raised just after the new view is created.  
+  
+ It is important to note that the position and size of a view cannot be set in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AxisViewChanged> event because in this case the view is already created.  
+  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs> class contains the following properties:  
+  
+-   The <xref:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.ChartArea%2A> property, which is used to get the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> object in which the view is being displayed. The <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.Name%2A> property gets the name of the chart area. Other chart area properties can also be set.  
+  
+-   The <xref:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.Axis%2A> property, which is used to get the <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object with which the view is associated. To determine the type of axis, which can be X, Y, X2 or Y2, use the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.AxisName%2A> property. Other axis properties can also be set.  
+  
+-   The <xref:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.NewPosition%2A> property, which represents the new position of a view.  
+  
+-   The <xref:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.NewSize%2A> property, which represents the new size of a view.  
+  
+-   The <xref:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.NewSizeType%2A> property, which represents the unit of measurement for the size of a view.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ViewEventArgs (System.Windows.Forms.DataVisualization.Charting.Axis axis, double newPosition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataVisualization.Charting.Axis axis, float64 newPosition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.#ctor(System.Windows.Forms.DataVisualization.Charting.Axis,System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="axis" Type="System.Windows.Forms.DataVisualization.Charting.Axis" />
+        <Parameter Name="newPosition" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="axis">The axis of the scale view.</param>
+        <param name="newPosition">The start position of the new scale view.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.ViewEventArgs" /> class with the specified <paramref name="axis" /> and <paramref name="newPosition" /> parameters.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ViewEventArgs (System.Windows.Forms.DataVisualization.Charting.Axis axis, double newPosition, double newSize, System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType newSizeType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataVisualization.Charting.Axis axis, float64 newPosition, float64 newSize, valuetype System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType newSizeType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.#ctor(System.Windows.Forms.DataVisualization.Charting.Axis,System.Double,System.Double,System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="axis" Type="System.Windows.Forms.DataVisualization.Charting.Axis" />
+        <Parameter Name="newPosition" Type="System.Double" />
+        <Parameter Name="newSize" Type="System.Double" />
+        <Parameter Name="newSizeType" Type="System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType" />
+      </Parameters>
+      <Docs>
+        <param name="axis">The axis of the scale view.</param>
+        <param name="newPosition">The start position of the new scale view.</param>
+        <param name="newSize">The new scale view size.</param>
+        <param name="newSizeType">The unit of measurement for the size of the new scale view.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.ViewEventArgs" /> class with the specified <paramref name="axis" />, <paramref name="newPosition" />, <paramref name="newSize" /> and <paramref name="newSizeType" /> parameters.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Axis">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.Axis Axis { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.Axis Axis" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.Axis" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.Axis</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Axis" /> object that a view belongs to.</summary>
+        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.Axis" /> object that represents the axis that a view belongs to.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is exposed in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AxisViewChanged> and <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AxisViewChanging> events of the root <xref:System.Windows.Forms.DataVisualization.Charting.Chart> object.  
+  
+ This property can be used to:  
+  
+-   Determine the type of axis—X, X2, Y or Y2—that the event is being raised for, using the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.AxisName%2A> property.  
+  
+-   Get and set axis properties, such as <xref:System.Windows.Forms.DataVisualization.Charting.Axis.LineColor%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChartArea">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ChartArea ChartArea { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.ChartArea ChartArea" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.ChartArea" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartArea</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> object that a view belongs to.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> object that represents the chart area a view belongs to.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is exposed in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AxisViewChanged> and <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AxisViewChanging> events of the root <xref:System.Windows.Forms.DataVisualization.Charting.Chart> object.  
+  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.ChartArea%2A> property can be used to determine the chart area that the view belongs to, by accessing the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.Name> property. This property can also be used to get and set chart area properties.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewPosition">
+      <MemberSignature Language="C#" Value="public double NewPosition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 NewPosition" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.NewPosition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the new position of a view along an axis.</summary>
+        <value>A <see langword="double" /> value that represents the position of a view along an axis, which is either the bottom of a vertical view or the left position of a horizontal view.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is exposed in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AxisViewChanged> and <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AxisViewChanging> events of the root <xref:System.Windows.Forms.DataVisualization.Charting.Chart> object, and represents the new position of a view.  
+  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.NewPosition%2A> property can be set to a new value in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AxisViewChanging> event, but cannot be set to a new value for the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AxisViewChanged> event because in this case the view is already created.  
+  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.NewPosition%2A> is always measured as an axis value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewSize">
+      <MemberSignature Language="C#" Value="public double NewSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 NewSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.NewSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the size of a view along an axis.</summary>
+        <value>A <see langword="double" /> value that represents the size of a view along an axis. The size is either the height of the vertical view or the width of the horizontal view.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewSizeType">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType NewSizeType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType NewSizeType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.NewSizeType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the unit of measurement for the new size of a view.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType" /> enumeration value that represents the unit of measurement for the <see cref="P:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.NewSize" /> property, which represents the width or height of a data view. The default value is <see cref="F:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this property is set to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType>, the unit of measurement for the <xref:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.NewSize%2A> property is automatically determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Chart> control, and will be either a number or a day.  
+  
+ Recall that the <xref:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.NewSize%2A> property is always measured as an axis value. Make sure that if you explicitly set the size type, the type matches the axis that the scrollbar belongs to. In other words, do not specify <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType> if the axis does not use <xref:System.DateTime> values.  
+  
+ Note that the <xref:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.NewSize%2A> property can be set to a new value in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AxisViewChanging> event, but cannot be set to a new value for the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AxisViewChanged> event because the view is already created.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

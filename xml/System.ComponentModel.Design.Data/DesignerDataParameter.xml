@@ -1,0 +1,118 @@
+<Type Name="DesignerDataParameter" FullName="System.ComponentModel.Design.Data.DesignerDataParameter">
+  <TypeSignature Language="C#" Value="public sealed class DesignerDataParameter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DesignerDataParameter extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Data.DesignerDataParameter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a parameter for a stored procedure. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.Data.DesignerDataParameter> class is one of several types that represent the schema of a data store at design-time. These schema items are made available to controls by designers implementing the <xref:System.ComponentModel.Design.Data.IDataEnvironment> interface. Controls access schema objects by calling the <xref:System.ComponentModel.Design.Data.IDataEnvironment.GetConnectionSchema%2A> method of the interface.  
+  
+ The <xref:System.ComponentModel.Design.Data.DesignerDataParameter> class represents the parameters required to call a stored procedure in the data store. The <xref:System.ComponentModel.Design.Data.DesignerDataStoredProcedure.Parameters%2A?displayProperty=fullName> property contains a collection of <xref:System.ComponentModel.Design.Data.DesignerDataParameter> objects.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DesignerDataParameter (string name, System.Data.DbType dataType, System.Data.ParameterDirection direction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.DbType dataType, valuetype System.Data.ParameterDirection direction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DesignerDataParameter.#ctor(System.String,System.Data.DbType,System.Data.ParameterDirection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="dataType" Type="System.Data.DbType" />
+        <Parameter Name="direction" Type="System.Data.ParameterDirection" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the parameter.</param>
+        <param name="dataType">One of the <see cref="T:System.Data.DbType" /> values.</param>
+        <param name="direction">One of the <see cref="T:System.Data.ParameterDirection" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Data.DesignerDataParameter" /> class with the specified name, data type, and input/output semantics.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataType">
+      <MemberSignature Language="C#" Value="public System.Data.DbType DataType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.DbType DataType" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataParameter.DataType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the database type of the parameter.</summary>
+        <value>One of the <see cref="T:System.Data.DbType" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.Data.DesignerDataParameter.DataType%2A> property contains the type of data required by the underlying data store.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Direction">
+      <MemberSignature Language="C#" Value="public System.Data.ParameterDirection Direction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.ParameterDirection Direction" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataParameter.Direction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.ParameterDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the parameter is input-only, output-only, bidirectional, or a stored procedure return-value parameter.</summary>
+        <value>One of the <see cref="T:System.Data.ParameterDirection" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ComponentModel.Design.Data.DesignerDataParameter.Direction%2A> property to indicate whether a parameter is passed into a stored procedure, returned from a stored procedure, or both.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataParameter.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the parameter.</summary>
+        <value>The name of the parameter.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,126 @@
+<Type Name="StructuralComparisons" FullName="System.Collections.StructuralComparisons">
+  <TypeSignature Language="C#" Value="public static class StructuralComparisons" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit StructuralComparisons extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Collections.StructuralComparisons" />
+  <AssemblyInfo>
+    <AssemblyName>System.Collections</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides objects for performing a structural comparison of two collection objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Collections.StructuralComparisons> class returns the following two predefined comparison objects:  
+  
+-   An <xref:System.Collections.IComparer> implementation that can be passed to a method such as <xref:System.Array.System%23Collections%23IStructuralComparable%23CompareTo%28System.Object%2CSystem.Collections.IComparer%29?displayProperty=fullName> or <xref:System.Tuple%603.System%23Collections%23IStructuralComparable%23CompareTo%28System.Object%2CSystem.Collections.IComparer%29?displayProperty=fullName> to perform a structural comparison of two objects. It is designed to indicate whether the first object precedes, follows, or occurs in the same position as the second object in the sort order.  
+  
+-   An <xref:System.Collections.IEqualityComparer> implementation that can be passed to a method such as <xref:System.Array.System%23Collections%23IStructuralEquatable%23Equals%28System.Object%2CSystem.Collections.IEqualityComparer%29?displayProperty=fullName> or <xref:System.Tuple%603.System%23Collections%23IStructuralEquatable%23Equals%28System.Object%2CSystem.Collections.IEqualityComparer%29?displayProperty=fullName> to perform a comparison for structural equality.  
+  
+ The objects can be used to perform a structural comparison or a structural equality comparison of two collection objects, such as array or tuple objects. In structural comparison, two objects are compared based on their values. Objects can be ordered based on some criteria, and two objects are considered equal when they have equal values, not because they reference the same physical object  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="StructuralComparer">
+      <MemberSignature Language="C#" Value="public static System.Collections.IComparer StructuralComparer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Collections.IComparer StructuralComparer" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.StructuralComparisons.StructuralComparer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IComparer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a predefined object that performs a structural comparison of two objects.</summary>
+        <value>A predefined object that is used to perform a structural comparison of two collection objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Collections.IComparer> object returned by this property is passed to the comparison method of a collection object, such as <xref:System.Array.System%23Collections%23IStructuralComparable%23CompareTo%28System.Object%2CSystem.Collections.IComparer%29?displayProperty=fullName> or <xref:System.Tuple%603.System%23Collections%23IStructuralComparable%23CompareTo%28System.Object%2CSystem.Collections.IComparer%29?displayProperty=fullName>, its <xref:System.Collections.IComparer.Compare%2A> method is called for each member of an array or for each component of a tuple. This implementation of the <xref:System.Collections.IComparer.Compare%2A> method behaves as follows when it compares each item of a collection object with the corresponding item of another collection object:  
+  
+-   It considers two items that are `null` to be equal, and considers a null item to be less than an item that is not null.  
+  
+-   If the first item in the comparison can be cast to an <xref:System.Collections.IStructuralComparable> object (in other words, if it is a collection object that implements the <xref:System.Collections.IStructuralComparable> interface), it calls the <xref:System.Collections.IStructuralComparable.CompareTo%2A> method.  
+  
+-   If the first item in the comparison cannot be cast to an <xref:System.Collections.IStructuralComparable> object (in other words, if it is not a collection object that implements the <xref:System.Collections.IStructuralComparable> interface), it calls the `Comparer.Default.Compare` method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StructuralEqualityComparer">
+      <MemberSignature Language="C#" Value="public static System.Collections.IEqualityComparer StructuralEqualityComparer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Collections.IEqualityComparer StructuralEqualityComparer" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.StructuralComparisons.StructuralEqualityComparer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEqualityComparer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a predefined object that compares two objects for structural equality.</summary>
+        <value>A predefined object that is used to compare two collection objects for structural equality.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Collections.IComparer> object returned by this property is passed to the equality comparison method of a collection object, such as <xref:System.Array.System%23Collections%23IStructuralEquatable%23Equals%28System.Object%2CSystem.Collections.IEqualityComparer%29?displayProperty=fullName> or <xref:System.Tuple%603.System%23Collections%23IStructuralEquatable%23Equals%28System.Object%2CSystem.Collections.IEqualityComparer%29?displayProperty=fullName>, its <xref:System.Collections.IEqualityComparer.Equals%2A?displayProperty=fullName> method is called for each member of an array or for each component of a tuple. This implementation of the <xref:System.Collections.IEqualityComparer.Equals%2A> method behaves as follows when it compares each item of a collection object with the corresponding item of another collection object:  
+  
+-   If both items are `null`, it considers the two items to be equal.  
+  
+-   If one item is null but the other item is not, it considers the two items to be unequal.  
+  
+-   If the first item in the comparison can be cast to an <xref:System.Collections.IStructuralEquatable> object (in other words, if it is a collection object that implements the <xref:System.Collections.IStructuralEquatable> interface), it calls the <xref:System.Collections.IStructuralEquatable.Equals%2A?displayProperty=fullName> method.  
+  
+-   If the first item in the comparison cannot be cast to an <xref:System.Collections.IStructuralEquatable> object (in other words, if it is not a collection object that implements the <xref:System.Collections.IStructuralEquatable> interface), it calls the item's `Equals` method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

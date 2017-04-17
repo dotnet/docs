@@ -1,0 +1,202 @@
+<Type Name="WebRequestEvent" FullName="System.Web.Management.WebRequestEvent">
+  <TypeSignature Language="C#" Value="public class WebRequestEvent : System.Web.Management.WebManagementEvent" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebRequestEvent extends System.Web.Management.WebManagementEvent" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Management.WebRequestEvent" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Management.WebManagementEvent</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the base class for events providing Web-request information.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Management.WebRequestEvent> is raised at every Web request.  
+  
+ It uses the <xref:System.Web.Management.WebRequestInformation> class to obtain request information.  
+  
+> [!NOTE]
+>  In most cases you will use the standard ASP.NET health-monitoring types and control their behavior by setting the `healthMonitoring` configuration section. You can also create custom types, as shown in the next example. If you create your custom event type and you need to add your own information, customize the <xref:System.Web.Management.WebBaseEvent.FormatCustomEventDetails%2A> method. This will avoid overwriting or tampering with sensitive system information.  
+  
+   
+  
+## Examples  
+ The following code example shows how to derive from the <xref:System.Web.Management.WebRequestEvent> class to create a custom event.  
+  
+ [!code-csharp[System.Web.Management.WebRequestEvent#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebRequestEvent/CS/WebRequestEvent.cs#1)]
+ [!code-vb[System.Web.Management.WebRequestEvent#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebRequestEvent/VB/WebRequestEvent.vb#1)]  
+  
+ The following is an excerpt of the configuration file that enables ASP.NET to use the custom event.  
+  
+```  
+<healthMonitoring   
+  enabled="true" heartBeatInterval="0">  
+  <providers>  
+    <!-- Define the custom provider that   
+         processes custom Web request events. -->  
+    <add name="SampleWebEventProvider"   
+type="SamplesAspNet.SampleEventProvider,webeventprovider,Version=1.0.1573.18094, Culture=neutral, PublicKeyToken=b5a57a9a9d487cf4, processorArchitecture=MSIL"/>  
+  </providers>  
+  
+  <eventMappings>  
+    <!--  Define the event source that   
+         issues custom events.   -->  
+    <add  name="SampleWebRequestEvent"   
+type="SamplesAspNet.SampleWebRequestEvent,webrequestevent,Version=1.0.1573.23947, Culture=neutral, PublicKeyToken=e717d983a78c8ddb, processorArchitecture=MSIL"/>  
+    </eventMappings>  
+  
+  <rules>  
+        <!-- Associate custom event with   
+        related custom provider -->  
+    <add   
+      name="CustomWebRequestEvent"  
+      eventName="SampleWebRequestEvent"   
+      provider="SampleWebEventProvider"   
+      profile="Critical"/>  
+  </rules>  
+</healthMonitoring>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected WebRequestEvent (string message, object eventSource, int eventCode);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(string message, object eventSource, int32 eventCode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebRequestEvent.#ctor(System.String,System.Object,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="eventSource" Type="System.Object" />
+        <Parameter Name="eventCode" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message associated with the event.</param>
+        <param name="eventSource">The object that is the source of the event.</param>
+        <param name="eventCode">The <see cref="T:System.Web.Management.WebEventCodes" /> code associated with the event. It must be greater than <see cref="F:System.Web.Management.WebEventCodes.WebExtendedBase" />.</param>
+        <summary>Initializes the <see cref="T:System.Web.Management.WebRequestEvent" /> class with specified event parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The constructor <xref:System.Web.Management.WebRequestEvent.%23ctor%2A> allows specifying the event message, the source of the event, and the code or identifier associated with the event.  
+  
+   
+  
+## Examples  
+ The following code example shows how to customize this constructor.  
+  
+> [!NOTE]
+>  The value you use to define your event code or identifier must be greater than <xref:System.Web.Management.WebEventCodes>.  
+  
+ [!code-csharp[System.Web.Management.WebRequestEvent#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebRequestEvent/CS/WebRequestEvent.cs#2)]
+ [!code-vb[System.Web.Management.WebRequestEvent#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebRequestEvent/VB/WebRequestEvent.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected WebRequestEvent (string message, object eventSource, int eventCode, int eventDetailCode);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(string message, object eventSource, int32 eventCode, int32 eventDetailCode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebRequestEvent.#ctor(System.String,System.Object,System.Int32,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="eventSource" Type="System.Object" />
+        <Parameter Name="eventCode" Type="System.Int32" />
+        <Parameter Name="eventDetailCode" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message associated with the event.</param>
+        <param name="eventSource">The object that is the source of the event.</param>
+        <param name="eventCode">The <see cref="T:System.Web.Management.WebEventCodes" /> code associated with the event. It must be greater than <see cref="F:System.Web.Management.WebEventCodes.WebExtendedBase" />.</param>
+        <param name="eventDetailCode">The <see cref="T:System.Web.Management.WebEventCodes" /> detail code associated with the event.</param>
+        <summary>Initializes the <see cref="T:System.Web.Management.WebRequestEvent" /> class with specified event parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The constructor <xref:System.Web.Management.WebRequestEvent.%23ctor%2A> allows specifying the event message, the source of the event, the code or identifier associated with the event, and the detailed code.  
+  
+   
+  
+## Examples  
+ The following code example shows how to customize this constructor.  
+  
+> [!NOTE]
+>  The value you use to define your event code or identifier must be greater than <xref:System.Web.Management.WebEventCodes>  
+  
+ [!code-csharp[System.Web.Management.WebRequestEvent#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebRequestEvent/CS/WebRequestEvent.cs#3)]
+ [!code-vb[System.Web.Management.WebRequestEvent#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebRequestEvent/VB/WebRequestEvent.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncrementPerfCounters">
+      <MemberSignature Language="C#" Value="protected override void IncrementPerfCounters ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void IncrementPerfCounters() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebRequestEvent.IncrementPerfCounters" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Used internally to increment the performance counters.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestInformation">
+      <MemberSignature Language="C#" Value="public System.Web.Management.WebRequestInformation RequestInformation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Management.WebRequestInformation RequestInformation" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebRequestEvent.RequestInformation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Management.WebRequestInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the information associated with the Web-application request.</summary>
+        <value>The information associated with the Web-application request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The standard request information is defined by the <xref:System.Web.Management.WebRequestInformation> class.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the Web-request information.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

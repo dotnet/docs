@@ -1,0 +1,396 @@
+<Type Name="StaticSiteMapProvider" FullName="System.Web.StaticSiteMapProvider">
+  <TypeSignature Language="C#" Value="public abstract class StaticSiteMapProvider : System.Web.SiteMapProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit StaticSiteMapProvider extends System.Web.SiteMapProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Web.StaticSiteMapProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.SiteMapProvider</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Serves as a partial implementation of the abstract <see cref="T:System.Web.SiteMapProvider" /> class and serves as a base class for the <see cref="T:System.Web.XmlSiteMapProvider" /> class, which is the default site map provider in ASP.NET.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.StaticSiteMapProvider> class is a partial implementation of the abstract <xref:System.Web.SiteMapProvider> class and supplies two additional methods: <xref:System.Web.StaticSiteMapProvider.AddNode%2A> and <xref:System.Web.StaticSiteMapProvider.RemoveNode%2A>, as well as the abstract <xref:System.Web.StaticSiteMapProvider.BuildSiteMap%2A> and protected <xref:System.Web.StaticSiteMapProvider.Clear%2A> methods.  
+  
+ The <xref:System.Web.StaticSiteMapProvider> class supports writing a site map provider (for example, an <xref:System.Web.XmlSiteMapProvider>) that translates a site map that is stored in persistent storage to one that is stored in memory. The <xref:System.Web.StaticSiteMapProvider> class provides basic implementations for storing and retrieving <xref:System.Web.SiteMapNode> objects.  
+  
+ The <xref:System.Web.SiteMapProvider> and <xref:System.Web.StaticSiteMapProvider> classes support the concept of a site map provider hierarchy, where a site map provider can have a hierarchical relationship with other site map providers. This pattern is implemented with the <xref:System.Web.SiteMapProvider.RootProvider%2A> and <xref:System.Web.SiteMapProvider.ParentProvider%2A> properties.  
+  
+ The <xref:System.Web.StaticSiteMapProvider> class stores its <xref:System.Web.SiteMapNode> objects in hash tables and internally uses the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=fullName> property of the pages, represented by site map nodes, as keys. (If a site map node does not specify a URL, it is tracked using an automatically generated unique key.) As a result, you cannot have site map nodes wherein a site map node with the same URL is used more than once. For example, attempting to load the site map node illustrated in the following code example with the <xref:System.Web.XmlSiteMapProvider> class, which is the default ASP.NET site map provider, or any site map provider that is derived from the  <xref:System.Web.StaticSiteMapProvider> class will not work because the AboutUs.aspx page is used more than once.  
+  
+```  
+<sitemap>  
+  <sitemapnode title="Home" description="Home" url="default.aspx" >  
+    <sitemapnode title="Catalog" description="Our catalog" url="catalog.aspx"/>  
+    <sitemapnode title="About Us" description="All about our company" url="aboutus.aspx"/>  
+    <sitemapnode title="Driving Directions" description="Directions to our store" url="aboutus.aspx"/>  
+  </sitemapnode>  
+</sitemap>  
+```  
+  
+ If you are extending the <xref:System.Web.StaticSiteMapProvider> class, the three most important methods are the <xref:System.Web.SiteMapProvider.GetRootNodeCore%2A>, <xref:System.Configuration.Provider.ProviderBase.Initialize%2A>, and <xref:System.Web.StaticSiteMapProvider.BuildSiteMap%2A> methods. The <xref:System.Web.StaticSiteMapProvider.Clear%2A> and <xref:System.Web.StaticSiteMapProvider.FindSiteMapNode%2A> methods have default implementations that are sufficient for most custom site map provider implementations.  
+  
+ The <xref:System.Configuration.Provider.ProviderBase.Initialize%2A> method is called to initialize derived site map providers, including any resources that are required to load site map data, but it does attempt to build the site map node in memory. If your derived class is using files to store site map data, any file initialization can be performed here. If the site map node uses some other type of data store, such as a relational database, initializing a connection might be performed here. Additional attributes, such as file names or connection strings that are placed on the site map provider element in the configuration are processed by the ASP.NET configuration system and passed to the <xref:System.Configuration.Provider.ProviderBase.Initialize%2A> method with the `attributes` parameter.  
+  
+ The <xref:System.Web.StaticSiteMapProvider.BuildSiteMap%2A> method must be overridden by all classes that are derived from the <xref:System.Web.StaticSiteMapProvider> class and is called to load the site map node from persistent storage and convert it to an internal representation. The <xref:System.Web.StaticSiteMapProvider.BuildSiteMap%2A> method is called internally in many of the default member implementations of the <xref:System.Web.StaticSiteMapProvider> and <xref:System.Web.XmlSiteMapProvider> classes. If you implement your own site map provider, ensure that site map data processing occurs once and subsequent calls to the <xref:System.Web.StaticSiteMapProvider.BuildSiteMap%2A> method return immediately, if site map information has already been loaded. When you implement the <xref:System.Web.StaticSiteMapProvider.BuildSiteMap%2A> method, ensure it is thread safe, as multiple concurrent page requests can result indirectly in multiple calls to load site map information. The site map infrastructure supports displaying site map information based on the user's role. Depending on the <xref:System.Web.SiteMapNode.Roles%2A> property that are supported by the individual <xref:System.Web.SiteMapNode> objects, a different navigation structure can exist for different users. The default implementations of the site map node retrieval members of the <xref:System.Web.StaticSiteMapProvider> class perform security trimming automatically by calling the <xref:System.Web.SiteMapProvider.IsAccessibleToUser%2A> method.  
+  
+ The <xref:System.Web.StaticSiteMapProvider.AddNode%2A>, <xref:System.Web.StaticSiteMapProvider.Clear%2A> and <xref:System.Web.StaticSiteMapProvider.RemoveNode%2A> methods manipulate the internal collections that are used to track site map nodes in a thread-safe manner.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you to extend the <xref:System.Web.StaticSiteMapProvider> class to use Microsoft Access as a site map provider. The `AccessSiteMapProvider` class is a site map provider that supports only a simple, one-level-deep hierarchy. The table that the site map data is stored in has the following structure:  
+  
+```  
+NODEID URL            NAME       PARENTNODEID  
+ ---------------------------------------------  
+ 1      default.aspx   Default    <NULL>  
+ 2      catalog.aspx   Catalog    1  
+ 3      aboutus.aspx   Contact Us 1  
+...  
+```  
+  
+ The `AccessSiteMapProvider` class is derived from the <xref:System.Web.StaticSiteMapProvider> class and retrieves its information from a Microsoft Access database using basic SQL queries and the <xref:System.Data.OleDb.OleDbCommand> and <xref:System.Data.OleDb.OleDbDataReader> objects.  
+  
+ [!code-cpp[Urtue.Samples.Alexkr.AccessSiteMapProvider_1#1](~/samples/snippets/cpp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.AccessSiteMapProvider_1/CPP/accesssitemapprovider.cpp#1)]
+ [!code-csharp[Urtue.Samples.Alexkr.AccessSiteMapProvider_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.AccessSiteMapProvider_1/CS/accesssitemapprovider.cs#1)]
+ [!code-vb[Urtue.Samples.Alexkr.AccessSiteMapProvider_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.AccessSiteMapProvider_1/VB/accesssitemapprovider.vb#1)]  
+  
+ Finally, the `AccessSiteMapProvider` is configured as the default provider in the following Web.config file.  
+  
+```  
+<configuration>  
+  <system.web>  
+    <siteMap defaultProvider="AccessSiteMapProvider">  
+     <providers>  
+       <add   
+         name="AccessSiteMapProvider"  
+         type="Samples.AspNet.AccessSiteMapProvider,Samples.AspNet "  
+         accessSiteMapConnectionString="PROVIDER=MICROSOFT.JET.OLEDB.4.0;DATA SOURCE=sitemap.mdb "/>  
+     </providers>   
+    </siteMap>  
+  </system.web>  
+</configuration>  
+```  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>When you inherit from the <see cref="T:System.Web.StaticSiteMapProvider" /> class, you must override the following member: <see cref="M:System.Web.StaticSiteMapProvider.BuildSiteMap" />.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected StaticSiteMapProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.StaticSiteMapProvider.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.StaticSiteMapProvider" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ **Note** This class is not instantiated directly. This constructor is called from the constructor of classes that are derived from the <xref:System.Web.StaticSiteMapProvider> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddNode">
+      <MemberSignature Language="C#" Value="protected override void AddNode (System.Web.SiteMapNode node, System.Web.SiteMapNode parentNode);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void AddNode(class System.Web.SiteMapNode node, class System.Web.SiteMapNode parentNode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.StaticSiteMapProvider.AddNode(System.Web.SiteMapNode,System.Web.SiteMapNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Web.SiteMapNode" />
+        <Parameter Name="parentNode" Type="System.Web.SiteMapNode" />
+      </Parameters>
+      <Docs>
+        <param name="node">The <see cref="T:System.Web.SiteMapNode" /> to add to the site map provider.</param>
+        <param name="parentNode">The <see cref="T:System.Web.SiteMapNode" /> under which to add <c>node</c>.</param>
+        <summary>Adds a <see cref="T:System.Web.SiteMapNode" /> to the collections that are maintained by the site map provider and establishes a parent/child relationship between the <see cref="T:System.Web.SiteMapNode" /> objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The site map node that is identified by the `node` parameter is added to an internal collection and a parent-child relationship is created between it and the site map node that is identified by the `parentNode` parameter.  
+  
+ The URL for a site map node might be interpreted when it is added to the internal collections. Application-relative and relative URLs are expanded to application-absolute virtual paths, which are then used internally to store and access the individual instances of the <xref:System.Web.SiteMapNode> class. Other URLs, such as physical paths, paths with protocols in them, and UNC paths, are not interpreted.  
+  
+ The <xref:System.Web.XmlSiteMapProvider> class, which is derived from the <xref:System.Web.StaticSiteMapProvider> class, and is the default site map provider for ASP.NET, uses the <xref:System.Web.SiteMapNode.Url%2A> property of a <xref:System.Web.SiteMapNode> object as a lookup key in its internal collections, by default. If the <xref:System.Web.SiteMapNode.Url%2A> property of the <xref:System.Web.SiteMapNode> is set, it must be unique within the scope of the site map provider. The <xref:System.Web.StaticSiteMapProvider.FindSiteMapNode%2A> method attempts to retrieve site map nodes based on their <xref:System.Web.SiteMapNode.Url%2A> property. Otherwise, you can use the <xref:System.Web.SiteMapNode.Key%2A> property and the corresponding <xref:System.Web.StaticSiteMapProvider.FindSiteMapNodeFromKey%2A> method to retrieve site map nodes. If no <xref:System.Web.SiteMapNode.Url%2A> or <xref:System.Web.SiteMapNode.Key%2A> is specified, the site map provider automatically generates a <xref:System.Web.SiteMapNode.Key%2A> to track the site map nodes.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="node" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.SiteMapNode.Url" /> or <see cref="P:System.Web.SiteMapNode.Key" /> is already registered with the <see cref="T:System.Web.StaticSiteMapProvider" />. A site map node must be made up of pages with unique URLs or keys.</exception>
+        <block subset="none" type="overrides">
+          <para>When overriding the <see cref="M:System.Web.StaticSiteMapProvider.AddNode(System.Web.SiteMapNode,System.Web.SiteMapNode)" /> method, ensure that the <see cref="P:System.Web.SiteMapNode.Key" /> property is set to a unique value when adding the site map node using the <see cref="Overload:System.Web.StaticSiteMapProvider.AddNode" /> method.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildSiteMap">
+      <MemberSignature Language="C#" Value="public abstract System.Web.SiteMapNode BuildSiteMap ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.SiteMapNode BuildSiteMap() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.StaticSiteMapProvider.BuildSiteMap" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.SiteMapNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, loads the site map information from persistent storage and builds it in memory.</summary>
+        <returns>The root <see cref="T:System.Web.SiteMapNode" /> of the site map navigation structure.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.StaticSiteMapProvider.BuildSiteMap%2A> method is the one abstract member of the <xref:System.Web.StaticSiteMapProvider> class. The <xref:System.Web.StaticSiteMapProvider.BuildSiteMap%2A> method is called to load and build the site map node from persistent storage. When you implement the <xref:System.Web.StaticSiteMapProvider.BuildSiteMap%2A> method, ensure that it is thread-safe, because multiple concurrent page requests can result indirectly in multiple calls to load site map information.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to implement the <xref:System.Web.StaticSiteMapProvider.BuildSiteMap%2A> method to retrieve data from a Microsoft Access database and build <xref:System.Web.SiteMapNode> objects that are added to the <xref:System.Web.SiteMapNode.ChildNodes%2A> collection of the root site map node. Finally, the <xref:System.Web.SiteMapProvider.RootNode%2A> property  is returned to the caller.  
+  
+ This code example is part of a larger example provided for the <xref:System.Web.StaticSiteMapProvider> class.  
+  
+ [!code-cpp[Urtue.Samples.Alexkr.AccessSiteMapProvider_1#4](~/samples/snippets/cpp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.AccessSiteMapProvider_1/CPP/accesssitemapprovider.cpp#4)]
+ [!code-csharp[Urtue.Samples.Alexkr.AccessSiteMapProvider_1#4](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.AccessSiteMapProvider_1/CS/accesssitemapprovider.cs#4)]
+ [!code-vb[Urtue.Samples.Alexkr.AccessSiteMapProvider_1#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.AccessSiteMapProvider_1/VB/accesssitemapprovider.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding the <see cref="M:System.Web.StaticSiteMapProvider.BuildSiteMap" /> method in a derived class, be sure to normalize the URLs of <see cref="T:System.Web.SiteMapNode" /> objects that you add to your site map provider, so that the <see cref="M:System.Web.StaticSiteMapProvider.FindSiteMapNode(System.String)" /> method can retrieve a site map node regardless of whether the URL for the site map node is supplied as an absolute virtual path or application relative path. Site map provider implementers using the <see cref="Overload:System.Web.StaticSiteMapProvider.AddNode" /> method should normalize any URLs before storing <see cref="T:System.Web.SiteMapNode" /> objects in the internal hash tables on behalf of the site map provider.  
+  
+ Security trimming behavior is included in the <see cref="T:System.Web.SiteMapProvider" /> and <see cref="T:System.Web.StaticSiteMapProvider" /> class implementations. However, for security trimming to function in derived classes, you must set the <see cref="P:System.Web.SiteMapNode.Roles" /> property of any <see cref="T:System.Web.SiteMapNode" /> objects that you create while building a site map provider when you override the <see cref="M:System.Web.StaticSiteMapProvider.BuildSiteMap" /> method.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="protected virtual void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.StaticSiteMapProvider.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all elements in the collections of child and parent site map nodes that the <see cref="T:System.Web.StaticSiteMapProvider" /> tracks as part of its state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Classes that are derived from the <xref:System.Web.StaticSiteMapProvider> class can override the <xref:System.Web.StaticSiteMapProvider.Clear%2A> method to perform additional cleanup, depending on what state the derived classes maintain.  
+  
+ The <xref:System.Web.StaticSiteMapProvider.Clear%2A> method does not reset state that is initialized during the <xref:System.Configuration.Provider.ProviderBase.Initialize%2A> method—it resets only state that is initialized during the <xref:System.Web.StaticSiteMapProvider.BuildSiteMap%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.StaticSiteMapProvider.Clear%2A> method to perform additional cleanup of state that is maintained by the class.  
+  
+ This code example is part of a larger example provided for the <xref:System.Web.StaticSiteMapProvider> class.  
+  
+ [!code-cpp[Urtue.Samples.Alexkr.AccessSiteMapProvider_1#3](~/samples/snippets/cpp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.AccessSiteMapProvider_1/CPP/accesssitemapprovider.cpp#3)]
+ [!code-csharp[Urtue.Samples.Alexkr.AccessSiteMapProvider_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.AccessSiteMapProvider_1/CS/accesssitemapprovider.cs#3)]
+ [!code-vb[Urtue.Samples.Alexkr.AccessSiteMapProvider_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.AccessSiteMapProvider_1/VB/accesssitemapprovider.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindSiteMapNode">
+      <MemberSignature Language="C#" Value="public override System.Web.SiteMapNode FindSiteMapNode (string rawUrl);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.SiteMapNode FindSiteMapNode(string rawUrl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.StaticSiteMapProvider.FindSiteMapNode(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.SiteMapNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rawUrl" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="rawUrl">A URL that identifies the page for which to retrieve a <see cref="T:System.Web.SiteMapNode" />.</param>
+        <summary>Retrieves a <see cref="T:System.Web.SiteMapNode" /> object that represents the page at the specified URL.</summary>
+        <returns>A <see cref="T:System.Web.SiteMapNode" /> that represents the page identified by <paramref name="rawURL" />; otherwise, <see langword="null" />, if no corresponding site map node is found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The provided URL is typically a virtual or absolute URL. It can also be a URL that uses ASP.NET application-relative syntax, such as `"~/``apprelativedirectory``"`. The <xref:System.Web.StaticSiteMapProvider> class automatically normalizes application-relative raw URLs to an absolute virtual path.  
+  
+ The <xref:System.Web.XmlSiteMapProvider> object, which is derived from the <xref:System.Web.StaticSiteMapProvider> and is the default site map provider for ASP.NET, uses the <xref:System.Web.SiteMapNode.Url%2A> property of a <xref:System.Web.SiteMapNode> object as a lookup key in its internal collections, by default. If the <xref:System.Web.SiteMapNode.Url%2A> property of the <xref:System.Web.SiteMapNode> is set, it must be unique within the scope of the site map provider. The <xref:System.Web.StaticSiteMapProvider.FindSiteMapNode%2A> method attempts to retrieve site map nodes based on their <xref:System.Web.SiteMapNode.Url%2A>. Otherwise, you can use the <xref:System.Web.SiteMapNode.Key%2A> property and the corresponding <xref:System.Web.StaticSiteMapProvider.FindSiteMapNodeFromKey%2A> method to retrieve site map nodes. If no <xref:System.Web.SiteMapNode.Url%2A> or <xref:System.Web.SiteMapNode.Key%2A> is specified, the site map provider automatically generates a <xref:System.Web.SiteMapNode.Key%2A> property to track the site map nodes.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="rawURL" /> is <see langword="null" />.</exception>
+        <block subset="none" type="overrides">
+          <para>When overriding the <see cref="M:System.Web.StaticSiteMapProvider.FindSiteMapNode(System.String)" /> method in a derived class, be sure to normalize the URLs of the <see cref="T:System.Web.SiteMapNode" /> objects that you add to your site map provider, so that the <see cref="M:System.Web.StaticSiteMapProvider.FindSiteMapNode(System.String)" /> method can retrieve a site map node regardless of whether URL for the site map node is supplied as an absolute virtual path or an application relative path.  
+  
+ Security trimming behavior is included in the <see cref="T:System.Web.SiteMapProvider" /> and <see cref="T:System.Web.StaticSiteMapProvider" /> class implementations. However, for security trimming to function in derived classes, you must set the <see cref="P:System.Web.SiteMapNode.Roles" /> property of any <see cref="T:System.Web.SiteMapNode" /> objects that you create while building a site map provider when you override the <see cref="M:System.Web.StaticSiteMapProvider.BuildSiteMap" /> method.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="FindSiteMapNodeFromKey">
+      <MemberSignature Language="C#" Value="public override System.Web.SiteMapNode FindSiteMapNodeFromKey (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.SiteMapNode FindSiteMapNodeFromKey(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.StaticSiteMapProvider.FindSiteMapNodeFromKey(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.SiteMapNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">A lookup key with which a <see cref="T:System.Web.SiteMapNode" /> is created.</param>
+        <summary>Retrieves a <see cref="T:System.Web.SiteMapNode" /> object based on a specified key.</summary>
+        <returns>A <see cref="T:System.Web.SiteMapNode" /> that represents the page identified by <paramref name="key" />; otherwise, <see langword="null" />, if security trimming is enabled and the site map node cannot be shown to the current user or the site map node is not found in the site map node collection by <paramref name="key" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.StaticSiteMapProvider.FindSiteMapNodeFromKey%2A> method retrieves a site map node from an internal <xref:System.Collections.Hashtable> object based on `key`.  
+  
+ The <xref:System.Web.XmlSiteMapProvider> object, which is derived from the <xref:System.Web.StaticSiteMapProvider> class and is the default site map provider for ASP.NET, uses the <xref:System.Web.SiteMapNode.Url%2A> property of a <xref:System.Web.SiteMapNode> object as a lookup key in its internal collections, by default. If the <xref:System.Web.SiteMapNode.Url%2A> property of the <xref:System.Web.SiteMapNode> is set, it must be unique within the scope of the site map provider. The <xref:System.Web.StaticSiteMapProvider.FindSiteMapNode%2A> method attempts to retrieve site map nodes based on their <xref:System.Web.SiteMapNode.Url%2A>. Otherwise, you can use the <xref:System.Web.SiteMapNode.Key%2A> property and the corresponding <xref:System.Web.StaticSiteMapProvider.FindSiteMapNodeFromKey%2A> method to retrieve site map nodes.  
+  
+ The <xref:System.Web.StaticSiteMapProvider> has a default implementation that looks up instances of the <xref:System.Web.SiteMapNode> class based on the `key` parameter. If a site map provider implementer used the <xref:System.Web.StaticSiteMapProvider.AddNode%2A> method, the <xref:System.Web.StaticSiteMapProvider> already will have stored a reference to each <xref:System.Web.SiteMapNode> based on the value of the <xref:System.Web.SiteMapNode.Key%2A?displayProperty=fullName> property. By default, the <xref:System.Web.XmlSiteMapProvider> generates GUIDs for instances of the <xref:System.Web.SiteMapNode> class that do not have a value for the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=fullName> property.  Custom site map provider implementers must provide their own mechanism for generating unique values of the <xref:System.Web.SiteMapNode.Key%2A?displayProperty=fullName> property in the event that an instance of the <xref:System.Web.SiteMapNode> class does not have a value for the <xref:System.Web.SiteMapNode.Url%2A?displayProperty=fullName> property.  
+  
+ The <xref:System.Web.SiteMapProvider> and <xref:System.Web.XmlSiteMapProvider> classes, which are the default site map provider implementation for ASP.NET, use the URL of a <xref:System.Web.SiteMapNode> object as a key in the various collections that the classes maintain.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildNodes">
+      <MemberSignature Language="C#" Value="public override System.Web.SiteMapNodeCollection GetChildNodes (System.Web.SiteMapNode node);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.SiteMapNodeCollection GetChildNodes(class System.Web.SiteMapNode node) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.StaticSiteMapProvider.GetChildNodes(System.Web.SiteMapNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.SiteMapNodeCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Web.SiteMapNode" />
+      </Parameters>
+      <Docs>
+        <param name="node">The <see cref="T:System.Web.SiteMapNode" /> for which to retrieve all child site map nodes.</param>
+        <summary>Retrieves the child site map nodes of a specific <see cref="T:System.Web.SiteMapNode" /> object.</summary>
+        <returns>A read-only <see cref="T:System.Web.SiteMapNodeCollection" /> that contains the child site map nodes of <paramref name="node" />. If security trimming is enabled, the collection contains only site map nodes that the user is permitted to see.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.SiteMapNode> objects delegate to the site map provider to keep track of their child and parent site map nodes. As a result, classes that implement a site map provider for a hierarchical site map structure, such as <xref:System.Web.StaticSiteMapProvider>, and use <xref:System.Web.SiteMapNode> objects to represent site map nodes, must track the hierarchical relationships of all site map nodes in order to be able to navigate an entire hierarchical tree.  
+  
+ The <xref:System.Web.StaticSiteMapProvider.GetChildNodes%2A> method calls the <xref:System.Web.StaticSiteMapProvider.BuildSiteMap%2A> method internally to retrieve read-only <xref:System.Web.SiteMapNodeCollection> collection of site map nodes that are relative to the specified site map node and relevant to the current user.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="node" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParentNode">
+      <MemberSignature Language="C#" Value="public override System.Web.SiteMapNode GetParentNode (System.Web.SiteMapNode node);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.SiteMapNode GetParentNode(class System.Web.SiteMapNode node) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.StaticSiteMapProvider.GetParentNode(System.Web.SiteMapNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.SiteMapNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Web.SiteMapNode" />
+      </Parameters>
+      <Docs>
+        <param name="node">The <see cref="T:System.Web.SiteMapNode" /> for which to retrieve the parent site map node.</param>
+        <summary>Retrieves the parent site map node of a specific <see cref="T:System.Web.SiteMapNode" /> object.</summary>
+        <returns>A <see cref="T:System.Web.SiteMapNode" /> that represents the parent of the specified <see cref="T:System.Web.SiteMapNode" />; otherwise, <see langword="null" />, if no parent site map node exists or the user is not permitted to see the parent site map node.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.SiteMapNode> objects delegate to the site map provider to keep track of their child and parent site map nodes. As a result, classes that implement a site map provider for a hierarchical site map structure, such as the <xref:System.Web.StaticSiteMapProvider> class, and use <xref:System.Web.SiteMapNode> objects to represent site map nodes, must track the hierarchical relationships of all site map nodes in order to be able to navigate an entire hierarchical tree.  
+  
+ If a <xref:System.Web.SiteMapNode.ParentNode%2A> property is not found, the <xref:System.Web.StaticSiteMapProvider> class detects whether the current site map provider has a <xref:System.Web.SiteMapProvider.ParentProvider%2A> property. If so, the site map provider calls the <xref:System.Web.StaticSiteMapProvider.GetParentNode%2A> property for the parent site map provider. This enables the scenario where the parent site map node of a site map node is maintained by a different site map provider.  
+  
+ The <xref:System.Web.StaticSiteMapProvider.GetParentNode%2A> method calls the <xref:System.Web.StaticSiteMapProvider.BuildSiteMap%2A> method internally to retrieve the <xref:System.Web.SiteMapNode> that represents the parent of the specified site map node. If security trimming is enabled, the site map node is returned only if the user is permitted to see it.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="node" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveNode">
+      <MemberSignature Language="C#" Value="protected override void RemoveNode (System.Web.SiteMapNode node);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RemoveNode(class System.Web.SiteMapNode node) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.StaticSiteMapProvider.RemoveNode(System.Web.SiteMapNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Web.SiteMapNode" />
+      </Parameters>
+      <Docs>
+        <param name="node">The site map node to remove from the site map node collections.</param>
+        <summary>Removes the specified <see cref="T:System.Web.SiteMapNode" /> object from all site map node collections that are tracked by the site map provider.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="node" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

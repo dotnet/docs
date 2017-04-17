@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "examples [Visual Basic], arrays"
 ms.assetid: 9289aeaa-9626-4698-94a7-1d1fd3702b87
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

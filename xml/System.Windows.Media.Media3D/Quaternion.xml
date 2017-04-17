@@ -1,0 +1,928 @@
+<Type Name="Quaternion" FullName="System.Windows.Media.Media3D.Quaternion">
+  <TypeSignature Language="C#" Value="public struct Quaternion : IFormattable" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit Quaternion extends System.ValueType implements class System.IFormattable" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.Quaternion" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IFormattable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Media.Media3D.QuaternionConverter))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ValueSerializer(typeof(System.Windows.Media.Media3D.Converters.QuaternionValueSerializer))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Structure that represents a rotation in three dimensions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Quaternions allow you to interpolate between rotation transformations applied to an object, thereby making it easier to compute smooth animations of rotations. A quaternion represents an axis of rotation and a rotation around that axis. It's possible to individually define the axis and angle of rotation of the starting and ending positions of a rotated object ,but the intermediate positions of that object during an animation are computationally uncertain.  By determining a quaternion that represents the original orientation of a 3-D object and one that represents its destination orientation, you can smoothly interpolate between those orientations.  
+  
+ In XAML, the delimiter between the values of a <xref:System.Windows.Media.Media3D.Quaternion> can be either a comma or a space.  
+  
+ Some cultures might use the comma character as the decimal delimiter instead of the period character. XAML processing for invariant culture defaults to en-US in most XAML processor implementations, and expects the period to be the decimal delimiter. You should avoid using the comma character as the decimal delimiter if specifying a <xref:System.Windows.Media.Media3D.Quaternion> in XAML, because that will clash with the string type conversion of a <xref:System.Windows.Media.Media3D.Quaternion> attribute value into its components.  
+  
+<a name="xamlAttributeUsage_Duration"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="x,y,z,w"/>  
+-or-  
+<object property="x y z w"/>  
+```  
+  
+<a name="xamlValues_MinWidth"></a>   
+## XAML Values  
+ *x*  
+ The <xref:System.Windows.Media.Media3D.Quaternion.X%2A> component of this <xref:System.Windows.Media.Media3D.Quaternion> structure.  
+  
+ *y*  
+ The <xref:System.Windows.Media.Media3D.Quaternion.Y%2A> component of this <xref:System.Windows.Media.Media3D.Quaternion> structure.  
+  
+ *z*  
+ The <xref:System.Windows.Media.Media3D.Quaternion.Z%2A> component of this <xref:System.Windows.Media.Media3D.Quaternion> structure.  
+  
+ *w*  
+ The <xref:System.Windows.Media.Media3D.Quaternion.W%2A> component of this <xref:System.Windows.Media.Media3D.Quaternion> structure.  
+  
+   
+  
+## Examples  
+ [!code-xml[animation3dgallery_snip#QuaternionAnimationExampleInline2](~/samples/snippets/csharp/VS_Snippets_Wpf/Animation3DGallery_snip/CS/QuaternionAnimationExample.xaml#quaternionanimationexampleinline2)]  
+  
+ [!code-csharp[matrixtransform3dview#MatrixTransform3DView3DN4](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixTransform3DView/CSharp/Window1.xaml.cs#matrixtransform3dview3dn4)]
+ [!code-vb[matrixtransform3dview#MatrixTransform3DView3DN4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MatrixTransform3DView/visualbasic/window1.xaml.vb#matrixtransform3dview3dn4)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Quaternion (System.Windows.Media.Media3D.Vector3D axisOfRotation, double angleInDegrees);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Media3D.Vector3D axisOfRotation, float64 angleInDegrees) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Quaternion.#ctor(System.Windows.Media.Media3D.Vector3D,System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="axisOfRotation" Type="System.Windows.Media.Media3D.Vector3D" />
+        <Parameter Name="angleInDegrees" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="axisOfRotation">
+          <see cref="T:System.Windows.Media.Media3D.Vector3D" /> that represents the axis of rotation.</param>
+        <param name="angleInDegrees">Angle to rotate around the specified axis, in degrees.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.Quaternion" /> structure.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.Media3D.Quaternion.W%2A> property of the quaternion is computed automatically.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Quaternion (double x, double y, double z, double w);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 x, float64 y, float64 z, float64 w) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Quaternion.#ctor(System.Double,System.Double,System.Double,System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="x" Type="System.Double" />
+        <Parameter Name="y" Type="System.Double" />
+        <Parameter Name="z" Type="System.Double" />
+        <Parameter Name="w" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="x">Value of the new <see cref="T:System.Windows.Media.Media3D.Quaternion" />'s X coordinate.</param>
+        <param name="y">Value of the new <see cref="T:System.Windows.Media.Media3D.Quaternion" />'s Y coordinate.</param>
+        <param name="z">Value of the new <see cref="T:System.Windows.Media.Media3D.Quaternion" />'s Z coordinate.</param>
+        <param name="w">Value of the new <see cref="T:System.Windows.Media.Media3D.Quaternion" />'s W coordinate.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.Quaternion" /> structure.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the axis (x, y, z) and angle of rotation theta, the `w` value for the quaternion is:  
+  
+ w = cos(theta/2)  
+  
+ Note that if you use the <xref:System.Windows.Media.Media3D.Vector3D> constructor, the fourth parameter is the angle, in degrees, and the w calculation is performed for you.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Quaternion Add (System.Windows.Media.Media3D.Quaternion left, System.Windows.Media.Media3D.Quaternion right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Media3D.Quaternion Add(valuetype System.Windows.Media.Media3D.Quaternion left, valuetype System.Windows.Media.Media3D.Quaternion right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Quaternion.Add(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Media3D.Quaternion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Quaternion</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Windows.Media.Media3D.Quaternion" />
+        <Parameter Name="right" Type="System.Windows.Media.Media3D.Quaternion" />
+      </Parameters>
+      <Docs>
+        <param name="left">First quaternion to add.</param>
+        <param name="right">Second quaternion to add.</param>
+        <summary>Adds the specified quaternions.</summary>
+        <returns>Quaternion that is the result of addition.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Angle">
+      <MemberSignature Language="C#" Value="public double Angle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Angle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Quaternion.Angle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the quaternion's angle, in degrees.</summary>
+        <value>Double that represents the quaternion's angle, in degrees.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Axis">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.Vector3D Axis { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Media3D.Vector3D Axis" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Quaternion.Axis" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Vector3D</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the quaternion's axis.</summary>
+        <value>
+          <see cref="T:System.Windows.Media.Media3D.Vector3D" /> that represents the quaternion's axis.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Conjugate">
+      <MemberSignature Language="C#" Value="public void Conjugate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Conjugate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Quaternion.Conjugate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Replaces a quaternion with its conjugate.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Quaternion.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">Object with which to compare.</param>
+        <summary>Compares two <see cref="T:System.Windows.Media.Media3D.Quaternion" /> instances for equality.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:System.Windows.Media.Media3D.Quaternion" /> instances are exactly equal, <see langword="false" /> otherwise.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Media3D.Quaternion> components are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated upon, a comparison between two <xref:System.Windows.Media.Media3D.Quaternion> values that are logically equal might fail.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Windows.Media.Media3D.Quaternion value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.Windows.Media.Media3D.Quaternion value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Quaternion.Equals(System.Windows.Media.Media3D.Quaternion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Windows.Media.Media3D.Quaternion" />
+      </Parameters>
+      <Docs>
+        <param name="value">Quaternion with which to compare.</param>
+        <summary>Compares two <see cref="T:System.Windows.Media.Media3D.Quaternion" /> instances for equality.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:System.Windows.Media.Media3D.Quaternion" /> instances are exactly equal, <see langword="false" /> otherwise.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Media3D.Quaternion> components are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated upon, a comparison between two <xref:System.Windows.Media.Media3D.Quaternion> values that are logically equal might fail.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public static bool Equals (System.Windows.Media.Media3D.Quaternion quaternion1, System.Windows.Media.Media3D.Quaternion quaternion2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Equals(valuetype System.Windows.Media.Media3D.Quaternion quaternion1, valuetype System.Windows.Media.Media3D.Quaternion quaternion2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Quaternion.Equals(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Media3D.Quaternion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="quaternion1" Type="System.Windows.Media.Media3D.Quaternion" />
+        <Parameter Name="quaternion2" Type="System.Windows.Media.Media3D.Quaternion" />
+      </Parameters>
+      <Docs>
+        <param name="quaternion1">First <see cref="T:System.Windows.Media.Media3D.Quaternion" /> to compare.</param>
+        <param name="quaternion2">Second <see cref="T:System.Windows.Media.Media3D.Quaternion" /> to compare.</param>
+        <summary>Compares two <see cref="T:System.Windows.Media.Media3D.Quaternion" /> instances for equality.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:System.Windows.Media.Media3D.Quaternion" /> instances are exactly equal, <see langword="false" /> otherwise.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Media3D.Quaternion> components are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated upon, a comparison between two <xref:System.Windows.Media.Media3D.Quaternion> values that are logically equal might fail.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Quaternion.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for the <see cref="T:System.Windows.Media.Media3D.Quaternion" />.</summary>
+        <returns>An integer type that represents the hash code for the <see cref="T:System.Windows.Media.Media3D.Quaternion" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Identity">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Quaternion Identity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Media3D.Quaternion Identity" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Quaternion.Identity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Quaternion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Identity quaternion</summary>
+        <value>The Identity quaternion.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invert">
+      <MemberSignature Language="C#" Value="public void Invert ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Invert() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Quaternion.Invert" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Replaces the specified quaternion with its inverse</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsIdentity">
+      <MemberSignature Language="C#" Value="public bool IsIdentity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsIdentity" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Quaternion.IsIdentity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the specified quaternion is an <see cref="P:System.Windows.Media.Media3D.Quaternion.Identity" /> quaternion.</summary>
+        <value>
+          <see langword="true" /> if the quaternion is the <see cref="P:System.Windows.Media.Media3D.Quaternion.Identity" /> quaternion, <see langword="false" /> otherwise.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNormalized">
+      <MemberSignature Language="C#" Value="public bool IsNormalized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsNormalized" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Quaternion.IsNormalized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the quaternion is normalized.</summary>
+        <value>
+          <see langword="true" /> if the quaternion is normalized, <see langword="false" /> otherwise.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Multiply">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Quaternion Multiply (System.Windows.Media.Media3D.Quaternion left, System.Windows.Media.Media3D.Quaternion right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Media3D.Quaternion Multiply(valuetype System.Windows.Media.Media3D.Quaternion left, valuetype System.Windows.Media.Media3D.Quaternion right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Quaternion.Multiply(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Media3D.Quaternion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Quaternion</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Windows.Media.Media3D.Quaternion" />
+        <Parameter Name="right" Type="System.Windows.Media.Media3D.Quaternion" />
+      </Parameters>
+      <Docs>
+        <param name="left">First quaternion to multiply.</param>
+        <param name="right">Second quaternion to multiply.</param>
+        <summary>Multiplies the specified <see cref="T:System.Windows.Media.Media3D.Quaternion" /> values.</summary>
+        <returns>Quaternion that is the result of multiplication.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Normalize">
+      <MemberSignature Language="C#" Value="public void Normalize ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Normalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Quaternion.Normalize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a normalized quaternion.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Throws <xref:System.InvalidOperationException> if the quaternion is zero and cannot be normalized.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Addition">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Quaternion op_Addition (System.Windows.Media.Media3D.Quaternion left, System.Windows.Media.Media3D.Quaternion right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Quaternion op_Addition(valuetype System.Windows.Media.Media3D.Quaternion left, valuetype System.Windows.Media.Media3D.Quaternion right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Quaternion.op_Addition(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Media3D.Quaternion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Quaternion</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Windows.Media.Media3D.Quaternion" />
+        <Parameter Name="right" Type="System.Windows.Media.Media3D.Quaternion" />
+      </Parameters>
+      <Docs>
+        <param name="left">First quaternion to add.</param>
+        <param name="right">Second quaternion to add.</param>
+        <summary>Adds the specified <see cref="T:System.Windows.Media.Media3D.Quaternion" /> values.</summary>
+        <returns>Quaternion that is the sum of the two specified  <see cref="T:System.Windows.Media.Media3D.Quaternion" /> values.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Media.Media3D.Quaternion quaternion1, System.Windows.Media.Media3D.Quaternion quaternion2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Media.Media3D.Quaternion quaternion1, valuetype System.Windows.Media.Media3D.Quaternion quaternion2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Quaternion.op_Equality(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Media3D.Quaternion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="quaternion1" Type="System.Windows.Media.Media3D.Quaternion" />
+        <Parameter Name="quaternion2" Type="System.Windows.Media.Media3D.Quaternion" />
+      </Parameters>
+      <Docs>
+        <param name="quaternion1">First Quaternion to compare.</param>
+        <param name="quaternion2">Second Quaternion to compare.</param>
+        <summary>Compares two <see cref="T:System.Windows.Media.Media3D.Quaternion" /> instances for exact equality.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:System.Windows.Media.Media3D.Quaternion" /> instances are exactly equal, <see langword="false" /> otherwise.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Media3D.Quaternion> components are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated upon, a comparison between two <xref:System.Windows.Media.Media3D.Quaternion> values that are logically equal might fail.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Media.Media3D.Quaternion quaternion1, System.Windows.Media.Media3D.Quaternion quaternion2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Media.Media3D.Quaternion quaternion1, valuetype System.Windows.Media.Media3D.Quaternion quaternion2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Quaternion.op_Inequality(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Media3D.Quaternion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="quaternion1" Type="System.Windows.Media.Media3D.Quaternion" />
+        <Parameter Name="quaternion2" Type="System.Windows.Media.Media3D.Quaternion" />
+      </Parameters>
+      <Docs>
+        <param name="quaternion1">First quaternion to compare.</param>
+        <param name="quaternion2">Second quaternion to compare.</param>
+        <summary>Compares two <see cref="T:System.Windows.Media.Media3D.Quaternion" /> instances for exact inequality.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:System.Windows.Media.Media3D.Quaternion" /> instances are exactly equal, <see langword="false" /> otherwise.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Media3D.Quaternion> components are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated upon, a comparison between two <xref:System.Windows.Media.Media3D.Quaternion> values that are logically equal might fail.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Multiply">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Quaternion op_Multiply (System.Windows.Media.Media3D.Quaternion left, System.Windows.Media.Media3D.Quaternion right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Quaternion op_Multiply(valuetype System.Windows.Media.Media3D.Quaternion left, valuetype System.Windows.Media.Media3D.Quaternion right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Quaternion.op_Multiply(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Media3D.Quaternion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Quaternion</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Windows.Media.Media3D.Quaternion" />
+        <Parameter Name="right" Type="System.Windows.Media.Media3D.Quaternion" />
+      </Parameters>
+      <Docs>
+        <param name="left">First quaternion.</param>
+        <param name="right">Second quaternion.</param>
+        <summary>Multiplies the specified quaternion by another.</summary>
+        <returns>Quaternion that is the product of multiplication.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Subtraction">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Quaternion op_Subtraction (System.Windows.Media.Media3D.Quaternion left, System.Windows.Media.Media3D.Quaternion right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Quaternion op_Subtraction(valuetype System.Windows.Media.Media3D.Quaternion left, valuetype System.Windows.Media.Media3D.Quaternion right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Quaternion.op_Subtraction(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Media3D.Quaternion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Quaternion</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Windows.Media.Media3D.Quaternion" />
+        <Parameter Name="right" Type="System.Windows.Media.Media3D.Quaternion" />
+      </Parameters>
+      <Docs>
+        <param name="left">Quaternion from which to subtract.</param>
+        <param name="right">Quaternion to subtract from the first quaternion.</param>
+        <summary>Subtracts a specified quaternion from another.</summary>
+        <returns>Quaternion that is the result of subtraction.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Quaternion Parse (string source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Media3D.Quaternion Parse(string source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Quaternion.Parse(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Quaternion</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="source">A string representation of a <see cref="T:System.Windows.Media.Media3D.Quaternion" />.</param>
+        <summary>Converts a string representation of a <see cref="T:System.Windows.Media.Media3D.Quaternion" /> into the equivalent <see cref="T:System.Windows.Media.Media3D.Quaternion" /> structure.</summary>
+        <returns>
+          <see cref="T:System.Windows.Media.Media3D.Quaternion" /> represented by the string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[quaternionview#QuaternionView3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/QuaternionView/CSharp/Window1.xaml.cs#quaternionview3dn3)]
+ [!code-vb[quaternionview#QuaternionView3DN3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/QuaternionView/visualbasic/window1.xaml.vb#quaternionview3dn3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Slerp">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Quaternion Slerp (System.Windows.Media.Media3D.Quaternion from, System.Windows.Media.Media3D.Quaternion to, double t);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Media3D.Quaternion Slerp(valuetype System.Windows.Media.Media3D.Quaternion from, valuetype System.Windows.Media.Media3D.Quaternion to, float64 t) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Quaternion.Slerp(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Media3D.Quaternion,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Quaternion</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="from" Type="System.Windows.Media.Media3D.Quaternion" />
+        <Parameter Name="to" Type="System.Windows.Media.Media3D.Quaternion" />
+        <Parameter Name="t" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="from">
+          <see cref="T:System.Windows.Media.Media3D.Quaternion" /> that represents the starting orientation.</param>
+        <param name="to">
+          <see cref="T:System.Windows.Media.Media3D.Quaternion" /> that represents the ending orientation.</param>
+        <param name="t">Interpolation coefficient.</param>
+        <summary>Interpolates between two orientations using spherical linear interpolation.</summary>
+        <returns>
+          <see cref="T:System.Windows.Media.Media3D.Quaternion" /> that represents the orientation resulting from the interpolation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Spherical linear interpolation is useful for animating a three-dimensional models because it provides smooth transitions between different orientations of the model.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Slerp">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Quaternion Slerp (System.Windows.Media.Media3D.Quaternion from, System.Windows.Media.Media3D.Quaternion to, double t, bool useShortestPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Media3D.Quaternion Slerp(valuetype System.Windows.Media.Media3D.Quaternion from, valuetype System.Windows.Media.Media3D.Quaternion to, float64 t, bool useShortestPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Quaternion.Slerp(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Media3D.Quaternion,System.Double,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Quaternion</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="from" Type="System.Windows.Media.Media3D.Quaternion" />
+        <Parameter Name="to" Type="System.Windows.Media.Media3D.Quaternion" />
+        <Parameter Name="t" Type="System.Double" />
+        <Parameter Name="useShortestPath" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="from">
+          <see cref="T:System.Windows.Media.Media3D.Quaternion" /> that represents the starting orientation.</param>
+        <param name="to">
+          <see cref="T:System.Windows.Media.Media3D.Quaternion" /> that represents the ending orientation.</param>
+        <param name="t">Interpolation coefficient.</param>
+        <param name="useShortestPath">Boolean that indicates whether to compute quaternions that constitute the shortest possible arc on a four-dimensional unit sphere.</param>
+        <summary>Interpolates between orientations, represented as <see cref="T:System.Windows.Media.Media3D.Quaternion" /> structures, using spherical linear interpolation.</summary>
+        <returns>
+          <see cref="T:System.Windows.Media.Media3D.Quaternion" /> that represents the orientation resulting from the interpolation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Spherical linear interpolation is useful for animating a three-dimensional models because it provides smooth transitions between different orientations of the model.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subtract">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Quaternion Subtract (System.Windows.Media.Media3D.Quaternion left, System.Windows.Media.Media3D.Quaternion right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Media3D.Quaternion Subtract(valuetype System.Windows.Media.Media3D.Quaternion left, valuetype System.Windows.Media.Media3D.Quaternion right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Quaternion.Subtract(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Media3D.Quaternion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Quaternion</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Windows.Media.Media3D.Quaternion" />
+        <Parameter Name="right" Type="System.Windows.Media.Media3D.Quaternion" />
+      </Parameters>
+      <Docs>
+        <param name="left">Quaternion from which to subtract.</param>
+        <param name="right">Quaternion to subtract from the first quaternion.</param>
+        <summary>Subtracts a Quaternion from another.</summary>
+        <returns>Quaternion that is the result of subtraction.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IFormattable.ToString">
+      <MemberSignature Language="C#" Value="string IFormattable.ToString (string format, IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.IFormattable.ToString(string format, class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Quaternion.System#IFormattable#ToString(System.String,System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="format">The string specifying the format to use.  
+  
+ -or-  
+  
+ <see langword="null" /> to use the default format defined for the type of the <see cref="T:System.IFormattable" /> implementation.</param>
+        <param name="provider">The <see langword="IFormatProvider" /> to use to format the value.  
+  
+ -or-  
+  
+ <see langword="null" /> to obtain the numeric format information from the current locale setting of the operating system.</param>
+        <summary>This member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code. For a description of this member, see <see cref="M:System.IFormattable.ToString(System.String,System.IFormatProvider)" />.</summary>
+        <returns>A string containing the value of the current instance in the specified format.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Quaternion.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a string representation of the object.</summary>
+        <returns>String representation of the object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public string ToString (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Quaternion.ToString(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">Culture-specific formatting information.</param>
+        <summary>Creates a string representation of the object.</summary>
+        <returns>String representation of the object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="W">
+      <MemberSignature Language="C#" Value="public double W { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 W" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Quaternion.W" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the W component of the quaternion.</summary>
+        <value>The W component of the quaternion.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is 0.  
+  
+   
+  
+## Examples  
+ [!code-csharp[matrixtransform3dview#MatrixTransform3DView3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixTransform3DView/CSharp/Window1.xaml.cs#matrixtransform3dview3dn3)]
+ [!code-vb[matrixtransform3dview#MatrixTransform3DView3DN3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MatrixTransform3DView/visualbasic/window1.xaml.vb#matrixtransform3dview3dn3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="X">
+      <MemberSignature Language="C#" Value="public double X { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 X" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Quaternion.X" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the X component of the quaternion.</summary>
+        <value>The X component of the quaternion.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is 0.  
+  
+   
+  
+## Examples  
+ [!code-csharp[matrixtransform3dview#MatrixTransform3DView3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixTransform3DView/CSharp/Window1.xaml.cs#matrixtransform3dview3dn3)]
+ [!code-vb[matrixtransform3dview#MatrixTransform3DView3DN3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MatrixTransform3DView/visualbasic/window1.xaml.vb#matrixtransform3dview3dn3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Y">
+      <MemberSignature Language="C#" Value="public double Y { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Y" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Quaternion.Y" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Y component of the quaternion.</summary>
+        <value>The Y component of the quaternion.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is 0.  
+  
+   
+  
+## Examples  
+ [!code-csharp[matrixtransform3dview#MatrixTransform3DView3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixTransform3DView/CSharp/Window1.xaml.cs#matrixtransform3dview3dn3)]
+ [!code-vb[matrixtransform3dview#MatrixTransform3DView3DN3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MatrixTransform3DView/visualbasic/window1.xaml.vb#matrixtransform3dview3dn3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Z">
+      <MemberSignature Language="C#" Value="public double Z { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Z" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Quaternion.Z" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Z component of the quaternion.</summary>
+        <value>The Z component of the quaternion.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is 0.  
+  
+   
+  
+## Examples  
+ [!code-csharp[matrixtransform3dview#MatrixTransform3DView3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixTransform3DView/CSharp/Window1.xaml.cs#matrixtransform3dview3dn3)]
+ [!code-vb[matrixtransform3dview#MatrixTransform3DView3DN3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MatrixTransform3DView/visualbasic/window1.xaml.vb#matrixtransform3dview3dn3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a string representation of the object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `provider` is `null`, the current culture setting is used.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

@@ -1,0 +1,356 @@
+<Type Name="EncryptedKeyIdentifierClause" FullName="System.IdentityModel.Tokens.EncryptedKeyIdentifierClause">
+  <TypeSignature Language="C#" Value="public sealed class EncryptedKeyIdentifierClause : System.IdentityModel.Tokens.BinaryKeyIdentifierClause" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EncryptedKeyIdentifierClause extends System.IdentityModel.Tokens.BinaryKeyIdentifierClause" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.IdentityModel.Tokens.BinaryKeyIdentifierClause</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a key identifier clause that identifies an encrypted key.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, the <xref:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause> does not need to be used, other than when a custom security token service is created. When a security token service returns a security token, the issued security token contains references to attached and unattached security tokens. Attached references refer to security tokens that are contained within the security header of a SOAP message and unattached references are security tokens that are not included within the security header of a SOAP message. These references typically affirm the authenticity of the issued security token. Use the <xref:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause> class to reference an encrypted key. The <xref:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.GetEncryptedKey%2A> method returns the encrypted key.  
+  
+ [!INCLUDE[indigo2](~/includes/indigo2-md.md)] accepts wrapped keys that are well formed with respect to the wire format. The key wrap algorithm specified on the wire is accepted and used. It is not verified to be compatible with the <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> specified by the endpoint.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EncryptedKeyIdentifierClause (byte[] encryptedKey, string encryptionMethod);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] encryptedKey, string encryptionMethod) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.#ctor(System.Byte[],System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="encryptedKey" Type="System.Byte[]" />
+        <Parameter Name="encryptionMethod" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="encryptedKey">An array of <see cref="T:System.Byte" /> that contains a key that is encrypted. Sets the value that is returned from the <see cref="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.GetEncryptedKey" /> method.</param>
+        <param name="encryptionMethod">The cryptographic algorithm that is used to encrypt the key. Sets the value of the <see cref="P:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.EncryptionMethod" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause" /> class using the specified key that is encrypted and the cryptographic algorithm used to encrypt the key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the static constant strings in the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> to specify the cryptographic algorithm for the `encryptionMethod` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="encryptionMethod" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="encryptedKey" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="encryptedKey" /> is zero length.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EncryptedKeyIdentifierClause (byte[] encryptedKey, string encryptionMethod, System.IdentityModel.Tokens.SecurityKeyIdentifier identifier);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] encryptedKey, string encryptionMethod, class System.IdentityModel.Tokens.SecurityKeyIdentifier identifier) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.#ctor(System.Byte[],System.String,System.IdentityModel.Tokens.SecurityKeyIdentifier)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="encryptedKey" Type="System.Byte[]" />
+        <Parameter Name="encryptionMethod" Type="System.String" />
+        <Parameter Name="encryptingKeyIdentifier" Type="System.IdentityModel.Tokens.SecurityKeyIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="encryptedKey">An array of <see cref="T:System.Byte" /> that contains a key that is encrypted. Sets the value that is returned from the <see cref="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.GetEncryptedKey" /> method.</param>
+        <param name="encryptionMethod">The cryptographic algorithm that is used to encrypt the key. Sets the value of the <see cref="P:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.EncryptionMethod" /> property.</param>
+        <param name="identifier">To be added.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause" /> class using the specified key that is encrypted, the cryptographic algorithm used to encrypt the key, and a key identifier for the encrypting key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the static constant strings in the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> to specify the cryptographic algorithm for the `encryptionMethod` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="encryptionMethod" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="encryptedKey" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="encryptedKey" /> is zero length.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EncryptedKeyIdentifierClause (byte[] encryptedKey, string encryptionMethod, System.IdentityModel.Tokens.SecurityKeyIdentifier identifier, string carriedKeyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] encryptedKey, string encryptionMethod, class System.IdentityModel.Tokens.SecurityKeyIdentifier identifier, string carriedKeyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.#ctor(System.Byte[],System.String,System.IdentityModel.Tokens.SecurityKeyIdentifier,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="encryptedKey" Type="System.Byte[]" />
+        <Parameter Name="encryptionMethod" Type="System.String" />
+        <Parameter Name="encryptingKeyIdentifier" Type="System.IdentityModel.Tokens.SecurityKeyIdentifier" />
+        <Parameter Name="carriedKeyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="encryptedKey">An array of <see cref="T:System.Byte" /> that contains a key that is encrypted. Sets the value that is returned from the <see cref="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.GetEncryptedKey" /> method.</param>
+        <param name="encryptionMethod">The cryptographic algorithm that is used to encrypt the key. Sets the value of the <see cref="P:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.EncryptionMethod" /> property.</param>
+        <param name="identifier">To be added.</param>
+        <param name="carriedKeyName">A user-readable name that is associated with the key specified in the <c>encryptedKey</c> parameter. Sets the value of the <see cref="P:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.CarriedKeyName" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause" /> class using the specified key that is encrypted, the cryptographic algorithm used to encrypt the key, a key identifier for the encrypting key and a user-readable name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the static constant strings in the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> to specify the cryptographic algorithm for the `encryptionMethod` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="encryptionMethod" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="encryptedKey" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="encryptedKey" /> is zero length.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EncryptedKeyIdentifierClause (byte[] encryptedKey, string encryptionMethod, System.IdentityModel.Tokens.SecurityKeyIdentifier identifier, string carriedKeyName, byte[] derivationNonce, int derivationLength);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] encryptedKey, string encryptionMethod, class System.IdentityModel.Tokens.SecurityKeyIdentifier identifier, string carriedKeyName, unsigned int8[] derivationNonce, int32 derivationLength) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.#ctor(System.Byte[],System.String,System.IdentityModel.Tokens.SecurityKeyIdentifier,System.String,System.Byte[],System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="encryptedKey" Type="System.Byte[]" />
+        <Parameter Name="encryptionMethod" Type="System.String" />
+        <Parameter Name="encryptingKeyIdentifier" Type="System.IdentityModel.Tokens.SecurityKeyIdentifier" />
+        <Parameter Name="carriedKeyName" Type="System.String" />
+        <Parameter Name="derivationNonce" Type="System.Byte[]" />
+        <Parameter Name="derivationLength" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="encryptedKey">An array of <see cref="T:System.Byte" /> that contains a key that is encrypted. Sets the value that is returned from the <see cref="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.GetEncryptedKey" /> method.</param>
+        <param name="encryptionMethod">The cryptographic algorithm that is used to encrypt the key. Sets the value of the <see cref="P:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.EncryptionMethod" /> property.</param>
+        <param name="identifier">To be added.</param>
+        <param name="carriedKeyName">A user-readable name that is associated with the key specified in the <c>encryptedKey</c> parameter. Sets the value of the <see cref="P:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.CarriedKeyName" /> property.</param>
+        <param name="derivationNonce">An array of <see cref="T:System.Byte" /> that contains the nonce that was used to create a derived key. Sets the value that is returned by the <see cref="M:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.GetDerivationNonce" /> method.</param>
+        <param name="derivationLength">The size of the derived key. Sets the value of the <see cref="P:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.DerivationLength" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause" /> class using the specified key that is encrypted, the cryptographic algorithm used to encrypt the key, a key identifier for the key and a user-readable name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the `derivationNonce` and `derivationLength` parameters are specified the implied derived key is used instead of the direct security key of the token.  
+  
+ Use the static constant strings in the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> to specify the cryptographic algorithm for the `encryptionMethod` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="encryptionMethod" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="encryptedKey" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="encryptedKey" /> is zero length.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CarriedKeyName">
+      <MemberSignature Language="C#" Value="public string CarriedKeyName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CarriedKeyName" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.CarriedKeyName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a user-readable name that is associated with the encrypted key.</summary>
+        <value>A user-readable name that is associated with the encrypted key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.CarriedKeyName%2A> property is serialized into XML, it is placed in the <`CarriedKeyName`> element. For encrypted keys, the <`CarriedKeyName`> element is an optional element that associates a user-readable name with a key value. This name can then be used to reference the key using the <`KeyName`> element within the <`KeyInfo`> element. The same <`CarriedKeyName`> element value, unlike an ID value, can occur multiple times within a single document. The value of the key must be the same in all <`EncryptedKey`> elements identified with the same <`CarriedKeyName`> name within an XML document.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncryptingKeyIdentifier">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SecurityKeyIdentifier EncryptingKeyIdentifier { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.SecurityKeyIdentifier EncryptingKeyIdentifier" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.EncryptingKeyIdentifier" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.SecurityKeyIdentifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a key identifier for the encrypting key.</summary>
+        <value>A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" /> that represents the key identifier for the encrypting key.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncryptionMethod">
+      <MemberSignature Language="C#" Value="public string EncryptionMethod { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string EncryptionMethod" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.EncryptionMethod" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cryptographic algorithm that is used to encrypt the key.</summary>
+        <value>The cryptographic algorithm that is used to encrypt the key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, the value of the <xref:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.EncryptionMethod%2A> property is one of the static constant strings in the <xref:System.IdentityModel.Tokens.SecurityAlgorithms> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEncryptedKey">
+      <MemberSignature Language="C#" Value="public byte[] GetEncryptedKey ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetEncryptedKey() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.GetEncryptedKey" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the encrypted key.</summary>
+        <returns>An array of <see cref="T:System.Byte" /> that contains the encrypted key.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The array that is returned by the <xref:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.GetEncryptedKey%2A> method is a clone of the encrypted key.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Matches">
+      <MemberSignature Language="C#" Value="public override bool Matches (System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Matches(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.Matches(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
+      </Parameters>
+      <Docs>
+        <param name="clause">To be added.</param>
+        <summary>Returns a value that indicates whether the key identifier for this instance is equivalent to the specified key identifier clause.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="keyIdentifierClause" /> is of type <see cref="T:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause" /> and has the same encrypted key, encryption method and user-readable name as the current instance; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="keyIdentifierClause" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Matches">
+      <MemberSignature Language="C#" Value="public bool Matches (byte[] encryptedKey, string encryptionMethod, string carriedKeyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Matches(unsigned int8[] encryptedKey, string encryptionMethod, string carriedKeyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.Matches(System.Byte[],System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="encryptedKey" Type="System.Byte[]" />
+        <Parameter Name="encryptionMethod" Type="System.String" />
+        <Parameter Name="carriedKeyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="encryptedKey">An array of <see cref="T:System.Byte" /> that contains a key that is encrypted.</param>
+        <param name="encryptionMethod">The cryptographic algorithm that is used to encrypt the key.</param>
+        <param name="carriedKeyName">A user-readable name that is associated with the encrypted key.</param>
+        <summary>Returns a value that indicates whether the key identifier for this instance is equivalent to the specified encrypted key, encryption method and user-readable name.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="encryptedKey" />, <paramref name="encryptionMethod" /> and <paramref name="carriedKeyName" /> parameters have the same values returned by the <see cref="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.GetEncryptedKey" /> method and the <see cref="P:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.EncryptionMethod" /> and the <see cref="P:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.CarriedKeyName" /> properties, respectively; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string that represents the current object.</summary>
+        <returns>The current object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.ToString%2A> method returns a string that contains the encrypted key and the cryptographic algorithm that is used to encrypt the key.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

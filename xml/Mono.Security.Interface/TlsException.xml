@@ -1,0 +1,161 @@
+<Type Name="TlsException" FullName="Mono.Security.Interface.TlsException">
+  <TypeSignature Language="C#" Value="public sealed class TlsException : Exception" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TlsException extends System.Exception" />
+  <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.TlsException" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Exception</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TlsException (Mono.Security.Interface.Alert alert);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Mono.Security.Interface.Alert alert) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.TlsException.#ctor(Mono.Security.Interface.Alert)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="alert" Type="Mono.Security.Interface.Alert" />
+      </Parameters>
+      <Docs>
+        <param name="alert">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TlsException (Mono.Security.Interface.AlertDescription description);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Mono.Security.Interface.AlertDescription description) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.TlsException.#ctor(Mono.Security.Interface.AlertDescription)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="description" Type="Mono.Security.Interface.AlertDescription" />
+      </Parameters>
+      <Docs>
+        <param name="description">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TlsException (Mono.Security.Interface.Alert alert, string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Mono.Security.Interface.Alert alert, string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.TlsException.#ctor(Mono.Security.Interface.Alert,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="alert" Type="Mono.Security.Interface.Alert" />
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="alert">To be added.</param>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TlsException (Mono.Security.Interface.AlertDescription description, string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Mono.Security.Interface.AlertDescription description, string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.TlsException.#ctor(Mono.Security.Interface.AlertDescription,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="description" Type="Mono.Security.Interface.AlertDescription" />
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="description">To be added.</param>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TlsException (Mono.Security.Interface.AlertLevel level, Mono.Security.Interface.AlertDescription description);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Mono.Security.Interface.AlertLevel level, valuetype Mono.Security.Interface.AlertDescription description) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.TlsException.#ctor(Mono.Security.Interface.AlertLevel,Mono.Security.Interface.AlertDescription)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="level" Type="Mono.Security.Interface.AlertLevel" />
+        <Parameter Name="description" Type="Mono.Security.Interface.AlertDescription" />
+      </Parameters>
+      <Docs>
+        <param name="level">To be added.</param>
+        <param name="description">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TlsException (Mono.Security.Interface.AlertDescription description, string format, object[] args);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Mono.Security.Interface.AlertDescription description, string format, object[] args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.TlsException.#ctor(Mono.Security.Interface.AlertDescription,System.String,System.Object[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="description" Type="Mono.Security.Interface.AlertDescription" />
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="args" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="description">To be added.</param>
+        <param name="format">To be added.</param>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Alert">
+      <MemberSignature Language="C#" Value="public Mono.Security.Interface.Alert Alert { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Mono.Security.Interface.Alert Alert" />
+      <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.TlsException.Alert" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.Alert</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

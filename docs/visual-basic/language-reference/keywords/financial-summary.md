@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "payment"
 ms.assetid: 474f973e-7103-42b7-aa4d-367c935e07e1
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -1,0 +1,65 @@
+<Type Name="PropertyConditionFlags" FullName="System.Windows.Automation.PropertyConditionFlags">
+  <TypeSignature Language="C#" Value="public enum PropertyConditionFlags" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertyConditionFlags extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.PropertyConditionFlags" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationClient</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains values that specify how a property value is tested in a <see cref="T:System.Windows.Automation.PropertyCondition" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ In the following example, IgnoreCase is set in a <xref:System.Windows.Automation.PropertyCondition>.  
+  
+ [!code-csharp[UIAClient_snip#110](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#110)]
+ [!code-vb[UIAClient_snip#110](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#110)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IgnoreCase">
+      <MemberSignature Language="C#" Value="IgnoreCase" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.PropertyConditionFlags IgnoreCase = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.PropertyConditionFlags.IgnoreCase" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.PropertyConditionFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that comparison with a string property value is not case-sensitive.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.PropertyConditionFlags None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.PropertyConditionFlags.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.PropertyConditionFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the property value is tested using default behavior (case-sensitive comparison for strings).</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

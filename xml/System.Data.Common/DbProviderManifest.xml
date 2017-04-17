@@ -1,0 +1,354 @@
+<Type Name="DbProviderManifest" FullName="System.Data.Common.DbProviderManifest">
+  <TypeSignature Language="C#" Value="public abstract class DbProviderManifest" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DbProviderManifest extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Common.DbProviderManifest" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Metadata Interface for all CLR types types</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No content here will be updated; please do not add material here.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DbProviderManifest ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderManifest.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Common.DbProviderManifest" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConceptualSchemaDefinition">
+      <MemberSignature Language="C#" Value="public static readonly string ConceptualSchemaDefinition;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string ConceptualSchemaDefinition" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbProviderManifest.ConceptualSchemaDefinition" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Value to pass to GetInformation to get the ConceptualSchemaDefinitionVersion.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConceptualSchemaDefinitionVersion3">
+      <MemberSignature Language="C#" Value="public static readonly string ConceptualSchemaDefinitionVersion3;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string ConceptualSchemaDefinitionVersion3" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbProviderManifest.ConceptualSchemaDefinitionVersion3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Value to pass to GetInformation to get the ConceptualSchemaDefinitionVersion3.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EscapeLikeArgument">
+      <MemberSignature Language="C#" Value="public virtual string EscapeLikeArgument (string argument);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string EscapeLikeArgument(string argument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderManifest.EscapeLikeArgument(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="argument" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="argument">The argument to be escaped.</param>
+        <summary>Provider writers should override this method to return the argument with the wildcards and the escape character escaped. This method is only used if SupportsEscapingLikeArgument returns true.</summary>
+        <returns>The argument with the wildcards and the escape character escaped.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDbInformation">
+      <MemberSignature Language="C#" Value="protected abstract System.Xml.XmlReader GetDbInformation (string informationType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xml.XmlReader GetDbInformation(string informationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderManifest.GetDbInformation(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="informationType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="informationType">The type of the information to return.</param>
+        <summary>When overridden in a derived class, this method returns provider-specific information.</summary>
+        <returns>The XmlReader object that represents the mapping to the underlying data store catalog.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEdmType">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Metadata.Edm.TypeUsage GetEdmType (System.Data.Metadata.Edm.TypeUsage storeType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Metadata.Edm.TypeUsage GetEdmType(class System.Data.Metadata.Edm.TypeUsage storeType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderManifest.GetEdmType(System.Data.Metadata.Edm.TypeUsage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.TypeUsage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="storeType" Type="System.Data.Metadata.Edm.TypeUsage" />
+      </Parameters>
+      <Docs>
+        <param name="storeType">The TypeUsage instance that describes a storage type and a set of facets for that type to be mapped to the EDM type.</param>
+        <summary>When overridden in a derived class, this method maps the specified storage type and a set of facets for that type to an EDM type.</summary>
+        <returns>The <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> instance that describes an EDM type and a set of facets for that type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFacetDescriptions">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.FacetDescription&gt; GetFacetDescriptions (System.Data.Metadata.Edm.EdmType edmType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Metadata.Edm.FacetDescription&gt; GetFacetDescriptions(class System.Data.Metadata.Edm.EdmType edmType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderManifest.GetFacetDescriptions(System.Data.Metadata.Edm.EdmType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.FacetDescription&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="edmType" Type="System.Data.Metadata.Edm.EdmType" />
+      </Parameters>
+      <Docs>
+        <param name="edmType">The EDM type to return the facet description for.</param>
+        <summary>Returns the FacetDescription objects for a particular type.</summary>
+        <returns>The FacetDescription objects for the specified EDM type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInformation">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlReader GetInformation (string informationType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlReader GetInformation(string informationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderManifest.GetInformation(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="informationType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="informationType">The type of the information to return.</param>
+        <summary>Gets the provider-specific information.</summary>
+        <returns>The provider-specific information.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStoreFunctions">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.EdmFunction&gt; GetStoreFunctions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Metadata.Edm.EdmFunction&gt; GetStoreFunctions() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderManifest.GetStoreFunctions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.EdmFunction&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, returns a collection of EDM functions supported by the provider manifest.</summary>
+        <returns>A collection of EDM functions.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStoreType">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Metadata.Edm.TypeUsage GetStoreType (System.Data.Metadata.Edm.TypeUsage edmType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Metadata.Edm.TypeUsage GetStoreType(class System.Data.Metadata.Edm.TypeUsage edmType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderManifest.GetStoreType(System.Data.Metadata.Edm.TypeUsage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.TypeUsage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="edmType" Type="System.Data.Metadata.Edm.TypeUsage" />
+      </Parameters>
+      <Docs>
+        <param name="edmType">The TypeUsage instance that describes the EDM type and a set of facets for that type to be mapped to a storage type.</param>
+        <summary>When overridden in a derived class, this method maps the specified EDM type and a set of facets for that type to a storage type.</summary>
+        <returns>The TypeUsage instance that describes a storage type and a set of facets for that type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStoreTypes">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.PrimitiveType&gt; GetStoreTypes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Metadata.Edm.PrimitiveType&gt; GetStoreTypes() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderManifest.GetStoreTypes" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.PrimitiveType&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, returns the set of primitive types supported by the data source.</summary>
+        <returns>The set of types supported by the data source.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NamespaceName">
+      <MemberSignature Language="C#" Value="public abstract string NamespaceName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NamespaceName" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.DbProviderManifest.NamespaceName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the namespace used by this provider manifest.</summary>
+        <value>The namespace used by this provider manifest.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StoreSchemaDefinition">
+      <MemberSignature Language="C#" Value="public static readonly string StoreSchemaDefinition;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string StoreSchemaDefinition" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbProviderManifest.StoreSchemaDefinition" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Value to pass to GetInformation to get the StoreSchemaDefinitionVersion.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StoreSchemaDefinitionVersion3">
+      <MemberSignature Language="C#" Value="public static readonly string StoreSchemaDefinitionVersion3;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string StoreSchemaDefinitionVersion3" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbProviderManifest.StoreSchemaDefinitionVersion3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Value to pass to GetInformation to get the StoreSchemaDefinitionVersion3.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StoreSchemaMapping">
+      <MemberSignature Language="C#" Value="public static readonly string StoreSchemaMapping;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string StoreSchemaMapping" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbProviderManifest.StoreSchemaMapping" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Value to pass to GetInformation to get the StoreSchemaMappingVersion.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StoreSchemaMappingVersion3">
+      <MemberSignature Language="C#" Value="public static readonly string StoreSchemaMappingVersion3;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string StoreSchemaMappingVersion3" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbProviderManifest.StoreSchemaMappingVersion3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Value to pass to GetInformation to get the StoreSchemaMappingVersion3.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsEscapingLikeArgument">
+      <MemberSignature Language="C#" Value="public virtual bool SupportsEscapingLikeArgument (out char escapeCharacter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SupportsEscapingLikeArgument(char escapeCharacter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderManifest.SupportsEscapingLikeArgument(System.Char@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="escapeCharacter" Type="System.Char&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="escapeCharacter">If the provider supports escaping, the character that would be used as the escape character.</param>
+        <summary>Indicates if the provider supports escaping strings to be used as patterns in a Like expression.</summary>
+        <returns>
+          <see langword="True" /> if this provider supports escaping strings to be used as patterns in a Like expression; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

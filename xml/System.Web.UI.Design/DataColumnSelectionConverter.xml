@@ -1,0 +1,222 @@
+<Type Name="DataColumnSelectionConverter" FullName="System.Web.UI.Design.DataColumnSelectionConverter">
+  <TypeSignature Language="C#" Value="public class DataColumnSelectionConverter : System.ComponentModel.TypeConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataColumnSelectionConverter extends System.ComponentModel.TypeConverter" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.DataColumnSelectionConverter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.TypeConverter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a type converter for a property representing the field name of a bound column field in a <see cref="T:System.Web.UI.WebControls.GridView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.Design.DataColumnSelectionConverter> class to convert object types before assignment to a control property. In general, the <xref:System.Web.UI.Design.DataColumnSelectionConverter> class supports converting string object types and supplies a list of standard values available for assignment to the associated control property. The standard values collection is the list of field names for bound column fields for the current <xref:System.Web.UI.WebControls.GridView> control.  
+  
+ To support converting additional object types, derive a class from <xref:System.Web.UI.Design.DataColumnSelectionConverter> and override the <xref:System.Web.UI.Design.DataColumnSelectionConverter.CanConvertFrom%2A> and <xref:System.Web.UI.Design.DataColumnSelectionConverter.ConvertFrom%2A> methods for the additional object types. To support a custom list of standard assignable values, override the <xref:System.Web.UI.Design.DataColumnSelectionConverter.GetStandardValues%2A> method.  
+  
+ Apply the <xref:System.ComponentModel.TypeConverterAttribute> attribute to specify the <xref:System.Web.UI.Design.DataColumnSelectionConverter> class as the type converter for a control property. For example, the <xref:System.Web.UI.WebControls.GridView.RowHeaderColumn%2A> property of the <xref:System.Web.UI.WebControls.GridView> control specifies <xref:System.Web.UI.Design.DataColumnSelectionConverter> as its type converter.  
+  
+> [!NOTE]
+>  You should never access a type converter directly. Instead, call the appropriate converter by using a <xref:System.ComponentModel.TypeDescriptor> object. For more information, see the examples in <xref:System.ComponentModel.TypeConverter>.  
+  
+ The <xref:System.Web.UI.Design.DataColumnSelectionConverter.GetStandardValuesSupported%2A> method indicates that the converter supports returning a list of available values through the <xref:System.Web.UI.Design.DataColumnSelectionConverter.GetStandardValues%2A> method. The <xref:System.Web.UI.Design.DataColumnSelectionConverter.GetStandardValuesExclusive%2A> method indicates that the list is not an exclusive list of possible values.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataColumnSelectionConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataColumnSelectionConverter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.DataColumnSelectionConverter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  You should never access a type converter directly. Instead, call the appropriate converter by using a <xref:System.ComponentModel.TypeDescriptor> object. For more information, see the examples in <xref:System.ComponentModel.TypeConverter>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConvertFrom">
+      <MemberSignature Language="C#" Value="public override bool CanConvertFrom (System.ComponentModel.ITypeDescriptorContext context, Type sourceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Type sourceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataColumnSelectionConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="sourceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> implementation that can be used to gain additional context information.</param>
+        <param name="sourceType">The type to convert from.</param>
+        <summary>Indicates whether the specified source type can be converted to the type of the associated control property.</summary>
+        <returns>
+          <see langword="true" /> if the converter can perform the conversion; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call the <xref:System.Web.UI.Design.DataColumnSelectionConverter.CanConvertFrom%2A> method to determine whether the <xref:System.Web.UI.Design.DataColumnSelectionConverter.ConvertFrom%2A> method supports converting the source type.  
+  
+ The <xref:System.Web.UI.Design.DataColumnSelectionConverter.ConvertFrom%2A> method can convert only from a string, so the <xref:System.Web.UI.Design.DataColumnSelectionConverter.CanConvertFrom%2A> method returns `true` when `sourceType` is a string.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertFrom">
+      <MemberSignature Language="C#" Value="public override object ConvertFrom (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataColumnSelectionConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> implementation that can be used to gain additional context information.</param>
+        <param name="culture">The <see cref="T:System.Globalization.CultureInfo" /> object that can be used to support localization features.</param>
+        <param name="value">The object to convert.</param>
+        <summary>Converts the specified object to the type of the associated control property.</summary>
+        <returns>An <see cref="T:System.Object" /> instance that represents the converted object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `value` is a string, then the string representation of `value` is returned. If `value` is `null`, an empty string ("") is returned. For all other values, a <xref:System.NotSupportedException> exception is thrown.  
+  
+ Call the <xref:System.Web.UI.Design.DataColumnSelectionConverter.CanConvertFrom%2A> method to determine whether the <xref:System.Web.UI.Design.DataColumnSelectionConverter.ConvertFrom%2A> method supports converting the source type.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The conversion could not be performed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStandardValues">
+      <MemberSignature Language="C#" Value="public override System.ComponentModel.TypeConverter.StandardValuesCollection GetStandardValues (System.ComponentModel.ITypeDescriptorContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ComponentModel.TypeConverter/StandardValuesCollection GetStandardValues(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataColumnSelectionConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.TypeConverter+StandardValuesCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> implementation that can be used to gain additional context information.</param>
+        <summary>Returns a list of available values that can be assigned to the associated control property.</summary>
+        <returns>A <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> instance containing available values for assignment to the associated control property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.DataColumnSelectionConverter.GetStandardValues%2A> method uses the <xref:System.ComponentModel.ITypeDescriptorContext.Instance%2A> property of the specified `context` object to obtain an <xref:System.ComponentModel.IComponent> implementation. If the <xref:System.ComponentModel.IComponent> implementation is available, it is used to access the associated control at design time and retrieve the list of available values from the associated <xref:System.Web.UI.WebControls.GridView> component.  
+  
+ The collection of available values is built from the bound column fields in the <xref:System.Web.UI.WebControls.GridView> control. The bound column fields consist of <xref:System.Web.UI.WebControls.BoundField> objects in the <xref:System.Web.UI.WebControls.GridView.Columns%2A> collection, and from the bound column fields automatically generated for fields in the data source.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStandardValuesExclusive">
+      <MemberSignature Language="C#" Value="public override bool GetStandardValuesExclusive (System.ComponentModel.ITypeDescriptorContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool GetStandardValuesExclusive(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataColumnSelectionConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> implementation that can be used to gain additional context information.</param>
+        <summary>Indicates whether this converter returns a list containing all possible values that can be assigned to the associated control property.</summary>
+        <returns>
+          <see langword="true" /> if this converter returns a list containing all possible values that can be assigned to the associated control property; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.DataColumnSelectionConverter.GetStandardValuesExclusive%2A> method for a <xref:System.Web.UI.Design.DataColumnSelectionConverter> instance returns `false`, indicating that the list returned by the <xref:System.Web.UI.Design.DataColumnSelectionConverter.GetStandardValues%2A> method is not an exclusive list of all possible assignable values.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStandardValuesSupported">
+      <MemberSignature Language="C#" Value="public override bool GetStandardValuesSupported (System.ComponentModel.ITypeDescriptorContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool GetStandardValuesSupported(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataColumnSelectionConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> implementation that can be used to gain additional context information.</param>
+        <summary>Indicates whether this converter returns a set of available values for assignment to a control property, within the specified context.</summary>
+        <returns>
+          <see langword="true" /> if this converter returns a standard set of available values for assignment to the associated control property; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.DataColumnSelectionConverter.GetStandardValuesSupported%2A> method indicates whether the converter supports returning a list of available values through the <xref:System.Web.UI.Design.DataColumnSelectionConverter.GetStandardValues%2A> method.  
+  
+ The <xref:System.Web.UI.Design.DataColumnSelectionConverter.GetStandardValuesSupported%2A> method for the <xref:System.Web.UI.Design.DataColumnSelectionConverter> object returns `true` if the specified `context` object supplies an <xref:System.ComponentModel.IComponent> implementation in its <xref:System.ComponentModel.ITypeDescriptorContext.Instance%2A> property. The <xref:System.Web.UI.Design.DataColumnSelectionConverter.GetStandardValues%2A> method uses the <xref:System.ComponentModel.IComponent> implementation to access the associated control at design time and retrieve the list of available bound column fields from the associated <xref:System.Web.UI.WebControls.GridView> component.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

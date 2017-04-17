@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrArgument_ArrayDimensionsDontMatch"
 ms.assetid: 71809e3b-8147-4314-9c4c-e4a5bc9a5530
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

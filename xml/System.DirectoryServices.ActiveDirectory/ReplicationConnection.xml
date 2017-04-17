@@ -1,0 +1,608 @@
+<Type Name="ReplicationConnection" FullName="System.DirectoryServices.ActiveDirectory.ReplicationConnection">
+  <TypeSignature Language="C#" Value="public class ReplicationConnection : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ReplicationConnection extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ReplicationConnection" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnection" /> class represents a replication connection.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In Active Directory Domain Services, a replication connection is represented by an NTDS-Connection object.  For more information, see the "[NTDS-Connection](http://msdn.microsoft.com/library/default.asp?url=/library/adschema/adschema/c_ntdsconnection.asp)" topic in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" /></permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReplicationConnection (System.DirectoryServices.ActiveDirectory.DirectoryContext context, string name, System.DirectoryServices.ActiveDirectory.DirectoryServer sourceServer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.ActiveDirectory.DirectoryContext context, string name, class System.DirectoryServices.ActiveDirectory.DirectoryServer sourceServer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationConnection.#ctor(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String,System.DirectoryServices.ActiveDirectory.DirectoryServer)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.ActiveDirectory.DirectoryContext" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="sourceServer" Type="System.DirectoryServices.ActiveDirectory.DirectoryServer" />
+      </Parameters>
+      <Docs>
+        <param name="context">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that contains the target and credentials with which to establish a replication connection.</param>
+        <param name="name">The user-defined name of the connection.</param>
+        <param name="sourceServer">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> object that identifies the source server of the connection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnection" /> class, using the specified context, name, and source server.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ArgumentException">This exception will occur for any one of the following reasons:  
+  
+-   The target of the <paramref name="context" /> parameter is not a domain controller or AD LDS instance.  
+  
+-   <paramref name="sourceServer" /> is invalid or an empty string.  
+  
+-   The target specified in the <paramref name="context" /> parameter does not match the server type specified in the <paramref name="sourceServer" /> parameter. The servers must both be either domain controllers or AD LDS instances.  
+  
+-   The servers specified in the <paramref name="context" /> and <paramref name="sourceServer" /> parameters are domain controllers, but are not in the same forest.  
+  
+-   The servers specified in the <paramref name="context" /> and <paramref name="sourceServer" /> parameters are AD LDS instances, but do not belong to the same configuration set.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" /> or <paramref name="sourceServer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Authentication.AuthenticationException">The credentials that were supplied are not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReplicationConnection (System.DirectoryServices.ActiveDirectory.DirectoryContext context, string name, System.DirectoryServices.ActiveDirectory.DirectoryServer sourceServer, System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule schedule);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.ActiveDirectory.DirectoryContext context, string name, class System.DirectoryServices.ActiveDirectory.DirectoryServer sourceServer, class System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule schedule) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationConnection.#ctor(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String,System.DirectoryServices.ActiveDirectory.DirectoryServer,System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.ActiveDirectory.DirectoryContext" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="sourceServer" Type="System.DirectoryServices.ActiveDirectory.DirectoryServer" />
+        <Parameter Name="schedule" Type="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" />
+      </Parameters>
+      <Docs>
+        <param name="context">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that contains the target and credentials with which to establish a replication connection.</param>
+        <param name="name">The user-defined name of the connection.</param>
+        <param name="sourceServer">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> object that identifies the source server of the connection.</param>
+        <param name="schedule">A <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" /> object that specifies when the source is available for replication.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnection" /> class, using the specified context, name, source server, and schedule.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ArgumentException">This exception will occur for any one of the following reasons:  
+  
+-   The target of the <paramref name="context" /> parameter is not a domain controller or AD LDS instance.  
+  
+-   <paramref name="sourceServer" /> is invalid or an empty string.  
+  
+-   The target specified in the <paramref name="context" /> parameter does not match the server type specified in the <paramref name="sourceServer" /> parameter. The servers must both be either domain controllers or AD LDS instances.  
+  
+-   The servers specified in the <paramref name="context" /> and <paramref name="sourceServer" /> parameters are domain controllers, but are not in the same forest.  
+  
+-   The servers specified in the <paramref name="context" /> and <paramref name="sourceServer" /> parameters are AD LDS instances, but do not belong to the same configuration set.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" />, <paramref name="sourceServer" /> or <paramref name="schedule" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Authentication.AuthenticationException">The credentials that were supplied are not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReplicationConnection (System.DirectoryServices.ActiveDirectory.DirectoryContext context, string name, System.DirectoryServices.ActiveDirectory.DirectoryServer sourceServer, System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType transport);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.ActiveDirectory.DirectoryContext context, string name, class System.DirectoryServices.ActiveDirectory.DirectoryServer sourceServer, valuetype System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType transport) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationConnection.#ctor(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String,System.DirectoryServices.ActiveDirectory.DirectoryServer,System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.ActiveDirectory.DirectoryContext" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="sourceServer" Type="System.DirectoryServices.ActiveDirectory.DirectoryServer" />
+        <Parameter Name="transport" Type="System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" />
+      </Parameters>
+      <Docs>
+        <param name="context">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that contains the target and credentials to establish a replication connection with.</param>
+        <param name="name">The user-defined name of the connection.</param>
+        <param name="sourceServer">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> object that identifies the source server of the connection.</param>
+        <param name="transport">One of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> members that specifies the transport type of the connection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnection" /> class, using the specified context, name, source server, and transport type.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ArgumentException">This exception will occur for any one of the following reasons:  
+  
+-   The target of the <paramref name="context" /> parameter is not a domain controller or AD LDS instance.  
+  
+-   <paramref name="sourceServer" /> is invalid or an empty string.  
+  
+-   The target specified in the <paramref name="context" /> parameter does not match the server type specified in the <paramref name="sourceServer" /> parameter. The servers must both be either domain controllers or AD LDS instances.  
+  
+-   The servers specified in the <paramref name="context" /> and <paramref name="sourceServer" /> parameters are domain controllers, but are not in the same forest.  
+  
+-   The servers specified in the <paramref name="context" /> and <paramref name="sourceServer" /> parameters are AD LDS instances, but do not belong to the same configuration set.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" /> or <paramref name="sourceServer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Authentication.AuthenticationException">The credentials that were supplied are not valid.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="transport" /> is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> value.</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="context" /> is an AD LDS instance and <paramref name="transport" /> is <see cref="F:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType.Smtp" />, which is not supported.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReplicationConnection (System.DirectoryServices.ActiveDirectory.DirectoryContext context, string name, System.DirectoryServices.ActiveDirectory.DirectoryServer sourceServer, System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule schedule, System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType transport);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.ActiveDirectory.DirectoryContext context, string name, class System.DirectoryServices.ActiveDirectory.DirectoryServer sourceServer, class System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule schedule, valuetype System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType transport) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationConnection.#ctor(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String,System.DirectoryServices.ActiveDirectory.DirectoryServer,System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule,System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.ActiveDirectory.DirectoryContext" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="sourceServer" Type="System.DirectoryServices.ActiveDirectory.DirectoryServer" />
+        <Parameter Name="schedule" Type="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" />
+        <Parameter Name="transport" Type="System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" />
+      </Parameters>
+      <Docs>
+        <param name="context">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that contains the target and credentials with which to establish a replication connection.</param>
+        <param name="name">The user-defined name of the connection.</param>
+        <param name="sourceServer">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryServer" /> object that identifies the source server of the connection.</param>
+        <param name="schedule">A <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" /> object that specifies when the source is available for replication.</param>
+        <param name="transport">One of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> members that specifies the transport type of the connection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnection" /> class, using the specified context, name, source server, schedule, and transport type.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ArgumentException">This exception will occur for any one of the following reasons:  
+  
+-   The target of the <paramref name="context" /> parameter is not a domain controller or AD LDS instance.  
+  
+-   <paramref name="sourceServer" /> is invalid or an empty string.  
+  
+-   The target specified in the <paramref name="context" /> parameter does not match the server type specified in the <paramref name="sourceServer" /> parameter. The servers must both be either domain controllers or AD LDS instances.  
+  
+-   The servers specified in the <paramref name="context" /> and <paramref name="sourceServer" /> parameters are domain controllers, but are not in the same forest.  
+  
+-   The servers specified in the <paramref name="context" /> and <paramref name="sourceServer" /> parameters are AD LDS instances, but do not belong to the same configuration set.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" />, <paramref name="sourceServer" /> or <paramref name="schedule" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Authentication.AuthenticationException">The credentials that were supplied are not valid.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="transport" /> is not valid.</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="context" /> is an AD LDS instance and <paramref name="transport" /> is <see cref="F:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType.Smtp" />, which is not supported.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeNotificationStatus">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.NotificationStatus ChangeNotificationStatus { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.ActiveDirectory.NotificationStatus ChangeNotificationStatus" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationConnection.ChangeNotificationStatus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.NotificationStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the change notification status of this replication connection.</summary>
+        <value>One of the <see cref="T:System.DirectoryServices.ActiveDirectory.NotificationStatus" /> members that specifies the change notification status of this replication connection.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">When setting the property, the new value is not valid.</exception>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DataCompressionEnabled">
+      <MemberSignature Language="C#" Value="public bool DataCompressionEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DataCompressionEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationConnection.DataCompressionEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether this replication connection compresses data.</summary>
+        <value>
+          <see langword="true" /> if this replication connection uses data compression; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Delete() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationConnection.Delete" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Deletes this replication connection.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnection" /> object has not yet been saved to the underlying directory store.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DestinationServer">
+      <MemberSignature Language="C#" Value="public string DestinationServer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DestinationServer" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationConnection.DestinationServer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the DNS name of the server that is the destination of this replication connection.</summary>
+        <value>A string that contains the DNS name of the server that is the destination of this replication connection.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationConnection.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases the unmanaged and managed resources held by the object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationConnection.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release the managed resources; otherwise, <see langword="false" />.</param>
+        <summary>Releases the unmanaged and, optionally, the managed resources, held by the object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationConnection.Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether this replication connection is enabled.</summary>
+        <value>
+          <see langword="true" /> if this replication connection is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~ReplicationConnection ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationConnection.Finalize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Overrides the <see cref="M:System.Object.Finalize" /> method.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindByName">
+      <MemberSignature Language="C#" Value="public static System.DirectoryServices.ActiveDirectory.ReplicationConnection FindByName (System.DirectoryServices.ActiveDirectory.DirectoryContext context, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.ActiveDirectory.ReplicationConnection FindByName(class System.DirectoryServices.ActiveDirectory.DirectoryContext context, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationConnection.FindByName(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationConnection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.ActiveDirectory.DirectoryContext" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="context">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that contains the target and credentials to search for.</param>
+        <param name="name">The name of the connection to search for.</param>
+        <summary>Retrieves the <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnection" /> object that matches the specified target context and name.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationConnection" /> object that represents the connection.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">The connection could not be found.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="context" /> or <paramref name="name" /> is not valid.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" /> or <paramref name="name" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GeneratedByKcc">
+      <MemberSignature Language="C#" Value="public bool GeneratedByKcc { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool GeneratedByKcc" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationConnection.GeneratedByKcc" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether this replication connection was generated by the knowledge consistency checker (KCC).</summary>
+        <value>
+          <see langword="true" /> if this replication connection was generated by the KCC; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDirectoryEntry">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.DirectoryEntry GetDirectoryEntry ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.DirectoryEntry GetDirectoryEntry() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationConnection.GetDirectoryEntry" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves a <see cref="T:System.DirectoryServices.DirectoryEntry" /> object that represents the replication connection.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.DirectoryEntry" /> object that represents the target of the replication connection.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+        <exception cref="T:System.InvalidOperationException">The current object has not been committed to the server. <see cref="M:System.DirectoryServices.ActiveDirectory.ReplicationConnection.Save" /> must be called first.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationConnection.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of this replication connection.</summary>
+        <value>A string that contains the user-defined name of this replication connection.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReciprocalReplicationEnabled">
+      <MemberSignature Language="C#" Value="public bool ReciprocalReplicationEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReciprocalReplicationEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationConnection.ReciprocalReplicationEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether this replication connection supports reciprocal replication.</summary>
+        <value>
+          <see langword="true" /> if this replication connection supports reciprocal replication; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplicationSchedule">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule ReplicationSchedule { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule ReplicationSchedule" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationConnection.ReplicationSchedule" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the schedule on which the source server is available for replication.</summary>
+        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" /> object that represents the schedule on which the source server is available for replication. If this property is <see langword="null" />, then the default schedule is used.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplicationScheduleOwnedByUser">
+      <MemberSignature Language="C#" Value="public bool ReplicationScheduleOwnedByUser { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReplicationScheduleOwnedByUser" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationConnection.ReplicationScheduleOwnedByUser" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the replication schedule is owned by the user.</summary>
+        <value>
+          <see langword="true" /> if the replication schedule is owned by the user; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplicationSpan">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ReplicationSpan ReplicationSpan { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.ActiveDirectory.ReplicationSpan ReplicationSpan" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationConnection.ReplicationSpan" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the span of this replication connection.</summary>
+        <value>One of the <see cref="T:System.DirectoryServices.ActiveDirectory.ReplicationSpan" /> members that specifies the span of this replication connection.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Save">
+      <MemberSignature Language="C#" Value="public void Save ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationConnection.Save" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Commits the replication connection to the server. The replication connection object does not actually exist in Active Directory Domain Services until this method is called.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceServer">
+      <MemberSignature Language="C#" Value="public string SourceServer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceServer" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationConnection.SourceServer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the DNS name of the server that is the source of this replication connection.</summary>
+        <value>A string that contains the DNS name of the server that is the source of this replication connection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationConnection.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves the name of the replication connection.</summary>
+        <returns>A string that contains the name of the replication connection.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TransportType">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType TransportType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType TransportType" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationConnection.TransportType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of transport that is used by this replication connection.</summary>
+        <value>One of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> members that specifies the type of transport that is used by this replication connection.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

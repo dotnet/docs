@@ -1,0 +1,109 @@
+<Type Name="CommandValues" FullName="System.Activities.Presentation.Hosting.CommandValues">
+  <TypeSignature Language="C#" Value="public static class CommandValues" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit CommandValues extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Hosting.CommandValues" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A command interface that is used for integration of [!INCLUDE[wfd1](~/includes/wfd1-md.md)] actions (for example, context menu) with custom-provided implementation—that is, property browser service, debugging service, and so on.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DeleteBreakpoint">
+      <MemberSignature Language="C#" Value="public const int DeleteBreakpoint = 7;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 DeleteBreakpoint = (7)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Hosting.CommandValues.DeleteBreakpoint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>7</MemberValue>
+      <Docs>
+        <summary>The command to delete a breakpoint.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisableBreakpoint">
+      <MemberSignature Language="C#" Value="public const int DisableBreakpoint = 9;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 DisableBreakpoint = (9)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Hosting.CommandValues.DisableBreakpoint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>9</MemberValue>
+      <Docs>
+        <summary>The command to disable a breakpoint.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableBreakpoint">
+      <MemberSignature Language="C#" Value="public const int EnableBreakpoint = 8;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 EnableBreakpoint = (8)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Hosting.CommandValues.EnableBreakpoint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>The command to enable a breakpoint.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertBreakpoint">
+      <MemberSignature Language="C#" Value="public const int InsertBreakpoint = 6;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 InsertBreakpoint = (6)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Hosting.CommandValues.InsertBreakpoint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>The command to insert a breakpoint.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowProperties">
+      <MemberSignature Language="C#" Value="public const int ShowProperties = 5;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ShowProperties = (5)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Hosting.CommandValues.ShowProperties" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>Opens the Visual Studio Property Grid to show the properties.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

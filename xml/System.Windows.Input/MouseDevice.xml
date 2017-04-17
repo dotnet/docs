@@ -1,0 +1,565 @@
+<Type Name="MouseDevice" FullName="System.Windows.Input.MouseDevice">
+  <TypeSignature Language="C#" Value="public abstract class MouseDevice : System.Windows.Input.InputDevice" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MouseDevice extends System.Windows.Input.InputDevice" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.MouseDevice" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Input.InputDevice</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a mouse device.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.MouseDevice> supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.  
+  
+ For mouse related input, use the <xref:System.Windows.Input.Mouse> class.  The <xref:System.Windows.Input.Mouse> class represents the mouse to an application and provides methods, properties, and events that reflect the state of the mouse.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ActiveSource">
+      <MemberSignature Language="C#" Value="public override System.Windows.PresentationSource ActiveSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.PresentationSource ActiveSource" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseDevice.ActiveSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.PresentationSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.PresentationSource" /> that is reporting input for this device.</summary>
+        <value>The source of input for this device.</value>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">for getting the active source.  Associated enumerations:  <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Capture">
+      <MemberSignature Language="C#" Value="public bool Capture (System.Windows.IInputElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Capture(class System.Windows.IInputElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseDevice.Capture(System.Windows.IInputElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.IInputElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element to capture the mouse.</param>
+        <summary>Captures mouse events to the specified element.</summary>
+        <returns>
+          <see langword="true" /> if the element was able to capture the mouse; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an element captures the mouse, it receives mouse input whether the cursor is within its borders  
+  
+ If a <xref:System.Windows.Input.CaptureMode> is not specified, the default <xref:System.Windows.Input.CaptureMode> is <xref:System.Windows.Input.CaptureMode>.  
+  
+ To release mouse capture, call <xref:System.Windows.Input.MouseDevice.Capture%2A> passing `null` as the element to capture.  
+  
+ If the mouse is captured when a <xref:System.Windows.Input.Mouse.MouseDown> or <xref:System.Windows.Input.Mouse.MouseUp> event is raised and the input is not going to the element underneath the mouse, <xref:System.Windows.Input.Mouse.PreviewMouseDownOutsideCapturedElement> and <xref:System.Windows.Input.Mouse.PreviewMouseUpOutsideCapturedElement> are raised first.  This enables the captured element a chance to release capture before the <xref:System.Windows.Input.Mouse.MouseDown> and <xref:System.Windows.Input.Mouse.MouseUp> events are routed.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="element" /> is not a <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Capture">
+      <MemberSignature Language="C#" Value="public bool Capture (System.Windows.IInputElement element, System.Windows.Input.CaptureMode captureMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Capture(class System.Windows.IInputElement element, valuetype System.Windows.Input.CaptureMode captureMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseDevice.Capture(System.Windows.IInputElement,System.Windows.Input.CaptureMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.IInputElement" />
+        <Parameter Name="captureMode" Type="System.Windows.Input.CaptureMode" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element to capture the mouse..</param>
+        <param name="captureMode">The capture policy to use.</param>
+        <summary>Captures mouse input to the specified element using the specified <see cref="T:System.Windows.Input.CaptureMode" />.</summary>
+        <returns>
+          <see langword="true" /> if the element was able to capture the mouse; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an element captures the mouse, it receives mouse input whether or not the cursor is within its borders.  
+  
+ To release mouse capture, call <xref:System.Windows.Input.MouseDevice.Capture%2A> passing `null` as the element to capture.  
+  
+ If the mouse is captured when a <xref:System.Windows.Input.Mouse.MouseDown> or <xref:System.Windows.Input.Mouse.MouseUp> event is raised and the input is not going to the element underneath the mouse, <xref:System.Windows.Input.Mouse.PreviewMouseDownOutsideCapturedElement> and <xref:System.Windows.Input.Mouse.PreviewMouseUpOutsideCapturedElement> are raised first.  This enables the captured element a chance to release capture before the <xref:System.Windows.Input.Mouse.MouseDown> and <xref:System.Windows.Input.Mouse.MouseUp> events are routed.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="element" /> is not a <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" />.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="captureMode" /> is not a valid <see cref="T:System.Windows.Input.CaptureMode" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Captured">
+      <MemberSignature Language="C#" Value="public System.Windows.IInputElement Captured { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.IInputElement Captured" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseDevice.Captured" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.IInputElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.IInputElement" /> that is captured by the mouse.</summary>
+        <value>The element which is captured by the mouse.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an element captures the mouse, it receives mouse input whether or not the cursor is within its borders.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DirectlyOver">
+      <MemberSignature Language="C#" Value="public System.Windows.IInputElement DirectlyOver { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.IInputElement DirectlyOver" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseDevice.DirectlyOver" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.IInputElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the element that the mouse pointer is directly over.</summary>
+        <value>The element the mouse pointer is over.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The mouse is considered directly over an element if the mouse has been captured to that element.  
+  
+ Controls can be composed of multiple elements. <xref:System.Windows.Input.MouseDevice.DirectlyOver%2A> reports the specific element in the composite control the mouse pointer is over and not the control itself.  For example, depending on which part of a <xref:System.Windows.Controls.Button> the pointer is over, the <xref:System.Windows.Input.MouseDevice.DirectlyOver%2A> property could report the <xref:System.Windows.Controls.TextBox> of the <xref:System.Windows.Controls.ContentControl.Content%2A> property or the <xref:Microsoft.Windows.Themes.ButtonChrome>.  
+  
+ Use the <xref:System.Windows.IInputElement.IsMouseOver%2A> property on <xref:System.Windows.UIElement> and <xref:System.Windows.ContentElement> to determine whether the mouse is over an element, which includes its visual child elements or control compositing elements.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetButtonState">
+      <MemberSignature Language="C#" Value="protected System.Windows.Input.MouseButtonState GetButtonState (System.Windows.Input.MouseButton mouseButton);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance valuetype System.Windows.Input.MouseButtonState GetButtonState(valuetype System.Windows.Input.MouseButton mouseButton) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseDevice.GetButtonState(System.Windows.Input.MouseButton)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.MouseButtonState</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mouseButton" Type="System.Windows.Input.MouseButton" />
+      </Parameters>
+      <Docs>
+        <param name="mouseButton">The button which is being queried.</param>
+        <summary>Gets the state of the specified mouse button.</summary>
+        <returns>The state of the button.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClientPosition">
+      <MemberSignature Language="C#" Value="protected System.Windows.Point GetClientPosition ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance valuetype System.Windows.Point GetClientPosition() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseDevice.GetClientPosition" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecurityTreatAsSafe</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Point</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Calculates the position of the mouse pointer, in client coordinates.</summary>
+        <returns>The position of the mouse pointer, in client coordinates.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClientPosition">
+      <MemberSignature Language="C#" Value="protected System.Windows.Point GetClientPosition (System.Windows.PresentationSource presentationSource);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance valuetype System.Windows.Point GetClientPosition(class System.Windows.PresentationSource presentationSource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseDevice.GetClientPosition(System.Windows.PresentationSource)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="presentationSource" Type="System.Windows.PresentationSource" />
+      </Parameters>
+      <Docs>
+        <param name="presentationSource">The source in which to obtain the mouse position.</param>
+        <summary>Calculates the position of the mouse pointer, in client coordinates, in the specified <see cref="T:System.Windows.PresentationSource" />.</summary>
+        <returns>The position of the mouse pointer, in client coordinates, in the specified <see cref="T:System.Windows.PresentationSource" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPosition">
+      <MemberSignature Language="C#" Value="public System.Windows.Point GetPosition (System.Windows.IInputElement relativeTo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Point GetPosition(class System.Windows.IInputElement relativeTo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseDevice.GetPosition(System.Windows.IInputElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="relativeTo" Type="System.Windows.IInputElement" />
+      </Parameters>
+      <Docs>
+        <param name="relativeTo">The frame of reference in which to calculate the position of the mouse.</param>
+        <summary>Gets the position of the mouse relative to a specified element.</summary>
+        <returns>The position of the mouse relative to the parameter <paramref name="relativeTo" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The position of the mouse pointer is calculated relative to the specified <xref:System.Windows.IInputElement> with the upper-left corner of element being the point of origin, 0,0.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="relativeTo" /> is <see langword="null" /> or is not a <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetScreenPosition">
+      <MemberSignature Language="C#" Value="protected System.Windows.Point GetScreenPosition ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance valuetype System.Windows.Point GetScreenPosition() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseDevice.GetScreenPosition" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Point</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Calculates the screen position of the mouse pointer.</summary>
+        <returns>The position of the mouse pointer.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LeftButton">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.MouseButtonState LeftButton { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.MouseButtonState LeftButton" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseDevice.LeftButton" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.MouseButtonState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the state of the left mouse button of this mouse device.</summary>
+        <value>The state of the button.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MiddleButton">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.MouseButtonState MiddleButton { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.MouseButtonState MiddleButton" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseDevice.MiddleButton" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.MouseButtonState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The state of the middle button of this mouse device.</summary>
+        <value>The state of the button.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OverrideCursor">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.Cursor OverrideCursor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.Cursor OverrideCursor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseDevice.OverrideCursor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the cursor for the entire application.</summary>
+        <value>The override cursor or <see langword="null" /> if <see cref="P:System.Windows.Input.MouseDevice.OverrideCursor" /> is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.Cursor> that <xref:System.Windows.Input.MouseDevice.OverrideCursor%2A> is set to will be applied to the whole application.  
+  
+ To clear the override <xref:System.Windows.Input.Cursor>, set <xref:System.Windows.Input.MouseDevice.OverrideCursor%2A> to `null`.  
+  
+ Setting <xref:System.Windows.Input.MouseDevice.OverrideCursor%2A> to <xref:System.Windows.Input.Cursors.None%2A> will force the mouse cursor not to be displayed, but mouse events are still processed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RightButton">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.MouseButtonState RightButton { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.MouseButtonState RightButton" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseDevice.RightButton" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.MouseButtonState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the state of the right button of this mouse device.</summary>
+        <value>The state of the button.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCursor">
+      <MemberSignature Language="C#" Value="public bool SetCursor (System.Windows.Input.Cursor cursor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool SetCursor(class System.Windows.Input.Cursor cursor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseDevice.SetCursor(System.Windows.Input.Cursor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cursor" Type="System.Windows.Input.Cursor" />
+      </Parameters>
+      <Docs>
+        <param name="cursor">The cursor to set the mouse pointer to.</param>
+        <summary>Sets the mouse pointer to the specified <see cref="T:System.Windows.Input.Cursor" /></summary>
+        <returns>
+          <see langword="true" /> if the mouse cursor is set; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that this cursor does not apply any particular <xref:System.Windows.UIElement>, but rather it applies to the whole application.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Synchronize">
+      <MemberSignature Language="C#" Value="public void Synchronize ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Synchronize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseDevice.Synchronize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Forces the mouse to resynchronize.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.MouseDevice> monitors layout changes and calls <xref:System.Windows.Input.MouseDevice.Synchronize%2A>.  There are cases in which the mouse input system must be forced to update for it to respond to changes.  For example, you must resynchronize the mouse on a timer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Target">
+      <MemberSignature Language="C#" Value="public override System.Windows.IInputElement Target { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.IInputElement Target" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseDevice.Target" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.IInputElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.IInputElement" /> that the input from this mouse device is sent to.</summary>
+        <value>The element that receives the input.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The target for a <xref:System.Windows.Input.MouseDevice> is the object the mouse is over or the object with mouse capture.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateCursor">
+      <MemberSignature Language="C#" Value="public void UpdateCursor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UpdateCursor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.MouseDevice.UpdateCursor" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Forces the mouse cursor to update.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XButton1">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.MouseButtonState XButton1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.MouseButtonState XButton1" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseDevice.XButton1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.MouseButtonState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the state of the first extended button on this mouse device.</summary>
+        <value>The state of the button.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XButton2">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.MouseButtonState XButton2 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.MouseButtonState XButton2" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MouseDevice.XButton2" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.MouseButtonState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the state of the second extended button of this mouse device.</summary>
+        <value>The state of the button.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="Capture">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Captures mouse input to the specified element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an element captures the mouse, it receives mouse input whether or not the cursor is within its borders.  
+  
+ If a <xref:System.Windows.Input.CaptureMode> is not specified, the default <xref:System.Windows.Input.CaptureMode> is <xref:System.Windows.Input.CaptureMode>.  
+  
+ To release mouse capture, call <xref:System.Windows.Input.MouseDevice.Capture%2A> passing `null` as the element to capture.  
+  
+ If the mouse is captured when a <xref:System.Windows.Input.Mouse.MouseDown> or <xref:System.Windows.Input.Mouse.MouseUp> event is raised and the input is not going to the element underneath the mouse, <xref:System.Windows.Input.Mouse.PreviewMouseDownOutsideCapturedElement> and <xref:System.Windows.Input.Mouse.PreviewMouseUpOutsideCapturedElement> are raised first.  This enables the captured element a chance to release capture before the <xref:System.Windows.Input.Mouse.MouseDown> and <xref:System.Windows.Input.Mouse.MouseUp> events are routed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

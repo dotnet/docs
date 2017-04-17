@@ -1,0 +1,291 @@
+<Type Name="PeerCollaborationPermission" FullName="System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission">
+  <TypeSignature Language="C#" Value="public sealed class PeerCollaborationPermission : System.Security.CodeAccessPermission, System.Security.Permissions.IUnrestrictedPermission" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit PeerCollaborationPermission extends System.Security.CodeAccessPermission implements class System.Security.Permissions.IUnrestrictedPermission" />
+  <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.CodeAccessPermission</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Security.Permissions.IUnrestrictedPermission</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Specifies the values that define or are used in <see cref="N:System.Net.PeerToPeer.Collaboration" /> object permissions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default <xref:System.Security.Permissions> allow all local and Intranet zone applications to access collaboration services, and no permission is granted for Internet zone applications. In other words, if the default permissions are not changed, all link-local and site-local applications have access to Peer-To-Peer collaboration services, but global applications have no access.  
+  
+ This class is not derivable.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PeerCollaborationPermission (System.Security.Permissions.PermissionState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.#ctor(System.Security.Permissions.PermissionState)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="state" Type="System.Security.Permissions.PermissionState" />
+      </Parameters>
+      <Docs>
+        <param name="state">One of the values in the <see cref="T:System.Security.Permissions.PermissionState" /> enumeration.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission" />. The initial <see cref="T:System.Security.Permissions.PermissionState" /> for this instance is passed when the constructor is called.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Instances of this type either have no access to the resource(s) protected by the permission, or they have unrestricted full access to those resources.  
+  
+ If state is <xref:System.Security.Permissions.PermissionState>, the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission> instance passes all demands. If state contains any other value, the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission> instance fails all demands.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public override System.Security.IPermission Copy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Copy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.Copy" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates and returns a copy of the current <see cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission" />.</summary>
+        <returns>A <see cref="T:System.Object" /> that contains a copy of the current instance of <see cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A copy of a <xref:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission> instance grants the same access to resources as the original permission.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromXml">
+      <MemberSignature Language="C#" Value="public override void FromXml (System.Security.SecurityElement e);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXml(class System.Security.SecurityElement e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.FromXml(System.Security.SecurityElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Security.SecurityElement" />
+      </Parameters>
+      <Docs>
+        <param name="e">The XML encoding to use to reconstruct the permission.</param>
+        <summary>Represents the XML object model for encoding security objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is intended to be a lightweight implementation of a simple XML object model for use within the security system, and not for use as a general XML object model.  
+  
+ This class cannot be inherited.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">-   The parameter is not a valid permission element.  
+  
+-   The parameter does not contain a valid type or class.  
+  
+-   The parameter's version number is not supported.</exception>
+        <exception cref="T:System.ArgumentNullException">The parameter is a <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Intersect">
+      <MemberSignature Language="C#" Value="public override System.Security.IPermission Intersect (System.Security.IPermission target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Intersect(class System.Security.IPermission target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.Intersect(System.Security.IPermission)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Security.IPermission" />
+      </Parameters>
+      <Docs>
+        <param name="target">Permission to <see cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.Intersect(System.Security.IPermission)" /> with the current permission. It must be of the same type as the current permission.</param>
+        <summary>Creates and returns a permission that is the intersection of the current <see cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission" /> and the specified <paramref name="target" /> permission.</summary>
+        <returns>A new permission that represents the intersection of the current <see cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission" /> and the specified <paramref name="target" /> permission. This new permission is a <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic) if the intersection is empty.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The intersection of two permissions is a permission that describes the set of operations they both describe in common. Only a demand that passes both original permissions will pass the intersection.  
+  
+ The following statements are required to be `true` for all implementations of the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.Intersect%2A> method. X and Y represent <xref:System.Security.IPermission> object references that are not a `null` reference (`Nothing` in Visual Basic).  
+  
+-   X.Intersect(X) returns a value equal to X.  
+  
+-   X.Intersect(Y) returns the same value as Y.Intersect(X).  
+  
+-   X.Intersect(a `null` reference) returns a `null` reference.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The target parameter is not a <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic) and is not an instance of the same class as the current permission.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSubsetOf">
+      <MemberSignature Language="C#" Value="public override bool IsSubsetOf (System.Security.IPermission target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsSubsetOf(class System.Security.IPermission target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.IsSubsetOf(System.Security.IPermission)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Security.IPermission" />
+      </Parameters>
+      <Docs>
+        <param name="target">A permission that is to be tested for the subset relationship. This permission must be of the same type as the current permission.</param>
+        <summary>Determines whether the current <see cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission" /> is a subset of the specified <paramref name="target" /> permission.</summary>
+        <returns>
+          <see langword="True" /> if the current <see cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission" /> is a subset of the specified permission; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The current <xref:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission> is a subset of the specified permission if the current permission specifies a set of operations that is wholly contained by the specified permission. For example, a permission that represents access to "*C:\example.txt*" is a subset of a permission that represents access to "*C:\\*". If this method returns `true`, the current permission represents no more access to the protected resource than does the specified permission.  
+  
+ The following statements are required to be `true` for all implementations of the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.IsSubsetOf%2A> method. X, Y, and Z represent <xref:System.Security.IPermission> objects that are not a `null` reference (`Nothing` in Visual Basic).  
+  
+-   X.IsSubsetOf(X) returns `true`.  
+  
+-   X.IsSubsetOf(Y) returns the same value as Y.IsSubsetOf(X) if and only if X and Y represent the same set of permissions.  
+  
+-   If X.IsSubsetOf(Y) and Y.IsSubsetOf(Z) both return `true`, X.IsSubsetOf(Z) returns `true`.  
+  
+ If X represents an empty [IPermission](http://go.microsoft.com/fwlink?LinkID=98303) object with a permission state of None and Y represents an IPermission object that is a `null` reference (`Nothing` in Visual Basic), X.IsSubsetOf(Y) returns `true`. If Z is also an empty permission, the compound set operation X.Union(Z).IsSubsetOf(Y) also returns `true` because the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.Union%2A> of two empty permissions is an empty permission.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The parameter is a <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUnrestricted">
+      <MemberSignature Language="C#" Value="public bool IsUnrestricted ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUnrestricted() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.IsUnrestricted" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value specifying whether the current <see cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission" /> is unrestricted.</summary>
+        <returns>
+          <see langword="True" /> if the current permission is unrestricted; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An unrestricted permission represents access to any and all resources protected by the permission.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToXml">
+      <MemberSignature Language="C#" Value="public override System.Security.SecurityElement ToXml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.SecurityElement ToXml() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.ToXml" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.SecurityElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an XML encoding of the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission" /> and its current state.</summary>
+        <returns>An XML encoding of the permission, including any state information.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In general, permission class methods are used by the infrastructure and are not intended for use in applications.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Union">
+      <MemberSignature Language="C#" Value="public override System.Security.IPermission Union (System.Security.IPermission target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Union(class System.Security.IPermission target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.Union(System.Security.IPermission)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Security.IPermission" />
+      </Parameters>
+      <Docs>
+        <param name="target">A permission to combine with the current permission. It must be of the same type as the current permission.</param>
+        <summary>Creates a permission that is the union of the current <see cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission" /> and the specified <paramref name="target" /> permission.</summary>
+        <returns>A new permission that represents the <see cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.Union(System.Security.IPermission)" /> of the current <see cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission" /> and the specified permission.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The result of a call to <xref:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.Union%2A> is a permission that represents all the operations represented by both the current <xref:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission> and the specified permission. Any demand that passes either permission passes their union.  
+  
+ The following statements are required to be `true` for all implementations of the Union method. X and Y represent <xref:System.Security.IPermission> objects that are not a `null` reference (`Nothing` in Visual Basic).  
+  
+-   X.Union(X) returns an object that has the same value as X.  
+  
+-   X.Union(Y) returns an object that has the same value as the object returned by Y.Union(X).  
+  
+-   X.Union(a `null` reference (`Nothing` in Visual Basic)) returns an object that has the same value as X.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The parameter is a <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

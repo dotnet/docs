@@ -1,0 +1,56 @@
+<Type Name="IContributeObjectSink" FullName="System.Runtime.Remoting.Contexts.IContributeObjectSink">
+  <TypeSignature Language="C#" Value="public interface IContributeObjectSink" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IContributeObjectSink" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Contexts.IContributeObjectSink" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contributes an object-specific interception sink on the server end of a remoting call.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Remoting.Contexts.IContributeObjectSink> interface is implemented by context properties in a <xref:System.Runtime.Remoting.Contexts.Context> class that want to contribute an object-specific interception sink on the server end of a remoting call.  
+  
+ The server object chain is composed from those context properties in the server object's context that implement <xref:System.Runtime.Remoting.Contexts.IContributeObjectSink>. [&#91;\<topic://cpconjust-in-timeactivation>&#93;](http://msdn.microsoft.com/en-us/6f7a7912-93cd-4c94-824f-42554c17c8d4) is an example of such a property; that is, the message sink would activate the object after the call arrives, and then pass the message on to the object.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetObjectSink">
+      <MemberSignature Language="C#" Value="public System.Runtime.Remoting.Messaging.IMessageSink GetObjectSink (MarshalByRefObject obj, System.Runtime.Remoting.Messaging.IMessageSink nextSink);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Remoting.Messaging.IMessageSink GetObjectSink(class System.MarshalByRefObject obj, class System.Runtime.Remoting.Messaging.IMessageSink nextSink) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.IContributeObjectSink.GetObjectSink(System.MarshalByRefObject,System.Runtime.Remoting.Messaging.IMessageSink)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Messaging.IMessageSink</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.MarshalByRefObject" />
+        <Parameter Name="nextSink" Type="System.Runtime.Remoting.Messaging.IMessageSink" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The server object which provides the message sink that is to be chained in front of the given chain.</param>
+        <param name="nextSink">The chain of sinks composed so far.</param>
+        <summary>Chains the message sink of the provided server object in front of the given sink chain.</summary>
+        <returns>The composite sink chain.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

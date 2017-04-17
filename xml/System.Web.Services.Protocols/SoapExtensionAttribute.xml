@@ -1,0 +1,115 @@
+<Type Name="SoapExtensionAttribute" FullName="System.Web.Services.Protocols.SoapExtensionAttribute">
+  <TypeSignature Language="C#" Value="public abstract class SoapExtensionAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SoapExtensionAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapExtensionAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>When overridden in a derived class, specifies a SOAP extension should run with an XML Web service method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ XML Web service methods created using ASP.NET can be configured to run with a SOAP extension by applying an attribute to the XML Web service method. When a custom extension attribute is added to an XML Web service method or a method on a client proxy class, ASP.NET invokes the associated extension at the appropriate time. An extension attribute is a custom attribute class deriving from <xref:System.Web.Services.Protocols.SoapExtensionAttribute>. Derived attributes must override the <xref:System.Web.Services.Protocols.SoapExtensionAttribute.ExtensionType%2A> property to return the type of extension that is associated with the attribute.  
+  
+   
+  
+## Examples  
+ The following `TraceExtensionAttribute` class derives from <xref:System.Web.Services.Protocols.SoapExtensionAttribute> to support applying the attribute to an XML Web service method or a method in an XML Web service client proxy class. When applied to either, the `TraceExtension` SOAP extension runs with the method.  
+  
+ [!code-cpp[Classic SoapExtensionAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic SoapExtensionAttribute Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic SoapExtensionAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SoapExtensionAttribute Example/CS/source.cs#1)]
+ [!code-vb[Classic SoapExtensionAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic SoapExtensionAttribute Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SoapExtensionAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapExtensionAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapExtensionAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtensionType">
+      <MemberSignature Language="C#" Value="public abstract Type ExtensionType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ExtensionType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapExtensionAttribute.ExtensionType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the <see cref="T:System.Type" /> of the SOAP extension.</summary>
+        <value>The <see cref="T:System.Type" /> of the SOAP extension.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Derived classes must override the <xref:System.Web.Services.Protocols.SoapExtensionAttribute.ExtensionType%2A> property to return the type of the SOAP extension.  
+  
+   
+  
+## Examples  
+ The following code example is a typical implementation of the <xref:System.Web.Services.Protocols.SoapExtensionAttribute.ExtensionType%2A> property.  
+  
+ [!code-cpp[SoapExtensionAttribute#2](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapExtensionAttribute/CPP/SoapExtensionAttribute.cpp#2)]
+ [!code-csharp[SoapExtensionAttribute#2](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapExtensionAttribute/CS/soapextensionattribute.cs#2)]
+ [!code-vb[SoapExtensionAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapExtensionAttribute/VB/soapextensionattribute.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Priority">
+      <MemberSignature Language="C#" Value="public abstract int Priority { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Priority" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapExtensionAttribute.Priority" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets or set the priority of the SOAP extension.</summary>
+        <value>The priority of the SOAP extension.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example is a typical implementation of the <xref:System.Web.Services.Protocols.SoapExtensionAttribute.Priority%2A> property.  
+  
+ SoapExtensionAttribute#3  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

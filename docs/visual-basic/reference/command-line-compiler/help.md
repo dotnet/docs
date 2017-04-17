@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "? compiler option [Visual Basic]"
 ms.assetid: eb984aa5-ac98-4d0b-a0d2-24238d7bc8dc
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -1,0 +1,210 @@
+<Type Name="PrintPageEventArgs" FullName="System.Drawing.Printing.PrintPageEventArgs">
+  <TypeSignature Language="C#" Value="public class PrintPageEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PrintPageEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrintPageEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Drawing.Printing.PrintDocument.PrintPage" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.Printing.PrintPageEventArgs.MarginBounds%2A> property retrieves the rectangular area that represents the portion of the page between the margins. The <xref:System.Drawing.Printing.PrintPageEventArgs.PageBounds%2A> property retrieves the rectangular area that represents the total area of the page. The <xref:System.Drawing.Printing.PrintPageEventArgs.Graphics%2A> property defines the graphics object with which to do the painting. The <xref:System.Drawing.Printing.PrintPageEventArgs.PageSettings%2A> property retrieves the printer settings for the current page. The remaining properties indicate whether a print job should be canceled or whether a print job has more pages.  
+  
+ For more information about printing with Windows Forms, see the <xref:System.Drawing.Printing> namespace overview. If you wish to print from a Windows Presentation Foundation application, see the <xref:System.Printing> namespace.  
+  
+   
+  
+## Examples  
+ The following code example assumes a <xref:System.Windows.Forms.Button> named `printButton` and a <xref:System.Drawing.Printing.PrintDocument> named `pd` have been created on a <xref:System.Windows.Forms.Form>. Make sure the <xref:System.Windows.Forms.Control.Click> event for the <xref:System.Windows.Forms.Button> is associated with the `printButton_Click` method and the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event of the <xref:System.Drawing.Printing.PrintDocument> is associated with the `pd_PrintPage` method in the example. The `printButton_Click` method from the example calls the <xref:System.Drawing.Printing.PrintDocument.Print%2A> method raising the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event, and prints the .bmp file specified in the `pd_PrintPage` method. To run this example, change the path to the bitmap you want to print.  
+  
+ Use the <xref:System.Drawing>, <xref:System.Drawing.Printing>, and <xref:System.Windows.Forms> namespaces for this example.  
+  
+ [!code-cpp[Classic PrintPageEventArgs Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PrintPageEventArgs Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic PrintPageEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PrintPageEventArgs Example/CS/source.cs#1)]
+ [!code-vb[Classic PrintPageEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PrintPageEventArgs Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrintPageEventArgs (System.Drawing.Graphics graphics, System.Drawing.Rectangle marginBounds, System.Drawing.Rectangle pageBounds, System.Drawing.Printing.PageSettings pageSettings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle marginBounds, valuetype System.Drawing.Rectangle pageBounds, class System.Drawing.Printing.PageSettings pageSettings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrintPageEventArgs.#ctor(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Drawing.Printing.PageSettings)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="marginBounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="pageBounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="pageSettings" Type="System.Drawing.Printing.PageSettings" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> used to paint the item.</param>
+        <param name="marginBounds">The area between the margins.</param>
+        <param name="pageBounds">The total area of the paper.</param>
+        <param name="pageSettings">The <see cref="T:System.Drawing.Printing.PageSettings" /> for the page.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.PrintPageEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cancel">
+      <MemberSignature Language="C#" Value="public bool Cancel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Cancel" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrintPageEventArgs.Cancel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the print job should be canceled.</summary>
+        <value>
+          <see langword="true" /> if the print job should be canceled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Graphics">
+      <MemberSignature Language="C#" Value="public System.Drawing.Graphics Graphics { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Graphics Graphics" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrintPageEventArgs.Graphics" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Graphics</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Drawing.Graphics" /> used to paint the page.</summary>
+        <value>The <see cref="T:System.Drawing.Graphics" /> used to paint the page.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example assumes a <xref:System.Windows.Forms.Button> named `printButton` and a <xref:System.Drawing.Printing.PrintDocument> named `pd` have been created on a <xref:System.Windows.Forms.Form>. Make sure the <xref:System.Windows.Forms.Control.Click> event for the <xref:System.Windows.Forms.Button> is associated with the `printButton_Click` method and the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event of the <xref:System.Drawing.Printing.PrintDocument> is associated with the `pd_PrintPage` method in the example. The `printButton_Click` method from the example calls the <xref:System.Drawing.Printing.PrintDocument.Print%2A> method raising the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event, and prints the .bmp file specified in the `pd_PrintPage` method. To run this example, change the path to the bitmap you want to print.  
+  
+ Use the <xref:System.Drawing>, <xref:System.Drawing.Printing>, and <xref:System.Windows.Forms> namespaces for this example.  
+  
+ [!code-cpp[Classic PrintPageEventArgs Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PrintPageEventArgs Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic PrintPageEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PrintPageEventArgs Example/CS/source.cs#1)]
+ [!code-vb[Classic PrintPageEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PrintPageEventArgs Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasMorePages">
+      <MemberSignature Language="C#" Value="public bool HasMorePages { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasMorePages" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrintPageEventArgs.HasMorePages" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether an additional page should be printed.</summary>
+        <value>
+          <see langword="true" /> if an additional page should be printed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example assumes a <xref:System.Windows.Forms.Button> named `printButton` and a <xref:System.Drawing.Printing.PrintDocument> named `pd` have been created on a <xref:System.Windows.Forms.Form>. Make sure the <xref:System.Windows.Forms.Control.Click> event for the <xref:System.Windows.Forms.Button> is associated with the `printButton_Click` method and the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event of the <xref:System.Drawing.Printing.PrintDocument> is associated with the `pd_PrintPage` method in the example. The `printButton_Click` method from the example calls the <xref:System.Drawing.Printing.PrintDocument.Print%2A> method raising the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event, and prints the .bmp file specified in the `pd_PrintPage` method. To run this example, change the path to the bitmap you want to print.  
+  
+ Use the <xref:System.Drawing>, <xref:System.Drawing.Printing>, and <xref:System.Windows.Forms> namespaces for this example.  
+  
+ [!code-cpp[Classic PrintPageEventArgs Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PrintPageEventArgs Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic PrintPageEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PrintPageEventArgs Example/CS/source.cs#1)]
+ [!code-vb[Classic PrintPageEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PrintPageEventArgs Example/VB/source.vb#1)]  
+  
+ For another example that shows how to use <xref:System.Drawing.Printing.PrintPageEventArgs.HasMorePages%2A>, see [How to: Print a Multi-Page Text File in Windows Forms](~/docs/framework/winforms/advanced/how-to-print-a-multi-page-text-file-in-windows-forms.md)  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MarginBounds">
+      <MemberSignature Language="C#" Value="public System.Drawing.Rectangle MarginBounds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle MarginBounds" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrintPageEventArgs.MarginBounds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the rectangular area that represents the portion of the page inside the margins.</summary>
+        <value>The rectangular area, measured in hundredths of an inch, that represents the portion of the page inside the margins.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageBounds">
+      <MemberSignature Language="C#" Value="public System.Drawing.Rectangle PageBounds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle PageBounds" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrintPageEventArgs.PageBounds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the rectangular area that represents the total area of the page.</summary>
+        <value>The rectangular area that represents the total area of the page.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Most printers cannot print at the very edge of the page.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageSettings">
+      <MemberSignature Language="C#" Value="public System.Drawing.Printing.PageSettings PageSettings { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Printing.PageSettings PageSettings" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrintPageEventArgs.PageSettings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PageSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the page settings for the current page.</summary>
+        <value>The page settings for the current page.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

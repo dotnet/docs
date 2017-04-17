@@ -1,0 +1,39 @@
+<Type Name="VBArrayObject" FullName="Microsoft.JScript.VBArrayObject">
+  <TypeSignature Language="C#" Value="public class VBArrayObject : Microsoft.JScript.JSObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VBArrayObject extends Microsoft.JScript.JSObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.VBArrayObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.JSObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a VBArray object. This class belongs to the built-in object model category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VBArrayObject (Microsoft.JScript.VBArrayPrototype parent, Array array);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.JScript.VBArrayPrototype parent, class System.Array array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.VBArrayObject.#ctor(Microsoft.JScript.VBArrayPrototype,System.Array)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parent" Type="Microsoft.JScript.VBArrayPrototype" />
+        <Parameter Name="array" Type="System.Array" />
+      </Parameters>
+      <Docs>
+        <param name="parent">The parent of the object.</param>
+        <param name="array">The underlying array that the class represents.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.VBArrayObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

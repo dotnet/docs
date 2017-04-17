@@ -1,0 +1,170 @@
+<Type Name="FederatedAuthentication" FullName="System.IdentityModel.Services.FederatedAuthentication">
+  <TypeSignature Language="C#" Value="public static class FederatedAuthentication" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit FederatedAuthentication extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.FederatedAuthentication" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides access to state pertinent to all HTTP modules relevant to federated authentication in the web application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can access the modules that are configured for the web application through the static properties exposed by the <xref:System.IdentityModel.Services.FederatedAuthentication> class. The <xref:System.IdentityModel.Services.FederatedAuthentication.GetHttpModule%2A> method provides an extension point through which other application-defined modules that derive from <xref:System.IdentityModel.Services.HttpModuleBase> and that are configured for the application can be accessed.  
+  
+ The <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=fullName> property references a singleton instance of <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> that provides configuration settings for the HTTP modules. The first time the property is accessed by one of the HTTP modules, a <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> instance is initialized from the [\&lt;federationConfiguration\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/federationconfiguration.md) element in the configuration file and the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfigurationCreated> is raised to provide an application with the opportunity to modify the configuration object before it is used to initialize module properties. The same <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> instance is returned on each subsequent access of the property.  
+  
+> [!IMPORTANT]
+>  The claims authorization manager (<xref:System.Security.Claims.ClaimsAuthorizationManager>) that is used to evaluate claims based access checks when using the <xref:System.IdentityModel.Services.ClaimsPrincipalPermission> class or the <xref:System.IdentityModel.Services.ClaimsPrincipalPermissionAttribute> class is configured on the <xref:System.IdentityModel.Configuration.IdentityConfiguration> object that is set on the federation configuration object referenced through the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=fullName> property. This is true for all applications whether they are ASP.NET applications or not.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ClaimsAuthorizationModule">
+      <MemberSignature Language="C#" Value="public static System.IdentityModel.Services.ClaimsAuthorizationModule ClaimsAuthorizationModule { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.IdentityModel.Services.ClaimsAuthorizationModule ClaimsAuthorizationModule" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.FederatedAuthentication.ClaimsAuthorizationModule" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Services.ClaimsAuthorizationModule</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the claims authorization module used by the web application.</summary>
+        <value>The claims authorization module.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FederationConfiguration">
+      <MemberSignature Language="C#" Value="public static System.IdentityModel.Services.Configuration.FederationConfiguration FederationConfiguration { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.IdentityModel.Services.Configuration.FederationConfiguration FederationConfiguration" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Services.Configuration.FederationConfiguration</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the singleton <see cref="T:System.IdentityModel.Services.Configuration.FederationConfiguration" /> instance used by the HTTP modules in this web application.</summary>
+        <value>The federation configuration instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object is created and initialized from the [\&lt;federationConfiguration\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/federationconfiguration.md) element in the configuration file the first time this property is accessed by one of the HTTP modules. Just after the configuration object has been initialized, the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfigurationCreated> event is raised to provide a developer with an opportunity to modify the newly created configuration object before it is used to initialize any of the configured HTTP modules. It can be accessed from the <xref:System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs.FederationConfiguration%2A?displayProperty=fullName> property in an event handler.  
+  
+ On subsequent accesses, the same configuration instance is returned.  
+  
+ Depending on whether specific modules are present, the property is accessed from within the following methods during initialization: <xref:System.IdentityModel.Services.ClaimsAuthorizationModule.InitializePropertiesFromConfiguration%2A?displayProperty=fullName>, <xref:System.IdentityModel.Services.SessionAuthenticationModule.InitializePropertiesFromConfiguration%2A?displayProperty=fullName>, and <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.InitializePropertiesFromConfiguration%2A?displayProperty=fullName>.  
+  
+> [!IMPORTANT]
+>  The claims authorization manager (<xref:System.Security.Claims.ClaimsAuthorizationManager>) that is used to evaluate claims based access checks when using the <xref:System.IdentityModel.Services.ClaimsPrincipalPermission> class or the <xref:System.IdentityModel.Services.ClaimsPrincipalPermissionAttribute> class is configured on the <xref:System.IdentityModel.Configuration.IdentityConfiguration> object that is set on the federation configuration object referenced through the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=fullName> property. This is true for all applications whether they are ASP.NET applications or not.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs.FederationConfiguration" /> property is set to <see langword="null" /> by an event handler for the <see cref="E:System.IdentityModel.Services.FederatedAuthentication.FederationConfigurationCreated" /> event.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FederationConfigurationCreated">
+      <MemberSignature Language="C#" Value="public static event EventHandler&lt;System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs&gt; FederationConfigurationCreated;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs&gt; FederationConfigurationCreated" />
+      <MemberSignature Language="DocId" Value="E:System.IdentityModel.Services.FederatedAuthentication.FederationConfigurationCreated" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="P:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration" /> property is accessed for the first time by one of the HTTP modules in the web application.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfigurationCreated> event is raised when the first HTTP module in the web application references <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A> property. The first access of the this property causes a <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object to be created and initialized from the [\&lt;federationConfiguration\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/federationconfiguration.md) element in the configuration file. You can access the newly created <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object through the <xref:System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs.FederationConfiguration%2A?displayProperty=fullName> property in an event handler in order to examine or modify it before it is used to provide initialization for any of the HTTP modules configured for the application.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHttpModule&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T GetHttpModule&lt;T&gt; () where T : class, System.Web.IHttpModule;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T GetHttpModule&lt;class (class System.Web.IHttpModule) T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederatedAuthentication.GetHttpModule``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+            <InterfaceName>System.Web.IHttpModule</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">The type of the module.</typeparam>
+        <summary>Gets the HTTP module of the specified type that is being used by the web application.</summary>
+        <returns>The HTTP module of the specified type or <see langword="null" /> if a module of the specified type cannot be found.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionAuthenticationModule">
+      <MemberSignature Language="C#" Value="public static System.IdentityModel.Services.SessionAuthenticationModule SessionAuthenticationModule { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.IdentityModel.Services.SessionAuthenticationModule SessionAuthenticationModule" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.FederatedAuthentication.SessionAuthenticationModule" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Services.SessionAuthenticationModule</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the session authentication module (SAM) used by the web application.</summary>
+        <value>The session authentication module.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WSFederationAuthenticationModule">
+      <MemberSignature Language="C#" Value="public static System.IdentityModel.Services.WSFederationAuthenticationModule WSFederationAuthenticationModule { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.IdentityModel.Services.WSFederationAuthenticationModule WSFederationAuthenticationModule" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.FederatedAuthentication.WSFederationAuthenticationModule" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Services.WSFederationAuthenticationModule</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the WS-Federation Authentication Module (WSFAM) used by the web application.</summary>
+        <value>The WS-Federation Authentication Module.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

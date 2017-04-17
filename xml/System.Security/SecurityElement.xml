@@ -1,0 +1,943 @@
+<Type Name="SecurityElement" FullName="System.Security.SecurityElement">
+  <TypeSignature Language="C#" Value="public sealed class SecurityElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SecurityElement extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Security.SecurityElement" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the XML object model for encoding security objects. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is intended to be a lightweight implementation of a simple XML object model for use within the security system, and not for use as a general XML object model. This documentation assumes a basic knowledge of XML.  
+  
+ The simple XML object model for an element consists of the following parts:  
+  
+-   The tag is the element name.  
+  
+-   The attributes are zero or more name/value attribute pairs on the element.  
+  
+-   The children are zero or more elements nested within `<tag>` and `</tag>`.  
+  
+ It is strongly suggested that attribute based XML representation is used to express security elements and their values. This means properties of an element are expressed as attributes and property values are expressed as attribute values. Avoid nesting text within tags. For any `<tag>text</tag>` representation a representation of type `<tag value="text"/>` is usually available. Using this attribute-based XML representation increases readability and allows easy WMI portability of the resulting XML serialization.  
+  
+ An attribute name must be one character or longer, and cannot be `null`. If element-based value representation is used, elements with a text string that is `null` are represented in the `<tag/>` form; otherwise, text is delimited by the `<tag>` and `</tag>` tokens. Both forms can be combined with attributes, which are shown if present.  
+  
+ The tags, attributes, and text of elements, if present, are always case-sensitive. The XML form contains quotations and escapes where necessary. String values that include characters invalid for use in XML result in an <xref:System.ArgumentException>. These rules apply to all properties and methods.  
+  
+> [!NOTE]
+>  For performance reasons, character validity is only checked when the element is encoded into XML text form, and not on every set of a property or method. Static methods allow explicit checking where needed.  
+  
+   
+  
+## Examples  
+ The following example shows the use of members of the <xref:System.Security.SecurityElement> class.  
+  
+ [!code-cpp[SecurityElementMembers#1](~/samples/snippets/cpp/VS_Snippets_CLR/SecurityElementMembers/CPP/SecurityElementMembers.cpp#1)]
+ [!code-csharp[SecurityElementMembers#1](~/samples/snippets/csharp/VS_Snippets_CLR/SecurityElementMembers/CS/securityelementmembers.cs#1)]
+ [!code-vb[SecurityElementMembers#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/SecurityElementMembers/VB/Form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SecurityElement (string tag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string tag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="tag" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="tag">The tag name of an XML element.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.SecurityElement" /> class with the specified tag.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `tag` parameter must consist of a valid XML tag name. Use <xref:System.Security.SecurityElement.Escape%2A> to remove invalid characters from the string.  
+  
+   
+  
+## Examples  
+ The following code shows the use of  the <xref:System.Security.SecurityElement.%23ctor%2A> constructor to create a new <xref:System.Security.SecurityElement> object.  This code example is part of a larger example provided for the <xref:System.Security.SecurityElement> class.  
+  
+ [!code-cpp[SecurityElementMembers#2](~/samples/snippets/cpp/VS_Snippets_CLR/SecurityElementMembers/CPP/SecurityElementMembers.cpp#2)]
+ [!code-csharp[SecurityElementMembers#2](~/samples/snippets/csharp/VS_Snippets_CLR/SecurityElementMembers/CS/securityelementmembers.cs#2)]
+ [!code-vb[SecurityElementMembers#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/SecurityElementMembers/VB/Form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="tag" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="tag" /> parameter is invalid in XML.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SecurityElement (string tag, string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string tag, string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="tag" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="tag">The tag name of the XML element.</param>
+        <param name="text">The text content within the element.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.SecurityElement" /> class with the specified tag and text.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `text` parameter is `null` this constructor produces an element identical to the default constructor.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="tag" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="tag" /> parameter or <paramref name="text" /> parameter is invalid in XML.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAttribute">
+      <MemberSignature Language="C#" Value="public void AddAttribute (string name, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAttribute(string name, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.AddAttribute(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the attribute.</param>
+        <param name="value">The value of the attribute.</param>
+        <summary>Adds a name/value attribute to an XML element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Names and values in attributes should only contain valid XML attribute characters. XML attribute names must be unique. Use <xref:System.Security.SecurityElement.Escape%2A> to remove invalid characters from the string.  
+  
+ There is no support for quoted strings, so strings for name/value pairs should not contain quotes or other characters requiring quoting.  
+  
+   
+  
+## Examples  
+ The following code shows the use of the <xref:System.Security.SecurityElement.AddAttribute%2A> method to add a name/value attribute to an XML element. This code example is part of a larger example provided for the <xref:System.Security.SecurityElement> class.  
+  
+ [!code-cpp[SecurityElementMembers#4](~/samples/snippets/cpp/VS_Snippets_CLR/SecurityElementMembers/CPP/SecurityElementMembers.cpp#4)]
+ [!code-csharp[SecurityElementMembers#4](~/samples/snippets/csharp/VS_Snippets_CLR/SecurityElementMembers/CS/securityelementmembers.cs#4)]
+ [!code-vb[SecurityElementMembers#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/SecurityElementMembers/VB/Form1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter or <paramref name="value" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="name" /> parameter or <paramref name="value" /> parameter is invalid in XML.  
+  
+ -or-  
+  
+ An attribute with the name specified by the <paramref name="name" /> parameter already exists.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddChild">
+      <MemberSignature Language="C#" Value="public void AddChild (System.Security.SecurityElement child);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddChild(class System.Security.SecurityElement child) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.AddChild(System.Security.SecurityElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="child" Type="System.Security.SecurityElement" />
+      </Parameters>
+      <Docs>
+        <param name="child">The child element to add.</param>
+        <summary>Adds a child element to the XML element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The child element is added following any previously existing child elements.  
+  
+   
+  
+## Examples  
+ The following code shows the use of the <xref:System.Security.SecurityElement.AddChild%2A> method to add a child element to the XML element.  This code example is part of a larger example provided for the <xref:System.Security.SecurityElement> class.  
+  
+ [!code-cpp[SecurityElementMembers#5](~/samples/snippets/cpp/VS_Snippets_CLR/SecurityElementMembers/CPP/SecurityElementMembers.cpp#5)]
+ [!code-csharp[SecurityElementMembers#5](~/samples/snippets/csharp/VS_Snippets_CLR/SecurityElementMembers/CS/securityelementmembers.cs#5)]
+ [!code-vb[SecurityElementMembers#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/SecurityElementMembers/VB/Form1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="child" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Attribute">
+      <MemberSignature Language="C#" Value="public string Attribute (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Attribute(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.Attribute(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the attribute for which to search.</param>
+        <summary>Finds an attribute by name in an XML element.</summary>
+        <returns>The value associated with the named attribute, or <see langword="null" /> if no attribute with <paramref name="name" /> exists.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ With XML as follows, `Attribute("B")` would return "456".  
+  
+```  
+<thetag A="123" B="456" C="789">text</thetag>  
+```  
+  
+   
+  
+## Examples  
+ The following code shows the use of the <xref:System.Security.SecurityElement.Attribute%2A> method to find an attribute by name. This code example is part of a larger example provided for the <xref:System.Security.SecurityElement> class.  
+  
+ [!code-cpp[SecurityElementMembers#13](~/samples/snippets/cpp/VS_Snippets_CLR/SecurityElementMembers/CPP/SecurityElementMembers.cpp#13)]
+ [!code-csharp[SecurityElementMembers#13](~/samples/snippets/csharp/VS_Snippets_CLR/SecurityElementMembers/CS/securityelementmembers.cs#13)]
+ [!code-vb[SecurityElementMembers#13](~/samples/snippets/visualbasic/VS_Snippets_CLR/SecurityElementMembers/VB/Form1.vb#13)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Attributes">
+      <MemberSignature Language="C#" Value="public System.Collections.Hashtable Attributes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Hashtable Attributes" />
+      <MemberSignature Language="DocId" Value="P:System.Security.SecurityElement.Attributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Hashtable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the attributes of an XML element as name/value pairs.</summary>
+        <value>The <see cref="T:System.Collections.Hashtable" /> object for the attribute values of the XML element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each attribute is stored in the <xref:System.Collections.Hashtable> as a name/value pair.  
+  
+ Names and values in attributes should contain only valid XML attribute characters. Use <xref:System.Security.SecurityElement.Escape%2A> to remove invalid characters from the string.  
+  
+ There is no support for quoted strings, so strings for name/value pairs should not contain quotes or other characters requiring quoting.  
+  
+   
+  
+## Examples  
+ The following code shows the use of the <xref:System.Security.SecurityElement.Attributes%2A> property to get an attribute of an XML element. This code example is part of a larger example provided for the <xref:System.Security.SecurityElement> class.  
+  
+ [!code-cpp[SecurityElementMembers#15](~/samples/snippets/cpp/VS_Snippets_CLR/SecurityElementMembers/CPP/SecurityElementMembers.cpp#15)]
+ [!code-csharp[SecurityElementMembers#15](~/samples/snippets/csharp/VS_Snippets_CLR/SecurityElementMembers/CS/securityelementmembers.cs#15)]
+ [!code-vb[SecurityElementMembers#15](~/samples/snippets/visualbasic/VS_Snippets_CLR/SecurityElementMembers/VB/Form1.vb#15)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The name or value of the <see cref="T:System.Collections.Hashtable" /> object is invalid.</exception>
+        <exception cref="T:System.ArgumentException">The name is not a valid XML attribute name.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Children">
+      <MemberSignature Language="C#" Value="public System.Collections.ArrayList Children { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ArrayList Children" />
+      <MemberSignature Language="DocId" Value="P:System.Security.SecurityElement.Children" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ArrayList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the array of child elements of the XML element.</summary>
+        <value>The ordered child elements of the XML element as security elements.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a <xref:System.Security.SecurityElement> contains both <xref:System.Security.SecurityElement.Text%2A> and <xref:System.Security.SecurityElement.Children%2A>, <xref:System.Security.SecurityElement.Text%2A> will appear first.  
+  
+   
+  
+## Examples  
+ The following code shows the use of the <xref:System.Security.SecurityElement.Children%2A> property to get the array of child elements of the XML element. This code example is part of a larger example provided for the <xref:System.Security.SecurityElement> class.  
+  
+ [!code-cpp[SecurityElementMembers#14](~/samples/snippets/cpp/VS_Snippets_CLR/SecurityElementMembers/CPP/SecurityElementMembers.cpp#14)]
+ [!code-csharp[SecurityElementMembers#14](~/samples/snippets/csharp/VS_Snippets_CLR/SecurityElementMembers/CS/securityelementmembers.cs#14)]
+ [!code-vb[SecurityElementMembers#14](~/samples/snippets/visualbasic/VS_Snippets_CLR/SecurityElementMembers/VB/Form1.vb#14)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">A child of the XML parent node is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public System.Security.SecurityElement Copy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.SecurityElement Copy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.Copy" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Security.SecurityElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates and returns an identical copy of the current <see cref="T:System.Security.SecurityElement" /> object.</summary>
+        <returns>A copy of the current <see cref="T:System.Security.SecurityElement" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The copy includes both the <xref:System.Security.SecurityElement.Children%2A> and <xref:System.Security.SecurityElement.Attributes%2A> properties.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equal">
+      <MemberSignature Language="C#" Value="public bool Equal (System.Security.SecurityElement other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equal(class System.Security.SecurityElement other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.Equal(System.Security.SecurityElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Security.SecurityElement" />
+      </Parameters>
+      <Docs>
+        <param name="other">An XML element object to which to compare the current XML element object.</param>
+        <summary>Compares two XML element objects for equality.</summary>
+        <returns>
+          <see langword="true" /> if the tag, attribute names and values, child elements, and text fields in the current XML element are identical to their counterparts in the <paramref name="other" /> parameter; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If there are child elements, comparison extends recursively to them.  
+  
+ There is no support for comparing different XML representations of the same characters.  
+  
+   
+  
+## Examples  
+ The following code shows the use of the <xref:System.Security.SecurityElement.Equal%2A> method to compare two XML elements. This code example is part of a larger example provided for the <xref:System.Security.SecurityElement> class.  
+  
+ [!code-cpp[SecurityElementMembers#22](~/samples/snippets/cpp/VS_Snippets_CLR/SecurityElementMembers/CPP/SecurityElementMembers.cpp#22)]
+ [!code-csharp[SecurityElementMembers#22](~/samples/snippets/csharp/VS_Snippets_CLR/SecurityElementMembers/CS/securityelementmembers.cs#22)]
+ [!code-vb[SecurityElementMembers#22](~/samples/snippets/visualbasic/VS_Snippets_CLR/SecurityElementMembers/VB/Form1.vb#22)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Escape">
+      <MemberSignature Language="C#" Value="public static string Escape (string str);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Escape(string str) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.Escape(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="str">The string within which to escape invalid characters.</param>
+        <summary>Replaces invalid XML characters in a string with their valid XML equivalent.</summary>
+        <returns>The input string with invalid characters replaced.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to replace invalid characters in a string before using the string in a <xref:System.Security.SecurityElement>. If invalid characters are used in a <xref:System.Security.SecurityElement> without being escaped, an <xref:System.ArgumentException> is thrown.  
+  
+ The following table shows the invalid XML characters and their escaped equivalents.  
+  
+|invalid XML Character|Replaced With|  
+|---------------------------|-------------------|  
+|"\<"|"&lt;"|  
+|">"|"&gt;"|  
+|"\\""|"&quot;"|  
+|"\\'"|"&apos;"|  
+|"&"|"&amp;"|  
+  
+   
+  
+## Examples  
+ The following code shows the use of the <xref:System.Security.SecurityElement.Escape%2A> method to replace invalid XML characters in a string with their valid XML equivalent. This code example is part of a larger example provided for the <xref:System.Security.SecurityElement> class.  
+  
+ [!code-cpp[SecurityElementMembers#19](~/samples/snippets/cpp/VS_Snippets_CLR/SecurityElementMembers/CPP/SecurityElementMembers.cpp#19)]
+ [!code-csharp[SecurityElementMembers#19](~/samples/snippets/csharp/VS_Snippets_CLR/SecurityElementMembers/CS/securityelementmembers.cs#19)]
+ [!code-vb[SecurityElementMembers#19](~/samples/snippets/visualbasic/VS_Snippets_CLR/SecurityElementMembers/VB/Form1.vb#19)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromString">
+      <MemberSignature Language="C#" Value="public static System.Security.SecurityElement FromString (string xml);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.SecurityElement FromString(string xml) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.FromString(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.SecurityElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xml" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xml">The XML-encoded string from which to create the security element.</param>
+        <summary>Creates a security element from an XML-encoded string.</summary>
+        <returns>A <see cref="T:System.Security.SecurityElement" /> created from the XML.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Do not use single quotation marks in the XML string; instead, use escaped double quotation marks. For example, instead of "`<value name='Company'>Microsoft</value>"` use "`<value name=\"Company\">Microsoft</value>"`.  
+  
+ Using single quotation marks can result in either an exception being thrown or, in some cases, the single quotation marks being treated as text in the string.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.XmlSyntaxException">
+          <paramref name="xml" /> contains one or more single quotation mark characters.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="xml" /> is<see langword=" null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValidAttributeName">
+      <MemberSignature Language="C#" Value="public static bool IsValidAttributeName (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsValidAttributeName(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.IsValidAttributeName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The attribute name to test for validity.</param>
+        <summary>Determines whether a string is a valid attribute name.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="name" /> parameter is a valid XML attribute name; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be used to test an attribute before adding it to a security element.  
+  
+   
+  
+## Examples  
+ The following code shows the use of the <xref:System.Security.SecurityElement.IsValidAttributeName%2A> method to determine whether a string is a valid attribute name. This code example is part of a larger example provided for the <xref:System.Security.SecurityElement> class.  
+  
+ [!code-cpp[SecurityElementMembers#6](~/samples/snippets/cpp/VS_Snippets_CLR/SecurityElementMembers/CPP/SecurityElementMembers.cpp#6)]
+ [!code-csharp[SecurityElementMembers#6](~/samples/snippets/csharp/VS_Snippets_CLR/SecurityElementMembers/CS/securityelementmembers.cs#6)]
+ [!code-vb[SecurityElementMembers#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/SecurityElementMembers/VB/Form1.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValidAttributeValue">
+      <MemberSignature Language="C#" Value="public static bool IsValidAttributeValue (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsValidAttributeValue(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.IsValidAttributeValue(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">The attribute value to test for validity.</param>
+        <summary>Determines whether a string is a valid attribute value.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="value" /> parameter is a valid XML attribute value; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be used to test an attribute before adding it to a security element.  
+  
+   
+  
+## Examples  
+ The following code shows the use of the <xref:System.Security.SecurityElement.IsValidAttributeValue%2A> method to determine whether a string is a valid attribute value. This code example is part of a larger example provided for the <xref:System.Security.SecurityElement> class.  
+  
+ [!code-cpp[SecurityElementMembers#7](~/samples/snippets/cpp/VS_Snippets_CLR/SecurityElementMembers/CPP/SecurityElementMembers.cpp#7)]
+ [!code-csharp[SecurityElementMembers#7](~/samples/snippets/csharp/VS_Snippets_CLR/SecurityElementMembers/CS/securityelementmembers.cs#7)]
+ [!code-vb[SecurityElementMembers#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/SecurityElementMembers/VB/Form1.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValidTag">
+      <MemberSignature Language="C#" Value="public static bool IsValidTag (string tag);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsValidTag(string tag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.IsValidTag(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tag" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="tag">The tag to test for validity.</param>
+        <summary>Determines whether a string is a valid tag.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="tag" /> parameter is a valid XML tag; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This can be used to test a <xref:System.Security.SecurityElement.Tag%2A> before setting it.  
+  
+   
+  
+## Examples  
+ The following code shows the use of the <xref:System.Security.SecurityElement.IsValidTag%2A> method to determine whether a string is a valid attribute tag. This code example is part of a larger example provided for the <xref:System.Security.SecurityElement> class.  
+  
+ [!code-cpp[SecurityElementMembers#10](~/samples/snippets/cpp/VS_Snippets_CLR/SecurityElementMembers/CPP/SecurityElementMembers.cpp#10)]
+ [!code-csharp[SecurityElementMembers#10](~/samples/snippets/csharp/VS_Snippets_CLR/SecurityElementMembers/CS/securityelementmembers.cs#10)]
+ [!code-vb[SecurityElementMembers#10](~/samples/snippets/visualbasic/VS_Snippets_CLR/SecurityElementMembers/VB/Form1.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValidText">
+      <MemberSignature Language="C#" Value="public static bool IsValidText (string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsValidText(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.IsValidText(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">The text to test for validity.</param>
+        <summary>Determines whether a string is valid as text within an XML element.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="text" /> parameter is a valid XML text element; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be used to test <xref:System.Security.SecurityElement.Text%2A> before setting it.  
+  
+   
+  
+## Examples  
+ The following code shows the use of the <xref:System.Security.SecurityElement.IsValidText%2A> method to determine whether a string is valid as XML element text. This code example is part of a larger example provided for the <xref:System.Security.SecurityElement> class.  
+  
+ [!code-cpp[SecurityElementMembers#9](~/samples/snippets/cpp/VS_Snippets_CLR/SecurityElementMembers/CPP/SecurityElementMembers.cpp#9)]
+ [!code-csharp[SecurityElementMembers#9](~/samples/snippets/csharp/VS_Snippets_CLR/SecurityElementMembers/CS/securityelementmembers.cs#9)]
+ [!code-vb[SecurityElementMembers#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/SecurityElementMembers/VB/Form1.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchForChildByTag">
+      <MemberSignature Language="C#" Value="public System.Security.SecurityElement SearchForChildByTag (string tag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.SecurityElement SearchForChildByTag(string tag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.SearchForChildByTag(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.SecurityElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tag" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="tag">The tag for which to search in child elements.</param>
+        <summary>Finds a child by its tag name.</summary>
+        <returns>The first child XML element with the specified tag value, or <see langword="null" /> if no child element with <paramref name="tag" /> exists.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ With XML as follows, `SearchForChildByTag("second")` would return the child element `<second>`.  
+  
+```  
+<thetag A="123" B="456" C="789"> <first>text1</first>  
+       <second>text2</second></thetag>  
+```  
+  
+   
+  
+## Examples  
+ The following code shows the use of the <xref:System.Security.SecurityElement.SearchForChildByTag%2A> method to find a child by its tag name. This code example is part of a larger example provided for the <xref:System.Security.SecurityElement> class.  
+  
+ [!code-cpp[SecurityElementMembers#17](~/samples/snippets/cpp/VS_Snippets_CLR/SecurityElementMembers/CPP/SecurityElementMembers.cpp#17)]
+ [!code-csharp[SecurityElementMembers#17](~/samples/snippets/csharp/VS_Snippets_CLR/SecurityElementMembers/CS/securityelementmembers.cs#17)]
+ [!code-vb[SecurityElementMembers#17](~/samples/snippets/visualbasic/VS_Snippets_CLR/SecurityElementMembers/VB/Form1.vb#17)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="tag" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchForTextOfTag">
+      <MemberSignature Language="C#" Value="public string SearchForTextOfTag (string tag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string SearchForTextOfTag(string tag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.SearchForTextOfTag(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tag" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="tag">The tag for which to search in child elements.</param>
+        <summary>Finds a child by its tag name and returns the contained text.</summary>
+        <returns>The text contents of the first child element with the specified tag value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is equivalent to the following:  
+  
+ [!code-cpp[System.Security.SecurityElement#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.security.securityelement/cpp/remarks.cpp#1)]
+ [!code-csharp[System.Security.SecurityElement#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.security.securityelement/cs/remarks.cs#1)]
+ [!code-vb[System.Security.SecurityElement#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.security.securityelement/vb/remarks.vb#1)]  
+  
+ With XML as follows, `SearchForTextOfTag("second")` would return "text2".  
+  
+```  
+<thetag A="123" B="456" C="789"> <first>text1</first>  
+    <second>text2</second></thetag>  
+```  
+  
+   
+  
+## Examples  
+ The following code shows the use of the <xref:System.Security.SecurityElement.SearchForTextOfTag%2A> method to find a child by its tag name and return the contained text. This code example is part of a larger example provided for the <xref:System.Security.SecurityElement> class.  
+  
+ [!code-cpp[SecurityElementMembers#18](~/samples/snippets/cpp/VS_Snippets_CLR/SecurityElementMembers/CPP/SecurityElementMembers.cpp#18)]
+ [!code-csharp[SecurityElementMembers#18](~/samples/snippets/csharp/VS_Snippets_CLR/SecurityElementMembers/CS/securityelementmembers.cs#18)]
+ [!code-vb[SecurityElementMembers#18](~/samples/snippets/visualbasic/VS_Snippets_CLR/SecurityElementMembers/VB/Form1.vb#18)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tag" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Tag">
+      <MemberSignature Language="C#" Value="public string Tag { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Tag" />
+      <MemberSignature Language="DocId" Value="P:System.Security.SecurityElement.Tag" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the tag name of an XML element.</summary>
+        <value>The tag name of an XML element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In XML, the tag appears in the script as appears below:  
+  
+```  
+<tag attributes>text</tag>  
+```  
+  
+ If this element has child elements, the children will replace `text`.  
+  
+ Assign only valid XML tag strings to this property. Use <xref:System.Security.SecurityElement.Escape%2A> to remove invalid characters from the string.  
+  
+   
+  
+## Examples  
+ The following code shows the use of the <xref:System.Security.SecurityElement.Tag%2A> property to get the tag name of an XML element. This code example is part of a larger example provided for the <xref:System.Security.SecurityElement> class.  
+  
+ [!code-cpp[SecurityElementMembers#11](~/samples/snippets/cpp/VS_Snippets_CLR/SecurityElementMembers/CPP/SecurityElementMembers.cpp#11)]
+ [!code-csharp[SecurityElementMembers#11](~/samples/snippets/csharp/VS_Snippets_CLR/SecurityElementMembers/CS/securityelementmembers.cs#11)]
+ [!code-vb[SecurityElementMembers#11](~/samples/snippets/visualbasic/VS_Snippets_CLR/SecurityElementMembers/VB/Form1.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The tag is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The tag is not valid in XML.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:System.Security.SecurityElement.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text within an XML element.</summary>
+        <value>The value of the text within an XML element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The text should not contain XML special characters. Use <xref:System.Security.SecurityElement.Escape%2A> to remove invalid characters from the string.  
+  
+ If a <xref:System.Security.SecurityElement> contains both <xref:System.Security.SecurityElement.Text%2A> and <xref:System.Security.SecurityElement.Children%2A>, <xref:System.Security.SecurityElement.Text%2A> will appear first.  
+  
+   
+  
+## Examples  
+ The following code shows the use of the <xref:System.Security.SecurityElement.Text%2A> property to get the text of an XML element. This code example is part of a larger example provided for the <xref:System.Security.SecurityElement> class.  
+  
+ [!code-cpp[SecurityElementMembers#12](~/samples/snippets/cpp/VS_Snippets_CLR/SecurityElementMembers/CPP/SecurityElementMembers.cpp#12)]
+ [!code-csharp[SecurityElementMembers#12](~/samples/snippets/csharp/VS_Snippets_CLR/SecurityElementMembers/CS/securityelementmembers.cs#12)]
+ [!code-vb[SecurityElementMembers#12](~/samples/snippets/visualbasic/VS_Snippets_CLR/SecurityElementMembers/VB/Form1.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The text is not valid in XML.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.SecurityElement.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Produces a string representation of an XML element and its constituent attributes, child elements, and text.</summary>
+        <returns>The XML element and its contents.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is useful in debugging to see the XML representation of the element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrKILL_NoFilesFound1"
 ms.assetid: 218808a2-8e36-4f13-a60a-770624e1ace3
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

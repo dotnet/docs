@@ -1,0 +1,127 @@
+<Type Name="XpsFont" FullName="System.Windows.Xps.Packaging.XpsFont">
+  <TypeSignature Language="C#" Value="public class XpsFont : System.Windows.Xps.Packaging.XpsResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XpsFont extends System.Windows.Xps.Packaging.XpsResource" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.XpsFont" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Xps.Packaging.XpsResource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a font in an <see cref="T:System.Windows.Xps.Packaging.XpsDocument" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Xps.Packaging.XpsFont> class has no public constructor.  
+  
+ Use the <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddFont%2A> method to add a font and obtain a reference to it in a new document.  
+  
+ Use the <xref:System.Windows.Xps.Packaging.IXpsFixedPageReader.GetFont%2A> method to obtain a font reference in an existing document.  
+  
+ Based on settings of <xref:System.Windows.Xps.Serialization.XpsSerializationManager> and <xref:System.Windows.Xps.Serialization.XpsPackagingPolicy>, such as <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies> and <xref:System.Windows.Xps.Packaging.PackageInterleavingOrder>, the flush operation of the <xref:System.Windows.Xps.Packaging.XpsResource.Commit%2A> method of the <xref:System.Windows.Xps.Packaging.XpsFont> class may be delayed until the whole <xref:System.Windows.Xps.Packaging.XpsDocument> is closed.  
+  
+   
+  
+## Examples  
+ The following example shows how to add fonts to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+  
+ [!code-cpp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateaddpageresources)]
+ [!code-csharp[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateaddpageresources)]
+ [!code-vb[XpsCreate#XpsCreateAddPageResources](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateaddpageresources)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsObfuscated">
+      <MemberSignature Language="C#" Value="public bool IsObfuscated { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsObfuscated" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsFont.IsObfuscated" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the font is obfuscated.</summary>
+        <value>
+          <see langword="true" /> if the font is obfuscated; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about font obfuscation, see Section 2.1.7.3 "Embedded Font Obfuscation" in the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRestricted">
+      <MemberSignature Language="C#" Value="public bool IsRestricted { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsRestricted" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsFont.IsRestricted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether text that uses this font can be modified.</summary>
+        <value>
+          <see langword="true" /> if text that uses this font can be changed or edited; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the use of restricted fonts, see the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObfuscateFontData">
+      <MemberSignature Language="C#" Value="public static void ObfuscateFontData (byte[] fontData, Guid guid);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ObfuscateFontData(unsigned int8[] fontData, valuetype System.Guid guid) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsFont.ObfuscateFontData(System.Byte[],System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fontData" Type="System.Byte[]" />
+        <Parameter Name="guid" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="fontData">The typeface data to obfuscate.</param>
+        <param name="guid">The [!INCLUDE[TLA#tla_guid](~/includes/tlasharptla-guid-md.md)] to use to obfuscate the <c>fontdata</c>.</param>
+        <summary>Obfuscates the font typeface data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Xps.Packaging.XpsFont.ObfuscateFontData%2A> method is provided for use when you are legally obligated to obfuscate licensed proprietary fonts.  
+  
+ While this method does not provide encryption, the <xref:System.Windows.Xps.Packaging.XpsFont.ObfuscateFontData%2A> method can be used to inhibit users from unzipping proprietary [!INCLUDE[TLA#tla_opentype](~/includes/tlasharptla-opentype-md.md)] fonts and installing them separately for other uses.  
+  
+ For more information about font obfuscation, see Section 2.1.7.3 "Embedded Font Obfuscation" in the *XML Paper Specification (XPS)* available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

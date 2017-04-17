@@ -1,0 +1,121 @@
+<Type Name="MidpointRounding" FullName="System.MidpointRounding">
+  <TypeSignature Language="C#" Value="public enum MidpointRounding" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MidpointRounding extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.MidpointRounding" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies how mathematical rounding methods should process a number that is midway between two numbers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.MidpointRounding> with appropriate overloads of <xref:System.Math.Round%2A?displayProperty=fullName> to provide more control of the rounding process.  
+  
+ A rounding operation takes an original number with an implicit or specified precision; examines the next digit, which is at that precision plus one; and returns the nearest number with the same precision as the original number. For positive numbers, if the next digit is from 0 through 4, the nearest number is toward negative infinity. If the next digit is from 6 through 9, the nearest number is toward positive infinity. For negative numbers, if the next digit is from 0 through 4, the nearest number is toward positive infinity. If the next digit is from 6 through 9, the nearest number is toward negative infinity.  
+  
+ In the previous cases, the <xref:System.MidpointRounding> enumeration does not affect the result of the rounding operation. However, if the next digit is 5, which is the midpoint between two possible results, and all remaining digits are zero or there are no remaining digits, the nearest number is ambiguous. In this case, the <xref:System.MidpointRounding> enumeration enables you to specify whether the rounding operation returns the nearest number away from zero or the nearest even number.  
+  
+ The following table demonstrates the results of rounding some negative and positive numbers in conjunction with the values of <xref:System.MidpointRounding>. The precision used to round the numbers is zero, which means the number after the decimal point affects the rounding operation. For example, for the number -2.5, the digit after the decimal point is 5. Because that digit is the midpoint, you can use a <xref:System.MidpointRounding> value to determine the result of rounding. If AwayFromZero is specified, -3 is returned because it is the nearest number away from zero with a precision of zero. If ToEven is specified, -2 is returned because it is the nearest even number with a precision of zero.  
+  
+|Original number|AwayFromZero|ToEven|  
+|---------------------|------------------|------------|  
+|3.5|4|4|  
+|2.8|3|3|  
+|2.5|3|2|  
+|2.1|2|2|  
+|-2.1|-2|-2|  
+|-2.5|-3|-2|  
+|-2.8|-3|-3|  
+|-3.5|-4|-4|  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the <xref:System.Math.Round%2A> method in conjunction with the <xref:System.MidpointRounding> enumeration.  
+  
+ [!code-cpp[math.midpointrounding#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.midpointrounding/cpp/mpr.cpp#1)]
+ [!code-csharp[math.midpointrounding#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.midpointrounding/CS/mpr.cs#1)]
+ [!code-vb[math.midpointrounding#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.midpointrounding/VB/mpr.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AwayFromZero">
+      <MemberSignature Language="C#" Value="AwayFromZero" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.MidpointRounding AwayFromZero = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.MidpointRounding.AwayFromZero" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.MidpointRounding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When a number is halfway between two others, it is rounded toward the nearest number that is away from zero.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ToEven">
+      <MemberSignature Language="C#" Value="ToEven" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.MidpointRounding ToEven = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.MidpointRounding.ToEven" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.MidpointRounding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When a number is halfway between two others, it is rounded toward the nearest even number.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

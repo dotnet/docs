@@ -1,0 +1,92 @@
+<Type Name="PersistenceMode" FullName="System.Web.UI.PersistenceMode">
+  <TypeSignature Language="C#" Value="public enum PersistenceMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PersistenceMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.PersistenceMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how an ASP.NET server control property or event is persisted declaratively in an .aspx or .ascx file.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates an <xref:System.Web.UI.ITemplate> property that will be persisted as an inner property, as defined by applying the ttribute attribute to the property's metadata.  
+  
+ [!code-csharp[System.Web.UI.PersistenceMode#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.PersistenceMode/CS/persistencemodeattributesamples.cs#2)]
+ [!code-vb[System.Web.UI.PersistenceMode#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.PersistenceMode/VB/persistencemodeattributesamples.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Attribute">
+      <MemberSignature Language="C#" Value="Attribute" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.PersistenceMode Attribute = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.PersistenceMode.Attribute" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.PersistenceMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the property or event persists as an attribute.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EncodedInnerDefaultProperty">
+      <MemberSignature Language="C#" Value="EncodedInnerDefaultProperty" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.PersistenceMode EncodedInnerDefaultProperty = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.PersistenceMode.EncodedInnerDefaultProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.PersistenceMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the property persists as the only inner text of the ASP.NET server control. The property value is HTML encoded. Only a string can be given this designation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InnerDefaultProperty">
+      <MemberSignature Language="C#" Value="InnerDefaultProperty" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.PersistenceMode InnerDefaultProperty = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.PersistenceMode.InnerDefaultProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.PersistenceMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the property persists in the ASP.NET server control as inner text. Also indicates that this property is defined as the element's default property. Only one property can be designated the default property.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InnerProperty">
+      <MemberSignature Language="C#" Value="InnerProperty" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.PersistenceMode InnerProperty = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.PersistenceMode.InnerProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.PersistenceMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the property persists in the ASP.NET server control as a nested tag. This is commonly used for complex objects, those that have persistable properties of their own.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

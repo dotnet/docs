@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "My.Computer object"
 ms.assetid: cc814d79-6f7f-4e54-8b9d-5ecfdd77a0b8
 caps.latest.revision: 30
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

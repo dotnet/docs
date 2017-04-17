@@ -1,4 +1,4 @@
-﻿---
+---
 title: Microservices hosted in Docker | C#
 description: Learn to create asp.net core services that run in Docker containers
 keywords: .NET, .NET Core, Docker, C#, ASP.NET, Microservice
@@ -32,7 +32,7 @@ Along the way, you'll also see some C# language features:
 * How to process incoming HTTP Requests and generate the HTTP Response
 * How to work with nullable value types
 
-You can retrieve the code from our [GitHub repository.](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/WeatherMicroservice)
+You can [view or download the sample app](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/WeatherMicroservice) for this topic. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 ### Why Docker?
 
@@ -198,7 +198,7 @@ in the code above.
 Next, you need to convert the strings to doubles. The method you'll use
 to convert the string to a double is `double.TryParse()`:
 
-```cs
+```csharp
 bool TryParse(string s, out double result);
 ```
 
@@ -243,7 +243,7 @@ the updated results.
 Your next task is to build a random weather forecast. Let's start with a data
 container that holds the values you'd want for a weather forecast:
 
-```cs
+```csharp
 public class WeatherReport
 {
     private static readonly string[] PossibleConditions = new string[]

@@ -1,0 +1,656 @@
+<Type Name="StringInfo" FullName="System.Globalization.StringInfo">
+  <TypeSignature Language="C#" Value="public class StringInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit StringInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Globalization.StringInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Globalization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides functionality to split a string into text elements and to iterate through those text elements.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework defines a text element as a unit of text that is displayed as a single character, that is, a grapheme. A text element can be a base character, a surrogate pair, or a combining character sequence. The [Unicode Standard](http://go.microsoft.com/fwlink/?linkid=37123) defines a surrogate pair as a coded character representation for a single abstract character that consists of a sequence of two code units, where the first unit of the pair is a high surrogate and the second is a low surrogate. The Unicode Standard defines a combining character sequence as a combination of a base character and one or more combining characters. A surrogate pair can represent a base character or a combining character.  
+  
+ The <xref:System.Globalization.StringInfo> class enables you to work with a string as a series of textual elements rather than individual <xref:System.Char> objects.  
+  
+ To instantiate a <xref:System.Globalization.StringInfo> object that represents a specified string, you can do either of the following:  
+  
+-   Call the <xref:System.Globalization.StringInfo.%23ctor%28System.String%29> constructor and pass it the string that the <xref:System.Globalization.StringInfo> object is to represent as an argument.  
+  
+-   Call the default <xref:System.Globalization.StringInfo.%23ctor> constructor, and assign the string that the <xref:System.Globalization.StringInfo> object is to represent to the <xref:System.Globalization.StringInfo.String%2A> property.  
+  
+ You can work with the individual text elements in a string in two ways:  
+  
+-   By enumerating each text element. To do this, you call the <xref:System.Globalization.StringInfo.GetTextElementEnumerator%2A> method, and then repeatedly call the <xref:System.Globalization.TextElementEnumerator.MoveNext%2A> method on the returned <xref:System.Globalization.TextElementEnumerator> object until the method returns `false`.  
+  
+-   By calling the <xref:System.Globalization.StringInfo.ParseCombiningCharacters%2A> method to retrieve an array that contains the starting index of each text element. You can then retrieve individual text elements by passing these indexes to the <xref:System.Globalization.StringInfo.SubstringByTextElements%2A> method.  
+  
+ The following example illustrates both ways of working with the text elements in a string. It creates two strings:  
+  
+-   `strCombining`, which is a string of Arabic characters that includes three text elements with multiple <xref:System.Char> objects. The first text element is the base character ARABIC LETTER ALEF (U+-627) followed by ARABIC HAMZA BELOW (U+-655) and ARABIC KASRA (U+0650). The second text element is ARABIC LETTER HEH (U+0647) followed by ARABIC FATHA (U+-64E). The third text element is ARABIC LETTTER BEH (U+0628) followed by ARABIC DAMMATAN (U+064C).  
+  
+-   `strSurrogates`, which is a string that includes three surrogate pairs: GREEK ACROPHONIC FIVE TALENTS (U+10148) from the Supplementary Multilingual Plane, U+20026 from the Supplementary Ideographic Plane, and U+F1001 from the private user area. The UTF-16 encoding of each character is a surrogate pair that consists of a high surrogate followed by a low surrogate.  
+  
+ Each string is parsed once by the <xref:System.Globalization.StringInfo.ParseCombiningCharacters%2A> method and then by the <xref:System.Globalization.StringInfo.GetTextElementEnumerator%2A> method. Both methods correctly parse the text elements in the two strings and display the results of the parsing operation.  
+  
+ [!code-csharp[System.Globalization.StringInfo.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.stringinfo.class/cs/indexing1.cs#1)]
+ [!code-vb[System.Globalization.StringInfo.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.stringinfo.class/vb/indexing1.vb#1)]  
+  
+   
+  
+## Examples  
+ This example shows how to use the <xref:System.Globalization.StringInfo.GetTextElementEnumerator%2A> and <xref:System.Globalization.StringInfo.ParseCombiningCharacters%2A> methods of the <xref:System.Globalization.StringInfo> class to manipulate a string that contains surrogate and combining characters.  
+  
+ [!code-cpp[stringinfo#1](~/samples/snippets/cpp/VS_Snippets_CLR/StringInfo/cpp/StringInfo.cpp#1)]
+ [!code-csharp[stringinfo#1](~/samples/snippets/csharp/VS_Snippets_CLR/StringInfo/CS/StringInfo.cs#1)]
+ [!code-vb[stringinfo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/StringInfo/vb/stringinfo.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="usage">
+      <para>Internally, the methods of the <see cref="T:System.Globalization.StringInfo" /> class call the methods of the <see cref="T:System.Globalization.CharUnicodeInfo" /> class to determine character categories. Starting with the [!INCLUDE[net_v462](~/includes/net-v462-md.md)], character classification is based on [The Unicode Standard, Version 8.0.0](http://unicode.org/versions/Unicode8.0.0). For the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] through the [!INCLUDE[net_v461](~/includes/net-v461-md.md)], it is based on [The Unicode Standard, Version 6.3.0](http://www.unicode.org/versions/Unicode6.3.0/).</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StringInfo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.StringInfo.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Globalization.StringInfo" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the new <xref:System.Globalization.StringInfo> object is initialized to the empty string (""). You can assign another string to it by using the <xref:System.Globalization.StringInfo.String%2A> property.  You can also instantiate a <xref:System.Globalization.StringInfo> object that represents a specified string in a single step by calling the <xref:System.Globalization.StringInfo.%23ctor%28System.String%29> constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StringInfo (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.StringInfo.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">A string to initialize this <see cref="T:System.Globalization.StringInfo" /> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Globalization.StringInfo" /> class to a specified string.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor assigns the value argument to the object's <xref:System.Globalization.StringInfo.String%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.StringInfo.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">An object.</param>
+        <summary>Indicates whether the current <see cref="T:System.Globalization.StringInfo" /> object is equal to a specified object.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="value" /> parameter is a <see cref="T:System.Globalization.StringInfo" /> object and its <see cref="P:System.Globalization.StringInfo.String" /> property equals the <see cref="P:System.Globalization.StringInfo.String" /> property of this <see cref="T:System.Globalization.StringInfo" /> object; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.StringInfo.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Calculates a hash code for the value of the current <see cref="T:System.Globalization.StringInfo" /> object.</summary>
+        <returns>A 32-bit signed integer hash code based on the string value of this <see cref="T:System.Globalization.StringInfo" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The behavior of <xref:System.Globalization.StringInfo.GetHashCode%2A> is dependent on its implementation, which might change from one version of the common language runtime to another. This might happen to improve the performance of <xref:System.Globalization.StringInfo.GetHashCode%2A>. To make the behavior of <xref:System.Globalization.StringInfo.GetHashCode%2A> constant, the application should override the runtime implementation of <xref:System.Globalization.StringInfo.GetHashCode%2A> with an implementation known to never change.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNextTextElement">
+      <MemberSignature Language="C#" Value="public static string GetNextTextElement (string str);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetNextTextElement(string str) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.StringInfo.GetNextTextElement(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="str">The string from which to get the text element.</param>
+        <summary>Gets the first text element in a specified string.</summary>
+        <returns>A string containing the first text element in the specified string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework defines a text element as a unit of text that is displayed as a single character, that is, a grapheme. A text element can be a base character, a surrogate pair, or a combining character sequence. The [Unicode Standard](http://go.microsoft.com/fwlink/?linkid=37123) defines a surrogate pair as a coded character representation for a single abstract character that consists of a sequence of two code units, where the first unit of the pair is a high surrogate and the second is a low surrogate. The [Unicode Standard](http://go.microsoft.com/fwlink/?linkid=37123) defines a combining character sequence as a combination of a base character and one or more combining characters. A surrogate pair can represent a base character or a combining character.  
+  
+ This method only returns the first text element. To iterate through the text elements of the string, the application should use the <xref:System.Globalization.TextElementEnumerator> object generated by the <xref:System.Globalization.StringInfo.GetTextElementEnumerator%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="str" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNextTextElement">
+      <MemberSignature Language="C#" Value="public static string GetNextTextElement (string str, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetNextTextElement(string str, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.StringInfo.GetNextTextElement(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="str">The string from which to get the text element.</param>
+        <param name="index">The zero-based index at which the text element starts.</param>
+        <summary>Gets the text element at the specified index of the specified string.</summary>
+        <returns>A string containing the text element at the specified index of the specified string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework defines a text element as a unit of text that is displayed as a single character, that is, a grapheme. A text element can be a base character, a surrogate pair, or a combining character sequence. The [Unicode Standard](http://go.microsoft.com/fwlink/?linkid=37123) defines a surrogate pair as a coded character representation for a single abstract character that consists of a sequence of two code units, where the first unit of the pair is a high surrogate and the second is a low surrogate. The Unicode Standard defines a combining character sequence as a combination of a base character and one or more combining characters. A surrogate pair can represent a base character or a combining character.  
+  
+ This method only returns the first text element of the substring that starts at the specified index. To iterate through the text elements of the string, the application should use the <xref:System.Globalization.TextElementEnumerator> generated by the <xref:System.Globalization.StringInfo.GetTextElementEnumerator%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="str" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is outside the range of valid indexes for <paramref name="str" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTextElementEnumerator">
+      <MemberSignature Language="C#" Value="public static System.Globalization.TextElementEnumerator GetTextElementEnumerator (string str);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Globalization.TextElementEnumerator GetTextElementEnumerator(string str) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.StringInfo.GetTextElementEnumerator(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.TextElementEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="str">The string to iterate through.</param>
+        <summary>Returns an enumerator that iterates through the text elements of the entire string.</summary>
+        <returns>A <see cref="T:System.Globalization.TextElementEnumerator" /> for the entire string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework defines a text element as a unit of text that is displayed as a single character, that is, a grapheme. A text element can be a base character, a surrogate pair, or a combining character sequence. The [Unicode Standard](http://go.microsoft.com/fwlink/?linkid=37123) defines a surrogate pair as a coded character representation for a single abstract character that consists of a sequence of two code units, where the first unit of the pair is a high surrogate and the second is a low surrogate. The Unicode Standard defines a combining character sequence as a combination of a base character and one or more combining characters. A surrogate pair can represent a base character or a combining character.  
+  
+ The text element enumerator is used only to read data in the string; it cannot modify the underlying string. The enumerator does not have exclusive access to the string.  
+  
+ The enumerator is in an invalid state if it is positioned before the first text element in the string or after the last text element in the string. When the enumerator is in an invalid state, calling <xref:System.Globalization.TextElementEnumerator.Current%2A> throws an exception.  
+  
+ Initially, the enumerator is positioned before the first text element in the string. <xref:System.Globalization.TextElementEnumerator.Reset%2A> also brings the enumerator back to this position. Therefore, after an enumerator is created or after <xref:System.Globalization.TextElementEnumerator.Reset%2A> is called, <xref:System.Globalization.TextElementEnumerator.MoveNext%2A> must be called to advance the enumerator to the first text element of the string before reading the value of <xref:System.Globalization.TextElementEnumerator.Current%2A>.  
+  
+ <xref:System.Globalization.TextElementEnumerator.Current%2A> returns the same object until either <xref:System.Globalization.TextElementEnumerator.MoveNext%2A> or <xref:System.Globalization.TextElementEnumerator.Reset%2A> is called.  
+  
+ After the end of the string is passed, the enumerator is again in an invalid state and calling <xref:System.Globalization.TextElementEnumerator.MoveNext%2A> returns `false`. Calling <xref:System.Globalization.TextElementEnumerator.Current%2A> throws an exception if the last call to <xref:System.Globalization.TextElementEnumerator.MoveNext%2A> returned `false`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates calling the <xref:System.Globalization.StringInfo.GetTextElementEnumerator%2A> method. This code example is part of a larger example provided for the <xref:System.Globalization.StringInfo> class.  
+  
+ [!code-cpp[stringinfo#1](~/samples/snippets/cpp/VS_Snippets_CLR/StringInfo/cpp/StringInfo.cpp#1)]
+ [!code-csharp[stringinfo#1](~/samples/snippets/csharp/VS_Snippets_CLR/StringInfo/CS/StringInfo.cs#1)]
+ [!code-vb[stringinfo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/StringInfo/vb/stringinfo.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="str" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTextElementEnumerator">
+      <MemberSignature Language="C#" Value="public static System.Globalization.TextElementEnumerator GetTextElementEnumerator (string str, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Globalization.TextElementEnumerator GetTextElementEnumerator(string str, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.StringInfo.GetTextElementEnumerator(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.TextElementEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="str">The string to iterate through.</param>
+        <param name="index">The zero-based index at which to start iterating.</param>
+        <summary>Returns an enumerator that iterates through the text elements of the string, starting at the specified index.</summary>
+        <returns>A <see cref="T:System.Globalization.TextElementEnumerator" /> for the string starting at <paramref name="index" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework defines a text element as a unit of text that is displayed as a single character, that is, a grapheme. A text element can be a base character, a surrogate pair, or a combining character sequence. The [Unicode Standard](http://go.microsoft.com/fwlink/?linkid=37123) defines a surrogate pair as a coded character representation for a single abstract character that consists of a sequence of two code units, where the first unit of the pair is a high surrogate and the second is a low surrogate. The Unicode Standard defines a combining character sequence as a combination of a base character and one or more combining characters. A surrogate pair can represent a base character or a combining character.  
+  
+ The text element enumerator is used only to read data in the string; it cannot modify the underlying string. The enumerator does not have exclusive access to the string.  
+  
+ The enumerator is in an invalid state if it is positioned before the first text element in the string or after the last text element in the string. When the enumerator is in an invalid state, calling <xref:System.Globalization.TextElementEnumerator.Current%2A> throws an exception.  
+  
+ Initially, the enumerator is positioned before the first text element in the string. <xref:System.Globalization.TextElementEnumerator.Reset%2A> also brings the enumerator back to this position. Therefore, after an enumerator is created or after <xref:System.Globalization.TextElementEnumerator.Reset%2A> is called, <xref:System.Globalization.TextElementEnumerator.MoveNext%2A> must be called to advance the enumerator to the first text element of the string before reading the value of <xref:System.Globalization.TextElementEnumerator.Current%2A>.  
+  
+ <xref:System.Globalization.TextElementEnumerator.Current%2A> returns the same object until either <xref:System.Globalization.TextElementEnumerator.MoveNext%2A> or <xref:System.Globalization.TextElementEnumerator.Reset%2A> is called.  
+  
+ After the end of the string is passed, the enumerator is again in an invalid state and calling <xref:System.Globalization.TextElementEnumerator.MoveNext%2A> returns `false`. Calling <xref:System.Globalization.TextElementEnumerator.Current%2A> throws an exception if the last call to <xref:System.Globalization.TextElementEnumerator.MoveNext%2A> returned `false`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="str" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is outside the range of valid indexes for <paramref name="str" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LengthInTextElements">
+      <MemberSignature Language="C#" Value="public int LengthInTextElements { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LengthInTextElements" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.StringInfo.LengthInTextElements" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of text elements in the current <see cref="T:System.Globalization.StringInfo" /> object.</summary>
+        <value>The number of base characters, surrogate pairs, and combining character sequences in this <see cref="T:System.Globalization.StringInfo" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseCombiningCharacters">
+      <MemberSignature Language="C#" Value="public static int[] ParseCombiningCharacters (string str);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32[] ParseCombiningCharacters(string str) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.StringInfo.ParseCombiningCharacters(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="str">The string to search.</param>
+        <summary>Returns the indexes of each base character, high surrogate, or control character within the specified string.</summary>
+        <returns>An array of integers that contains the zero-based indexes of each base character, high surrogate, or control character within the specified string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [Unicode Standard](http://go.microsoft.com/fwlink/?linkid=37123) defines a surrogate pair as a coded character representation for a single abstract character that consists of a sequence of two code units, where the first unit of the pair is a high surrogate and the second is a low surrogate. A high surrogate is a Unicode code point in the range U+D800 through U+DBFF and a low surrogate is a Unicode code point in the range U+DC00 through U+DFFF.  
+  
+ A control character is a character for which the Unicode value is U+007F or in the range U+0000 through U+001F or U+0080 through U+009F.  
+  
+ The .NET Framework defines a text element as a unit of text that is displayed as a single character, that is, a grapheme. A text element can be a base character, a surrogate pair, or a combining character sequence. The [Unicode Standard](http://go.microsoft.com/fwlink/?linkid=37123) defines a combining character sequence as a combination of a base character and one or more combining characters. A surrogate pair can represent a base character or a combining character.  
+  
+ If a combining character sequence is invalid, every combining character in that sequence is also returned.  
+  
+ Each index in the resulting array is the beginning of a text element, that is, the index of the base character or the high surrogate.  
+  
+ The length of each element is easily computed as the difference between successive indexes. The length of the array will always be less than or equal to the length of the string. For example, given the string "\u4f00\u302a\ud800\udc00\u4f01", this method returns the indexes 0, 2, and 4.  
+  
+## Equivalent Members  
+ Starting in version 2.0 of the .NET Framework, the <xref:System.Globalization.StringInfo.SubstringByTextElements%2A> method and <xref:System.Globalization.StringInfo.LengthInTextElements%2A> property provide an easy to use implementation of the functionality offered by the <xref:System.Globalization.StringInfo.ParseCombiningCharacters%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates calling the <xref:System.Globalization.StringInfo.ParseCombiningCharacters%2A> method. This code example is part of a larger example provided for the <xref:System.Globalization.StringInfo> class.  
+  
+ [!code-cpp[stringinfo#1](~/samples/snippets/cpp/VS_Snippets_CLR/StringInfo/cpp/StringInfo.cpp#1)]
+ [!code-csharp[stringinfo#1](~/samples/snippets/csharp/VS_Snippets_CLR/StringInfo/CS/StringInfo.cs#1)]
+ [!code-vb[stringinfo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/StringInfo/vb/stringinfo.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="str" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="String">
+      <MemberSignature Language="C#" Value="public string String { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string String" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.StringInfo.String" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the current <see cref="T:System.Globalization.StringInfo" /> object.</summary>
+        <value>The string that is the value of the current <see cref="T:System.Globalization.StringInfo" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a <xref:System.Globalization.StringInfo> object is instantiated, its <xref:System.Globalization.StringInfo.String%2A> property is set to one of the following values:  
+  
+-   <xref:System.String?displayProperty=fullName> if the default  <xref:System.Globalization.StringInfo.%23ctor> is called. You should then use the <xref:System.Globalization.StringInfo.String%2A> property to assign the string that this <xref:System.Globalization.StringInfo> object rperesents.  
+  
+-   The string supplied as the `value` argument to the <xref:System.Globalization.StringInfo.%23ctor%28System.String%29> constructor.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The value in a set operation is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SubstringByTextElements">
+      <MemberSignature Language="C#" Value="public string SubstringByTextElements (int startingTextElement);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string SubstringByTextElements(int32 startingTextElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.StringInfo.SubstringByTextElements(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="startingTextElement" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="startingTextElement">The zero-based index of a text element in this <see cref="T:System.Globalization.StringInfo" /> object.</param>
+        <summary>Retrieves a substring of text elements from the current <see cref="T:System.Globalization.StringInfo" /> object starting from a specified text element and continuing through the last text element.</summary>
+        <returns>A substring of text elements in this <see cref="T:System.Globalization.StringInfo" /> object, starting from the text element index specified by the <paramref name="startingTextElement" /> parameter and continuing through the last text element in this object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Consider a string that consists of five text elements, indexed from 0 through 4. If the `startingTextElement` parameter is 1, the  <xref:System.Globalization.StringInfo.SubstringByTextElements%2A> method returns a substring that consists of the text elements for which the indexes are 1, 2, 3, and 4.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="startingTextElement" /> is less than zero.  
+  
+ -or-  
+  
+ The string that is the value of the current <see cref="T:System.Globalization.StringInfo" /> object is the empty string ("").</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SubstringByTextElements">
+      <MemberSignature Language="C#" Value="public string SubstringByTextElements (int startingTextElement, int lengthInTextElements);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string SubstringByTextElements(int32 startingTextElement, int32 lengthInTextElements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.StringInfo.SubstringByTextElements(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="startingTextElement" Type="System.Int32" />
+        <Parameter Name="lengthInTextElements" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="startingTextElement">The zero-based index of a text element in this <see cref="T:System.Globalization.StringInfo" /> object.</param>
+        <param name="lengthInTextElements">The number of text elements to retrieve.</param>
+        <summary>Retrieves a substring of text elements from the current <see cref="T:System.Globalization.StringInfo" /> object starting from a specified text element and continuing through the specified number of text elements.</summary>
+        <returns>A substring of text elements in this <see cref="T:System.Globalization.StringInfo" /> object. The substring consists of the number of text elements specified by the <paramref name="lengthInTextElements" /> parameter and starts from the text element index specified by the <paramref name="startingTextElement" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Consider a string that consists of five text elements, indexed from 0 through 4. If the `startingTextElement` parameter is 1 and the `lengthInTextElements` parameter is 3, the <xref:System.Globalization.StringInfo.SubstringByTextElements%2A> method returns a substring that consists of the text elements for which the indexes are 1, 2, and 3.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="startingTextElement" /> is less than zero.  
+  
+ -or-  
+  
+ <paramref name="startingTextElement" /> is greater than or equal to the length of the string that is the value of the current <see cref="T:System.Globalization.StringInfo" /> object.  
+  
+ -or-  
+  
+ <paramref name="lengthInTextElements" /> is less than zero.  
+  
+ -or-  
+  
+ The string that is the value of the current <see cref="T:System.Globalization.StringInfo" /> object is the empty string ("").  
+  
+ -or-  
+  
+ <paramref name="startingTextElement" /> + <paramref name="lengthInTextElements" /> specify an index that is greater than the number of text elements in this <see cref="T:System.Globalization.StringInfo" /> object.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

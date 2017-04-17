@@ -1,0 +1,237 @@
+<Type Name="XpsSerializationManager" FullName="System.Windows.Xps.Serialization.XpsSerializationManager">
+  <TypeSignature Language="C#" Value="public class XpsSerializationManager : System.Windows.Xps.Serialization.PackageSerializationManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XpsSerializationManager extends System.Windows.Xps.Serialization.PackageSerializationManager" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Serialization.XpsSerializationManager" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Xps.Serialization.PackageSerializationManager</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Manages synchronous [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] serializers and type converters.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Xps.Serialization.XpsSerializationManager> manages synchronous serializers and type converters that write content to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+  
+ <xref:System.Windows.Xps.Serialization.XpsSerializationManagerAsync> manages asynchronous serializers and type converters that store content to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XpsSerializationManager (System.Windows.Xps.Serialization.BasePackagingPolicy packagingPolicy, bool batchMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Xps.Serialization.BasePackagingPolicy packagingPolicy, bool batchMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsSerializationManager.#ctor(System.Windows.Xps.Serialization.BasePackagingPolicy,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="packagingPolicy" Type="System.Windows.Xps.Serialization.BasePackagingPolicy" />
+        <Parameter Name="batchMode" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="packagingPolicy">An object that provides methods for acquiring serialization readers and writers for different parts of an [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] document.</param>
+        <param name="batchMode">
+          <see langword="true" /> to specify batch mode; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.Serialization.XpsSerializationManager" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Commit">
+      <MemberSignature Language="C#" Value="public virtual void Commit ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Commit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsSerializationManager.Commit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Commits all changes and writes all buffered data.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBatchMode">
+      <MemberSignature Language="C#" Value="public bool IsBatchMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsBatchMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Serialization.XpsSerializationManager.IsBatchMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the serialization manager is in batch mode.</summary>
+        <value>
+          <see langword="true" /> if the manager is in batch mode; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Batch mode is set in the `batchMode` parameter of the <xref:System.Windows.Xps.Serialization.XpsSerializationManager.%23ctor%2A> constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveAsXaml">
+      <MemberSignature Language="C#" Value="public override void SaveAsXaml (object serializedObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SaveAsXaml(object serializedObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsSerializationManager.SaveAsXaml(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serializedObject" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="serializedObject">The [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] serialized object to save.</param>
+        <summary>Saves a specified [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] serialized object to the document package.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFontSubsettingCountPolicy">
+      <MemberSignature Language="C#" Value="public void SetFontSubsettingCountPolicy (int countPolicy);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetFontSubsettingCountPolicy(int32 countPolicy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsSerializationManager.SetFontSubsettingCountPolicy(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="countPolicy" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="countPolicy">The number of pages or documents to process at a time for font subsetting.</param>
+        <summary>Sets the number of pages or documents to process for font-subsetting.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default font-subsetting `countPolicy` is 1.  
+  
+ `countPolicy` defines either a number of pages or documents dependent on the <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies> enumeration value specified to the <xref:System.Windows.Xps.Serialization.XpsSerializationManager.SetFontSubsettingPolicy%2A> method.  
+  
+|FontSubsetterCommitPolicy|CountPolicy|  
+|-------------------------------|-----------------|  
+|<xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies>|Always 1 (the whole document sequence).|  
+|<xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies>|Number of documents.|  
+|<xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies>|Number of pages.|  
+|<xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies>|Not applicable.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFontSubsettingPolicy">
+      <MemberSignature Language="C#" Value="public void SetFontSubsettingPolicy (System.Windows.Xps.Serialization.FontSubsetterCommitPolicies policy);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetFontSubsettingPolicy(valuetype System.Windows.Xps.Serialization.FontSubsetterCommitPolicies policy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsSerializationManager.SetFontSubsettingPolicy(System.Windows.Xps.Serialization.FontSubsetterCommitPolicies)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="policy" Type="System.Windows.Xps.Serialization.FontSubsetterCommitPolicies" />
+      </Parameters>
+      <Docs>
+        <param name="policy">One of the enumeration values that specifies the font-subsetting policy.</param>
+        <summary>Sets the granularity at which font-subsetting is performed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default font-subsetting policy is <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies>.  
+  
+ When font glyphs for text in an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document are saved in the document package, the document text displays identically on any computer or printer.  If glyphs are not saved in document and the required font is not installed on the local computer or printer, the rendering device must substitute glyphs from another font.  Substituting glyphs can change the appearance of the text when a different font is used.  
+  
+ <xref:System.Windows.Xps.Serialization.XpsSerializationManager.SetFontSubsettingPolicy%2A> determines the granularity of font-subsetting.  
+  
+ <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies> (default) is the most efficient and enables the pages of all documents in a document sequence to share one font-subset that contains only the glyphs that are actually used.  
+  
+ When creating interleaved documents, font-subsetting across a document sequence can require a large amount of memory to hold the complete document until the final font-subset can be determined.  <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies> or <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies> can be specified to reduce application memory requirements when you create interleaved documents.  
+  
+ When `policy` is <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies>, all the glyphs for all fonts that are used in the [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document are saved, even glyphs for characters that not actually used in the text.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XpsSerializationPrintTicketRequired">
+      <MemberSignature Language="C#" Value="public event System.Windows.Xps.Serialization.XpsSerializationPrintTicketRequiredEventHandler XpsSerializationPrintTicketRequired;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Xps.Serialization.XpsSerializationPrintTicketRequiredEventHandler XpsSerializationPrintTicketRequired" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Xps.Serialization.XpsSerializationManager.XpsSerializationPrintTicketRequired" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Serialization.XpsSerializationPrintTicketRequiredEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] serializer requests a <see cref="T:System.Printing.PrintTicket" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about event handlers, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XpsSerializationProgressChanged">
+      <MemberSignature Language="C#" Value="public event System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventHandler XpsSerializationProgressChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventHandler XpsSerializationProgressChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Xps.Serialization.XpsSerializationManager.XpsSerializationProgressChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a page or document finishes serialization.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about event handlers, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

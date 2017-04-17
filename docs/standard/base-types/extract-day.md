@@ -2,8 +2,8 @@
 title: "How to: extract the day of the week from a specific date"
 description: How to extract the day of the week from a specific date
 keywords: .NET, .NET Core
-author: stevehoag
-ms.author: shoag
+author: dotnet-bot
+ms.author: dotnetcontent
 ms.date: 07/26/2016
 ms.topic: article
 ms.prod: .net

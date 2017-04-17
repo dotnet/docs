@@ -23,7 +23,7 @@ ms.assetid: [GET ONE FROM guidgenerator.com]
 
 # Metadata and Markdown Template
 
-This core-docs template contains examples of Markdown syntax, as well as guidance on setting the metadata. To get the most of it, you must view both the [raw Markdown](https://raw.githubusercontent.com/dotnet/docs/master/styleguide/template.md) and the [rendered view](https://github.com/dotnet/docs/blob/master/styleguide/template.md) (for instance, the raw Markdown shows the metadata block, while the rendered view does not).
+This dotnet/docs template contains examples of Markdown syntax, as well as guidance on setting the metadata. To get the most of it, you must view both the [raw Markdown](https://raw.githubusercontent.com/dotnet/docs/master/styleguide/template.md) and the [rendered view](https://github.com/dotnet/docs/blob/master/styleguide/template.md) (for instance, the raw Markdown shows the metadata block, while the rendered view does not).
 
 When creating a Markdown file, you should copy this template to a new file, fill out the metadata as specified below, set the H1 heading above to the title of the article, and delete the content. 
 
@@ -254,11 +254,37 @@ runtime errors, you can use inline code blocks.
 
 ### Inline code blocks with language identifier
 
-Use three backticks (\`\`\`) + a language ID to apply language-specific color coding to a code block. Here is the entire list of [GFM language IDs](https://github.com/jmm/gfm-lang-ids/wiki/GitHub-Flavored-Markdown-(GFM)-language-IDs).
+Use three backticks (\`\`\`) + a language ID to apply language-specific color coding to a code block. Here is the list of supported languages showing the markdown label for each language ID. 
+
+#### Supported Languages
+|Name|Markdown Label|
+|-----|-------|
+|Azure CLI|azurecli|
+|AzCopy|azcopy|
+|C++|cpp|
+|C#|csharp|
+|F#|fsharp|
+|JavaScript|javascript|
+|JSON|json|
+|NodeJS|nodejs|
+|Objective-C|objc|
+|PHP|php|
+|PowerShell|powershell|
+|Python|python|
+|Ruby|ruby|
+|SQL / T-SQL|sql|
+|Swift|swift|
+|VB|vb|
+|XAML|xaml|
+|XML|xml| 
+ 
+ 
+
+The following are examples of code blocks using the language IDs for C# (\`\`\`csharp), Python (\`\`\`python), and PowerShell (\`\`\`powershell).
 
 ##### C&#9839;
 
-```cs
+```csharp
 using System;
 namespace HelloWorld
 {

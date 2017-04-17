@@ -1,0 +1,97 @@
+<Type Name="GridLines" FullName="System.Web.UI.WebControls.GridLines">
+  <TypeSignature Language="C#" Value="public enum GridLines" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GridLines extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridLines" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the gridline styles for controls that display items in a table structure.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.GridLines> enumeration represents the different gridline styles for controls that display items in a table structure. You can display the horizontal, the vertical, both the horizontal and vertical, or no grid lines.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.GridLines> enumeration to indicate that the gridlines in a <xref:System.Web.UI.WebControls.GridView> control should be hidden.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[GridViewGridLines#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewGridLines/CS/gridviewgridlinescs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[GridViewGridLines#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewGridLines/VB/gridviewgridlinesvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Both">
+      <MemberSignature Language="C#" Value="Both" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.GridLines Both = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.GridLines.Both" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.GridLines</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Both horizontal and vertical gridlines are rendered.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Horizontal">
+      <MemberSignature Language="C#" Value="Horizontal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.GridLines Horizontal = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.GridLines.Horizontal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.GridLines</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Only horizontal gridlines are rendered.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.GridLines None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.GridLines.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.GridLines</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No gridlines are rendered.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Vertical">
+      <MemberSignature Language="C#" Value="Vertical" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.GridLines Vertical = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.GridLines.Vertical" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.GridLines</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Only vertical gridlines are rendered.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

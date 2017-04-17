@@ -1,0 +1,234 @@
+<Type Name="PropertyChangedEventManager" FullName="System.ComponentModel.PropertyChangedEventManager">
+  <TypeSignature Language="C#" Value="public class PropertyChangedEventManager : System.Windows.WeakEventManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PropertyChangedEventManager extends System.Windows.WeakEventManager" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.PropertyChangedEventManager" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.WeakEventManager</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a <see cref="T:System.Windows.WeakEventManager" /> implementation so that you can use the "weak event listener" pattern to attach listeners for the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In order to be listeners in this pattern, your listener objects must implement <xref:System.Windows.IWeakEventListener>. You do not need to implement <xref:System.Windows.IWeakEventListener> on the class that is the source of the events.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddHandler">
+      <MemberSignature Language="C#" Value="public static void AddHandler (System.ComponentModel.INotifyPropertyChanged source, EventHandler&lt;System.ComponentModel.PropertyChangedEventArgs&gt; handler, string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddHandler(class System.ComponentModel.INotifyPropertyChanged source, class System.EventHandler`1&lt;class System.ComponentModel.PropertyChangedEventArgs&gt; handler, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyChangedEventManager.AddHandler(System.ComponentModel.INotifyPropertyChanged,System.EventHandler{System.ComponentModel.PropertyChangedEventArgs},System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.ComponentModel.INotifyPropertyChanged" />
+        <Parameter Name="handler" Type="System.EventHandler&lt;System.ComponentModel.PropertyChangedEventArgs&gt;" />
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source object that the raises the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" /> event.</param>
+        <param name="handler">The delegate that handles the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" /> event.</param>
+        <param name="propertyName">The name of the property that exists on <c>source</c> upon which to listen for changes. Set to <see cref="F:System.String.Empty" /> to indicate "any property".</param>
+        <summary>Adds the specified event handler, which is called when specified source raises the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" /> event for the specified property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to specify the event handler you want to use to subscribe to the <xref:System.ComponentModel.INotifyPropertyChanged.PropertyChanged> event..  When you use this method, your listener object does not need to implement the <xref:System.Windows.IWeakEventListener> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="handler" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">More than one method is associated with <paramref name="handler" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddListener">
+      <MemberSignature Language="C#" Value="public static void AddListener (System.ComponentModel.INotifyPropertyChanged source, System.Windows.IWeakEventListener listener, string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddListener(class System.ComponentModel.INotifyPropertyChanged source, class System.Windows.IWeakEventListener listener, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyChangedEventManager.AddListener(System.ComponentModel.INotifyPropertyChanged,System.Windows.IWeakEventListener,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.ComponentModel.INotifyPropertyChanged" />
+        <Parameter Name="listener" Type="System.Windows.IWeakEventListener" />
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="source">The object with the event.</param>
+        <param name="listener">The object to add as a listener.</param>
+        <param name="propertyName">The name of the property that exists on <c>source</c> upon which to listen for changes. Set to <see cref="F:System.String.Empty" /> to indicate "any property".</param>
+        <summary>Adds the specified listener to the list of listeners on the specified source.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewListenerList">
+      <MemberSignature Language="C#" Value="protected override System.Windows.WeakEventManager.ListenerList NewListenerList ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.WeakEventManager/ListenerList NewListenerList() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyChangedEventManager.NewListenerList" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.WeakEventManager+ListenerList</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a new object to contain listeners to the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" /> event.</summary>
+        <returns>A new object to contain listeners to the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" /> event.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Purge">
+      <MemberSignature Language="C#" Value="protected override bool Purge (object source, object data, bool purgeAll);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool Purge(object source, object data, bool purgeAll) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyChangedEventManager.Purge(System.Object,System.Object,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Object" />
+        <Parameter Name="data" Type="System.Object" />
+        <Parameter Name="purgeAll" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="source">Source object to remove all listeners from.</param>
+        <param name="data">The data to purge. This is expected to be a <see cref="T:System.Collections.Specialized.HybridDictionary" />.</param>
+        <param name="purgeAll">Set to <see langword="true" /> to stop listening and to completely remove all data.</param>
+        <summary>Removes listeners that are no longer active from the data for the provided source.</summary>
+        <returns>
+          <see langword="true" /> if some entries were removed; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveHandler">
+      <MemberSignature Language="C#" Value="public static void RemoveHandler (System.ComponentModel.INotifyPropertyChanged source, EventHandler&lt;System.ComponentModel.PropertyChangedEventArgs&gt; handler, string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveHandler(class System.ComponentModel.INotifyPropertyChanged source, class System.EventHandler`1&lt;class System.ComponentModel.PropertyChangedEventArgs&gt; handler, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyChangedEventManager.RemoveHandler(System.ComponentModel.INotifyPropertyChanged,System.EventHandler{System.ComponentModel.PropertyChangedEventArgs},System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.ComponentModel.INotifyPropertyChanged" />
+        <Parameter Name="handler" Type="System.EventHandler&lt;System.ComponentModel.PropertyChangedEventArgs&gt;" />
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source object that the raises the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" /> event.</param>
+        <param name="handler">The delegate that handles the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" /> event.</param>
+        <param name="propertyName">The name of the property that exists on <c>source</c> upon which to stop listening for changes. Set to <see cref="F:System.String.Empty" /> to indicate "any property".</param>
+        <summary>Removes the specified event handler from the specified source.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="handler" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">More than one method is associated with <paramref name="handler" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveListener">
+      <MemberSignature Language="C#" Value="public static void RemoveListener (System.ComponentModel.INotifyPropertyChanged source, System.Windows.IWeakEventListener listener, string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveListener(class System.ComponentModel.INotifyPropertyChanged source, class System.Windows.IWeakEventListener listener, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyChangedEventManager.RemoveListener(System.ComponentModel.INotifyPropertyChanged,System.Windows.IWeakEventListener,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.ComponentModel.INotifyPropertyChanged" />
+        <Parameter Name="listener" Type="System.Windows.IWeakEventListener" />
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="source">The object to remove the listener from.</param>
+        <param name="listener">The listener to remove.</param>
+        <param name="propertyName">The name of the property that exists on <c>source</c> upon which to stop listening for changes. Set to <see cref="F:System.String.Empty" /> to indicate "any property".</param>
+        <summary>Removes the specified listener from the list of listeners on the provided source.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartListening">
+      <MemberSignature Language="C#" Value="protected override void StartListening (object source);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void StartListening(object source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyChangedEventManager.StartListening(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="source">The object on which to start listening for <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" />.</param>
+        <summary>Begins listening for the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" /> event on the provided source.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This does not specify a property; once the event manager is started, all properties on the source will have <xref:System.ComponentModel.INotifyPropertyChanged.PropertyChanged> notification enabled.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopListening">
+      <MemberSignature Language="C#" Value="protected override void StopListening (object source);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void StopListening(object source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.PropertyChangedEventManager.StopListening(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source object on which to stop listening for <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" />.</param>
+        <summary>Stops listening for the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" /> event on the provided source.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

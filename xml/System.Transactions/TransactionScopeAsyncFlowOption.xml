@@ -1,0 +1,82 @@
+<Type Name="TransactionScopeAsyncFlowOption" FullName="System.Transactions.TransactionScopeAsyncFlowOption">
+  <TypeSignature Language="C#" Value="public enum TransactionScopeAsyncFlowOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TransactionScopeAsyncFlowOption extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Transactions.TransactionScopeAsyncFlowOption" />
+  <AssemblyInfo>
+    <AssemblyName>System.Transactions</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
+  
+ Specifies whether transaction flow across thread continuations is enabled for <see cref="T:System.Transactions.TransactionScope" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Transactions.TransactionScopeAsyncFlowOption> is configured in the <xref:System.Transactions.TransactionScope.%23ctor%2A> overloads that take a <xref:System.Transactions.TransactionScopeAsyncFlowOption> parameter. Suppress is the default setting if no <xref:System.Transactions.TransactionScopeAsyncFlowOption> is specified.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="Enabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Transactions.TransactionScopeAsyncFlowOption Enabled = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Transactions.TransactionScopeAsyncFlowOption.Enabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Transactions.TransactionScopeAsyncFlowOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that transaction flow across thread continuations is enabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Suppress">
+      <MemberSignature Language="C#" Value="Suppress" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Transactions.TransactionScopeAsyncFlowOption Suppress = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Transactions.TransactionScopeAsyncFlowOption.Suppress" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Transactions.TransactionScopeAsyncFlowOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that transaction flow across thread continuations is suppressed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the default setting if no <xref:System.Transactions.TransactionScopeAsyncFlowOption> is specified in the <xref:System.Transactions.TransactionScope.%23ctor%2A> constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

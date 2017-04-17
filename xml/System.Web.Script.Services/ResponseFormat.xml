@@ -1,0 +1,50 @@
+<Type Name="ResponseFormat" FullName="System.Web.Script.Services.ResponseFormat">
+  <TypeSignature Language="C#" Value="public enum ResponseFormat" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ResponseFormat extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Script.Services.ResponseFormat" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how the Web method return-type is serialized.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Json">
+      <MemberSignature Language="C#" Value="Json" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Script.Services.ResponseFormat Json = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Script.Services.ResponseFormat.Json" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Script.Services.ResponseFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The return type is serialized as JavaScript Object Notation (JSON).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Xml">
+      <MemberSignature Language="C#" Value="Xml" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Script.Services.ResponseFormat Xml = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Script.Services.ResponseFormat.Xml" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Script.Services.ResponseFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The return type is serialized as XML.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

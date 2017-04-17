@@ -1,0 +1,146 @@
+<Type Name="TickMark" FullName="System.Web.UI.DataVisualization.Charting.TickMark">
+  <TypeSignature Language="C#" Value="public class TickMark : System.Web.UI.DataVisualization.Charting.Grid" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TickMark extends System.Web.UI.DataVisualization.Charting.Grid" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.TickMark" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.DataVisualization.Charting.Grid</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("Enabled")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the major and minor tick marks along an axis.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.TickMark> class encapsulates the functionality for all chart tick marks.  
+  
+ The <xref:System.Web.UI.DataVisualization.Charting.TickMark> class is exposed as the <xref:System.Web.UI.DataVisualization.Charting.Axis.MajorTickMark%2A> and <xref:System.Web.UI.DataVisualization.Charting.Axis.MinorTickMark%2A> properties of <xref:System.Web.UI.DataVisualization.Charting.Axis> objects.  
+  
+ By default, major tick marks are displayed at the major grid lines, whereas minor tick marks must be explicitly displayed.  
+  
+ MajorTickMark.Interval is not set (`Double.NaN`) by default, and the tick marks are drawn according to <xref:System.Web.UI.DataVisualization.Charting.Axis.Interval%2A>. MinorTickMark.Interval is set to `Auto` (`0`) by default, and the Chart control automatically determines the interval.  
+  
+ A developer can use this class to:  
+  
+-   Enable or disable tick marks.  
+  
+-   Set the color, width, length and line style of tick marks.  
+  
+-   Specify a style that determines whether tick marks are displayed outside the axis, inside the axis or across the axis.  
+  
+-   Specify the starting point—where the first tick mark is drawn—as well as the tick mark interval, which correlates to their frequency.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TickMark ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.TickMark.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.TickMark" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Size">
+      <MemberSignature Language="C#" Value="public float Size { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Size" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.TickMark.Size" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the length of tick marks. The length is measured in units that represent a percentage of the height or width of the chart image, depending on the axis.</summary>
+        <value>A <see langword="float" /> value that represents the size, or length, of tick marks. The default value is 1.0 percent.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The size of a tick mark determines the tick mark's length.  
+  
+ The `Size` property is measured in units that represent a percentage of the height or width of the chart image. If the tick mark is displayed along a vertical axis, the unit of measure is a percentage of the chart image's width. If the tick mark is displayed along a horizontal axis, the unit of measure is a percentage of the chart image's height.  
+  
+ A change in the width of the chart image will result in the resizing of all tick marks displayed along vertical axes, for all chart areas. Similarly, a change in the height of the chart image will result in the resizing of all tick marks displayed along horizontal axes, for all chart areas.  
+  
+ To display tick marks for three-dimensional (3D) charts, so that they are just drawn for the width of a wall, set the <xref:System.Web.UI.DataVisualization.Charting.TickMark.TickMarkStyle%2A> property to <xref:System.Web.UI.DataVisualization.Charting.TickMarkStyle> and specify a tick mark size of zero (0) using the <xref:System.Web.UI.DataVisualization.Charting.TickMark.Size%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TickMarkStyle">
+      <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.TickMarkStyle TickMarkStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.TickMarkStyle TickMarkStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.TickMark.TickMarkStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.TickMarkStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the tick mark style.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.TickMarkStyle" /> enumeration value. The default value is <see cref="F:System.Web.UI.DataVisualization.Charting.TickMarkStyle.OutsideArea" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.TickMark.TickMarkStyle%2A> property determines the style of tick marks.  
+  
+ Tick marks can be drawn inside the chart area, outside the chart area, across an axis line, or can be disabled.  
+  
+ To display tick marks for three-dimensional (3D) charts, so that they are just drawn for the width of a wall, set the <xref:System.Web.UI.DataVisualization.Charting.TickMark.TickMarkStyle%2A> property to <xref:System.Web.UI.DataVisualization.Charting.TickMarkStyle>. Then specify a tick mark size of zero (0) using the <xref:System.Web.UI.DataVisualization.Charting.TickMark.Size%2A> property.  
+  
+ If the <xref:System.Web.UI.DataVisualization.Charting.TickMark.TickMarkStyle%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.TickMarkStyle>, tick marks are not displayed. Tick marks can also be toggled on or off by setting the <xref:System.Web.UI.DataVisualization.Charting.TickMark.Enabled%2A> property to `true` or `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

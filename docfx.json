@@ -14,24 +14,6 @@
       },
       {
         "files": [
-          "**/*.md"
-        ],
-        "src": "docs",
-        "dest": "articles",
-        "exclude": [
-          "api/overwrites/**",
-          "samples/**/*.*",
-          "**/includes/**",
-          "***/contributing.md"
-        ]
-      },
-      {
-          "files": [
-           "core/**/*.md"
-         ]
-      },
-      {
-        "files": [
           "toc.yml",
           "index.md"
         ]

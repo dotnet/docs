@@ -14,9 +14,6 @@ ms.assetid: 9f6e8679-bd7e-4317-b3f9-7255a260d9cf
 
 # Developing Libraries with Cross Platform Tools
 
-> [!WARNING]
-> This topic hasn't been updated to the latest version of the tooling yet.
-
 This article covers how to write libraries for .NET using cross-platform CLI tools.  The CLI provides an efficient and low-level experience that works across any supported OS.  You can still build libraries with Visual Studio, and if that is your preferred experience [refer to the Visual Studio guide](libraries-with-vs.md).
 
 ## Prerequisites
@@ -231,63 +228,6 @@ netstandard1.4/
 ```
 
 Each of these contain the `.dll` files for each target.
-
-## How to use native dependencies
-
-You may wish to write a library which depends on a native `.dll` file.  If you're writing such a library, you have have two options:
-
-1. Reference the native `.dll` directly in your `project.json`.
-2. Package that `.dll` into its own NuGet package and depend on that package.
-
-For the first option, you'll need to include the following in your `project.json` file:
-
-1. Setting `allowUnsafe` to `true` in a `buildOptions` section.
-2. Specifying a [Runtime Identifier (RID)](../rid-catalog.md) in a `runtimes` section.
-3. Specifying the path to the native `.dll` file(s) that you are referencing.
-
-Here's an example `project.json` for a native `.dll` file in the root directory of the project which runs on Windows:
-
-TODO: probably this in it
-```xml
-<RuntimeIdentifiers>win10-x64;</RuntimeIdentifiers>
-```
-
-```json
-{
-    "buildOptions":{
-        "allowUnsafe":true
-    },
-    "runtimes":{
-        "win10-x64":{}
-    },
-    "packOptions":{
-        "files":{
-            "mappings":{
-                "runtimes/win10-x64/native":{
-                    "includeFiles":[ "native-lib.dll"]
-                }
-            }            
-        }
-    }
-}
-```
-
-If you're distributing your library as a package, it's recommended that you place the `.dll` file at the root level of your project.
-
-For the second option, you'll need to build a NuGet package out of your `.dll` file(s), host on a NuGet or MyGet feed, and depend on it directly.  You'll still need to set `allowUnsafe` to `true` in the `buildOptions` section of your `project.json`.  Here's an example (assuming `MyNativeLib` is a Nuget package at version `1.2.0`):
-
-```json
-{
-    "buildOptions":{
-        "allowUnsafe":true
-    },
-    "dependencies":{
-        "MyNativeLib":"1.2.0"
-    }
-}
-```
-
-To see an example of packaging up cross-platform native binaries, check out the [ASP.NET Libuv Package](https://github.com/aspnet/libuv-package) and the [corresponding reference in KestrelHttpServer](https://github.com/aspnet/KestrelHttpServer/blob/1.0.0/src/Microsoft.AspNetCore.Server.Kestrel/project.json#L19).
 
 ## How to test libraries on .NET Core
 

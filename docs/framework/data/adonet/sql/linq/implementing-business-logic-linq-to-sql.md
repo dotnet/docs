@@ -72,7 +72,7 @@ public partial class MyNorthWindDataContext : System.Data.Linq.DataContext
         #endregion  
 ```  
   
- If you implement the Insert, Update and Delete methods in your partial class, the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] runtime will call them instead of its own default methods when <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is called. This enables you to override the default behavior for create / read / update / delete operations. For more information, see [Walkthrough: Customizing the insert, update, and delete behavior of entity classes](../Topic/Walkthrough:%20Customizing%20the%20insert,%20update,%20and%20delete%20behavior%20of%20entity%20classes.md).  
+ If you implement the Insert, Update and Delete methods in your partial class, the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] runtime will call them instead of its own default methods when <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is called. This enables you to override the default behavior for create / read / update / delete operations. For more information, see [Walkthrough: Customizing the insert, update, and delete behavior of entity classes](https://docs.microsoft.com/visualstudio/data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes).  
   
  The `OnCreated` method is called in the class constructor.  
   
@@ -182,7 +182,7 @@ partial class Customer
   
  [How to: Add validation to entity classes](http://msdn.microsoft.com/library/61107da9-7fa3-4dba-b101-ae46536f52c4)  
   
- [Walkthrough: Customizing the insert, update, and delete behavior of entity classes](../Topic/Walkthrough:%20Customizing%20the%20insert,%20update,%20and%20delete%20behavior%20of%20entity%20classes.md)  
+ [Walkthrough: Customizing the insert, update, and delete behavior of entity classes](https://docs.microsoft.com/visualstudio/data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes)  
   
  [Walkthrough: Adding Validation to Entity Classes](http://msdn.microsoft.com/library/85b06a02-b2e3-4534-95b8-d077c8d4c1d7)  
   

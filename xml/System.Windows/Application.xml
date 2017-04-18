@@ -427,7 +427,7 @@
       </Parameters>
       <Docs>
         <param name="uriContent">The relative <see cref="T:System.Uri" /> that maps to a loose resource.</param>
-        <summary>Returns a resource stream for a content data file that is located at the specified <see cref="T:System.Uri" /> (see [WPF Application Resource, Content, and Data Files](../Topic/WPF%20Application%20Resource,%20Content,%20and%20Data%20Files.md)).</summary>
+        <summary>Returns a resource stream for a content data file that is located at the specified <see cref="T:System.Uri" /> (see [WPF Application Resource, Content, and Data Files](~/docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)).</summary>
         <returns>A <see cref="T:System.Windows.Resources.StreamResourceInfo" /> that contains a content data file that is located at the specified <see cref="T:System.Uri" />. If a loose resource is not found, null is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -497,7 +497,7 @@
       </Parameters>
       <Docs>
         <param name="uriRemote">The <see cref="T:System.Uri" /> that maps to a loose resource at the site of origin.</param>
-        <summary>Returns a resource stream for a site-of-origin data file that is located at the specified <see cref="T:System.Uri" /> (see [WPF Application Resource, Content, and Data Files](../Topic/WPF%20Application%20Resource,%20Content,%20and%20Data%20Files.md)).</summary>
+        <summary>Returns a resource stream for a site-of-origin data file that is located at the specified <see cref="T:System.Uri" /> (see [WPF Application Resource, Content, and Data Files](~/docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)).</summary>
         <returns>A <see cref="T:System.Windows.Resources.StreamResourceInfo" /> that contains a resource stream for a site-of-origin data file that is located at the specified <see cref="T:System.Uri" />. If the loose resource is not found, <see langword="null" /> is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -533,7 +533,7 @@
       </Parameters>
       <Docs>
         <param name="uriResource">The <see cref="T:System.Uri" /> that maps to an embedded resource.</param>
-        <summary>Returns a resource stream for a resource data file that is located at the specified <see cref="T:System.Uri" /> (see [WPF Application Resource, Content, and Data Files](../Topic/WPF%20Application%20Resource,%20Content,%20and%20Data%20Files.md)).</summary>
+        <summary>Returns a resource stream for a resource data file that is located at the specified <see cref="T:System.Uri" /> (see [WPF Application Resource, Content, and Data Files](~/docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)).</summary>
         <returns>A <see cref="T:System.Windows.Resources.StreamResourceInfo" /> that contains a resource stream for resource data file that is located at the specified <see cref="T:System.Uri" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -602,7 +602,7 @@
 ## Remarks  
  You must explicitly convert the return value to the same type as the root element of the [!INCLUDE[TLA#tla_titlexaml](~/includes/tlasharptla-titlexaml-md.md)] file.  
   
- The [!INCLUDE[TLA2#tla_titlexaml](~/includes/tla2sharptla-titlexaml-md.md)] file can be an application code file (configured as an [!INCLUDE[TLA#tla_msbuild](~/includes/tlasharptla-msbuild-md.md)] Page item) or an application data file (a resource file, content file, or site-of-origin file; see [WPF Application Resource, Content, and Data Files](../Topic/WPF%20Application%20Resource,%20Content,%20and%20Data%20Files.md)).  
+ The [!INCLUDE[TLA2#tla_titlexaml](~/includes/tla2sharptla-titlexaml-md.md)] file can be an application code file (configured as an [!INCLUDE[TLA#tla_msbuild](~/includes/tlasharptla-msbuild-md.md)] Page item) or an application data file (a resource file, content file, or site-of-origin file; see [WPF Application Resource, Content, and Data Files](~/docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)).  
   
 > [!NOTE]
 >  This method is not thread-safe.  
@@ -644,7 +644,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [!INCLUDE[TLA2#tla_titlexaml](~/includes/tla2sharptla-titlexaml-md.md)] file can be an application code file (configured as an [!INCLUDE[TLA#tla_msbuild](~/includes/tlasharptla-msbuild-md.md)] Page item) or an application data file (a resource file, content file, or site-of-origin file; see [WPF Application Resource, Content, and Data Files](../Topic/WPF%20Application%20Resource,%20Content,%20and%20Data%20Files.md)).  
+ The [!INCLUDE[TLA2#tla_titlexaml](~/includes/tla2sharptla-titlexaml-md.md)] file can be an application code file (configured as an [!INCLUDE[TLA#tla_msbuild](~/includes/tlasharptla-msbuild-md.md)] Page item) or an application data file (a resource file, content file, or site-of-origin file; see [WPF Application Resource, Content, and Data Files](~/docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)).  
   
 > [!NOTE]
 >  This method is not thread-safe.  
@@ -1928,7 +1928,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [!INCLUDE[TLA2#tla_titlexaml](~/includes/tla2sharptla-titlexaml-md.md)] file can be an application code file (configured as an [!INCLUDE[TLA#tla_msbuild](~/includes/tlasharptla-msbuild-md.md)] Page item) or an application data file (a resource file, content file, or site-of-origin file; see [WPF Application Resource, Content, and Data Files](../Topic/WPF%20Application%20Resource,%20Content,%20and%20Data%20Files.md)).  
+ The [!INCLUDE[TLA2#tla_titlexaml](~/includes/tla2sharptla-titlexaml-md.md)] file can be an application code file (configured as an [!INCLUDE[TLA#tla_msbuild](~/includes/tlasharptla-msbuild-md.md)] Page item) or an application data file (a resource file, content file, or site-of-origin file; see [WPF Application Resource, Content, and Data Files](~/docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)).  
   
 > [!NOTE]
 >  This method is not thread-safe.  

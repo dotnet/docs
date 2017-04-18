@@ -17,7 +17,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataVisualization.Charting.Docking> enumeration represents the docking location on the <xref:System.Windows.Forms.DataVisualization.Charting.Chart> control that an chart element should be docked.  
   
- Set the `IsDockedInsideChartArea` property of the relevant chart element to specify whether that element will be docked to the entire chart image or to a <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea>object. The chart area is specified in the [DockedToChartArea](assetId:///DockedToChartArea?qualifyHint=False&amp;autoUpgrade=True) property of the chart element.  
+ Set the `IsDockedInsideChartArea` property of the relevant chart element to specify whether that element will be docked to the entire chart image or to a <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> object. The chart area is specified in the <xref:System.Windows.Forms.DataVisualization.Charting.Title.DockedToChartArea> property of the chart element.  
   
  ]]></format>
     </remarks>

@@ -22,11 +22,11 @@ In LINQ to SQL, the following SQL functionality cannot be exposed through transl
   
 -   `LIKE`  
   
-     Although `LIKE` is not supported through direct translation, similar functionality exists in the <xref:System.Data.Linq.SqlClient.SqlMethods> class. For more information, see [M:System.Data.Linq.SqlClient.SqlMethods.Like(System.String,System.String](assetId:///M:System.Data.Linq.SqlClient.SqlMethods.Like(System.String,System.String?qualifyHint=True&autoUpgrade=True).  
+     Although `LIKE` is not supported through direct translation, similar functionality exists in the <xref:System.Data.Linq.SqlClient.SqlMethods> class. For more information, see <xref:System.Data.Linq.SqlClient.SqlMethods.Like%2A?displayProperty=fullName>.  
   
 -   `DATEDIFF`  
   
-     LINQ to SQL has limited support for `DATEDIFF`. Similar functionality exists in the [SqlMethods](assetId:///T:System.Data.Linq.SqlClient.SqlMethods?qualifyHint=False&autoUpgrade=True) class.  
+     LINQ to SQL has limited support for `DATEDIFF`. Similar functionality exists in the <xref:System.Data.Linq.SqlClient.SqlMethods> class.  
   
 -   `ROUND`  
   

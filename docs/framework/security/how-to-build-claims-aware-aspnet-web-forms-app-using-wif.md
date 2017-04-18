@@ -131,7 +131,7 @@ manager: "mbaldwin"
     </system.identityModel.services>  
     ```  
   
-6.  Add reference to the [System.IdentityModel](assetId:///System.IdentityModel?qualifyHint=False&amp;autoUpgrade=True) assembly.  
+6.  Add reference to the <xref:System.IdentityModel> assembly.  
   
 7.  Compile the solution to make sure there are errors.  
   

@@ -2674,7 +2674,7 @@
 ## Remarks  
  If you need more than 16 colors or you want to apply your own colors to the chart, you must define a custom palette. A custom palette let you add your own colors in the order you want them to appear on the chart. This type of palette is especially helpful if the number of series in your chart is unknown at design time.  
   
- This property has no effect when the <xref:System.Web.UI.DataVisualization.Charting.Chart.Palette%2A> property is *not* set to [System.Web.UI.DataVisualization.Charting.ChartColorPalette.None](assetId:///System.Web.UI.DataVisualization.Charting.ChartColorPalette.None?qualifyHint=False&amp;autoUpgrade=True).  
+ This property has no effect when the <xref:System.Web.UI.DataVisualization.Charting.Chart.Palette%2A> property is *not* set to <xref:System.Web.UI.DataVisualization.Charting.ChartColorPalette.None>.  
   
  ]]></format>
         </remarks>

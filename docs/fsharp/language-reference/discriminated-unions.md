@@ -14,14 +14,12 @@ ms.assetid: 16e2a011-c785-48c8-859f-79df7f3a0e29
 
 # Discriminated Unions
 
-> [!NOTE]
-> The following article does not cover using the `struct` attribute for Records yet, which is an F# 4.1 feature.  It will be documented here.
-
 Discriminated unions provide support for values that can be one of a number of named cases, possibly each with different values and types. Discriminated unions are useful for heterogeneous data; data that can have special cases, including valid and error cases; data that varies in type from one instance to another; and as an alternative for small object hierarchies. In addition, recursive discriminated unions are used to represent tree data structures.
 
 ## Syntax
 
 ```fsharp
+[ struct-attribute ]
 type type-name =
     | case-identifier1 [of [ fieldname1 : ] type1 [ * [ fieldname2 : ] type2 ...]
     | case-identifier2 [of [fieldname3 : ]type3 [ * [ fieldname4 : ]type4 ...]

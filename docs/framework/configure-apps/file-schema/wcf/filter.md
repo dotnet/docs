@@ -63,6 +63,6 @@ None.
 
 ## See also
 
-[System.ServiceModel.Routing.Configuration.FilterElement](assetId:///System.ServiceModel.Routing.Configuration.FilterElement?qualifyHint=False&amp;autoUpgrade=True)
+<xref:System.ServiceModel.Routing.Configuration.FilterElement> 
 <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A>
 <xref:System.ServiceModel.Routing.Configuration.FilterType>

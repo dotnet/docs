@@ -1068,7 +1068,7 @@ For more information on the <xref:System.TimeZoneInfo> structure and time zone a
   
      The <xref:System.Web.Hosting.HostingEnvironment.QueueBackgroundWorkItem%2A?displayProperty=fullName> method lets you schedule small background work items. ASP.NET tracks these items and prevents IIS from abruptly terminating the worker process until all background work items have completed. This method can't be called outside an ASP.NET managed app domain.  
   
-     The new <xref:System.Web.HttpResponse.HeadersWritten?displayProperty=fullName> and <xref:System.Web.HttpResponseBase.HeadersWritten?displayProperty=fullName> properties return Boolean values that indicate whether the response headers have been written. You can use these properties to make sure that calls to APIs such as <xref:System.Web.HttpResponse.StatusCode%2A?displayProperty=fullName> (which throw exceptions if the headers have been written) will succeed.  
+     The new <xref:System.Web.HttpResponse.HeadersWritten?displayProperty=fullName> and <xref:System.Web.HttpResponseBase.HeadersWritten%2A?displayProperty=fullName> properties return Boolean values that indicate whether the response headers have been written. You can use these properties to make sure that calls to APIs such as <xref:System.Web.HttpResponse.StatusCode%2A?displayProperty=fullName> (which throw exceptions if the headers have been written) will succeed.  
   
 -   **Resizing in Windows Forms controls.** This feature has been expanded. You can now use the system DPI setting to resize components of the following additional controls (for example, the drop-down arrow in combo boxes):  
   

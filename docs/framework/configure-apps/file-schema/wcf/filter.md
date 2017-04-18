@@ -63,6 +63,6 @@ None.
 
 ## See also
 
-<xref:System.ServiceModel.Routing.Configuration.FilterElement> 
-<xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A>
-<xref:System.ServiceModel.Routing.Configuration.FilterType>
+<xref:System.ServiceModel.Routing.Configuration.FilterElement?displayProperty=fullName>    
+<xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A?displayProperty=fullName>   
+<xref:System.ServiceModel.Routing.Configuration.FilterType?displayProperty=fullName>   

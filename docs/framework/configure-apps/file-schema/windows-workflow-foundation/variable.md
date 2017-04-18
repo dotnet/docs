@@ -72,7 +72,7 @@ Represents a collection of variables associated with this activity query.
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Activities.Tracking.Configuration.VariableElement>    
- <xref:System.Activities.Tracking.ActivityStateQuery>    
+ <xref:System.ServiceModel.Activities.Tracking.Configuration.VariableElement?displayProperty=fullName>       
+ <xref:System.Activities.Tracking.ActivityStateQuery?displayProperty=fullName>       
  [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)   
  [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

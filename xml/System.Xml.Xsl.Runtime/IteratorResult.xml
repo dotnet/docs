@@ -21,6 +21,7 @@
   <Docs>
     <summary>Iterators that use containment to control a nested iterator return one of the values in this enumeration.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="HaveCurrentNode">
@@ -41,6 +42,7 @@
       </ReturnValue>
       <Docs>
         <summary>Iteration is complete; there are no more nodes.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NeedInputNode">
@@ -61,6 +63,7 @@
       </ReturnValue>
       <Docs>
         <summary>The next node must be fetched from the contained iterator before iteration can continue.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoMoreNodes">
@@ -81,6 +84,7 @@
       </ReturnValue>
       <Docs>
         <summary>Iteration is complete; there are no more nodes</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -24,6 +24,7 @@
     <summary>Provides a safe handle that can be used by Cryptography Next Generation (CNG) objects.</summary>
     <remarks>To be added.</remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for permission to call unmanaged code. Security action: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,6 +50,7 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Win32.SafeHandles.SafeNCryptHandle" /> class.</summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for permission to call unmanaged code. Security action: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsInvalid">
@@ -101,6 +103,7 @@
         <returns>
           <see langword="true" /> if the handle is released successfully; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ReleaseNativeHandle">
@@ -130,6 +133,7 @@
         <returns>
           <see langword="true" /> if the handle is released successfully; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

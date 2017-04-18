@@ -13,6 +13,7 @@
   <Docs>
     <summary>Implements the <c>FileClassifer</c> task. Use the <c>FileClassifer</c> element in your project file to create and execute this task. For usage and parameter information, see [FileClassifier](http://msdn.microsoft.com/library/14e03310-fcc0-4bb2-a84d-cda12be66367).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Windows.FileClassifier" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CLREmbeddedResource">
@@ -51,6 +53,7 @@
         <summary>Gets or sets the output Item list for the CLR resources that will be saved in the main assembly.</summary>
         <value>The output Item list for the CLR resources that will be saved in the main assembly.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CLRResourceFiles">
@@ -69,6 +72,7 @@
         <summary>Gets or sets the CLR resource file list.</summary>
         <value>The CLR resource file list.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CLRSatelliteEmbeddedResource">
@@ -92,6 +96,7 @@
         <summary>Gets or sets the output Item list for the CLR resources that will be saved in the satellite assembly.</summary>
         <value>The output Item list for the CLR resources that will be saved in the satellite assembly.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Culture">
@@ -110,6 +115,7 @@
         <summary>Gets or sets the culture of the build.</summary>
         <value>The culture of the build or <see langword="null" /> if the build is non-localizable</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -130,6 +136,7 @@
         <returns>
           <see langword="true" /> if the task executed successfully; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MainEmbeddedFiles">
@@ -153,6 +160,7 @@
         <summary>Gets or sets non-localizable resources that will be embedded into the Main assembly.</summary>
         <value>Non-localizable resources that will be embedded into the Main assembly.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OutputType">
@@ -176,6 +184,7 @@
         <summary>Gets or sets the output type of the assembly.</summary>
         <value>The output type of the assembly.  Can be “exe” or “dll”.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SatelliteEmbeddedFiles">
@@ -199,6 +208,7 @@
         <summary>Gets or sets the localizable files that are embedded in the satellite assembly for the culture that is specified by the <see cref="P:Microsoft.Build.Tasks.Windows.FileClassifier.Culture" /> property.</summary>
         <value>The localizable files that are embedded in the satellite assembly for the culture that is specified by the <see cref="P:Microsoft.Build.Tasks.Windows.FileClassifier.Culture" /> property.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SourceFiles">
@@ -222,6 +232,7 @@
         <summary>Gets or sets the list of items that are to be classified.</summary>
         <value>The list of items that are to be classified.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

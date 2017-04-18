@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,6 +43,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DefaultApplicationBaseType">
@@ -67,6 +69,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DefaultPageBaseType">
@@ -92,6 +95,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DefaultPageParserFilterType">
@@ -117,6 +121,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DefaultUserControlBaseType">
@@ -142,6 +147,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="EnableLongStringsAsResources">
@@ -168,6 +174,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetCompiledPageInstance">
@@ -194,6 +201,7 @@
         <summary>Returns an instance of a compiled page for the specific virtual path.</summary>
         <returns>Returns the compiled instance of the requested page.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

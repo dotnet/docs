@@ -38,6 +38,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="GetResult">
@@ -77,6 +78,7 @@
         <exception cref="T:System.NullReferenceException">The <see cref="T:System.Runtime.CompilerServices.TaskAwaiter`1" /> object was not properly initialized.</exception>
         <exception cref="T:System.Threading.Tasks.TaskCanceledException">The task was canceled.</exception>
         <exception cref="T:System.Exception">The task completed in a <see cref="F:System.Threading.Tasks.TaskStatus.Faulted" /> state.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsCompleted">
@@ -114,6 +116,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The <see cref="T:System.Runtime.CompilerServices.TaskAwaiter`1" /> object was not properly initialized.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OnCompleted">
@@ -160,6 +163,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="continuation" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NullReferenceException">The <see cref="T:System.Runtime.CompilerServices.TaskAwaiter`1" /> object was not properly initialized.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UnsafeOnCompleted">
@@ -199,6 +203,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="continuation" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The awaiter was not properly initialized.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

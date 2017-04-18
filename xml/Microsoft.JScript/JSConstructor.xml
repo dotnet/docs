@@ -13,6 +13,7 @@
   <Docs>
     <summary>Wraps a <see cref="T:Microsoft.JScript.FunctionObject" />.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Attributes">
@@ -31,6 +32,7 @@
         <summary>Gets the attributes that are associated with this constructor.</summary>
         <value>A bitwise combination of the enumeration values.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DeclaringType">
@@ -49,6 +51,7 @@
         <summary>Gets the type that declares this constructor.</summary>
         <value>The <see langword="Type" /> object for the class that declares this member.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -72,6 +75,7 @@
         <summary>Returns an array that contains the custom attributes that are attached to this constructor.</summary>
         <returns>An array of custom attributes that are attached to this method, or, if there are none, an array that has zero elements.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -97,6 +101,7 @@
         <summary>Returns an array that contains the custom attributes that are attached to this constructor, searching only for attributes of the specified type.</summary>
         <returns>An array of <see cref="T:System.Object" /> objects that has zero elements.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetMethodImplementationFlags">
@@ -117,6 +122,7 @@
         <returns>
           <see cref="F:System.Reflection.MethodImplAttributes.Managed" /> and <see cref="F:System.Reflection.MethodImplAttributes.IL" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetParameters">
@@ -136,6 +142,7 @@
         <summary>Gets the parameters of this constructor.</summary>
         <returns>An array that contains information that matches the signature of this constructor.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -169,6 +176,7 @@
         <summary>Invokes the constructor, using the specified culture and binding information.</summary>
         <returns>An instance of the class associated with the constructor.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -204,6 +212,7 @@
         <summary>Invokes the constructor on the specified object, using the specified culture and binding information.</summary>
         <returns>An instance of the class associated with the constructor.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsDefined">
@@ -230,6 +239,7 @@
         <returns>
           <see langword="false" /> in all cases.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MemberType">
@@ -249,6 +259,7 @@
         <value>
           <see cref="F:System.Reflection.MemberTypes.Constructor" />, because this class derives from <see cref="T:System.Reflection.ConstructorInfo" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MethodHandle">
@@ -267,6 +278,7 @@
         <summary>Gets a handle to the internal metadata representation of this constructor.</summary>
         <value>A handle to the internal metadata representation of this constructor.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -285,6 +297,7 @@
         <summary>Gets the name of this constructor.</summary>
         <value>The name of this constructor.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ReflectedType">
@@ -303,6 +316,7 @@
         <summary>Gets the class object that was used to obtain this instance through reflection.</summary>
         <value>The <see langword="Type" /> object for the class that declares this member.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

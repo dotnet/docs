@@ -22,6 +22,7 @@
   <Docs>
     <summary>XSLT and XPath functions.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="BaseUri">
@@ -48,6 +49,7 @@
         <summary>Returns the value of the base URI of the node of the node passed in by the <paramref name="navigator" /> parameter. Implements <see langword="baseUri" /> XPath function according to the [W3C specification](http://go.microsoft.com/fwlink/?LinkID=4873).</summary>
         <returns>The base URI as <see cref="T:System.String" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -77,6 +79,7 @@
         <returns>
           <see langword="true" /> if the first argument string contains the second argument string; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="EXslObjectType">
@@ -103,6 +106,7 @@
         <summary>Implements [exsl:object-type](http://go.microsoft.com/fwlink/?LinkId=143941).</summary>
         <returns>Object type as <see cref="T:System.String" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Lang">
@@ -133,6 +137,7 @@
         <returns>
           <see cref="T:System.Boolean" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MSFormatDateTime">
@@ -165,6 +170,7 @@
         <summary>Implements the <see langword="ms:format-date" /> and <see langword="ms-format-time" />[Microsoft XPath extension functions](http://go.microsoft.com/fwlink/?LinkId=143943).</summary>
         <returns>String that contains formatted date and time.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MSLocalName">
@@ -191,6 +197,7 @@
         <summary>Implements the <see langword="ms:local-name" />[Microsoft XPath extension function](http://go.microsoft.com/fwlink/?LinkId=143943).</summary>
         <returns>Name as <see cref="T:System.String" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MSNamespaceUri">
@@ -219,6 +226,7 @@
         <summary>Implements the <see langword="ms:namespace-uri" />[Microsoft XPath extension function](http://go.microsoft.com/fwlink/?LinkId=143943).</summary>
         <returns>Namespace URI as <see cref="T:System.String" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MSNumber">
@@ -247,6 +255,7 @@
         <returns>
           <see cref="T:System.Double" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MSStringCompare">
@@ -279,6 +288,7 @@
         <summary>Implements <see langword="ms:string-compare" />[Microsoft XPath extension function](http://go.microsoft.com/fwlink/?LinkId=143943).</summary>
         <returns>If <paramref name="s1" /> &lt; <paramref name="s2" /> the method returns -1. If <paramref name="s1" /> == <paramref name="s2" /> the method returns 0. If <paramref name="s1" /> &gt; <paramref name="s2" /> the method returns 1.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MSUtc">
@@ -312,6 +322,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NormalizeSpace">
@@ -338,6 +349,7 @@
         <summary>Removes leading and trailing spaces from the specified string and returns the result. Implements <see langword="normalize-space" /> function from the [W3C XPath standard](http://go.microsoft.com/fwlink/?LinkID=4873).</summary>
         <returns>A normalized string.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OuterXml">
@@ -365,6 +377,7 @@
         <summary>Gets the markup representing the opening and closing tags of the node and all child nodes of the node identified by the <see cref="T:System.Xml.XPath.XPathNavigator" /> argument.</summary>
         <returns>A string that contains the opening and closing tags of the node and all child nodes of the node that is identified by the <paramref name="navigator" /> parameter.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -392,6 +405,7 @@
         <summary>Rounds value by using XPath rounding rules. Rounds towards positive infinity. Values between -0.5 and -0.0 are rounded to -0.0 (negative zero).</summary>
         <returns>The rounded number as <see cref="T:System.Double" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StartsWith">
@@ -421,6 +435,7 @@
         <returns>
           <see langword="true" /> if the first argument string starts with the second argument string; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Substring">
@@ -449,6 +464,7 @@
         <summary>Implements <see langword="substring" /> XPath function according to the [W3C specification](http://go.microsoft.com/fwlink/?LinkID=4873).</summary>
         <returns>The substring of the first argument starting at the position specified in the second argument</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Substring">
@@ -479,6 +495,7 @@
         <summary>Implements <see langword="substring" /> XPath function according to the [W3C specification](http://go.microsoft.com/fwlink/?LinkID=4873).</summary>
         <returns>The substring of the first argument, starting at the position specified in the second argument, with the length specified in the third argument.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SubstringAfter">
@@ -514,6 +531,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SubstringBefore">
@@ -549,6 +567,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SystemProperty">
@@ -575,6 +594,7 @@
         <summary>Implements <see langword="system-property" /> XSLT function according to the [W3C specification](http://go.microsoft.com/fwlink/?LinkID=49919).</summary>
         <returns>The value of the system property specified by the <paramref name="name" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Translate">
@@ -612,6 +632,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

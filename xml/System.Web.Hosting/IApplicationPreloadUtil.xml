@@ -18,6 +18,7 @@
   <Docs>
     <summary>Provides methods that ASP.NET uses to communicate with [!INCLUDE[iisver](~/includes/iisver-md.md)] while the server preloads an application.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="GetApplicationPreloadInfo">
@@ -45,6 +46,7 @@
         <param name="parametersForStartupObj">When this method returns, contains the data that will be passed to the preloaded type. This parameter is passed uninitialized.</param>
         <summary>Gets initialization data that is required in order to preload an application. This method is called by ASP.NET.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ReportApplicationPreloadFailure">
@@ -70,6 +72,7 @@
         <param name="errorMessage">The error text.</param>
         <summary>Reports that an error occurred in [!INCLUDE[iisver](~/includes/iisver-md.md)] while the server was preloading the ASP.NET application.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -29,6 +29,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,6 +48,7 @@
         <param name="owner">The <see cref="T:System.Windows.Forms.CheckBox" /> that owns the <see cref="T:System.Windows.Forms.CheckBox.CheckBoxAccessibleObject" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.CheckBox.CheckBoxAccessibleObject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DefaultAction">
@@ -72,6 +74,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DoDefaultAction">
@@ -91,6 +94,7 @@
         <summary>Performs the default action associated with this accessible object.</summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the immediate caller to call unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Role">
@@ -109,6 +113,7 @@
         <summary>Gets the role of this accessible object.</summary>
         <value>The <see cref="F:System.Windows.Forms.AccessibleRole.CheckButton" /> value.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -127,6 +132,7 @@
         <summary>Gets the state of the <see cref="T:System.Windows.Forms.CheckBox" /> control.</summary>
         <value>One of the <see cref="T:System.Windows.Forms.AccessibleStates" /> values. If the <see cref="P:System.Windows.Forms.CheckBox.CheckState" /> property is set to <see cref="F:System.Windows.Forms.CheckState.Checked" />, this property returns <see cref="F:System.Windows.Forms.AccessibleStates.Checked" />. If <see cref="P:System.Windows.Forms.CheckBox.CheckState" /> is set to <see cref="F:System.Windows.Forms.CheckState.Indeterminate" />, this property returns <see cref="F:System.Windows.Forms.AccessibleStates.Indeterminate" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -18,6 +18,7 @@
   <Docs>
     <summary>Defines a set of utility methods that convert data from one type to another. Includes methods that convert values to <see cref="T:System.String" /> objects so that they can be displayed by the debugger.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="BooleanToString">
@@ -40,6 +41,7 @@
         <summary>When implemented in a class, converts the specified <see cref="T:System.Boolean" /> value to a <see cref="T:System.String" />.</summary>
         <returns>The literal string "true" or the literal string "false".</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ByteToString">
@@ -64,6 +66,7 @@
         <summary>When implemented in a class, converts the specified <see cref="T:System.Byte" /> value to a <see cref="T:System.String" />.</summary>
         <returns>The string representation of <paramref name="value" /> in base <paramref name="radix" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DoubleToDateString">
@@ -86,6 +89,7 @@
         <summary>When implemented in a class, creates a string representation of the specified <see cref="T:System.Double" />. The string representation contains the day of the week, the month, the date, the time, the time zone, and the year.</summary>
         <returns>The string representation of <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DoubleToString">
@@ -108,6 +112,7 @@
         <summary>When implemented in a class, converts the specified <see cref="T:System.Double" /> value to a <see cref="T:System.String" />.</summary>
         <returns>The string representation of <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetErrorMessageForHR">
@@ -132,6 +137,7 @@
         <summary>When implemented in a class, gets an error message that is created from the specified <see cref="P:System.Exception.HResult" /> and the <see cref="T:System.Globalization.CultureInfo" /> of the specified <see cref="T:Microsoft.JScript.Vsa.IJSVsaEngine" />.</summary>
         <returns>A localized string that contains information about the error.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetManagedCharObject">
@@ -155,6 +161,7 @@
         <returns>
           <paramref name="i" /> converted to a <see cref="T:System.Char" /> and then an <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetManagedInt64Object">
@@ -178,6 +185,7 @@
         <returns>
           <paramref name="i" /> converted to an <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetManagedObject">
@@ -201,6 +209,7 @@
         <returns>
           <paramref name="value" /> converted to a managed <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetManagedUInt64Object">
@@ -224,6 +233,7 @@
         <returns>
           <paramref name="i" /> converted to an <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Int16ToString">
@@ -248,6 +258,7 @@
         <summary>When implemented in a class, converts the specified <see cref="T:System.Int16" /> value to a <see cref="T:System.String" />.</summary>
         <returns>The string representation of <paramref name="value" /> in base <paramref name="radix" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Int32ToString">
@@ -272,6 +283,7 @@
         <summary>When implemented in a class, converts the specified <see cref="T:System.Int32" /> value to a <see cref="T:System.String" />.</summary>
         <returns>The string representation of <paramref name="value" /> in base <paramref name="radix" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Int64ToString">
@@ -296,6 +308,7 @@
         <summary>When implemented in a class, converts the specified <see cref="T:System.Int64" /> value to a <see cref="T:System.String" />.</summary>
         <returns>The string representation of <paramref name="value" /> in base <paramref name="radix" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RegexpToString">
@@ -327,6 +340,7 @@
         <summary>When implemented in a class, converts the specified regular expression information to a <see cref="T:System.String" />.</summary>
         <returns>The string representation of the regular expression information.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SByteToString">
@@ -351,6 +365,7 @@
         <summary>When implemented in a class, converts the specified <see cref="T:System.SByte" /> value to a <see cref="T:System.String" />.</summary>
         <returns>The string representation of <paramref name="value" /> in base <paramref name="radix" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SingleToString">
@@ -373,6 +388,7 @@
         <summary>When implemented in a class, converts the specified <see cref="T:System.Single" /> value to a <see cref="T:System.String" />.</summary>
         <returns>The string representation of <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StringToPrintable">
@@ -395,6 +411,7 @@
         <summary>When implemented in a class, converts the specified <see cref="T:System.String" /> to a <see cref="T:System.String" /> that contains escape characters for non-printable characters.</summary>
         <returns>The string representation of <paramref name="source" /> that contains escape characters.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ToPrimitive">
@@ -423,6 +440,7 @@
         <returns>
           <paramref name="value" /> converted to the <paramref name="typeCode" /> type.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UInt16ToString">
@@ -447,6 +465,7 @@
         <summary>When implemented in a class, converts the specified <see cref="T:System.UInt16" /> value to a <see cref="T:System.String" />.</summary>
         <returns>The string representation of <paramref name="value" /> in base <paramref name="radix" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UInt32ToString">
@@ -471,6 +490,7 @@
         <summary>When implemented in a class, converts the specified <see cref="T:System.UInt32" /> value to a <see cref="T:System.String" />.</summary>
         <returns>The string representation of <paramref name="value" /> in base <paramref name="radix" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UInt64ToString">
@@ -495,6 +515,7 @@
         <summary>When implemented in a class, converts the specified <see cref="T:System.UInt64" /> value to a <see cref="T:System.String" />.</summary>
         <returns>The string representation of <paramref name="value" /> in base <paramref name="radix" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

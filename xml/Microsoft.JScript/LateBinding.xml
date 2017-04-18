@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents a reference to a class member, callable expression, or variable name. This class attempts to resolve the reference to the correct value at run time.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,6 +32,7 @@
         <param name="name">A string that identifies the binding reference.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.LateBinding" /> class, using the specified identifier.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -51,6 +53,7 @@
         <param name="obj">The object that the binding reference is defined on.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.LateBinding" /> class, using the specified identifier and object.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Call">
@@ -86,6 +89,7 @@
         <summary>Resolves the binding reference by calling a member.</summary>
         <returns>The return value of the call to the member.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CallValue">
@@ -125,6 +129,7 @@
         <summary>Resolves the binding reference by calling a member.</summary>
         <returns>The return value of the call to the member.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CallValue2">
@@ -164,6 +169,7 @@
         <summary>Resolves the binding reference by calling a member.</summary>
         <returns>The return value of the call to the member.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -184,6 +190,7 @@
         <returns>
           <see langword="true" /> if the member was successfully deleted; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DeleteMember">
@@ -209,6 +216,7 @@
         <returns>
           <see langword="true" /> if the member was successfully deleted; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetNonMissingValue">
@@ -233,6 +241,7 @@
         <summary>Gets the value of the binding reference, and converts a <see cref="T:Microsoft.JScript.Missing" /> value to null.</summary>
         <returns>The value of the binding reference; otherwise, null.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetValue2">
@@ -257,6 +266,7 @@
         <summary>Gets the value of the binding reference, and throws an exception if it cannot be resolved.</summary>
         <returns>The value of the binding reference.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="obj">
@@ -274,6 +284,7 @@
       <Docs>
         <summary>Stores a reference to the object that the binding reference is defined on.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SetIndexedPropertyValueStatic">
@@ -304,6 +315,7 @@
         <param name="value">The new value of the property.</param>
         <summary>Sets an indexed property.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SetValue">
@@ -330,6 +342,7 @@
         <param name="value">The new value of the property.</param>
         <summary>Sets a property.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

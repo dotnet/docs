@@ -13,6 +13,7 @@
   <Docs>
     <summary>Implements the <c>MergeLocalizationDirectives</c> task. Use the <c>MergeLocalizationDirectives</c> element in your project file to create and execute this task. For usage and parameter information, see [MergeLocalizationDirectives](http://msdn.microsoft.com/library/9095b4f1-88da-4194-914b-ee1456826830).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -48,6 +50,7 @@
         <returns>
           <see langword="true" /> if the task executed successfully; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GeneratedLocalizationFiles">
@@ -71,6 +74,7 @@
         <summary>Gets or sets the list of localization directives files for individual files in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] binary format.</summary>
         <value>The list of localization directives files for individual files in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] binary format.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OutputFile">
@@ -97,6 +101,7 @@
         <summary>Gets or sets the output path of the compiled localization-directives assembly.</summary>
         <value>The output path of the compiled localization-directives assembly.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

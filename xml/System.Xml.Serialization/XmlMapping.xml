@@ -27,6 +27,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="ElementName">
@@ -50,6 +51,7 @@
         <summary>Get the name of the mapped element.</summary>
         <value>The name of the mapped element.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Namespace">
@@ -73,6 +75,7 @@
         <summary>Gets the namespace of the mapped element.</summary>
         <value>The namespace of the mapped element.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SetKey">
@@ -99,6 +102,7 @@
         <param name="key">A <see cref="T:System.String" /> that contains the lookup key.</param>
         <summary>Sets the key used to look up the mapping.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="XsdElementName">
@@ -122,6 +126,7 @@
         <summary>Gets the name of the XSD element of the mapping.</summary>
         <value>The XSD element name.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

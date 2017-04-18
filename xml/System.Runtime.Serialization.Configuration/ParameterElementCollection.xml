@@ -25,6 +25,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,6 +41,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Configuration.ParameterElementCollection" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -61,6 +63,7 @@
         <param name="element">The <see cref="T:System.Runtime.Serialization.Configuration.ParameterElement" /> element to add to the collection.</param>
         <summary>Adds an element to the collection of parameter elements.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -79,6 +82,7 @@
       <Docs>
         <summary>Removes all members of the collection.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CollectionType">
@@ -97,6 +101,7 @@
         <summary>Gets the type of the parameters collection in configuration.</summary>
         <value>A <see cref="T:System.Configuration.ConfigurationElementCollectionType" /> that contains the type of the parameters collection in configuration.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -120,6 +125,7 @@
         <returns>
           <see langword="true" /> if the element is present; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateNewElement">
@@ -201,6 +207,7 @@
         <summary>Gets the position of the specified element in the collection.</summary>
         <returns>The position of the specified element.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -223,6 +230,7 @@
         <summary>Gets or sets the element in the collection at the specified position.</summary>
         <value>A <see cref="T:System.Runtime.Serialization.Configuration.ParameterElement" /> from the collection.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -244,6 +252,7 @@
         <param name="element">The <see cref="T:System.Runtime.Serialization.Configuration.ParameterElement" /> to remove.</param>
         <summary>Removes the specified element from the collection.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -265,6 +274,7 @@
         <param name="index">The position of the element to remove.</param>
         <summary>Removes the element at the specified position.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

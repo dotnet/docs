@@ -18,6 +18,7 @@
   <Docs>
     <summary>Implements the <c>GenerateResource</c> task. Use the <c>GenerateResource</c> element in your project file to create and execute this task. For usage and parameter information, see [GenerateResource Task](http://msdn.microsoft.com/library/c0aff32f-f2cc-46f6-9c3e-a5c9f8f912b1).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,6 +34,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.GenerateResource" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AdditionalInputs">
@@ -58,6 +60,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="EnvironmentVariables">
@@ -83,6 +86,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ExcludedInputPaths">
@@ -101,6 +105,7 @@
         <summary>Gets or sets an array of items that specify paths from which tracked inputs will be ignored during Up to date checking.</summary>
         <value>Returns an array of items that specify paths from which tracked inputs will be ignored during Up to date checking.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -121,6 +126,7 @@
         <returns>
           <see langword="true" /> if the <c>GenerateResource</c> task execution succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ExecuteAsTool">
@@ -139,6 +145,7 @@
         <summary>Property to allow multitargeting of ResolveComReferences: If true, tlbimp.exe and aximp.exe from the appropriate target framework will be run out-of-proc to generate the necessary wrapper assemblies.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ExtractResWFiles">
@@ -164,6 +171,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FilesWritten">
@@ -187,6 +195,7 @@
         <summary>Gets or sets the names of all files written to disk including the cache file, if present.</summary>
         <value>The names of all files written to disk.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MinimalRebuildFromTracking">
@@ -205,6 +214,7 @@
         <summary>Gets or sets a switch that specifies whether tracked incremental build will be used. If true, incremental build is turned on; otherwise, a rebuild will be forced.</summary>
         <value>Returns a switch that specifies whether tracked incremental build will be used. If true, incremental build is turned on; otherwise, a rebuild will be forced.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NeverLockTypeAssemblies">
@@ -231,6 +241,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OutputDirectory">
@@ -256,6 +267,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OutputResources">
@@ -286,6 +298,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PublicClass">
@@ -305,6 +318,7 @@
         <value>
           <see langword="true" /> if the <c>GenerateResource</c> task should create a strongly typed resource class as a public class; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="References">
@@ -332,6 +346,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SdkToolsPath">
@@ -350,6 +365,7 @@
         <summary>Even though the generate resource task will do the processing in process, a logging message is still generated. This logging message will include the path to the windows SDK. Since the targets now will pass in the Windows SDK path we should use this for logging.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Sources">
@@ -391,6 +407,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StateFile">
@@ -409,6 +426,7 @@
         <summary>Gets or sets the path to an optional cache file that is used to speed up dependency checking of links in .resx input files.</summary>
         <value>The path to an optional cache file that is used to speed up dependency checking of links in .resx input files.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StronglyTypedClassName">
@@ -439,6 +457,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StronglyTypedFileName">
@@ -469,6 +488,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StronglyTypedLanguage">
@@ -496,6 +516,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StronglyTypedManifestPrefix">
@@ -514,6 +535,7 @@
         <summary>Gets or sets the resource namespace or manifest prefix to use in the generated class source for the strongly typed resource.</summary>
         <value>The resource namespace or manifest prefix to use in the generated class source for the strongly typed resource.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StronglyTypedNamespace">
@@ -539,6 +561,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TLogReadFiles">
@@ -557,6 +580,7 @@
         <summary>Gets an array of items that represent the read tracking logs.</summary>
         <value>Returns an array of items that represent the read tracking logs.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TLogWriteFiles">
@@ -575,6 +599,7 @@
         <summary>Gets an array of items that represent the write tracking logs.</summary>
         <value>Returns an array of items that represent the write tracking logs.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ToolArchitecture">
@@ -593,6 +618,7 @@
         <summary>Microsoft.Build.Utilities.ExecutableType of ResGen.exe. Used to determine whether or not Tracker.exe needs to be used to spawn ResGen.exe. If empty, uses a heuristic to determine a default architecture.</summary>
         <value>Returns <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TrackerFrameworkPath">
@@ -611,6 +637,7 @@
         <summary>Path to the appropriate .NET Framework location that contains FileTracker.dll. If set, the user takes responsibility for making sure that the bitness of the FileTracker.dll that they pass matches the bitness of the ResGen.exe that they intend to use. If not set, the task decides the appropriate location based on the current .NET Framework version.</summary>
         <value>Returns <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TrackerLogDirectory">
@@ -629,6 +656,7 @@
         <summary>Gets or sets the intermediate directory into which the tracking logs from running this task will be placed.</summary>
         <value>Returns the intermediate directory into which the tracking logs from running this task will be placed.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TrackerSdkPath">
@@ -647,6 +675,7 @@
         <summary>Path to the appropriate Windows SDK location that contains Tracker.exe. If set, the user takes responsibility for making sure that the bitness of the Tracker.exe that they pass matches the bitness of the ResGen.exe that they intend to use. If not set, the task decides the appropriate location based on the current Windows SDK.</summary>
         <value>Returns <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TrackFileAccess">
@@ -672,6 +701,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UseSourcePath">
@@ -691,6 +721,7 @@
         <value>
           <see langword="true" /> if the input file's directory is to be used for resolving relative file paths; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,6 +40,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigXmlDocument" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateAttribute">
@@ -65,6 +67,7 @@
         <summary>Creates a configuration element attribute.</summary>
         <returns>The <see cref="P:System.Xml.Serialization.XmlAttributes.XmlAttribute" /> attribute.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateCDataSection">
@@ -87,6 +90,7 @@
         <summary>Creates an XML CData section.</summary>
         <returns>The <see cref="T:System.Xml.XmlCDataSection" /> value.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateComment">
@@ -109,6 +113,7 @@
         <summary>Create an XML comment.</summary>
         <returns>The <see cref="T:System.Xml.XmlComment" /> value.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateElement">
@@ -135,6 +140,7 @@
         <summary>Creates a configuration element.</summary>
         <returns>The <see cref="T:System.Xml.XmlElement" /> value.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateSignificantWhitespace">
@@ -157,6 +163,7 @@
         <summary>Creates white spaces.</summary>
         <returns>The <see cref="T:System.Xml.XmlSignificantWhitespace" /> value.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateTextNode">
@@ -179,6 +186,7 @@
         <summary>Create a text node.</summary>
         <returns>The <see cref="T:System.Xml.XmlText" /> value.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateWhitespace">
@@ -201,6 +209,7 @@
         <summary>Creates white space.</summary>
         <returns>The <see cref="T:System.Xml.XmlWhitespace" /> value.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Filename">
@@ -219,6 +228,7 @@
         <summary>Gets the configuration file name.</summary>
         <value>The configuration file name.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="LineNumber">
@@ -237,6 +247,7 @@
         <summary>Gets the current node line number.</summary>
         <value>The line number for the current node.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -258,6 +269,7 @@
         <param name="filename">The name of the file.</param>
         <summary>Loads the configuration file.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="LoadSingleElement">
@@ -281,6 +293,7 @@
         <param name="sourceReader">The source for the reader.</param>
         <summary>Loads a single configuration element.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Configuration.Internal.IConfigErrorInfo.Filename">

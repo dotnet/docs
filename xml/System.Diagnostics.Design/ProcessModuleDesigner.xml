@@ -14,6 +14,7 @@
     <summary>Base designer class for extending the design-mode behavior of a process module.</summary>
     <remarks>To be added.</remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,6 +31,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Design.ProcessModuleDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -58,6 +60,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

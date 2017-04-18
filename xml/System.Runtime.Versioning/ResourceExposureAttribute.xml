@@ -35,6 +35,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,6 +59,7 @@
         <param name="exposureLevel">The scope of the resource.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Versioning.ResourceExposureAttribute" /> class with the specified exposure level.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ResourceExposureLevel">
@@ -81,6 +83,7 @@
         <summary>Gets the resource exposure scope.</summary>
         <value>A <see cref="T:System.Runtime.Versioning.ResourceScope" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

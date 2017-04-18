@@ -22,6 +22,7 @@
   <Docs>
     <summary>Creates and caches binding rules.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="AddRule&lt;T&gt;">
@@ -62,6 +63,7 @@
         <param name="rule">An instance of the call site rule.</param>
         <summary>Adds a rule to the cache maintained on the dynamic call site.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Bind&lt;T&gt;">
@@ -105,6 +107,7 @@
         <summary>Updates the call site target with a new rule based on the arguments.</summary>
         <returns>The new call site target.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ClearMatch">
@@ -135,6 +138,7 @@
         <param name="site">An instance of the dynamic call site.</param>
         <summary>Clears the match flag on the matchmaker call site.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateMatchmaker&lt;T&gt;">
@@ -174,6 +178,7 @@
         <summary>Creates an instance of a dynamic call site used for cache lookup.</summary>
         <returns>The new call site.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetCachedRules&lt;T&gt;">
@@ -213,6 +218,7 @@
         <summary>Searches the dynamic rule cache for rules applicable to the dynamic operation.</summary>
         <returns>The collection of applicable rules.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetMatch">
@@ -244,6 +250,7 @@
         <summary>Checks whether the executed rule matched</summary>
         <returns>true if rule matched, false otherwise.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetRuleCache&lt;T&gt;">
@@ -283,6 +290,7 @@
         <summary>Retrieves binding rule cache.</summary>
         <returns>The cache.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetRules&lt;T&gt;">
@@ -322,6 +330,7 @@
         <summary>Gets the dynamic binding rules from the call site.</summary>
         <returns>An array of dynamic binding rules.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MoveRule&lt;T&gt;">
@@ -364,6 +373,7 @@
         <param name="i">An index of the call site rule.</param>
         <summary>Moves the binding rule within the cache.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SetNotMatched">
@@ -395,6 +405,7 @@
         <summary>Checks if a dynamic site requires an update.</summary>
         <returns>true if rule does not need updating, false otherwise.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UpdateRules&lt;T&gt;">
@@ -435,6 +446,7 @@
         <param name="matched">The matched rule index.</param>
         <summary>Updates rules in the cache.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

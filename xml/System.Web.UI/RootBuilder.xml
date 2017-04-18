@@ -13,6 +13,7 @@
   <Docs>
     <summary>Supports the page parser in defining the behavior for how content is parsed.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.RootBuilder" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -46,6 +48,7 @@
         <param name="parser">The object to use to parse files.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.RootBuilder" /> class with the specified template parser.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BuiltObjects">
@@ -64,6 +67,7 @@
         <summary>Gets a collection of the objects to persist that were built by the root builder.</summary>
         <value>A <see cref="T:System.Collections.Hashtable" /> object that contains the objects that were built by the root builder.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetChildControlType">
@@ -95,6 +99,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OnCodeGenerationComplete">
@@ -120,6 +125,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

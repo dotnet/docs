@@ -10,6 +10,7 @@
   <Docs>
     <summary>Defines methods that get and set references to the scripting engine.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="GetEngine">
@@ -29,6 +30,7 @@
         <summary>When implemented in a class, gets a reference to the scripting engine.</summary>
         <returns>A reference to the scripting engine.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SetEngine">
@@ -50,6 +52,7 @@
         <param name="engine">A reference to the scripting engine.</param>
         <summary>When implemented in a class, sets a reference to the scripting engine.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

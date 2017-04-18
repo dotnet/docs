@@ -13,6 +13,7 @@
   <Docs>
     <summary>Identifies blocks of code to run in error handling scopes. This class belongs to the abstract syntax tree category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="JScriptExceptionValue">
@@ -37,6 +38,7 @@
         <summary>Returns the specified object as an exception, converting it to a specific <see cref="T:Microsoft.JScript.JScriptException" /> if it can.</summary>
         <returns>The exception <paramref name="e" />, converted to a specific <see cref="T:Microsoft.JScript.JScriptException" /> if that is possible.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PushHandlerScope">
@@ -62,6 +64,7 @@
         <param name="scopeId">The ID of the scope of the <see langword="try" /> block.</param>
         <summary>Creates a new <see cref="T:Microsoft.JScript.BlockScope" /> object for the <see langword="try" /> block and pushes it onto the global scope stack.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

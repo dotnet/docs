@@ -26,6 +26,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,6 +47,7 @@
         <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> value.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.OwnerDrawPropertyBag" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -64,6 +66,7 @@
         <summary>Gets or sets the background color for the component.</summary>
         <value>A <see cref="T:System.Drawing.Color" /> that represents the background color of the component. The default is <see cref="F:System.Drawing.Color.Empty" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -86,6 +89,7 @@
         <summary>Copies an <see cref="T:System.Windows.Forms.OwnerDrawPropertyBag" />.</summary>
         <returns>A new copy of the <see cref="T:System.Windows.Forms.OwnerDrawPropertyBag" /> control.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -104,6 +108,7 @@
         <summary>Gets or sets the font of the text displayed by the component.</summary>
         <value>The <see cref="T:System.Drawing.Font" /> to apply to the text displayed by the component. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -122,6 +127,7 @@
         <summary>Gets or sets the foreground color of the component.</summary>
         <value>The foreground color of the component. The default is <see cref="F:System.Drawing.Color.Empty" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsEmpty">
@@ -142,6 +148,7 @@
         <returns>
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.OwnerDrawPropertyBag" /> contains all default values; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -166,6 +173,7 @@
         <summary>Populates the specified <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data needed to serialize the target object.</summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for providing serialization services. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

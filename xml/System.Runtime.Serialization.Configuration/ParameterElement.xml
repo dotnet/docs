@@ -22,6 +22,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,6 +38,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Configuration.ParameterElement" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -55,6 +57,7 @@
         <param name="index">Specifies a position in the collection of parameters.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Configuration.ParameterElement" /> class with the specified index.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -73,6 +76,7 @@
         <param name="typeName">The name of the parameter's type.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Configuration.ParameterElement" /> class with the specified type name.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -99,6 +103,7 @@
         <summary>Gets or sets the position of the generic known type.</summary>
         <value>The position of the parameter in the containing generic declared type.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Parameters">
@@ -122,6 +127,7 @@
         <summary>Gets the collection of parameters.</summary>
         <value>A <see cref="T:System.Runtime.Serialization.Configuration.ParameterElementCollection" /> that contains all parameters.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PostDeserialize">
@@ -205,6 +211,7 @@
         <summary>Gets or sets the type name of the parameter of the generic known type.</summary>
         <value>The type name of the parameter.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

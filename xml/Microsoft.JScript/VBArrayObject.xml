@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents a VBArray object. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,6 +34,7 @@
         <param name="array">The underlying array that the class represents.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.VBArrayObject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

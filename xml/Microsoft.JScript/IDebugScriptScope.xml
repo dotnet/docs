@@ -18,6 +18,7 @@
   <Docs>
     <summary>Defines methods that set the <see langword="this" /> value that is associated with the global scope. Used by the <see cref="T:Microsoft.JScript.Vsa.VsaEngine" />.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="SetThisValue">
@@ -39,6 +40,7 @@
         <param name="thisValue">The value that is used as the <see langword="this" /> object for the global scope.</param>
         <summary>When implemented in a class, sets the <see langword="this" /> value that is associated with the global scope.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

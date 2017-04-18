@@ -13,6 +13,7 @@
   <Docs>
     <summary>Stores constants, data type information, utility functions, and references to prototype-based objects. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="ActiveXObject">
@@ -31,6 +32,7 @@
         <summary>Gets a reference to an <see cref="T:Microsoft.JScript.ActiveXObjectConstructor" /> object.</summary>
         <value>A reference to an <see cref="T:Microsoft.JScript.ActiveXObjectConstructor" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Array">
@@ -49,6 +51,7 @@
         <summary>Gets a reference to an <see cref="T:Microsoft.JScript.ArrayConstructor" /> object.</summary>
         <value>A reference to an <see cref="T:Microsoft.JScript.ArrayConstructor" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="boolean">
@@ -67,6 +70,7 @@
         <summary>Gets the managed type that corresponds to the JScript <see langword="boolean" /> data type.</summary>
         <value>The managed type that corresponds to the JScript <see langword="boolean" /> data type.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Boolean">
@@ -85,6 +89,7 @@
         <summary>Gets a reference to a <see cref="T:Microsoft.JScript.BooleanConstructor" /> object.</summary>
         <value>A reference to a <see cref="T:Microsoft.JScript.BooleanConstructor" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="byte">
@@ -103,6 +108,7 @@
         <summary>Gets the managed type that corresponds to the JScript <see langword="byte" /> data type.</summary>
         <value>The managed type that corresponds to the JScript <see langword="byte" /> data type.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="char">
@@ -121,6 +127,7 @@
         <summary>Gets the managed type that corresponds to the JScript <see langword="char" /> data type.</summary>
         <value>The managed type that corresponds to the JScript <see langword="char" /> data type.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CollectGarbage">
@@ -144,6 +151,7 @@
       <Docs>
         <summary>Calls the garbage collector.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date">
@@ -162,6 +170,7 @@
         <summary>Gets a reference to a <see cref="T:Microsoft.JScript.DateConstructor" /> object.</summary>
         <value>A reference to a <see cref="T:Microsoft.JScript.DateConstructor" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="decimal">
@@ -180,6 +189,7 @@
         <summary>Gets the managed type that corresponds to the JScript <see langword="decimal" /> data type.</summary>
         <value>The managed type that corresponds to the JScript <see langword="decimal" /> data type.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="decodeURI">
@@ -207,6 +217,7 @@
         <summary>Decodes the specified Uniform Resource Identifier (URI), accounting for reserved characters.</summary>
         <returns>The decoded version of <paramref name="encodedURI" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="decodeURIComponent">
@@ -234,6 +245,7 @@
         <summary>Decodes the specified Uniform Resource Identifier (URI).</summary>
         <returns>The decoded version of <paramref name="encodedURI" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="double">
@@ -252,6 +264,7 @@
         <summary>Gets the managed type that corresponds to the JScript <see langword="double" /> data type.</summary>
         <value>The managed type that corresponds to the JScript <see langword="double" /> data type.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="encodeURI">
@@ -279,6 +292,7 @@
         <summary>Encodes the specified Uniform Resource Identifier (URI), accounting for reserved characters.</summary>
         <returns>The encoded version of <paramref name="uri" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="encodeURIComponent">
@@ -306,6 +320,7 @@
         <summary>Encodes the specified Uniform Resource Identifier (URI).</summary>
         <returns>The encoded version of <paramref name="uriComponent" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Enumerator">
@@ -324,6 +339,7 @@
         <summary>Gets a reference to an <see cref="T:Microsoft.JScript.EnumeratorConstructor" /> object.</summary>
         <value>A reference to an <see cref="T:Microsoft.JScript.EnumeratorConstructor" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Error">
@@ -342,6 +358,7 @@
         <summary>Gets a reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object.</summary>
         <value>A reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="escape">
@@ -372,6 +389,7 @@
         <summary>Converts the specified string to use the % character to escape reserved characters (@, *, _, +, -, ., /) and express them in Unicode notation.</summary>
         <returns>A new copy of <paramref name="string" /> in which the reserved characters are escaped by the % character and expressed in Unicode.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="eval">
@@ -399,6 +417,7 @@
         <summary>Throws an <see cref="F:Microsoft.JScript.JSError.IllegalEval" /> exception in all cases.</summary>
         <returns>Throws an <see cref="F:Microsoft.JScript.JSError.IllegalEval" /> exception in all cases.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="EvalError">
@@ -417,6 +436,7 @@
         <summary>Gets a reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as an <see cref="F:Microsoft.JScript.ErrorType.EvalError" />.</summary>
         <value>A reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as an <see cref="F:Microsoft.JScript.ErrorType.EvalError" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="float">
@@ -435,6 +455,7 @@
         <summary>Gets the managed type that corresponds to the JScript <see langword="float" /> data type.</summary>
         <value>The managed type that corresponds to the JScript <see langword="float" /> data type.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Function">
@@ -453,6 +474,7 @@
         <summary>Gets a reference to a <see cref="T:Microsoft.JScript.FunctionConstructor" /> object.</summary>
         <value>A reference to a <see cref="T:Microsoft.JScript.FunctionConstructor" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetObject">
@@ -482,6 +504,7 @@
         <summary>Creates a managed object from an unmanaged object by using either the moniker or the ProgID.</summary>
         <returns>The managed object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Infinity">
@@ -500,6 +523,7 @@
       <Docs>
         <summary>Represents positive infinity. This field is constant.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="int">
@@ -518,6 +542,7 @@
         <summary>Gets the managed type that corresponds to the JScript <see langword="int" /> data type.</summary>
         <value>The managed type that corresponds to the JScript <see langword="int" /> data type.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="isFinite">
@@ -546,6 +571,7 @@
         <returns>
           <see langword="true" /> if <paramref name="number" /> is not <see cref="F:System.Double.NaN" />, not <see cref="F:System.Double.PositiveInfinity" />, and not <see cref="F:System.Double.NegativeInfinity" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="isNaN">
@@ -574,6 +600,7 @@
         <returns>
           <see langword="true" /> if <paramref name="num" /> can be converted to a JScript number; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="long">
@@ -592,6 +619,7 @@
         <summary>Gets the managed type that corresponds to the JScript <see langword="long" /> data type.</summary>
         <value>The managed type that corresponds to the JScript <see langword="long" /> data type.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Math">
@@ -610,6 +638,7 @@
         <summary>Gets a reference to a <see cref="T:Microsoft.JScript.MathObject" /> object.</summary>
         <value>A reference to a <see cref="T:Microsoft.JScript.MathObject" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NaN">
@@ -628,6 +657,7 @@
       <Docs>
         <summary>Represents a value that is not a number (NaN). This field is constant.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Number">
@@ -646,6 +676,7 @@
         <summary>Gets a reference to a <see cref="T:Microsoft.JScript.NumberConstructor" /> object.</summary>
         <value>A reference to a <see cref="T:Microsoft.JScript.NumberConstructor" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Object">
@@ -664,6 +695,7 @@
         <summary>Gets a reference to an <see cref="T:Microsoft.JScript.ObjectConstructor" /> object.</summary>
         <value>A reference to an <see cref="T:Microsoft.JScript.ObjectConstructor" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="originalActiveXObjectField">
@@ -681,6 +713,7 @@
       <Docs>
         <summary>Stores a reference to an <see cref="T:Microsoft.JScript.ActiveXObjectConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="originalArrayField">
@@ -698,6 +731,7 @@
       <Docs>
         <summary>Stores a reference to an <see cref="T:Microsoft.JScript.ArrayConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="originalBooleanField">
@@ -715,6 +749,7 @@
       <Docs>
         <summary>Stores a reference to a <see cref="T:Microsoft.JScript.BooleanConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="originalDateField">
@@ -732,6 +767,7 @@
       <Docs>
         <summary>Stores a reference to a <see cref="T:Microsoft.JScript.DateConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="originalEnumeratorField">
@@ -749,6 +785,7 @@
       <Docs>
         <summary>Stores a reference to an <see cref="T:Microsoft.JScript.EnumeratorConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="originalErrorField">
@@ -766,6 +803,7 @@
       <Docs>
         <summary>Stores a reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="originalEvalErrorField">
@@ -783,6 +821,7 @@
       <Docs>
         <summary>Stores a reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as an <see cref="F:Microsoft.JScript.ErrorType.EvalError" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="originalFunctionField">
@@ -800,6 +839,7 @@
       <Docs>
         <summary>Stores a reference to a <see cref="T:Microsoft.JScript.FunctionConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="originalNumberField">
@@ -817,6 +857,7 @@
       <Docs>
         <summary>Stores a reference to a <see cref="T:Microsoft.JScript.NumberConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="originalObjectField">
@@ -834,6 +875,7 @@
       <Docs>
         <summary>Stores a reference to an <see cref="T:Microsoft.JScript.ObjectConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="originalObjectPrototypeField">
@@ -851,6 +893,7 @@
       <Docs>
         <summary>Stores a reference to an <see cref="T:Microsoft.JScript.ObjectPrototype" /> object.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="originalRangeErrorField">
@@ -868,6 +911,7 @@
       <Docs>
         <summary>Stores a reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as a <see cref="F:Microsoft.JScript.ErrorType.RangeError" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="originalReferenceErrorField">
@@ -885,6 +929,7 @@
       <Docs>
         <summary>Stores a reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as a <see cref="F:Microsoft.JScript.ErrorType.ReferenceError" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="originalRegExpField">
@@ -902,6 +947,7 @@
       <Docs>
         <summary>Stores a reference to a <see cref="T:Microsoft.JScript.RegExpConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="originalStringField">
@@ -919,6 +965,7 @@
       <Docs>
         <summary>Stores a reference to a <see cref="T:Microsoft.JScript.StringConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="originalSyntaxErrorField">
@@ -936,6 +983,7 @@
       <Docs>
         <summary>Stores a reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as a <see cref="F:Microsoft.JScript.ErrorType.SyntaxError" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="originalTypeErrorField">
@@ -953,6 +1001,7 @@
       <Docs>
         <summary>Stores a reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as a <see cref="F:Microsoft.JScript.ErrorType.TypeError" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="originalURIErrorField">
@@ -970,6 +1019,7 @@
       <Docs>
         <summary>Stores a reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as a <see cref="F:Microsoft.JScript.ErrorType.URIError" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="originalVBArrayField">
@@ -987,6 +1037,7 @@
       <Docs>
         <summary>Stores a reference to a <see cref="T:Microsoft.JScript.VBArrayConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="parseFloat">
@@ -1014,6 +1065,7 @@
         <summary>Converts the specified string to its <see cref="T:System.Double" /> equivalent.</summary>
         <returns>A value equivalent to the value that is contained in <paramref name="string" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="parseInt">
@@ -1043,6 +1095,7 @@
         <summary>Converts the specified string to its <see cref="T:System.Double" /> equivalent, using the specified base.</summary>
         <returns>A value that is equivalent to the value that is contained in <paramref name="string" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RangeError">
@@ -1061,6 +1114,7 @@
         <summary>Gets a reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as a <see cref="F:Microsoft.JScript.ErrorType.RangeError" />.</summary>
         <value>A reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as a <see cref="F:Microsoft.JScript.ErrorType.RangeError" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ReferenceError">
@@ -1079,6 +1133,7 @@
         <summary>Gets a reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as a <see cref="F:Microsoft.JScript.ErrorType.ReferenceError" />.</summary>
         <value>A reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as a <see cref="F:Microsoft.JScript.ErrorType.ReferenceError" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RegExp">
@@ -1097,6 +1152,7 @@
         <summary>Gets a reference to a <see cref="T:Microsoft.JScript.RegExpConstructor" /> object.</summary>
         <value>A reference to a <see cref="T:Microsoft.JScript.RegExpConstructor" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="sbyte">
@@ -1115,6 +1171,7 @@
         <summary>Gets the managed type that corresponds to the JScript <see langword="sbyte" /> data type.</summary>
         <value>The managed type that corresponds to the JScript <see langword="sbyte" /> data type.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ScriptEngine">
@@ -1139,6 +1196,7 @@
         <summary>Gets the name of the scripting engine.</summary>
         <returns>The string literal "JScript".</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ScriptEngineBuildVersion">
@@ -1163,6 +1221,7 @@
         <summary>Gets the build number of the scripting engine.</summary>
         <returns>The build number of the scripting engine.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ScriptEngineMajorVersion">
@@ -1187,6 +1246,7 @@
         <summary>Gets the major version number of the scripting engine.</summary>
         <returns>The major version number of the scripting engine.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ScriptEngineMinorVersion">
@@ -1211,6 +1271,7 @@
         <summary>Gets the minor version number of the scripting engine.</summary>
         <returns>The minor version number of the scripting engine.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="short">
@@ -1229,6 +1290,7 @@
         <summary>Gets the managed type that corresponds to the JScript <see langword="short" /> data type.</summary>
         <value>The managed type that corresponds to the JScript <see langword="short" /> data type.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String">
@@ -1247,6 +1309,7 @@
         <summary>Gets a reference to a <see cref="T:Microsoft.JScript.StringConstructor" /> object.</summary>
         <value>A reference to a <see cref="T:Microsoft.JScript.StringConstructor" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SyntaxError">
@@ -1265,6 +1328,7 @@
         <summary>Gets a reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as a <see cref="F:Microsoft.JScript.ErrorType.SyntaxError" />.</summary>
         <value>A reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as a <see cref="F:Microsoft.JScript.ErrorType.SyntaxError" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TypeError">
@@ -1283,6 +1347,7 @@
         <summary>Gets a reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as a <see cref="F:Microsoft.JScript.ErrorType.TypeError" />.</summary>
         <value>A reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as a <see cref="F:Microsoft.JScript.ErrorType.TypeError" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="uint">
@@ -1301,6 +1366,7 @@
         <summary>Gets the managed type that corresponds to the JScript <see langword="uint" /> data type.</summary>
         <value>The managed type that corresponds to the JScript <see langword="uint" /> data type.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ulong">
@@ -1319,6 +1385,7 @@
         <summary>Gets the managed type that corresponds to the JScript <see langword="ulong" /> data type.</summary>
         <value>The managed type that corresponds to the JScript <see langword="ulong" /> data type.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="undefined">
@@ -1336,6 +1403,7 @@
       <Docs>
         <summary>Represents a value that is null.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="unescape">
@@ -1366,6 +1434,7 @@
         <summary>Converts % escaped characters (@, *, _, +, -, ., /) in the specified string to their original form. The escaped characters are expressed in Unicode notation.</summary>
         <returns>A new copy of <paramref name="string" /> in which the escaped characters are converted to their original form.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="URIError">
@@ -1384,6 +1453,7 @@
         <summary>Gets a reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as a <see cref="F:Microsoft.JScript.ErrorType.URIError" />.</summary>
         <value>A reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object. The object is initialized as a <see cref="F:Microsoft.JScript.ErrorType.URIError" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ushort">
@@ -1402,6 +1472,7 @@
         <summary>Gets the managed type that corresponds to the JScript <see langword="ushort" /> data type.</summary>
         <value>The managed type that corresponds to the JScript <see langword="ushort" /> data type.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="VBArray">
@@ -1420,6 +1491,7 @@
         <summary>Gets a reference to a <see cref="T:Microsoft.JScript.VBArrayConstructor" /> object.</summary>
         <value>A reference to a <see cref="T:Microsoft.JScript.VBArrayConstructor" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="void">
@@ -1438,6 +1510,7 @@
         <summary>Gets the managed type that corresponds to the return value of a function that does not return a value.</summary>
         <value>The managed type that corresponds to the return value of a function that does not return a value.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

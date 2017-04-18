@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents a namespace.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="GetNamespace">
@@ -37,6 +38,7 @@
         <summary>Creates and returns a new instance of the <see cref="T:Microsoft.JScript.Namespace" /> class.</summary>
         <returns>A new instance of the <see cref="T:Microsoft.JScript.Namespace" /> class.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

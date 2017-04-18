@@ -18,6 +18,7 @@
   <Docs>
     <summary>Defines methods that evaluate expressions and parse strings. This interface is typically implemented by an object that represents a code block, and it is typically called by a debugger. This interface provides extra functionality that is needed by an IActiveScript host.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Evaluate">
@@ -44,6 +45,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ParseNamedBreakPoint">
@@ -76,6 +78,7 @@
         <summary>When implemented in a class, parses strings and returns the parsed-out information. This method is typically called by a debugger that needs to parse information about a breakpoint that is represented as a <see langword="string" />. The debugger might have a breakpoint typed in by the user in the form *functionname-arguments-ILoffset*. A named breakpoint string can have a complex format, for example, <c>F.B(C.D[], int, arg : double ) : C.Abc + 123.</c> The parameter list is optional, as is the IL offset.</summary>
         <returns>Returns <see langword="true" /> if the named breakpoint is successfully parsed, <see langword="false" /> otherwise.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

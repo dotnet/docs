@@ -22,6 +22,7 @@
 ## XAML Text Usage  
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,6 +38,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.ExpressionConverter" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CanConvertFrom">
@@ -61,6 +63,7 @@
         <summary>Returns whether this converter can convert from a source object to an <see cref="T:System.Windows.Expression" /> object.</summary>
         <returns>Always <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CanConvertTo">
@@ -85,6 +88,7 @@
         <summary>Returns whether this converter can convert an <see cref="T:System.Windows.Expression" /> object to a specific destination type.</summary>
         <returns>Always <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -111,6 +115,7 @@
         <summary>Converts the provided value to the <see cref="T:System.Windows.Expression" /> type.</summary>
         <returns>Always throws an exception and returns <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -139,6 +144,7 @@
         <summary>Converts the provided <see cref="T:System.Windows.Expression" /> object to the specified type.</summary>
         <returns>Always throws an exception and returns <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

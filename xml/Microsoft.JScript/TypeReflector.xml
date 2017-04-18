@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides an implementation of <see cref="M:Microsoft.JScript.TypeReflector.GetMember(System.String,System.Reflection.BindingFlags)" /> that is faster than <see cref="M:System.Type.GetMember(System.String,System.Reflection.BindingFlags)" />.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="GetMember">
@@ -37,6 +38,7 @@
         <summary>Searches for the specified member, using the specified binding constraints.</summary>
         <returns>An array of <see cref="T:System.Reflection.MemberInfo" /> objects that represents the public members that have the specified name, if found; otherwise, an empty array.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetMembers">
@@ -59,6 +61,7 @@
         <summary>Throws a <see cref="T:Microsoft.JScript.JScriptException" /> exception in all cases.</summary>
         <returns>Throws a <see cref="T:Microsoft.JScript.JScriptException" /> exception in all cases.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

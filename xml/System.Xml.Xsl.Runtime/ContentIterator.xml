@@ -29,6 +29,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Create">
@@ -54,6 +55,7 @@
         <param name="context">The node from which you start traversing the child content nodes.</param>
         <summary>Initializes the <see cref="T:System.Xml.Xsl.Runtime.ContentIterator" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -83,6 +85,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -114,6 +117,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

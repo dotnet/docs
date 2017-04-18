@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,6 +36,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.BaseTemplateParser" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetReferencedType">
@@ -67,6 +69,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">The parser does not permit a virtual reference to the resource specified by <paramref name="virtualPath" />.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetUserControlType">
@@ -103,6 +106,7 @@
  \- or -  
   
  The parser does not permit a virtual reference to the <see cref="T:System.Web.UI.UserControl" />.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -36,6 +36,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="EnumerateAppDomains">
@@ -57,6 +58,7 @@
         <param name="appDomainInfoEnum">Information about the application domains.</param>
         <summary>Provides access to an enumerable set of application domains.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InitializeLifetimeService">
@@ -83,6 +85,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsIdle">
@@ -110,6 +113,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Ping">
@@ -138,6 +142,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SetApplicationPreloadState">
@@ -176,6 +181,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="enabled" /> is set to <see langword="true" /> and the process host was not previously passed an <see cref="T:System.Web.Hosting.IApplicationPreloadUtil" /> interface to its <see cref="M:System.Web.Hosting.IApplicationPreloadManager.SetApplicationPreloadUtil(System.Web.Hosting.IApplicationPreloadUtil)" /> method</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SetApplicationPreloadUtil">
@@ -208,6 +214,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.Hosting.IApplicationPreloadUtil" /> instance that contains information for preloading the application is not <see langword="null" />.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Shutdown">
@@ -226,6 +233,7 @@
       <Docs>
         <summary>Unloads the process host.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ShutdownApplication">
@@ -254,6 +262,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StartAppDomainProtocolListenerChannel">
@@ -279,6 +288,7 @@
         <param name="listenerChannelCallback">The protocol listener channel callback.</param>
         <summary>Starts an application domain protocol listener channel.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StartApplication">
@@ -304,6 +314,7 @@
         <param name="runtimeInterface">A runtime manager interface.</param>
         <summary>Starts the specified application.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StartProcessProtocolListenerChannel">
@@ -327,6 +338,7 @@
         <param name="listenerChannelCallback">The protocol listener channel callback.</param>
         <summary>Starts a process protocol listener channel.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StopAppDomainProtocol">
@@ -359,6 +371,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StopAppDomainProtocolListenerChannel">
@@ -386,6 +399,7 @@
         <param name="immediate">Whether to stop the protocol listener channel immediately.</param>
         <summary>Stops an application domain protocol listener channel.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StopProcessProtocol">
@@ -416,6 +430,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StopProcessProtocolListenerChannel">
@@ -441,6 +456,7 @@
         <param name="immediate">Whether to stop the protocol listener channel immediately.</param>
         <summary>Stops a protocol listener channel.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

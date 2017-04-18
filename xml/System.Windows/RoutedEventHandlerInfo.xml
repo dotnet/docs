@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides special handling information to inform event listeners whether specific handlers should be invoked.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Equals">
@@ -36,6 +37,7 @@
         <returns>
           <see langword="true" /> if the specified object is equivalent to the current <see cref="T:System.Windows.RoutedEventHandlerInfo" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -66,6 +68,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -85,6 +88,7 @@
         <summary>Returns a hash code for the current <see cref="T:System.Windows.RoutedEventHandlerInfo" />.</summary>
         <returns>A hash code for the current <see cref="T:System.Windows.RoutedEventHandlerInfo" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Handler">
@@ -103,6 +107,7 @@
         <summary>Gets the event handler.</summary>
         <value>The event handler.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InvokeHandledEventsToo">
@@ -122,6 +127,7 @@
         <value>
           <see langword="true" /> if the event handler is invoked when the routed event is marked handled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -147,6 +153,7 @@
         <returns>
           <see langword="true" /> if the objects are equivalent; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -172,6 +179,7 @@
         <returns>
           <see langword="true" /> if the objects are not equivalent; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

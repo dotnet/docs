@@ -71,7 +71,7 @@ A configuration element that contains the state of the subscribed activity for w
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Activities.Tracking.Configuration.StateElement>    
- <xref:System.Activities.Tracking.ActivityStateQuery>    
+ <xref:System.ServiceModel.Activities.Tracking.Configuration.StateElement?displayProperty=fullName>       
+ <xref:System.Activities.Tracking.ActivityStateQuery?displayProperty=fullName>       
  [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)   
  [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

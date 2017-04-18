@@ -51,4 +51,4 @@ Represents a configuration section for defining a set of routing filters, which 
 |system.ServiceModel|The root element of all WCF configuration elements.|  
   
 ## See Also  
- <xref:System.ServiceModel.Routing.Configuration.RoutingSection> 
+ <xref:System.ServiceModel.Routing.Configuration.RoutingSection?displayProperty=fullName>    

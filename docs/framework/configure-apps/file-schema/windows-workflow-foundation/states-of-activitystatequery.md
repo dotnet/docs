@@ -70,7 +70,7 @@ A collection of configuration elements that contain the states of the subscribed
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Activities.Tracking.Configuration.StateElementCollection>   
- <xref:System.Activities.Tracking.ActivityStateQuery>    
+ <xref:System.ServiceModel.Activities.Tracking.Configuration.StateElementCollection?displayProperty=fullName>      
+ <xref:System.Activities.Tracking.ActivityStateQuery?displayProperty=fullName>       
  [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)   
  [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

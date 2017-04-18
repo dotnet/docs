@@ -77,7 +77,7 @@ Represents a collection of configuration elements that track workflow instance l
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElementCollection>    
- <xref:System.Activities.Tracking.WorkflowInstanceQuery>    
+ <xref:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElementCollection?displayProperty=fullName>       
+ <xref:System.Activities.Tracking.WorkflowInstanceQuery?displayProperty=fullName>       
  [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)   
  [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

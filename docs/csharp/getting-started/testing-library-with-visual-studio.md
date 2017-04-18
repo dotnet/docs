@@ -20,7 +20,7 @@ In [Building a class library with C# and .NET Core in Visual Studio 2017](librar
 
 To create the unit test project, do the following:
 
-1. In **Solution Explorer**, open the context menu for the **ClassLibraryProject** solution node and select **Add > New Project**.
+1. In **Solution Explorer**, open the context menu for the **ClassLibraryProject** solution node and select **Add** > **New Project**.
 
    <!-- Need a VS 2017 version  [!NOTE] In addition to a Unit Test project, you can also use Visual Studio to create an xUnit test project for .NET Core. For a walkthrough that includes an xUnit test project, see [Getting started with .NET Core on Windows, using Visual Studio 2015](../../core/tutorials/using-on-windows.md). --> 
 
@@ -76,7 +76,7 @@ To create the test methods:
 
    Note that your test of uppercase characters in the `TestStartsWithUpper` method includes the Greek capital letter alpha (U+0391) and the Cyrillic capital letter EM (U+041C), and the test of lowercase characters in the `TestDoesNotStartWithUpper` method includes the Greek small letter alpha (U+03B1) and the Cyrillic small letter Ghe (U+0433).
 
-1. On the menu bar, select **File > Save UnitTest1.cs As**. In the **Save File As** dialog, select the arrow beside the **Save** button, and select **Save with Encoding**.
+1. On the menu bar, select **File** > **Save UnitTest1.cs As**. In the **Save File As** dialog, select the arrow beside the **Save** button, and select **Save with Encoding**.
 
    ![Save File As dialog](./media/testing-library-with-visual-studio/savefileas.png)
 
@@ -88,7 +88,7 @@ To create the test methods:
 
    If you fail to save your source code as a UTF8-encoded file, Visual Studio may save it as an ASCII file. When that happens, the runtime doesn't accurately decode the UTF8 characters outside of the ASCII range, and the test results won't be accurate.
 
-1. On the menu bar, select **Test > Run > All Tests**. The **Test Explorer** window opens and shows that the tests run successfully. The three tests are listed in the **Passed Tests** section, and the **Summary** section reports the result of the test run.
+1. On the menu bar, select **Test** > **Run** > **All Tests**. The **Test Explorer** window opens and shows that the tests run successfully. The three tests are listed in the **Passed Tests** section, and the **Summary** section reports the result of the test run.
 
    ![Test Explorer window](./media/testing-library-with-visual-studio/firsttest.png)
 
@@ -103,7 +103,7 @@ Your test run had no failures, but change it slightly so that one of the test me
                       "1234", ".", ";", " " };
    ```
 
-1. Run the test by selecting **Test > Run > All Tests** from the menu bar. The **Test Explorer** window indicates that two tests succeeded and one failed.
+1. Run the test by selecting **Test** > **Run** > **All Tests** from the menu bar. The **Test Explorer** window indicates that two tests succeeded and one failed.
 
    ![Test Explorer window](./media/testing-library-with-visual-studio/failedtest.png)
 
@@ -127,6 +127,6 @@ To test the Release build:
 
    ![StringLibrary context menu](./media/testing-library-with-visual-studio/buildlibrary.png)
 
-1. Run the unit tests by choosing **Test > Run > All Tests** from the menu bar. The tests pass.
+1. Run the unit tests by choosing **Test** > **Run** > **All Tests** from the menu bar. The tests pass.
 
 Now that you've finished testing your library, the next step is to make it available to callers. You can bundle it with one or more applications, or you can distribute it as a NuGet package. For more information, see [Consuming a .NET Standard Class Library](./consuming-library-with-visual-studio.md).

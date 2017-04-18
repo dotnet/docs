@@ -4,7 +4,7 @@ description: Learn how to call the members in a class library with Visual Studio
 keywords: .NET Core, .NET Core class library, .NET Standard, .NET Standard class library distribution
 author: BillWagner
 ms.author: wiwang
-ms.date: 03/07/2017
+ms.date: 04/17/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
@@ -24,7 +24,7 @@ Once you've followed the steps in [Building a C# class library with .NET Core in
 
 Just as you included unit tests in the same solution as your class library, you can include your application as part of that solution. For example, you can use your class library in a console application that prompts the user to enter a string and reports whether its first character is uppercase:
 
-1. Open the `ClassLibraryProjects` solution you created in the [Building a C# Class Library with .NET Core in Visual Studio 2017](./library-with-visual-studio.md) topic. In **Solution Explorer**, right-click the **ClassLibraryProjects** solution and select **Add > New Project** from the context menu.
+1. Open the `ClassLibraryProjects` solution you created in the [Building a C# Class Library with .NET Core in Visual Studio 2017](./library-with-visual-studio.md) topic. In **Solution Explorer**, right-click the **ClassLibraryProjects** solution and select **Add** > **New Project** from the context menu.
 
 1. In the **Add New Project** dialog, select the **.NET Core** node followed by the **Console App (.NET Core)** project template. In the **Name** text box, type "ShowCase", and select the **OK** button.
 
@@ -62,11 +62,11 @@ You can make your class library widely available by publishing it as a NuGet pac
 
 1. Open a console window. For example in the **Ask me anything** text box in the Windows taskbar, enter `Command Prompt` (or `cmd` for short), and open a console window by either selecting the **Command Prompt** desktop app or pressing Enter if it's selected in the search results.
 
-1. Navigate to your library's project directory. Unless you've reconfigured the typical file location, it's in the `Documents\Visual Studio 2017\Projects\ClassLibraryProjects\StringLibrary` directory. The directory contains your source code and a project file, *StringLibrary.csproj*.
+1. Navigate to your library's project directory. Unless you've reconfigured the typical file location, it's in the *Documents\Visual Studio 2017\Projects\ClassLibraryProjects\StringLibrary* directory. The directory contains your source code and a project file, *StringLibrary.csproj*.
 
 1. Issue the command `dotnet pack --no-build`. The `dotnet` utility generates a package with a *.nupkg* extension.
 
    > [!TIP]
-   > If the directory that contains `dotnet.exe` is not in your PATH, you can find its location by entering `where dotnet.exe` in the console window.
+   > If the directory that contains *dotnet.exe* is not in your PATH, you can find its location by entering `where dotnet.exe` in the console window.
 
 For more information on creating NuGet packages, see [How to Create a NuGet Package with Cross Platform Tools](../../core/deploying/creating-nuget-packages.md).

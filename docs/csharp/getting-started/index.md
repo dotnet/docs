@@ -4,7 +4,7 @@ description: Simple tutorials that let you quickly build an application using C#
 keywords: C#, Getting Started, Acquisition, Install
 author: rpetrusha
 ms.author: ronpet
-ms.date: 03/10/2017
+ms.date: 04/17/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
@@ -22,7 +22,7 @@ The following topics are available:
 
    Visual Studio 2017, the latest release of Visual Studio, lets you code, compile, run, debug, profile, and publish your applications from a integrated development environment for Windows.
 
-   The topic lets you create and run a simple Hello World application and then modify it to run a slightly more interactive Hello World application. Once you've finished building and running your application, you can also learn how to [debug it](.\debugging-with-visual-studio.md) and how to [publish it](.\publishing-with-visual-studio.md) so that it can be run on any platform supported by .NET Core.
+   The topic lets you create and run a simple Hello World application and then modify it to run a slightly more interactive Hello World application. Once you've finished building and running your application, you can also learn how to [debug it](debugging-with-visual-studio.md) and how to [publish it](publishing-with-visual-studio.md) so that it can be run on any platform supported by .NET Core.
 
 * [Building a class library with C# and .NET Core in Visual Studio 2017](library-with-visual-studio.md)
 

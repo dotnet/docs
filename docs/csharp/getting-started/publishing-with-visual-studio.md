@@ -4,7 +4,7 @@ description: Publishing creates the set of files that are needed to run your app
 keywords: .NET, .NET Core, console application, publishing, deployment
 author: BillWagner
 ms.author: wiwagn
-ms.date: 03/07/2017
+ms.date: 04/17/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: devlang-csharp

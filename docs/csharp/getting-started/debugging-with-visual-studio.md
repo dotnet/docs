@@ -4,7 +4,7 @@ description: Learn how to debug a Hello World app written in C# with Visual Stud
 keywords: .NET Core, .NET Core console application, .NET Core debugging
 author: BillWagner
 ms.author: wiwagn
-ms.date: 03/07/2017
+ms.date: 04/17/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: devlang-csharp
@@ -28,11 +28,11 @@ You should always begin by testing your program in Debug mode. Debug mode turns 
 
 Run your program in Debug mode and try a few debugging features:
 
-1. A *breakpoint* temporarily interrupts the execution of the application *before* the line with the breakpoint is executed. Set a breakpoint on the line that reads `Console.WriteLine("\nHello, {0}, on {1:d} at {1:t}", name, date);` by clicking in the left margin of the code window on that line or by choosing the **Debug > Toggle Breakpoint** menu item with the line selected. As the following figure shows, Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red circle in its left margin.
+1. A *breakpoint* temporarily interrupts the execution of the application *before* the line with the breakpoint is executed. Set a breakpoint on the line that reads `Console.WriteLine("\nHello, {0}, on {1:d} at {1:t}", name, date);` by clicking in the left margin of the code window on that line or by choosing the **Debug** > **Toggle Breakpoint** menu item with the line selected. As the following figure shows, Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red circle in its left margin.
 
    ![Visual Studio Program window with breakpoint set](./media/debugging-with-visual-studio/setbreakpoint.png)
 
-1. Run the program in Debug mode by selecting the **HelloWorld** button with the green arrow on the toolbar, pressing F5, or choosing **Debug > Start Debugging**.
+1. Run the program in Debug mode by selecting the **HelloWorld** button with the green arrow on the toolbar, pressing F5, or choosing **Debug** > **Start Debugging**.
 
 1. Enter a string in the console window when the program prompts for a name and press Enter.
 
@@ -40,7 +40,7 @@ Run your program in Debug mode and try a few debugging features:
 
    ![Visual Studio application window](./media/debugging-with-visual-studio/break.png)
 
-1. You can change the value of the variables to see how it affects your program. If the **Immediate Window** is not visible, display it by choosing the **Debug > Windows > Immediate** menu item. The **Immediate Window** lets you interact with the application you're debugging.
+1. You can change the value of the variables to see how it affects your program. If the **Immediate Window** is not visible, display it by choosing the **Debug** > **Windows** > **Immediate** menu item. The **Immediate Window** lets you interact with the application you're debugging.
 
 1. You can interactively change the values of variables. Enter `name = "Gracie"` in the **Immediate Window** and press the Enter key.
 
@@ -50,7 +50,7 @@ Run your program in Debug mode and try a few debugging features:
 
    ![Autos window and Immediate Window](./media/debugging-with-visual-studio/autosimmediate.png)
 
-1. Continue program execution by selecting the **Continue** button in the toolbar or by selecting the **Debug > Continue** menu item. The values displayed in the console window correspond to the changes you made in the **Immediate Window**.
+1. Continue program execution by selecting the **Continue** button in the toolbar or by selecting the **Debug** > **Continue** menu item. The values displayed in the console window correspond to the changes you made in the **Immediate Window**.
 
    ![Console window showing the typed value Jack at the What is your name? prompt followed by Hello Gracie on 11/1/2016 at 11:59am](./media/debugging-with-visual-studio/changed.png)
 
@@ -102,27 +102,27 @@ To set a conditional breakpoint and test what happens when the user fails to ent
 
 Visual Studio also allows you to step line by line through a program and monitor its execution. Ordinarily, you'd set a breakpoint and use this feature to follow program flow though a small part of your program code. Since your program is small, you can step through the entire program by doing the following:
 
-1. On the menu bar, choose **Debug > Step Into** or press the F11 key. Visual Studio highlights and displays an arrow beside the next line of execution.
+1. On the menu bar, choose **Debug** > **Step Into** or press the F11 key. Visual Studio highlights and displays an arrow beside the next line of execution.
 
    ![Visual Studio window](./media/debugging-with-visual-studio/stepinto1.png)
 
    At this point, the **Autos** window shows that your program has defined only one variable, `args`. Because you haven't passed any command-line arguments to the program, its value is an empty string array. In addition, Visual Studio has opened a blank console window.
 
-1. Select **Debug > Step Into** or press the F11 key. Visual Studio now highlights the next line of execution. As the figure shows, it has taken less than one millisecond to execute the code between the last statement and this one. `args` remains the only declared variable, and the console window remains blank.
+1. Select **Debug** > **Step Into** or press the F11 key. Visual Studio now highlights the next line of execution. As the figure shows, it has taken less than one millisecond to execute the code between the last statement and this one. `args` remains the only declared variable, and the console window remains blank.
 
    ![Visual Studio window](./media/debugging-with-visual-studio/stepinto2.png)
 
-1. Select **Debug > Step Into** or press the F11 key. Visual Studio highlights the statement that includes the `name` variable assignment. The **Autos** window shows that `name` is `null`, and the console window displays the string "What is your name?".
+1. Select **Debug** > **Step Into** or press the F11 key. Visual Studio highlights the statement that includes the `name` variable assignment. The **Autos** window shows that `name` is `null`, and the console window displays the string "What is your name?".
 
 1. Respond to the prompt by entering a string in the console window and pressing Enter. The console is unresponsive, and the string you enter isn't displayed in the console window, but the [`Console.ReadLine`](xref:System.Console.ReadLine) method will nevertheless capture your input.
 
-1. Select **Debug > Step Into** or press the F11 key. Visual Studio highlights the statement that includes the `date` variable assignment. The **Autos** window shows the [`DateTime.Now`](xref:System.DateTime.Now) property value and the value returned by the call to the [`Console.ReadLine`](xref:System.Console.ReadLine) method. The console window also displays the string entered when the console prompted for input.
+1. Select **Debug** > **Step Into** or press the F11 key. Visual Studio highlights the statement that includes the `date` variable assignment. The **Autos** window shows the [`DateTime.Now`](xref:System.DateTime.Now) property value and the value returned by the call to the [`Console.ReadLine`](xref:System.Console.ReadLine) method. The console window also displays the string entered when the console prompted for input.
 
-1. Select **Debug > Step Into** or press the F11 key. The **Autos** window shows the value of the `date` variable after the assignment from the [`DateTime.Now`](xref:System.DateTime.Now) property. The console window is unchanged.
+1. Select **Debug** > **Step Into** or press the F11 key. The **Autos** window shows the value of the `date` variable after the assignment from the [`DateTime.Now`](xref:System.DateTime.Now) property. The console window is unchanged.
 
-1. Select **Debug > Step Into** or press the F11 key. Visual Studio calls the [`Console.WriteLine`](xref:System.Console.WriteLine(System.String,System.Object,System.Object)) method. The values of the `date` and `name` variables appear in the **Autos** window, and the console window displays the formatted string.
+1. Select **Debug** > **Step Into** or press the F11 key. Visual Studio calls the [`Console.WriteLine`](xref:System.Console.WriteLine(System.String,System.Object,System.Object)) method. The values of the `date` and `name` variables appear in the **Autos** window, and the console window displays the formatted string.
 
-1. Select **Debug > Step Out** or press Shift and the F11 key. This stops step-by-step execution. The console window displays a message and waits for you to press a key.
+1. Select **Debug** > **Step Out** or press Shift and the F11 key. This stops step-by-step execution. The console window displays a message and waits for you to press a key.
 
 1. Press any key to close the console window and exit Debug mode.
 

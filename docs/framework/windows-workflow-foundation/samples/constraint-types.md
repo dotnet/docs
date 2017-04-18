@@ -24,7 +24,7 @@ This sample shows two different ways to apply constraints to a workflow, one is 
   
 -   Create a constraint (`PriceGreaterThanCost`). This is where all the validation logic resides.  
   
--   Override <xref:System.Activities.CodeActivity%601.OnGetConstraints%2A> and add the constraint (`PriceGreaterThanCost`) to the constraints <xref:System.Collections.IList>.  
+-   Override `System.Activities.CodeActivity.OnGetConstraints()` and add the constraint (`PriceGreaterThanCost`) to the constraints <xref:System.Collections.IList>.  
   
  The workflow author (policy) must:  
   

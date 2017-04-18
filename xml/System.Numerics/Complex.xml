@@ -263,7 +263,7 @@
   
  The <xref:System.Numerics.Complex.Acos%2A> method uses the following formula:  
   
- (-<xref:System.Numerics.Complex.ImaginaryOne>) * <xref:System.Numerics.Complex.Log%2A>(`value` + [ImaginaryOne](assetId:///F:System.Numerics.Complex.ImaginaryOne?qualifyHint=False&autoUpgrade=True)*[Sqrt](assetId:///M:System.Numerics.Complex.Sqrt(System.Numerics.Complex)?qualifyHint=False&autoUpgrade=True)([One](assetId:///F:System.Numerics.Complex.One?qualifyHint=False&autoUpgrade=True) - `value` * `value`)))  
+ (-<xref:System.Numerics.Complex.ImaginaryOne>) * <xref:System.Numerics.Complex.Log%2A>(`value` + <xref:System.Numerics.Complex.ImaginaryOne>*<xref:System.Numerics.Complex.Sqrt%2A>(<xref:System.Numerics.Complex.One> - `value` * `value`)))    
   
    
   
@@ -367,7 +367,7 @@
   
  The <xref:System.Numerics.Complex.Asin%2A> method uses the following formula:  
   
- -<xref:System.Numerics.Complex.ImaginaryOne> * <xref:System.Numerics.Complex.Log%2A>([ImaginaryOne](assetId:///F:System.Numerics.Complex.ImaginaryOne?qualifyHint=False&autoUpgrade=True) * value + [Sqrt](assetId:///M:System.Numerics.Complex.Sqrt(System.Numerics.Complex)?qualifyHint=False&autoUpgrade=True)([One](assetId:///F:System.Numerics.Complex.One?qualifyHint=False&autoUpgrade=True) - value * value))  
+ -<xref:System.Numerics.Complex.ImaginaryOne> * <xref:System.Numerics.Complex.Log%2A>(<xref:System.Numerics.Complex.ImaginaryOne> * value + <xref:System.Numerics.Complex.Sqrt%2A>(<xref:System.Numerics.Complex.One> - value * value))    
   
    
   
@@ -417,7 +417,7 @@
   
  The <xref:System.Numerics.Complex.Atan%2A> method uses the following formula:  
   
- <xref:System.Numerics.Complex.ImaginaryOne> / new Complex(2.0, 0.0)) * (<xref:System.Numerics.Complex.Log%2A>([One](assetId:///F:System.Numerics.Complex.One?qualifyHint=False&autoUpgrade=True) - [ImaginaryOne](assetId:///F:System.Numerics.Complex.ImaginaryOne?qualifyHint=False&autoUpgrade=True) * value) - <xref:System.Numerics.Complex.Log%2A>([One](assetId:///F:System.Numerics.Complex.One?qualifyHint=False&autoUpgrade=True) + ImaginaryOne * value)  
+ <xref:System.Numerics.Complex.ImaginaryOne> / new Complex(2.0, 0.0)) * (<xref:System.Numerics.Complex.Log%2A>(<xref:System.Numerics.Complex.One> - <xref:System.Numerics.Complex.ImaginaryOne> * value) - <xref:System.Numerics.Complex.Log%2A>(<xref:System.Numerics.Complex.One> + ImaginaryOne * value)   
   
    
   
@@ -2349,7 +2349,7 @@
 ## Remarks  
  The square root of the complex number `value` is calculated by using the following formula:  
   
- <xref:System.Numerics.Complex.FromPolarCoordinates%2A?displayProperty=fullName>([Math.Sqrt](assetId:///M:System.Math.Sqrt(System.Double)?qualifyHint=True&autoUpgrade=True)(`value`.[Magnitude](assetId:///P:System.Numerics.Complex.Magnitude?qualifyHint=False&autoUpgrade=True)), `value`.[Phase](assetId:///P:System.Numerics.Complex.Phase?qualifyHint=False&autoUpgrade=True)/2.0)  
+ <xref:System.Numerics.Complex.FromPolarCoordinates%2A?displayProperty=fullName>(<xref:System.Math.Sqrt%2A?displayProperty=fullName>(`value`.<xref:System.Numerics.Complex.Magnitude%2A>), `value`.<xref:System.Numerics.Complex.Phase%2A>/2.0)   
   
  The <xref:System.Numerics.Complex.Sqrt%2A> method for complex numbers corresponds to the <xref:System.Math.Sqrt%2A?displayProperty=fullName> method for real numbers.  
   

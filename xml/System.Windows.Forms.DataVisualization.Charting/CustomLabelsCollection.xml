@@ -22,7 +22,7 @@
  The <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection> class represents a collection of <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel> objects, which in turn represent the custom labels that an <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object can use. This class is exposed as the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.CustomLabels%2A> collection property of an <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object.  
   
 > [!NOTE]
->  You can automatically populate the entire label row of an axis with custom <xref:System.DateTime> labels using any [Add](assetId:///Add?qualifyHint=False&amp;autoUpgrade=True) method definition that includes a `DateTimeIntervalType` argument.  
+>  You can automatically populate the entire label row of an axis with custom <xref:System.DateTime> labels using any <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection.Add%2A> method definition that includes a `DateTimeIntervalType` argument.  
   
  The <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection.Count%2A> property indicates the total number of items in the collection, and is commonly used to find the upper bound of the collection.  
   

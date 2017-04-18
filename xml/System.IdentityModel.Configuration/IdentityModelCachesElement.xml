@@ -98,7 +98,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is optional. It corresponds to a `<sessionSecurityTokenCache>` element specified under the `<caches>`. It specifies the type of the cache to use to store session security tokens. All session token caches must derive from [System.IdentityModel.Tokens.SessionSecurityTokenCache](assetId:///System.IdentityModel.Tokens.SessionSecurityTokenCache?qualifyHint=False&amp;autoUpgrade=True)  
+ This property is optional. It corresponds to a `<sessionSecurityTokenCache>` element specified under the `<caches>`. It specifies the type of the cache to use to store session security tokens. All session token caches must derive from <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache>   
   
  ]]></format>
         </remarks>
@@ -128,7 +128,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is optional. It corresponds to an `<tokenReplayCache>` element specified under the  `<caches>` element. It specifies the type of the cache to use to detect replayed tokens. All replay caches must derive from [System.IdentityModel.Tokens.TokenReplayCache](assetId:///System.IdentityModel.Tokens.TokenReplayCache?qualifyHint=False&amp;autoUpgrade=True)  
+ This property is optional. It corresponds to an `<tokenReplayCache>` element specified under the  `<caches>` element. It specifies the type of the cache to use to detect replayed tokens. All replay caches must derive from <xref:System.IdentityModel.Tokens.TokenReplayCache>   
   
  Replay detection is enabled with the `<tokenReplayDetection>` element. This element is represented by the <xref:System.IdentityModel.Configuration.TokenReplayDetectionElement> class.  
   

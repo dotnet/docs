@@ -31,6 +31,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,6 +66,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -99,6 +101,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Callback">
@@ -122,6 +125,7 @@
         <summary>Gets the callback method that creates an instance of the <see cref="T:System.Xml.Serialization.XmlSerializationFixupCallback" /> delegate.</summary>
         <value>The callback method that creates an instance of the <see cref="T:System.Xml.Serialization.XmlSerializationFixupCallback" /> delegate.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Ids">
@@ -152,6 +156,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Source">
@@ -186,6 +191,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

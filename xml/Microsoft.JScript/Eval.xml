@@ -13,6 +13,7 @@
   <Docs>
     <summary>Evaluates JScript code. This class belongs to the abstract syntax tree category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="JScriptEvaluate">
@@ -37,6 +38,7 @@
         <summary>Evaluates the specified JScript code by using the specified engine.</summary>
         <returns>The result of the evaluation. If <paramref name="source" /> is not a string, return value is <paramref name="source" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="JScriptEvaluate">
@@ -63,6 +65,7 @@
         <summary>Evaluates the specified JScript code by using the specified engine and safety option.</summary>
         <returns>The result of the evaluation. If <paramref name="source" /> is not a string, return value is <paramref name="source" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

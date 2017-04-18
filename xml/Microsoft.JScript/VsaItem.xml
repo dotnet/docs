@@ -17,6 +17,7 @@
   <Docs>
     <summary>Represents items added to the .NET script engine. This includes code items, reference items, and global items.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="flag">
@@ -34,6 +35,7 @@
       <Docs>
         <summary>Specifies the type of the item as <see cref="F:Microsoft.Vsa.VsaItemFlag.Class" />, <see cref="F:Microsoft.Vsa.VsaItemFlag.Module" />, or <see cref="F:Microsoft.Vsa.VsaItemFlag.None" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetOption">
@@ -56,6 +58,7 @@
         <summary>Gets the **codebase** option.</summary>
         <returns>The value of the **codebase** option.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="isDirty">
@@ -73,6 +76,7 @@
       <Docs>
         <summary>Specifies whether the current in-memory representation of the item differs from the persisted representation.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsDirty">
@@ -92,6 +96,7 @@
         <value>
           <see langword="true" /> if the in-memory representation differs from the persisted representation; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ItemType">
@@ -110,6 +115,7 @@
         <summary>Gets the type of the item.</summary>
         <value>One of the enumeration values. The value indicates the type of the item.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="name">
@@ -127,6 +133,7 @@
       <Docs>
         <summary>Specifies the name of the item.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -145,6 +152,7 @@
         <summary>Gets or sets the name of the item.</summary>
         <value>The string literal name of the item.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SetOption">
@@ -168,6 +176,7 @@
         <param name="value">The new value for the option.</param>
         <summary>Sets the **codebase** option.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="type">
@@ -185,6 +194,7 @@
       <Docs>
         <summary>Specifies the type of the item as <see cref="F:Microsoft.Vsa.VsaItemType.Code" />, <see cref="F:Microsoft.Vsa.VsaItemType.Reference" />, or <see cref="F:Microsoft.Vsa.VsaItemType.AppGlobal" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

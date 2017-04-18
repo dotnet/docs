@@ -18,6 +18,7 @@
   <Docs>
     <summary>Provides a wrapper over the result element with the ability to project a subset of properties.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,6 +34,7 @@
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Data.Services.Internal.ProjectedWrapper0" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InternalGetProjectedPropertyValue">

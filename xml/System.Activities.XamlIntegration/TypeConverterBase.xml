@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides methods that derived type converter classes can use for converting objects to and from various representations.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="CanConvertFrom">
@@ -38,6 +39,7 @@
         <returns>
           <see langword="true" /> if the specified type can be converted from; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CanConvertTo">
@@ -63,6 +65,7 @@
         <returns>
           <see langword="true" /> if the specified type can be converted to; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -89,6 +92,7 @@
         <summary>When overridden in a derived class, converts the specified value to a new representation specified by the derived class.</summary>
         <returns>The converted value.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -117,6 +121,7 @@
         <summary>When overridden in a derived class, converts the specified value to the specified representation.</summary>
         <returns>The converted value.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -20,6 +20,7 @@
   <Docs>
     <summary>Represents a collection of <see cref="T:Microsoft.Vsa.IVsaItem" /> objects that can be addressed either by name or by index.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,6 +39,7 @@
         <param name="engine">A reference to the scripting engine.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.VsaItems" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -56,6 +58,7 @@
       <Docs>
         <summary>Disconnects each item in the collection from the scripting engine.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -74,6 +77,7 @@
         <summary>Gets the number of items in the collection.</summary>
         <value>The number of items in the collection.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateItem">
@@ -100,6 +104,7 @@
         <summary>Creates a new item and adds it to the collection.</summary>
         <returns>The newly created item.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -119,6 +124,7 @@
         <summary>Gets an enumerator that iterates over the collection.</summary>
         <returns>An enumerator that iterates over the collection.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -141,6 +147,7 @@
         <summary>Gets the item from the collection that is designated by the specified index value.</summary>
         <value>The item at <paramref name="index" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -163,6 +170,7 @@
         <summary>Gets the item from the collection that is designated by the specified name.</summary>
         <value>The item that is named <paramref name="itemName" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -184,6 +192,7 @@
         <param name="itemIndex">The index of the item to remove.</param>
         <summary>Removes the item that is designated by the specified index value from the collection.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -205,6 +214,7 @@
         <param name="itemName">The name of the item to remove.</param>
         <summary>Removes the item that is designated by the specified name from the collection.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

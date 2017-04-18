@@ -25,6 +25,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,6 +41,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Configuration.DeclaredTypeElementCollection" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -61,6 +63,7 @@
         <param name="element">The configuration element to add.</param>
         <summary>Adds a specified configuration element to the collection.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -79,6 +82,7 @@
       <Docs>
         <summary>Removes all members of the collection.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -102,6 +106,7 @@
         <returns>
           <see langword="true" /> if the element is in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateNewElement">
@@ -166,6 +171,7 @@
         <returns>The index of the specified configuration element; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="element" /> argument is <see langword="null" />.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -188,6 +194,7 @@
         <summary>Gets or sets the configuration element at the specified index location.</summary>
         <value>The <see cref="T:System.Runtime.Serialization.Configuration.DeclaredTypeElement" /> at the specified index.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -210,6 +217,7 @@
         <summary>Gets or sets the element in the collection of types by its key.</summary>
         <value>The specified element (when used to get the element).</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -231,6 +239,7 @@
         <param name="element">The <see cref="T:System.Runtime.Serialization.Configuration.DeclaredTypeElement" /> to remove.</param>
         <summary>Removes the specified configuration element from the collection.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -252,6 +261,7 @@
         <param name="typeName">The name of the type (which functions as a key) to remove from the collection.</param>
         <summary>Removes the element specified by its key from the collection.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -273,6 +283,7 @@
         <param name="index">The position of the configuration element to remove.</param>
         <summary>Removes the configuration element found at the specified position.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

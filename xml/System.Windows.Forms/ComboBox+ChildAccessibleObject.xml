@@ -29,6 +29,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,6 +57,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -74,6 +76,7 @@
         <summary>Gets the name of the object.</summary>
         <value>The value of the <see cref="P:System.Windows.Forms.ComboBox.ChildAccessibleObject.Name" /> property is the same as the <see cref="P:System.Windows.Forms.AccessibleObject.Name" /> property for the <see cref="T:System.Windows.Forms.AccessibleObject" /> of the <see cref="T:System.Windows.Forms.ComboBox" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

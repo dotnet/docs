@@ -25,6 +25,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,6 +41,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.Configuration.SchemaImporterExtensionElementCollection" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -61,6 +63,7 @@
         <param name="element">The <see cref="T:System.Xml.Serialization.Configuration.SchemaImporterExtensionElement" /> to add to the collection.</param>
         <summary>Adds an item to the end of the collection.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -79,6 +82,7 @@
       <Docs>
         <summary>Removes all items from the collection.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateNewElement">
@@ -142,6 +146,7 @@
         <summary>Returns the zero-based index of the first element in the collection with the specified value.</summary>
         <returns>The index of the found element.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -170,6 +175,7 @@
  -or-  
   
  <paramref name="index" /> is equal to or greater than <see langword="Count" />.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -192,6 +198,7 @@
         <summary>Gets or sets the item with the specified name.</summary>
         <value>The <see cref="T:System.Xml.Serialization.Configuration.SchemaImporterExtensionElement" /> with the specified name.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -213,6 +220,7 @@
         <param name="name">The name of the item to remove.</param>
         <summary>Removes the item with the specified name from the collection.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -234,6 +242,7 @@
         <param name="element">The <see cref="T:System.Xml.Serialization.Configuration.SchemaImporterExtensionElement" /> to remove.</param>
         <summary>Removes the first occurrence of a specific item from the collection.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -255,6 +264,7 @@
         <param name="index">The index of the object to remove.</param>
         <summary>Removes the item at the specified index from the collection.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

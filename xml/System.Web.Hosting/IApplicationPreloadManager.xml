@@ -18,6 +18,7 @@
   <Docs>
     <summary>Provides methods that ASP.NET uses to invoke the application-preload feature in [!INCLUDE[iisver](~/includes/iisver-md.md)].</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="SetApplicationPreloadState">
@@ -44,6 +45,7 @@
           <see langword="true" /> to indicate that the application should be preloaded; otherwise, <see langword="false" />.</param>
         <summary>Called by [!INCLUDE[iisver](~/includes/iisver-md.md)] to notify ASP.NET whether an application should be preloaded.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SetApplicationPreloadUtil">
@@ -72,6 +74,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

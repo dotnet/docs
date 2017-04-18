@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents a parameter of a method of a hosted ActiveX control.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,6 +32,7 @@
         <param name="info">A <see cref="T:System.Reflection.ParameterInfo" /> indicating the parameter information to use.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.AxParameterData" /> class using the specified parameter information.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -51,6 +53,7 @@
         <param name="ignoreByRefs">A value indicating whether to ignore parameters passed by reference.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.AxParameterData" /> class using the specified parameter information and whether to ignore by reference parameters.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -71,6 +74,7 @@
         <param name="typeName">The name of the type of the parameter.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.AxParameterData" /> class using the specified name and type name.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -91,6 +95,7 @@
         <param name="type">The type of the parameter.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.AxParameterData" /> class using the specified name and type.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Convert">
@@ -113,6 +118,7 @@
         <summary>Converts the specified parameter information to an <see cref="T:System.Windows.Forms.Design.AxParameterData" /> object.</summary>
         <returns>An array of <see cref="T:System.Windows.Forms.Design.AxParameterData" /> objects representing the specified array of <see cref="T:System.Reflection.ParameterInfo" /> objects.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Convert">
@@ -137,6 +143,7 @@
         <summary>Converts the specified parameter information to an <see cref="T:System.Windows.Forms.Design.AxParameterData" /> object, according to the specified value indicating whether to ignore by reference parameters.</summary>
         <returns>An array of <see cref="T:System.Windows.Forms.Design.AxParameterData" /> objects representing the specified array of <see cref="T:System.Reflection.ParameterInfo" /> objects.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Direction">
@@ -155,6 +162,7 @@
         <summary>Indicates the direction of assignment fields.</summary>
         <value>A <see cref="T:System.CodeDom.FieldDirection" /> indicating the direction of assignment fields.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsByRef">
@@ -174,6 +182,7 @@
         <value>
           <see langword="true" /> if the parameter data is by reference; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsIn">
@@ -193,6 +202,7 @@
         <value>
           <see langword="true" /> if the parameter data is in; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsOptional">
@@ -212,6 +222,7 @@
         <value>
           <see langword="true" /> if the parameter data is optional; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsOut">
@@ -231,6 +242,7 @@
         <value>
           <see langword="true" /> if the parameter data is out; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -249,6 +261,7 @@
         <summary>Gets or sets the name of the parameter.</summary>
         <value>The name of the parameter.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ParameterType">
@@ -267,6 +280,7 @@
         <summary>Gets the type expected by the parameter.</summary>
         <value>The type expected by the parameter.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TypeName">
@@ -285,6 +299,7 @@
         <summary>Gets the name of the type expected by the parameter.</summary>
         <value>The name of the type expected by the parameter.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

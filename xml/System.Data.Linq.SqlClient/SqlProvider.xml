@@ -17,6 +17,7 @@
   <Docs>
     <summary>Contains functionality to connect to and communicate with a [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)].</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,6 +33,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.SqlClient.SqlProvider" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -50,6 +52,7 @@
       <Docs>
         <summary>Releases managed references and closes connections opened by the <see cref="T:System.Data.Linq.SqlClient.SqlProvider" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -72,6 +75,7 @@
           <see langword="true" /> to release managed references and close connections; otherwise, <see langword="false" />.</param>
         <summary>Optionally releases managed references and closes connections opened by the <see cref="T:System.Data.Linq.SqlClient.SqlProvider" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

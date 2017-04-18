@@ -13,6 +13,7 @@
   <Docs>
     <summary>Converts data from one type to another. This is a utility class.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.Convert" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CheckIfDoubleIsInteger">
@@ -50,6 +52,7 @@
         <summary>Determines whether a <see cref="T:System.Double" /> variable contains an integer value.</summary>
         <returns>If <paramref name="d" /> contains an integer value, <paramref name="d" /> is returned. If not, an exception is thrown.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CheckIfSingleIsInteger">
@@ -72,6 +75,7 @@
         <summary>Determines whether a <see cref="T:System.Single" /> variable contains an integer value.</summary>
         <returns>If <paramref name="s" /> contains an integer value, <paramref name="s" /> is returned. If not, an exception is thrown.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Coerce">
@@ -104,6 +108,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Coerce2">
@@ -132,6 +137,7 @@
         <returns>
           <paramref name="value" /> converted to the <paramref name="target" /> type.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CoerceT">
@@ -160,6 +166,7 @@
         <returns>
           <paramref name="value" /> converted to the type <paramref name="t" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsBadIndex">
@@ -183,6 +190,7 @@
         <returns>
           <see langword="true" /> if <paramref name="ast" /> contains an array index value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ThrowTypeMismatch">
@@ -209,6 +217,7 @@
         <param name="val">The source code that caused the exception.</param>
         <summary>Throws a <see cref="T:Microsoft.JScript.JScriptException" /> exception in all cases.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -232,6 +241,7 @@
         <returns>
           <see langword="false" /> if <paramref name="d" /> is 0; otherwise, <see langword="true" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -260,6 +270,7 @@
         <returns>
           <paramref name="value" /> converted to a <see cref="T:System.Boolean" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ToBoolean">
@@ -291,6 +302,7 @@
         <returns>
           <paramref name="value" /> converted to a <see cref="T:System.Boolean" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ToForInObject">
@@ -316,6 +328,7 @@
         <returns>
           <paramref name="value" /> converted to an <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ToInt32">
@@ -339,6 +352,7 @@
         <returns>
           <paramref name="value" /> converted to an <see cref="T:System.Int32" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ToNativeArray">
@@ -364,6 +378,7 @@
         <returns>
           <paramref name="value" /> converted to an <see cref="T:System.Array" /> if this is possible; otherwise, <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ToNumber">
@@ -387,6 +402,7 @@
         <returns>
           <paramref name="value" /> converted to a <see cref="T:System.Double" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ToNumber">
@@ -410,6 +426,7 @@
         <returns>
           <paramref name="str" /> converted to a <see cref="T:System.Double" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ToObject">
@@ -435,6 +452,7 @@
         <returns>
           <paramref name="value" /> converted to an <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ToObject2">
@@ -460,6 +478,7 @@
         <returns>
           <paramref name="value" /> converted to an <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -483,6 +502,7 @@
         <returns>
           <paramref name="b" /> converted to a <see cref="T:System.String" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -506,6 +526,7 @@
         <returns>
           <paramref name="d" /> converted to a <see cref="T:System.String" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -537,6 +558,7 @@
         <returns>
           <paramref name="value" /> converted to a <see cref="T:System.String" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

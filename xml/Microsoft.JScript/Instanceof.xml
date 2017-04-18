@@ -13,6 +13,7 @@
   <Docs>
     <summary>Determines whether an object can be coerced to the type of another object. This class belongs to the abstract syntax tree category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="JScriptInstanceof">
@@ -38,6 +39,7 @@
         <returns>
           <see langword="true" /> if <paramref name="v1" /> can be coerced to the type of object *v2*; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

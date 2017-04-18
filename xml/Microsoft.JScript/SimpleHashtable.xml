@@ -13,6 +13,7 @@
   <Docs>
     <summary>A hash table for the internal storage of items.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,6 +32,7 @@
         <param name="threshold">The number of items at which the hash table must be resized.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.SimpleHashtable" /> class, using the specified threshold.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -50,6 +52,7 @@
         <summary>Gets an enumerator for the hash table.</summary>
         <returns>An enumerator for the hash table.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -72,6 +75,7 @@
         <summary>Gets or sets the item that has the specified key.</summary>
         <value>The value of the item that has the specified <paramref name="key" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -93,6 +97,7 @@
         <param name="key">The key of the item to remove.</param>
         <summary>Removes the item with the specified key from the hash table.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

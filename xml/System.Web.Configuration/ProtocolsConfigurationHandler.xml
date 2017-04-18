@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,6 +40,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.ProtocolsConfigurationHandler" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -65,6 +67,7 @@
         <summary>Creates a new protocols configuration object.</summary>
         <returns>The new protocols configuration object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

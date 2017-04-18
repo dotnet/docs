@@ -22,6 +22,7 @@
   <Docs>
     <summary>Represents the collection of XML schemas.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,6 +43,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlSchemas" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -69,6 +71,7 @@
         <summary>Adds an object to the end of the collection.</summary>
         <returns>The index at which the <see cref="T:System.Xml.Schema.XmlSchema" /> is added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -95,6 +98,7 @@
         <param name="schemas">The <see cref="T:System.Xml.Serialization.XmlSchemas" /> object to be added to the end of the collection.</param>
         <summary>Adds an instance of the <see cref="T:System.Xml.Serialization.XmlSchemas" /> class to the end of the collection.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -124,6 +128,7 @@
         <summary>Adds an <see cref="T:System.Xml.Schema.XmlSchema" /> object that represents an assembly reference to the collection.</summary>
         <returns>The index at which the <see cref="T:System.Xml.Schema.XmlSchema" /> is added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AddReference">
@@ -150,6 +155,7 @@
         <param name="schema">The <see cref="T:System.Xml.Schema.XmlSchema" /> to add.</param>
         <summary>Adds an <see cref="T:System.Xml.Schema.XmlSchema" /> object that represents an assembly reference to the collection.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Compile">
@@ -194,6 +200,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -222,6 +229,7 @@
         <returns>
           <see langword="true" /> if the item is found; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -250,6 +258,7 @@
         <returns>
           <see langword="true" />, if the collection contains the specified item; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -278,6 +287,7 @@
         <param name="index">A 32-bit integer that represents the index in the array where copying begins.</param>
         <summary>Copies the entire <see cref="T:System.Xml.Serialization.XmlSchemas" /> to a compatible one-dimensional <see cref="T:System.Array" />, which starts at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Find">
@@ -307,6 +317,7 @@
         <summary>Locates in one of the XML schemas an <see cref="T:System.Xml.Schema.XmlSchemaObject" /> of the specified name and type.</summary>
         <returns>An <see cref="T:System.Xml.Schema.XmlSchemaObject" /> instance, such as an <see cref="T:System.Xml.Schema.XmlSchemaElement" /> or <see cref="T:System.Xml.Schema.XmlSchemaAttribute" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetSchemas">
@@ -341,6 +352,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -368,6 +380,7 @@
         <summary>Searches for the specified schema and returns the zero-based index of the first occurrence within the entire <see cref="T:System.Xml.Serialization.XmlSchemas" />.</summary>
         <returns>The zero-based index of the first occurrence of the value within the entire <see cref="T:System.Xml.Serialization.XmlSchemas" />, if found; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -396,6 +409,7 @@
         <param name="schema">The <see cref="T:System.Xml.Schema.XmlSchema" /> object to be inserted.</param>
         <summary>Inserts a schema into the <see cref="T:System.Xml.Serialization.XmlSchemas" /> at the specified index.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsCompiled">
@@ -427,6 +441,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsDataSet">
@@ -464,6 +479,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -491,6 +507,7 @@
         <summary>Gets or sets the <see cref="T:System.Xml.Schema.XmlSchema" /> object at the specified index.</summary>
         <value>The specified <see cref="T:System.Xml.Schema.XmlSchema" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -518,6 +535,7 @@
         <summary>Gets a specified <see cref="T:System.Xml.Schema.XmlSchema" /> object that represents the XML schema associated with the specified namespace.</summary>
         <value>The specified <see cref="T:System.Xml.Schema.XmlSchema" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OnClear">
@@ -541,6 +559,7 @@
       <Docs>
         <summary>Performs additional custom processes when clearing the contents of the <see cref="T:System.Xml.Serialization.XmlSchemas" /> instance.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OnInsert">
@@ -569,6 +588,7 @@
         <param name="value">The new value of the element at <c>index</c>.</param>
         <summary>Performs additional custom processes before inserting a new element into the <see cref="T:System.Xml.Serialization.XmlSchemas" /> instance.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OnRemove">
@@ -597,6 +617,7 @@
         <param name="value">The value of the element to remove at <c>index</c>.</param>
         <summary>Performs additional custom processes when removing an element from the <see cref="T:System.Xml.Serialization.XmlSchemas" /> instance.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OnSet">
@@ -627,6 +648,7 @@
         <param name="newValue">The new value of the element at <c>index</c>.</param>
         <summary>Performs additional custom processes before setting a value in the <see cref="T:System.Xml.Serialization.XmlSchemas" /> instance.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -653,6 +675,7 @@
         <param name="schema">The <see cref="T:System.Xml.Schema.XmlSchema" /> to remove.</param>
         <summary>Removes the first occurrence of a specific schema from the <see cref="T:System.Xml.Serialization.XmlSchemas" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IEnumerable&lt;System.Xml.Schema.XmlSchema&gt;.GetEnumerator">
@@ -677,6 +700,7 @@
         <summary>Returns an enumerator that iterates through the collection of XML schemas.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

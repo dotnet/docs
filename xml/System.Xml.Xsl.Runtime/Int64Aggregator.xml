@@ -22,6 +22,7 @@
   <Docs>
     <summary>Computes aggregates over a sequence of <see langword="Int64" /> values.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Average">
@@ -47,6 +48,7 @@
         <param name="value">A value of type <see langword="Int64" />.</param>
         <summary>Finds an average of a sequence of <see langword="Int64" /> values.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AverageResult">
@@ -69,6 +71,7 @@
         <summary>Returns an <see langword="Int64" /> value that contains the average of a sequence of <see langword="Int64" /> values.</summary>
         <value>An <see langword="Int64" /> value that contains the average of a sequence of <see langword="Int64" /> values.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -91,6 +94,7 @@
       <Docs>
         <summary>Initializes a sequence of <see langword="Int64" /> values.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsEmpty">
@@ -114,6 +118,7 @@
         <value>
           <see langword="true" /> if the sequence of <see langword="Int64" /> values is empty; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Maximum">
@@ -139,6 +144,7 @@
         <param name="value">A value of type <see langword="Int64" />.</param>
         <summary>Assigns the <paramref name="value" /> parameter to the existing result if the <paramref name="value" /> parameter is greater than the existing result.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MaximumResult">
@@ -161,6 +167,7 @@
         <summary>Gets the largest <see langword="Int64" /> value.</summary>
         <value>The largest <see langword="Int64" /> value.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Minimum">
@@ -186,6 +193,7 @@
         <param name="value">A value of type <see langword="Int64" />.</param>
         <summary>Assigns the <paramref name="value" /> parameter to the existing result if the <paramref name="value" /> parameter is less than the existing result.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MinimumResult">
@@ -208,6 +216,7 @@
         <summary>Gest the smallest <see langword="Int64" /> value.</summary>
         <value>The smallest <see langword="Int64" /> value.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Sum">
@@ -233,6 +242,7 @@
         <param name="value">A value of type <see langword="Int64" />.</param>
         <summary>Adds an <see langword="Int64" /> value to the existing result.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SumResult">
@@ -255,6 +265,7 @@
         <summary>Returns an <see langword="Int64" /> value that contains the sum of a sequence of <see langword="Int64" /> values.</summary>
         <value>An <see langword="Int64" /> value that contains the sum of a sequence of <see langword="Int64" /> values.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -22,6 +22,7 @@
   <Docs>
     <summary>Merges several doc-order-distinct sequences into a single doc-order-distinct sequence.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="AddSequence">
@@ -47,6 +48,7 @@
         <param name="sequence">An instance of the <see cref="T:System.Xml.XPath.XPathNavigator" /> class.</param>
         <summary>Adds a new sequence to the list of sequences to merge.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -72,6 +74,7 @@
         <param name="runtime">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryRuntime" /> class, which provides methods and properties to support the XSLT processor.</param>
         <summary>Initializes this instance of <see cref="T:System.Xml.Xsl.Runtime.DodSequenceMerge" /> .</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MergeSequences">
@@ -95,6 +98,7 @@
         <summary>Returns the fully-merged sequence.</summary>
         <returns>The fully-merged sequence.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -28,6 +28,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="CacheEntryNotFound">
@@ -53,6 +54,7 @@
       </ReturnValue>
       <Docs>
         <summary>The specified cache entry was not found.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConnectFailure">
@@ -78,6 +80,7 @@
       </ReturnValue>
       <Docs>
         <summary>The remote service point could not be contacted at the transport level.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConnectionClosed">
@@ -103,6 +106,7 @@
       </ReturnValue>
       <Docs>
         <summary>The connection was prematurely closed.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="KeepAliveFailure">
@@ -128,6 +132,7 @@
       </ReturnValue>
       <Docs>
         <summary>The connection for a request that specifies the Keep-alive header was closed unexpectedly.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MessageLengthLimitExceeded">
@@ -153,6 +158,7 @@
       </ReturnValue>
       <Docs>
         <summary>A message was received that exceeded the specified limit when sending a request or receiving a response from the server.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NameResolutionFailure">
@@ -178,6 +184,7 @@
       </ReturnValue>
       <Docs>
         <summary>The name resolver service could not resolve the host name.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Pending">
@@ -203,6 +210,7 @@
       </ReturnValue>
       <Docs>
         <summary>An internal asynchronous request is pending.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PipelineFailure">
@@ -228,6 +236,7 @@
       </ReturnValue>
       <Docs>
         <summary>The request was a pipelined request and the connection was closed before the response was received.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ProtocolError">
@@ -253,6 +262,7 @@
       </ReturnValue>
       <Docs>
         <summary>The response received from the server was complete but indicated a protocol-level error. For example, an HTTP protocol error such as 401 Access Denied would use this status.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ProxyNameResolutionFailure">
@@ -278,6 +288,7 @@
       </ReturnValue>
       <Docs>
         <summary>The name resolver service could not resolve the proxy host name.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ReceiveFailure">
@@ -303,6 +314,7 @@
       </ReturnValue>
       <Docs>
         <summary>A complete response was not received from the remote server.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RequestCanceled">
@@ -328,6 +340,7 @@
       </ReturnValue>
       <Docs>
         <summary>The request was canceled, the <see cref="M:System.Net.WebRequest.Abort" /> method was called, or an unclassifiable error occurred. This is the default value for <see cref="P:System.Net.WebException.Status" />.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RequestProhibitedByCachePolicy">
@@ -353,6 +366,7 @@
       </ReturnValue>
       <Docs>
         <summary>The request was not permitted by the cache policy. In general, this occurs when a request is not cacheable and the effective policy prohibits sending the request to the server. You might receive this status if a request method implies the presence of a request body, a request method requires direct interaction with the server, or a request contains a conditional header.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RequestProhibitedByProxy">
@@ -378,6 +392,7 @@
       </ReturnValue>
       <Docs>
         <summary>This request was not permitted by the proxy.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SecureChannelFailure">
@@ -403,6 +418,7 @@
       </ReturnValue>
       <Docs>
         <summary>An error occurred while establishing a connection using SSL.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SendFailure">
@@ -428,6 +444,7 @@
       </ReturnValue>
       <Docs>
         <summary>A complete request could not be sent to the remote server.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ServerProtocolViolation">
@@ -453,6 +470,7 @@
       </ReturnValue>
       <Docs>
         <summary>The server response was not a valid HTTP response.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Success">
@@ -478,6 +496,7 @@
       </ReturnValue>
       <Docs>
         <summary>No error was encountered.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Timeout">
@@ -503,6 +522,7 @@
       </ReturnValue>
       <Docs>
         <summary>No response was received during the time-out period for a request.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TrustFailure">
@@ -528,6 +548,7 @@
       </ReturnValue>
       <Docs>
         <summary>A server certificate could not be validated.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UnknownError">
@@ -553,6 +574,7 @@
       </ReturnValue>
       <Docs>
         <summary>An exception of unknown type has occurred.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

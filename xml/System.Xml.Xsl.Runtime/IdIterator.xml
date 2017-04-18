@@ -22,6 +22,7 @@
   <Docs>
     <summary>Tokenizes a string that contains IDREF values and dereferences the values in order to get a list of ID elements.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Create">
@@ -50,6 +51,7 @@
         <param name="value">String to contain the value of the iterator.</param>
         <summary>Initializes the <see cref="T:System.Xml.Xsl.Runtime.IdIterator" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -79,6 +81,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -110,6 +113,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

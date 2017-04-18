@@ -18,6 +18,7 @@
   <Docs>
     <summary>Defines extra functionality that is needed by an active script host.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="AddEvent">
@@ -42,6 +43,7 @@
         <summary>Used by an active script host to define an event.</summary>
         <returns>The event, if it was successfully added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

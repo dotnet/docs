@@ -15,6 +15,7 @@
   <Docs>
     <summary>Provides standard configuration methods.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="GetConfig">
@@ -37,6 +38,7 @@
         <summary>Gets the specified configuration.</summary>
         <returns>The object representing the configuration.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Init">
@@ -55,6 +57,7 @@
       <Docs>
         <summary>Used for initialization.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

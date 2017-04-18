@@ -13,6 +13,7 @@
   <Docs>
     <summary>Comprises extended utility methods for constructing a task that wraps a command line tool.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="AddCommandLineCommands">
@@ -34,6 +35,7 @@
         <param name="commandLine">The <see cref="T:Microsoft.Build.Tasks.CommandLineBuilderExtension" /> to fill.</param>
         <summary>Fills the specified <see cref="T:Microsoft.Build.Tasks.CommandLineBuilderExtension" /> with the switches and other information that the command line tool must run from the command line and not from a response file.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AddResponseFileCommands">
@@ -55,6 +57,7 @@
         <param name="commandLine">The <see cref="T:Microsoft.Build.Tasks.CommandLineBuilderExtension" /> to fill.</param>
         <summary>Fills the specified <see cref="T:Microsoft.Build.Tasks.CommandLineBuilderExtension" /> with the switches and other information that the command line tool can run from a response file.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Bag">
@@ -73,6 +76,7 @@
         <summary>Gets the collection of parameters used by the derived task class.</summary>
         <value>The collection of parameters used by the derived task class.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GenerateCommandLineCommands">
@@ -92,6 +96,7 @@
         <summary>Gets the switches and other information that the command line tool must run directly from the command line and not from a response file.</summary>
         <returns>A string containing the switches and other information that the command line tool must run directly from the command line and not from a response file.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GenerateResponseFileCommands">
@@ -111,6 +116,7 @@
         <summary>Gets the switch used by the command line tool to specify the response file.</summary>
         <returns>The switch used by the command line tool to specify the response file.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetBoolParameterWithDefault">
@@ -142,6 +148,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetIntParameterWithDefault">
@@ -173,6 +180,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="HasLoggedErrors">
@@ -192,6 +200,7 @@
         <value>
           <see langword="true" /> if the ToolTask logged errors, <see langword="false" /> if otherwise.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Log">
@@ -210,6 +219,7 @@
         <summary>Gets an instance of a <see cref="T:Microsoft.Build.Tasks.TaskLoggingHelperExtension" /> class containing task logging methods.</summary>
         <value>An instance of a <see cref="T:Microsoft.Build.Tasks.TaskLoggingHelperExtension" /> class containing task logging methods.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -22,6 +22,7 @@
   <Docs>
     <summary>Computes aggregates over a sequence of <see langword="double" /> values.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Average">
@@ -47,6 +48,7 @@
         <param name="value">A value of type <see langword="double" />.</param>
         <summary>Returns the average of a sequence of <see langword="double" /> values.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AverageResult">
@@ -69,6 +71,7 @@
         <summary>Computes the average value over a sequence of <see langword="double" /> values.</summary>
         <value>The average result.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -91,6 +94,7 @@
       <Docs>
         <summary>Initializes a sequence of <see langword="double" /> values.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsEmpty">
@@ -114,6 +118,7 @@
         <value>
           <see langword="true" /> if the result is empty; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Maximum">
@@ -139,6 +144,7 @@
         <param name="value">A value of type <see langword="double" />.</param>
         <summary>Assigns the <paramref name="value" /> parameter to the existing result if the <paramref name="value" /> parameter is greater than the existing result.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MaximumResult">
@@ -161,6 +167,7 @@
         <summary>Returns the maximum value of a sequence of <see langword="double" /> values.</summary>
         <value>The maximum result.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Minimum">
@@ -186,6 +193,7 @@
         <param name="value">A value of type <see langword="double" />.</param>
         <summary>Assigns the <paramref name="value" /> parameter to the existing result if the <paramref name="value" /> parameter is less than the existing result.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MinimumResult">
@@ -208,6 +216,7 @@
         <summary>Returns the minimum value of a sequence of <see langword="double" /> values.</summary>
         <value>The minimum result.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Sum">
@@ -233,6 +242,7 @@
         <param name="value">A value of type <see langword="double" />.</param>
         <summary>Adds a <see langword="Double" /> value to the existing result..</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SumResult">
@@ -255,6 +265,7 @@
         <summary>Returns the sum of a sequence of <see langword="double" /> values.</summary>
         <value>The sum of all results.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -13,6 +13,7 @@
   <Docs>
     <summary>Stores objects that represent the static methods of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class. The <see cref="T:Microsoft.JScript.LenientArrayPrototype" /> class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="concat">
@@ -30,6 +31,7 @@
       <Docs>
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ArrayPrototype.concat(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="constructor">
@@ -47,6 +49,7 @@
       <Docs>
         <summary>Stores a reference to an <see cref="T:Microsoft.JScript.ArrayConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="join">
@@ -64,6 +67,7 @@
       <Docs>
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ArrayPrototype.join(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="pop">
@@ -81,6 +85,7 @@
       <Docs>
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ArrayPrototype.pop(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="push">
@@ -98,6 +103,7 @@
       <Docs>
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ArrayPrototype.push(System.Object,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="reverse">
@@ -115,6 +121,7 @@
       <Docs>
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ArrayPrototype.reverse(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="shift">
@@ -132,6 +139,7 @@
       <Docs>
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ArrayPrototype.shift(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="slice">
@@ -149,6 +157,7 @@
       <Docs>
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ArrayPrototype.slice(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="sort">
@@ -166,6 +175,7 @@
       <Docs>
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ArrayPrototype.sort(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="splice">
@@ -183,6 +193,7 @@
       <Docs>
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ArrayPrototype.splice(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Double,System.Double,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="toLocaleString">
@@ -200,6 +211,7 @@
       <Docs>
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ArrayPrototype.toLocaleString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="toString">
@@ -217,6 +229,7 @@
       <Docs>
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ArrayPrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="unshift">
@@ -234,6 +247,7 @@
       <Docs>
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ArrayPrototype.unshift(System.Object,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

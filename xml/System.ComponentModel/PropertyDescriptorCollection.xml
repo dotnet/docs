@@ -34,7 +34,7 @@
 ## Remarks  
  <xref:System.ComponentModel.PropertyDescriptorCollection> is read-only; it does not implement methods that add or remove properties. You must inherit from this class to implement these methods.  
   
- Using the properties available in the <xref:System.ComponentModel.PropertyDescriptorCollection> class, you can query the collection about its contents. Use the <xref:System.ComponentModel.PropertyDescriptorCollection.Count%2A> property to determine the number of elements in the collection. Use the [Item\<xref:System.ComponentModel.PropertyDescriptorCollection.Item%2A> property to get a specific property by index number or by name.  
+ Using the properties available in the <xref:System.ComponentModel.PropertyDescriptorCollection> class, you can query the collection about its contents. Use the <xref:System.ComponentModel.PropertyDescriptorCollection.Count%2A> property to determine the number of elements in the collection. Use the <xref:System.ComponentModel.PropertyDescriptorCollection.Item%2A> property to get a specific property by index number or by name.  
   
  In addition to properties, you can use the <xref:System.ComponentModel.PropertyDescriptorCollection.Find%2A> method to get a description of the property with the specified name from the collection.  
   
@@ -817,7 +817,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example defines the sort order for the [Sort Method (String\<xref:System.ComponentModel.PropertyDescriptorCollection.Sort%2A> method. If the <xref:System.ComponentModel.PropertyDescriptorCollection> contains four <xref:System.ComponentModel.PropertyDescriptor> objects with the names `A`, `B`, `C`, and `D`, the properties of `myNewColl` would be sorted in the order `D`, `B`, `A`, and `C`.  
+ The following code example defines the sort order for the <xref:System.ComponentModel.PropertyDescriptorCollection.Sort%2A> method. If the <xref:System.ComponentModel.PropertyDescriptorCollection> contains four <xref:System.ComponentModel.PropertyDescriptor> objects with the names `A`, `B`, `C`, and `D`, the properties of `myNewColl` would be sorted in the order `D`, `B`, `A`, and `C`.  
   
  [!code-cpp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CPP/source.cpp#1)]
  [!code-csharp[classic eventdescriptorcollection.sort example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic EventDescriptorCollection.Sort Example/CS/source.cs#1)]

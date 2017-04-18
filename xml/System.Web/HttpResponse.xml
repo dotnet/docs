@@ -1475,7 +1475,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Starting with the .NET Framework version 2.0, when you use the [Stream.Write(Byte\<xref:System.IO.Stream.Write%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method of the IO stream returned by the <xref:System.Web.HttpResponse.OutputStream%2A> property, the following exceptions might be thrown:  
+ Starting with the .NET Framework version 2.0, when you use the <xref:System.IO.Stream.Write%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> method of the IO stream returned by the <xref:System.Web.HttpResponse.OutputStream%2A> property, the following exceptions might be thrown:  
   
 -   <xref:System.ArgumentOutOfRangeException>, if the `offset` or `count` parameter is negative or if the `buffer` parameter's length minus the `offset` parameter is less than or equal to zero.  
   
@@ -2369,7 +2369,7 @@ Response.RedirectToRoutePermanent("Product",
       </Parameters>
       <Docs>
         <param name="cookie">The cookie in the collection to be updated.</param>
-        <summary>Updates an existing cookie in the cookie collection.</summary>
+        <summary>Because the <b>HttpResponse.SetCookie</b> method is intended for internal use only, you should not call it in your code. Instead, you can call the <b>HttpResponse.Cookies.Set</b> method, as the following example shows.<br/>Updates an existing cookie in the cookie collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

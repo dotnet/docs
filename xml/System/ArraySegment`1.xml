@@ -123,7 +123,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor creates an <xref:System.ArraySegment%601> that delimits all the elements of `array`. That is, the <xref:System.ArraySegment%601.Offset%2A> property of the <xref:System.ArraySegment%601> is 0 and its <xref:System.ArraySegment%601.Count%2A> property is the length of `array`. To create an <xref:System.ArraySegment%601> that delimits only part of an array, use the [ArraySegment<T\>(T\<xref:System.ArraySegment%601.%23ctor%28%600%5B%5D%2CSystem.Int32%2CSystem.Int32%29> constructor.  
+ This constructor creates an <xref:System.ArraySegment%601> that delimits all the elements of `array`. That is, the <xref:System.ArraySegment%601.Offset%2A> property of the <xref:System.ArraySegment%601> is 0 and its <xref:System.ArraySegment%601.Count%2A> property is the length of `array`. To create an <xref:System.ArraySegment%601> that delimits only part of an array, use the <xref:System.ArraySegment%601.%23ctor%28%600%5B%5D%2CSystem.Int32%2CSystem.Int32%29> constructor.  
   
  The original array must be one-dimensional and must have zero-based indexing.  
   

@@ -82,7 +82,7 @@
  [!code-csharp[System.Boolean.Structure#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.boolean.structure/cs/tostring2.cs#4)]
  [!code-vb[System.Boolean.Structure#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.boolean.structure/vb/tostring2.vb#4)]  
   
- For more complex custom formatting operations, including culture-sensitive formatting, you can call the [String.Format(IFormatProvider, String, Object\<xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method and provide an <xref:System.ICustomFormatter> implementation. The following example implements the <xref:System.ICustomFormatter> and <xref:System.IFormatProvider> interfaces to provide culture-sensitive Boolean strings for the English (United States), French (France), and Russian (Russia) cultures.  
+ For more complex custom formatting operations, including culture-sensitive formatting, you can call the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method and provide an <xref:System.ICustomFormatter> implementation. The following example implements the <xref:System.ICustomFormatter> and <xref:System.IFormatProvider> interfaces to provide culture-sensitive Boolean strings for the English (United States), French (France), and Russian (Russia) cultures.  
   
  [!code-csharp[System.Boolean.Structure#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.boolean.structure/cs/format3.cs#5)]
  [!code-vb[System.Boolean.Structure#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.boolean.structure/vb/format3.vb#5)]  
@@ -152,7 +152,7 @@
 > [!WARNING]
 >  You can use the <xref:System.Collections.Specialized.BitVector32?displayProperty=fullName> structure to work with sets of Boolean values.  
   
- You can convert a Boolean value to its binary representation by calling the <xref:System.BitConverter.GetBytes%28System.Boolean%29?displayProperty=fullName> method. The method returns a byte array with a single element. To restore a Boolean value from its binary representation, you can call the [BitConverter.ToBoolean(Byte\<xref:System.BitConverter.ToBoolean%28System.Byte%5B%5D%2CSystem.Int32%29?displayProperty=fullName> method.  
+ You can convert a Boolean value to its binary representation by calling the <xref:System.BitConverter.GetBytes%28System.Boolean%29?displayProperty=fullName> method. The method returns a byte array with a single element. To restore a Boolean value from its binary representation, you can call the <xref:System.BitConverter.ToBoolean%28System.Byte%5B%5D%2CSystem.Int32%29?displayProperty=fullName> method.  
   
  The following example calls the <xref:System.BitConverter.GetBytes%2A?displayProperty=fullName> method to convert a Boolean value to its binary representation and displays the individual bits of the value, and then calls the <xref:System.BitConverter.ToBoolean%2A?displayProperty=fullName> method to restore the value from its binary representation.  
   

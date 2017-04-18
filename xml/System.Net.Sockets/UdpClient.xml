@@ -38,7 +38,7 @@
  You can use any of the send methods provided in the <xref:System.Net.Sockets.UdpClient> to send data to a remote device. Use the <xref:System.Net.Sockets.UdpClient.Receive%2A> method to receive data from remote hosts.  
   
 > [!NOTE]
->  Do not call [Send(Byte\<xref:System.Net.Sockets.UdpClient.Send%2A> using a host name or <xref:System.Net.IPEndPoint> if you have already specified a default remote host. If you do, <xref:System.Net.Sockets.UdpClient> will throw an exception.  
+>  Do not call <xref:System.Net.Sockets.UdpClient.Send%2A> using a host name or <xref:System.Net.IPEndPoint> if you have already specified a default remote host. If you do, <xref:System.Net.Sockets.UdpClient> will throw an exception.  
   
  <xref:System.Net.Sockets.UdpClient> methods also allow you to send and receive multicast datagrams. Use the <xref:System.Net.Sockets.UdpClient.JoinMulticastGroup%2A> method to subscribe a <xref:System.Net.Sockets.UdpClient> to a multicast group. Use the <xref:System.Net.Sockets.UdpClient.DropMulticastGroup%2A> method to unsubscribe a <xref:System.Net.Sockets.UdpClient> from a multicast group.  
   
@@ -558,7 +558,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The asynchronous [BeginSend Method (Byte\<xref:System.Net.Sockets.UdpClient.BeginSend%2A> operation must be completed by calling the <xref:System.Net.Sockets.UdpClient.EndSend%2A> method. Typically, the method is invoked by the `requestCallback` delegate.  
+ The asynchronous <xref:System.Net.Sockets.UdpClient.BeginSend%2A> operation must be completed by calling the <xref:System.Net.Sockets.UdpClient.EndSend%2A> method. Typically, the method is invoked by the `requestCallback` delegate.  
   
  This method does not block until the operation completes. To block until the operation is complete, use one of the <xref:System.Net.Sockets.UdpClient.Send%2A> method overloads.  
   
@@ -567,7 +567,7 @@
    
   
 ## Examples  
- The following code example uses [BeginSend Method (Byte\<xref:System.Net.Sockets.UdpClient.BeginSend%2A> to asynchronously send a server request.  
+ The following code example uses <xref:System.Net.Sockets.UdpClient.BeginSend%2A> to asynchronously send a server request.  
   
  [!code-cpp[System.Net.Sockets.UdpClient1#2](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Sockets.UdpClient1/cpp/asyncudp.cpp#2)]
  [!code-csharp[System.Net.Sockets.UdpClient1#2](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Sockets.UdpClient1/CS/asyncudp.cs#2)]  
@@ -615,7 +615,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The asynchronous [BeginSend Method (Byte\<xref:System.Net.Sockets.UdpClient.BeginSend%2A> operation must be completed by calling the <xref:System.Net.Sockets.UdpClient.EndSend%2A> method. Typically, the method is invoked by the `requestCallback` delegate.  
+ The asynchronous <xref:System.Net.Sockets.UdpClient.BeginSend%2A> operation must be completed by calling the <xref:System.Net.Sockets.UdpClient.EndSend%2A> method. Typically, the method is invoked by the `requestCallback` delegate.  
   
  This method does not block until the operation is complete. To block until the operation is complete, use one of the <xref:System.Net.Sockets.UdpClient.Send%2A> method overloads.  
   
@@ -674,7 +674,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The asynchronous [BeginSend Method (Byte\<xref:System.Net.Sockets.UdpClient.BeginSend%2A> operation must be completed by calling the <xref:System.Net.Sockets.UdpClient.EndSend%2A> method. Typically, the method is invoked by the `requestCallback` delegate.  
+ The asynchronous <xref:System.Net.Sockets.UdpClient.BeginSend%2A> operation must be completed by calling the <xref:System.Net.Sockets.UdpClient.EndSend%2A> method. Typically, the method is invoked by the `requestCallback` delegate.  
   
  This method does not block until the operation is complete. To block until the operation is complete, use one of the <xref:System.Net.Sockets.UdpClient.Send%2A> method overloads.  
   
@@ -1859,17 +1859,17 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [Send Method (Byte\<xref:System.Net.Sockets.UdpClient.Send%2A> method sends datagrams to the specified endpoint and returns the number of bytes successfully sent. Before calling this overload, you must first create an <xref:System.Net.IPEndPoint> using the IP address and port number of the remote host to which your datagrams will be delivered. You can send datagrams to the default broadcast address, 255.255.255.255, by specifying <xref:System.Net.Sockets.SocketOptionName?displayProperty=fullName> for the <xref:System.Net.IPAddress.Address%2A> property of the <xref:System.Net.IPEndPoint>. After you have created this <xref:System.Net.IPEndPoint>, pass it to the [Send Method (Byte\<xref:System.Net.Sockets.UdpClient.Send%2A> method as the `endPoint` parameter.  
+ The <xref:System.Net.Sockets.UdpClient.Send%2A> method sends datagrams to the specified endpoint and returns the number of bytes successfully sent. Before calling this overload, you must first create an <xref:System.Net.IPEndPoint> using the IP address and port number of the remote host to which your datagrams will be delivered. You can send datagrams to the default broadcast address, 255.255.255.255, by specifying <xref:System.Net.Sockets.SocketOptionName?displayProperty=fullName> for the <xref:System.Net.IPAddress.Address%2A> property of the <xref:System.Net.IPEndPoint>. After you have created this <xref:System.Net.IPEndPoint>, pass it to the <xref:System.Net.Sockets.UdpClient.Send%2A> method as the `endPoint` parameter.  
   
  If you want to send datagrams to any other broadcast address, use the <xref:System.Net.Sockets.UdpClient.Client%2A> method to obtain the underlying <xref:System.Net.Sockets.Socket>, and set the socket option to <xref:System.Net.Sockets.SocketOptionName?displayProperty=fullName>. You can also revert to using the <xref:System.Net.Sockets.Socket> class.  
   
 > [!NOTE]
->  Do not provide an `endPoint` parameter to this method if you have already established a remote host with the <xref:System.Net.Sockets.UdpClient.Connect%2A> method. If you do, the [Send Method (Byte\<xref:System.Net.Sockets.UdpClient.Send%2A> method will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
+>  Do not provide an `endPoint` parameter to this method if you have already established a remote host with the <xref:System.Net.Sockets.UdpClient.Connect%2A> method. If you do, the <xref:System.Net.Sockets.UdpClient.Send%2A> method will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> to obtain the specific error code. Once you have obtained this code, you can refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
   
    
   
 ## Examples  
- The following example demonstrates the [Send Method (Byte\<xref:System.Net.Sockets.UdpClient.Send%2A> method. This example uses an <xref:System.Net.IPEndPoint> to specify the target host.  
+ The following example demonstrates the <xref:System.Net.Sockets.UdpClient.Send%2A> method. This example uses an <xref:System.Net.IPEndPoint> to specify the target host.  
   
  [!code-cpp[Classic UdpClient.PublicMethodsAndPropertiesExample#8](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic UdpClient.PublicMethodsAndPropertiesExample/CPP/source.cpp#8)]
  [!code-csharp[Classic UdpClient.PublicMethodsAndPropertiesExample#8](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic UdpClient.PublicMethodsAndPropertiesExample/CS/source.cs#8)]

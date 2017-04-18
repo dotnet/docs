@@ -220,7 +220,7 @@ The <xref:System.ValueTuple> structure itself does not represent a value tuple. 
         <param name="item1">The value of the value tuple's first component.</param>
         <param name="item2">The value of the value tuple's second component.</param>
         <param name="item3">The value of the value tuple's third component.</param>
-        <summary>Creates a new value tuple with 8 components (a triple).</summary>
+        <summary>Creates a new value tuple with 3 components (a triple).</summary>
         <returns>A value tuple with 3 components.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -72,7 +72,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To add an argument with optional or required custom modifiers, use the [AddArgument(Type, Type\[\], Type\<xref:System.Reflection.Emit.SignatureHelper.AddArgument%28System.Type%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method overload.  
+ To add an argument with optional or required custom modifiers, use the <xref:System.Reflection.Emit.SignatureHelper.AddArgument%28System.Type%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method overload.  
   
  ]]></format>
         </remarks>
@@ -111,7 +111,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To add an argument with optional or required custom modifiers, use the [AddArgument(Type, Type\[\], Type\<xref:System.Reflection.Emit.SignatureHelper.AddArgument%28System.Type%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method overload.  
+ To add an argument with optional or required custom modifiers, use the <xref:System.Reflection.Emit.SignatureHelper.AddArgument%28System.Type%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> method overload.  
   
  ]]></format>
         </remarks>
@@ -548,7 +548,7 @@
 ## Remarks  
  This overload creates a signature with a standard calling convention.  
   
- To create a method signature with custom modifiers, use the <xref:System.Reflection.Emit.SignatureHelper.GetMethodSigHelper%28System.Reflection.Module%2CSystem.Reflection.CallingConventions%2CSystem.Type%29> method overload and then use the [AddArgument(Type, Type\[\], Type\<xref:System.Reflection.Emit.SignatureHelper.AddArgument%28System.Type%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> or [AddArguments(Type\[\], Type\[\]\[\], Type\[\]\<xref:System.Reflection.Emit.SignatureHelper.AddArguments%28System.Type%5B%5D%2CSystem.Type%5B%5D%5B%5D%2CSystem.Type%5B%5D%5B%5D%29> method overloads to add arguments with custom modifiers.  
+ To create a method signature with custom modifiers, use the <xref:System.Reflection.Emit.SignatureHelper.GetMethodSigHelper%28System.Reflection.Module%2CSystem.Reflection.CallingConventions%2CSystem.Type%29> method overload and then use the <xref:System.Reflection.Emit.SignatureHelper.AddArgument%28System.Type%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%29> or <xref:System.Reflection.Emit.SignatureHelper.AddArguments%28System.Type%5B%5D%2CSystem.Type%5B%5D%5B%5D%2CSystem.Type%5B%5D%5B%5D%29> method overloads to add arguments with custom modifiers.  
   
  ]]></format>
         </remarks>
@@ -594,7 +594,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To create a signature helper for a property with optional or required custom modifiers, use the [GetPropertySigHelper(Module, Type, Type\[\], Type\[\], Type\[\], Type\[\]\[\], Type\[\]\<xref:System.Reflection.Emit.SignatureHelper.GetPropertySigHelper%28System.Reflection.Module%2CSystem.Type%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%5B%5D%2CSystem.Type%5B%5D%5B%5D%29> method overload.  
+ To create a signature helper for a property with optional or required custom modifiers, use the <xref:System.Reflection.Emit.SignatureHelper.GetPropertySigHelper%28System.Reflection.Module%2CSystem.Type%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%2CSystem.Type%5B%5D%5B%5D%2CSystem.Type%5B%5D%5B%5D%29> method overload.  
   
  ]]></format>
         </remarks>
@@ -650,7 +650,7 @@
 ## Remarks  
  See the <xref:System.Runtime.CompilerServices> namespace for classes that represent custom modifiers.  
   
- If a property has no custom modifiers, use the [GetPropertySigHelper(Module, Type, Type\<xref:System.Reflection.Emit.SignatureHelper.GetPropertySigHelper%28System.Reflection.Module%2CSystem.Type%2CSystem.Type%5B%5D%29> method overload.  
+ If a property has no custom modifiers, use the <xref:System.Reflection.Emit.SignatureHelper.GetPropertySigHelper%28System.Reflection.Module%2CSystem.Type%2CSystem.Type%5B%5D%29> method overload.  
   
  ]]></format>
         </remarks>
@@ -727,7 +727,7 @@
 ## Remarks  
  See the <xref:System.Runtime.CompilerServices> namespace for classes that represent custom modifiers.  
   
- If a property has no custom modifiers, use the [GetPropertySigHelper(Module, Type, Type\<xref:System.Reflection.Emit.SignatureHelper.GetPropertySigHelper%28System.Reflection.Module%2CSystem.Type%2CSystem.Type%5B%5D%29> method overload.  
+ If a property has no custom modifiers, use the <xref:System.Reflection.Emit.SignatureHelper.GetPropertySigHelper%28System.Reflection.Module%2CSystem.Type%2CSystem.Type%5B%5D%29> method overload.  
   
 > [!NOTE]
 >  This method overload is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  

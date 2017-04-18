@@ -2329,7 +2329,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The trust level of an assembly that is loaded by using this method is the same as the trust level of the calling assembly. To load an assembly from a byte array with the trust level of the application domain, use the [Load(Byte\[\], Byte\<xref:System.Reflection.Assembly.Load%28System.Byte%5B%5D%2CSystem.Byte%5B%5D%2CSystem.Security.SecurityContextSource%29> method overload. For more information about the use of evidence with overloads of the <xref:System.Reflection.Assembly.Load%2A> method that take byte arrays, see the [Load(Byte\[\], Byte\<xref:System.Reflection.Assembly.Load%28System.Byte%5B%5D%2CSystem.Byte%5B%5D%2CSystem.Security.Policy.Evidence%29> method overload.  
+ The trust level of an assembly that is loaded by using this method is the same as the trust level of the calling assembly. To load an assembly from a byte array with the trust level of the application domain, use the <xref:System.Reflection.Assembly.Load%28System.Byte%5B%5D%2CSystem.Byte%5B%5D%2CSystem.Security.SecurityContextSource%29> method overload. For more information about the use of evidence with overloads of the <xref:System.Reflection.Assembly.Load%2A> method that take byte arrays, see the <xref:System.Reflection.Assembly.Load%28System.Byte%5B%5D%2CSystem.Byte%5B%5D%2CSystem.Security.Policy.Evidence%29> method overload.  
   
  Reflecting on C++ executable files might throw a <xref:System.BadImageFormatException>. This is most likely caused by the C++ compiler stripping the relocation addresses or the `.reloc` section from your executable file. To preserve the `.reloc` address for your C++ executable file, specify `/fixed:no` when you are linking.  
   
@@ -2545,7 +2545,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The trust level of an assembly that is loaded by using this method is the same as the trust level of the calling assembly. To load an assembly from a byte array with the trust level of the application domain, use the [Load(Byte\[\], Byte\<xref:System.Reflection.Assembly.Load%28System.Byte%5B%5D%2CSystem.Byte%5B%5D%2CSystem.Security.SecurityContextSource%29> method overload. For more information about the use of evidence with overloads of the [Load Method (Byte\<xref:System.Reflection.Assembly.Load%2A> method that take byte arrays, see the [Load(Byte\[\], Byte\<xref:System.Reflection.Assembly.Load%28System.Byte%5B%5D%2CSystem.Byte%5B%5D%2CSystem.Security.Policy.Evidence%29> method overload.  
+ The trust level of an assembly that is loaded by using this method is the same as the trust level of the calling assembly. To load an assembly from a byte array with the trust level of the application domain, use the <xref:System.Reflection.Assembly.Load%28System.Byte%5B%5D%2CSystem.Byte%5B%5D%2CSystem.Security.SecurityContextSource%29> method overload. For more information about the use of evidence with overloads of the <xref:System.Reflection.Assembly.Load%2A> method that take byte arrays, see the <xref:System.Reflection.Assembly.Load%28System.Byte%5B%5D%2CSystem.Byte%5B%5D%2CSystem.Security.Policy.Evidence%29> method overload.  
   
  Reflecting on C++ executable files might throw a <xref:System.BadImageFormatException>. This is most likely caused by the C++ compiler stripping the relocation addresses or the `.reloc` section from your executable file. To preserve the `.reloc` address for your C++ executable file, specify `/fixed:no` when you are linking.  
   
@@ -2759,7 +2759,7 @@
   
  Reflecting on C++ executable files might throw a <xref:System.BadImageFormatException>. This is most likely caused by the C++ compiler stripping the relocation addresses or the `.reloc` section from your executable file. To preserve the `.reloc` address for your C++ executable file, specify `/fixed:no` when you are linking.  
   
- If you call the [Load Method (Byte\[\], Byte\<xref:System.Reflection.Assembly.Load%2A>method more than once on the same assembly but with a different evidence specified, the common language runtime does not throw a <xref:System.IO.FileLoadException> because the equality and integrity of the different evidence specifications cannot be determined. The evidence that first succeeds is the evidence that is used.  
+ If you call the [\], Byte\<xref:System.Reflection.Assembly.Load%2A>method more than once on the same assembly but with a different evidence specified, the common language runtime does not throw a <xref:System.IO.FileLoadException> because the equality and integrity of the different evidence specifications cannot be determined. The evidence that first succeeds is the evidence that is used.  
   
  Note that this method overload always creates a new <xref:System.Reflection.Assembly> object with its own mapping.  
   

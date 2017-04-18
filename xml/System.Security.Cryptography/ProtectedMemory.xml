@@ -18,7 +18,7 @@
 ## Remarks  
  This class provides access to the Data Protection API (DPAPI) available in the Windows XP and later operating systems. This is a service that is provided by the operating system and does not require additional libraries. It provides encryption for sensitive data in memory.  
   
- The class consists of two wrappers for the unmanaged DPAPI, [Protect(Byte\<xref:System.Security.Cryptography.ProtectedMemory.Protect%2A> and [Unprotect(Byte\<xref:System.Security.Cryptography.ProtectedMemory.Unprotect%2A>. These two methods can be used to encrypt and decrypt data in memory.  
+ The class consists of two wrappers for the unmanaged DPAPI, <xref:System.Security.Cryptography.ProtectedMemory.Protect%2A> and <xref:System.Security.Cryptography.ProtectedMemory.Unprotect%2A>. These two methods can be used to encrypt and decrypt data in memory.  
   
    
   

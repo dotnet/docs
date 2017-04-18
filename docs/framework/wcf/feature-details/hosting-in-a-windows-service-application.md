@@ -34,9 +34,9 @@ Windows services (formerly known as Windows NT services) provide a process model
   
 2.  Link the lifetime of the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services to the lifetime of the Windows service application. Typically, you want [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services hosted in a Windows service application to become active when the hosting service starts, stop listening for messages when the hosting service is stopped, and shut down the hosting process when the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service encounters an error. This can be accomplished as follows:  
   
-    -   Override [OnStart(String\<xref:System.ServiceProcess.ServiceBase.OnStart%28System.String%5B%5D%29> to open one or more instances of <xref:System.ServiceModel.ServiceHost>. A single Windows service application can host multiple [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services that start and stop as a group.  
+    -   Override <xref:System.ServiceProcess.ServiceBase.OnStart%28System.String%5B%5D%29> to open one or more instances of <xref:System.ServiceModel.ServiceHost>. A single Windows service application can host multiple [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services that start and stop as a group.  
   
-    -   Override <xref:System.ServiceProcess.ServiceBase.OnStop%2A> to call <xref:System.ServiceModel.Channels.CommunicationObject.Closed> on the <xref:System.ServiceModel.ServiceHost> any running [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services that were started during [OnStart(String\<xref:System.ServiceProcess.ServiceBase.OnStart%28System.String%5B%5D%29>.  
+    -   Override <xref:System.ServiceProcess.ServiceBase.OnStop%2A> to call <xref:System.ServiceModel.Channels.CommunicationObject.Closed> on the <xref:System.ServiceModel.ServiceHost> any running [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services that were started during <xref:System.ServiceProcess.ServiceBase.OnStart%28System.String%5B%5D%29>.  
   
     -   Subscribe to the <xref:System.ServiceModel.Channels.CommunicationObject.Faulted> event of <xref:System.ServiceModel.ServiceHost> and use the <xref:System.ServiceProcess.ServiceController> class to shut down the Windows service application in case of error.  
   

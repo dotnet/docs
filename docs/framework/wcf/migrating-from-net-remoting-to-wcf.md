@@ -181,7 +181,7 @@ Console.WriteLine(String.Format("  Customer {0} {1} received.",
   
 -   [Client Channel-Level Programming](../../../docs/framework/wcf/extending/client-channel-level-programming.md)  
   
--   [How to: Add, Update, or Remove a Service Reference](../Topic/How%20to:%20Add,%20Update,%20or%20Remove%20a%20Service%20Reference.md)  
+-   [How to: Add, Update, or Remove a Service Reference](https://docs.microsoft.com/visualstudio/data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference)  
   
 <a name="Serialization_Usage"></a>   
 ### Serialization Usage  
@@ -485,7 +485,7 @@ public class RemotingServer : MarshalByRefObject
     </configuration>  
     ```  
   
-     For more information about using **Add Service Reference**, see [How to: Add, Update, or Remove a Service Reference](../Topic/How%20to:%20Add,%20Update,%20or%20Remove%20a%20Service%20Reference.md).  
+     For more information about using **Add Service Reference**, see [How to: Add, Update, or Remove a Service Reference](https://docs.microsoft.com/visualstudio/data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference).  
   
 7.  Now we can call the WCF service from the client. We do this by creating a channel factory for that service, asking it for a channel, and directly calling the method we want on that channel. We can do this because the channel implements the service’s interface and handles the underlying request/reply logic for us. The return value from that method call is the deserialized copy of the server’s response.  
   

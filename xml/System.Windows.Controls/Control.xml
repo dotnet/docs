@@ -800,7 +800,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In addition to <xref:System.Windows.HorizontalAlignment>, <xref:System.Windows.HorizontalAlignment>, and <xref:System.Windows.HorizontalAlignment>, you can set the <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A> property to <xref:System.Windows.HorizontalAlignment>, which stretches the child element to fill the allocated space of the parent element. For more information, see [Alignment, Margins, and Padding Overview](../Topic/Alignment,%20Margins,%20and%20Padding%20Overview.md).  
+ In addition to <xref:System.Windows.HorizontalAlignment>, <xref:System.Windows.HorizontalAlignment>, and <xref:System.Windows.HorizontalAlignment>, you can set the <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A> property to <xref:System.Windows.HorizontalAlignment>, which stretches the child element to fill the allocated space of the parent element. For more information, see [Alignment, Margins, and Padding Overview](~/docs/framework/wpf/advanced/alignment-margins-and-padding-overview.md).  
   
  This property only affects a control whose template uses the <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A> property as a parameter. On other controls, this property has no impact.  
   
@@ -1136,7 +1136,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Padding is specified in the order Left, Top, Right, and Bottom. For more information, see <xref:System.Windows.Thickness> and [Alignment, Margins, and Padding Overview](../Topic/Alignment,%20Margins,%20and%20Padding%20Overview.md).  
+ Padding is specified in the order Left, Top, Right, and Bottom. For more information, see <xref:System.Windows.Thickness> and [Alignment, Margins, and Padding Overview](~/docs/framework/wpf/advanced/alignment-margins-and-padding-overview.md).  
   
  This property only affects a control whose template uses the <xref:System.Windows.Controls.Control.Padding%2A> property as a parameter. On other controls, this property has no impact.  
   
@@ -1422,7 +1422,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In addition to <xref:System.Windows.VerticalAlignment>, <xref:System.Windows.VerticalAlignment>, and <xref:System.Windows.VerticalAlignment>, you can set the <xref:System.Windows.Controls.Control.VerticalContentAlignment%2A> property to <xref:System.Windows.VerticalAlignment>, which stretches the child element to fill the allocated layout space of the parent element. For more information, see [Alignment, Margins, and Padding Overview](../Topic/Alignment,%20Margins,%20and%20Padding%20Overview.md).  
+ In addition to <xref:System.Windows.VerticalAlignment>, <xref:System.Windows.VerticalAlignment>, and <xref:System.Windows.VerticalAlignment>, you can set the <xref:System.Windows.Controls.Control.VerticalContentAlignment%2A> property to <xref:System.Windows.VerticalAlignment>, which stretches the child element to fill the allocated layout space of the parent element. For more information, see [Alignment, Margins, and Padding Overview](~/docs/framework/wpf/advanced/alignment-margins-and-padding-overview.md).  
   
  This property only affects a control whose template uses the <xref:System.Windows.Controls.Control.VerticalContentAlignment%2A> property as a parameter. On other controls, this property has no impact.  
   

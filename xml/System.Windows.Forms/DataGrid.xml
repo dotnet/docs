@@ -61,7 +61,7 @@
   
 -   Any component that implements the <xref:System.Collections.IList> interface  
   
- For more information about the <xref:System.Data.DataSet> class, see [DataSets, DataTables, and DataViews](../Topic/DataSets,%20DataTables,%20and%20DataViews.md).  
+ For more information about the <xref:System.Data.DataSet> class, see [DataSets, DataTables, and DataViews](~/docs/framework/data/adonet/dataset-datatable-dataview/index.md).  
   
  You can create a grid that enables users to edit data but prevents them from adding new rows by using a <xref:System.Data.DataView> as the data source and setting the <xref:System.Data.DataView.AllowNew%2A> property to `false`.  
   

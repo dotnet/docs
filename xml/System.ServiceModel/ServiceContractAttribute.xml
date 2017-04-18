@@ -345,7 +345,7 @@
   
  For example, if the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A> property is set to <xref:System.ServiceModel.SessionMode?displayProperty=fullName> and the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property is set to <xref:System.ServiceModel.InstanceContextMode>, clients can use the same connection to make repeated calls to the same service object.  
   
- For more information about sessions and service instances, see [Using Sessions](~/docs/framework/wcf/using-sessions.md) and [Sessions, Instancing, and Concurrency](../Topic/Sessions,%20Instancing,%20and%20Concurrency.md).  
+ For more information about sessions and service instances, see [Using Sessions](~/docs/framework/wcf/using-sessions.md) and [Sessions, Instancing, and Concurrency](~/docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md).  
   
 > [!NOTE]
 >  A channel that supports sessions supports the default association of a service instance with a particular session. However, different session implementations support different features in addition to session-based instancing control. [!INCLUDE[indigo2](~/includes/indigo2-md.md)] provides four types of sessions that you can use to provide sessionful application behavior; each type of session provides additional behavior specific to the type of session it is.  

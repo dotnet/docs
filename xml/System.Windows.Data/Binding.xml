@@ -1259,7 +1259,7 @@
   
  The <xref:System.Xml.XmlNode.SelectNodes%2A?displayProperty=fullName> method handles the `XPath` expressions from the <xref:System.Windows.Data.Binding.XPath%2A> property. `XPath` functions are not supported. For `XPath` expression information, see the <xref:System.Xml.XmlNode.SelectNodes%2A> documentation and some examples provided in the Example section.  
   
- LINQ to XML objects <xref:System.Xml.Linq.XDocument> and <xref:System.Xml.Linq.XElement> do not use `XPath`. For details, see [How to: Bind to XDocument, XElement, or LINQ for XML Query Results](../Topic/How%20to:%20Bind%20to%20XDocument,%20XElement,%20or%20LINQ%20for%20XML%20Query%20Results.md).  
+ LINQ to XML objects <xref:System.Xml.Linq.XDocument> and <xref:System.Xml.Linq.XElement> do not use `XPath`. For details, see [How to: Bind to XDocument, XElement, or LINQ for XML Query Results](~/docs/framework/wpf/data/how-to-bind-to-xdocument-xelement-or-linq-for-xml-query-results.md).  
   
  ]]></format>
         </remarks>

@@ -67,5 +67,5 @@ Represents a default protocol mapping between a transport protocol scheme (e.g.,
 ```  
   
 ## See Also  
- [System.ServiceModel.Configuration.ProtocolMappingSection](assetId:///System.ServiceModel.Configuration.ProtocolMappingSection?qualifyHint=False&amp;autoUpgrade=True)   
- [System.ServiceModel.Configuration.ProtocolMappingElement](assetId:///System.ServiceModel.Configuration.ProtocolMappingElement?qualifyHint=False&amp;autoUpgrade=True)
+ <xref:System.ServiceModel.Configuration.ProtocolMappingSection?displayProperty=fullName>      
+ <xref:System.ServiceModel.Configuration.ProtocolMappingElement?displayProperty=fullName>    

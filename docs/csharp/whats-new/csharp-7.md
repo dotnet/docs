@@ -84,7 +84,7 @@ return result;
 
 > [!NOTE]
 > The new tuples features require the @System.ValueTuple types.
-> You must add the NuGet package `System.ValueTuple` in order to use it
+> You must add the NuGet package [`System.ValueTuple`](https://www.nuget.org/packages/System.ValueTuple/) in order to use it
 > on platforms that do not include the types.
 
 C# provides a rich syntax for classes and structs that is used to explain
@@ -525,7 +525,7 @@ feature:
 [!code-csharp[UsingValueTask](../../../samples/snippets/csharp/new-in-7/AsyncWork.cs#30_UsingValueTask "Using ValueTask")]
 
 > [!NOTE]
-> You need to add the NuGet package `System.Threading.Tasks.Extensions`
+> You need to add the NuGet package [`System.Threading.Tasks.Extensions`](https://www.nuget.org/packages/System.Threading.Tasks.Extensions/)
 > in order to use `ValueTask`.
 
 A simple optimization would be to use `ValueTask` in places where

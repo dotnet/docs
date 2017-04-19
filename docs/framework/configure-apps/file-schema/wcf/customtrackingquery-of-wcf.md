@@ -53,7 +53,7 @@ Represents a collection of queries that are used to track events that you define
 |[\<customTrackingQuery>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/customtrackingquery.md)|A query that is used to track events that you define in your code activities.|  
   
 ## See Also  
- [System.ServiceModel.Activities.Tracking.Configuration.CustomTrackingQueryElementCollection](assetId:///System.ServiceModel.Activities.Tracking.Configuration.CustomTrackingQueryElementCollection?qualifyHint=False&amp;autoUpgrade=True)   
- [System.Activities.Tracking.CustomTrackingQuery](assetId:///System.Activities.Tracking.CustomTrackingQuery?qualifyHint=False&amp;autoUpgrade=True)   
+ <xref:System.ServiceModel.Activities.Tracking.Configuration.CustomTrackingQueryElementCollection?displayProperty=fullName>      
+ <xref:System.Activities.Tracking.CustomTrackingQuery?displayProperty=fullName>       
  [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)   
  [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

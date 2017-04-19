@@ -53,4 +53,4 @@ Represents a configuration element that defines a backup endpoint element.
 |[\<routing>](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md)|Contains a list of endpoints that you would like the Routing Service to use in case the primary endpoint can't be reached.|  
   
 ## See Also  
- [System.ServiceModel.Routing.Configuration.BackupEndpointElement](assetId:///System.ServiceModel.Routing.Configuration.BackupEndpointElement?qualifyHint=False&amp;autoUpgrade=True)
+ <xref:System.ServiceModel.Routing.Configuration.BackupEndpointElement?displayProperty=fullName> 

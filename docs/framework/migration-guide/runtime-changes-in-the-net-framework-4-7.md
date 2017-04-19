@@ -35,7 +35,7 @@ The Scope column in the following tables specifies the significance of each chan
 
 ## <a name="WPF" /> Windows Presentation Foundation (WPF)
 
-assetId:///M:System.Windows.Controls.DataGridCellsPanel.BringIndexIntoView(System.Int32)?qualifyHint=False&autoUpgrade=True
+<xref:System.Windows.Controls.DataGridCellsPanel.BringIndexIntoView(System.Int32)>
 
 | Feature | Change | Impact | Scope |
 |---|---|---|---|

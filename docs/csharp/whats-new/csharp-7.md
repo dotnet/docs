@@ -108,9 +108,8 @@ names to each of the members of the tuple:
 [!code-csharp[NamedTuple](../../../samples/snippets/csharp/new-in-7/program.cs#05_NamedTuple "Named tuple")]
 
 > [!NOTE]
-> The new tuples features require the `System.ValueTuple` type. For Visual Studio 15
-> Preview 5 and earlier preview releases, you must add the NuGet package "System.ValueTuple",
-> available in the pre-release stream.
+> The new tuples features require the `System.ValueTuple` type. For Visual Studio 2017,
+> you must add the NuGet package [System.ValueTuple](https://www.nuget.org/packages/System.ValueTuple/), available on the NuGet Gallery.
 
 The `namedLetters` tuple contains fields referred to as `Alpha` and
 `Beta`. In a tuple assignment, you can also specify the names of the fields

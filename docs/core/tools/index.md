@@ -42,6 +42,7 @@ The following commands are installed by default:
 * [migrate](dotnet-migrate.md)
 * [clean](dotnet-clean.md)
 * [sln](dotnet-sln.md)
+* [store](dotnet-store.md)
 
 ### Project modification commands
 

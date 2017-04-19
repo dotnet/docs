@@ -1,14 +1,14 @@
 ---
-title: dotnet-store command - .NET Core CLI | Microsoft Docs
-description: The dotnet-store command stores the specified assemblies in the runtime package store.
+title: dotnet-store command | .NET Core SDK
+description: The dotnet-store Stores the specified assemblies in the runtime package store.
 keywords: dotnet-store, dotnet-publish, CLI, CLI command, .NET Core
-author: beleroy
-manager: wpickett
-ms.date: 10/07/2016
+author: bleroy
+ms.author: beleroy
+ms.date: 4/13/2017
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
 ms.devlang: dotnet
+ms.assetid: 1e8e4122-8110-4b48-afce-afffb6737776
 ---
 
 #dotnet-store
@@ -37,7 +37,7 @@ Prints out a short help for the command.
 
 `-m|--manifest <TARGET_MANIFEST>`
 
-The XML file, or a list of XML files, that contain the list of packages to be stored. 
+The XML file, or a list of XML files, that contain the list of packages to be stored. The format of the files is compatible with the `csproj` format, so a project file referencing the desired packages can be used. If no manifest is specified, the command uses the project file for the current application.
 
 `--framework-version <FRAMEWORK_VERSION>`
 

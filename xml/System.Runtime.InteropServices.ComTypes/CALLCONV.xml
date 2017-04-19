@@ -30,7 +30,7 @@
 ## Remarks  
  The calling conventions in this class describe how functions pass arguments and return values. They specify the order in which parameters are set up for the called functions, where the parameters are stored (in registers or in memory), and who (caller or called function) is responsible for cleaning up the stack after the function returns. For example:  
   
--   CC_CDECL uses the naming and calling conventions of the C language. The caller pushes the parameters onto the stack in reverse (right-to-left) order, and cleans the stack after the function returns. This calling convention enables you to call functions with `varargs`, which makes it appropriate for use with methods that accept a variable number of parameters, such as the C run-time functions [printf, _printf_l, wprintf, _wprintf_l](../Topic/printf,%20_printf_l,%20wprintf,%20_wprintf_l.md).  
+-   CC_CDECL uses the naming and calling conventions of the C language. The caller pushes the parameters onto the stack in reverse (right-to-left) order, and cleans the stack after the function returns. This calling convention enables you to call functions with `varargs`, which makes it appropriate for use with methods that accept a variable number of parameters, such as the C run-time functions [printf, _printf_l, wprintf, _wprintf_l](https://docs.microsoft.com/cpp/c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l).  
   
 -   CC_PASCAL uses the Pascal calling convention. The caller pushes the parameters onto the stack in left-to-right order. The called function cleans the stack before returning.  
   

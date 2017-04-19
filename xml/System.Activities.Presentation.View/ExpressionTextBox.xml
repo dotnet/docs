@@ -339,7 +339,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Activities.Presentation.View.ExpressionTextBox.Expression%2A> is always required. When using the [ExpressionTextBox](assetId:///ExpressionTextBox?qualifyHint=False&amp;autoUpgrade=True) declaratively to bind to arguments, you must always use the <xref:System.Activities.Presentation.Converters.ArgumentToExpressionConverter> to bind the expression to the argument, setting the `ConverterParameter` to `In` or `Out` depending on the direction of the argument.  
+ <xref:System.Activities.Presentation.View.ExpressionTextBox.Expression%2A> is always required. When using the <xref:System.Activities.Presentation.View.ExpressionTextBox> declaratively to bind to arguments, you must always use the <xref:System.Activities.Presentation.Converters.ArgumentToExpressionConverter> to bind the expression to the argument, setting the `ConverterParameter` to `In` or `Out` depending on the direction of the argument.  
   
    
   

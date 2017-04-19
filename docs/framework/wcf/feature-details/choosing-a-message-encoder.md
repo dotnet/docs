@@ -69,13 +69,13 @@ public void OperationContract(XElement input)
  The IgnoreWhitespace setting is ignored.  
   
 ## Compression and the Binary Encoder  
- Beginning with WCF 4.5 the WCF binary encoder adds support for compression. This enables you to use the gzip/deflate algorithm for sending compressed messages from a WCF client and also respond with compressed messages from a self-hosted WCF service. This feature enables compression on both the HTTP and TCP transports. An IIS hosted WCF service can always be enabled for sending compressed responses by configuring the IIS host server. The type of compression is configured with the <xref:System.ServiceModel.Channels.BinaryMessageEncodingElement.CompressionFormat%2A> property. This property is set to one of the <xref:System.ServiceModel.Channels.CompressionFormat> enum values:  
+ Beginning with WCF 4.5 the WCF binary encoder adds support for compression. This enables you to use the gzip/deflate algorithm for sending compressed messages from a WCF client and also respond with compressed messages from a self-hosted WCF service. This feature enables compression on both the HTTP and TCP transports. An IIS hosted WCF service can always be enabled for sending compressed responses by configuring the IIS host server. The type of compression is configured with the <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.CompressionFormat%2A> property. This property is set to one of the <xref:System.ServiceModel.Channels.CompressionFormat> enum values:  
   
 |CompressionFormat Value|Description|  
 |-----------------------------|-----------------|  
-|F:System.ServiceModel.Channels.CompressionFormat.Deflate|Uses Deflate compression.|  
-|F:System.ServiceModel.Channels.CompressionFormat.GZip|Uses GZip compression|  
-|F:System.ServiceModel.Channels.CompressionFormat.None|No compression will be used|  
+|`System.ServiceModel.Channels.CompressionFormat.Deflate`|Uses Deflate compression.|  
+|`System.ServiceModel.Channels.CompressionFormat.GZip`|Uses GZip compression|  
+|`System.ServiceModel.Channels.CompressionFormat.None`|No compression will be used|  
   
  Since this property is only exposed on the binaryMessageEncodingBindingElement, you will need to create a custom binding like the following to use this feature:\<customBinding>        \<binding name="BinaryCompressionBinding">          \<binaryMessageEncoding compressionFormat ="GZip"/>          \<httpTransport />        \</binding>      \</customBinding>Both the client and the service need to agree to send and receive compressed messages and therefore the compressionFormat property must be configured on the binaryMessageEncoding element on both client and service. A ProtocolException is thrown if either the service or client is not configured for compression but the other side is.Enabling compression should be carefully considered. Compression is mostly useful if network bandwidth is a bottleneck. In the case where the CPU is the bottleneck, compression will decrease throughput. Appropriate testing must be done in a simulated environment to find out if this benefits the application  
   

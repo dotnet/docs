@@ -274,7 +274,7 @@ This topic explains how to implement a discovery proxy. [!INCLUDE[crabout](../..
   
     ```  
   
-4.  Override the <xref:System.ServiceModel.Discovery.DiscoveryProxyBase.OnEndOfflineAnnouncement%2A> method. This method is called when the discovery proxy finishes processing an offline announcement message.  
+4.  Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnEndOfflineAnnouncement%2A> method. This method is called when the discovery proxy finishes processing an offline announcement message.  
   
     ```  
     protected override void OnEndOfflineAnnouncement(IAsyncResult result)  
@@ -303,7 +303,7 @@ This topic explains how to implement a discovery proxy. [!INCLUDE[crabout](../..
     }  
     ```  
   
-6.  Override the <xref:System.ServiceModel.Discovery.DiscoveryProxyBase.OnEndFind%2A> method. This method is called when the discovery proxy finishes processing a find request.  
+6.  Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnEndFind%2A> method. This method is called when the discovery proxy finishes processing a find request.  
   
     ```  
     protected override void OnEndFind(IAsyncResult result)  

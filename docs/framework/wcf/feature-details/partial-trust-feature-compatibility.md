@@ -132,14 +132,14 @@ manager: "erikre"
 -   CardSpace  
   
 -   <xref:System.IO.Log>  
-  
--   <xref:System.ServiceModel.Internal.TransactionBridge>  
+<!--
+-   <xref:System.ServiceModel.Internal.TransactionBridge>  -->
   
  The following members of the <xref:System.Diagnostics.TraceOptions> enumeration should not be specified:  
   
 -   <xref:System.Diagnostics.TraceOptions>  
   
--   <xref:System.Diagnostics.TraceOptions.ProcessID>  
+-   <xref:System.Diagnostics.TraceOptions.ProcessId>  
   
  When using tracing in a partial trust environment, ensure that the application has sufficient permissions to store the output of the trace listener. For example, when using the <xref:System.Diagnostics.TextWriterTraceListener> to write trace output to a text file, ensure that the application has the necessary FileIOPermission required to successfully write to the trace file.  
   

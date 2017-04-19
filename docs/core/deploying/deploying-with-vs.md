@@ -23,7 +23,7 @@ The following sections show how to use Microsoft Visual Studio to create the fol
 - Self-contained deployment with third-party dependencies
 - Small self-contained deployment
 
-For information on using Visual Studio to develop .NET Core applications, see [Prerequisites for .NET Core on Windows](../windows-prerequisites.md#prerequisites-with-visual-studio-2017)
+For information on using Visual Studio to develop .NET Core applications, see [Prerequisites for .NET Core on Windows](../windows-prerequisites.md#prerequisites-with-visual-studio-2017).
 
 ## Framework-dependent deployment
 
@@ -51,13 +51,13 @@ Deploying a framework-dependent deployment with no third-party dependencies simp
 
       1. Right-click on the project (not the solution) in **Solution Explorer**, and select **Publish**.
 
-      1. In the **Publish** tab, select **Publish**. Visual Studio will write the files that comprise your application to the local file system.
+      1. In the **Publish** tab, select **Publish**. Visual Studio writes the files that comprise your application to the local file system.
 
-      1. The **Publish** tab now shows a single profile, **FolderProfile**. The profile's configuration settings are shown in the Summary section of the tab.
+      1. The **Publish** tab now shows a single profile, **FolderProfile**. The profile's configuration settings are shown in the **Summary** section of the tab.
 
-   The resulting files are placed in a directory named `PublishOutput` that is in a subdirectory of your project's `.\bin\release` subdirectory.
+   The resulting files are placed in a directory named `PublishOutput` that is in a subdirectory of your project's *.\bin\release* subdirectory.
 
-Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app. The file is useful primarily for debugging exceptions. You can choose not to package it with your application's files.  You should, however, save it in the event that you want to debug the Release build of your app.
+Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app. The file is useful primarily for debugging exceptions. You can choose not to package it with your application's files. You should, however, save it in the event that you want to debug the Release build of your app.
 
 Deploy the complete set of application files in any way you like. For example, you can package them in a Zip file, use a simple `copy` command, or deploy them with any installation package of your choice. Once installed, users can then execute your application by using the `dotnet` command and providing the application filename, such as `dotnet fdd.dll`.
 
@@ -69,23 +69,23 @@ Deploying a framework-dependent deployment with one or more third-party dependen
 
 1. Use the **NuGet Package Manager** to add a reference to a NuGet package to your project; and if the package is not already available on your system, install it. To open the package manager, select **Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution**.
 
-1. Confirm that Newtonsoft.Json is installed on your system and, if it is not, install it. The **Installed** tab lists NuGet packages installed on your system. If Newtonsoft.Json is not listed there, select the **Browse** tab and enter 'Newtonsoft.Json' in the search box. Select Newtonsoft.Json and, in the right pane, select your project before selecting **Install**.
+1. Confirm that `Newtonsoft.Json` is installed on your system and, if it is not, install it. The **Installed** tab lists NuGet packages installed on your system. If `Newtonsoft.Json` is not listed there, select the **Browse** tab and enter "Newtonsoft.Json" in the search box. Select `Newtonsoft.Json` and, in the right pane, select your project before selecting **Install**.
 
-1. If Newtonsoft.Json is already installed on your system, add it to your project by selecting your project in the right pane of hte **Manage Packages for Solution** tab.
+1. If `Newtonsoft.Json` is already installed on your system, add it to your project by selecting your project in the right pane of hte **Manage Packages for Solution** tab.
 
-Note that a framework-dependent deployment with third-party dependencies will only be as portable as its third-party dependencies. For example, if a third-party library only supports macOS, the app will not be portable to Windows systems. This can happen if the third-party dependency itself depends on native code. A good example of this is Kestrel server. When an FDD is created for an application with this kind of third-party dependency, the published output will contain a folder for each [Runtime Identifier (RID)](../rid-catalog.md#what-are-rids) that the native dependency supports (and that exists in its NuGet package).
+Note that a framework-dependent deployment with third-party dependencies is only as portable as its third-party dependencies. For example, if a third-party library only supports macOS, the app isn't portable to Windows systems. This happens if the third-party dependency itself depends on native code. A good example of this is [Kestrel server](http://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel), which requires a native dependency on [libuv](https://github.com/libuv/libuv). When an FDD is created for an application with this kind of third-party dependency, the published output contains a folder for each [Runtime Identifier (RID)](../rid-catalog.md#what-are-rids) that the native dependency supports (and that exists in its NuGet package).
 
 ## <a name="simpleSelf"></a> Self-contained deployment without third-party dependencies
 
-Deploying a self-contained deployment with no third-party dependencies involves creating the project, modifying the *csproj* file, building, testing, and publishing the app.  A simple example written in C# illustrates the process. 
+Deploying a self-contained deployment with no third-party dependencies involves creating the project, modifying the *csproj* file, building, testing, and publishing the app. A simple example written in C# illustrates the process. 
 
 1. Create the project.
 
-   Select **File** > **New** > **Project**. In the **Add New Project** dialog, select **.NET Core** in the **Installed** project types pane, and select the **Console App (.NET Core)** template in the center pane. Enter a project name, such as `SCD`, in the **Name** text box, and select the **OK** button.
+   Select **File** > **New** > **Project**. In the **Add New Project** dialog, select **.NET Core** in the **Installed** project types pane, and select the **Console App (.NET Core)** template in the center pane. Enter a project name, such as "SCD", in the **Name** text box, and select the **OK** button.
 
 1. Add the application's source code.
- 
-   Open the `Program.cs` file in your editor, and replace the auto-generated code with the following code. It prompts the user to enter text, and then displays the individual words entered by the user. It uses the regular expression `\w+` to separate the words in the input text.
+
+   Open the *Program.cs* file in your editor, and replace the auto-generated code with the following code. It prompts the user to enter text and displays the individual words entered by the user. It uses the regular expression `\w+` to separate the words in the input text.
 
    [!code-cs[deployment#1](../../../samples/snippets/core/deploying/deployment-example.cs)]
 

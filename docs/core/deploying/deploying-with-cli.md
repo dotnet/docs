@@ -39,7 +39,7 @@ Deploying a framework-dependent deployment with no third-party dependencies simp
 
 1. Add the application's source code.
 
-   Open the *Program.cs* file in your editor and replace the auto-generated code with the following code. It prompts the user to enter text, and then displays the individual words entered by the user. It uses the regular expression `\w+` to separate the words in the input text.
+   Open the *Program.cs* file in your editor and replace the auto-generated code with the following code. It prompts the user to enter text and displays the individual words entered by the user. It uses the regular expression `\w+` to separate the words in the input text.
 
    [!code-cs[deployment#1](../../../samples/snippets/core/deploying/deployment-example.cs)]
 
@@ -58,7 +58,7 @@ Deploying a framework-dependent deployment with no third-party dependencies simp
       ```console
       dotnet publish -f netcoreapp1.1 -c Release
       ```
-   This creates a Release (rather than a Debug) version of your app. The resulting files are placed in a directory named *publish* that's in a subdirectory of your project's 
+   This creates a Release (rather than a Debug) version of your app. The resulting files are placed in a directory named *publish* that's in a subdirectory of your project's *bin* directory.
 
 Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app. The file is useful primarily for debugging exceptions. You can choose not to distribute it with your application's files. You should, however, save it in the event that you want to debug the Release build of your app.
 
@@ -70,7 +70,7 @@ In addition to the application binaries, your installer should also either bundl
 
 Deploying a framework-dependent deployment with one or more third-party dependencies requires that those dependencies be available to your project. Two additional steps are required before you can run the `dotnet restore` command:
 
-1. Add references to required third-party libraries to the `<ItemGroup>` section of your *csproj* file. The following `<ItemGroup>` section contains a dependency on Json.NET as a third-party library:
+1. Add references to required third-party libraries to the `<ItemGroup>` section of your *csproj* file. The following `<ItemGroup>` section contains a dependency on [Json.NET](http://www.newtonsoft.com/json) as a third-party library:
 
       ```xml
       <ItemGroup>
@@ -194,7 +194,7 @@ To create a self-contained deployment with a smaller footprint, start by followi
   <TargetFramework>netstandard1.6</TargetFramework>
   ```
 
-   Instead of using the entire `netcoreapp1.0` framework, which includes .NET Core CLR, the .NET Core Library, and a number of other system components, this indicates that our app uses only the .NET Standard Library.
+   Instead of using the entire `netcoreapp1.1` framework, which includes .NET Core CLR, the .NET Core Library, and a number of other system components, this indicates that our app uses only the .NET Standard Library.
 
 1. Add the following `<ItemGroup>` section to add package references to the project:
 
@@ -207,7 +207,7 @@ To create a self-contained deployment with a smaller footprint, start by followi
 
    This defines the system components used by the app. The system components packaged with the app include the .NET Standard Library, the .NET Core runtime, and the .NET Core host. This produces a self-contained deployment with a smaller footprint.
 
-3. As you did in the [Deploying a simple self-contained deployment](#simpleSelf) example, create a `<RuntimeIdentifiers>` element within a `<PropertyGroup>` section in your *csproj* file that defines the platforms your app targets and specify the runtime identifier of each platform that you target. See [Runtime IDentifier catalog](../rid-catalog.md) for a list of runtime identifiers. For example, the following `<PropertyGroup>` section indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.11 operating system.
+1. As you did in the [Deploying a simple self-contained deployment](#simpleSelf) example, create a `<RuntimeIdentifiers>` element within a `<PropertyGroup>` section in your *csproj* file that defines the platforms your app targets and specify the runtime identifier of each platform that you target. See [Runtime IDentifier catalog](../rid-catalog.md) for a list of runtime identifiers. For example, the following `<PropertyGroup>` section indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.11 operating system.
 
     ```xml
     <PropertyGroup>
@@ -217,9 +217,9 @@ To create a self-contained deployment with a smaller footprint, start by followi
 
    A complete sample *csproj* file appears later in this section.
 
-4. From the command line, run the `dotnet restore` command to restore the dependencies specified in your project.
+1. From the command line, run the `dotnet restore` command to restore the dependencies specified in your project.
 
-5. After you've debugged and tested the program, create the files to be deployed with your app for each platform that it targets.
+1. After you've debugged and tested the program, create the files to be deployed with your app for each platform that it targets.
 
    To do this, use the `dotnet publish` command for both target platforms as follows:
 

@@ -98,8 +98,11 @@
         "api/**.yml": "managed-reference"
       },
       "langs": {
-        "api/**.yml":  ["csharp", "vb", "cpp"]
-      }      
+        "api/**.yml": ["csharp", "vb", "cpp"]
+      },
+      "ROBOTS": {
+        "api/**.yml": "NOINDEX, NOFOLLOW"
+      }
     },
     "dest": "_site",
     "template": [

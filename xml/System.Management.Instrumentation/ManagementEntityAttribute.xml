@@ -60,7 +60,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor does not take a name parameter. If you do not specify a name by using the [Name](assetId:///Name?qualifyHint=False&amp;autoUpgrade=True) parameter, the name of the associated WMI class will default to the name of the attributed class.  
+ This constructor does not take a name parameter. If you do not specify a name by using the <xref:System.Management.Instrumentation.ManagementEntityAttribute.Name> parameter, the name of the associated WMI class will default to the name of the attributed class.  
   
  ]]></format>
         </remarks>

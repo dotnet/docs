@@ -77,4 +77,4 @@ Represents a configuration section for defining a backup list that enumerates a 
 ```  
   
 ## See Also  
- [System.ServiceModel.Routing.Configuration.BackupEndpointCollection](assetId:///System.ServiceModel.Routing.Configuration.BackupEndpointCollection?qualifyHint=False&amp;autoUpgrade=True)
+ <xref:System.ServiceModel.Routing.Configuration.BackupEndpointCollection?displayProperty=fullName>    

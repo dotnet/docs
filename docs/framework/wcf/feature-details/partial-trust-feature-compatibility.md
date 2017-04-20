@@ -133,7 +133,7 @@ manager: "erikre"
   
 -   <xref:System.IO.Log>  
 <!--
--   <xref:System.ServiceModel.Internal.TransactionBridge>  -->
+-   System.ServiceModel.Internal.TransactionBridge  -->
   
  The following members of the <xref:System.Diagnostics.TraceOptions> enumeration should not be specified:  
   

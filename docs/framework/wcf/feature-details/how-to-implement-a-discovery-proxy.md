@@ -340,7 +340,7 @@ This topic explains how to implement a discovery proxy. [!INCLUDE[crabout](../..
   
     ```  
   
- The OnBegin.. / OnEnd.. methods provide the logic for the subsequent discovery operations. For example the <!--zz <xref:System.ServiceModel.Discovery.DiscoveryProxyBase.OnBeginFind%2A> --> `System.ServiceModel.Discovery.DiscoveryProxyBase.OnBeginFind` and <xref:System.ServiceModel.Discovery.DiscoveryProxyBase.OnEndFind%2A> methods implement the find logic for discovery proxy. When the discovery proxy receives a probe message these methods are executed to send a response back to the client. You may modify the find logic as you wish, for example you can incorporate custom scope matching by algorithms or application specific XML metadata parsing as part of your find operation.  
+ The OnBegin.. / OnEnd.. methods provide the logic for the subsequent discovery operations. For example the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginFind%2A> and <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnEndFind%2A> methods implement the find logic for discovery proxy. When the discovery proxy receives a probe message these methods are executed to send a response back to the client. You may modify the find logic as you wish, for example you can incorporate custom scope matching by algorithms or application specific XML metadata parsing as part of your find operation.  
   
 ### To implement the AsyncResult class  
   

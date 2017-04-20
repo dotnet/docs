@@ -56,7 +56,7 @@ Holds signed 16-bit (2-byte) integers that range in value from -32,768 through 3
   
 ## Literal assignments
 
-You can declare and initialize a `Short` variable by assigning a decimal literal, a hexadecimal literal, an octal literal, or (starting with C# 7) a binary literal to it.  If the integer literal is outside the range of `Short` (that is, if it is less than <xref:System.Int16.MinValue?displayProperty=fullName> or greater than <xref:System.Int16.MaxValue?displayProperty=fullName>, a compilation error occurs.
+You can declare and initialize a `Short` variable by assigning it a decimal literal, a hexadecimal literal, an octal literal, or (starting with Visual Basic 2017) a binary literal. If the integer literal is outside the range of `Short` (that is, if it is less than <xref:System.Int16.MinValue?displayProperty=fullName> or greater than <xref:System.Int16.MaxValue?displayProperty=fullName>, a compilation error occurs.
 
 In the following example, integers equal to 1,034 that are represented as decimal, hexadecimal, and binary literals are implicitly converted from [Integer](integer-data-type.md) to `Short` values.
 

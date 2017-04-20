@@ -76,7 +76,7 @@ Deploying a framework-dependent deployment with one or more third-party dependen
       <ItemGroup>
         <PackageReference Include="Newtonsoft.Json" Version="10.0.2" />
       </ItemGroup>
-       ```
+      ```
 
 1. If you haven't already, download the NuGet package containing the third-party dependency. To download the package, execute the `dotnet restore` command after adding the dependency. Because the dependency is resolved out of the local NuGet cache at publish time, it must be available on your system.
 
@@ -106,11 +106,11 @@ Deploying a self-contained deployment without third-party dependencies involves 
 
    For example, the following `<PropertyGroup>` section indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.11 operating system.
 
-       ```xml
-        <PropertyGroup>
-          <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
-        </PropertyGroup>
-       ```
+     ```xml
+     <PropertyGroup>
+         <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
+     </PropertyGroup>
+     ```
 
    Note that the `<RuntimeIdentifier>` element can appear in any `<PropertyGroup>` in your *csproj* file. A complete sample *csproj* file appears later in this section.
 

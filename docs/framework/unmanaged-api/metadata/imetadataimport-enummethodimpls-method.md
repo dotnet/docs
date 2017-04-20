@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "IMetaDataImport.EnumMethodImpls"
-apilocation: 
+APILocation: 
   - "mscoree.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "IMetaDataImport::EnumMethodImpls"
 dev_langs: 

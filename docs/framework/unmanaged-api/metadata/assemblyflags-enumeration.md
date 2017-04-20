@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "AssemblyFlags"
-apilocation: 
+APILocation: 
   - "mscoree.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "AssemblyFlags"
 dev_langs: 

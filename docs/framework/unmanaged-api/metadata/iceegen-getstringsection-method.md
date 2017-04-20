@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "ICeeGen.GetStringSection"
-apilocation: 
+APILocation: 
   - "mscoree.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "ICeeGen::GetStringSection"
 dev_langs: 

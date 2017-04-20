@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "IAssemblyName.GetName"
-apilocation: 
+APILocation: 
   - "fusion.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "IAssemblyName::GetName"
 dev_langs: 

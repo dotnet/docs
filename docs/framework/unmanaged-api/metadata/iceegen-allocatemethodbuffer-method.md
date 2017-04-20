@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "ICeeGen.AllocateMethodBuffer"
-apilocation: 
+APILocation: 
   - "mscoree.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "ICeeGen::AllocateMethodBuffer"
 dev_langs: 

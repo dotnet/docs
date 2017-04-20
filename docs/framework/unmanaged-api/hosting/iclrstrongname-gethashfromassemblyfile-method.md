@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "ICLRStrongName.GetHashFromAssemblyFile"
-apilocation: 
+APILocation: 
   - "mscoree.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "ICLRStrongName::GetHashFromAssemblyFile"
 dev_langs: 

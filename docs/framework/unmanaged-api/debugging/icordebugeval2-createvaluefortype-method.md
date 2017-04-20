@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "ICorDebugEval2.CreateValueForType"
-apilocation: 
+APILocation: 
   - "mscordbi.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "ICorDebugEval2::CreateValueForType"
 dev_langs: 

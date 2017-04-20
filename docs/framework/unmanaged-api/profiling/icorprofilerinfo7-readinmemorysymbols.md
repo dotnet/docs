@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
+APIName: 
   - "ICorProfilerInfo7.ReadInMemorySymbols"
-apilocation: 
+APILocation: 
   - "CorProf.idl"
   - "CorProf.h"
   - "CorGuids.lib"
-apitype: "COM"
+APIType: "COM"
 dev_langs: 
   - "C++"
 ms.assetid: 1745a0b9-8332-4777-a670-b549bff3b901

@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "_CorExeMain"
-apilocation: 
+APILocation: 
   - "mscoree.dll"
   - "clr.dll"
   - "mscorwks.dll"
   - "mscoreei.dll"
-apitype: "DLLExport"
+APIType: "DLLExport"
 f1_keywords: 
   - "_CorExeMain"
 dev_langs: 

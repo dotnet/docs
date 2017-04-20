@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "ICorProfilerInfo3.RequestProfilerDetach Method"
-apilocation: 
+APILocation: 
   - "mscorwks.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "ICorProfilerInfo3::RequestProfilerDetach"
 dev_langs: 

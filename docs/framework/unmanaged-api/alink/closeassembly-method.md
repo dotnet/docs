@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "IALink.CloseAssembly"
   - "CloseAssembly"
-apilocation: 
+APILocation: 
   - "alink.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "CloseAssembly"
 dev_langs: 

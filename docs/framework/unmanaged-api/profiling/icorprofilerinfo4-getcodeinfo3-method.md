@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "ICorProfilerInfo4.GetCodeInfo3"
-apilocation: 
+APILocation: 
   - "mscorwks.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "ICorProfilerInfo4::GetCodeInfo3"
 dev_langs: 

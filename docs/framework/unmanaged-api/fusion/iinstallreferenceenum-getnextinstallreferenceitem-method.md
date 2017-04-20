@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "IInstallReferenceEnum.GetNextInstallReferenceItem"
-apilocation: 
+APILocation: 
   - "fusion.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "IInstallReferenceEnum::GetNextInstallReferenceItem"
 dev_langs: 

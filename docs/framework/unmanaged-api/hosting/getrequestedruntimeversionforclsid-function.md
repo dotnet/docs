@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "GetRequestedRuntimeVersionForCLSID"
-apilocation: 
+APILocation: 
   - "mscoree.dll"
-apitype: "DLLExport"
+APIType: "DLLExport"
 f1_keywords: 
   - "GetRequestedRuntimeVersionForCLSID"
 dev_langs: 

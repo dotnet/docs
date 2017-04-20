@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "ICorDebugChain.GetNext"
-apilocation: 
+APILocation: 
   - "mscordbi.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "ICorDebugChain::GetNext"
 dev_langs: 

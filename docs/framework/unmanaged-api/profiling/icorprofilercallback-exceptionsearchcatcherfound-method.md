@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "ICorProfilerCallback.ExceptionSearchCatcherFound"
-apilocation: 
+APILocation: 
   - "mscorwks.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ExceptionSearchCatcherFound"
 dev_langs: 

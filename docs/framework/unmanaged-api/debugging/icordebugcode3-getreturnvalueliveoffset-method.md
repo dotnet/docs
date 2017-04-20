@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "ICorDebugCode3.GetReturnValueLiveOffset"
-apilocation: 
+APILocation: 
   - "mscordbi.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "ICorDebugCode3::GetReturnValueLiveOffset"
 dev_langs: 

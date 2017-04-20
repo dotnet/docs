@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "ICorDebugAssembly.GetAppDomain"
-apilocation: 
+APILocation: 
   - "mscordbi.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "ICorDebugAssembly::GetAppDomain"
 dev_langs: 

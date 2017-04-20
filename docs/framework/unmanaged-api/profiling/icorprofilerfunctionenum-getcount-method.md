@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "ICorProfilerFunctionEnum.GetCount Method"
-apilocation: 
+APILocation: 
   - "mscorwks.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "ICorProfilerFunctionEnum::GetCount"
 dev_langs: 

@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "ICorProfilerObjectEnum.Skip"
-apilocation: 
+APILocation: 
   - "mscorwks.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "ICorProfilerObjectEnum::Skip"
 dev_langs: 

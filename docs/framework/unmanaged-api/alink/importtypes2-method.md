@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "IALink2.ImportTypes2"
-apilocation: 
+APILocation: 
   - "alink.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "ImportTypes2"
 dev_langs: 

@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "ICorDebugBlockingObjectEnum.Next Method"
-apilocation: 
+APILocation: 
   - "mscordbi.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "ICorDebugBlockingObjectEnum::Next"
 dev_langs: 

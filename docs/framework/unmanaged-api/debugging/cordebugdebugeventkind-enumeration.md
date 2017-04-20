@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "CorDebugDebugEventKind"
-apilocation: 
+APILocation: 
   - "mscordbi.dll"
-apitype: "COM"
+APIType: "COM"
 dev_langs: 
   - "C++"
 ms.assetid: 6075a6cd-97e6-4472-a090-0dd14860d1f3

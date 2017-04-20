@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "ISymUnmanagedENCUpdate.UpdateSymbolStore2"
-apilocation: 
+APILocation: 
   - "diasymreader.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "ISymUnmanagedENCUpdate::UpdateSymbolStore2"
 dev_langs: 

@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "IBindingDisplay.InitializeForProcess"
-apilocation: 
+APILocation: 
   - "diasymreader.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "IBindingDisplay::InitializeForProcess"
 dev_langs: 

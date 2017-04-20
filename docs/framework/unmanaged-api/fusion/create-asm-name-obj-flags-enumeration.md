@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "CREATE_ASM_NAME_OBJ_FLAGS"
-apilocation: 
+APILocation: 
   - "fusion.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "CREATE_ASM_NAME_OBJ_FLAGS"
 dev_langs: 

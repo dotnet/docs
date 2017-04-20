@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "IAssemblyEnum.Reset"
-apilocation: 
+APILocation: 
   - "fusion.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "IAssemblyEnum::Reset"
 dev_langs: 

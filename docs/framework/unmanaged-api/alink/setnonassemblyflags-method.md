@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "IALink.SetNonAssemblyFlags"
-apilocation: 
+APILocation: 
   - "alink.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "SetNonAssemblyFlags"
 dev_langs: 

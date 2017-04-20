@@ -9,13 +9,13 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "GetAssemblyIdentityFromFile"
-apilocation: 
+APILocation: 
   - "fusion.dll"
   - "clr.dll"
   - "mscorwks.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "GetAssemblyIdentityFromFile"
 dev_langs: 

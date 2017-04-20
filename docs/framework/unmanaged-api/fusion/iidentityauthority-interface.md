@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "IIdentityAuthority"
-apilocation: 
+APILocation: 
   - "fusion.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "IIdentityAuthority"
 dev_langs: 

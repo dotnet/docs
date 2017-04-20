@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "CLRDataCreateInstance"
-apilocation: 
+APILocation: 
   - "mscordbi.dll"
   - "mscordacwks.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "CLRDataCreateInstance"
 dev_langs: 

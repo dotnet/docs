@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "StrongNameGetBlob"
-apilocation: 
+APILocation: 
   - "mscoree.dll"
-apitype: "DLLExport"
+APIType: "DLLExport"
 f1_keywords: 
   - "StrongNameGetBlob"
 dev_langs: 

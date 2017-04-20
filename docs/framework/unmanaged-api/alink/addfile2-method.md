@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "AddFile2"
   - "IALink2.AddFile2"
-apilocation: 
+APILocation: 
   - "alink.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "AddFile2"
 dev_langs: 

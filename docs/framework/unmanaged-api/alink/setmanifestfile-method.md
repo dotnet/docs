@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "IALink3.SetManifestFile"
-apilocation: 
+APILocation: 
   - "alink.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "SetManifestFile"
 dev_langs: 

@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "CorBindToCurrentRuntime"
-apilocation: 
+APILocation: 
   - "mscoree.dll"
   - "mscoreei.dll"
-apitype: "HeaderDef"
+APIType: "HeaderDef"
 f1_keywords: 
   - "CorBindToCurrentRuntime"
 dev_langs: 

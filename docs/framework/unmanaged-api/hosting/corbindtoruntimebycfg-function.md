@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "CorBindToRuntimeByCfg"
-apilocation: 
+APILocation: 
   - "mscoree.dll"
-apitype: "DLLExport"
+APIType: "DLLExport"
 f1_keywords: 
   - "CorBindToRuntimeByCfg"
 dev_langs: 

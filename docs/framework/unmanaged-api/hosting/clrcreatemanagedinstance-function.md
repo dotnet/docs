@@ -9,14 +9,14 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "ClrCreateManagedInstance"
-apilocation: 
+APILocation: 
   - "mscoree.dll"
   - "clr.dll"
   - "mscorwks.dll"
   - "mscoreei.dll"
-apitype: "DLLExport"
+APIType: "DLLExport"
 f1_keywords: 
   - "ClrCreateManagedInstance"
 dev_langs: 

@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "GetStartupNotificationEvent"
-apilocation: 
+APILocation: 
   - "dbgshim.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "GetStartupNotificationEvent"
 dev_langs: 

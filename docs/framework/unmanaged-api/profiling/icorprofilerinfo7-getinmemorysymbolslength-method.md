@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
+APIName: 
   - "ICorProfilerInfo7.GetInMemorySymbolsLength"
-apilocation: 
+APILocation: 
   - "mscorwks.dll"
   - "icorprof.idl"
-apitype: "COM"
+APIType: "COM"
 dev_langs: 
   - "C++"
 ms.assetid: d62c4a4c-8a62-45aa-8f01-a8387cf36159

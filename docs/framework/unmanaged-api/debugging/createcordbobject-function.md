@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "CreateCoredbObject"
-apilocation: 
+APILocation: 
   - "mscordbi_macx86.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "CreateCordbObject"
 dev_langs: 

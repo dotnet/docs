@@ -9,11 +9,11 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "ICorDebugAppDomain"
-apilocation: 
+APILocation: 
   - "corguids.lib"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "ICorDebugAppDomain"
 dev_langs: 

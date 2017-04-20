@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
+APIName: 
   - "ICorProfiler7.ModuleInMemorySymbolsUpdated"
-apilocation: 
+APILocation: 
   - "mscorwks.dll"
   - "corprof.idl"
-apitype: "COM"
+APIType: "COM"
 dev_langs: 
   - "C++"
 ms.assetid: f362a896-3247-4894-9727-e48dbbcd2c78

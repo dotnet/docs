@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "GetRequestedRuntimeInfo"
-apilocation: 
+APILocation: 
   - "mscoree.dll"
   - "mscoreei.dll"
-apitype: "DLLExport"
+APIType: "DLLExport"
 f1_keywords: 
   - "GetRequestedRuntimeInfo"
 dev_langs: 

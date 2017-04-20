@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "CorLaunchApplication"
-apilocation: 
+APILocation: 
   - "mscoree.dll"
   - "clr.dll"
-apitype: "COM"
+APIType: "COM"
 f1_keywords: 
   - "CorLaunchApplication"
 dev_langs: 

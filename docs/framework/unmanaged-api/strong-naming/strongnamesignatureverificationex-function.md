@@ -9,12 +9,12 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+APIName: 
   - "StrongNameSignatureVerificationEx"
-apilocation: 
+APILocation: 
   - "mscoree.dll"
   - "mscorwks.dll"
-apitype: "DLLExport"
+APIType: "DLLExport"
 f1_keywords: 
   - "StrongNameSignatureVerificationEx"
 dev_langs: 

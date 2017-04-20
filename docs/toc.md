@@ -29,6 +29,8 @@
 ### [Mapping between project.json and csproj](core/tools/project-json-to-csproj.md)
 ### [Migrating from DNX](core/migration/from-dnx.md)
 ## [Application Deployment](core/deploying/index.md)
+### [Deploy apps with CLI tools](core/deploying/deploy-with-cli.md)
+### [Deploy apps with Visual Studio](core/deploying/deploy-with-vs.md)
 ### [Creating a NuGet Package with Cross Platform Tools](core/deploying/creating-nuget-packages.md)
 ## [Docker](core/docker/index.md)
 ### [Building Docker Images for .NET Core Applications](core/docker/building-net-docker-images.md)

@@ -61,7 +61,7 @@ It also has a number of disadvantages:
 
 ## Step-by-step examples
 
-For step-by-step examples of deploying .NET Core apps with CLI tools, see [Deploying .NET Core Apps with CLI Tools](deploying-with-cli.md). For step-by-step examples of deploying .NET Core apps with Visual Studio, see [Deploying .NET Core Apps with Visual Studio](deploying-with-vs.md). Each topic includes examples of the following deployments:
+For step-by-step examples of deploying .NET Core apps with CLI tools, see [Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md). For step-by-step examples of deploying .NET Core apps with Visual Studio, see [Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md). Each topic includes examples of the following deployments:
 
 - Framework-dependent deployment
 - Framework-dependent deployment with third-party dependencies
@@ -71,8 +71,7 @@ For step-by-step examples of deploying .NET Core apps with CLI tools, see [Deplo
 
 # See also
 
-[Deploying .NET Core Apps with CLI Tools](deploying-with-cli.md)   
-[Deploying .NET Core Apps with Visual Studio](deploying-with-vs.md)   
+[Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md)   
+[Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md)   
 [Packages, Metapackages and Frameworks](../packages.md)   
-[.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)   
-
+[.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)

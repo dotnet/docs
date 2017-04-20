@@ -47,11 +47,11 @@ The csc.exe executable file usually is located in the Microsoft.NET\Framework\\*
 
  **In this topic**
 
-- Rules for Command-Line Syntax](#vcconcommand-linebuildinganchor1)
+- [Rules for Command-Line Syntax](#vcconcommand-linebuildinganchor1)
 
-- Sample Command Lines](#vcconcommand-linebuildinganchor2)
+- [Sample Command Lines](#vcconcommand-linebuildinganchor2)
 
-- Differences Between C# Compiler and C++ Compiler Output](#vcconcommand-linebuildinganchor3)
+- [Differences Between C# Compiler and C++ Compiler Output](#vcconcommand-linebuildinganchor3)
 
 ##  <a name="vcconcommand-linebuildinganchor1"></a> Rules for Command-Line Syntax for the C# Compiler
 The C# compiler uses the following rules when it interprets arguments given on the operating system command line:

@@ -15,9 +15,8 @@ helpviewer_keywords:
   - "Byte data type"
   - "data types [Visual Basic], assigning"
 ms.assetid: eed44dff-eaee-4937-a89f-444e418e74f6
-caps.latest.revision: 18
-author: rpetrusha
-ms.author: ronpet
+author: "rpetrusha"
+ms.author: "ronpet"
 
 translation.priority.ht: 
   - "cs-cz"
@@ -45,7 +44,7 @@ The default value of `Byte` is 0.
 
 ## Literal assignments
 
-You can declare and initialize a `Byte` variable by assigning it a decimal literal, a hexadecimal literal, or (starting with Visual Basic 2017) a binary literal. If the integral literal is outside the range of a `Byte` (that is, if it is less than <xref:System.Byte.MinValue?displayProperty=fullName> or greater than <xref:System.Byte.MaxValue?displayProperty=fullName>), a compilation error occurs.
+You can declare and initialize a `Byte` variable by assigning it a decimal literal, a hexadecimal literal, an octal literal, or (starting with Visual Basic 2017) a binary literal. If the integral literal is outside the range of a `Byte` (that is, if it is less than <xref:System.Byte.MinValue?displayProperty=fullName> or greater than <xref:System.Byte.MaxValue?displayProperty=fullName>), a compilation error occurs.
 
 In the following example, integers equal to 201 that are represented as decimal, hexadecimal, and binary literals are implicitly converted from [Integer](integer-data-type.md) to `byte` values.
 

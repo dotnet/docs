@@ -47,13 +47,13 @@ translation.priority.ht:
 
 Holds signed 8-bit (1-byte) integers that range in value from -128 through 127.  
   
-## Remarks  
+## Remarks
 
-Use the `SByte` data type to contain integer values that do not require the full data width of `Integer` or even the half data width of `Short`. In some cases the common language runtime might be able to pack your `SByte` variables closely together and save memory consumption.  
-  
- The default value of `SByte` is 0.  
+Use the `SByte` data type to contain integer values that do not require the full data width of `Integer` or even the half data width of `Short`. In some cases, the common language runtime might be able to pack your `SByte` variables closely together and save memory consumption.
 
-## Literal assigments
+The default value of `SByte` is 0.
+
+## Literal assignments
   
 You can declare and initialize an `SByte` variable by assigning it a decimal literal, a hexadecimal literal, an octal literal, or (starting with Visual Basic 2017) a binary literal.
 

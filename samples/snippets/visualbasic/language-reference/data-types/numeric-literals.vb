@@ -3,45 +3,61 @@ Option Strict On
 Public Module Example
 
    Public Sub Main()
-       Console.WriteLine(vbCrLf + "Byte Assignments:")
+       Console.WriteLine("Byte Assignments:")
        AssignByte()
-       Console.WriteLine(vbCrLf + "Byte Assignments with Separator:")
+       Console.WriteLine()
+       Console.WriteLine("Byte Assignments with Separator:")
        AssignByteWithSeparator()
+       Console.WriteLine()
 
-       Console.WriteLine(vbCrLf + "Short Assignments:")
+       Console.WriteLine("Short Assignments:")
        AssignShort()
-       Console.WriteLine(vbCrLf + "Short Assignments with Separator:")
+       Console.WriteLine()
+       Console.WriteLine("Short Assignments with Separator:")
        AssignShortWithSeparator()
+       Console.WriteLine()
 
-       Console.WriteLine(vbCrLf + "Integer Assignments:")
+       Console.WriteLine("Integer Assignments:")
        AssignInteger()
-       Console.WriteLine(vbCrLf + "Integer Assignments with Separator:")
+       Console.WriteLine()
+       Console.WriteLine("Integer Assignments with Separator:")
        AssignIntegerWithSeparator()
+       Console.WriteLine()
 
-       Console.WriteLine(vbCrLf + "Long Assignments:")
+       Console.WriteLine("Long Assignments:")
        AssignLong()
-       Console.WriteLine(vbCrLf + "Long Assignments with Separator:")
+       Console.WriteLine()
+       Console.WriteLine("Long Assignments with Separator:")
        AssignLongWithSeparator()
+       Console.WriteLine()
 
-       Console.WriteLine(vbCrLf + "Signed Byte Assignments:")
+       Console.WriteLine("Signed Byte Assignments:")
        AssignSByte()
-       Console.WriteLine(vbCrLf + "Signed Byte Assignments with Separator:")
+       Console.WriteLine()
+       Console.WriteLine("Signed Byte Assignments with Separator:")
        AssignSByteWithSeparator()
+       Console.WriteLine()
 
-       Console.WriteLine(vbCrLf + "UShort Assignments:")
+       Console.WriteLine("UShort Assignments:")
        AssignUShort()
-       Console.WriteLine(vbCrLf + "UShort Assignments with Separator:")
+       Console.WriteLine()
+       Console.WriteLine("UShort Assignments with Separator:")
        AssignUShortWithSeparator()
+       Console.WriteLine()
 
-       Console.WriteLine(vbCrLf + "UInteger Assignments:")
+       Console.WriteLine("UInteger Assignments:")
        AssignUInteger()
-       Console.WriteLine(vbCrLf + "UInteger Assignments with Separator:")
+       Console.WriteLine()
+       Console.WriteLine("UInteger Assignments with Separator:")
        AssignUIntegerWithSeparator()
+       Console.WriteLine()
 
-       Console.WriteLine(vbCrLf + "ULong Assignments:")
+       Console.WriteLine("ULong Assignments:")
        AssignULong()
-       Console.WriteLine(vbCrLf + "ULong Assignments with Separator:")
+       Console.WriteLine()
+       Console.WriteLine("ULong Assignments with Separator:")
        AssignULongWithSeparator()
+       Console.WriteLine()
    End Sub
 
    Private Sub AssignByte()
@@ -172,10 +188,10 @@ Public Module Example
       Dim sbyteValue1 As SByte = -102
       Console.WriteLine(sbyteValue1)
       
-      Dim sbyteValue4 As SByte = CSByte(&H9A)
+      Dim sbyteValue4 As SByte = &H9A
       Console.WriteLine(sbyteValue4)
       
-      Dim sbyteValue5 As SByte = CSByte(&B1001_1010)
+      Dim sbyteValue5 As SByte = &B1001_1010
       Console.WriteLine(sbyteValue5)
       ' The example displays the following output:
       '          -102

@@ -69,13 +69,11 @@ The IgnoreWhitespace setting is ignored.
   
 ## Compression and the Binary Encoder
 
-Beginning with WCF 4.5 the WCF binary encoder adds support for compression. This enables you to use the gzip/deflate algorithm for sending compressed messages from a WCF client and also respond with compressed messages from a self-hosted WCF service. This feature enables compression on both the HTTP and TCP transports. An IIS hosted WCF service can always be enabled for sending compressed responses by configuring the IIS host server. The type of compression is configured with the <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.CompressionFormat%2A?displayProperty=fullName> property. This property is set to one of the <xref:System.ServiceModel.Channels.CompressionFormat?displayProperty=fullName> enum values:  
-  
-| `CompressionFormat` Value   | Compression Used |
-| --------------------------- | :--------------: |
-| `CompressionFormat.Deflate` | Deflate          |
-| `CompressionFormat.GZip`    | GZip             |
-| `CompressionFormat.None`    | None             |
+Beginning with WCF 4.5 the WCF binary encoder adds support for compression. This enables you to use the gzip/deflate algorithm for sending compressed messages from a WCF client and also respond with compressed messages from a self-hosted WCF service. This feature enables compression on both the HTTP and TCP transports. An IIS hosted WCF service can always be enabled for sending compressed responses by configuring the IIS host server. The type of compression is configured with the <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.CompressionFormat%2A?displayProperty=fullName> property. This property is set to one of the <xref:System.ServiceModel.Channels.CompressionFormat?displayProperty=fullName> enum values:
+
+* `CompressionFormat.Deflate`
+* `CompressionFormat.GZip`
+* `CompressionFormat.None`
   
 Since this property is only exposed on the binaryMessageEncodingBindingElement, you will need to create a custom binding like the following to use this feature:
 

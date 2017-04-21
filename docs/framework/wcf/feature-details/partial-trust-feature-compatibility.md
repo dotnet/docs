@@ -80,7 +80,7 @@ manager: "erikre"
  See the Serialization section in [Partial Trust Best Practices](../../../../docs/framework/wcf/feature-details/partial-trust-best-practices.md) for more information about security when using <xref:System.Runtime.Serialization.DataContractSerializer> safely in a partially-trusted application.  
   
 ### Collection Types  
- Some collection types implement both <xref:System.Collections.Generic.IEnumerable%601> and <xref:System.Collections.IEnumerable>. Examples include types that implement <xref:System.Collections.Generic.ICollection%601>. Such types can implement a `public` implementation of `GetEnumerator()`, and an explicit implementation of `GetEnumerator()`. In this case, <xref:System.Runtime.Serialization.DataContractSerializer> invokes the `public` implementation of `GetEnumerator()`, and not the explicit implementation of `GetEnumerator()`. If none of the `GetEnumerator()` implementations are `public` and all are explicit implementations, then <xref:System.Runtime.Serialization.DataContractSerializer>invokes `IEnumerable.GetEnumerator()`.  
+ Some collection types implement both <xref:System.Collections.Generic.IEnumerable%601> and <xref:System.Collections.IEnumerable>. Examples include types that implement <xref:System.Collections.Generic.ICollection%601>. Such types can implement a `public` implementation of `GetEnumerator()`, and an explicit implementation of `GetEnumerator()`. In this case, <xref:System.Runtime.Serialization.DataContractSerializer> invokes the `public` implementation of `GetEnumerator()`, and not the explicit implementation of `GetEnumerator()`. If none of the `GetEnumerator()` implementations are `public` and all are explicit implementations, then <xref:System.Runtime.Serialization.DataContractSerializer> invokes `IEnumerable.GetEnumerator()`.  
   
  For collection types when [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is running in a partial trust environment, if none of the `GetEnumerator()` implementations are `public`, or none of them are explicit interface implementations, then a security exception is thrown.  
   
@@ -132,14 +132,14 @@ manager: "erikre"
 -   CardSpace  
   
 -   <xref:System.IO.Log>  
-  
--   <xref:System.ServiceModel.Internal.TransactionBridge>  
+
+-   [System.ServiceModel.Internal.TransactionBridge](https://msdn.microsoft.com/library/system.servicemodel.internal.transactionbridge.aspx)]
   
  The following members of the <xref:System.Diagnostics.TraceOptions> enumeration should not be specified:  
   
--   <xref:System.Diagnostics.TraceOptions>  
+-   <xref:System.Diagnostics.TraceOptions.CallStack?displayProperty=fullName>  
   
--   <xref:System.Diagnostics.TraceOptions.ProcessID>  
+-   <xref:System.Diagnostics.TraceOptions.ProcessId?displayProperty=fullName>  
   
  When using tracing in a partial trust environment, ensure that the application has sufficient permissions to store the output of the trace listener. For example, when using the <xref:System.Diagnostics.TextWriterTraceListener> to write trace output to a text file, ensure that the application has the necessary FileIOPermission required to successfully write to the trace file.  
   

@@ -147,7 +147,7 @@ interface ICustomer
  Because the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] WEB HTTP programming model does not support the WS-* protocols, the only way to secure a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] WEB HTTP service is to expose the service over HTTPS using SSL. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] setting up SSL with [!INCLUDE[iisver](../../../../includes/iisver-md.md)], see [How to implement SSL in IIS](http://go.microsoft.com/fwlink/?LinkId=131613)  
   
 ## Troubleshooting the WCF WEB HTTP Programming Model  
- When calling WCF WEB HTTP services using a <xref:System.ServiceModel.Channels.ChannelFactory%601> to create a channel, the <xref:System.ServiceModel.Description.WebHttpBehavior> uses the <xref:System.ServiceModel.EndpointAddress> set in the configuration file even if a different <xref:System.ServiceModel.EndpointAddress> is passed to the <xref:System.ServiceModel.Channels.ChannelFactory%601>.  
+ When calling WCF WEB HTTP services using a <xref:System.ServiceModel.Channels.ChannelFactoryBase%601> to create a channel, the <xref:System.ServiceModel.Description.WebHttpBehavior> uses the <xref:System.ServiceModel.EndpointAddress> set in the configuration file even if a different <xref:System.ServiceModel.EndpointAddress> is passed to the <xref:System.ServiceModel.Channels.ChannelFactoryBase%601>.  
   
 ## See Also  
  [WCF Syndication](../../../../docs/framework/wcf/feature-details/wcf-syndication.md)   

@@ -81,6 +81,28 @@ let getShapeHeight shape =
 
 Normally, the case identifiers can be used without qualifying them with the name of the union. If you want the name to always be qualified with the name of the union, you can apply the [RequireQualifiedAccess](https://msdn.microsoft.com/library/8b9b6ade-0471-4413-ac5d-638cd0de5f15) attribute to the union type definition.
 
+## Struct Discriminated Unions
+
+Starting with F# 4.1, you can also represent Discriminated Unions as structs.  This is done with the `[<Struct>]` attribute.
+
+```fsharp
+[<Struct>]
+type SingleCase = Case of string
+
+[<Struct>]
+type Multicase =
+    | Case1 of string
+    | Case2 of int
+    | Case3 of double
+```
+
+>[!WARN] With the current release of F# 4.1, multicase struct unions have multiple bugs.  We do not recommend using them at this time.
+
+Because these are value types and not reference types, there are extra considerations compared with reference Discriminated Unions:
+
+1. They are copied as value types and have value type semantics.
+2. You cannot use a recursive type definition with a multicase struct Discriminated Union.
+3. You must provide unique case names for a multicase struct Discriminated Union.
 
 ## Using Discriminated Unions Instead of Object Hierarchies
 You can often use a discriminated union as a simpler alternative to a small object hierarchy. For example, the following discriminated union could be used instead of a `Shape` base class that has derived types for circle, square, and so on.

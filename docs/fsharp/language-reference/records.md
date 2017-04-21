@@ -51,7 +51,6 @@ The labels of the most recently declared type take precedence over those of the 
 
 Methods can be defined for record types just as for class types.
 
-
 ## Creating Records by Using Record Expressions
 You can initialize records by using the labels that are defined in the record. An expression that does this is referred to as a *record expression*. Use braces to enclose the record expression and use the semicolon as a delimiter.
 

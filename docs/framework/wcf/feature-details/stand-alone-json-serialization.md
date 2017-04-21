@@ -37,7 +37,7 @@ JSON (JavaScript Object Notation) is a data format that is specifically designed
 |<xref:System.Xml.XmlQualifiedName>|String|The format is "name:namespace" (anything before the first colon is the name). Either the name or the namespace can be missing. If there is no namespace the colon can be omitted as well.|  
 |<xref:System.Array> of type <xref:System.Byte>|Array of numbers|Each number represents the value of one byte.|  
 |<xref:System.DateTime>|DateTime or String|See Dates/Times and JSON later in this topic.|  
-|<xref:System.DateTime.Offset>|Complex type|See Dates/Times and JSON later in this topic.|  
+|<xref:System.DateTimeOffset>|Complex type|See Dates/Times and JSON later in this topic.|  
 |XML and ADO.NET types (<xref:System.Xml.XmlElement>,<br /><br /> <xref:System.Xml.Linq.XElement>. Arrays of <xref:System.Xml.XmlNode>,<br /><br /> <xref:System.Runtime.Serialization.ISerializable>,<br /><br /> <xref:System.Data.DataSet>).|String|See the XML Types and JSON section of this topic.|  
 |<xref:System.DBNull>|Empty complex type|--|  
 |Collections, dictionaries, and arrays|Array|See the Collections, Dictionaries, and Arrays section of this topic.|  

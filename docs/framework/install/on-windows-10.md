@@ -20,13 +20,13 @@ You may need the .NET Framework to run an application on Windows 10. You can use
 
 The .NET Framework 4.6.2 is included with Windows 10 Anniversary Update. 
 
-If you are on an earlier version of Windows 10, you will need to upgrade to [Windows 10 Anniversary Update](https://www.microsoft.com/software-download/windows10) to get the .NET Framework 4.6.2. 
+If you are on an earlier version of Windows 10, you will need to upgrade to [Windows 10 Anniversary Update](https://www.microsoft.com/software-download/windows10) to get the .NET Framework 4.6.2.
 
 The .NET Framework 4.6.2 can be used to run applications built for .NET Framework 4.0 or later.
 
 ## .NET Framework 3.5
 
-Follow the instructions to install the [.NET Framework 3.5 on Windows 10](dotnet-35-windows-10.md). 
+Follow the instructions to install the [.NET Framework 3.5 on Windows 10](dotnet-35-windows-10.md).
 
 The .NET Framework 3.5 can be used to run applications built for .NET Framework 1.0 through 3.5.
 

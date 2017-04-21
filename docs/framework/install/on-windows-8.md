@@ -18,7 +18,7 @@ You may need the .NET Framework to run an application on Windows 8. You can use 
 
 ## .NET Framework 4.6.2
 
-You can install the [.NET Framework 4.6.2](https://go.microsoft.com/fwlink/?linkid=845529&source=dotnetdocs) or later on Windows 8. 
+You can install the [.NET Framework 4.6.2](https://go.microsoft.com/fwlink/?linkid=845529&source=dotnetdocs) or later on Windows 8.
 
 The .NET Framework 4.6.2 is included with [Windows 10 Anniversary Update](https://www.microsoft.com/software-download/windows10).
 

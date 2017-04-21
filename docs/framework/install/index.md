@@ -16,7 +16,7 @@ ms.assetid: 87cda1d5-c5g8-8eb9-93e8-5f478de07ff7
 
 The following documents describe how to install the .NET Framework for each Windows version.
 
-## Version Differences
+## Version differences
 
 The .NET Framework is included with Windows. Each Windows version includes a single .NET Framework version, which may not be the one you need. If you would like to use a different version of the .NET Framework for a given version of Windows, then you must install it.
 

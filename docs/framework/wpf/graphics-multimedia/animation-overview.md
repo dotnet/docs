@@ -109,7 +109,7 @@ manager: "wpickett"
   
 1.  Create the                                  <xref:System.Windows.Media.Animation.Storyboard> and add the animation as its child. The following shows how to create the                                  <xref:System.Windows.Media.Animation.Storyboard> in XAML.  
   
-     <!-- TODO: review snippet reference [!code-xml[animation_ovws2#RectangleOpacityFadeExampleXaml_5](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws2/CSharp/Window1.xaml#rectangleopacityfadeexamplexaml_5)]  -->  
+     [!code-xml[animation_ovws2#RectangleOpacityFadeExampleXaml_5](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws2/CSharp/Window1.xaml#rectangleopacityfadeexamplexaml_5)]    
   
      To create the                                  <xref:System.Windows.Media.Animation.Storyboard> in code, declare a                                  <xref:System.Windows.Media.Animation.Storyboard> variable at the class level.  
   

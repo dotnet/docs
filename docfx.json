@@ -3,8 +3,8 @@
     "content": [
       {
         "files": [
-          "api/**/*.yml",
-          "api/**/*.md"
+          "api/system.object.yml",
+          "index.md"
         ],
         "exclude": [
           "api/overwrites/**",
@@ -12,24 +12,6 @@
           "**/includes/**",
           "***/contributing.md"
         ]
-      },
-      {
-        "files": [
-          "**/*.md"
-        ],
-        "src": "docs",
-        "dest": "articles",
-        "exclude": [
-          "api/overwrites/**",
-          "samples/**/*.*",
-          "**/includes/**",
-          "***/contributing.md"
-        ]
-      },
-      {
-          "files": [
-           "core/**/*.md"
-         ]
       },
       {
         "files": [

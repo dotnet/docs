@@ -245,7 +245,7 @@ client2.Close();
   
 ```  
   
- This sample uses a custom <xref:System.IdentityModel.Selectors.UsernamePasswordValidator> to validate user names and passwords. The sample implements `MyCustomUserNamePasswordValidator`, derived from <xref:System.IdentityModel.Selectors.UserNamePasswordValidator>. See the documentation about <xref:System.IdentityModel.Selectors.UsernamePasswordValidator> for more information. For the purposes of demonstrating the integration with the <xref:System.IdentityModel.Selectors.UsernamePasswordValidator>, this custom validator sample implements the <!--zz <xref:System.IdentityModel.Selectors.UsernamePasswordValidator.Validate%2A> --> `System.IdentityModel.Selectors.UsernamePasswordValidator.Validate` method to accept user name/password pairs where the user name matches the password as shown in the following code.  
+ This sample uses a custom <xref:System.IdentityModel.Selectors.UserNamePasswordValidator> to validate user names and passwords. The sample implements `MyCustomUserNamePasswordValidator`, derived from <xref:System.IdentityModel.Selectors.UserNamePasswordValidator>. See the documentation about <xref:System.IdentityModel.Selectors.UserNamePasswordValidator> for more information. For the purposes of demonstrating the integration with the <xref:System.IdentityModel.Selectors.UserNamePasswordValidator>, this custom validator sample implements the <xref:System.IdentityModel.Selectors.UserNamePasswordValidator.Validate%2A> method to accept user name/password pairs where the user name matches the password as shown in the following code.  
   
 ```  
 public class MyCustomUserNamePasswordValidator : UserNamePasswordValidator  

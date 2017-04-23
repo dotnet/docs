@@ -4000,16 +4000,16 @@ finally
 ## Overloaded method syntax  
  The  <xref:System.Collections.Generic.List%601.Sort%2A> methods enable you to sort with the default comparer for the object type in the list, or specify a customer sort method.  
   
- [List\<T>.Sort()](http://msdn.microsoft.com/en-us/library/b0zbh7b6\(v=vs.110\).aspx)  
+ [List\<T>.Sort()](xref:System.Collections.Generic.List%601.Sort%28%29)
  Sorts the elements in the entire list using the default comparer of the object type held in the list.  
   
- [List\<T>.Sort M(Comparison\<T> comparison)](http://msdn.microsoft.com/en-us/library/w56d4y5z\(v=vs.110\).aspx)  
+ [List\<T>.Sort M(Comparison\<T> comparison)](xref:System.Collections.Generic.List%601.Sort%28System.Comparison%7B%600%7D%29)
  Sorts the elements in the entire list using the specified comparer.  
   
- [List\<T>.Sort(IComparer\<T> comparer)](http://msdn.microsoft.com/en-us/library/234b841s\(v=vs.110\).aspx)  
+ [List\<T>.Sort(IComparer\<T> comparer)](xref:System.Collections.Generic.List%601.Sort%28System.Collections.Generic.IComparer%7B%600%7D%29)
  Sorts the elements in the entire list using the specified <xref:System.Comparison%601?displayProperty=fullName>.  
   
- [List\<T>.Sort(Int32 index, Int32 count, IComparer\<T> comparer)](http://msdn.microsoft.com/en-us/library/8ce6t5ad\(v=vs.110\).aspx)  
+ [List\<T>.Sort(Int32 index, Int32 count, IComparer\<T> comparer)](xref:System.Collections.Generic.List%601.Sort%28System.Int32,System.Int32,System.Collections.Generic.IComparer%7B%600%7D%29)
  Sorts the elements in a range of elements in list using the specified comparer.  
   
 ## Parameters  
@@ -4017,7 +4017,7 @@ finally
 |Parameter|Type|Description|  
 |---------------|----------|-----------------|  
 |`comparison`|<xref:System.Comparison%601>|The delegate method to use when comparing elements|  
-|comparer|<xref:System.Collections.Generic.IComparer%601>|The  HYPERLINK "http://msdn.microsoft.com/en-us/library/8ehhxeaf(v=vs.110).aspx" IComparer\<T> implementation to use when comparing elements, or null to use the default comparer  HYPERLINK "http://msdn.microsoft.com/en-us/library/azhsac5f(v=vs.110).aspx" Comparer\<T>.Default.|  
+|comparer|<xref:System.Collections.Generic.IComparer%601>|The <xref:System.Collections.Generic.IComparer%601> implementation to use when comparing elements, or null to use the default comparer <xref:System.Collections.Generic.Comparer%601.Default>.|  
 |`index`|<xref:System.Int32>|The zero-based starting index of the range to sort.|  
 |`count`|<xref:System.Int32>|The length of the range to sort.|  
   

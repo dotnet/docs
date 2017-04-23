@@ -6870,7 +6870,7 @@ An object that is equivalent to the date and time contained in `s`.
 > [!IMPORTANT]
 >  Note that the formatting conventions for a particular culture are dynamic and can be subject to change. This means that parsing operations that depend on the formatting conventions of the default (current) culture or that specify an <xref:System.IFormatProvider> object that represents a culture other than the invariant culture can unexpectedly fail if any of the following occurs:  
 >   
->  -   The culture-specific data has changed between major or minor versions of the .NET Framework or as the result of an update to the existing version of the .NET Framework.  
+> -   The culture-specific data has changed between major or minor versions of the .NET Framework or as the result of an update to the existing version of the .NET Framework.  
 > -   The culture-specific data reflects user preferences, which can vary from machine to machine or session to session.  
 > -   The culture-specific data represents a replacement culture that overrides the settings of a standard culture or a custom culture.  
 >   

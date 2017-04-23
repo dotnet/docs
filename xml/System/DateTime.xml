@@ -6755,13 +6755,13 @@ juillet 2009
 ## Overloaded method syntax  
  For additional guidance on choosing an overload, see [Which method do I call?](#Tasks)  
   
- `DateTime.Parse(String`  `s` `)`  
+ `DateTime.Parse(String s)`  
  For the conversion, uses the formatting conventions of the current thread culture and interprets the string based on the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> style flag ([example](#Parse1_Example)).  
   
- `DateTime.Parse(String`  `s` `, IFormatProvider`  `provider` `)`  
+ `DateTime.Parse(String s, IFormatProvider provider)`  
  For the conversion, uses the formatting conventions of a specified culture and interprets the string based on the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> style flag ([example](#Parse2_Example)).  
   
- `DateTime.Parse(String`  `s` `, IFormatProvider`  `provider` `, DateTypeStyles`  `styles` `)`  
+ `DateTime.Parse(String s, IFormatProvider provider, DateTypeStyles styles)`  
  For the conversion, uses the formatting conventions of a specified culture and interprets the string based on specified style flags ([example](#Parse3_Example)).  
   
 <a name="Params"></a>   

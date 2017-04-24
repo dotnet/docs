@@ -2,3 +2,8 @@
 ## [s_isDebuggerCheckDisabledForTestPurposes Field](s-isdebuggercheckdisabledfortestpurposes-field.md)
 ## [DataMemberFieldEditor Class](datamemberfieldeditor-class.md)
 ## [DataMemberListEditor Class](datamemberlisteditor-class.md)
+## [s_ServicePointTable](../../../docs/framework/additional-apis/s_servicepointtable.md)
+## [_HttpResponse](../../../docs/framework/additional-apis/_httpresponse.md)
+## [m_ConnectionGroupList](../../../docs/framework/additional-apis/m_connectiongrouplist.md)
+## [m_ConnectionList](../../../docs/framework/additional-apis/m_connectionlist.md)
+## [m_WriteList](../../../docs/framework/additional-apis/m_writelist.md)

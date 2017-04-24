@@ -46,11 +46,16 @@ In addition, some libraries target specific platforms or implementations of the 
 
 These APIs support the product infrastructure and are not intended/supported to be used directly from your code.  
   
-| API Name |  
-| -------- |  
-| [s_isDebuggerCheckDisabledForTestPurposes Field](../../../docs/framework/additional-apis/s-isdebuggercheckdisabledfortestpurposes-field.md) |  
-| [DataMemberFieldEditor Class](../../../docs/framework/additional-apis/datamemberfieldeditor-class.md) |  
-| [DataMemberListEditor Class](../../../docs/framework/additional-apis/datamemberlisteditor-class.md) |  
+| API Name |
+| -------- |
+| [s_isDebuggerCheckDisabledForTestPurposes Field](../../../docs/framework/additional-apis/s-isdebuggercheckdisabledfortestpurposes-field.md) |
+| [DataMemberFieldEditor Class](../../../docs/framework/additional-apis/datamemberfieldeditor-class.md) |
+| [DataMemberListEditor Class](../../../docs/framework/additional-apis/datamemberlisteditor-class.md) |
+| [s_ServicePointTable](../../../docs/framework/additional-apis/s_servicepointtable.md) |
+| [_HttpResponse](../../../docs/framework/additional-apis/_httpresponse.md) |
+| [m_ConnectionGroupList](../../../docs/framework/additional-apis/m_connectiongrouplist.md) |
+| [m_ConnectionList](../../../docs/framework/additional-apis/m_connectionlist.md) |
+| [m_WriteList](../../../docs/framework/additional-apis/m_writelist.md) |
   
 ## See also
 

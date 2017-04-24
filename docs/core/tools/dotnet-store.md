@@ -19,7 +19,7 @@ ms.assetid: 1e8e4122-8110-4b48-afce-afffb6737776
 
 ## Synopsis
 
-`dotnet store [--manifest] [--framework-version] [--output] [--working-dir] [--preserve-working-dir] [--skip-optimization] [-v|--verbosity] [-h|--help]`
+`dotnet store --manifest [--framework-version] [--output] [--working-dir] [--preserve-working-dir] [--skip-optimization] [-v|--verbosity] [-h|--help]`
 
 ## Description
 
@@ -45,7 +45,7 @@ The Microsoft.NETCore.App package version that will be used to run the assemblie
 
 `-o|--output <OUTPUT_PATH>`
 
-Specify the path to the runtime package store. If not specified, it will default to the *store* subdirectory of the global .NET Core installation directory.
+Specify the path to the runtime package store. If not specified, it will default to the *store* subdirectory of the user profile .NET Core installation directory.
 
 `--working-dir <WORKING_DIRECTORY>`
 

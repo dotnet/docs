@@ -19,14 +19,14 @@ This feature is implemented by a runtime package store, which is a location on d
 
 The second part of the implementation is a "target manifest", which is a list of packages that compose a runtime package store, and that developers can target when publishing their application. The target manifest is typically provided by the owner of the targeted production environment.
 
-The feature is also used implicitly by ASP.NET applications: the set of packages composing the ASP.NET Web framework is installed as part of the setup packages authored by Microsoft. When publishing an ASP.NET application, a special task in the SDK finds the right manifest and configures the publication task to use it, resulting in the published application being trimmed to only include the application's packages, and not the framework's packages.
+The feature is also used implicitly by ASP.NET applications: the set of packages composing the ASP.NET Web framework is installed as part of the setup packages authored by Microsoft. When publishing an ASP.NET application, the published application is trimmed to only include the application's packages, and not the framework's packages.
 
 ## Publishing an application against a target manifest
 
 If you have a target manifest file on disk, you can specify it when publishing your app with the [`dotnet publish`](../tools/dotnet-publish.md) command:
 
 ```
-dotnet publish --manifest path/to/the/target-manifest.csproj
+dotnet publish --manifest path/to/the/target-manifest.xml
 ```
 
 The resulting published application should only be deployed to an environment that has the packages described in the target manifest. Failing to do so would result in the application not starting.
@@ -35,11 +35,11 @@ It's possible to specify multiple target manifests when publishing an applicatio
 
 ## Specifying a target manifest in the project file
 
-Instead of specifying a target manifest in a [`dotnet publish`](../tools/dotnet-publish.md) command, it's possible to specify the manifest or manifests to use in the project file under a `TargetManifest` tag.
+Instead of specifying a target manifest in a [`dotnet publish`](../tools/dotnet-publish.md) command, it's possible to specify the manifest or manifests to use in the project file as a semicolon-separated list of paths under a `TargetManifestFiles` tag.
 
 ```xml
 <PropertyGroup>
-  <TargetManifest>path/to/the/target-manifest.csproj</TargetManifest>
+  <TargetManifestFiles>path/to/the/target-manifest.xml</TargetManifestFiles>
 </PropertyGroup>
 ```
 
@@ -48,7 +48,7 @@ This should only be done when the target environment for the application is well
 ```xml
 <Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
-    <TargetManifest>aspnet/2.0.0</TargetManifest>
+    <TargetManifestFiles>aspnet/2.0.0</TargetManifestFiles>
   </PropertyGroup>
 ```
 
@@ -58,7 +58,7 @@ A different case would be an open-source project: the users of the project will 
 
 The administrator of a runtime environment can optimize for certain types of applications by building a runtime package store and the corresponding target manifest.
 
-The first step is to create an empty project and to add the packages that must compose the runtime package store. The runtime package store can then be provisioned by running a `dotnet store --manifest [target-manifest.csproj]` command. Multiple target manifest paths can be passed to the [`dotnet store`](../tools/dotnet-store.md) command.
+The first step is to create an empty project and to add the packages that must compose the runtime package store. The runtime package store can then be provisioned by running a `dotnet store --manifest [target-manifest.xml]` command. Multiple target manifest paths can be passed to the [`dotnet store`](../tools/dotnet-store.md) command.
 
 The target manifest that was used to build the runtime package store can be made available to be downloaded by application authors.
 

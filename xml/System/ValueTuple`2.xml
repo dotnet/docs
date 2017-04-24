@@ -52,9 +52,9 @@ The value tuple types differ from the tuple types (such as <xref:System.Tuple%60
 -   Members such as <xref:System.ValueTuple%602.Item1> and   <xref:System.ValueTuple%602.Item2> are fields rather than properties.  
  
 -   Their fields are mutable rather than read-only.  
- 
-The value tuple types provide the runtime implementation that supports tuples in C# and struct tuples in F#.  In addition to creating a <xref:System.ValueTuple%602> instance by using language syntax, you can call the <xref:System.ValueTuple.Create%2A> factory method.  
- 
+  
+ The value tuple types provide the runtime implementation that supports [tuples in C#](~/docs/csharp/tuples.md) and struct tuples in F#. In addition to creating a <xref:System.ValueTuple%602> instance by using language syntax, you can call the <xref:System.ValueTuple.Create%2A> factory method.
+  
  ]]></format>
     </remarks>
   </Docs>

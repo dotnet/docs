@@ -54,8 +54,8 @@ namespace Statements
                     Console.WriteLine("One argument");
                     break;
                 default:
-                Console.WriteLine($"{n} arguments");
-                break;
+                    Console.WriteLine($"{n} arguments");
+                    break;
             }
         }
 

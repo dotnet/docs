@@ -45,8 +45,8 @@ The code listings in this topic demonstrate how to retrieve data from a database
 ### SqlClient  
  The code in this example assumes that you can connect to the `Northwind` sample database on Microsoft [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)]. The code creates a <xref:System.Data.SqlClient.SqlCommand> to select rows from the Products table, adding a <xref:System.Data.SqlClient.SqlParameter> to restrict the results to rows with a UnitPrice greater than the specified parameter value, in this case 5. The <xref:System.Data.SqlClient.SqlConnection> is opened inside of a `using` block, which ensures that resources are closed and disposed when the code exits. The code executes the command by using a <xref:System.Data.SqlClient.SqlDataReader>, and displays the results in the console window.  
   
- [!code-csharp[DataWorks SampleApp.SqlClient#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks%20SampleApp.SqlClient/CS/source.cs#1)]
- [!code-vb[DataWorks SampleApp.SqlClient#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks%20SampleApp.SqlClient/VB/source.vb#1)]  
+ [!code-csharp[DataWorks SampleApp.SqlClient#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SampleApp.SqlClient/CS/source.cs#1)]
+ [!code-vb[DataWorks SampleApp.SqlClient#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SampleApp.SqlClient/VB/source.vb#1)]  
   
  [&#91;Top&#93;](#_TOP)  
   
@@ -54,8 +54,8 @@ The code listings in this topic demonstrate how to retrieve data from a database
 ### OleDb  
  The code in this example assumes that you can connect to the Microsoft Access Northwind sample database. The code creates a <xref:System.Data.OleDb.OleDbCommand> to select rows from the Products table, adding a <xref:System.Data.OleDb.OleDbParameter> to restrict the results to rows with a UnitPrice greater than the specified parameter value, in this case 5. The <xref:System.Data.OleDb.OleDbConnection> is opened inside of a `using` block, which ensures that resources are closed and disposed when the code exits. The code executes the command by using a <xref:System.Data.OleDb.OleDbDataReader>, and displays the results in the console window.  
   
- [!code-csharp[DataWorks SampleApp.OleDb#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks%20SampleApp.OleDb/CS/source.cs#1)]
- [!code-vb[DataWorks SampleApp.OleDb#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks%20SampleApp.OleDb/VB/source.vb#1)]  
+ [!code-csharp[DataWorks SampleApp.OleDb#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SampleApp.OleDb/CS/source.cs#1)]
+ [!code-vb[DataWorks SampleApp.OleDb#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SampleApp.OleDb/VB/source.vb#1)]  
   
  [&#91;Top&#93;](#_TOP)  
   
@@ -63,9 +63,7 @@ The code listings in this topic demonstrate how to retrieve data from a database
 ### Odbc  
  The code in this example assumes that you can connect to the Microsoft Access Northwind sample database. The code creates a <xref:System.Data.Odbc.OdbcCommand> to select rows from the Products table, adding a <xref:System.Data.Odbc.OdbcParameter> to restrict the results to rows with a UnitPrice greater than the specified parameter value, in this case 5. The <xref:System.Data.Odbc.OdbcConnection> is opened inside of a `using` block, which ensures that resources are closed and disposed when the code exits. The executes the command by using a <xref:System.Data.Odbc.OdbcDataReader>, and displays the results in the console window.  
   
-<!-- TODO: Theswe snippets are not in the current tree, but were in VS2010  https://msdn.microsoft.com/en-us/library/dw70f090(v=vs.100).aspx  -->   
-<!-- [!code-csharp[DataWorks SampleApp.Odbc#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks%20SampleApp.Odbc/CS/source.cs#1)]  -->
-<!-- [!code-vb[DataWorks SampleApp.Odbc#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks%20SampleApp.Odbc/VB/source.vb#1)]  -->
+[!code-csharp[DataWorks SampleApp.Odbc#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SampleApp.Odbc/CS/source.cs#1)] [!code-vb[DataWorks SampleApp.Odbc#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SampleApp.Odbc/VB/source.vb#1)]   
 
  [&#91;Top&#93;](#_TOP)  
   
@@ -73,8 +71,8 @@ The code listings in this topic demonstrate how to retrieve data from a database
 ### OracleClient  
  The code in this example assumes a connection to DEMO.CUSTOMER on an Oracle server. You must also add a reference to the System.Data.OracleClient.dll. The code returns the data in an <xref:System.Data.OracleClient.OracleDataReader>.  
   
- [!code-csharp[DataWorks SampleApp.Oracle#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks%20SampleApp.Oracle/CS/source.cs#1)]
- [!code-vb[DataWorks SampleApp.Oracle#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks%20SampleApp.Oracle/VB/source.vb#1)]  
+ [!code-csharp[DataWorks SampleApp.Oracle#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SampleApp.Oracle/CS/source.cs#1)]
+ [!code-vb[DataWorks SampleApp.Oracle#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SampleApp.Oracle/VB/source.vb#1)]  
   
  [&#91;Top&#93;](#_TOP)  
   
@@ -85,7 +83,7 @@ The code listings in this topic demonstrate how to retrieve data from a database
 ### LINQ to Entities  
  The code in this example uses a LINQ query to return data as Categories objects, which are projected as an anonymous type that contains only the CategoryID and CategoryName properties. For more information, see [LINQ to Entities Overview](http://msdn.microsoft.com/en-us/86d87a27-c17a-45ac-b28d-72c8500333c6).  
   
-```  
+```vb  
 Option Explicit On  
 Option Strict On  
   
@@ -119,7 +117,7 @@ End Class
   
  In C#:  
   
-```  
+```csharp  
 using System;  
 using System.Linq;  
 using System.Data.Objects;  
@@ -161,7 +159,7 @@ class LinqSample
 ### Typed ObjectQuery  
  The code in this example uses an <xref:System.Data.Objects.ObjectQuery%601> to return data as Categories objects. For more information, see [Object Queries](http://msdn.microsoft.com/en-us/0768033c-876f-471d-85d5-264884349276).  
   
-```  
+```vb  
 Option Explicit On  
 Option Strict On  
   
@@ -186,7 +184,7 @@ End Class
   
  In C#:  
   
-```  
+```csharp  
 using System;  
 using System.Data.Objects;  
 using NorthwindModel;  
@@ -216,7 +214,7 @@ class ObjectQuerySample
 ### EntityClient  
  The code in this example uses an <xref:System.Data.EntityClient.EntityCommand> to execute an Entity SQL query. This query returns a list of records that represent instances of the Categories entity type. An <xref:System.Data.EntityClient.EntityDataReader> is used to access data records in the result set. For more information, see [EntityClient Provider for the Entity Framework](../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md).  
   
-```  
+```vb  
 Option Explicit On  
 Option Strict On  
   
@@ -257,7 +255,7 @@ End Class
   
  In C#:  
   
-```  
+```csharp  
 using System;  
 using System.Data;  
 using System.Data.Common;  
@@ -305,7 +303,7 @@ class EntityClientSample
 ## LINQ to SQL  
  The code in this example uses a LINQ query to return data as Categories objects, which are projected as an anonymous type that contains only the CategoryID and CategoryName properties. This example is based on the Northwind data context. For more information, see [Getting Started](../../../../docs/framework/data/adonet/sql/linq/getting-started.md).  
   
-```  
+```vb  
 Option Explicit On  
 Option Strict On  
   
@@ -340,7 +338,7 @@ End Class
   
  In C#:  
   
-```  
+```csharp  
 using System;  
 using System.Collections.Generic;  
 using System.Linq;  

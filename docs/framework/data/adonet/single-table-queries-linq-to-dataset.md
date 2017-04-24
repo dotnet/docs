@@ -20,7 +20,7 @@ manager: "jhubbard"
   
  The following example gets all the online orders from the SalesOrderHeader table and outputs the order ID, order date, and order number to the console.  
   
- [!code-csharp[DP LINQ to DataSetExamples#Where1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP%20LINQ%20to%20DataSet%20Examples/CS/Program.cs#where1)]   
+ [!code-csharp[DP LINQ to DataSetExamples#Where1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP  LINQ  to  DataSet  Examples/CS/Program.cs#where1)]   
   
  The local variable query is initialized with a query expression, which operates on one or more information sources by applying one or more query operators from either the standard query operators or, in the case of [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)], operators specific to the <xref:System.Data.DataSet> class. The query expression in the previous example uses two of the standard query operators: `Where` and `Select`.  
   

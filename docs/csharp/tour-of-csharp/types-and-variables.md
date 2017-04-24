@@ -84,7 +84,7 @@ An `interface` type defines a contract as a named set of public function members
 
 A `delegate` type represents references to methods with a particular parameter list and return type. Delegates make it possible to treat methods as entities that can be assigned to variables and passed as parameters. Delegates are analogous to function types provided by functional languages. They are also similar to the concept of function pointers found in some other languages, but unlike function pointers, delegates are object-oriented and type-safe.
 
-Class, `struct`, `interface` and `delegate` types all support generics, whereby they can be parameterized with other types.
+The `class`, `struct`, `interface` and `delegate` types all support generics, whereby they can be parameterized with other types.
 
 An `enum` type is a distinct type with named constants. Every `enum` type has an underlying type, which must be one of the eight integral types. The set of values of an `enum` type is the same as the set of values of the underlying type.
 
@@ -115,7 +115,7 @@ There are several kinds of *variables* in C#, including fields, array elements, 
 * Array type
     - A `null` reference, a reference to an instance of that array type, or a reference to an instance of a compatible array type
 * Delegate type
-    - A `null` reference or a reference to an instance of a compatible that delegate type
+    - A `null` reference or a reference to an instance of a compatible delegate type
 
 >[!div class="step-by-step"]
 [Previous](program-structure.md)

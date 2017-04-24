@@ -55,7 +55,7 @@
   
 -   Their fields are mutable rather than read-only.  
   
- The value tuple types provide the runtime implementation that supports tuples in C# and struct tuples in F#.  In addition to creating a <xref:System.ValueTuple%603> instance by using language syntax, you can call the <xref:System.ValueTuple.Create%2A> factory method.  
+ The value tuple types provide the runtime implementation that supports [tuples in C#](~/docs/csharp/tuples.md) and struct tuples in F#.  In addition to creating a <xref:System.ValueTuple%603> instance by using language syntax, you can call the <xref:System.ValueTuple.Create%2A> factory method.  
   
  ]]></format>
     </remarks>
